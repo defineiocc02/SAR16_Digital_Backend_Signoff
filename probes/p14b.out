@@ -1,0 +1,30 @@
+﻿=== raw fc_pinprobe2.log ===
+Error: unknown option '-no_gui' (CMD-010)
+Usage: /opt/synopsys/fusioncompiler/W-2024.09-SP3/linux64/nwtn/bin/dgcom_exec
+        [-root_path path_name] (Synopsys root path)
+        [-file file_name]      (Script file to exec after setup)
+        [-no_init]             (Don't load any setup files)
+        [-no_local_init]       (Don't load local setup file)
+        [-no_home_init]        (Don't load home directory setup file)
+        [-no_log]              (Don't log commands)
+        [-output_log_file file_name]
+                               (Output log file name)
+        [-no_motd]             (Do not print message of the day in welcome banner)
+        [-x command]           (Execute a command after setup)
+        [-version]             (Show product version and exit immediately)
+        [-batch]               (Exit after processing -file and/or -x)
+        [-shell shell_name]    (Run the named shell)
+        [-frontend]            (Run front end shell subset)
+        [-backend]             (Run back end shell subset)
+        [-python]              (Start tool in Python mode. Impacts -x/-file and interactive console)
+        [-gui]                 ()
+
+=== how does the working P&R script invoke fc_shell? ===
+36:timeout 7200 fc_shell -f scripts/fc_pnr_paper_core.tcl > "$LOG/fc_pnr.log" 2>&1
+ssh : bash: line 7: $'\r': command not found
+At line:1 char:401
++ ... "; $probe | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 7: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

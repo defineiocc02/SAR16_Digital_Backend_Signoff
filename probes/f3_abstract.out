@@ -1,0 +1,49 @@
+﻿log bytes: 5517
+puts "F3-BEGIN"
+F3-BEGIN
+if {[catch {open_lib $PNR/sar16_pnr_paper_core} m]} { puts "F3-LIB-FAIL $m"; exit 0 }
+Information: Loading library file '/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core' (FILE-007)
+Information: Loading library file '/home/<user>/Project/DESIGN/SAR16_DIGI/pnr/ndm/sar16_smic18_6lm_v4.ndm' (FILE-007)
+puts "F3-LIB-OK"
+F3-LIB-OK
+if {[catch {open_block sar16_route_paper_core} m]} { puts "F3-OPENBLOCK-FAIL $m"; exit 0 }
+Information: User units loaded from library 'sar16_smic18_6lm_v4' (LNK-040)
+Opening block 'sar16_pnr_paper_core:sar16_route_paper_core.design' in edit mode
+puts "F3-BLOCK=[get_object_name [current_block]]"
+F3-BLOCK=sar16_pnr_paper_core:sar16_route_paper_core.design
+puts "F3-TERMS=[sizeof_collection [get_terminals -quiet *]]"
+Using libraries: sar16_pnr_paper_core sar16_smic18_6lm_v4
+Visiting block sar16_pnr_paper_core:sar16_route_paper_core.design
+Design 'sar_digi_paper_core' was successfully linked.
+F3-TERMS=244
+# baseline: what does write_lef -design give BEFORE create_abstract?
+catch {write_lef -design sar_digi_paper_core /tmp/f3_before.lef}
+Using libraries: sar16_pnr_paper_core sar16_smic18_6lm_v4
+Visiting block sar16_pnr_paper_core:sar_digi_paper_core.design
+Design 'sar_digi_paper_core' was successfully linked.
+Warning: Use defaultWidth 0.23 as the WRONGDIRECTION width for layer 'METAL1'. (LEFW-007)
+Warning: Use defaultWidth 0.28 as the WRONGDIRECTION width for layer 'METAL2'. (LEFW-007)
+Warning: Use defaultWidth 0.28 as the WRONGDIRECTION width for layer 'METAL3'. (LEFW-007)
+Warning: Use defaultWidth 0.28 as the WRONGDIRECTION width for layer 'METAL4'. (LEFW-007)
+Warning: Use defaultWidth 0.28 as the WRONGDIRECTION width for layer 'METAL5'. (LEFW-007)
+Warning: Use defaultWidth 0.44 as the WRONGDIRECTION width for layer 'METAL6'. (LEFW-007)
+0
+if {[file exists /tmp/f3_before.lef]} {
+    set fh [open /tmp/f3_before.lef r]; set t [read $fh]; close $fh
+    puts "F3-BEFORE bytes=[file size /tmp/f3_before.lef] MACRO=[llength [regexp -all -inline {^MACRO } $t]] BLOCKMACRO=[llength [regexp -all -inline {^MACRO sar_digi_paper_core} $t]]"
+}
+F3-BEFORE bytes=179596 MACRO=0 BLOCKMACRO=0
+# F3 attempt
+if {[catch {create_abstract -blocks sar_digi_paper_core -target_use implementation} m]} {
+    puts "F3-ABSTRACT-FAIL $m"
+} else { puts "F3-ABSTRACT-OK" }
+Error: Could not find any instantiation for the given block(s). (ABS-297)
+Information: Elapsed time for create_abstract excluding pending time: 00:00:00.00. (DPUI-902)
+
+=== lef results ===
+--- /tmp/f3_before.lef  179596 B
+109
+0
+--- /tmp/f3_after.lef  179596 B
+109
+0

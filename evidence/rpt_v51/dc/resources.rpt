@@ -1,0 +1,157 @@
+ 
+****************************************
+Report : resources
+Design : sar_digi_paper_core
+Version: W-2024.09-SP3
+Date   : Fri Sep 18 20:19:41 2026
+****************************************
+
+
+No resource sharing information to report.
+
+No implementations to report
+ 
+****************************************
+Design : srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH10_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64
+****************************************
+
+Resource Report for this hierarchy in file
+        /home/<user>/sar16_work/proj_paper_core/rtl/srm_residue_estimator.sv
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| add_x_1        | DW01_inc       | width=5    | add_358_S2 (srm_residue_estimator.sv:358) |
+| add_x_2        | DW01_inc       | width=5    | add_365 (srm_residue_estimator.sv:365) |
+| add_x_11       | DW01_inc       | width=7    | add_482 (srm_residue_estimator.sv:482) |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_x_1            | DW01_inc         | apparch (area)     |                |
+| add_x_2            | DW01_inc         | apparch (area)     |                |
+| add_x_11           | DW01_inc         | apparch (area)     |                |
+===============================================================================
+
+ 
+****************************************
+Design : srm_residue_lut_22_128_8_8_10_1
+****************************************
+
+Resource Report for this hierarchy in file
+        /home/<user>/sar16_work/proj_paper_core/rtl/srm_residue_lut.sv
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| gt_x_1         | DW_cmp         | width=5    | gt_157 (srm_residue_lut.sv:157) |
+| sub_x_2        | DW01_sub       | width=5    | sub_158 (srm_residue_lut.sv:158) |
+| sub_x_6        | DW01_sub       | width=10   | sub_160 (srm_residue_lut.sv:160) |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| gt_x_1             | DW_cmp           | apparch (area)     |                |
+| sub_x_2            | DW01_sub         | apparch (area)     |                |
+| sub_x_6            | DW01_sub         | apparch (area)     |                |
+===============================================================================
+
+ 
+****************************************
+Design : sar_calib_ctrl_serial_20_30_16_32_5_256_1_1
+****************************************
+
+Resource Report for this hierarchy in file
+        /home/<user>/sar16_work/proj_paper_core/rtl/sar_calib_ctrl_serial.sv
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| eq_x_34        | DW_cmp         | width=20   | eq_438 (sar_calib_ctrl_serial.sv:438) |
+| sub_x_36       | DW01_dec       | width=5    | sub_581 (sar_calib_ctrl_serial.sv:581) |
+| gt_x_37        | DW_cmp         | width=5    | gt_589 (sar_calib_ctrl_serial.sv:589) |
+| gt_x_39        | DW_cmp         | width=5    | gt_597 (sar_calib_ctrl_serial.sv:597) |
+| sub_x_40       | DW01_dec       | width=5    | sub_598 (sar_calib_ctrl_serial.sv:598) |
+| lt_x_41        | DW_cmp         | width=5    | lt_608 (sar_calib_ctrl_serial.sv:608) |
+| add_x_42       | DW01_add       | width=36   | add_610 (sar_calib_ctrl_serial.sv:610) |
+| add_x_43       | DW01_inc       | width=5    | add_611 (sar_calib_ctrl_serial.sv:611) |
+| add_x_44       | DW01_inc       | width=5    | add_625 (sar_calib_ctrl_serial.sv:625) |
+| add_x_45       | DW01_inc       | width=5    | add_661 (sar_calib_ctrl_serial.sv:661) |
+| gte_x_134      | DW_cmp         | width=5    | gte_427 (sar_calib_ctrl_serial.sv:427) |
+     |                |            | gte_578 (sar_calib_ctrl_serial.sv:578) |
+| sub_x_38       | DW01_dec       | width=5    | sub_588 (sar_calib_ctrl_serial.sv:588) |
+     |                |            | sub_590 (sar_calib_ctrl_serial.sv:590) |
+| DP_OP_813J1_122_7927            |            |                            |
+|                | DP_OP_813J1_122_7927 |      |                            |
+| DP_OP_814J1_123_1531            |            |                            |
+|                | DP_OP_814J1_123_1531 |      |                            |
+=============================================================================
+
+Datapath Report for DP_OP_813J1_122_7927
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_813J1_122_7927 | add_624 (sar_calib_ctrl_serial.sv:624)              |
+|                      | add_624_2 (sar_calib_ctrl_serial.sv:624)            |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Signed   | 37    |                                          |
+| I2    | PI   | Signed   | 30    |                                          |
+| I3    | PI   | Signed   | 30    |                                          |
+| O1    | PO   | Signed   | 37    | I1 + I2 + I3 (sar_calib_ctrl_serial.sv:624) |
+==============================================================================
+
+Datapath Report for DP_OP_814J1_123_1531
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_814J1_123_1531 | add_403 (sar_calib_ctrl_serial.sv:403)              |
+|                      | add_405 (sar_calib_ctrl_serial.sv:405)              |
+|                      | add_405_2 (sar_calib_ctrl_serial.sv:405)            |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Signed   | 30    |                                          |
+| I2    | PI   | Signed   | 30    |                                          |
+| I3    | PI   | Unsigned | 30    |                                          |
+| O1    | PO   | Unsigned | 30    | I1 + I2 ( sar_calib_ctrl_serial.sv:403 sar_calib_ctrl_serial.sv:405 ) |
+| O2    | PO   | Unsigned | 30    | I3 + O1 (sar_calib_ctrl_serial.sv:405)   |
+==============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| eq_x_34            | DW_cmp           | apparch (area)     |                |
+| sub_x_36           | DW01_dec         | apparch (area)     |                |
+| gt_x_37            | DW_cmp           | apparch (area)     |                |
+| gt_x_39            | DW_cmp           | apparch (area)     |                |
+| sub_x_40           | DW01_dec         | apparch (area)     |                |
+| lt_x_41            | DW_cmp           | apparch (area)     |                |
+| add_x_42           | DW01_add         | apparch (area)     |                |
+| add_x_43           | DW01_inc         | apparch (area)     |                |
+| add_x_44           | DW01_inc         | apparch (area)     |                |
+| add_x_45           | DW01_inc         | apparch (area)     |                |
+| gte_x_134          | DW_cmp           | apparch (area)     |                |
+| sub_x_38           | DW01_dec         | apparch (area)     |                |
+| DP_OP_813J1_122_7927                  |                    |                |
+|                    | DP_OP_813J1_122_7927 | str (area)     |                |
+| DP_OP_814J1_123_1531                  |                    |                |
+|                    | DP_OP_814J1_123_1531 | str (area)     |                |
+===============================================================================
+
+1

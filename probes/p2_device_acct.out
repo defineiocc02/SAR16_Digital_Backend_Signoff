@@ -1,0 +1,134 @@
+﻿########## A. python availability ##########
+/usr/bin/python3
+Python 3.6.8
+
+########## B. extracted layout netlist ##########
+-rw-rw-r--. 1 <user> <user> 401328 Sep 18 18:14 /home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.sp
+--- line count: 5504
+--- head 40 ---
+* SPICE NETLIST
+***************************************
+
+.SUBCKT nmvt18_ckt D G S B
+.ENDS
+***************************************
+.SUBCKT nmvt33_ckt D G S B
+.ENDS
+***************************************
+.SUBCKT pmvt18_ckt D G S B
+.ENDS
+***************************************
+.SUBCKT nnt18_ckt D G S B
+.ENDS
+***************************************
+.SUBCKT nnt33_ckt D G S B
+.ENDS
+***************************************
+.SUBCKT n18_ckt D G S B
+.ENDS
+***************************************
+.SUBCKT n18_dnw_ckt D G S B T B2
+.ENDS
+***************************************
+.SUBCKT n18_dnw_4t_ckt D G S B
+.ENDS
+***************************************
+.SUBCKT p18_ckt D G S B
+.ENDS
+***************************************
+.SUBCKT p18_dnw_ckt D G S B B2
+.ENDS
+***************************************
+.SUBCKT p18_dnw_4t_ckt D G S B
+.ENDS
+***************************************
+.SUBCKT n33_ckt D G S B
+.ENDS
+***************************************
+.SUBCKT n33_dnw_ckt D G S B T B2
+
+########## C. element histogram in extracted .sp ##########
+top-level (column-0) element letters:
+  M : 1130
+  X : 3525
+--- device subckt names used (2nd field of X lines), top 25 ---
+     63 34
+     63 17
+     52 47
+     48 169
+     35 269
+     34 16
+     33 100
+     32 9
+     28 394
+     28 15
+     28 112
+     27 210
+     25 71
+     25 29
+     24 104
+     22 36
+     22 190
+     22 143
+     20 24
+     20 22
+     20 2
+     20 19
+     19 49
+     19 26
+     19 157
+
+########## D. source CDL ##########
+-rw-rw-r--. 1 <user> <user> 293449 Sep 18 18:13 /home/<user>/sar16_work/proj_paper_core/calibre/lvs/sar16.cdl
+--- .SUBCKT count : 44
+--- top .SUBCKT lines ---
+6:.SUBCKT SNPS_CLOCK_GATE_HIGH_srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH30_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64_1 
+12:.SUBCKT SNPS_CLOCK_GATE_HIGH_srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH30_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64_2 
+18:.SUBCKT SNPS_CLOCK_GATE_HIGH_srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH30_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64_3 
+24:.SUBCKT SNPS_CLOCK_GATE_HIGH_srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH30_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64_4 
+30:.SUBCKT SNPS_CLOCK_GATE_HIGH_srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH30_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64_0 
+--- X instances in top subckt region ---
+    top subckt lines: 320
+--- X instance subckt types in source top, top 25 ---
+      3 SN=HFSNET_78
+      1 Y=ZCTSNET_81
+      1 Y=ZCTSNET_80
+      1 Y=w_wr_en
+      1 Y=w_wr_data[9]
+      1 Y=w_wr_data[8]
+      1 Y=w_wr_data[4]
+      1 Y=w_wr_data[3]
+      1 Y=w_wr_data[29]
+      1 Y=w_wr_data[28]
+      1 Y=w_wr_data[27]
+      1 Y=w_wr_data[26]
+      1 Y=w_wr_data[25]
+      1 Y=w_wr_data[24]
+      1 Y=w_wr_data[23]
+      1 Y=w_wr_data[22]
+      1 Y=w_wr_data[21]
+      1 Y=w_wr_data[20]
+      1 Y=w_wr_data[2]
+      1 Y=w_wr_data[19]
+      1 Y=w_wr_data[18]
+      1 Y=w_wr_data[17]
+      1 Y=w_wr_data[16]
+      1 Y=w_wr_data[15]
+      1 Y=w_wr_data[14]
+
+########## E. port comparison ##########
+--- layout .sp top .SUBCKT header (first 3 lines) ---
+* SPICE NETLIST
+***************************************
+
+--- source top .SUBCKT header ---
+.SUBCKT sar_digi_paper_core clk dec_clk rst_n start_calib calib_comp_out 
++ calib_done calib_done_pulse calib_mode_en dac_p_force[19] dac_p_force[18] 
++ dac_p_force[17] dac_p_force[16] dac_p_force[15] dac_p_force[14] 
+ssh : bash: line 43: $'\r': command not found
+At line:1 char:237
++ ... ,"`n"; $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 43: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

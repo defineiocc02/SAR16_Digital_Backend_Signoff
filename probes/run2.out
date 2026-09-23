@@ -1,0 +1,32 @@
+﻿=== stage markers ===
+12:### STAGE 0 : PREFLIGHT      [20:03:56  elapsed 0s]
+61:### STAGE 1 : SYNTHESIS (DC, both arms)      [20:03:56  elapsed 0s]
+75:DC_ARM status=OK tag= libmode=typical area=97892.625106
+88:DC_ARM status=OK tag=_ss libmode=slow area=101581.602856
+112:### STAGE 2 : PLACE & ROUTE (Fusion Compiler)      [20:05:30  elapsed 94s]
+
+=== live procs ===
+ 675441       03:32 bash scripts/reproduce_all.sh 0
+ 675947       01:59 timeout 7200 fc_shell -f scripts/fc_pnr_paper_core.tcl
+ 675948       01:59 /bin/sh /opt/synopsys/fusioncompiler/W-2024.09-SP3/bin/fc_shell -f scripts/fc_pnr_paper_core.tcl
+ 676107       01:03 timeout 7200 /opt/synopsys/syn/W-2024.09-SP3/bin/dc_shell -no_gui -f out/run_dc.snapshot.tcl
+ 676108       01:03 /opt/synopsys/syn/W-2024.09-SP3/linux64/syn/bin/common_shell_exec -shell dc_shell -r /opt/synopsys/syn/W-2024.09-SP3 -no_gui -f out/run_dc.snapshot.tcl
+
+=== tail 10 ===
+  arm 'typical' total cell area = 97892.625106 um2
+  arm '_ss' total cell area = 101581.602856 um2
+
+############################################################################
+### STAGE 2 : PLACE & ROUTE (Fusion Compiler)      [20:05:30  elapsed 94s]
+############################################################################
+############################################################
+### FC P&R paper_core   Fri Sep 18 20:05:30 CST 2026
+############################################################
+INFO: slow-arm netlist 337505 B
+ssh : bash: line 10: $'\r': command not found
+At line:1 char:540
++ ... "; $probe | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 10: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

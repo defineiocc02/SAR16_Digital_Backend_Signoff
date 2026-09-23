@@ -1,0 +1,12 @@
+﻿lines containing 'MACRO'                   113
+lines matching ^MACRO                      112
+occurrences of MACRO                       113
+lines containing 'PIN'                     652
+lines matching ^\s*PIN                     652
+lines matching \bPIN\b                     652
+occurrences of PIN                         652
+lines matching \bPIN\b or \bPORT\b         1304
+lines matching ^\s*END\s+\S+               804
+occurrences of 'PORT'                      652
+
+his README claims: MACRO 115 / PIN 665

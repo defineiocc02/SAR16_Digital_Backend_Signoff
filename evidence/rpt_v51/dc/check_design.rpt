@@ -1,0 +1,28 @@
+ 
+****************************************
+check_design summary:
+Version:     W-2024.09-SP3
+Date:        Fri Sep 18 20:19:27 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              14
+    Cells do not drive (LINT-1)                                    14
+--------------------------------------------------------------------------------
+
+Warning: In design 'sar_calib_ctrl_serial_20_30_16_32_5_256_1_1', cell 'B_134' does not drive any nets. (LINT-1)
+Warning: In design 'sar_calib_ctrl_serial_20_30_16_32_5_256_1_1', cell 'B_135' does not drive any nets. (LINT-1)
+Warning: In design 'sar_calib_ctrl_serial_20_30_16_32_5_256_1_1', cell 'C6871' does not drive any nets. (LINT-1)
+Warning: In design 'sar_calib_ctrl_serial_20_30_16_32_5_256_1_1', cell 'C6877' does not drive any nets. (LINT-1)
+Warning: In design 'sar_calib_ctrl_serial_20_30_16_32_5_256_1_1', cell 'C6887' does not drive any nets. (LINT-1)
+Warning: In design 'sar_calib_ctrl_serial_20_30_16_32_5_256_1_1', cell 'C6893' does not drive any nets. (LINT-1)
+Warning: In design 'sar_calib_ctrl_serial_20_30_16_32_5_256_1_1', cell 'C6896' does not drive any nets. (LINT-1)
+Warning: In design 'sar_calib_ctrl_serial_20_30_16_32_5_256_1_1', cell 'C6901' does not drive any nets. (LINT-1)
+Warning: In design 'sar_calib_ctrl_serial_20_30_16_32_5_256_1_1', cell 'C6904' does not drive any nets. (LINT-1)
+Warning: In design 'srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH10_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64', cell 'C640' does not drive any nets. (LINT-1)
+Warning: In design 'srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH10_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64', cell 'C644' does not drive any nets. (LINT-1)
+Warning: In design 'srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH10_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64', cell 'C692' does not drive any nets. (LINT-1)
+Warning: In design 'srm_residue_lut_22_128_8_8_10_1', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'srm_residue_lut_22_128_8_8_10_1', cell 'B_18' does not drive any nets. (LINT-1)
+1

@@ -1,0 +1,9 @@
+﻿instances with device geometry: 3626
+
+=== CONTROL: 300 random cell CENTRES ===
+   #instances whose AA covers the point : {1: 79, 2: 154, 3: 56, 4: 10, 5: 1}
+   #instances whose GT covers the point : {1: 96, 2: 153, 3: 45, 4: 6}
+
+=== the 35 flagged points, same measurement ===
+   #instances whose AA covers the point : {0: 27, 1: 25, 2: 7, 3: 3}
+   #instances whose GT covers the point : {0: 31, 1: 25, 2: 5, 3: 1}

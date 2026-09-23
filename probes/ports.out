@@ -1,0 +1,67 @@
+﻿source top ports : 232
+layout top ports : 183
+
+source-only ports : 51
+   rst_n
+   srm_residue_o[11]
+   srm_residue_o[12]
+   srm_residue_o[13]
+   srm_residue_o[14]
+   srm_residue_o[15]
+   srm_residue_o[16]
+   srm_residue_o[17]
+   srm_residue_o[18]
+   srm_residue_o[19]
+   srm_residue_o[20]
+   srm_residue_o[21]
+   srm_residue_o[22]
+   srm_residue_o[23]
+   srm_residue_o[24]
+   srm_residue_o[25]
+   srm_residue_o[26]
+   srm_residue_o[27]
+   srm_residue_o[28]
+   srm_residue_o[29]
+   srm_residue_o[9]
+   weight_rd_data[0]
+   weight_rd_data[10]
+   weight_rd_data[11]
+   weight_rd_data[12]
+   weight_rd_data[13]
+   weight_rd_data[14]
+   weight_rd_data[15]
+   weight_rd_data[16]
+   weight_rd_data[17]
+   weight_rd_data[18]
+   weight_rd_data[19]
+   weight_rd_data[1]
+   weight_rd_data[20]
+   weight_rd_data[21]
+   weight_rd_data[22]
+   weight_rd_data[23]
+   weight_rd_data[24]
+   weight_rd_data[25]
+   weight_rd_data[26]
+   weight_rd_data[27]
+   weight_rd_data[28]
+   weight_rd_data[29]
+   weight_rd_data[2]
+   weight_rd_data[3]
+   weight_rd_data[4]
+   weight_rd_data[5]
+   weight_rd_data[6]
+   weight_rd_data[7]
+   weight_rd_data[8]
+   weight_rd_data[9]
+
+layout-only ports : 2
+   VDD
+   VSS
+
+rst_n in source : True
+rst_n in layout : False
+VDD in layout   : True ; VSS in layout : True
+
+weight_rd_data ports : 30 ['weight_rd_data[0]', 'weight_rd_data[10]', 'weight_rd_data[11]', 'weight_rd_data[12]']
+srm_residue_o ports  : 30
+232 - (30-1) - (21-1) = 183

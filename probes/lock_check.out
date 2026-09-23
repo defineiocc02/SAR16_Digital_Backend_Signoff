@@ -1,0 +1,39 @@
+﻿=== CURRENT on-disk md5 (must match what I uploaded) ===
+30369a2239b57f447979a9469f4592a2  /home/<user>/sar16_work/proj_paper_core/rtl/sar_digi_paper_core.sv
+8d66c891010b2a1e4ce3212bcf84d7ce  /home/<user>/sar16_work/proj_paper_core/constraints/sar_digi_paper_core.sdc
+285ef171ff0515f856ef668c20701e59  /home/<user>/sar16_work/proj_paper_core/constraints/sar_digi_paper_core_pnr.sdc
+
+   mine: 30369a2239b57f447979a9469f4592a2 (rtl)  8d66c891010b2a1e4ce3212bcf84d7ce (sdc)  285ef171ff0515f856ef668c20701e59 (pnr.sdc)
+
+=== is there a lock/baseline file that could restore the old tree? ===
+-rw-rw-r--. 1 <user> <user> 681 Sep 18 00:09 /home/<user>/sar16_work/proj_paper_core/repro_lock.env
+
+/home/<user>/sar16_work/proj_paper_core/repro/:
+total 12
+drwxrwxr-x.  2 <user> <user>   59 Sep 18 08:07 .
+drwxrwxr-x. 20 <user> <user> 4096 Sep 18 20:04 ..
+-rw-rw-r--.  1 <user> <user> 2365 Sep 18 08:07 RESULT_BASELINE.env
+-rw-rw-r--.  1 <user> <user> 2365 Sep 18 08:07 RESULT_CURRENT.env
+
+=== how reproduce_all.sh builds the lock ===
+15:#   6 manifest    collect_result.sh + diff against RESULT_BASELINE.env
+32:LOCK=$PC/repro_lock.env
+33:BASE=$RPT/RESULT_BASELINE.env
+63:        echo "  sync $s : scripts/ -> /tmp   md5=$(md5sum "$dst" | cut -c1-32)"
+103:MD5NOW=$( (cd "$PC" && md5sum rtl/*.sv constraints/*.sdc scripts/*.tcl 2>/dev/null) )
+104:if [ -s "$LOCK" ]; then
+105:    if diff -q <(echo "$MD5NOW") <(grep -v '^#' "$LOCK") >/dev/null 2>&1; then
+106:        echo "INPUT_LOCK: matches the manifest -- this is a faithful reproduction."
+108:        echo "INPUT_LOCK: DIFFERS from the manifest:"
+109:        diff <(echo "$MD5NOW" | sort) <(grep -v '^#' "$LOCK" | sort) | sed 's/^/    /'
+113:    echo "INPUT_LOCK: no manifest yet; writing one."
+114:    { echo "# md5 lock written $(date '+%F %T')"; echo "$MD5NOW"; } > "$LOCK"
+177:    echo "--- REPRODUCIBILITY vs RESULT_BASELINE.env ---"
+219:    echo "  REPRO status=BASELINE_SET"
+ssh : bash: line 12: $'\r': command not found
+At line:1 char:801
++ ... "; $probe | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 12: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

@@ -1,0 +1,1297 @@
+﻿total files: 1581   total bytes: 246M
+
+directory (relative)                                        files      bytes
+.                                                               1         7K
+.workbuddy\memory                                               3       100K
+00_��Ŀ����                                                         6         4M
+01_�����ĵ�                                                         5        82K
+01_�����ĵ�\�����㷨                                                    2        49K
+01_�����ĵ�\�����㷨\У׼������                                              2        61K
+01_�����ĵ�\ģ�����                                                    3        29K
+02_������֤                                                         7         2M
+02_������֤\20260729_full_sar_behavioral_4420022                    3         2M
+02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729      3        10K
+02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior      7        45K
+02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs     29         7M
+02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\docs      2        13K
+02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\logs      2         3K
+02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\report      8         2M
+02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\rtl      3        36K
+02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\tb      4        46K
+02_������֤\20260729_full_sar_behavioral_5b25c13                    3       760K
+02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729      3        10K
+02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior      7        45K
+02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs     29         7M
+02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\docs      2        12K
+02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\logs      2         2K
+02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\report      7       772K
+02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\rtl      3        36K
+02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\tb      4        46K
+02_������֤\20260729_full_sar_behavioral_f055093                    3         2M
+02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729      3        10K
+02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior      7        45K
+02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs     29         7M
+02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\docs      2        13K
+02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\logs      2         3K
+02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\report      8         2M
+02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\rtl      3        36K
+02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\tb      4        46K
+02_������֤\20260729_full_sar_behavioral_main_39436dd               3         2M
+02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729      3        10K
+02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior      7        45K
+02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs     29         7M
+02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\docs      2        13K
+02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\logs      2         3K
+02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\report      8         2M
+02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\rtl      3        36K
+02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\tb      4        46K
+02_������֤\20260729_full_sar_behavioral_main_f621410               3         2M
+02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729      3        10K
+02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior      7        45K
+02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs     29         7M
+02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\docs      2        13K
+02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\logs      2         3K
+02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\report      8         2M
+02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\rtl      3        36K
+02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\tb      4        46K
+02_������֤\sar16_digi_v4_paper_aligned                             1         3K
+02_������֤\sar16_digi_v4_paper_aligned\backend                     1         6K
+02_������֤\sar16_digi_v4_paper_aligned\backend\analysis            2        58K
+02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw       13        64K
+02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived     31        89K
+02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote     23        26M
+02_������֤\sar16_digi_v4_paper_aligned\backend\constraints         4        38K
+02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images         12         2M
+02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images_v43     11         1M
+02_������֤\sar16_digi_v4_paper_aligned\backend\scripts            63       440K
+02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes     59        83K
+02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42     18       134K
+02_������֤\sar16_digi_v4_paper_aligned\delivery                    2        11K
+02_������֤\sar16_digi_v4_paper_aligned\delivery\gds                8        17M
+02_������֤\sar16_digi_v4_paper_aligned\delivery\gds_v41            4         8M
+02_������֤\sar16_digi_v4_paper_aligned\delivery\reports           10         1M
+02_������֤\sar16_digi_v4_paper_aligned\delivery\reports_v41        8         1M
+02_������֤\sar16_digi_v4_paper_aligned\delivery_final              1        10K
+02_������֤\sar16_digi_v4_paper_aligned\delivery_final\gds          2         4M
+02_������֤\sar16_digi_v4_paper_aligned\delivery_final\reports      8         9M
+02_������֤\sar16_digi_v4_paper_aligned\delivery_final\scripts_backup      9       120K
+02_������֤\sar16_digi_v4_paper_aligned\delivery_round3             2        22K
+02_������֤\sar16_digi_v4_paper_aligned\delivery_round3\gds         2         8M
+02_������֤\sar16_digi_v4_paper_aligned\delivery_round3\reports      6         2M
+02_������֤\sar16_digi_v4_paper_aligned\delivery_v42                1        11K
+02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\gds            3        11M
+02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\gds_images     11         1M
+02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\reports        8         8M
+02_������֤\sar16_digi_v4_paper_aligned\gds_images_final           11         2M
+02_������֤\sar16_digi_v4_paper_aligned\gen                         2        10K
+02_������֤\sar16_digi_v4_paper_aligned\report_pack\dc             10       213K
+02_������֤\sar16_digi_v4_paper_aligned\report_pack\gls             3         9K
+02_������֤\sar16_digi_v4_paper_aligned\report_pack\pnr            11       112K
+02_������֤\sar16_digi_v4_paper_aligned\report_pack\sim             2         8K
+02_������֤\sar16_digi_v4_paper_aligned\report_pack\sta            20       119K
+02_������֤\sar16_digi_v4_paper_aligned\rtl                         6       136K
+02_������֤\sar16_digi_v4_paper_aligned\tb                         11       125K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf      5        18K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\.github      1         4K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\.github\workflows      1       482B
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\Digital_process      1        10K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\Digital_process\Digital_process.srcs\constrs_1\new      1         3K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\Digital_process\Digital_process.srcs\sim_1\new      4        45K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\Digital_process\Digital_process.srcs\sources_1\new      5        45K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\analysis\calibration_effectiveness_20260729      3        29K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\analysis\calibration_effectiveness_20260729\outputs      4       159K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\analysis\calibration_effectiveness_20260729\report      4       358K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\analysis\surrogate      2        31K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive      1         1K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs      2        10K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\.github      1         4K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\.trae\rules      1       863B
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\Docs      8        86K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\REFERENCE      1         3K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\Reports      2        82K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\constraints      1         3K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\rtl      4        29K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\rtl\calibration      1        15K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\rtl\decoder      1         1K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\rtl\reconstruction      1         8K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\rtl\sar_logic      1         4K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\rtl\top      1         2K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\sim_models      1         2K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\testbenches\calibration      1        12K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\testbenches\decoder      1         1K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\testbenches\reconstruction      1        10K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\testbenches\top_level      1        12K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\scripts      5        37K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\test_reports      2        13K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive      1       769B
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\Verifiy      4        24K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\Verifiy\Verifiy.srcs\sim_1\new      2        11K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\sar_adc_project      1        11K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\constrs_1\new      1       683B
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sim_1\new      5        26K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sources_1\new      5        45K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\matlab      4        17K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\matlab\generated      1         2K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-110ef75\Digital_process\Digital_process.srcs\sim_1\new      2        13K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-110ef75\Digital_process\Digital_process.srcs\sources_1\new      4        11K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\constraints      3         3K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729      3         5K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\behavior      3        29K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\behavior\outputs      4       159K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\docs      5       362K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\logs      2         2K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\rtl      3        36K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\tb      4        45K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18      5        21K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\.github      1         4K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\constraints      3         3K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\docs     16       113K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\rtl      5        45K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\scripts     10        21K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\tb      4        45K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\vivado      1        10K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\docs     15       126K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\docs\paper      2       424K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\rtl      5        45K
+02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\scripts      9        20K
+02_������֤\sar_adc_v3_refactored_c2ab24c                           5         7K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process           1        11K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs      2        10K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\.github      1         4K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\.trae\rules      1       863B
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\Docs      8        85K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\REFERENCE      1         3K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\Reports      2        82K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\constraints      1         3K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\rtl      4        29K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\rtl\calibration      1        15K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\rtl\decoder      1         1K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\rtl\reconstruction      1         8K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\rtl\sar_logic      1         4K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\rtl\top      1         2K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\sim_models      1         2K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\testbenches\calibration      1        12K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\testbenches\decoder      1         1K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\testbenches\reconstruction      1        10K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\testbenches\top_level      1        12K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\constrs_1\new      1         3K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\scripts      5        37K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\sim_1\new      5        34K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\sources_1\new      5        36K
+02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\test_reports      2        13K
+02_������֤\sar_adc_v3_refactored_c2ab24c\archive                   1       769B
+02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\Verifiy      4        24K
+02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\Verifiy\Verifiy.srcs\sim_1\new      2        11K
+02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\sar_adc_project      1        11K
+02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\constrs_1\new      1       683B
+02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sim_1\new      5        26K
+02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sources_1\new      6        52K
+02_������֤\sar_adc_v3_refactored_c2ab24c\docs                      5         8K
+02_������֤\sar_adc_v3_refactored_c2ab24c\matlab                    4        17K
+02_������֤\sar_adc_v3_refactored_c2ab24c\matlab\generated          1         2K
+02_������֤\��������                                                    6        51K
+03_IP���˵����                                                      4        34K
+04_������¼                                                        26         4M
+05_�鵵                                                           1         2K
+05_�鵵\IP���˵����_�ɰ�                                                6       121K
+05_�鵵\ǰ��������_�ɰ�                                                  6        51K
+05_�鵵\�����ƻ�_�ɰ�                                                   1        10K
+_audit\TASK-000R_20260918                                      13       152K
+_audit\TASK-000R_20260918\card5b                                5        13K
+_audit\TASK-000R_20260918\card5b\baseline_approved              1         2K
+_audit\TASK-000R_20260918\card5b\fixtures\differs               2       530B
+_audit\TASK-000R_20260918\card5b\fixtures\empty                 2       265B
+_audit\TASK-000R_20260918\card5b\fixtures\empty_current         2       282B
+_audit\TASK-000R_20260918\card5b\fixtures\missing               1       265B
+_audit\TASK-000R_20260918\card5b\fixtures\normal                2       530B
+_audit\TASK-000R_20260918\card5b\fixtures\selfwritten           2       530B
+_audit\TASK-000R_20260918\card5b\fixtures\truncated             2       523B
+_audit\TASK-000R_20260918\card5b\fixtures\volatile              1       265B
+_audit\TASK-000R_20260918\card5b\fixtures\volatile\reports      1       265B
+_audit\TASK-000R_20260918\card5b\gate                           1         8K
+_audit\TASK-000R_20260918\evidence                             11       246K
+_audit\TASK-000R_20260918\evidence\card1a_lef                   1         2K
+_audit\TASK-000R_20260918\evidence\card1a_s1                    4        36K
+_audit\TASK-000R_20260918\evidence\card1a_s2                    8       437K
+_audit\TASK-000R_20260918\evidence\card1a_s3                    3        10K
+_audit\TASK-000R_20260918\evidence\card1b                       3        24K
+_audit\TASK-000R_20260918\evidence\card1b4                      3        18K
+_audit\TASK-000R_20260918\evidence\card2b                       4         2M
+_audit\TASK-000R_20260918\evidence\card3_slow                  10        31K
+_audit\TASK-000R_20260918\evidence\card3_slow_v2               14       521K
+_audit\TASK-000R_20260918\evidence\card3b                       7        11K
+_audit\TASK-000R_20260918\evidence\card3c                       4       225K
+_audit\TASK-000R_20260918\evidence\card4b                       5         3M
+_audit\TASK-000R_20260918\evidence\card4b2                      5       364K
+_audit\TASK-000R_20260918\evidence\dryrun                       2         8K
+_audit\TASK-000R_20260918\evidence\postroute                    1         1K
+_audit\TASK-000R_20260918\evidence\sess6                        8       218K
+_audit\TASK-000R_20260918\final_delivery                       10        13M
+_audit\TASK-000R_20260918\final_delivery\scripts_bak_final      8       105K
+_audit\TASK-000R_20260918\final_delivery\scripts_bak_round3      2        41K
+_audit\TASK-000R_20260918\fixtures                              3       195K
+_audit\TASK-000R_20260918\frozen_docs                           4        58K
+_audit\TASK-000R_20260918\local\scripts                        18       169K
+_audit\TASK-000R_20260918\manifest                              6       267K
+_audit\TASK-000R_20260918\probes                               39       244K
+_audit\TASK-000R_20260918\remote\calibre                        2        12M
+_audit\TASK-000R_20260918\remote\calibre\drc                   19         3M
+_audit\TASK-000R_20260918\remote\calibre\lvs                   15         5M
+_audit\TASK-000R_20260918\remote\constraints                    2        18K
+_audit\TASK-000R_20260918\remote\fm                             4        24K
+_audit\TASK-000R_20260918\remote\logs                           4       963K
+_audit\TASK-000R_20260918\remote\mapped                         5         3M
+_audit\TASK-000R_20260918\remote\mapped_ss                      5         3M
+_audit\TASK-000R_20260918\remote\pnr\logs                      22       477K
+_audit\TASK-000R_20260918\remote\pnr\out                        6        10M
+_audit\TASK-000R_20260918\remote\pnr\reports                   10       111K
+_audit\TASK-000R_20260918\remote\pnr\reports\sta              112      1010K
+_audit\TASK-000R_20260918\remote\reports                       16       234K
+_audit\TASK-000R_20260918\remote\repro                          2         5K
+_audit\TASK-000R_20260918\remote\rtl                            4        97K
+_audit\TASK-000R_20260918\remote\rtl\.bak_v41                   4        88K
+_audit\TASK-000R_20260918\remote\scripts                       28       201K
+_audit\TASK-000R_20260918\remote\scripts\.bak_20260918_092621      2        23K
+_audit\TASK-000R_20260918\remote\scripts\.bak_20260918_093701      4        34K
+_audit\TASK-000R_20260918\remote\scripts\.bak_20260918_095239      2        36K
+_audit\TASK-000R_20260918\round3_e2e                            9        14M
+_audit\TASK-000_SAR16_20260918                                  4        58K
+_audit\TASK-000_SAR16_20260918\evidence                         7       230K
+_audit\TASK-000_SAR16_20260918\evidence\fixtures                3       195K
+_audit\TASK-000_SAR16_20260918\probes                           4        30K
+
+=== top 30 largest files ===
+         11M  09-17 21:18  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\lib_slow.lib
+         11M  09-17 21:18  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\lib_typical.lib
+          8M  09-18 00:45  02_������֤\sar16_digi_v4_paper_aligned\delivery\gds\sar_digi_paper_core_pnr.spef.smic18_par_125.spef
+          8M  09-18 13:57  02_������֤\sar16_digi_v4_paper_aligned\delivery_round3\gds\sar_digi_paper_core_merged.gds
+          8M  09-18 13:56  _audit\TASK-000R_20260918\round3_e2e\sar_digi_paper_core_merged.gds
+          8M  09-18 09:04  02_������֤\sar16_digi_v4_paper_aligned\delivery\gds_v41\sar_digi_paper_core_merged.gds
+          8M  09-18 10:00  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\gds\sar_digi_paper_core_merged.gds
+          8M  09-18 09:58  _audit\TASK-000R_20260918\remote\calibre\sar_digi_paper_core_merged.gds
+          7M  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_final\reports\sar_digi_paper_core_pnr.spef.smic18_par_125.spef
+          7M  09-18 18:14  _audit\TASK-000R_20260918\final_delivery\sar_digi_paper_core_pnr.spef.smic18_par_125.spef
+          7M  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\reports\sar_digi_paper_core_pnr.spef.smic18_par_125.spef
+          7M  09-18 09:56  _audit\TASK-000R_20260918\remote\pnr\out\sar_digi_paper_core_pnr.spef.smic18_par_125.spef
+          4M  09-18 00:45  02_������֤\sar16_digi_v4_paper_aligned\delivery\gds\sar_digi_paper_core_merged.gds
+          4M  09-17 23:42  _audit\TASK-000R_20260918\remote\calibre\sar_digi_paper_core_merged.gds.superseded
+          4M  09-18 18:12  _audit\TASK-000R_20260918\round3_e2e\final_delivered.gds
+          4M  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_final\gds\sar_digi_paper_core_merged.gds
+          4M  09-18 18:14  _audit\TASK-000R_20260918\final_delivery\sar_digi_paper_core_merged.gds
+          4M  09-18 00:45  02_������֤\sar16_digi_v4_paper_aligned\delivery\gds\sar_digi_paper_core.gds
+          4M  08-30 13:40  00_��Ŀ����\�߾��ȵ͹���Split-Sampling SAR ADC�ؼ������о����ⱨ��.pdf
+          3M  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\gds\sar_digi_paper_core.gds
+          3M  09-18 09:56  _audit\TASK-000R_20260918\remote\pnr\out\sar_digi_paper_core.gds
+          3M  09-18 13:33  _audit\TASK-000R_20260918\evidence\card4b\abstract_write_def.def
+          2M  09-18 09:53  _audit\TASK-000R_20260918\remote\mapped_ss\sar_digi_paper_core_sdf.sdf
+          2M  09-18 09:53  _audit\TASK-000R_20260918\remote\mapped\sar_digi_paper_core_sdf.sdf
+          2M  09-18 10:04  04_������¼\SAR16_GDSͼ���������.html
+          2M  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\full_sar_behavioral_validation_cn.pdf
+          2M  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\report\full_sar_behavioral_validation_cn.pdf
+          2M  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\full_sar_behavioral_validation_cn.pdf
+          2M  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\report\full_sar_behavioral_validation_cn.pdf
+          2M  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\full_sar_behavioral_validation_cn.pdf
+
+=== the backend work tree, file by file ===
+         40K  08-30 14:28  02_������֤\FIA��̬�Ƚ���Cadence���湤������ָ��.md
+        617B  08-30 14:28  02_������֤\README.md
+          2M  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf.zip
+         29K  08-30 14:28  02_������֤\�����ͼ���������ĵ�.md
+         29K  08-30 14:28  02_������֤\���Ĳ�������淽���ĵ�.md
+         31K  08-30 14:28  02_������֤\��ʿ���⹤��·���������֤��.md
+         24K  08-30 14:28  02_������֤\���ֹ�������ʼǿ��.md
+          2K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\README.md
+        381B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\SHA256SUMS.txt
+          2M  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\full_sar_behavioral_validation_cn.pdf
+          1K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\MANIFEST.md
+          3K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\README.md
+          6K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\SHA256SUMS.txt
+          1K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\THIRD_PARTY_NOTICES.md
+         53B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\__init__.py
+         24K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\full_sar_model.py
+        237B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\requirements.txt
+         16K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\run_campaign.py
+        861B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\spec.yml
+          3K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\test_full_sar_model.py
+        166K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_best_dnl_inl.pdf
+        254K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_best_dnl_inl.png
+        123K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_best_spectrum.pdf
+        213K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_best_spectrum.png
+        173K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_median_dnl_inl.pdf
+        277K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_median_dnl_inl.png
+        123K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_median_spectrum.pdf
+        197K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_median_spectrum.png
+        172K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_worst_dnl_inl.pdf
+        251K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_worst_dnl_inl.png
+        123K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_worst_spectrum.pdf
+        195K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_worst_spectrum.png
+         12K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_inl_summary.pdf
+         48K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_inl_summary.png
+         11K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_missing_codes_summary.pdf
+         42K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_missing_codes_summary.png
+         12K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_sndr_summary.pdf
+         40K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_sndr_summary.png
+        662K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_best_cal_srm.npz
+        599K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_best_nominal_no_srm.npz
+        198K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_best_oracle_srm.npz
+        660K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_median_cal_srm.npz
+        613K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_median_nominal_no_srm.npz
+        197K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_median_oracle_srm.npz
+        666K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_worst_cal_srm.npz
+        579K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_worst_nominal_no_srm.npz
+        197K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_worst_oracle_srm.npz
+        496K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\per_chip_decoder_metrics.csv
+         93K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\summary.json
+          5K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\docs\FIXED_POINT_CONTRACT.md
+          8K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\docs\VERIFICATION.md
+          2K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\logs\PDF_QA_SUMMARY.md
+          1K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\logs\PYTHON_CAMPAIGN_SUMMARY.md
+          5K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\report\academic_report_style.tex
+        314B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\report\dynamic_table_rows.tex
+          2M  08-30 13:40  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\report\full_sar_behavioral_validation_cn.pdf
+         47K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\report\full_sar_behavioral_validation_cn.tex
+         10K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\report\generate_report_assets.py
+          2K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\report\generated_metrics.tex
+        176B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\report\representative_table_rows.tex
+        307B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\report\static_table_rows.tex
+         18K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\rtl\sar_calib_ctrl_serial.sv
+         12K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\rtl\sar_reconstruction.sv
+          7K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\rtl\srm_residue_estimator.sv
+         13K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\tb\tb_gain_comp_check_lsb.sv
+         10K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\tb\tb_recon_q8_split_weights.sv
+         15K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\tb\tb_sar_recon_binary_norm.sv
+          8K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\tb\tb_srm_residue_estimator.sv
+          2K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\BACKUP_README.md
+          9K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\SHA256SUMS.txt
+        749K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_cn.pdf
+          1K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\MANIFEST.md
+          3K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\README.md
+          6K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\SHA256SUMS.txt
+          1K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\THIRD_PARTY_NOTICES.md
+         53B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\__init__.py
+         24K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\full_sar_model.py
+        237B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\requirements.txt
+         16K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\run_campaign.py
+        861B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\spec.yml
+          3K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\test_full_sar_model.py
+        166K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_best_dnl_inl.pdf
+        254K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_best_dnl_inl.png
+        123K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_best_spectrum.pdf
+        213K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_best_spectrum.png
+        173K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_median_dnl_inl.pdf
+        277K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_median_dnl_inl.png
+        123K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_median_spectrum.pdf
+        197K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_median_spectrum.png
+        172K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_worst_dnl_inl.pdf
+        251K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_worst_dnl_inl.png
+        123K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_worst_spectrum.pdf
+        195K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_worst_spectrum.png
+         12K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\fig_inl_summary.pdf
+         48K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\fig_inl_summary.png
+         11K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\fig_missing_codes_summary.pdf
+         42K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\fig_missing_codes_summary.png
+         12K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\fig_sndr_summary.pdf
+         40K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\fig_sndr_summary.png
+        662K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\highres_best_cal_srm.npz
+        599K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\highres_best_nominal_no_srm.npz
+        198K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\highres_best_oracle_srm.npz
+        660K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\highres_median_cal_srm.npz
+        613K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\highres_median_nominal_no_srm.npz
+        197K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\highres_median_oracle_srm.npz
+        666K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\highres_worst_cal_srm.npz
+        579K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\highres_worst_nominal_no_srm.npz
+        197K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\highres_worst_oracle_srm.npz
+        496K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\per_chip_decoder_metrics.csv
+         93K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\behavior\outputs\summary.json
+          5K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\docs\FIXED_POINT_CONTRACT.md
+          7K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\docs\VERIFICATION.md
+        827B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\logs\PDF_QA_SUMMARY.md
+          1K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\logs\PYTHON_CAMPAIGN_SUMMARY.md
+        314B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\report\dynamic_table_rows.tex
+        749K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\report\full_sar_behavioral_validation_cn.pdf
+         15K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\report\full_sar_behavioral_validation_cn.tex
+          6K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\report\generate_report_assets.py
+        673B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\report\generated_metrics.tex
+        176B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\report\representative_table_rows.tex
+        307B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\report\static_table_rows.tex
+         18K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\rtl\sar_calib_ctrl_serial.sv
+         12K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\rtl\sar_reconstruction.sv
+          7K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\rtl\srm_residue_estimator.sv
+         13K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\tb\tb_gain_comp_check_lsb.sv
+         10K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\tb\tb_recon_q8_split_weights.sv
+         15K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\tb\tb_sar_recon_binary_norm.sv
+          8K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\tb\tb_srm_residue_estimator.sv
+          2K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\README.md
+        381B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\SHA256SUMS.txt
+          2M  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\full_sar_behavioral_validation_cn.pdf
+          1K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\MANIFEST.md
+          3K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\README.md
+          6K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\SHA256SUMS.txt
+          1K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\THIRD_PARTY_NOTICES.md
+         53B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\__init__.py
+         24K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\full_sar_model.py
+        237B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\requirements.txt
+         16K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\run_campaign.py
+        861B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\spec.yml
+          3K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\test_full_sar_model.py
+        166K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_best_dnl_inl.pdf
+        254K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_best_dnl_inl.png
+        123K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_best_spectrum.pdf
+        213K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_best_spectrum.png
+        173K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_median_dnl_inl.pdf
+        277K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_median_dnl_inl.png
+        123K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_median_spectrum.pdf
+        197K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_median_spectrum.png
+        172K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_worst_dnl_inl.pdf
+        251K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_worst_dnl_inl.png
+        123K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_worst_spectrum.pdf
+        195K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_worst_spectrum.png
+         12K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_inl_summary.pdf
+         48K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_inl_summary.png
+         11K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_missing_codes_summary.pdf
+         42K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_missing_codes_summary.png
+         12K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_sndr_summary.pdf
+         40K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_sndr_summary.png
+        662K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_best_cal_srm.npz
+        599K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_best_nominal_no_srm.npz
+        198K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_best_oracle_srm.npz
+        660K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_median_cal_srm.npz
+        613K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_median_nominal_no_srm.npz
+        197K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_median_oracle_srm.npz
+        666K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_worst_cal_srm.npz
+        579K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_worst_nominal_no_srm.npz
+        197K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_worst_oracle_srm.npz
+        496K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\per_chip_decoder_metrics.csv
+         93K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\summary.json
+          5K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\docs\FIXED_POINT_CONTRACT.md
+          8K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\docs\VERIFICATION.md
+          2K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\logs\PDF_QA_SUMMARY.md
+          1K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\logs\PYTHON_CAMPAIGN_SUMMARY.md
+          5K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\report\academic_report_style.tex
+        314B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\report\dynamic_table_rows.tex
+          2M  08-30 13:40  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\report\full_sar_behavioral_validation_cn.pdf
+         47K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\report\full_sar_behavioral_validation_cn.tex
+         10K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\report\generate_report_assets.py
+          2K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\report\generated_metrics.tex
+        176B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\report\representative_table_rows.tex
+        307B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\report\static_table_rows.tex
+         18K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\rtl\sar_calib_ctrl_serial.sv
+         12K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\rtl\sar_reconstruction.sv
+          7K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\rtl\srm_residue_estimator.sv
+         13K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\tb\tb_gain_comp_check_lsb.sv
+         10K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\tb\tb_recon_q8_split_weights.sv
+         15K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\tb\tb_sar_recon_binary_norm.sv
+          8K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\tb\tb_srm_residue_estimator.sv
+          2K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\README.md
+        391B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\SHA256SUMS.txt
+          2M  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\full_sar_behavioral_validation_cn.pdf
+          1K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\MANIFEST.md
+          3K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\README.md
+          6K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\SHA256SUMS.txt
+          1K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\THIRD_PARTY_NOTICES.md
+         53B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\__init__.py
+         24K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\full_sar_model.py
+        237B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\requirements.txt
+         16K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\run_campaign.py
+        861B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\spec.yml
+          3K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\test_full_sar_model.py
+        166K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_best_dnl_inl.pdf
+        254K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_best_dnl_inl.png
+        123K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_best_spectrum.pdf
+        213K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_best_spectrum.png
+        173K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_median_dnl_inl.pdf
+        277K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_median_dnl_inl.png
+        123K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_median_spectrum.pdf
+        197K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_median_spectrum.png
+        172K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_worst_dnl_inl.pdf
+        251K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_worst_dnl_inl.png
+        123K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_worst_spectrum.pdf
+        195K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_worst_spectrum.png
+         12K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_inl_summary.pdf
+         48K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_inl_summary.png
+         11K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_missing_codes_summary.pdf
+         42K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_missing_codes_summary.png
+         12K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_sndr_summary.pdf
+         40K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_sndr_summary.png
+        662K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_best_cal_srm.npz
+        599K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_best_nominal_no_srm.npz
+        198K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_best_oracle_srm.npz
+        660K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_median_cal_srm.npz
+        613K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_median_nominal_no_srm.npz
+        197K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_median_oracle_srm.npz
+        666K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_worst_cal_srm.npz
+        579K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_worst_nominal_no_srm.npz
+        197K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_worst_oracle_srm.npz
+        496K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\per_chip_decoder_metrics.csv
+         93K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\summary.json
+          5K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\docs\FIXED_POINT_CONTRACT.md
+          8K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\docs\VERIFICATION.md
+          2K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\logs\PDF_QA_SUMMARY.md
+          1K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\logs\PYTHON_CAMPAIGN_SUMMARY.md
+          5K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\report\academic_report_style.tex
+        314B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\report\dynamic_table_rows.tex
+          2M  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\report\full_sar_behavioral_validation_cn.pdf
+         47K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\report\full_sar_behavioral_validation_cn.tex
+         10K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\report\generate_report_assets.py
+          2K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\report\generated_metrics.tex
+        176B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\report\representative_table_rows.tex
+        307B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\report\static_table_rows.tex
+         18K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\rtl\sar_calib_ctrl_serial.sv
+         12K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\rtl\sar_reconstruction.sv
+          7K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\rtl\srm_residue_estimator.sv
+         13K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\tb\tb_gain_comp_check_lsb.sv
+         10K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\tb\tb_recon_q8_split_weights.sv
+         15K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\tb\tb_sar_recon_binary_norm.sv
+          8K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\tb\tb_srm_residue_estimator.sv
+          2K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\README.md
+        391B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\SHA256SUMS.txt
+          2M  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\full_sar_behavioral_validation_cn.pdf
+          1K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\MANIFEST.md
+          3K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\README.md
+          6K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\SHA256SUMS.txt
+          1K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\THIRD_PARTY_NOTICES.md
+         53B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\__init__.py
+         24K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\full_sar_model.py
+        237B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\requirements.txt
+         16K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\run_campaign.py
+        861B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\spec.yml
+          3K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\test_full_sar_model.py
+        166K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_best_dnl_inl.pdf
+        254K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_best_dnl_inl.png
+        123K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_best_spectrum.pdf
+        213K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_best_spectrum.png
+        173K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_median_dnl_inl.pdf
+        277K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_median_dnl_inl.png
+        123K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_median_spectrum.pdf
+        197K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_median_spectrum.png
+        172K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_worst_dnl_inl.pdf
+        251K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_worst_dnl_inl.png
+        123K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_worst_spectrum.pdf
+        195K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_highres_worst_spectrum.png
+         12K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_inl_summary.pdf
+         48K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_inl_summary.png
+         11K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_missing_codes_summary.pdf
+         42K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_missing_codes_summary.png
+         12K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_sndr_summary.pdf
+         40K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\fig_sndr_summary.png
+        662K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_best_cal_srm.npz
+        599K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_best_nominal_no_srm.npz
+        198K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_best_oracle_srm.npz
+        660K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_median_cal_srm.npz
+        613K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_median_nominal_no_srm.npz
+        197K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_median_oracle_srm.npz
+        666K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_worst_cal_srm.npz
+        579K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_worst_nominal_no_srm.npz
+        197K  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\highres_worst_oracle_srm.npz
+        496K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\per_chip_decoder_metrics.csv
+         93K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\behavior\outputs\summary.json
+          5K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\docs\FIXED_POINT_CONTRACT.md
+          8K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\docs\VERIFICATION.md
+          2K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\logs\PDF_QA_SUMMARY.md
+          1K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\logs\PYTHON_CAMPAIGN_SUMMARY.md
+          5K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\report\academic_report_style.tex
+        314B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\report\dynamic_table_rows.tex
+          2M  08-30 13:40  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\report\full_sar_behavioral_validation_cn.pdf
+         47K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\report\full_sar_behavioral_validation_cn.tex
+         10K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\report\generate_report_assets.py
+          2K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\report\generated_metrics.tex
+        176B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\report\representative_table_rows.tex
+        307B  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\report\static_table_rows.tex
+         18K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\rtl\sar_calib_ctrl_serial.sv
+         12K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\rtl\sar_reconstruction.sv
+          7K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\rtl\srm_residue_estimator.sv
+         13K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\tb\tb_gain_comp_check_lsb.sv
+         10K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\tb\tb_recon_q8_split_weights.sv
+         15K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\tb\tb_sar_recon_binary_norm.sv
+          8K  08-30 14:28  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\tb\tb_srm_residue_estimator.sv
+          3K  09-17 19:45  02_������֤\sar16_digi_v4_paper_aligned\README.md
+          6K  09-17 23:42  02_������֤\sar16_digi_v4_paper_aligned\backend\README_����ָ��.md
+         14K  09-17 21:19  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\����Ŀ��ֵ�嵥_20260917.md
+         45K  09-17 21:39  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\����˱�_20260917.md
+          7K  09-17 21:37  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\README.md
+          4K  09-17 21:32  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\array_area.py
+          5K  09-17 21:30  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\attrib.py
+          7K  09-17 21:31  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\cone.py
+          6K  09-17 21:34  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\cone_break.py
+          9K  09-17 21:29  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\delta.py
+          4K  09-17 21:25  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\diagnose.py
+          5K  09-17 21:35  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\modcat.py
+         10K  09-17 21:28  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\parse_area.py
+        850B  09-17 21:31  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\prefix.py
+          2K  09-17 21:27  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\probe_miss.py
+        697B  09-17 21:26  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\probe_mod.py
+          4K  09-17 21:32  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\v3_detail.py
+          6K  09-17 21:32  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\array_area.md
+          4B  09-17 21:32  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\array_area_console.txt
+          4B  09-17 21:30  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\attrib_console.txt
+          2K  09-17 21:30  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\block_attribution.md
+        321B  09-17 21:28  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\category.txt
+          5K  09-17 21:28  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\celltype_top.txt
+         13K  09-17 21:30  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\compare.md
+          4B  09-17 21:34  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\cone_break_console.txt
+          4K  09-17 21:34  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\cone_breakdown.md
+          4B  09-17 21:32  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\cone_console.txt
+          2K  09-17 21:32  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\cone_report.md
+         32B  09-17 21:30  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\delta_console.txt
+          2K  09-17 21:25  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\diagnose.txt
+          0B  09-17 21:24  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\dw_ops_attr.txt
+          2K  09-17 21:28  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\main_log.txt
+          4B  09-17 21:35  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\modcat_console.txt
+          6K  09-17 21:35  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\module_category.md
+        154B  09-17 21:31  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\net_prefix_v3_mapped_netlist.txt
+        509B  09-17 21:31  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\net_prefix_v4_mapped_netlist.txt
+          1K  09-17 21:28  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\op_attr.txt
+        216B  09-17 21:24  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\per_module.txt
+         19K  09-17 21:28  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\per_module_celltype.txt
+         71B  09-17 21:31  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\prefix_console.txt
+          9K  09-17 21:27  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\probe_miss.txt
+          2K  09-17 21:26  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\probe_mod.txt
+          4K  09-17 21:28  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\reg_arrays.txt
+          3K  09-17 21:24  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\reg_ledger.txt
+          2K  09-17 21:28  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\reg_scalar.txt
+          2K  09-17 21:24  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\seq_types.txt
+          4K  09-17 21:32  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\v3_detail.md
+          4B  09-17 21:32  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\derived\v3_detail_console.txt
+         11M  09-17 21:18  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\lib_slow.lib
+         11M  09-17 21:18  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\lib_typical.lib
+          1M  09-17 21:28  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\v3_mapped_netlist.v
+          2K  09-17 21:28  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\v3_reports_area.rpt
+          1K  09-17 21:17  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\v3_reports_area_flat.rpt
+         29K  09-17 21:28  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\v3_reports_resources.rpt
+          9K  09-17 21:33  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\v3_rtl_srm_residue_estimator.sv
+         12K  09-17 21:33  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\v4_constraints_sdc
+         66K  09-17 21:33  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\v4_logs_dc.log
+          1M  09-17 21:17  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\v4_mapped_netlist.v
+          2K  09-17 21:17  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\v4_reports_area.rpt
+          1K  09-17 21:17  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\v4_reports_area_flat.rpt
+          2K  09-17 21:28  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\v4_reports_clock_gating.rpt
+          2K  09-17 21:28  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\v4_reports_power.rpt
+          3K  09-17 21:28  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\v4_reports_qor.rpt
+         29K  09-17 21:17  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\v4_reports_resources.rpt
+        137K  09-17 21:28  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\v4_reports_timing_setup.rpt
+         26K  09-17 21:33  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\v4_rtl_sar_calib_ctrl_serial.sv
+         29K  09-17 21:33  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\v4_rtl_sar_reconstruction.sv
+         28K  09-17 21:33  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\v4_rtl_srm_residue_estimator.sv
+         10K  09-17 21:17  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\v4_scripts_dc_synth.tcl
+          1M  09-17 21:28  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\v4ss_mapped_netlist.v
+          2K  09-17 21:17  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\v4ss_reports_area.rpt
+         12K  09-17 19:57  02_������֤\sar16_digi_v4_paper_aligned\backend\constraints\sar_adc_digital_top.sdc
+          8K  09-17 20:06  02_������֤\sar16_digi_v4_paper_aligned\backend\constraints\sar_adc_digital_top_pnr.sdc
+         10K  09-17 21:50  02_������֤\sar16_digi_v4_paper_aligned\backend\constraints\sar_digi_paper_core.sdc
+          7K  09-17 21:56  02_������֤\sar16_digi_v4_paper_aligned\backend\constraints\sar_digi_paper_core_pnr.sdc
+        495K  09-18 09:59  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images\01_die_all_layers.png
+        106K  09-18 09:59  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images\02_device_layers.png
+        232K  09-18 09:59  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images\03_metal1.png
+        118K  09-18 09:59  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images\04_metal2_metal3.png
+         29K  09-18 09:59  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images\05_upper_metals_m4_m6.png
+        319K  09-18 09:59  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images\06_contact_via.png
+         34K  09-18 09:59  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images\07_cell_footprint.png
+         39K  09-18 09:59  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images\08_zoom_40um_all.png
+         20K  09-18 09:59  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images\09_zoom_12um_devices.png
+         17K  09-18 09:59  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images\10_zoom_3um_transistor.png
+          5K  09-18 09:59  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images\gds_census.json
+        132K  09-18 09:58  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images\trial_all.png
+        526K  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images_v43\01_die_all_layers.png
+        105K  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images_v43\02_device_layers.png
+        230K  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images_v43\03_metal1.png
+        119K  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images_v43\04_metal2_metal3.png
+         29K  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images_v43\05_upper_metals_m4_m6.png
+        322K  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images_v43\06_contact_via.png
+         34K  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images_v43\07_cell_footprint.png
+         39K  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images_v43\08_zoom_40um_all.png
+         19K  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images_v43\09_zoom_12um_devices.png
+         17K  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images_v43\10_zoom_3um_transistor.png
+          5K  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images_v43\gds_census.json
+        646B  09-18 10:04  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\_fix_report.py
+          1K  09-18 10:18  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\_rechist.py
+          1K  09-17 20:31  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\calibre_chain.sh
+          8K  09-17 23:53  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\collect_result.sh
+         12K  09-18 07:40  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\dc_synth_paper_core.tcl
+         10K  09-17 19:57  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\dc_synth_v4.tcl
+          5K  09-18 09:08  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\diag_lvs_objs.sh
+          5K  09-18 09:10  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\diag_lvs_ports.sh
+          4K  09-18 09:08  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\diag_lvs_root.sh
+         17K  09-18 07:59  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\fc_pnr_paper_core.tcl
+         12K  09-17 20:22  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\fc_pnr_v4paper.tcl
+          4K  09-17 21:07  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\final_calibre.sh
+          7K  09-17 21:03  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\fix_precision_and_run.sh
+          9K  09-18 09:36  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\fix_repro_authority.py
+          3K  09-18 10:17  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\gaps_v43.sh
+         11K  09-18 09:55  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\gds_analyze.py
+          3K  09-18 10:18  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\gds_text_census.py
+         17K  09-18 10:00  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\gds_tool.py
+         68K  09-18 19:44  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\make_delivery_report.py
+         28K  09-18 19:45  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\make_four_md.py
+         30K  09-18 10:04  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\make_gds_report.py
+         18K  09-18 09:26  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\patch_pnr_and_lvs.py
+          8K  09-18 09:52  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\patch_round3.py
+          4K  09-18 09:23  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\pg_build_probe.tcl
+          6K  09-18 09:20  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\pg_probe.tcl
+          5K  09-18 09:22  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\pg_probe2.tcl
+          4K  09-18 09:24  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\pg_syntax_probe.tcl
+          2K  09-18 09:38  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\port_census_v42.sh
+          4K  09-18 10:15  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\port_census_v43.sh
+        493B  09-17 23:21  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probe_backend.sh
+        667B  09-17 22:14  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probe_cmd001.sh
+          1K  09-17 22:15  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probe_final.sh
+          2K  09-17 23:36  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probe_final_state.sh
+          4K  09-18 09:50  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probe_fix_pins_pg.tcl
+        798B  09-17 22:00  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probe_pc_area.sh
+        685B  09-17 22:55  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probe_scan.sh
+        940B  09-17 23:03  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probe_scan2.sh
+        894B  09-17 22:07  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probe_spef.sh
+          1K  09-17 22:13  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probe_sta_pc.sh
+          1K  09-17 23:36  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probe_sta_power.sh
+        621B  09-17 22:13  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probe_tb_sta.sh
+          5K  09-18 09:59  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\render_all.py
+         12K  09-18 07:56  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\reproduce_all.sh
+          2K  09-17 20:22  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\rerun_all_fixed.sh
+        706B  09-17 23:17  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\run_backend_paper_core.sh
+          9K  09-17 20:45  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\run_calibre.sh
+          9K  09-18 07:22  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\run_calibre_drc_paper_core.sh
+          3K  09-17 21:51  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\run_dc_paper_core.sh
+          5K  09-17 20:28  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\run_dc_v4.sh
+          8K  09-17 20:08  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\run_flow_paper.sh
+          5K  09-18 08:03  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\run_formality_paper_core.sh
+         10K  09-18 08:14  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\run_lvs_paper_core.sh
+          3K  09-17 22:07  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\run_pnr_paper_core.sh
+          4K  09-18 08:52  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\run_pwr_pt.sh
+          6K  09-17 20:35  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\run_sta_only.sh
+          6K  09-17 22:15  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\run_sta_paper_core.sh
+          3K  09-18 09:18  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\run_tb_paper_core.sh
+          6K  09-17 23:03  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\scan_lut_area.tcl
+          3K  09-17 22:51  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\setup_paper_core.sh
+          1K  09-17 19:57  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\setup_v4_proj.sh
+         13K  09-18 07:56  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\sta_pt_paper_core.tcl
+          4K  09-18 10:15  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\summarize_open_issues.sh
+          3K  09-18 09:41  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\verify_delivery_gds.sh
+        647B  09-17 23:39  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\check_new_scripts.sh
+        337B  09-18 08:28  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\check_saif.sh
+        511B  09-17 20:40  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\go_calibre.sh
+        221B  09-17 20:48  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\go_fixprec.sh
+          2K  09-18 08:58  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\go_jobs.sh
+        887B  09-18 08:29  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\go_pwr_chain.sh
+        292B  09-18 08:24  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\go_pwr_probe.sh
+          1K  09-17 20:28  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_base.sh
+        725B  09-17 23:52  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_calfail.sh
+          1K  09-17 20:23  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_calibre.sh
+          1K  09-18 00:02  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_cdl_bytes.sh
+          2K  09-17 20:04  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_dc.sh
+          1K  09-17 20:04  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_dc2.sh
+          1K  09-18 07:55  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_decclk.sh
+          1K  09-18 07:18  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_dffsx1_layers.sh
+          1K  09-17 21:07  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_drcres.sh
+          3K  09-18 07:20  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_filemerge.sh
+          2K  09-18 07:21  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_filemerge2.sh
+          2K  09-18 00:06  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_find_fullgds.sh
+          1K  09-18 08:02  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_fm_diag.sh
+          2K  09-17 23:41  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_gds_api.sh
+          2K  09-17 23:40  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_gds_facts.sh
+          2K  09-17 23:46  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_gds_masters.sh
+          2K  09-17 21:10  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_lib.sh
+        569B  09-18 00:06  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_lvs_ext.sh
+          1K  09-18 00:05  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_lvs_nothing.sh
+          2K  09-18 07:25  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_lvs_ports.sh
+          2K  09-18 08:24  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_lvs_ports2.sh
+          2K  09-18 08:25  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_lvs_ports3.sh
+        637B  09-17 23:57  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_lvs_rep.sh
+        799B  09-17 20:26  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_merge.sh
+          2K  09-17 20:37  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_merge2.sh
+          2K  09-18 07:20  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_merge_api.sh
+          3K  09-18 07:19  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_merge_fix.sh
+          1K  09-17 23:47  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_netfmt.sh
+          1K  09-17 23:39  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_parse.sh
+          2K  09-18 07:27  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_pg_api.sh
+       1002B  09-18 07:50  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_pg_err2.sh
+        534B  09-18 07:44  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_pg_raw.sh
+          1K  09-18 08:04  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_pg_strap.sh
+          1K  09-18 07:38  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_pg_usage.sh
+          1K  09-18 07:58  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_pg_usage2.sh
+          1K  09-17 20:52  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_prec.sh
+        741B  09-17 20:58  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_prec2.sh
+        653B  09-17 20:31  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_prog.sh
+        345B  09-17 20:34  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_pt.sh
+        876B  09-17 20:34  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_pt2.sh
+          2K  09-18 07:18  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_scgds.sh
+        805B  09-17 20:33  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_sta.sh
+        813B  09-18 00:38  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_sta_hang.sh
+        564B  09-17 20:26  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_tools.sh
+          1K  09-17 20:28  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_wlm.sh
+          3K  09-18 08:07  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_wns.sh
+          3K  09-18 08:15  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_wns2.sh
+          2K  09-18 08:53  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\probe_wns3.sh
+          3K  09-18 07:15  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\recon_all.sh
+          2K  09-18 07:17  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\recon_pdk.sh
+        445B  09-17 20:32  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\relaunch_calibre.sh
+          2K  09-18 00:45  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes\stage_delivery.sh
+          8K  09-18 09:40  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42\collect_result.sh
+          5K  09-18 09:40  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42\diag_lvs_objs.sh
+          5K  09-18 09:40  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42\diag_lvs_ports.sh
+          4K  09-18 09:40  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42\diag_lvs_root.sh
+         24K  09-18 09:39  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42\fc_pnr_paper_core.tcl
+          9K  09-18 09:40  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42\fix_repro_authority.py
+         18K  09-18 09:40  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42\patch_pnr_and_lvs.py
+          4K  09-18 09:39  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42\pg_build_probe.tcl
+          5K  09-18 09:39  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42\pg_probe2.tcl
+          4K  09-18 09:40  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42\pg_syntax_probe.tcl
+          2K  09-18 09:40  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42\port_census_v42.sh
+         11K  09-18 09:39  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42\reproduce_all.sh
+          9K  09-18 09:40  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42\run_calibre_drc_paper_core.sh
+          3K  09-18 09:40  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42\run_dc_paper_core.sh
+         11K  09-18 09:39  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42\run_lvs_paper_core.sh
+          3K  09-18 09:40  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42\run_pnr_paper_core.sh
+          6K  09-18 09:40  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42\run_sta_paper_core.sh
+          3K  09-18 09:40  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42\run_tb_paper_core.sh
+          6K  09-18 09:04  02_������֤\sar16_digi_v4_paper_aligned\delivery\README_GDS����˵��.md
+          5K  09-18 09:04  02_������֤\sar16_digi_v4_paper_aligned\delivery\README_v41����˵��.md
+          4M  09-18 00:45  02_������֤\sar16_digi_v4_paper_aligned\delivery\gds\sar_digi_paper_core.gds
+          4K  09-18 00:45  02_������֤\sar16_digi_v4_paper_aligned\delivery\gds\sar_digi_paper_core.lef
+          4M  09-18 00:45  02_������֤\sar16_digi_v4_paper_aligned\delivery\gds\sar_digi_paper_core_merged.gds
+        107K  09-18 00:45  02_������֤\sar16_digi_v4_paper_aligned\delivery\gds\sar_digi_paper_core_pnr.sdc
+          8M  09-18 00:45  02_������֤\sar16_digi_v4_paper_aligned\delivery\gds\sar_digi_paper_core_pnr.spef.smic18_par_125.spef
+        439K  09-18 00:45  02_������֤\sar16_digi_v4_paper_aligned\delivery\gds\sar_digi_paper_core_pnr.v
+          7K  09-18 00:45  02_������֤\sar16_digi_v4_paper_aligned\delivery\gds\sta_pc_derate.txt
+          2K  09-18 00:45  02_������֤\sar16_digi_v4_paper_aligned\delivery\gds\sta_pc_summary.txt
+          4K  09-18 09:04  02_������֤\sar16_digi_v4_paper_aligned\delivery\gds_v41\sar_digi_paper_core.lef
+          8M  09-18 09:04  02_������֤\sar16_digi_v4_paper_aligned\delivery\gds_v41\sar_digi_paper_core_merged.gds
+        107K  09-18 09:04  02_������֤\sar16_digi_v4_paper_aligned\delivery\gds_v41\sar_digi_paper_core_pnr.sdc
+        379K  09-18 09:04  02_������֤\sar16_digi_v4_paper_aligned\delivery\gds_v41\sar_digi_paper_core_pnr.v
+          2K  09-18 00:45  02_������֤\sar16_digi_v4_paper_aligned\delivery\reports\RESULT_RUN3.env
+          2K  09-18 00:45  02_������֤\sar16_digi_v4_paper_aligned\delivery\reports\RESULT_RUN3_current.env
+          2K  09-18 00:45  02_������֤\sar16_digi_v4_paper_aligned\delivery\reports\area.rpt
+          1M  09-18 00:45  02_������֤\sar16_digi_v4_paper_aligned\delivery\reports\drc.log
+        785B  09-18 00:45  02_������֤\sar16_digi_v4_paper_aligned\delivery\reports\fc_area.rpt
+        547B  09-18 00:45  02_������֤\sar16_digi_v4_paper_aligned\delivery\reports\fc_congestion.rpt
+        842B  09-18 00:45  02_������֤\sar16_digi_v4_paper_aligned\delivery\reports\fc_util.rpt
+         15K  09-18 00:45  02_������֤\sar16_digi_v4_paper_aligned\delivery\reports\lvs.rep
+          2K  09-18 00:45  02_������֤\sar16_digi_v4_paper_aligned\delivery\reports\power.rpt
+          3K  09-18 00:45  02_������֤\sar16_digi_v4_paper_aligned\delivery\reports\qor.rpt
+         10K  09-18 09:04  02_������֤\sar16_digi_v4_paper_aligned\delivery\reports_v41\area.rpt
+          2K  09-18 09:04  02_������֤\sar16_digi_v4_paper_aligned\delivery\reports_v41\clock_gating.rpt
+        657K  09-18 09:04  02_������֤\sar16_digi_v4_paper_aligned\delivery\reports_v41\core_calib.saif
+        645K  09-18 09:04  02_������֤\sar16_digi_v4_paper_aligned\delivery\reports_v41\core_operating.saif
+         15K  09-18 09:04  02_������֤\sar16_digi_v4_paper_aligned\delivery\reports_v41\formality.log
+          2K  09-18 09:04  02_������֤\sar16_digi_v4_paper_aligned\delivery\reports_v41\power.rpt
+          2K  09-18 09:04  02_������֤\sar16_digi_v4_paper_aligned\delivery\reports_v41\power_calib_saif.rpt
+          1K  09-18 09:04  02_������֤\sar16_digi_v4_paper_aligned\delivery\reports_v41\power_operating_saif.rpt
+         10K  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_final\README_���ս���˵��.md
+        182K  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_final\gds\sar_digi_paper_core.lef
+          4M  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_final\gds\sar_digi_paper_core_merged.gds
+          2K  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_final\reports\RESULT_CURRENT.env
+         32K  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_final\reports\drc_CAL.SUM
+          1K  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_final\reports\fc_pg.rpt
+        929K  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_final\reports\fc_pnr.log
+       1011K  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_final\reports\lvs.rep
+        107K  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_final\reports\sar_digi_paper_core_pnr.sdc
+          7M  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_final\reports\sar_digi_paper_core_pnr.spef.smic18_par_125.spef
+        372K  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_final\reports\sar_digi_paper_core_pnr.v
+          8K  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_final\scripts_backup\collect_result.sh
+          9K  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_final\scripts_backup\collect_result.sh.before_backtick
+         29K  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_final\scripts_backup\fc_pnr_paper_core.tcl
+         16K  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_final\scripts_backup\patch_round3.diff
+          9K  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_final\scripts_backup\run_calibre_drc_paper_core.sh
+         11K  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_final\scripts_backup\run_calibre_drc_paper_core.sh.before_capfix
+         13K  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_final\scripts_backup\run_calibre_drc_paper_core.sh.before_tagfix
+         13K  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_final\scripts_backup\run_calibre_drc_paper_core.sh.before_trim
+         11K  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_final\scripts_backup\run_lvs_paper_core.sh
+          6K  09-18 18:15  02_������֤\sar16_digi_v4_paper_aligned\delivery_round3\README_round3����˵��.md
+         16K  09-18 13:57  02_������֤\sar16_digi_v4_paper_aligned\delivery_round3\patch_round3.diff
+        182K  09-18 13:57  02_������֤\sar16_digi_v4_paper_aligned\delivery_round3\gds\sar_digi_paper_core.lef
+          8M  09-18 13:57  02_������֤\sar16_digi_v4_paper_aligned\delivery_round3\gds\sar_digi_paper_core_merged.gds
+          2K  09-18 13:57  02_������֤\sar16_digi_v4_paper_aligned\delivery_round3\reports\RESULT_CURRENT.env
+         32K  09-18 13:57  02_������֤\sar16_digi_v4_paper_aligned\delivery_round3\reports\drc_CAL.SUM
+          1K  09-18 13:57  02_������֤\sar16_digi_v4_paper_aligned\delivery_round3\reports\fc_pg_POSTROUTE.rpt
+        923K  09-18 13:57  02_������֤\sar16_digi_v4_paper_aligned\delivery_round3\reports\fc_pnr_round3.log
+        866K  09-18 13:57  02_������֤\sar16_digi_v4_paper_aligned\delivery_round3\reports\lvs.rep
+        373K  09-18 13:57  02_������֤\sar16_digi_v4_paper_aligned\delivery_round3\reports\sar_digi_paper_core_pnr.v
+         11K  09-18 13:58  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\README_GDS����˵��.md
+          3M  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\gds\sar_digi_paper_core.gds
+          4K  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\gds\sar_digi_paper_core.lef
+          8M  09-18 10:00  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\gds\sar_digi_paper_core_merged.gds
+        526K  09-18 10:05  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\gds_images\01_die_all_layers.png
+        105K  09-18 10:05  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\gds_images\02_device_layers.png
+        230K  09-18 10:05  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\gds_images\03_metal1.png
+        119K  09-18 10:05  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\gds_images\04_metal2_metal3.png
+         29K  09-18 10:05  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\gds_images\05_upper_metals_m4_m6.png
+        322K  09-18 10:05  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\gds_images\06_contact_via.png
+         34K  09-18 10:05  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\gds_images\07_cell_footprint.png
+         39K  09-18 10:05  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\gds_images\08_zoom_40um_all.png
+         19K  09-18 10:05  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\gds_images\09_zoom_12um_devices.png
+         17K  09-18 10:05  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\gds_images\10_zoom_3um_transistor.png
+          5K  09-18 10:05  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\gds_images\gds_census.json
+          2K  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\reports\RESULT_CURRENT.env
+         32K  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\reports\drc_CAL.SUM
+          1M  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\reports\lvs.rep
+        107K  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\reports\sar_digi_paper_core_pnr.sdc
+          7M  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\reports\sar_digi_paper_core_pnr.spef.smic18_par_125.spef
+        371K  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\reports\sar_digi_paper_core_pnr.v
+          7K  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\reports\sta_pc_derate.txt
+          2K  09-18 10:01  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42\reports\sta_pc_summary.txt
+        713K  09-18 19:37  02_������֤\sar16_digi_v4_paper_aligned\gds_images_final\01_die_all_layers.png
+        105K  09-18 19:37  02_������֤\sar16_digi_v4_paper_aligned\gds_images_final\02_device_layers.png
+        232K  09-18 19:37  02_������֤\sar16_digi_v4_paper_aligned\gds_images_final\03_metal1.png
+        204K  09-18 19:37  02_������֤\sar16_digi_v4_paper_aligned\gds_images_final\04_metal2_metal3.png
+         50K  09-18 19:37  02_������֤\sar16_digi_v4_paper_aligned\gds_images_final\05_upper_metals_m4_m6.png
+        340K  09-18 19:37  02_������֤\sar16_digi_v4_paper_aligned\gds_images_final\06_contact_via.png
+         34K  09-18 19:37  02_������֤\sar16_digi_v4_paper_aligned\gds_images_final\07_cell_footprint.png
+         53K  09-18 19:37  02_������֤\sar16_digi_v4_paper_aligned\gds_images_final\08_zoom_40um_all.png
+         20K  09-18 19:37  02_������֤\sar16_digi_v4_paper_aligned\gds_images_final\09_zoom_12um_devices.png
+         17K  09-18 19:37  02_������֤\sar16_digi_v4_paper_aligned\gds_images_final\10_zoom_3um_transistor.png
+          5K  09-18 19:37  02_������֤\sar16_digi_v4_paper_aligned\gds_images_final\gds_census.json
+          8K  09-17 19:44  02_������֤\sar16_digi_v4_paper_aligned\gen\gen_srm_lut.py
+          3K  09-17 19:45  02_������֤\sar16_digi_v4_paper_aligned\gen\srm_lut_paper_IRN59u1_LSB80uV.sv
+         10K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\dc\area.rpt
+        304B  09-18 19:33  02_������֤\sar16_digi_v4_paper_aligned\report_pack\dc\check_timing.rpt
+          2K  09-18 19:33  02_������֤\sar16_digi_v4_paper_aligned\report_pack\dc\clock_gating.rpt
+        671B  09-18 19:33  02_������֤\sar16_digi_v4_paper_aligned\report_pack\dc\clocks.rpt
+          2K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\dc\power.rpt
+          3K  09-18 19:33  02_������֤\sar16_digi_v4_paper_aligned\report_pack\dc\qor.rpt
+         10K  09-18 19:33  02_������֤\sar16_digi_v4_paper_aligned\report_pack\dc\resources.rpt
+         37K  09-18 19:33  02_������֤\sar16_digi_v4_paper_aligned\report_pack\dc\timing_hold.rpt
+        139K  09-18 19:33  02_������֤\sar16_digi_v4_paper_aligned\report_pack\dc\timing_setup.rpt
+          9K  09-18 19:33  02_������֤\sar16_digi_v4_paper_aligned\report_pack\dc\violators.rpt
+          6K  09-18 19:34  02_������֤\sar16_digi_v4_paper_aligned\report_pack\gls\act_operating.rpt
+          2K  09-18 19:34  02_������֤\sar16_digi_v4_paper_aligned\report_pack\gls\power_default.rpt
+          1K  09-18 19:34  02_������֤\sar16_digi_v4_paper_aligned\report_pack\gls\power_operating.rpt
+        785B  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\pnr\fc_area.rpt
+         14K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\pnr\fc_check_routes.rpt
+          2K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\pnr\fc_clock_qor.rpt
+        547B  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\pnr\fc_congestion.rpt
+          1K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\pnr\fc_pg.rpt
+          4K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\pnr\fc_qor.rpt
+         48B  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\pnr\fc_route.rpt
+         36K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\pnr\fc_timing_hold.rpt
+         49K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\pnr\fc_timing_setup.rpt
+        842B  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\pnr\fc_util.rpt
+          3K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\pnr\fc_violators.rpt
+          5K  09-18 19:33  02_������֤\sar16_digi_v4_paper_aligned\report_pack\sim\simv_pc.log
+          3K  09-18 19:33  02_������֤\sar16_digi_v4_paper_aligned\report_pack\sim\vcs_pc_build.log
+          7K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\sta\sta_pc_derate.txt
+        796B  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\sta\sta_pc_fast_pc_check.rpt
+          1K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\sta\sta_pc_fast_pc_clock_skew.rpt
+          1K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\sta\sta_pc_fast_pc_coverage.rpt
+         48K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\sta\sta_pc_fast_pc_hold.rpt
+          3K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\sta\sta_pc_fast_pc_qor.rpt
+        340B  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\sta\sta_pc_fast_pc_setup.rpt
+        796B  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\sta\sta_pc_slow_pc_check.rpt
+          1K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\sta\sta_pc_slow_pc_clock_skew.rpt
+          1K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\sta\sta_pc_slow_pc_coverage.rpt
+          3K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\sta\sta_pc_slow_pc_hold.rpt
+          3K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\sta\sta_pc_slow_pc_qor.rpt
+        340B  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\sta\sta_pc_slow_pc_setup.rpt
+          2K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\sta\sta_pc_summary.txt
+        796B  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\sta\sta_pc_typical_pc_check.rpt
+          1K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\sta\sta_pc_typical_pc_clock_skew.rpt
+          1K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\sta\sta_pc_typical_pc_coverage.rpt
+         39K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\sta\sta_pc_typical_pc_hold.rpt
+          3K  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\sta\sta_pc_typical_pc_qor.rpt
+        340B  09-18 19:32  02_������֤\sar16_digi_v4_paper_aligned\report_pack\sta\sta_pc_typical_pc_setup.rpt
+         10K  09-17 19:09  02_������֤\sar16_digi_v4_paper_aligned\rtl\sar_adc_digital_top.sv
+         39K  09-18 09:17  02_������֤\sar16_digi_v4_paper_aligned\rtl\sar_calib_ctrl_serial.sv
+         16K  09-17 21:55  02_������֤\sar16_digi_v4_paper_aligned\rtl\sar_digi_paper_core.sv
+         29K  09-17 20:20  02_������֤\sar16_digi_v4_paper_aligned\rtl\sar_reconstruction.sv
+         30K  09-17 23:12  02_������֤\sar16_digi_v4_paper_aligned\rtl\srm_residue_estimator.sv
+         11K  09-17 23:12  02_������֤\sar16_digi_v4_paper_aligned\rtl\srm_residue_lut.sv
+          4K  09-17 19:49  02_������֤\sar16_digi_v4_paper_aligned\tb\guard_check.sh
+          1K  09-17 19:56  02_������֤\sar16_digi_v4_paper_aligned\tb\probe_assets.sh
+          2K  09-17 19:10  02_������֤\sar16_digi_v4_paper_aligned\tb\probe_env.sh
+          5K  09-18 08:30  02_������֤\sar16_digi_v4_paper_aligned\tb\run_pwr_gls.sh
+          2K  09-17 19:17  02_������֤\sar16_digi_v4_paper_aligned\tb\run_tb.sh
+          3K  09-17 22:51  02_������֤\sar16_digi_v4_paper_aligned\tb\run_tb_paper_core.sh
+          2K  09-17 19:10  02_������֤\sar16_digi_v4_paper_aligned\tb\syn_check.sh
+         10K  09-18 08:26  02_������֤\sar16_digi_v4_paper_aligned\tb\tb_sar16_core_pwr.sv
+         27K  09-17 22:13  02_������֤\sar16_digi_v4_paper_aligned\tb\tb_sar16_paper_core.sv
+         67K  09-17 20:16  02_������֤\sar16_digi_v4_paper_aligned\tb\tb_sar16_v4.sv
+          1K  09-17 19:54  02_������֤\sar16_digi_v4_paper_aligned\tb\vm_probe.sh
+        480B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\.gitattributes
+       1013B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\.gitignore
+          1K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\LICENSE
+          8K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\MOC.md
+          8K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\README.md
+          4K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\.github\copilot-instructions.md
+        482B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\.github\workflows\rtl_lint.yml
+         10K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\Digital_process\Digital_process.xpr
+          3K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\Digital_process\Digital_process.srcs\constrs_1\new\sar_calib_fpga.xdc
+         12K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\Digital_process\Digital_process.srcs\sim_1\new\tb_gain_comp_check_lsb.sv
+         10K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\Digital_process\Digital_process.srcs\sim_1\new\tb_recon_q8_split_weights.sv
+         14K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\Digital_process\Digital_process.srcs\sim_1\new\tb_sar_recon_binary_norm.sv
+          8K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\Digital_process\Digital_process.srcs\sim_1\new\tb_srm_residue_estimator.sv
+          6K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\Digital_process\Digital_process.srcs\sources_1\new\sar_adc_digital_top.sv
+         18K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\Digital_process\Digital_process.srcs\sources_1\new\sar_calib_ctrl_serial.sv
+          4K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\Digital_process\Digital_process.srcs\sources_1\new\sar_calib_fpga_top.sv
+         11K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\Digital_process\Digital_process.srcs\sources_1\new\sar_reconstruction.sv
+          7K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\Digital_process\Digital_process.srcs\sources_1\new\srm_residue_estimator.sv
+          3K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\analysis\calibration_effectiveness_20260729\README.md
+          4K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\analysis\calibration_effectiveness_20260729\generate_report_assets.py
+         22K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\analysis\calibration_effectiveness_20260729\validate_current_calibration.py
+         47K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\analysis\calibration_effectiveness_20260729\outputs\fig_dynamic_sndr_median.png
+         48K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\analysis\calibration_effectiveness_20260729\outputs\fig_weight_rmse.png
+         25K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\analysis\calibration_effectiveness_20260729\outputs\per_chip_results.csv
+         39K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\analysis\calibration_effectiveness_20260729\outputs\summary.json
+        344K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\analysis\calibration_effectiveness_20260729\report\current_calibration_validation_report_cn.pdf
+         13K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\analysis\calibration_effectiveness_20260729\report\current_calibration_validation_report_cn.tex
+        971B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\analysis\calibration_effectiveness_20260729\report\generated_metrics.tex
+        460B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\analysis\calibration_effectiveness_20260729\report\summary_table.tex
+          2K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\analysis\surrogate\README.md
+         29K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\analysis\surrogate\replicate_huang2025_calibration_convergence.py
+          1K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\README.md
+          2K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\.gitignore
+          8K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\README.md
+          4K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\.github\copilot-instructions.md
+        863B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\.trae\rules\project_rules.md
+          7K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\Docs\CLEANUP_REPORT.md
+          5K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\Docs\COMMENT_CONVERSION_REPORT.md
+         17K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\Docs\FILE_STRUCTURE_EXPLANATION.md
+         26K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\Docs\MIGRATION_GUIDE.md
+          8K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\Docs\MIGRATION_REPORT.md
+          6K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\Docs\PROJECT_ANALYSIS_REPORT.md
+          7K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\Docs\README.md
+         10K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\Docs\TB_REPORT_IMPLEMENTATION_SUMMARY.md
+          3K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\REFERENCE\README.md
+         11K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\Reports\VERSION_MANAGEMENT.md
+         71K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\Reports\project_report_v1.0.md
+          3K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\constraints\sar_calib_fpga.xdc
+          1K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\rtl\flash_decoder_adder.sv
+          4K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\rtl\sar_adc_controller.sv
+         15K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\rtl\sar_calib_ctrl_serial.sv
+          8K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\rtl\sar_reconstruction.sv
+         15K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\rtl\calibration\sar_calib_ctrl_serial.sv
+          1K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\rtl\decoder\flash_decoder_adder.sv
+          8K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\rtl\reconstruction\sar_reconstruction.sv
+          4K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\rtl\sar_logic\sar_adc_controller.sv
+          2K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\rtl\top\fpga_top_wrapper.sv
+          2K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\sim_models\virtual_adc_phy.v
+         12K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\testbenches\calibration\tb_gain_comp_check_lsb.sv
+          1K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\testbenches\decoder\tb_flash_decoder.sv
+         10K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\testbenches\reconstruction\tb_sar_recon.sv
+         12K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\backup_chinese\testbenches\top_level\tb_sar_adc_top.sv
+          2K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\scripts\README.md
+         10K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\scripts\automated_migration.ps1
+        644B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\scripts\fix_git_config.ps1
+         17K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\scripts\sync_backup_vivado.ps1
+          7K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\scripts\verify_consistency.ps1
+          5K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\test_reports\README.md
+          8K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\Digital_process\Digital_process.srcs\test_reports\TB_REPORT_SPEC.md
+        769B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\README.md
+         11K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\Verifiy\Verifiy.xpr
+         10K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\Verifiy\cap_array_calib_16b.m
+          2K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\Verifiy\erf_inv_lut.vh
+          1K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\Verifiy\gen_srm_lut.m
+          2K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\Verifiy\Verifiy.srcs\sim_1\new\erf_inv_lut.vh
+          9K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\Verifiy\Verifiy.srcs\sim_1\new\tb_sar_recon.sv
+         11K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.xpr
+        683B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\constrs_1\new\bringup_io.xdc
+        959B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sim_1\new\sar_adc_fpga_top.sv
+          6K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sim_1\new\tb_fpga_top.sv
+          5K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sim_1\new\tb_sar_calib_recursive.sv
+          6K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sim_1\new\tb_sar_calib_sys.sv
+          8K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sim_1\new\tb_sar_recon.sv
+          6K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sources_1\new\sar_adc_fpga_top.sv
+          3K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sources_1\new\sar_adc_model.sv
+         13K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sources_1\new\sar_calib_ctrl.sv
+         16K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sources_1\new\sar_calib_ctrl_recursive.sv
+          8K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sources_1\new\sar_reconstruction.sv
+        731B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\matlab\README.md
+         10K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\matlab\cap_array_calib_16b.m
+          1K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\matlab\gen_srm_lut.m
+          5K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\matlab\ramp_noise_analysis.m
+          2K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-039c478\matlab\generated\erf_inv_lut.vh
+          1K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-110ef75\Digital_process\Digital_process.srcs\sim_1\new\tb_flash_decoder.sv
+         12K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-110ef75\Digital_process\Digital_process.srcs\sim_1\new\tb_sar_adc_top.sv
+          1K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-110ef75\Digital_process\Digital_process.srcs\sources_1\new\flash_decoder_adder.sv
+          2K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-110ef75\Digital_process\Digital_process.srcs\sources_1\new\fpga_top_wrapper.sv
+          5K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-110ef75\Digital_process\Digital_process.srcs\sources_1\new\sar_adc_controller.sv
+          3K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\archive\deleted-in-110ef75\Digital_process\Digital_process.srcs\sources_1\new\virtual_adc_phy.v
+        276B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\constraints\core_synth.xdc
+          1K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\constraints\debug_ila_template.xdc
+          2K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\constraints\sar_calib_fpga_legacy_board_hint.xdc
+       1023B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\MANIFEST.md
+          2K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\README.md
+          2K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\SHA256SUMS.txt
+          3K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\behavior\README.md
+          4K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\behavior\generate_report_assets.py
+         22K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\behavior\validate_current_calibration.py
+         47K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\behavior\outputs\fig_dynamic_sndr_median.png
+         48K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\behavior\outputs\fig_weight_rmse.png
+         25K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\behavior\outputs\per_chip_results.csv
+         39K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\behavior\outputs\summary.json
+          5K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\docs\FIXED_POINT_CONTRACT.md
+        344K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\docs\current_calibration_validation_report_cn.pdf
+         13K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\docs\current_calibration_validation_report_cn.tex
+        971B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\docs\generated_metrics.tex
+        460B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\docs\summary_table.tex
+        923B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\logs\PDF_QA_SUMMARY.md
+       1009B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\logs\RTL_XSIM_SUMMARY.md
+         18K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\rtl\sar_calib_ctrl_serial.sv
+         11K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\rtl\sar_reconstruction.sv
+          7K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\rtl\srm_residue_estimator.sv
+         12K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\tb\tb_gain_comp_check_lsb.sv
+         10K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\tb\tb_recon_q8_split_weights.sv
+         14K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\tb\tb_sar_recon_binary_norm.sv
+          8K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\current_calibration_validation_20260729\tb\tb_srm_residue_estimator.sv
+          1K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\LICENSE
+          1K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\MANIFEST.md
+         13K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\README.md
+          2K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\RUNBOOK.md
+          4K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\SHA256SUMS.txt
+          4K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\.github\copilot-instructions.md
+        276B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\constraints\core_synth.xdc
+          1K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\constraints\debug_ila_template.xdc
+          2K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\constraints\sar_calib_fpga_legacy_board_hint.xdc
+          2K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\docs\ARCHITECTURE.md
+          5K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\docs\CHANGELOG.md
+         15K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\docs\ENGINEERING_CLOSURE_AUDIT_2026-05-18.md
+         25K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\docs\FINAL_REPRODUCTION_AND_VERIFICATION_REPORT_CN_2026-05-18.md
+          5K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\docs\FIXED_POINT_CONTRACT.md
+          6K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\docs\FPGA_ASIC_SIGNOFF_REVIEW_2026-05-18.md
+          8K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\docs\MIXED_SIGNAL_TIMING_CONTRACT.md
+          5K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\docs\MOC.md
+          1K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\docs\PROJECT_ORGANIZATION.md
+          3K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\docs\README.md
+          8K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\docs\REPRODUCTION_REPORT_2026-05-18.md
+        915B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\docs\REQUIREMENTS.md
+          6K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\docs\TB_INDUSTRIAL_VERIFICATION_GUIDE.md
+         19K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\docs\TECHNICAL_ALGORITHM_GAP_ANALYSIS_CN_2026-05-18.md
+          4K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\docs\VERIFICATION.md
+       1006B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\docs\VERSION.md
+          6K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\rtl\sar_adc_digital_top.sv
+         18K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\rtl\sar_calib_ctrl_serial.sv
+          4K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\rtl\sar_calib_fpga_top.sv
+         11K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\rtl\sar_reconstruction.sv
+          7K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\rtl\srm_residue_estimator.sv
+          1K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\scripts\build.ps1
+          6K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\scripts\build_vivado.tcl
+          3K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\scripts\check_repo_consistency.py
+        988B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\scripts\lint_verilator.ps1
+        953B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\scripts\lint_verilator.sh
+          3K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\scripts\run_all_xsim.ps1
+          2K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\scripts\run_core_synth_checks.ps1
+          1K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\scripts\run_package_synth_checks.ps1
+          1K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\scripts\run_xsim.ps1
+          1K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\scripts\synth_one_top.tcl
+         12K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\tb\tb_gain_comp_check_lsb.sv
+         10K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\tb\tb_recon_q8_split_weights.sv
+         14K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\tb\tb_sar_recon_binary_norm.sv
+          8K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\tb\tb_srm_residue_estimator.sv
+         10K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\delivery\sar_adc_v3_digital_core_2026-05-18\vivado\Digital_process_reference.xpr
+          2K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\docs\ARCHITECTURE.md
+          7K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\docs\CHANGELOG.md
+         15K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\docs\ENGINEERING_CLOSURE_AUDIT_2026-05-18.md
+         25K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\docs\FINAL_REPRODUCTION_AND_VERIFICATION_REPORT_CN_2026-05-18.md
+          5K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\docs\FIXED_POINT_CONTRACT.md
+          6K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\docs\FPGA_ASIC_SIGNOFF_REVIEW_2026-05-18.md
+         16K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\docs\HUANG2025_SURROGATE_MODEL_REVIEW_CN_2026-05-26.md
+          8K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\docs\MIXED_SIGNAL_TIMING_CONTRACT.md
+          2K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\docs\PROJECT_ORGANIZATION.md
+          8K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\docs\REPRODUCTION_REPORT_2026-05-18.md
+        915B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\docs\REQUIREMENTS.md
+          6K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\docs\TB_INDUSTRIAL_VERIFICATION_GUIDE.md
+         19K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\docs\TECHNICAL_ALGORITHM_GAP_ANALYSIS_CN_2026-05-18.md
+          6K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\docs\VERIFICATION.md
+          1K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\docs\VERSION.md
+        374K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\docs\paper\paper_sar_adc_calibration.pdf
+         50K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\docs\paper\paper_sar_adc_calibration.tex
+          6K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\rtl\sar_adc_digital_top.sv
+         18K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\rtl\sar_calib_ctrl_serial.sv
+          4K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\rtl\sar_calib_fpga_top.sv
+         11K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\rtl\sar_reconstruction.sv
+          7K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\rtl\srm_residue_estimator.sv
+          1K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\scripts\build.ps1
+          6K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\scripts\build_vivado.tcl
+          3K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\scripts\check_repo_consistency.py
+        988B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\scripts\lint_verilator.ps1
+        953B  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\scripts\lint_verilator.sh
+          3K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\scripts\run_all_xsim.ps1
+          2K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\scripts\run_core_synth_checks.ps1
+          1K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\scripts\run_xsim.ps1
+          1K  08-30 13:40  02_������֤\sar_adc_v3_current_calibration_validation_20260729_4b978bf\scripts\synth_one_top.tcl
+        218B  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\.gitattributes
+        721B  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\.gitignore
+        453B  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\BACKUP_INFO.md
+          2K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\MOC.md
+          3K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\README.md
+         11K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.xpr
+          2K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\.gitignore
+          7K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\README.md
+          4K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\.github\copilot-instructions.md
+        863B  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\.trae\rules\project_rules.md
+          7K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\Docs\CLEANUP_REPORT.md
+          5K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\Docs\COMMENT_CONVERSION_REPORT.md
+         17K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\Docs\FILE_STRUCTURE_EXPLANATION.md
+         26K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\Docs\MIGRATION_GUIDE.md
+          8K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\Docs\MIGRATION_REPORT.md
+          6K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\Docs\PROJECT_ANALYSIS_REPORT.md
+          6K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\Docs\README.md
+         10K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\Docs\TB_REPORT_IMPLEMENTATION_SUMMARY.md
+          3K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\REFERENCE\README.md
+         11K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\Reports\VERSION_MANAGEMENT.md
+         71K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\Reports\project_report_v1.0.md
+          3K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\constraints\sar_calib_fpga.xdc
+          1K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\rtl\flash_decoder_adder.sv
+          4K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\rtl\sar_adc_controller.sv
+         15K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\rtl\sar_calib_ctrl_serial.sv
+          8K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\rtl\sar_reconstruction.sv
+         15K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\rtl\calibration\sar_calib_ctrl_serial.sv
+          1K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\rtl\decoder\flash_decoder_adder.sv
+          8K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\rtl\reconstruction\sar_reconstruction.sv
+          4K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\rtl\sar_logic\sar_adc_controller.sv
+          2K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\rtl\top\fpga_top_wrapper.sv
+          2K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\sim_models\virtual_adc_phy.v
+         12K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\testbenches\calibration\tb_gain_comp_check_lsb.sv
+          1K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\testbenches\decoder\tb_flash_decoder.sv
+         10K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\testbenches\reconstruction\tb_sar_recon.sv
+         12K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\backup_chinese\testbenches\top_level\tb_sar_adc_top.sv
+          3K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\constrs_1\new\sar_calib_fpga.xdc
+          2K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\scripts\README.md
+         10K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\scripts\automated_migration.ps1
+        644B  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\scripts\fix_git_config.ps1
+         17K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\scripts\sync_backup_vivado.ps1
+          7K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\scripts\verify_consistency.ps1
+          2K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\sim_1\new\fpga_top_wrapper.sv
+          1K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\sim_1\new\tb_flash_decoder.sv
+          9K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\sim_1\new\tb_gain_comp_check_lsb.sv
+         12K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\sim_1\new\tb_sar_adc_top.sv
+          9K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\sim_1\new\tb_sar_recon.sv
+          1K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\sources_1\new\flash_decoder_adder.sv
+          5K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\sources_1\new\sar_adc_controller.sv
+         17K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\sources_1\new\sar_calib_ctrl_serial.sv
+         10K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\sources_1\new\sar_reconstruction.sv
+          3K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\sources_1\new\virtual_adc_phy.v
+          5K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\test_reports\README.md
+          8K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\Digital_process\Digital_process.srcs\test_reports\TB_REPORT_SPEC.md
+        769B  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\archive\README.md
+         11K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\Verifiy\Verifiy.xpr
+         10K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\Verifiy\cap_array_calib_16b.m
+          2K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\Verifiy\erf_inv_lut.vh
+          1K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\Verifiy\gen_srm_lut.m
+          2K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\Verifiy\Verifiy.srcs\sim_1\new\erf_inv_lut.vh
+          9K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\Verifiy\Verifiy.srcs\sim_1\new\tb_sar_recon.sv
+         11K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.xpr
+        683B  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\constrs_1\new\bringup_io.xdc
+        959B  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sim_1\new\sar_adc_fpga_top.sv
+          6K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sim_1\new\tb_fpga_top.sv
+          5K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sim_1\new\tb_sar_calib_recursive.sv
+          6K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sim_1\new\tb_sar_calib_sys.sv
+          8K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sim_1\new\tb_sar_recon.sv
+          6K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sources_1\new\sar_adc_fpga_top.sv
+          3K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sources_1\new\sar_adc_model.sv
+         13K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sources_1\new\sar_calib_ctrl.sv
+         16K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sources_1\new\sar_calib_ctrl_recursive.sv
+          8K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sources_1\new\sar_reconstruction.sv
+          7K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\archive\legacy_vivado_projects\sar_adc_project\sar_adc_project.srcs\sources_1\new\sar_reconstruction_parallel.sv
+          2K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\docs\ARCHITECTURE.md
+        947B  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\docs\CHANGELOG.md
+          2K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\docs\PROJECT_ORGANIZATION.md
+          2K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\docs\REQUIREMENTS.md
+          2K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\docs\VERIFICATION.md
+        731B  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\matlab\README.md
+         10K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\matlab\cap_array_calib_16b.m
+          1K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\matlab\gen_srm_lut.m
+          5K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\matlab\ramp_noise_analysis.m
+          2K  08-30 13:40  02_������֤\sar_adc_v3_refactored_c2ab24c\matlab\generated\erf_inv_lut.vh
+          6K  08-30 14:28  02_������֤\��������\AZ.md
+          7K  08-30 14:28  02_������֤\��������\MATLAB����.md
+         14K  08-30 14:28  02_������֤\��������\PSS+PNOISE.md
+         13K  08-30 14:28  02_������֤\��������\ǰ����.md
+          5K  08-30 14:28  02_������֤\��������\��������.md
+          6K  08-30 14:28  02_������֤\��������\���Է���.md

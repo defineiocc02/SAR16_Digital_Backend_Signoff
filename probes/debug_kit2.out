@@ -1,0 +1,51 @@
+﻿=== NOR2XL.rep.ext (full) ===
+
+
+       #############################################################
+       ##                                                         ##
+       ##               C A L I B R E    S Y S T E M              ##
+       ##                                                         ##
+       ##    C I R C U I T   E X T R A C T I O N   R E P O R T    ##
+       ##                                                         ##
+       #############################################################
+
+
+REPORT FILE NAME:         /home/<user>/sar16_work/proj_paper_core/kitcheck/NOR2XL.rep.ext
+LAYOUT NAME:              /home/<user>/Project/DESIGN/14BIT_ADC/smic18/digital/sc/gds2/smic18.gds2 ('NOR2XL')
+CREATION TIME:            Fri Sep 18 20:37:10 2026
+CURRENT DIRECTORY:        /home/<user>/sar16_work/proj_paper_core/kitcheck
+USER NAME:                <user>
+CALIBRE VERSION:          v2025.1_16.10    Thu Jan 2 11:57:45 PST 2025
+
+
+
+=== NOR2XL.log: error / warning / fatal lines ===
+566:LVS ABORT ON SUPPLY ERROR      NO
+3442:ERROR: Rule file precision 10000 is not consistent with database precision 1000 in input file /home/<user>/Project/DESIGN/14BIT_ADC/smic18/digital/sc/gds2/smic18.gds2.
+
+=== NOR2XL.log: last 25 lines ===
+--------------------------------------------------------------------------------
+
+--- LAYOUT SYSTEM = GDS
+--- LAYOUT MAGNIFICATION = 1
+
+--------------------------------------------------------------------------------
+-----                     GDS FILE SUMMARY INFORMATION                     -----
+--------------------------------------------------------------------------------
+
+GDS FILENAME:        /home/<user>/Project/DESIGN/14BIT_ADC/smic18/digital/sc/gds2/smic18.gds2
+GDS VERSION:         5
+LIBRARY NAME:        TSM3C.DB
+LAST MODIFIED:       ON 2003/2/21 AT 17:56:30
+LAST ACCESSED:       ON 2003/2/25 AT 23:58:53
+DATABASE PRECISION:  0.001 user units per database unit
+PHYSICAL PRECISION:  1e-09 meters per database unit
+MAGNIFICATION:       1
+SIZE:                4886528
+
+ERROR: Rule file precision 10000 is not consistent with database precision 1000 in input file /home/<user>/Project/DESIGN/14BIT_ADC/smic18/digital/sc/gds2/smic18.gds2.
+
+//  LVS Circuit Extraction sub-process has completed.
+//  LVS Circuit Extraction process exited.
+//  Calibre subprocess (708330) terminated normally, exit code = 4
+//  Circuit Extraction subprocess terminated abnormally.

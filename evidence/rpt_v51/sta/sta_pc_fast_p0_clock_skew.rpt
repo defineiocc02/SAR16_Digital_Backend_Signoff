@@ -1,0 +1,27 @@
+****************************************
+Report : clock timing
+	-type skew
+	-nworst 1
+	-setup
+Design : sar_digi_paper_core
+Version: W-2024.09-SP3
+Date   : Fri Sep 18 20:25:59 2026
+****************************************
+
+  Clock: clk
+
+  Clock Pin                                    Latency  CRP    Skew
+----------------------------------------------------------------------------
+  u_calib_ctrl/avg_cnt_reg[0]/CK               0.39                    rp-+
+  u_calib_ctrl/state_reg[1]/CK                 0.16    -0.00   0.23    rp-+
+----------------------------------------------------------------------------
+
+  Clock: dec_clk
+
+  Clock Pin                                    Latency  CRP    Skew
+----------------------------------------------------------------------------
+  u_srm_residue/go_tgl_s2_reg/CK               0.12                    rp-+
+  u_srm_residue/clk_gate_dec_ones_reg/latch/GN 0.11    -0.00   0.01    fp-
+----------------------------------------------------------------------------
+
+1

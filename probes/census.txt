@@ -1,0 +1,26 @@
+﻿file            : D:\<vault>\Document\Obsidian\�ճ�\10_��Ŀ��\2025_16bit5Msar\02_������֤\sar16_digi_v4_paper_aligned\delivery_final\gds\sar_digi_paper_core_merged.gds
+bytes           : 4331596
+records         : 393507
+library name    : filemerge.db
+units           : (7.064954843372108e-13, 7.041484529125512e-37)
+ENDLIB seen     : True
+last 4 bytes    : 00040400
+parse error     : None
+structs defined : 231
+top candidates  : ['sar_digi_paper_core']
+referenced-but-undefined: 0 []
+layer/datatype pairs used anywhere : 19
+element totals  : {'BOUNDARY': 44264, 'SREF': 35101, 'TEXT': 886}
+
+=== TOP CELL 'sar_digi_paper_core' ===
+  elements      : {'SREF': 34989, 'BOUNDARY': 38431, 'TEXT': 234}
+  boundaries    : 38431   paths: 0   srefs: 34989   arefs: 0   TEXT: 234
+  distinct TEXT : 234
+  layer pairs   : 6
+  top layer pairs: [((62, 0), 17775), ((63, 0), 10286), ((61, 0), 7871), ((64, 0), 2602), ((65, 0), 122), ((66, 0), 9)]
+  child cells   : 118 distinct
+  label VDD     : ['VDD']
+  label VSS     : ['VSS']
+  non-supply labels: 232
+  first 12      : ['calib_comp_out', 'calib_done', 'calib_done_pulse', 'calib_mode_en', 'calib_overrange', 'calib_overrange_bits[0]', 'calib_overrange_bits[10]', 'calib_overrange_bits[11]', 'calib_overrange_bits[12]', 'calib_overrange_bits[13]', 'calib_overrange_bits[14]', 'calib_overrange_bits[15]']
+  last 12       : ['weight_rd_data[27]', 'weight_rd_data[28]', 'weight_rd_data[29]', 'weight_rd_data[2]', 'weight_rd_data[3]', 'weight_rd_data[4]', 'weight_rd_data[5]', 'weight_rd_data[6]', 'weight_rd_data[7]', 'weight_rd_data[8]', 'weight_rd_data[9]', 'weight_rd_en']

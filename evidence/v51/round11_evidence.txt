@@ -1,0 +1,15 @@
+### 1. SPEF proves the tie chain is physically present
+SPEF = /home/<user>/sar16_work/proj_paper_core/pnr/out/sar_digi_paper_core_pnr.spef.smic18_par_125.spef  (6958499 B)
+  HFSINV lines = 85   distinct HFSINV names = 85
+  HFSNET lines = 147
+  distinct instances in SPEF = 3626
+
+### 2. the written netlist: who has a driver
+  HFSNET referenced = 139   driven by a .Y = 133   ROOTS = 6
+  roots: HFSNET_330, HFSNET_346, HFSNET_362, HFSNET_363, HFSNET_364, HFSNET_8
+  HFSNET_8 as .Y = 0 ; as .A = 3 ; as port name = 1
+
+### 3. root-tie repair variants (all still INCORRECT)
+  L1 : LVS completed. INCORRECT. See report file: /tmp/lvs11/lvsL1.rep |  --- 637 Connections On This Net --- --- 161 Connections On This Net ---
+  L2 : LVS completed. INCORRECT. See report file: /tmp/lvs11/lvsL2.rep |  --- 637 Connections On This Net --- --- 262 Connections On This Net ---
+  L3 : LVS completed. INCORRECT. See report file: /tmp/lvs11/lvsL3.rep |  --- 637 Connections On This Net --- --- 161 Connections On This Net ---

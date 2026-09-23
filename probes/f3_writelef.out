@@ -1,0 +1,22 @@
+﻿puts "WV-BEGIN"
+WV-BEGIN
+catch {puts "BLOCKS: [get_blocks -quiet *]"}
+BLOCKS: 
+catch {puts "VIEWS: [get_views -quiet -of_objects [get_blocks -quiet sar_digi_paper_core]]"}
+puts "CURRENT=[get_object_name [current_block]]"
+CURRENT=sar16_pnr_paper_core:sar16_route_paper_core.design
+    if {[catch {uplevel 1 $sc} m]} { puts "WV-FAIL $lbl -> $m" } else { puts "WV-OK   $lbl" }
+WV-FAIL baseline -> bad level "1"
+WV-FAIL -include cell -> bad level "1"
+WV-FAIL -include c,t -> bad level "1"
+WV-FAIL -include tech -> bad level "1"
+puts "WV-END"
+
+=== census each written lef ===
+   v1.lef         NOT WRITTEN
+   v2.lef         NOT WRITTEN
+   v3.lef         NOT WRITTEN
+   v4.lef         NOT WRITTEN
+
+=== kit test progress ===
+18 /home/<user>/sar16_work/proj_paper_core/kitcheck/kit_lvs_results.csv

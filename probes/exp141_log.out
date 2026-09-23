@@ -1,0 +1,16 @@
+﻿=== exp141.log errors ===
+122:ERROR: Error SPC1 on line 423 of /tmp/exp141/exp141.lvs - superfluous specification statement: lvs report.
+
+=== tail ===
+//  Created Core System logfile = /var/tmp/CalibreRRLog.<vm-host>.755642.2026_0918_2102
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-----          STANDARD VERIFICATION RULE FILE COMPILATION MODULE          -----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+--- RULE FILE = /tmp/exp141/exp141.lvs
+
+ERROR: Error SPC1 on line 423 of /tmp/exp141/exp141.lvs - superfluous specification statement: lvs report.
+

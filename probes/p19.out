@@ -1,0 +1,80 @@
+﻿=== overall comparison results ===
+                               OVERALL COMPARISON RESULTS
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of ports.
+  Error:    Different numbers of nets.
+  Error:    Different numbers of instances.
+  Error:    Connectivity errors.
+  Error:    Property errors.
+  Warning:  Ambiguity points were found and resolved arbitrarily.
+
+
+**************************************************************************************************************
+
+=== ports: which side has extra? ===
+  source ports=176  layout ports=178
+  layout-only : ['VDD', 'VSS']
+  source-only : []
+  rst_n in layout : True
+
+=== incorrect nets / instances summary ===
+50
+
+=== the first 3 incorrect nets, with connection counts ===
+  1    Net VDD                                                   VDD
+       --- 14636 Connections On This Net ---                     --- 13701 Connections On This Net ---
+  2    Net VSS                                                   VSS
+       --- 13913 Connections On This Net ---                     --- 13898 Connections On This Net ---
+  3    Net CALIB_OVERRANGE_BITS[10]                              CALIB_OVERRANGE_BITS[10]
+       --- 4 Connections On This Net ---                         --- 4 Connections On This Net ---
+
+=== ERC ===
+
+
+==================================================================================
+=== CALIBRE::ERC-H SUMMARY REPORT
+===
+Execution Date/Time:          Fri Sep 18 20:27:24 2026
+Calibre Version:              v2025.1_16.10    Thu Jan 2 11:57:45 PST 2025
+Rule File Pathname:           mylvs.lvs
+Rule File Title:              
+Layout System:                GDSII
+Layout Path(s):               /home/<user>/sar16_work/proj_paper_core/calibre/sar_digi_paper_core_merged.gds
+Layout Primary Cell:          sar_digi_paper_core
+Current Directory:            /home/<user>/sar16_work/proj_paper_core/calibre/lvs
+User Name:                    <user>
+Maximum Results/ERC Check:    100
+Maximum ERC Result Vertices:  4096
+ERC Results Database:         erc.db (ASCII)
+ERC PATHCHK Results Database: svdb/sar_digi_paper_core.pathchk.erc
+ERC PATHCHK Report:           svdb/sar_digi_paper_core.pathchk.rep
+Layout Depth:                 ALL
+Text Depth:                   PRIMARY
+Summary Report File:          erc.rep (REPLACE)
+Geometry Flagging:            ACUTE = NO  SKEW = YES  ANGLED = NO  OFFGRID = YES
+                              NONSIMPLE POLYGON = NO  NONSIMPLE PATH = NO
+Excluded Cells:              
+CheckText Mapping:            COMMENT TEXT + RULE FILE INFORMATION
+Layers:                       MEMORY-BASED
+Keep Empty Checks:            YES
+----------------------------------------------------------------------------------
+--- RUNTIME WARNINGS
+---
+There is no data for layout net name SAVDD?.
+There is no data for layout net name ?VCC?.
+There is no data for layout net name SAVSS?.
+There is no data for layout net name ?GND?.
+There is no data for layout net name SAVSS?.
+There is no data for layout net name ?GND?.
+There is no data for layout net name SAVSS?.
+There is no data for layout net name ?GND?.
+There is no data for layout net name SAVSS?.

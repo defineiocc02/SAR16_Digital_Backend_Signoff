@@ -1,0 +1,207 @@
+﻿########## 1. lvs.rep.ext ##########
+
+
+       #############################################################
+       ##                                                         ##
+       ##               C A L I B R E    S Y S T E M              ##
+       ##                                                         ##
+       ##    C I R C U I T   E X T R A C T I O N   R E P O R T    ##
+       ##                                                         ##
+       #############################################################
+
+
+REPORT FILE NAME:         /home/<user>/sar16_work/proj_paper_core/calibre/lvs/lvs.rep.ext
+LAYOUT NAME:              /home/<user>/sar16_work/proj_paper_core/calibre/sar_digi_paper_core_merged.gds ('sar_digi_paper_core')
+CREATION TIME:            Fri Sep 18 18:13:58 2026
+CURRENT DIRECTORY:        /home/<user>/sar16_work/proj_paper_core/calibre/lvs
+USER NAME:                <user>
+CALIBRE VERSION:          v2025.1_16.10    Thu Jan 2 11:57:45 PST 2025
+
+
+
+Extraction Errors and Warnings for cell "sar_digi_paper_core"
+-------------------------------------------------------------
+
+WARNING:  Short circuit - Different names on one net:
+          Net Id:  103
+          (1)  name  "rst_n"  at location  (408.54,0.3575)  on layer  62 "M2"
+          (2)  name  "VDD"  at location  (425,428.1)  on layer  62 "M2"
+          The name "VDD" was assigned to the net.
+
+WARNING:  Short circuit - Different names on one net:
+          Net Id:  448
+          (1)  name  "srm_residue_o[10]"  at location  (0.3575,54.88)  on layer  63 "M3"
+          (2)  name  "srm_residue_o[11]"  at location  (0.3575,62.16)  on layer  63 "M3"
+          (3)  name  "srm_residue_o[12]"  at location  (0.3575,69.44)  on layer  63 "M3"
+          (4)  name  "srm_residue_o[13]"  at location  (0.3575,76.72)  on layer  63 "M3"
+          (5)  name  "srm_residue_o[14]"  at location  (0.3575,3.92)  on layer  63 "M3"
+          (6)  name  "srm_residue_o[15]"  at location  (0.3575,11.2)  on layer  63 "M3"
+          (7)  name  "srm_residue_o[16]"  at location  (0.3575,18.48)  on layer  63 "M3"
+          (8)  name  "srm_residue_o[17]"  at location  (0.3575,84)  on layer  63 "M3"
+          (9)  name  "srm_residue_o[18]"  at location  (0.3575,91.28)  on layer  63 "M3"
+          (10)  name  "srm_residue_o[19]"  at location  (0.3575,98.56)  on layer  63 "M3"
+          (11)  name  "srm_residue_o[20]"  at location  (0.3575,105.84)  on layer  63 "M3"
+          (12)  name  "srm_residue_o[21]"  at location  (0.3575,113.12)  on layer  63 "M3"
+          (13)  name  "srm_residue_o[22]"  at location  (0.3575,25.76)  on layer  63 "M3"
+          (14)  name  "srm_residue_o[23]"  at location  (0.3575,33.04)  on layer  63 "M3"
+          (15)  name  "srm_residue_o[24]"  at location  (0.3575,40.32)  on layer  63 "M3"
+          (16)  name  "srm_residue_o[25]"  at location  (0.3575,120.4)  on layer  63 "M3"
+          (17)  name  "srm_residue_o[26]"  at location  (0.3575,127.68)  on layer  63 "M3"
+          (18)  name  "srm_residue_o[27]"  at location  (0.3575,134.96)  on layer  63 "M3"
+          (19)  name  "srm_residue_o[28]"  at location  (0.3575,142.24)  on layer  63 "M3"
+          (20)  name  "srm_residue_o[29]"  at location  (0.3575,149.52)  on layer  63 "M3"
+          (21)  name  "srm_residue_o[9]"  at location  (0.3575,47.6)  on layer  63 "M3"
+          The name "srm_residue_o[10]" was assigned to the net.
+
+WARNING:  Short circuit - Different names on one net:
+          Net Id:  463
+          (1)  name  "VSS"  at location  (412.5,428.1)  on layer  62 "M2"
+          (2)  name  "weight_rd_data[0]"  at location  (0.3575,156.8)  on layer  63 "M3"
+          (3)  name  "weight_rd_data[10]"  at location  (0.3575,229.6)  on layer  63 "M3"
+          (4)  name  "weight_rd_data[11]"  at location  (0.3575,236.88)  on layer  63 "M3"
+          (5)  name  "weight_rd_data[12]"  at location  (0.3575,244.16)  on layer  63 "M3"
+          (6)  name  "weight_rd_data[13]"  at location  (0.3575,251.44)  on layer  63 "M3"
+          (7)  name  "weight_rd_data[14]"  at location  (0.3575,258.72)  on layer  63 "M3"
+          (8)  name  "weight_rd_data[15]"  at location  (0.3575,266)  on layer  63 "M3"
+          (9)  name  "weight_rd_data[16]"  at location  (0.3575,273.28)  on layer  63 "M3"
+          (10)  name  "weight_rd_data[17]"  at location  (0.3575,280.56)  on layer  63 "M3"
+          (11)  name  "weight_rd_data[18]"  at location  (0.3575,287.84)  on layer  63 "M3"
+          (12)  name  "weight_rd_data[19]"  at location  (0.3575,295.12)  on layer  63 "M3"
+          (13)  name  "weight_rd_data[1]"  at location  (0.3575,164.08)  on layer  63 "M3"
+          (14)  name  "weight_rd_data[20]"  at location  (0.3575,302.4)  on layer  63 "M3"
+          (15)  name  "weight_rd_data[21]"  at location  (0.3575,309.68)  on layer  63 "M3"
+          (16)  name  "weight_rd_data[22]"  at location  (0.3575,316.96)  on layer  63 "M3"
+          (17)  name  "weight_rd_data[23]"  at location  (0.3575,324.24)  on layer  63 "M3"
+          (18)  name  "weight_rd_data[24]"  at location  (0.3575,331.52)  on layer  63 "M3"
+          (19)  name  "weight_rd_data[25]"  at location  (0.3575,338.8)  on layer  63 "M3"
+          (20)  name  "weight_rd_data[26]"  at location  (0.3575,346.08)  on layer  63 "M3"
+          (21)  name  "weight_rd_data[27]"  at location  (0.3575,353.36)  on layer  63 "M3"
+          (22)  name  "weight_rd_data[28]"  at location  (0.3575,360.64)  on layer  63 "M3"
+          (23)  name  "weight_rd_data[29]"  at location  (0.3575,367.92)  on layer  63 "M3"
+          (24)  name  "weight_rd_data[2]"  at location  (0.3575,171.36)  on layer  63 "M3"
+          (25)  name  "weight_rd_data[3]"  at location  (0.3575,178.64)  on layer  63 "M3"
+          (26)  name  "weight_rd_data[4]"  at location  (0.3575,185.92)  on layer  63 "M3"
+          (27)  name  "weight_rd_data[5]"  at location  (0.3575,193.2)  on layer  63 "M3"
+          (28)  name  "weight_rd_data[6]"  at location  (0.3575,200.48)  on layer  63 "M3"
+          (29)  name  "weight_rd_data[7]"  at location  (0.3575,207.76)  on layer  63 "M3"
+          (30)  name  "weight_rd_data[8]"  at location  (0.3575,215.04)  on layer  63 "M3"
+          (31)  name  "weight_rd_data[9]"  at location  (0.3575,222.32)  on layer  63 "M3"
+          The name "VSS" was assigned to the net.
+
+
+
+########## 2. svdb tree ##########
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.sp
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.phdb
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.phdb/pdb.seg
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.phdb/hdb.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.phdb/db
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.phdb/hdb18.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.netsi
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.netsi/version
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.netsi/pins.off
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.netsi/pins.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.netsi/nmap.off
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.netsi/nmap.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.netsi/pads.off
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.netsi/pads.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.netsi/sizes
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.pathchk.erc
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.extf
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.xdb
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.xdb/pdb.seg
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.xdb/security.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.xdb/hdb2.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.xdb/hdb3.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.xdb/hdb4.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.xdb/hdb5.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.xdb/hdb6.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.xdb/hdb7.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.xdb/hdb8.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.xdb/hdb9.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.xdb/hdb10.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.xdb/hdb11.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.xdb/hdb12.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.xdb/hdb13.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.xdb/hdb14.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.xdb/hdb15.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.xdb/hdb16.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.xdb/hdb17.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.xdb/hdb22.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.xdb/hdb23.dat
+/home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.xdb/hdb24.dat
+
+########## 3. extracted layout netlist: size + element histogram ##########
+--- /home/<user>/sar16_work/proj_paper_core/calibre/lvs/svdb/sar_digi_paper_core.sp  401328 B  5504 lines
+
+########## 4. shorts file: head 40 ##########
+sar_digi_paper_core 10000
+SHORT 1.  rst_n - VDD in sar_digi_paper_core
+15 15 6 Sep 18 18:14:06 2026
+2 Shorted texts: 
+"rst_n" at (408.540, 0.357) on layer "M2" SN 1
+"VDD" at (425.000, 428.100) on layer "M2" SN 141
+Serial_No. 0
+Tag 1.1
+Options
+p 1 4
+SN 1
+4085399 3574
+4085401 3574
+4085401 3576
+4085399 3576
+p 2 4
+SN 141
+4249999 4280999
+4250001 4280999
+4250001 4281001
+4249999 4281001
+p 3 4
+SN 24
+4083500 413000
+4239100 413000
+4239100 415800
+4083500 415800
+p 4 4
+SN 34
+4235300 508200
+4263300 508200
+4263300 511000
+4235300 511000
+p 5 4
+SN 18
+4084100 413100
+4086700 413100
+4086700 415700
+4084100 415700
+p 6 4
+
+########## 5. shorts file: summary-ish lines ##########
+SHORT 1.  rst_n - VDD in sar_digi_paper_core
+2 Shorted texts: 
+SHORT 2.  srm_residue_o[11] - srm_residue_o[12] in sar_digi_paper_core
+2 Shorted texts: 
+SHORT 3.  srm_residue_o[14] - srm_residue_o[15] in sar_digi_paper_core
+2 Shorted texts: 
+SHORT 4.  srm_residue_o[17] - srm_residue_o[18] in sar_digi_paper_core
+2 Shorted texts: 
+SHORT 5.  srm_residue_o[19] - srm_residue_o[20] in sar_digi_paper_core
+2 Shorted texts: 
+SHORT 6.  srm_residue_o[16] - srm_residue_o[22] in sar_digi_paper_core
+2 Shorted texts: 
+SHORT 7.  srm_residue_o[21] - srm_residue_o[25] in sar_digi_paper_core
+2 Shorted texts: 
+SHORT 8.  srm_residue_o[27] - srm_residue_o[28] in sar_digi_paper_core
+2 Shorted texts: 
+SHORT 9.  srm_residue_o[10] - srm_residue_o[9] in sar_digi_paper_core
+2 Shorted texts: 
+SHORT 10.  srm_residue_o[25] - srm_residue_o[26] in sar_digi_paper_core
+2 Shorted texts: 
+ssh : bash: line 27: $'\r': command not found
+At line:1 char:235
++ ... ,"`n"; $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 27: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

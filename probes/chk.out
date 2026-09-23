@@ -1,0 +1,48 @@
+﻿bytes: 23076
+
+tag            open  close  delta
+div              42     42      0
+table            14     14      0
+thead            14     14      0
+tbody            14     14      0
+tr               79     79      0
+td              255    255      0
+th               56     56      0
+pre               4      4      0
+figure            0      0      0
+figcaption        0      0      0
+ul                2      2      0
+li               12     12      0
+span             19     19      0
+b                47     47      0
+code             86     86      0
+p                14     14      0
+h1                1      1      0
+h2                6      6      0
+h3               18     18      0
+h4                0      0      0
+
+=== external references (must be none) ===
+count: 0 []
+
+=== skeleton ===
+  <!DOCTYPE html>          OK
+  <html lang="zh-CN">      OK
+  <style>                  OK
+  </style>                 OK
+  <body>                   OK
+  </body>                  OK
+  </html>                  OK
+  class="wrap"             OK
+  class="kpi"              OK
+  class="toc"              OK
+
+=== section anchors ===
+  h2 id=d   (toc link present: True)
+  h2 id=s   (toc link present: True)
+  h2 id=g   (toc link present: True)
+  h2 id=f   (toc link present: True)
+  h2 id=t   (toc link present: True)
+  h2 id=c   (toc link present: True)
+
+RESULT: PASS

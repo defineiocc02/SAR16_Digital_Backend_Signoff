@@ -1,0 +1,9 @@
+﻿PATCH pre_md5=d21c81c9e344cc0fe331ccaaf9b64419 (expect d21c81c9e344cc0fe331ccaaf9b64419)
+PATCH anchor hits=1 : sed -i -E 's|^LVS GLOBALS ARE PORTS.*|LVS GLOBALS ARE PORTS 
+PATCH anchor hits=1 : sed -i -E '/^LAYOUT PRIMARY/a LVS GLOBALS ARE PORTS         
+PATCH anchor hits=1 : NGP=$(grep -cE '^LVS GLOBALS ARE PORTS +NO' mylvs.lvs); NGP=
+PATCH anchor hits=1 : echo "  LVS GLOBALS ARE PORTS NO statements : $NGP  (must be
+PATCH anchor hits=1 : echo "FATAL: could not force 'LVS GLOBALS ARE PORTS NO'."
+PATCH backup=/home/<user>/sar16_work/proj_paper_core/scripts/.bak_globals/run_lvs_paper_core.sh.20260918_202826
+PATCH post_md5=2ae8968eec023775fa88c9f934afc96a
+PATCH status=OK

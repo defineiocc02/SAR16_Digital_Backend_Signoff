@@ -1,0 +1,12 @@
+﻿source=176 layout=178
+layout-only : ['VDD', 'VSS']
+source-only : []
+
+=== does the source CDL still carry .GLOBAL? ===
+5491:.GLOBAL VDD 
+5492:.GLOBAL VSS 
+
+=== GLOBALS / POWER-NAME settings in the deck ===
+412:LVS GLOBALS ARE PORTS                 YES
+468:LVS GROUND NAME "VSS" "SAVSS?" "?GND?" "?VSS?" "?vss?" "?gnd?"
+469:LVS POWER NAME  "VDD" "SAVDD?" "?VDD?" "?VCC?" "?vcc?" "?vdd?"

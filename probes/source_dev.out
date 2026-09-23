@@ -1,0 +1,28 @@
+﻿kit CDL subckts: 471
+placed masters: 109   placements: 3626
+
+=== expected source device count ===
+   sum over expanded hierarchy: 50026
+   Calibre's SOURCE count     : 50026
+   difference                 : 0
+   Calibre's LAYOUT count     : 50686
+   layout - computed          : 660
+
+   every placed master exists in the CDL
+
+=== deepest expansion (top 15 by count) ===
+   DFFSXL                   x781     devs/cell=34    devices=26554
+   NAND2XL                  x528     devs/cell=4     devices=2112
+   NOR2XL                   x236     devs/cell=4     devices=944
+   DFFSX1                   x215     devs/cell=34    devices=7310
+   INVXL                    x206     devs/cell=2     devices=412
+   OAI21XL                  x187     devs/cell=6     devices=1122
+   AOI22XL                  x184     devs/cell=8     devices=1472
+   AOI21XL                  x130     devs/cell=6     devices=780
+   CLKBUFX2                 x89      devs/cell=4     devices=356
+   NAND2BXL                 x67      devs/cell=6     devices=402
+   OR2XL                    x60      devs/cell=6     devices=360
+   AOI222XL                 x54      devs/cell=12    devices=648
+   NAND3XL                  x45      devs/cell=6     devices=270
+   AOI211XL                 x43      devs/cell=8     devices=344
+   TLATNXL                  x40      devs/cell=18    devices=720

@@ -1,0 +1,123 @@
+****************************************
+Report : timing
+	-path_type full_clock_expanded
+	-delay_type min
+	-nworst 2
+	-slack_lesser_than 0.00
+	-max_paths 25
+	-sort_by slack
+Design : sar_digi_paper_core
+Version: W-2024.09-SP3
+Date   : Fri Sep 18 21:10:51 2026
+****************************************
+
+
+  Startpoint: u_calib_ctrl/calib_done_pulse_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: calib_done_pulse
+               (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock source latency                                    0.00       0.00
+  clk (in)                                                0.00 &     0.00 r
+  u_calib_ctrl/ZCTSBUF_4055_1393/Y (CLKBUFX8)             0.16 &     0.16 r
+  u_calib_ctrl/calib_done_pulse_reg/CK (DFFSX1)           0.00 &     0.16 r
+  u_calib_ctrl/calib_done_pulse_reg/QN (DFFSX1)           0.26 &     0.43 r
+  copt_gre_h_inst_2295/Y (BUFX1)                          0.07 &     0.50 r
+  calib_done_pulse (out)                                  0.00 &     0.50 r
+  data arrival time                                                  0.50
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.45       0.50
+  data required time                                                 0.50
+  ------------------------------------------------------------------------------
+  data required time                                                 0.50
+  data arrival time                                                 -0.50
+  ------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                     -0.00
+
+
+  Startpoint: u_calib_ctrl/w_wr_en_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: w_wr_en (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock source latency                                    0.00       0.00
+  clk (in)                                                0.00 &     0.00 r
+  u_calib_ctrl/ZCTSBUF_4055_1393/Y (CLKBUFX8)             0.16 &     0.16 r
+  u_calib_ctrl/w_wr_en_reg/CK (DFFSX1)                    0.00 &     0.16 r
+  u_calib_ctrl/w_wr_en_reg/QN (DFFSX1)                    0.22 &     0.38 r
+  HFSBUF_2_296/Y (CLKBUFX2)                               0.11 &     0.50 r
+  w_wr_en (out)                                           0.00 &     0.50 r
+  data arrival time                                                  0.50
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.45       0.50
+  data required time                                                 0.50
+  ------------------------------------------------------------------------------
+  data required time                                                 0.50
+  data arrival time                                                 -0.50
+  ------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                     -0.00
+
+
+  Startpoint: calib_comp_out
+               (input port clocked by clk)
+  Endpoint: u_calib_ctrl/comp_out_r_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  input external delay                                    0.03       0.03 r
+  calib_comp_out (in)                                     0.00 &     0.03 r
+  u_calib_ctrl/HFSINV_4_321/Y (INVXL)                     0.11 &     0.14 f
+  u_calib_ctrl/comp_out_r_reg/D (DFFSX1)                  0.00 &     0.15 f
+  data arrival time                                                  0.15
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock source latency                                    0.00       0.00
+  clk (in)                                                0.00 &     0.00 r
+  u_calib_ctrl/ZCTSBUF_4055_1393/Y (CLKBUFX8)             0.16 &     0.16 r
+  u_calib_ctrl/comp_out_r_reg/CK (DFFSX1)                 0.00 &     0.16 r
+  clock reconvergence pessimism                           0.00       0.16
+  clock uncertainty                                       0.05       0.21
+  library hold time                                      -0.07       0.15
+  data required time                                                 0.15
+  ------------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.15
+  ------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                     -0.00
+
+
+1

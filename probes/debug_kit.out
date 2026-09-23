@@ -1,0 +1,121 @@
+﻿=== NOR2XL.log (first 40 lines) ===
+//  Calibre v2025.1_16.10    Thu Jan 2 11:57:45 PST 2025
+//  Calibre Utility Library   v0-10_13-2017-1    Wed Oct 30 08:47:44 PDT 2024
+//  Litho Libraries v2025.1_16.10  Thu Jan 2 11:57:45 PST 2025
+//
+//                   Copyright Siemens 1996-2025
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on Linux <vm-host> (<vm-ip>) 4.18.0-553.22.1.el8_10.x86_64 #1 SMP Wed Sep 11 18:02:00 EDT 2024 x86_64 glibc 2.28/NPTL 2.28
+//  OS: Red Hat Enterprise Linux release 8.10 (Ootpa)[4.18.0-553.22.1.el8_10.x86_64]
+//  hypervisor detected
+//
+//  Entries in /proc/meminfo:
+//
+//  MemTotal:       23074488 kB
+//  MemFree:         8921928 kB
+//  MemAvailable:   16607048 kB
+//  Buffers:               4 kB
+//  Cached:          8024688 kB
+//  SwapCached:        19808 kB
+//  Active:          6139680 kB
+//  Inactive:        6557992 kB
+//  Active(anon):     187808 kB
+//  Inactive(anon):  4586388 kB
+//  Active(file):    5951872 kB
+//  Inactive(file):  1971604 kB
+//  Unevictable:           0 kB
+//  Mlocked:               0 kB
+//  SwapTotal:      16501756 kB
+//  SwapFree:       15912444 kB
+//  Dirty:               168 kB
+//  Writeback:             0 kB
+//  AnonPages:       4660604 kB
+
+=== files produced ===
+total 3372
+drwxrwxr-x.  3 <user> <user>   4096 Sep 18 20:38 .
+drwxrwxr-x. 23 <user> <user>   4096 Sep 18 20:37 ..
+-rw-rw-r--.  1 <user> <user> 143549 Sep 18 20:37 AND4XL.log
+-rw-rw-r--.  1 <user> <user> 132758 Sep 18 20:37 AND4XL.lvs
+-rw-rw-r--.  1 <user> <user>      0 Sep 18 20:37 AND4XL.rep
+-rw-rw-r--.  1 <user> <user>    911 Sep 18 20:37 AND4XL.rep.ext
+-rw-rw-r--.  1 <user> <user> 143581 Sep 18 20:37 AOI21XL.log
+-rw-rw-r--.  1 <user> <user> 132761 Sep 18 20:37 AOI21XL.lvs
+-rw-rw-r--.  1 <user> <user>      0 Sep 18 20:37 AOI21XL.rep
+-rw-rw-r--.  1 <user> <user>    913 Sep 18 20:37 AOI21XL.rep.ext
+-rw-rw-r--.  1 <user> <user> 143549 Sep 18 20:37 DFFSX1.log
+-rw-rw-r--.  1 <user> <user> 132758 Sep 18 20:37 DFFSX1.lvs
+-rw-rw-r--.  1 <user> <user>      0 Sep 18 20:37 DFFSX1.rep
+-rw-rw-r--.  1 <user> <user>    911 Sep 18 20:37 DFFSX1.rep.ext
+
+=== does the kit GDS actually contain NOR2XL? ===
+4
+NOR2XL
+INVXL
+DFFSX1
+NOR2XL
+INVXL
+DFFSX1
+
+=== cell names present in the kit GDS (STRNAME strings) ===
+XOR2XL
+XOR2X4
+XOR2X2
+XOR2X1
+XNOR2XL
+XNOR2X4
+XNOR2X2
+XNOR2X1
+TLATSRXL
+TLATSRX4
+TLATSRX2
+TLATSRX1
+TLATSXL
+TLATSX4
+TLATSX2
+TLATSX1
+TLATRXL
+TLATRX4
+TLATRX2
+TLATRX1
+
+=== and the deck's own header ===
+//////////////////////////////////////////////////////////////////////////////////////
+// $RCSfile: SMIC_CalLVS_018MSE_1833_V1.11_1.lvs,v $                                //
+// Calibre LVS Deck for SMIC 018u Mixed Signal 1PXM Salicide 1.8V/3.3V Process      //
+// Author:SMIC TD                                                                   //
+//                                                                                  //
+// Revision: V1.11_1                                                                //
+//////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////////////
+// Revision History:                                                                //
+// Rev.         Date       Who      What                                            //
+// ------------ ---------- ---- --------------------------------------------------- //
+// 1.0    2015/03/06 Michaels based on the following Process Documents:             //
+//                                DESIGN RULE:      TD-LO18-DR-2001 Rev.:9P         //
+//                                                  (Tech Dev. Rev.:1.17)           //
+//                                SPICE MODEL:      TD-MM18-SP-2004 Rev.:0R         //
+//                                                  (Tech Dev. Rev.:1.0)            //
+//                                What's modified:                                  //
+//                                initial                                           //
+// ------------ ---------- ---- --------------------------------------------------- //
+// 1.1    2015/06/30 Michaels based on the following Process Documents:             //
+//                                DESIGN RULE:      TD-LO18-DR-2001 Rev.:10P        //
+//                                                  (Tech Dev. Rev.:1.18)           //
+//                                SPICE MODEL:      TD-MM18-SP-2004 Rev.:0R         //
+//                                                  (Tech Dev. Rev.:1.1)            //
+//                                What's modified:                                  //
+//                                update rppo, rppo_3t, rnwaa, rpposab, rpposab_3t  //
+//                                rppo_ckt, rppo_3t_ckt, rnwaa_ckt, rpposab_ckt,    //
+//                                rpposab_3t_ckt, resistors' rsh value.             //
+// ---------------------------------------------------------------------------------//

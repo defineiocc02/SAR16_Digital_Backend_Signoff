@@ -1,0 +1,72 @@
+STA_DERATE corner=slow tag=p0 late=1.0000 early=1.0000 cellcheck=1 kinds=cell_delay,net_delay,cell_check calls=6
+STA_DERATE_CHECK corner=slow tag=p0 nominal_wns=0.794725 derated_wns=0.794725 delta_ns=0.000000
+STA_RESULT corner=slow tag=p0 viol_setup=0 wns_setup=0.0000 tns_setup=0.0000 viol_hold=16 wns_hold=-0.2020 tns_hold=-2.5834
+STA_WORST_SETUP corner=slow clock=clk slack=0.794725 start=start_calib end=u_calib_ctrl/clk_gate_target_bit_reg/latch/D levels=
+STA_FMAX_EST corner=slow clock=clk period_ns=10.000 slack_ns=0.7947 pmin_ns=9.205 fmax_mhz=108.6
+STA_WORST_SETUP corner=slow clock=dec_clk slack=0.000000 start=u_srm_residue/go_tgl_s2_reg/CK end=u_srm_residue/clk_gate_dec_ones_reg/latch/D levels=
+STA_FMAX_EST corner=slow clock=dec_clk period_ns=3.000 slack_ns=0.0000 pmin_ns=3.000 fmax_mhz=333.3
+STA_WORST_HOLD corner=slow slack=-0.201956 start=raw_bits_i[15] end=raw_code_o_reg[15]/D
+STA_DONE corner=slow tag=p0
+STA_DERATE corner=slow tag=p3 late=1.0300 early=0.9700 cellcheck=1 kinds=cell_delay,net_delay,cell_check calls=6
+STA_DERATE_CHECK corner=slow tag=p3 nominal_wns=0.794725 derated_wns=0.759686 delta_ns=-0.035039
+STA_RESULT corner=slow tag=p3 viol_setup=0 wns_setup=0.0000 tns_setup=0.0000 viol_hold=16 wns_hold=-0.2243 tns_hold=-2.9384
+STA_WORST_SETUP corner=slow clock=clk slack=0.759686 start=start_calib end=u_calib_ctrl/clk_gate_target_bit_reg/latch/D levels=
+STA_FMAX_EST corner=slow clock=clk period_ns=10.000 slack_ns=0.7597 pmin_ns=9.240 fmax_mhz=108.2
+STA_WORST_SETUP corner=slow clock=dec_clk slack=0.000000 start=u_srm_residue/go_tgl_s2_reg/CK end=u_srm_residue/clk_gate_dec_ones_reg/latch/D levels=
+STA_FMAX_EST corner=slow clock=dec_clk period_ns=3.000 slack_ns=0.0000 pmin_ns=3.000 fmax_mhz=333.3
+STA_WORST_HOLD corner=slow slack=-0.224258 start=raw_bits_i[15] end=raw_code_o_reg[15]/D
+STA_DONE corner=slow tag=p3
+STA_DERATE corner=slow tag=p5 late=1.0500 early=0.9500 cellcheck=1 kinds=cell_delay,net_delay,cell_check calls=6
+STA_DERATE_CHECK corner=slow tag=p5 nominal_wns=0.794725 derated_wns=0.736327 delta_ns=-0.058398
+STA_RESULT corner=slow tag=p5 viol_setup=0 wns_setup=0.0000 tns_setup=0.0000 viol_hold=16 wns_hold=-0.2391 tns_hold=-3.1751
+STA_WORST_SETUP corner=slow clock=clk slack=0.736327 start=start_calib end=u_calib_ctrl/clk_gate_target_bit_reg/latch/D levels=
+STA_FMAX_EST corner=slow clock=clk period_ns=10.000 slack_ns=0.7363 pmin_ns=9.264 fmax_mhz=107.9
+STA_WORST_SETUP corner=slow clock=dec_clk slack=0.000000 start=u_srm_residue/go_tgl_s2_reg/CK end=u_srm_residue/clk_gate_dec_ones_reg/latch/D levels=
+STA_FMAX_EST corner=slow clock=dec_clk period_ns=3.000 slack_ns=0.0000 pmin_ns=3.000 fmax_mhz=333.3
+STA_WORST_HOLD corner=slow slack=-0.239126 start=raw_bits_i[15] end=raw_code_o_reg[15]/D
+STA_DONE corner=slow tag=p5
+STA_DERATE corner=slow tag=p8 late=1.0800 early=0.9200 cellcheck=1 kinds=cell_delay,net_delay,cell_check calls=6
+STA_DERATE_CHECK corner=slow tag=p8 nominal_wns=0.794725 derated_wns=0.701290 delta_ns=-0.093435
+STA_RESULT corner=slow tag=p8 viol_setup=0 wns_setup=0.0000 tns_setup=0.0000 viol_hold=16 wns_hold=-0.2614 tns_hold=-3.5301
+STA_WORST_SETUP corner=slow clock=clk slack=0.701290 start=start_calib end=u_calib_ctrl/clk_gate_target_bit_reg/latch/D levels=
+STA_FMAX_EST corner=slow clock=clk period_ns=10.000 slack_ns=0.7013 pmin_ns=9.299 fmax_mhz=107.5
+STA_WORST_SETUP corner=slow clock=dec_clk slack=0.000000 start=u_srm_residue/go_tgl_s2_reg/CK end=u_srm_residue/clk_gate_dec_ones_reg/latch/D levels=
+STA_FMAX_EST corner=slow clock=dec_clk period_ns=3.000 slack_ns=0.0000 pmin_ns=3.000 fmax_mhz=333.3
+STA_WORST_HOLD corner=slow slack=-0.261429 start=raw_bits_i[15] end=raw_code_o_reg[15]/D
+STA_DONE corner=slow tag=p8
+STA_DERATE corner=fast tag=p0 late=1.0000 early=1.0000 cellcheck=1 kinds=cell_delay,net_delay,cell_check calls=6
+STA_DERATE_CHECK corner=fast tag=p0 nominal_wns=1.073170 derated_wns=1.073170 delta_ns=0.000000
+STA_RESULT corner=fast tag=p0 viol_setup=0 wns_setup=0.0000 tns_setup=0.0000 viol_hold=12 wns_hold=-0.0538 tns_hold=-0.3051
+STA_WORST_SETUP corner=fast clock=clk slack=1.073170 start=start_calib end=u_calib_ctrl/clk_gate_target_bit_reg/latch/D levels=
+STA_FMAX_EST corner=fast clock=clk period_ns=10.000 slack_ns=1.0732 pmin_ns=8.927 fmax_mhz=112.0
+STA_WORST_SETUP corner=fast clock=dec_clk slack=0.000000 start=srm_decision_valid end=u_srm_residue/clk_gate_dec_ones_reg/latch/D levels=
+STA_FMAX_EST corner=fast clock=dec_clk period_ns=3.000 slack_ns=0.0000 pmin_ns=3.000 fmax_mhz=333.3
+STA_WORST_HOLD corner=fast slack=-0.053847 start=u_calib_ctrl/calib_done_pulse_reg/CK end=calib_done_pulse
+STA_DONE corner=fast tag=p0
+STA_DERATE corner=fast tag=p3 late=1.0300 early=0.9700 cellcheck=1 kinds=cell_delay,net_delay,cell_check calls=6
+STA_DERATE_CHECK corner=fast tag=p3 nominal_wns=1.073170 derated_wns=1.056161 delta_ns=-0.017009
+STA_RESULT corner=fast tag=p3 viol_setup=0 wns_setup=0.0000 tns_setup=0.0000 viol_hold=14 wns_hold=-0.0687 tns_hold=-0.5074
+STA_WORST_SETUP corner=fast clock=clk slack=1.056161 start=start_calib end=u_calib_ctrl/clk_gate_target_bit_reg/latch/D levels=
+STA_FMAX_EST corner=fast clock=clk period_ns=10.000 slack_ns=1.0562 pmin_ns=8.944 fmax_mhz=111.8
+STA_WORST_SETUP corner=fast clock=dec_clk slack=0.000000 start=srm_decision_valid end=u_srm_residue/clk_gate_dec_ones_reg/latch/D levels=
+STA_FMAX_EST corner=fast clock=dec_clk period_ns=3.000 slack_ns=0.0000 pmin_ns=3.000 fmax_mhz=333.3
+STA_WORST_HOLD corner=fast slack=-0.068731 start=u_calib_ctrl/calib_done_pulse_reg/CK end=calib_done_pulse
+STA_DONE corner=fast tag=p3
+STA_DERATE corner=fast tag=p5 late=1.0500 early=0.9500 cellcheck=1 kinds=cell_delay,net_delay,cell_check calls=6
+STA_DERATE_CHECK corner=fast tag=p5 nominal_wns=1.073170 derated_wns=1.044822 delta_ns=-0.028348
+STA_RESULT corner=fast tag=p5 viol_setup=0 wns_setup=0.0000 tns_setup=0.0000 viol_hold=15 wns_hold=-0.0787 tns_hold=-0.6533
+STA_WORST_SETUP corner=fast clock=clk slack=1.044822 start=start_calib end=u_calib_ctrl/clk_gate_target_bit_reg/latch/D levels=
+STA_FMAX_EST corner=fast clock=clk period_ns=10.000 slack_ns=1.0448 pmin_ns=8.955 fmax_mhz=111.7
+STA_WORST_SETUP corner=fast clock=dec_clk slack=0.000000 start=srm_decision_valid end=u_srm_residue/clk_gate_dec_ones_reg/latch/D levels=
+STA_FMAX_EST corner=fast clock=dec_clk period_ns=3.000 slack_ns=0.0000 pmin_ns=3.000 fmax_mhz=333.3
+STA_WORST_HOLD corner=fast slack=-0.078654 start=u_calib_ctrl/calib_done_pulse_reg/CK end=calib_done_pulse
+STA_DONE corner=fast tag=p5
+STA_DERATE corner=fast tag=p8 late=1.0800 early=0.9200 cellcheck=1 kinds=cell_delay,net_delay,cell_check calls=6
+STA_DERATE_CHECK corner=fast tag=p8 nominal_wns=1.073170 derated_wns=1.027812 delta_ns=-0.045358
+STA_RESULT corner=fast tag=p8 viol_setup=0 wns_setup=0.0000 tns_setup=0.0000 viol_hold=22 wns_hold=-0.0935 tns_hold=-0.9710
+STA_WORST_SETUP corner=fast clock=clk slack=1.027812 start=start_calib end=u_calib_ctrl/clk_gate_target_bit_reg/latch/D levels=
+STA_FMAX_EST corner=fast clock=clk period_ns=10.000 slack_ns=1.0278 pmin_ns=8.972 fmax_mhz=111.5
+STA_WORST_SETUP corner=fast clock=dec_clk slack=0.000000 start=srm_decision_valid end=u_srm_residue/clk_gate_dec_ones_reg/latch/D levels=
+STA_FMAX_EST corner=fast clock=dec_clk period_ns=3.000 slack_ns=0.0000 pmin_ns=3.000 fmax_mhz=333.3
+STA_WORST_HOLD corner=fast slack=-0.093539 start=u_calib_ctrl/calib_done_pulse_reg/CK end=calib_done_pulse
+STA_DONE corner=fast tag=p8

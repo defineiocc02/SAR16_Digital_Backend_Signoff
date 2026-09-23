@@ -1,0 +1,24 @@
+﻿puts "WL-BEGIN"
+WL-BEGIN
+write_lef -help
+Usage: write_lef    # Write LEF file
+        [-library library]     (Library from which the LEF file will be written; default is current library)
+        [-design design]       (Design from which the LEF file will be written)
+        [-include include_list]
+                               (Types of data to include: 
+                                Values: cell, tech)
+        [-properties property_list]
+                               (Properties to write)
+        [-exclude_layers layer_object_list]
+                               (Layers to which any references from a block will be excluded)
+        [-slice_polygon]       (slice polygon to rectangles)
+        [-version version_number]
+                               (LEF version,default 5.8: 
+                                Values: 5.6, 5.7, 5.8, 6.0)
+        [-write_additional_viarule]
+                               (write simple via_def as VIARULE)
+        lef_file_name          (LEF file name)
+puts "WL-END"
+
+=== kit consistency test progress ===
+15 /home/<user>/sar16_work/proj_paper_core/kitcheck/kit_lvs_results.csv

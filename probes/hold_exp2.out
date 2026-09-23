@@ -1,0 +1,26 @@
+﻿=== variant 2: input -min 0.72 / comp 0.04 / output -min -0.44 ===
+   typical  PT_RC=0
+      STA_RESULT corner=typical tag=hf2 viol_setup=0 wns_setup=0.0000 tns_setup=0.0000 viol_hold=0 wns_hold=0.0000 tns_hold=0.0000
+      STA_WORST_HOLD corner=typical slack=0.008043 start=calib_comp_out end=u_calib_ctrl/comp_out_r_reg/D
+   slow     PT_RC=0
+      STA_RESULT corner=slow tag=hf2 viol_setup=0 wns_setup=0.0000 tns_setup=0.0000 viol_hold=0 wns_hold=0.0000 tns_hold=0.0000
+      STA_WORST_HOLD corner=slow slack=0.018044 start=raw_bits_i[15] end=raw_code_o_reg[15]/D
+   fast     PT_RC=0
+      STA_RESULT corner=fast tag=hf2 viol_setup=0 wns_setup=0.0000 tns_setup=0.0000 viol_hold=0 wns_hold=0.0000 tns_hold=0.0000
+      STA_WORST_HOLD corner=fast slack=0.006153 start=u_calib_ctrl/calib_done_pulse_reg/CK end=calib_done_pulse
+
+=== and a clearly generous pair, to show the trend and give margin ===
+   typical  PT_RC=0
+      STA_RESULT corner=typical tag=hf3 viol_setup=0 wns_setup=0.0000 tns_setup=0.0000 viol_hold=0 wns_hold=0.0000 tns_hold=0.0000
+   slow     PT_RC=0
+      STA_RESULT corner=slow tag=hf3 viol_setup=0 wns_setup=0.0000 tns_setup=0.0000 viol_hold=0 wns_hold=0.0000 tns_hold=0.0000
+   fast     PT_RC=0
+      STA_RESULT corner=fast tag=hf3 viol_setup=0 wns_setup=0.0000 tns_setup=0.0000 viol_hold=0 wns_hold=0.0000 tns_hold=0.0000
+
+=== setup must be untouched by a hold-only change ===
+   typical  setup viol=0 wns=
+   slow     setup viol=0 wns=
+   fast     setup viol=0 wns=
+
+=== baseline reports still untouched ===
+3

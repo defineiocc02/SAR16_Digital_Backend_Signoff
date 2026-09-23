@@ -1,0 +1,16 @@
+﻿=== the GDS that LVS actually read vs the delivered one ===
+a9474b6c478fe6fcf525c670fb00c886  /home/<user>/sar16_work/proj_paper_core/calibre/sar_digi_paper_core_merged.gds
+   delivered (host)   : a9474b6c478fe6fcf525c670fb00c886  (4331596 B)
+   VM copy: 4331596 B  mtime 2026-09-18 18:13:16.471462100 +0800
+
+=== extraction report: which layout did it read? ===
+LAYOUT NAME:              /home/<user>/sar16_work/proj_paper_core/calibre/sar_digi_paper_core_merged.gds ('sar_digi_paper_core')
+
+=== ERC report (full) ===
+ssh : cat: '/home/<user>/sar16_work/proj_paper_core/calibre/lvs/erc.rep'$'\r': No such file or directory
+At line:13 char:27
++ ... r",""; $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (cat: '/home/yia...le or directory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

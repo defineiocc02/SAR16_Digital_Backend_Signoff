@@ -1,0 +1,873 @@
+****************************************
+Report : constraint
+	-all_violators
+	-verbose
+Design : sar_digi_paper_core
+Version: W-2024.09-SP3
+Date   : Fri Sep 18 20:24:59 2026
+****************************************
+
+
+  Startpoint: u_calib_ctrl/calib_done_pulse_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: calib_done_pulse
+               (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.16       0.16
+  u_calib_ctrl/calib_done_pulse_reg/CK (DFFSX1)           0.00       0.16 r
+  u_calib_ctrl/calib_done_pulse_reg/QN (DFFSX1)           0.26 &     0.43 r
+  copt_gre_h_inst_2295/Y (BUFX1)                          0.07 &     0.50 r
+  calib_done_pulse (out)                                  0.00 &     0.50 r
+  data arrival time                                                  0.50
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.50
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.05
+
+
+  Startpoint: u_calib_ctrl/w_wr_en_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: w_wr_en (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.16       0.16
+  u_calib_ctrl/w_wr_en_reg/CK (DFFSX1)                    0.00       0.16 r
+  u_calib_ctrl/w_wr_en_reg/QN (DFFSX1)                    0.22 &     0.38 r
+  HFSBUF_2_296/Y (CLKBUFX2)                               0.11 &     0.50 r
+  w_wr_en (out)                                           0.00 &     0.50 r
+  data arrival time                                                  0.50
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.50
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.05
+
+
+  Startpoint: u_calib_ctrl/calib_overrange_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: calib_overrange
+               (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.16       0.16
+  u_calib_ctrl/calib_overrange_reg/CK (DFFSX1)            0.00       0.16 r
+  u_calib_ctrl/calib_overrange_reg/QN (DFFSX1)            0.20 &     0.36 r
+  u_calib_ctrl/HFSBUF_24_407/Y (BUFX2)                    0.15 &     0.51 r
+  calib_overrange (out)                                   0.00 &     0.51 r
+  data arrival time                                                  0.51
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.51
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.04
+
+
+  Startpoint: calib_comp_out
+               (input port clocked by clk)
+  Endpoint: u_calib_ctrl/comp_out_r_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  input external delay                                    0.00       0.00 r
+  calib_comp_out (in)                                     0.00 &     0.00 r
+  u_calib_ctrl/HFSINV_4_321/Y (INVXL)                     0.11 &     0.11 f
+  u_calib_ctrl/comp_out_r_reg/D (DFFSX1)                  0.00 &     0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.16       0.16
+  u_calib_ctrl/comp_out_r_reg/CK (DFFSX1)                            0.16 r
+  clock reconvergence pessimism                           0.00       0.16
+  clock uncertainty                                       0.05       0.21
+  library hold time                                      -0.07       0.15
+  data required time                                                 0.15
+  ------------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.12
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.03
+
+
+  Startpoint: raw_code_o_reg[9]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: raw_code_o[9]
+               (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.16       0.16
+  raw_code_o_reg[9]/CK (DFFSX1)                           0.00       0.16 r
+  raw_code_o_reg[9]/QN (DFFSX1)                           0.21 &     0.37 r
+  HFSBUF_2_59/Y (CLKBUFX2)                                0.15 &     0.52 r
+  raw_code_o[9] (out)                                     0.00 &     0.52 r
+  data arrival time                                                  0.52
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.52
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.03
+
+
+  Startpoint: raw_code_o_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: raw_code_o[0]
+               (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.17       0.17
+  raw_code_o_reg[0]/CK (DFFSX1)                           0.00       0.17 r
+  raw_code_o_reg[0]/QN (DFFSX1)                           0.23 &     0.40 r
+  HFSBUF_2_40/Y (CLKBUFX2)                                0.12 &     0.52 r
+  raw_code_o[0] (out)                                     0.00 &     0.52 r
+  data arrival time                                                  0.52
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.52
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.03
+
+
+  Startpoint: raw_code_o_reg[6]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: raw_code_o[6]
+               (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.16       0.16
+  raw_code_o_reg[6]/CK (DFFSX1)                           0.00       0.16 r
+  raw_code_o_reg[6]/QN (DFFSX1)                           0.21 &     0.37 r
+  HFSBUF_2_56/Y (CLKBUFX2)                                0.15 &     0.52 r
+  raw_code_o[6] (out)                                     0.00 &     0.52 r
+  data arrival time                                                  0.52
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.52
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.03
+
+
+  Startpoint: u_calib_ctrl/calib_mode_en_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: calib_mode_en
+               (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.24       0.24
+  u_calib_ctrl/calib_mode_en_reg/CK (DFFSX1)              0.00       0.24 r
+  u_calib_ctrl/calib_mode_en_reg/QN (DFFSX1)              0.21 &     0.45 r
+  HFSBUF_2_249/Y (CLKBUFX2)                               0.08 &     0.53 r
+  calib_mode_en (out)                                     0.00 &     0.53 r
+  data arrival time                                                  0.53
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.53
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: raw_code_o_reg[1]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: raw_code_o[1]
+               (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.17       0.17
+  raw_code_o_reg[1]/CK (DFFSX1)                           0.00       0.17 r
+  raw_code_o_reg[1]/QN (DFFSX1)                           0.23 &     0.40 r
+  HFSBUF_2_51/Y (CLKBUFX2)                                0.13 &     0.53 r
+  raw_code_o[1] (out)                                     0.00 &     0.54 r
+  data arrival time                                                  0.54
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.54
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+  Startpoint: u_srm_residue/busy_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: srm_busy (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.16       0.16
+  u_srm_residue/busy_reg/CK (DFFSX1)                      0.00       0.16 r
+  u_srm_residue/busy_reg/QN (DFFSX1)                      0.20 &     0.36 r
+  u_srm_residue/HFSBUF_77_475/Y (CLKBUFX3)                0.18 &     0.54 r
+  srm_busy (out)                                          0.01 &     0.54 r
+  data arrival time                                                  0.54
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.54
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+  Startpoint: raw_code_o_reg[2]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: raw_code_o[2]
+               (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.16       0.16
+  raw_code_o_reg[2]/CK (DFFSX1)                           0.00       0.16 r
+  raw_code_o_reg[2]/QN (DFFSX1)                           0.22 &     0.37 r
+  HFSBUF_2_52/Y (BUFX2)                                   0.17 &     0.54 r
+  raw_code_o[2] (out)                                     0.01 &     0.55 r
+  data arrival time                                                  0.55
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.55
+  ------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                     -0.00
+
+
+  Startpoint: u_calib_ctrl/calib_done_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: calib_done (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.24       0.24
+  u_calib_ctrl/calib_done_reg/CK (DFFSX1)                 0.00       0.24 r
+  u_calib_ctrl/calib_done_reg/QN (DFFSX1)                 0.22 &     0.46 r
+  HFSBUF_2_248/Y (CLKBUFX2)                               0.09 &     0.55 r
+  calib_done (out)                                        0.00 &     0.55 r
+  data arrival time                                                  0.55
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.55
+  ------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                     -0.00
+
+
+
+    Pin: u_calib_ctrl/ZCTSBUF_4055_1393/Y
+
+    max_fanout                  24.00
+  - Fanout                      44.00
+  ------------------------------
+    Slack                      -20.00  (VIOLATED)
+
+    Pin: ctosc_gls_inst_1718/Y
+
+    max_fanout                  24.00
+  - Fanout                      40.00
+  ------------------------------
+    Slack                      -16.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_1920_582/Y
+
+    max_fanout                  24.00
+  - Fanout                      40.00
+  ------------------------------
+    Slack                      -16.00  (VIOLATED)
+
+    Pin: HFSINV_8439_622/Y
+
+    max_fanout                  24.00
+  - Fanout                      36.00
+  ------------------------------
+    Slack                      -12.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_2730_599/Y
+
+    max_fanout                  24.00
+  - Fanout                      36.00
+  ------------------------------
+    Slack                      -12.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_4577_586/Y
+
+    max_fanout                  24.00
+  - Fanout                      36.00
+  ------------------------------
+    Slack                      -12.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_8622_615/Y
+
+    max_fanout                  24.00
+  - Fanout                      35.00
+  ------------------------------
+    Slack                      -11.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/gre_a_INV_7090_inst_2341/Y
+
+    max_fanout                  24.00
+  - Fanout                      35.00
+  ------------------------------
+    Slack                      -11.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_7880_607/Y
+
+    max_fanout                  24.00
+  - Fanout                      33.00
+  ------------------------------
+    Slack                       -9.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_1122_592/Y
+
+    max_fanout                  24.00
+  - Fanout                      32.00
+  ------------------------------
+    Slack                       -8.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_8782_611/Y
+
+    max_fanout                  24.00
+  - Fanout                      32.00
+  ------------------------------
+    Slack                       -8.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_10240_617/Y
+
+    max_fanout                  24.00
+  - Fanout                      32.00
+  ------------------------------
+    Slack                       -8.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_10909_618/Y
+
+    max_fanout                  24.00
+  - Fanout                      32.00
+  ------------------------------
+    Slack                       -8.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_520_603/Y
+
+    max_fanout                  24.00
+  - Fanout                      31.00
+  ------------------------------
+    Slack                       -7.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_1524_595/Y
+
+    max_fanout                  24.00
+  - Fanout                      31.00
+  ------------------------------
+    Slack                       -7.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_1906_581/Y
+
+    max_fanout                  24.00
+  - Fanout                      31.00
+  ------------------------------
+    Slack                       -7.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_2547_584/Y
+
+    max_fanout                  24.00
+  - Fanout                      31.00
+  ------------------------------
+    Slack                       -7.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_4613_602/Y
+
+    max_fanout                  24.00
+  - Fanout                      31.00
+  ------------------------------
+    Slack                       -7.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_10061_616/Y
+
+    max_fanout                  24.00
+  - Fanout                      31.00
+  ------------------------------
+    Slack                       -7.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_12227_620/Y
+
+    max_fanout                  24.00
+  - Fanout                      31.00
+  ------------------------------
+    Slack                       -7.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/ZBUF_3430_inst_1002/Y
+
+    max_fanout                  24.00
+  - Fanout                      31.00
+  ------------------------------
+    Slack                       -7.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/gre_a_INV_4409_inst_2346/Y
+
+    max_fanout                  24.00
+  - Fanout                      31.00
+  ------------------------------
+    Slack                       -7.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/gre_a_INV_6696_inst_2347/Y
+
+    max_fanout                  24.00
+  - Fanout                      31.00
+  ------------------------------
+    Slack                       -7.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_224_578/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_2067_598/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_5261_591/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_8037_608/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_11467_610/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/ZBUF_1431_inst_1018/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/ZCTSBUF_247_1371/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/ZCTSBUF_247_1382/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/ZCTSBUF_251_1374/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/ZCTSBUF_251_1376/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/ZCTSBUF_251_1378/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/ZCTSBUF_251_1388/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/ZCTSBUF_255_1368/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/ZCTSBUF_255_1381/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/ZCTSBUF_255_1386/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/ZCTSBUF_255_1387/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/ZCTSBUF_255_1390/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/ZCTSBUF_259_1380/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/ZCTSBUF_259_1383/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/clk_gate_meas_val_n_reg/main_gate/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/clk_gate_meas_val_p_reg/main_gate/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/clk_gate_shadow_weights_reg[4]/main_gate/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/clk_gate_shadow_weights_reg[5]/main_gate/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/clk_gate_shadow_weights_reg[9]/main_gate/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/clk_gate_shadow_weights_reg[10]/main_gate/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/clk_gate_shadow_weights_reg[11]/main_gate/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/clk_gate_shadow_weights_reg[12]/main_gate/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/clk_gate_shadow_weights_reg[14]/main_gate/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/clk_gate_shadow_weights_reg[16]/main_gate/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/clk_gate_shadow_weights_reg[18]/main_gate/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/gre_a_INV_2579_inst_2348/Y
+
+    max_fanout                  24.00
+  - Fanout                      30.00
+  ------------------------------
+    Slack                       -6.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_792_594/Y
+
+    max_fanout                  24.00
+  - Fanout                      29.00
+  ------------------------------
+    Slack                       -5.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_955_593/Y
+
+    max_fanout                  24.00
+  - Fanout                      28.00
+  ------------------------------
+    Slack                       -4.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_8934_614/Y
+
+    max_fanout                  24.00
+  - Fanout                      28.00
+  ------------------------------
+    Slack                       -4.00  (VIOLATED)
+
+    Pin: u_srm_residue/HFSINV_246_605/Y
+
+    max_fanout                  24.00
+  - Fanout                      28.00
+  ------------------------------
+    Slack                       -4.00  (VIOLATED)
+
+    Pin: HFSINV_7443_624/Y
+
+    max_fanout                  24.00
+  - Fanout                      27.00
+  ------------------------------
+    Slack                       -3.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_9181_612/Y
+
+    max_fanout                  24.00
+  - Fanout                      27.00
+  ------------------------------
+    Slack                       -3.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_12586_621/Y
+
+    max_fanout                  24.00
+  - Fanout                      26.00
+  ------------------------------
+    Slack                       -2.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/gre_a_INV_2209_inst_2339/Y
+
+    max_fanout                  24.00
+  - Fanout                      26.00
+  ------------------------------
+    Slack                       -2.00  (VIOLATED)
+
+    Pin: HFSINV_13612_623/Y
+
+    max_fanout                  24.00
+  - Fanout                      25.00
+  ------------------------------
+    Slack                       -1.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_1817_596/Y
+
+    max_fanout                  24.00
+  - Fanout                      25.00
+  ------------------------------
+    Slack                       -1.00  (VIOLATED)
+
+    Pin: u_calib_ctrl/HFSINV_4202_601/Y
+
+    max_fanout                  24.00
+  - Fanout                      25.00
+  ------------------------------
+    Slack                       -1.00  (VIOLATED)
+
+1

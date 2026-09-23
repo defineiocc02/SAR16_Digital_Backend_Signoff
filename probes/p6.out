@@ -1,0 +1,74 @@
+﻿########## A. correct port counts ##########
+source top ports : 0
+layout top ports : 0
+source-only      : 0 []
+layout-only      : 0 []
+rst_n in source  : False
+rst_n in layout  : False
+
+########## B. anatomy of the 'Net VDD' entry ##########
+   lines in entry        : 1403
+   '(cell ports)' marks  : 1
+   '--- ' sub-headers    :
+2:       --- 15246 Connections On This Net ---                     --- 13747 Connections On This Net ---
+3:       --------------------------                                --------------------------
+5:       --- Incorrect Devices On This Net ---
+799:       --- Correct Devices On This Net ---
+1402:--------------------------------------------------------------------------------------------------------------
+   first 12 lines:
+  1    Net VDD                                                   VDD
+       --- 15246 Connections On This Net ---                     --- 13747 Connections On This Net ---
+       --------------------------                                --------------------------
+
+       --- Incorrect Devices On This Net ---
+
+       (cell ports)                                              (cell ports)
+         VSS: VSS                                                  WEIGHT_RD_DATA[0]: VSS
+         CLK: CLK                                                  CLK: CLK
+         SRM_DECISION_BIT: SRM_DECISION_BIT                        SRM_DECISION_BIT: SRM_DECISION_BIT
+         W_WR_DATA[22]: W_WR_DATA[22]                              W_WR_DATA[22]: W_WR_DATA[22]
+         CALIB_OVERRANGE_BITS[10]: CALIB_OVERRANGE_BITS[10]        CALIB_OVERRANGE_BITS[10]: CALIB_OVERRANGE_BITS[10]
+   last 15 lines:
+       (_invx2v)                                                 (_invx2v)
+         in: X6/936                                                in: Xu_calib_ctrl/Xtemp_acc_reg[6]/s
+         out: X6/699                                               out: Xu_calib_ctrl/n2230
+         sup1: VDD                                                 sup1: VDD
+         sup2: VSS                                                 sup2: VSS
+
+       Devices: 
+         X6/X361/M31(313.4200,82.5500)  MP(P18)                    Xu_calib_ctrl/Xtemp_acc_reg[6]/M13  MP(P18) 
+         X6/X361/M15(313.2650,84.1900)  MN(N18)                    Xu_calib_ctrl/Xtemp_acc_reg[6]/M12  MN(N18) 
+         X6/X361/M33(314.6800,82.7400)  MP(P18)                    Xu_calib_ctrl/Xtemp_acc_reg[6]/M9  MP(P18) 
+         X6/X361/M16(314.5650,84.4700)  MN(N18)                    Xu_calib_ctrl/Xtemp_acc_reg[6]/M8  MN(N18) 
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+########## C. counts of incorrect objects ##########
+   incorrect nets         : 50
+   'missing instance'     : 53
+   'no similar net'       : 295
+   incorrect-instance IDs : 32
+
+########## D. what the layout-only devices have in common ##########
+     11 MN N18
+     21 MP P18
+   parent cell of those devices (top 10):
+      4 X0/X438
+      4 X0/X435
+      2 X4/X431
+      2 X2/X230
+      2 X2/X100
+      2 X1/X356
+      2 X0/X414
+      1 X7/X161
+      1 X6/X545
+      1 X5/X602
+ssh : bash: line 65: $'\r': command not found
+At line:1 char:222
++ ... r",""; $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 65: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

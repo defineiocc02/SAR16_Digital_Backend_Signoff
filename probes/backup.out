@@ -1,0 +1,35 @@
+﻿=== backups written ===
+   /home/<user>/sar16_work/proj_paper_core/constraints/.bak_v50:
+   total 20
+   drwxrwxr-x. 2 <user> <user>    72 Sep 18 19:58 .
+   drwxrwxr-x. 3 <user> <user>    88 Sep 18 19:58 ..
+   -rw-rw-r--. 1 <user> <user>  7214 Sep 17 22:01 sar_digi_paper_core_pnr.sdc
+   -rw-rw-r--. 1 <user> <user> 10735 Sep 17 21:51 sar_digi_paper_core.sdc
+   
+   /home/<user>/sar16_work/proj_paper_core/rtl/.bak_v50:
+   total 104
+   drwxrwxr-x. 2 <user> <user>   126 Sep 18 19:58 .
+   drwxrwxr-x. 4 <user> <user>   158 Sep 18 19:58 ..
+   -rw-rw-r--. 1 <user> <user> 40186 Sep 18 09:17 sar_calib_ctrl_serial.sv
+   -rw-rw-r--. 1 <user> <user> 16873 Sep 17 21:56 sar_digi_paper_core.sv
+   -rw-rw-r--. 1 <user> <user> 31153 Sep 17 23:12 srm_residue_estimator.sv
+   -rw-rw-r--. 1 <user> <user> 11222 Sep 17 23:12 srm_residue_lut.sv
+   
+   /home/<user>/sar16_work/proj_paper_core/tb/.bak_v50:
+   total 40
+   drwxrwxr-x. 2 <user> <user>    64 Sep 18 19:58 .
+   drwxrwxr-x. 3 <user> <user>    80 Sep 18 19:58 ..
+   -rw-rw-r--. 1 <user> <user>  9891 Sep 18 08:26 tb_sar16_core_pwr.sv
+   -rw-rw-r--. 1 <user> <user> 27137 Sep 17 22:14 tb_sar16_paper_core.sv
+
+=== backup md5 (these are the v4.3 baselines) ===
+bbed38aee5565138aeb425440a7b78e5  /home/<user>/sar16_work/proj_paper_core/rtl/.bak_v50/sar_digi_paper_core.sv
+d67f8bcc82f0ddf07561a6e50c0ca3e2  /home/<user>/sar16_work/proj_paper_core/constraints/.bak_v50/sar_digi_paper_core_pnr.sdc
+ssh : md5sum: '/home/<user>/sar16_work/proj_paper_core/tb/.bak_v50/*.sv'$'\r': No such file or directory
+At line:14 char:27
++ ... r",""; $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (md5sum: '/home/...le or directory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+845ae8426d81d627963bf823aba47268  /home/<user>/sar16_work/proj_paper_core/constraints/.bak_v50/sar_digi_paper_core.sdc

@@ -1,0 +1,42 @@
+﻿    if {[catch {$c -zzzbogus} u]} { puts "USAGE[$c]: $u" } else { puts "USAGE[$c]: (no error raised)" }
+}
+Error: unknown option '-zzzbogus' (CMD-010)
+Error: Current block is not defined. (DES-001)
+Information: script '/tmp/pinprobe3.tcl'
+            	stopped at line 9 due to error. (CMD-081)
+Extended error info:
+
+    while executing
+"$c"
+    ("foreach" body line 2)
+    invoked from within
+"foreach c {place_pins set_pin_physical_constraints edit_pin create_abstract} {
+    if {[catch {$c -zzzbogus} u]} { puts "USAGE[$c]: $u" } else { puts ..."
+    (file "/tmp/pinprobe3.tcl" line 9)
+ -- End Extended Error Info
+fc_shell> Error: can't read "PC": no such variable
+	Use error_info for more info. (CMD-013)
+fc_shell> fc_shell> === existence table ===
+fc_shell> Error: can't read "PC": no such variable
+	Use error_info for more info. (CMD-013)
+fc_shell> fc_shell> === usage strings ===
+fc_shell> Error: can't read "PC": no such variable
+	Use error_info for more info. (CMD-013)
+fc_shell> fc_shell> === did it reach the end? (proves the probe itself ran) ===
+fc_shell> Error: can't read "PC": no such variable
+	Use error_info for more info. (CMD-013)
+fc_shell> Error: can't read "PC": no such variable
+	Use error_info for more info. (CMD-013)
+fc_shell> Error: unknown command 'rm' (CMD-005)
+fc_shell> fc_shell> fc_shell> Maximum memory usage for this session: 2147.29 MB
+Maximum memory usage for this session including child processes: 2147.29 MB
+CPU usage for this session:      9 seconds (  0.00 hours)
+Elapsed time for this session:     15 seconds (  0.00 hours)
+Thank you for using Fusion Compiler.
+ssh : bash: line 3: $'\r': command not found
+At line:1 char:231
++ ... "; $probe | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 3: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

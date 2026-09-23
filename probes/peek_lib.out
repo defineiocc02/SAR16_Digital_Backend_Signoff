@@ -1,0 +1,25 @@
+﻿=== library / block names used by the flow ===
+32:    set PNR_TAG [expr {[info exists ::env(PNR_TAG)] ? $::env(PNR_TAG) : ""}]
+36:set PNR $PRJ/pnr${PNR_TAG}
+37:set OUT $PNR/out
+124:stage "create_lib"
+126:    create_lib $PNR/sar16_pnr_paper_core -use_technology_lib $NDM -ref_libs $NDM
+128:    puts "FATAL: create_lib failed: $m"
+641:run "save_block"      {save_block -as sar16_route_paper_core}
+
+=== what libraries exist ===
+total 16
+drwxrwxr-x.  6 <user> <user>   72 Sep 18 20:24 .
+drwxrwxr-x. 23 <user> <user> 4096 Sep 18 20:42 ..
+drwxrwxr-x.  2 <user> <user> 4096 Sep 18 20:26 logs
+drwxrwxr-x.  2 <user> <user> 4096 Sep 18 20:24 out
+drwxrwxr-x.  3 <user> <user> 4096 Sep 18 20:24 reports
+drwxrwxr-x.  5 <user> <user>  118 Sep 18 20:24 sar16_pnr_paper_core
+/home/<user>/sar16_work/proj_paper_core/pnr
+/home/<user>/sar16_work/proj_paper_core/pnr/out
+/home/<user>/sar16_work/proj_paper_core/pnr/reports
+/home/<user>/sar16_work/proj_paper_core/pnr/logs
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core
+
+=== is the saved block still there? ===
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core

@@ -1,0 +1,64 @@
+﻿=== the declaration, with its context ===
+599:PORT LAYER TEXT 141
+622:PORT LAYER TEXT 141
+641:PORT LAYER TEXT 141
+656:PORT LAYER TEXT 141
+--- around line 599 ---
+PORT LAYER TEXT 63
+TEXT LAYER 142 ATTACH 142 metal2
+PORT LAYER TEXT 142
+TEXT LAYER 62  ATTACH 62  metal2
+PORT LAYER TEXT 62
+TEXT LAYER 141 ATTACH 141 metal1
+PORT LAYER TEXT 141
+TEXT LAYER 61 ATTACH 61 metal1
+PORT LAYER TEXT 61
+--- around line 622 ---
+PORT LAYER TEXT 63
+TEXT LAYER 142 ATTACH 142 metal2
+PORT LAYER TEXT 142
+TEXT LAYER 62  ATTACH 62  metal2
+PORT LAYER TEXT 62
+TEXT LAYER 141 ATTACH 141 metal1
+PORT LAYER TEXT 141
+TEXT LAYER 61 ATTACH 61 metal1
+PORT LAYER TEXT 61
+--- around line 641 ---
+PORT LAYER TEXT 63
+TEXT LAYER 142 ATTACH 142 metal2
+PORT LAYER TEXT 142
+TEXT LAYER 62  ATTACH 62  metal2
+PORT LAYER TEXT 62
+TEXT LAYER 141 ATTACH 141 metal1
+PORT LAYER TEXT 141
+TEXT LAYER 61 ATTACH 61 metal1
+PORT LAYER TEXT 61
+--- around line 656 ---
+PORT LAYER TEXT 63
+TEXT LAYER 142 ATTACH 142 metal2
+PORT LAYER TEXT 142
+TEXT LAYER 62  ATTACH 62  metal2
+PORT LAYER TEXT 62
+TEXT LAYER 141 ATTACH 141 metal1
+PORT LAYER TEXT 141
+TEXT LAYER 61 ATTACH 61 metal1
+PORT LAYER TEXT 61
+
+=== baseline numbers (before the experiment) ===
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:            178       179    *
+
+ Nets:           26761     26876    *
+
+ Instances:      25298     24992    *    MN (4 pins)
+                 25388     25034    *    MP (4 pins)
+                ------    ------
+short groups: 0
+
+=== how the deck patch is produced (so I patch the RIGHT place) ===
+(the deck is sed-patched by run_lvs_paper_core.sh; mylvs.lvs is regenerated each run,
+ so the experiment patches the SOURCE deck copy used by that sed, not mylvs.lvs)

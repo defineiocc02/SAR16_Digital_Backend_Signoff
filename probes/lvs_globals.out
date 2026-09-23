@@ -1,0 +1,33 @@
+﻿rc=0
+
+=== the setting actually used in the patched deck ===
+412:LVS GLOBALS ARE PORTS                 YES
+
+=== port comparison now ===
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:            178       179    *
+
+ Nets:           26761     26876    *
+
+ Instances:      25298     24992    *    MN (4 pins)
+                 25388     25034    *    MP (4 pins)
+                ------    ------
+ Total Inst:     50686     50026
+
+=== error lines ===
+                    #           #     INCORRECT     #  
+  Error:    Different numbers of nets.
+  Error:    Different numbers of instances.
+  Error:    Connectivity errors.
+  Error:    Property errors.
+  Warning:  Ambiguity points were found and resolved arbitrarily.
+
+=== shorts? ===
+NO SHORTS FILE -> zero shorts
+
+=== incorrect nets count ===
+50

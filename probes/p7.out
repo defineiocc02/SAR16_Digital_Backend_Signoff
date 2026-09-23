@@ -1,0 +1,118 @@
+﻿########## A. pin-placement section of fc_pnr_paper_core.tcl ##########
+24:# NO POWER PLAN: no UPF, no PG pins; VDD/VSS come from the enclosing analog top.
+211:#   * DRC: `M1_6` and `BD_2a` each pinned at the 1000-result cap -- METAL1 had no
+219:#     PIN VDD / PIN VSS  DIRECTION INOUT  USE power  SHAPE ABUTMENT  on METAL1
+220:# so the tool can derive the rail geometry from the pin shapes.
+230:#     {connect_pg_net -net VDD [get_pins -hier -filter "name=~VDD"]}
+382:# a tool decision and pinning it here would bend the straps off the rows the moment
+396:    # -extend_low/-extend_high design_boundary_and_generate_pin sends the strap all the
+397:    # way to the block boundary AND creates the supply PIN there.  Without it the
+404:                              -extend_low design_boundary_and_generate_pin \
+405:                              -extend_high design_boundary_and_generate_pin]
+409:                              -extend_low design_boundary_and_generate_pin \
+410:                              -extend_high design_boundary_and_generate_pin]
+517:# placer only creates pin geometry for ports that have one, so the routed GDS
+521:# its pins missing cannot be connected by the enclosing top.
+524:# port a real net, hence a real pin and a real driven value. The logical
+543:            set _dp [get_pins -quiet -of_objects $_nets -filter "direction==out"]
+553:            puts "ISO_BLOCKER: the 28 constant-driven outputs will keep their missing pins."
+562:# --- pin placement + placement ------------------------------------------------
+564:run "place_pins" {place_pins -self}
+615:# TECHNOLOGY lef (25 LAYER, 0 MACRO, 0 PIN).  With -design this release also
+616:# writes the frame view of every referenced cell (112 MACRO / 650 PIN).
+629:# v4.2: census the exported interface. A block whose GDS carries fewer pin
+
+########## B. the script's own place_pins block (line context) ##########
+
+########## C. probe_fix_pins_pg.tcl (someone was probing this already) ##########
+# probe_fix_pins_pg.tcl -- two remaining defects, interrogated not guessed.
+#
+# A. 28 block pins exist in the netlist and in FC's database (IFACE_TERMINALS
+#    total=232 signal=232) but not in the written GDS/LEF (204 port texts, and
+#    the LEF is a TECHNOLOGY lef with zero MACRO/PIN records). So the loss is in
+#    the WRITERS. write_lef <file> evidently emits the tech LEF; this release
+#    should have a block-abstract writer. Find its spelling and its options.
+#
+# B. compile_pg warns
+#        PGR-095: Strategy via rule is not defined.
+#        Add appropriate via rule to get expected results and avoid runtime penalties.
+#    and 3517 cells stay physically disconnected even though the logical
+#    connection is complete (3720/3720) and the M1 rails exist (86 = 43 rows x
+#    2 nets). A via rule is the named missing input, so probe how this release
+#    wants it expressed.
+set PNR /home/<user>/sar16_work/proj_paper_core/pnr
+proc banner {s} { puts ""; puts "########## $s ##########" }
+proc attempt {label script} {
+    if {[catch {uplevel 1 $script} m]} { puts "  STEP-FAIL $label -> $m"; return 0 }
+    puts "  STEP-OK   $label"; return 1
+}
+proc usage {cmd} { catch {$cmd -zzzbogus} u; puts "  usage[$cmd]: $u" }
+
+open_lib $PNR/sar16_pnr_paper_core
+open_block sar16_route_paper_core
+puts "  cells=[sizeof_collection [get_cells -hier -quiet -filter "is_hierarchical==false"]]"
+puts "  terminals=[sizeof_collection [get_terminals -quiet *]]"
+
+banner "A1 which write_* commands exist"
+foreach c {write_lef write_lef_abstract write_gds write_verilog write_def write_block_summary} {
+    puts "  $c : [expr {[llength [info commands $c]] > 0 ? "EXISTS" : "absent"}]"
+}
+
+banner "A2 write_lef_abstract spellings -> /tmp/ab_*.lef"
+foreach v {
+    {"positional"   {write_lef_abstract /tmp/ab_pos.lef}}
+    {"-output"      {write_lef_abstract -output /tmp/ab_out.lef}}
+    {"-no_tech"     {write_lef_abstract -output /tmp/ab_nt.lef -no_tech}}
+    {"-include_tech positional" {write_lef_abstract /tmp/ab_inc.lef -include_tech}}
+} {
+    set lbl [lindex $v 0]; set sc [lindex $v 1]
+    attempt $lbl $sc
+}
+foreach f {/tmp/ab_pos.lef /tmp/ab_out.lef /tmp/ab_nt.lef /tmp/ab_inc.lef} {
+    if {[file exists $f]} {
+        set fh [open $f r]; set t [read $fh]; close $fh
+        puts "  [format %-18s $f] bytes=[file size $f]  MACRO=[regexp -all -inline {^MACRO } $t]  PIN=[regexp -all -inline {  PIN } $t]"
+    } else { puts "  [format %-18s $f] NOT WRITTEN" }
+}
+
+banner "B1 via-rule commands and set_pg_strategy options"
+foreach c {create_pg_via_rule create_via_rule set_pg_via_rule set_pg_via_definition create_pg_via_def} {
+    puts "  $c : [expr {[llength [info commands $c]] > 0 ? "EXISTS" : "absent"}]"
+}
+usage set_pg_strategy
+usage create_pg_std_cell_conn_pattern
+
+banner "B2 try variants of set_pg_strategy that mention a via rule"
+attempt "recreate rail pattern" {create_pg_std_cell_conn_pattern rail_v4 -layers {METAL1}}
+foreach v {
+    {"-via_rule list" {set_pg_strategy sv1 -core -pattern {{name: rail_v4} {nets: {VDD VSS}}} -via_rule {{layers: {METAL1 METAL1}} {via_master: VIA12}}}}
+    {"pattern via_rule kw" {set_pg_strategy sv2 -core -pattern {{name: rail_v4} {nets: {VDD VSS}} {via_rule: {layers: {METAL1 METAL1}}}}}}
+} {
+    set lbl [lindex $v 0]; set sc [lindex $v 1]
+    attempt $lbl $sc
+}
+
+banner "B3 compile_pg with the pattern, and watch for PGR-095"
+attempt "compile_pg sv1" {compile_pg -strategies sv1}
+if {[catch {redirect /tmp/pg5.rpt {check_pg_connectivity}} m]} { puts "  check FAIL $m" } else {
+    set fh [open /tmp/pg5.rpt r]; set t [read $fh]; close $fh
+    set fw n/a; set fc n/a
+    regexp -nocase {Number of floating wires:\s*(\d+)}     $t -> fw
+    regexp -nocase {Number of floating std cells:\s*(\d+)} $t -> fc
+    puts "  MEASURE floating_wires=$fw floating_std_cells=$fc"
+}
+
+banner "B4 what does the extracted netlist say the PG nets look like"
+puts "  VDD nets=[sizeof_collection [get_nets -quiet VDD]]  VSS nets=[sizeof_collection [get_nets -quiet VSS]]"
+
+puts "PROBE_FIX_DONE (nothing saved)"
+exit 0
+
+########## D. what the tool itself says about place_pins ##########
+ssh : bash: line 19: $'\r': command not found
+At line:1 char:219
++ ... r",""; $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 19: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

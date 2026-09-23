@@ -1,0 +1,18 @@
+****************************************
+Report : timing derate
+Design : sar_digi_paper_core
+Version: W-2024.09-SP3
+Date   : Fri Sep 18 20:25:23 2026
+****************************************
+
+                                  ----- Clock ------                  ------ Data ------
+                                Rise              Fall              Rise              Fall
+                           Early     Late    Early     Late    Early     Late    Early     Late
+ ----------------------------------------------------------------------------------------------
+ design: sar_digi_paper_core
+   Net delay static         0.97     1.03     0.97     1.03     0.97     1.03     0.97     1.03
+   Net delay dynamic        0.97     1.03     0.97     1.03     0.97     1.03     0.97     1.03
+   Cell delay               0.97     1.03     0.97     1.03     0.97     1.03     0.97     1.03
+   Cell check               0.97     1.03     0.97     1.03     0.97     1.03     0.97     1.03
+
+1

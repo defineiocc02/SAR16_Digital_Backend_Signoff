@@ -1,0 +1,117 @@
+﻿########## A. rtl tree ##########
+total 108
+drwxrwxr-x.  3 <user> <user>   142 Sep 18 09:17 .
+drwxrwxr-x. 22 <user> <user>  4096 Sep 18 18:09 ..
+drwxrwxr-x.  2 <user> <user>   126 Sep 18 09:17 .bak_v41
+-rw-rw-r--.  1 <user> <user> 40186 Sep 18 09:17 sar_calib_ctrl_serial.sv
+-rw-rw-r--.  1 <user> <user> 16873 Sep 17 21:56 sar_digi_paper_core.sv
+-rw-rw-r--.  1 <user> <user> 31153 Sep 17 23:12 srm_residue_estimator.sv
+-rw-rw-r--.  1 <user> <user> 11222 Sep 17 23:12 srm_residue_lut.sv
+
+########## B. every declaration / driver / use of weight_rd_data ##########
+/home/<user>/sar16_work/proj_paper_core/rtl/sar_digi_paper_core.sv:139:    output logic signed [WEIGHT_WIDTH-1:0] weight_rd_data,
+/home/<user>/sar16_work/proj_paper_core/rtl/sar_digi_paper_core.sv:304:                    weight_rd_data = weight_tab[weight_rd_addr];
+/home/<user>/sar16_work/proj_paper_core/rtl/sar_digi_paper_core.sv:306:                    weight_rd_data = '0;
+/home/<user>/sar16_work/proj_paper_core/rtl/sar_digi_paper_core.sv:315:            assign weight_rd_data = '0;
+/home/<user>/sar16_work/proj_paper_core/rtl/.bak_v41/sar_digi_paper_core.sv:139:    output logic signed [WEIGHT_WIDTH-1:0] weight_rd_data,
+/home/<user>/sar16_work/proj_paper_core/rtl/.bak_v41/sar_digi_paper_core.sv:304:                    weight_rd_data = weight_tab[weight_rd_addr];
+/home/<user>/sar16_work/proj_paper_core/rtl/.bak_v41/sar_digi_paper_core.sv:306:                    weight_rd_data = '0;
+/home/<user>/sar16_work/proj_paper_core/rtl/.bak_v41/sar_digi_paper_core.sv:315:            assign weight_rd_data = '0;
+
+########## C. every declaration / driver / use of srm_residue_o ##########
+/home/<user>/sar16_work/proj_paper_core/rtl/sar_digi_paper_core.sv:44://     3. the SRM residue estimate         -> srm_residue_o / srm_residue_valid_o
+/home/<user>/sar16_work/proj_paper_core/rtl/sar_digi_paper_core.sv:156:    output logic signed [WEIGHT_WIDTH-1:0] srm_residue_o
+/home/<user>/sar16_work/proj_paper_core/rtl/sar_digi_paper_core.sv:222:    assign srm_residue_o = srm_residue_q;
+/home/<user>/sar16_work/proj_paper_core/rtl/.bak_v41/sar_digi_paper_core.sv:44://     3. the SRM residue estimate         -> srm_residue_o / srm_residue_valid_o
+/home/<user>/sar16_work/proj_paper_core/rtl/.bak_v41/sar_digi_paper_core.sv:156:    output logic signed [WEIGHT_WIDTH-1:0] srm_residue_o
+/home/<user>/sar16_work/proj_paper_core/rtl/.bak_v41/sar_digi_paper_core.sv:222:    assign srm_residue_o = srm_residue_q;
+
+########## D. the top module port list ##########
+77:module sar_digi_paper_core #(
+78-    parameter int  CAP_NUM           = 20,      // DAC bit count (16-bit + redundancy)
+79-    parameter int  WEIGHT_WIDTH      = 30,      // signed, Q8: LSB_0 = 256
+80-    parameter int  COMP_WAIT_CYC     = 16,
+81-    parameter int  AVG_LOOPS         = 32,      // Sec. 4.5: "measured 32 times" -> 64x average
+82-    parameter int  MAX_CALIB_BIT     = 5,       // Sec. 4.3.1: 6-bit LSB section reused
+83-    parameter int  REF_WEIGHT_LSB    = 256,     // 1.0 LSB_0 in Q8
+84-    parameter int  SRM_DECISIONS     = 22,      // Sec. 4.6.3: "22 extra decisions"
+85-    parameter int  SRM_RES_FRAC      = 8,
+86-    parameter int  SRM_SIGMA_Q8      = 128,     // MUST match the baked LUT (guarded in the estimator)
+87-    parameter bit  CALIB_ROUND_HALF_LSB = 1'b1,
+88-    parameter int  SRM_STALL_CYCLES  = 64,
+89-
+90-    // How the calibrated weights leave the die.
+91-    //   0 = STREAM (default, paper-aligned): no on-die weight storage at all.
+92-    //       The off-chip reconstructor latches W_k off `w_wr_*` when the
+93-    //       calibration logic publishes each measurement.  Costs zero flops.
+94-    //   1 = REGFILE: additionally keep a flat 20 x 30 bit table with a read
+95-    //       port, so the weights can be read back at any time.  Measured at
+96-    //       39 248 um^2 in the SMIC 180 nm flow -- 24 % of the core -- which is
+97-    //       why it is OFF by default.
+98-    parameter bit  WEIGHT_EXPORT_REG = 1'b0
+99-) (
+100-    // -------------------------------------------------------------------------
+101-    // Global
+102-    // -------------------------------------------------------------------------
+103-    input  logic clk,                   // housekeeping clock, 100 MHz
+104-    input  logic dec_clk,               // comparator/latch decision clock, ~300 MHz
+105-    input  logic rst_n,                 // asynchronous, active low, common to both domains
+106-
+107-    // -------------------------------------------------------------------------
+108-    // Calibration control -- "a calibration logic" (Sec. 4.3.1)
+109-    // -------------------------------------------------------------------------
+110-    input  logic start_calib,
+111-    input  logic calib_comp_out,
+112-
+113-    output logic calib_done,
+114-    output logic calib_done_pulse,
+115-    output logic calib_mode_en,
+116-    output logic [CAP_NUM-1:0] dac_p_force,
+117-    output logic [CAP_NUM-1:0] dac_n_force,
+118-    output logic calib_overrange,
+119-    output logic [CAP_NUM-1:0] calib_overrange_bits,
+120-
+121-    // -------------------------------------------------------------------------
+122-    // Raw SAR decision word -- produced by the analogue-side SAR logic
+123-    // -------------------------------------------------------------------------
+124-    input  logic data_valid_i,
+125-    input  logic [CAP_NUM-1:0] raw_bits_i,
+126-
+127-    output logic [CAP_NUM-1:0] raw_code_o,
+128-    output logic               raw_code_valid_o,
+129-
+130-    // -------------------------------------------------------------------------
+131-    // Calibrated bit weights, exported for the OFF-CHIP weighted sum
+132-    // -------------------------------------------------------------------------
+133-    output logic                     w_wr_en,
+134-    output logic [4:0]               w_wr_addr,
+135-    output logic signed [WEIGHT_WIDTH-1:0] w_wr_data,
+136-
+137-    input  logic                     weight_rd_en,
+138-    input  logic [4:0]               weight_rd_addr,
+139-    output logic signed [WEIGHT_WIDTH-1:0] weight_rd_data,
+140-
+141-    // -------------------------------------------------------------------------
+142-    // SRM residue acquisition -- decision domain -- "an SRM counter"
+143-    // -------------------------------------------------------------------------
+144-    input  logic srm_start,
+145-    input  logic srm_decision_valid,    // in dec_clk domain
+146-    input  logic srm_decision_bit,      // in dec_clk domain
+147-    input  logic residue_consume_i,
+148-
+149-    output logic srm_busy,
+150-    output logic srm_done,
+151-    output logic srm_residue_valid,
+152-    output logic [4:0] srm_ones_count,
+153-    output logic [4:0] srm_total_count,
+154-    output logic srm_count_shortfall,
+155-    output logic srm_stalled,
+156-    output logic signed [WEIGHT_WIDTH-1:0] srm_residue_o
+157-);
+ssh : bash: line 17: $'\r': command not found
+At line:1 char:224
++ ... r",""; $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 17: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

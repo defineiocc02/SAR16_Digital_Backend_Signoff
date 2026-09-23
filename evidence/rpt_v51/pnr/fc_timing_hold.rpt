@@ -1,0 +1,811 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -nworst 2
+        -max_paths 25
+        -report_by design
+Design : sar_digi_paper_core
+Version: W-2024.09-SP3
+Date   : Fri Sep 18 20:24:14 2026
+****************************************
+
+  Startpoint: u_calib_ctrl/w_wr_en_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: w_wr_en (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.31      0.31
+
+  u_calib_ctrl/w_wr_en_reg/CK (DFFSX1)             0.00      0.31 r
+  u_calib_ctrl/w_wr_en_reg/QN (DFFSX1)             0.52      0.83 r
+  HFSBUF_2_296/Y (CLKBUFX2)                        0.25      1.08 r
+  w_wr_en (out)                                    0.00      1.08 r
+  data arrival time                                          1.08
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.05
+
+
+
+  Startpoint: u_calib_ctrl/calib_done_pulse_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: calib_done_pulse (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.31      0.31
+
+  u_calib_ctrl/calib_done_pulse_reg/CK (DFFSX1)    0.00      0.31 r
+  u_calib_ctrl/calib_done_pulse_reg/QN (DFFSX1)    0.61      0.92 r
+  copt_gre_h_inst_2295/Y (BUFX1)                   0.17      1.10 r
+  calib_done_pulse (out)                           0.00      1.10 r
+  data arrival time                                          1.10
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.10
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.07
+
+
+
+  Startpoint: u_calib_ctrl/calib_overrange_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: calib_overrange (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.31      0.31
+
+  u_calib_ctrl/calib_overrange_reg/CK (DFFSX1)     0.00      0.31 r
+  u_calib_ctrl/calib_overrange_reg/QN (DFFSX1)     0.48      0.79 r
+  u_calib_ctrl/HFSBUF_24_407/Y (BUFX2)             0.31      1.10 r
+  calib_overrange (out)                            0.00      1.10 r
+  data arrival time                                          1.10
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.10
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.07
+
+
+
+  Startpoint: raw_code_o_reg[9] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: raw_code_o[9] (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.31      0.31
+
+  raw_code_o_reg[9]/CK (DFFSX1)                    0.00      0.31 r
+  raw_code_o_reg[9]/QN (DFFSX1)                    0.50      0.81 r
+  HFSBUF_2_59/Y (CLKBUFX2)                         0.32      1.13 r
+  raw_code_o[9] (out)                              0.00      1.13 r
+  data arrival time                                          1.13
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.13
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.10
+
+
+
+  Startpoint: raw_code_o_reg[6] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: raw_code_o[6] (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.31      0.31
+
+  raw_code_o_reg[6]/CK (DFFSX1)                    0.00      0.31 r
+  raw_code_o_reg[6]/QN (DFFSX1)                    0.51      0.81 r
+  HFSBUF_2_56/Y (CLKBUFX2)                         0.32      1.13 r
+  raw_code_o[6] (out)                              0.00      1.13 r
+  data arrival time                                          1.13
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.13
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.11
+
+
+
+  Startpoint: u_calib_ctrl/calib_overrange_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: calib_overrange (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.31      0.31
+
+  u_calib_ctrl/calib_overrange_reg/CK (DFFSX1)     0.00      0.31 r
+  u_calib_ctrl/calib_overrange_reg/QN (DFFSX1)     0.56      0.87 f
+  u_calib_ctrl/HFSBUF_24_407/Y (BUFX2)             0.27      1.14 f
+  calib_overrange (out)                            0.00      1.15 f
+  data arrival time                                          1.15
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.15
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.12
+
+
+
+  Startpoint: raw_code_o_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: raw_code_o[0] (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.34      0.34
+
+  raw_code_o_reg[0]/CK (DFFSX1)                    0.00      0.34 r
+  raw_code_o_reg[0]/QN (DFFSX1)                    0.54      0.88 r
+  HFSBUF_2_40/Y (CLKBUFX2)                         0.26      1.14 r
+  raw_code_o[0] (out)                              0.00      1.15 r
+  data arrival time                                          1.15
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.15
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.12
+
+
+
+  Startpoint: u_calib_ctrl/calib_done_pulse_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: calib_done_pulse (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.31      0.31
+
+  u_calib_ctrl/calib_done_pulse_reg/CK (DFFSX1)    0.00      0.31 r
+  u_calib_ctrl/calib_done_pulse_reg/QN (DFFSX1)    0.66      0.97 f
+  copt_gre_h_inst_2295/Y (BUFX1)                   0.20      1.17 f
+  calib_done_pulse (out)                           0.00      1.17 f
+  data arrival time                                          1.17
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.17
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.14
+
+
+
+  Startpoint: raw_code_o_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: raw_code_o[1] (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.34      0.34
+
+  raw_code_o_reg[1]/CK (DFFSX1)                    0.00      0.34 r
+  raw_code_o_reg[1]/QN (DFFSX1)                    0.55      0.89 r
+  HFSBUF_2_51/Y (CLKBUFX2)                         0.28      1.17 r
+  raw_code_o[1] (out)                              0.00      1.17 r
+  data arrival time                                          1.17
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.17
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.15
+
+
+
+  Startpoint: u_calib_ctrl/w_wr_en_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: w_wr_en (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.31      0.31
+
+  u_calib_ctrl/w_wr_en_reg/CK (DFFSX1)             0.00      0.31 r
+  u_calib_ctrl/w_wr_en_reg/QN (DFFSX1)             0.59      0.90 f
+  HFSBUF_2_296/Y (CLKBUFX2)                        0.27      1.17 f
+  w_wr_en (out)                                    0.00      1.18 f
+  data arrival time                                          1.18
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.18
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.15
+
+
+
+  Startpoint: u_srm_residue/busy_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: srm_busy (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.31      0.31
+
+  u_srm_residue/busy_reg/CK (DFFSX1)               0.00      0.31 r
+  u_srm_residue/busy_reg/QN (DFFSX1)               0.48      0.79 r
+  u_srm_residue/HFSBUF_77_475/Y (CLKBUFX3)         0.38      1.17 r
+  srm_busy (out)                                   0.01      1.18 r
+  data arrival time                                          1.18
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.18
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.15
+
+
+
+  Startpoint: raw_code_o_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: raw_code_o[2] (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.31      0.31
+
+  raw_code_o_reg[2]/CK (DFFSX1)                    0.00      0.31 r
+  raw_code_o_reg[2]/QN (DFFSX1)                    0.51      0.82 r
+  HFSBUF_2_52/Y (BUFX2)                            0.35      1.17 r
+  raw_code_o[2] (out)                              0.01      1.18 r
+  data arrival time                                          1.18
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.18
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.15
+
+
+
+  Startpoint: u_calib_ctrl/calib_mode_en_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: calib_mode_en (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.52      0.52
+
+  u_calib_ctrl/calib_mode_en_reg/CK (DFFSX1)       0.00      0.52 r
+  u_calib_ctrl/calib_mode_en_reg/QN (DFFSX1)       0.48      1.00 r
+  HFSBUF_2_249/Y (CLKBUFX2)                        0.18      1.18 r
+  calib_mode_en (out)                              0.00      1.18 r
+  data arrival time                                          1.18
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.18
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.15
+
+
+
+  Startpoint: raw_code_valid_o_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: raw_code_valid_o (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.34      0.34
+
+  raw_code_valid_o_reg/CK (DFFSX1)                 0.00      0.34 r
+  raw_code_valid_o_reg/QN (DFFSX1)                 0.52      0.86 r
+  HFSBUF_2_60/Y (BUFX2)                            0.33      1.19 r
+  raw_code_valid_o (out)                           0.00      1.20 r
+  data arrival time                                          1.20
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.20
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.17
+
+
+
+  Startpoint: u_srm_residue/residue_valid_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: srm_residue_valid (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.31      0.31
+
+  u_srm_residue/residue_valid_reg/CK (DFFSX1)      0.00      0.31 r
+  u_srm_residue/residue_valid_reg/QN (DFFSX1)      0.51      0.82 r
+  u_srm_residue/HFSBUF_17_420/Y (CLKBUFX8)         0.36      1.18 r
+  srm_residue_valid (out)                          0.02      1.20 r
+  data arrival time                                          1.20
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.20
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.17
+
+
+
+  Startpoint: raw_code_o_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: raw_code_o[2] (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.31      0.31
+
+  raw_code_o_reg[2]/CK (DFFSX1)                    0.00      0.31 r
+  raw_code_o_reg[2]/QN (DFFSX1)                    0.58      0.89 f
+  HFSBUF_2_52/Y (BUFX2)                            0.31      1.20 f
+  raw_code_o[2] (out)                              0.01      1.20 f
+  data arrival time                                          1.20
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.20
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.17
+
+
+
+  Startpoint: u_calib_ctrl/calib_done_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: calib_done (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.52      0.52
+
+  u_calib_ctrl/calib_done_reg/CK (DFFSX1)          0.00      0.52 r
+  u_calib_ctrl/calib_done_reg/QN (DFFSX1)          0.50      1.02 r
+  HFSBUF_2_248/Y (CLKBUFX2)                        0.20      1.22 r
+  calib_done (out)                                 0.00      1.22 r
+  data arrival time                                          1.22
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.22
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.20
+
+
+
+  Startpoint: u_srm_residue/tot_g_s2_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_srm_residue/cap_total_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.31      0.31
+
+  u_srm_residue/tot_g_s2_reg[4]/CK (DFFSX1)        0.00      0.31 r
+  u_srm_residue/tot_g_s2_reg[4]/Q (DFFSX1)         0.60      0.90 f
+  u_srm_residue/cap_total_reg[4]/D (DFFSXL)        0.00      0.90 f
+  data arrival time                                          0.90
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.63      0.63
+  u_srm_residue/cap_total_reg[4]/CK (DFFSXL)       0.00      0.63 r
+  clock uncertainty                                0.05      0.68
+  library hold time                                0.03      0.71
+  data required time                                         0.71
+  ------------------------------------------------------------------------
+  data required time                                         0.71
+  data arrival time                                         -0.90
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.20
+
+
+
+  Startpoint: raw_code_valid_o_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: raw_code_valid_o (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.34      0.34
+
+  raw_code_valid_o_reg/CK (DFFSX1)                 0.00      0.34 r
+  raw_code_valid_o_reg/QN (DFFSX1)                 0.59      0.93 f
+  HFSBUF_2_60/Y (BUFX2)                            0.29      1.22 f
+  raw_code_valid_o (out)                           0.00      1.23 f
+  data arrival time                                          1.23
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.23
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.20
+
+
+
+  Startpoint: raw_code_o_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: raw_code_o[0] (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.34      0.34
+
+  raw_code_o_reg[0]/CK (DFFSX1)                    0.00      0.34 r
+  raw_code_o_reg[0]/QN (DFFSX1)                    0.61      0.95 f
+  HFSBUF_2_40/Y (CLKBUFX2)                         0.29      1.24 f
+  raw_code_o[0] (out)                              0.00      1.24 f
+  data arrival time                                          1.24
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.24
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.21
+
+
+
+  Startpoint: raw_code_o_reg[9] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: raw_code_o[9] (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.31      0.31
+
+  raw_code_o_reg[9]/CK (DFFSX1)                    0.00      0.31 r
+  raw_code_o_reg[9]/QN (DFFSX1)                    0.58      0.89 f
+  HFSBUF_2_59/Y (CLKBUFX2)                         0.36      1.24 f
+  raw_code_o[9] (out)                              0.00      1.25 f
+  data arrival time                                          1.25
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.25
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.22
+
+
+
+  Startpoint: raw_code_o_reg[6] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: raw_code_o[6] (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.31      0.31
+
+  raw_code_o_reg[6]/CK (DFFSX1)                    0.00      0.31 r
+  raw_code_o_reg[6]/QN (DFFSX1)                    0.58      0.89 f
+  HFSBUF_2_56/Y (CLKBUFX2)                         0.36      1.25 f
+  raw_code_o[6] (out)                              0.00      1.25 f
+  data arrival time                                          1.25
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.25
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.22
+
+
+
+  Startpoint: u_srm_residue/ones_g_s2_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_srm_residue/cap_ones_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.31      0.31
+
+  u_srm_residue/ones_g_s2_reg[4]/CK (DFFSX1)       0.00      0.31 r
+  u_srm_residue/ones_g_s2_reg[4]/Q (DFFSX1)        0.63      0.93 f
+  u_srm_residue/cap_ones_reg[4]/D (DFFSXL)         0.00      0.93 f
+  data arrival time                                          0.93
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.63      0.63
+  u_srm_residue/cap_ones_reg[4]/CK (DFFSXL)        0.00      0.63 r
+  clock uncertainty                                0.05      0.68
+  library hold time                                0.02      0.70
+  data required time                                         0.70
+  ------------------------------------------------------------------------
+  data required time                                         0.70
+  data arrival time                                         -0.93
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.23
+
+
+
+  Startpoint: u_calib_ctrl/calib_mode_en_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: calib_mode_en (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.52      0.52
+
+  u_calib_ctrl/calib_mode_en_reg/CK (DFFSX1)       0.00      0.52 r
+  u_calib_ctrl/calib_mode_en_reg/QN (DFFSX1)       0.55      1.07 f
+  HFSBUF_2_249/Y (CLKBUFX2)                        0.19      1.26 f
+  calib_mode_en (out)                              0.00      1.26 f
+  data arrival time                                          1.26
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.26
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.23
+
+
+
+  Startpoint: u_calib_ctrl/overrange_bits_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: calib_overrange_bits[0] (output port clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.71      0.71
+
+  u_calib_ctrl/overrange_bits_reg[0]/CK (DFFSX2)   0.00      0.71 r
+  u_calib_ctrl/overrange_bits_reg[0]/QN (DFFSX2)   0.55      1.26 r
+  calib_overrange_bits[0] (out)                    0.00      1.27 r
+  data arrival time                                          1.27
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.48      0.48
+  clock uncertainty                                0.05      0.53
+  output external delay                            0.50      1.03
+  data required time                                         1.03
+  ------------------------------------------------------------------------
+  data required time                                         1.03
+  data arrival time                                         -1.27
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.24
+
+
+1

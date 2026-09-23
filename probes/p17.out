@@ -1,0 +1,98 @@
+﻿log bytes: 6630
+puts "H2-BEGIN"
+H2-BEGIN
+puts "=== set_individual_pin_constraints -help ==="
+=== set_individual_pin_constraints -help ===
+set_individual_pin_constraints -help
+Usage: set_individual_pin_constraints    # Set pin constraints on individual nets or pins for pin assignment
+        [-cells list_of_cells] (Specifies the collection of block cells for nets to set pin constraints)
+        [-nets list_of_nets]   (set constraints on block pins that connected to nets.)
+        [-pins list_of_pins]   (Specifies the collection of pins to set pin constraints)
+        [-ports list_of_ports] (Specifies the collection of ports to set pin constraints)
+        [-allow_feedthroughs true | false]
+                               (Specifies whether feedthrough ports can be created in pin placement flow)
+        [-allowed_layers allow_layers]
+                               (Allowed metal layers for block pins)
+        [-pin_spacing pin_spacing]
+                               (Minimum number of wire tracks between adjacent block pins: 
+                                Value >= 0)
+        [-pin_spacing_distance pin_spacing_distance]
+                               (Minimum distance between adjacent block pins in micron: 
+                                Value >= 0)
+        [-sides list_of_integer]
+                               (Collection of side numbers on which the specified pins must be placed )
+        [-exclude_sides list_of_integer]
+                               (Collection of side numbers on which the specified pins must not be placed)
+        [-offset distance_or_pct_list]
+                               (offset from the starting point of the specific side)
+        [-width pin_width]     (width of the pin)
+        [-length pin_length]   (length of the pin)
+        [-off_edge]            (this pin should be placed off edge)
+        [-location pin_location]
+                               (location of the pin)
+puts "H2-MID"
+H2-MID
+puts "=== create_pin_guide -help ==="
+=== create_pin_guide -help ===
+create_pin_guide -help
+Usage: create_pin_guide    # Create a pin guide in the current design
+        -boundary geometry     (Rectilinear boundary of the pin guide)
+        [-layers layer_list]   (Layers on which the pin guide exists)
+        [-parents cell_list]   (Macro and partition cells to which this pin guide applies)
+        [-name pin_guide_name] (Name of the pin guide)
+        [-exclusive]           (Set the pin guide to be exclusive)
+        [-pin_spacing number_of_wire_tracks]
+                               (Number of wire tracks between pins: 
+                                Range: 0 to 254)
+        [-cell cell]           (Specifies the physical cell where the pin guide is to be added)
+        object_list            (Pins, nets, bundles of nets, or ports to add to the pin guide)
+puts "H2-MID2"
+H2-MID2
+puts "=== set_block_pin_constraints -help ==="
+=== set_block_pin_constraints -help ===
+set_block_pin_constraints -help
+Usage: set_block_pin_constraints    # Set block pin constraints in design planning
+        [-cells list_of_blocks]
+                               (Specifies the collection of blocks to set pin constraints)
+        [-allowed_layers allow_layers]
+                               (Allowed metal layers for block pins)
+        [-corner_keepout_num_tracks corner_keepout_num_tracks]
+                               (Number of wire tracks from corner when place block pins: 
+                                Value >= 0)
+        [-corner_keepout_distance int]
+                               (How long from corner when place block pins in term of micron: 
+                                Value >= 0)
+        [-pin_spacing int]     (Minimum number of wire tracks between adjacent block pins: 
+                                Value >= 0)
+        [-pin_spacing_distance pin_spacing_distance]
+                               (Minimum distance between adjacent block pins in micron: 
+                                Value >= 0)
+        [-allow_feedthroughs true | false]
+                               (Specifies whether feedthrough ports can be created in pin placement)
+        [-exclude_sides list_of_integer]
+                               (Collection of side numbers that place_pins should not use for pin placement)
+        [-sides list_of_integer]
+                               (Collection of side numbers that place_pins should use for pin placement)
+        [-width pin_width]     (width of the pin)
+        [-length pin_length]   (length of the pin)
+        [-self]                (Set pin constraints for current top design)
+        [-hard_constraints off | location | spacing | layer | length]
+                               (specifies hard pin constraint type: 
+                                Values: layer, length, location, off, 
+                                spacing)
+        [-stacking_allowed any | with_pg_pins_only | with_signal_pins_only | none]
+                               (Specifies allowance of signal pins stacking above or below other pins and power or ground straps)
+puts "H2-END"
+H2-END
+exit 0
+Maximum memory usage for this session: 2147.29 MB
+Maximum memory usage for this session including child processes: 2147.29 MB
+CPU usage for this session:      9 seconds (  0.00 hours)
+Elapsed time for this session:     16 seconds (  0.00 hours)
+ssh : bash: line 22: $'\r': command not found
+At line:1 char:230
++ ...  "`n"; $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 22: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

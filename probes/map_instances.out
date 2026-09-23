@@ -1,0 +1,43 @@
+﻿matched device pairs found: 2356
+layout instances with a known source counterpart: 465
+   X5/X430        -> [('Xu_calib_ctrl/XZBUF_3430_inst_1002', 8)]
+   X0/X481        -> [('Xu_calib_ctrl/XU882', 8)]
+   X5/X162        -> [('Xu_calib_ctrl/Xtemp_acc_reg[2]', 4)]
+   X5/X251        -> [('Xu_calib_ctrl/Xtemp_acc_reg[2]', 4)]
+   X3/X352        -> [('Xu_calib_ctrl/XctmTdsLR_3_2019', 1)]
+   X3/X353        -> [('Xu_calib_ctrl/XctmTdsLR_2_2040', 1)]
+   X3/X354        -> [('Xu_calib_ctrl/XctmTdsLR_2_2060', 1)]
+   X3/X318        -> [('Xu_calib_ctrl/XctmTdsLR_3_2061', 1)]
+
+layout-only devices: 35, in 20 distinct instances
+
+=== who are they, by the company they keep ===
+   X0/X199        -> no matched sibling (cannot name it this way)
+   X0/X355        -> no matched sibling (cannot name it this way)
+   X0/X434        -> no matched sibling (cannot name it this way)
+   X0/X436        -> no matched sibling (cannot name it this way)
+   X0/X439        -> nearest matched source: Xu_calib_ctrl/XctmTdsLR_3_1977
+   X1/X335        -> no matched sibling (cannot name it this way)
+   X1/X378        -> nearest matched source: Xu_srm_residue/XHFSINV_106_588
+   X2             -> nearest matched source: Xu_calib_ctrl/Xcalc_result_r_reg[8]
+   X2/X159        -> no matched sibling (cannot name it this way)
+   X2/X370        -> no matched sibling (cannot name it this way)
+   X2/X441        -> no matched sibling (cannot name it this way)
+   X3/X247        -> no matched sibling (cannot name it this way)
+   X4/X280        -> no matched sibling (cannot name it this way)
+   X4/X436        -> no matched sibling (cannot name it this way)
+   X5/X149        -> no matched sibling (cannot name it this way)
+   X5/X354        -> no matched sibling (cannot name it this way)
+   X6/X173        -> no matched sibling (cannot name it this way)
+   X6/X175        -> no matched sibling (cannot name it this way)
+   X6/X424        -> nearest matched source: Xu_calib_ctrl/XU1064
+   X7/X238        -> nearest matched source: Xu_calib_ctrl/XHFSINV_6510_604
+
+resolved 5 of 20 instances
+
+=== by source sub-block ===
+   Xu_calib_ctrl                  4
+   Xu_srm_residue                 1
+
+=== VDD/VSS connection-delta context ===
+   VDD layout=14636 source=13702 delta=+934

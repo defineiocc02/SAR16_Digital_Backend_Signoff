@@ -1,0 +1,11 @@
+﻿=== frame -> real cell SREF ORIGIN (the offset I ignored) ===
+   INVXL      frame bbox=(0, 0, 13200, 50400)           SREF inv_lxawwdwwwww9lxghuy         origin=(0, 0)   real bbox=(-4300, -4000, 17500, 55800)
+   NOR2XL     frame bbox=(0, 0, 19800, 50400)           SREF nor2_lxaww7wwwwwaq2l26y        origin=(0, 0)   real bbox=(-4300, -4000, 24100, 55800)
+   DFFSX1     frame bbox=(0, 0, 125400, 50400)          SREF dffs_1xawwzywwwwjerv2iy        origin=(0, 0)   real bbox=(-4300, -4000, 129700, 55800)
+   NAND2BXL   frame bbox=(0, 0, 26400, 50400)           SREF nand2b_lxawwqwwwwwmvsokiy      origin=(0, 0)   real bbox=(-4300, -4000, 30700, 55800)
+   AOI21XL    frame bbox=(0, 0, 26400, 50400)           SREF aoi21_lxawwqwwwwwto68dry       origin=(0, 0)   real bbox=(-4300, -4000, 30700, 55800)
+   XNOR2XL    frame bbox=(0, 0, 52800, 50400)           SREF xnor2_lxawwpwwwww14qlpjy       origin=(0, 0)   real bbox=(-4300, -4000, 57100, 55800)
+   OAI21XL    frame bbox=(0, 0, 26400, 50400)           SREF oai21_lxawwqwwwwwu3jc7ly       origin=(0, 0)   real bbox=(-4300, -4000, 30700, 55800)
+   AND4XL     frame bbox=(0, 0, 39600, 50400)           SREF and4_lxawwewwwwwz726o2y        origin=(0, 0)   real bbox=(-4300, -4000, 43900, 55800)
+   OAI211X1   frame bbox=(0, 0, 39600, 50400)           SREF oai211_1xawwewwwww2x7f9ty      origin=(0, 0)   real bbox=(-4300, -4000, 43900, 55800)
+   NAND2XL    frame bbox=(0, 0, 19800, 50400)           SREF nand2_lxaww7wwwwwc3vmtty       origin=(0, 0)   real bbox=(-4300, -4000, 24100, 55800)

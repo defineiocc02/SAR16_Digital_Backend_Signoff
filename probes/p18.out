@@ -1,0 +1,30 @@
+﻿=== actual md5 / size / mtime ===
+44890f4d10e108bd8135421a314a8d4c  /home/<user>/sar16_work/proj_paper_core/scripts/fc_pnr_paper_core.tcl
+30834 B  mtime 2026-09-18 17:55:22.400864104 +0800
+
+=== anchor present? (want exactly 1) ===
+1
+
+=== already patched? ===
+   not yet patched
+
+=== the pin-placement section as it stands ===
+562:# --- pin placement + placement ------------------------------------------------
+563-
+564-run "place_pins" {place_pins -self}
+565-
+566-run "create_placement"        {create_placement}
+567-run "place_opt"               {place_opt}
+568-
+
+=== the older copies that exist (which md5 belongs to which round) ===
+abd4839798ca3e978d935318f110a743  /home/<user>/sar16_work/proj_paper_core/scripts/.bak_round3/fc_pnr_paper_core.tcl
+7d0ac401c4cc738949713e45f1f9d175  /home/<user>/sar16_work/proj_paper_core/scripts/.bak_20260918_092621/fc_pnr_paper_core.tcl
+98bc8d8fd220d7343b657a427fc903b1  /home/<user>/sar16_work/proj_paper_core/scripts/.bak_final/fc_pnr_paper_core.tcl
+ssh : bash: line 24: $'\r': command not found
+At line:1 char:228
++ ...  "`n"; $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 24: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

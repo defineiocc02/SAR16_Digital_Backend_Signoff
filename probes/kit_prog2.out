@@ -1,0 +1,14 @@
+﻿57 /home/<user>/sar16_work/proj_paper_core/kitcheck/kit_lvs_results.csv
+--- any failure so far? ---
+ssh : awk: cmd. line:1: NR>1 && \!=" CORRECT\
+At line:1 char:129
++ ... ew($false); ssh -o BatchMode=yes <user>@<vm-ip> "wc -l /home/yia ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (awk: cmd. line:1: NR>1 && \!=" CORRECT\:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+awk: cmd. line:1:         ^ backslash not last character on line
+awk: cmd. line:1: NR>1 && \!=" CORRECT\
+awk: cmd. line:1:         ^ syntax error
+--- running? ---
+ 716595       08:46 bash /tmp/ka.sh

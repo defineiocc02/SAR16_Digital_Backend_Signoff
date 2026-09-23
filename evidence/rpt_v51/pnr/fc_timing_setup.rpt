@@ -1,0 +1,962 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -nworst 2
+        -max_paths 25
+        -report_by design
+Design : sar_digi_paper_core
+Version: W-2024.09-SP3
+Date   : Fri Sep 18 20:24:14 2026
+****************************************
+
+  Startpoint: srm_decision_valid (input port clocked by dec_clk)
+  Endpoint: u_srm_residue/clk_gate_dec_ones_reg/main_gate (rising clock gating-check end-point clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+  input external delay                             1.05      1.30 f
+  srm_decision_valid (in)                          0.00      1.30 f
+  u_srm_residue/U36/Y (NAND3XL)                    0.38      1.68 r
+  u_srm_residue/U31/Y (INVXL)                      0.31      1.99 f
+  u_srm_residue/U116/Y (OAI2BB1XL)                 0.31      2.30 f
+  u_srm_residue/clk_gate_dec_ones_reg/latch/D (TLATNXL)
+                                                   0.00      2.30 f
+  ------------------------------------------------------------------------
+  transparency window #1
+
+  clock dec_clk(fall edge)                         1.50      1.50
+  clock latency (propagated)                       0.23      1.73
+  clock uncertainty                               -0.06      1.67
+  transparency open edge                                     1.67
+
+  clock dec_clk(rise edge)                         3.00      3.00
+  clock latency (propagated)                       0.24      3.24
+  clock uncertainty                               -0.06      3.18
+  library setup time                              -0.09      3.09
+  transparency close edge                                    3.09
+
+  available borrow at through pin                  0.79      2.30
+  ------------------------------------------------------------------------
+  u_srm_residue/clk_gate_dec_ones_reg/latch/D (TLATNXL)
+                                                   0.00      2.30 f
+  u_srm_residue/clk_gate_dec_ones_reg/latch/Q (TLATNXL)
+                                                   0.29      2.59 f
+  u_srm_residue/clk_gate_dec_ones_reg/main_gate/A (AND2X1)
+                                                   0.00      2.59 f
+  data arrival time                                          2.59
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.00      3.00
+  u_srm_residue/clk_gate_dec_ones_reg/main_gate/B (AND2X1)
+                                                   0.00      3.00 r
+  clock uncertainty                               -0.06      2.94
+  library setup time                              -0.00      2.94
+  data required time                                         2.94
+  ------------------------------------------------------------------------
+  data required time                                         2.94
+  data arrival time                                         -2.59
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.35
+
+
+
+  Startpoint: srm_decision_valid (input port clocked by dec_clk)
+  Endpoint: u_srm_residue/clk_gate_dec_ones_reg/main_gate (rising clock gating-check end-point clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+  input external delay                             1.05      1.30 r
+  srm_decision_valid (in)                          0.00      1.30 r
+  u_srm_residue/U36/Y (NAND3XL)                    0.35      1.64 f
+  u_srm_residue/U31/Y (INVXL)                      0.43      2.08 r
+  u_srm_residue/U116/Y (OAI2BB1XL)                 0.28      2.35 r
+  u_srm_residue/clk_gate_dec_ones_reg/latch/D (TLATNXL)
+                                                   0.00      2.35 r
+  ------------------------------------------------------------------------
+  transparency window #1
+
+  clock dec_clk(fall edge)                         1.50      1.50
+  clock latency (propagated)                       0.23      1.73
+  clock uncertainty                               -0.06      1.67
+  transparency open edge                                     1.67
+
+  clock dec_clk(rise edge)                         3.00      3.00
+  clock latency (propagated)                       0.24      3.24
+  clock uncertainty                               -0.06      3.18
+  library setup time                              -0.13      3.04
+  transparency close edge                                    3.04
+
+  available borrow at through pin                  0.69      2.35
+  ------------------------------------------------------------------------
+  u_srm_residue/clk_gate_dec_ones_reg/latch/D (TLATNXL)
+                                                   0.00      2.35 r
+  u_srm_residue/clk_gate_dec_ones_reg/latch/Q (TLATNXL)
+                                                   0.24      2.59 r
+  u_srm_residue/clk_gate_dec_ones_reg/main_gate/A (AND2X1)
+                                                   0.00      2.59 r
+  data arrival time                                          2.59
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.00      3.00
+  u_srm_residue/clk_gate_dec_ones_reg/main_gate/B (AND2X1)
+                                                   0.00      3.00 r
+  clock uncertainty                               -0.06      2.94
+  library setup time                              -0.00      2.94
+  data required time                                         2.94
+  ------------------------------------------------------------------------
+  data required time                                         2.94
+  data arrival time                                         -2.59
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.35
+
+
+
+  Startpoint: srm_decision_valid (input port clocked by dec_clk)
+  Endpoint: u_srm_residue/dec_total_reg[3] (rising edge-triggered flip-flop clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+  input external delay                             1.05      1.30 r
+  srm_decision_valid (in)                          0.00      1.30 r
+  u_srm_residue/U36/Y (NAND3XL)                    0.35      1.64 f
+  u_srm_residue/U31/Y (INVXL)                      0.43      2.08 r
+  u_srm_residue/U7/Y (OAI211XL)                    0.20      2.27 f
+  u_srm_residue/dec_total_reg[3]/D (DFFSX1)        0.00      2.27 f
+  data arrival time                                          2.27
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.25      3.25
+  u_srm_residue/dec_total_reg[3]/CK (DFFSX1)       0.00      3.25 r
+  clock uncertainty                               -0.06      3.19
+  library setup time                              -0.26      2.93
+  data required time                                         2.93
+  ------------------------------------------------------------------------
+  data required time                                         2.93
+  data arrival time                                         -2.27
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.65
+
+
+
+  Startpoint: srm_decision_valid (input port clocked by dec_clk)
+  Endpoint: u_srm_residue/clk_gate_dec_ones_reg/latch (negative level-sensitive latch clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+  input external delay                             1.05      1.30 r
+  srm_decision_valid (in)                          0.00      1.30 r
+  u_srm_residue/U36/Y (NAND3XL)                    0.35      1.64 f
+  u_srm_residue/U31/Y (INVXL)                      0.43      2.08 r
+  u_srm_residue/U116/Y (OAI2BB1XL)                 0.28      2.35 r
+  u_srm_residue/clk_gate_dec_ones_reg/latch/D (TLATNXL)
+                                                   0.00      2.35 r
+  data arrival time                                          2.35
+
+  clock dec_clk(fall edge)                         1.50      1.50
+  clock latency (propagated)                       0.23      1.73
+  clock uncertainty                               -0.06      1.67
+  transparency open edge                                     1.67
+
+  clock dec_clk(rise edge)                         3.00      3.00
+  clock network delay (propagated)                 0.24      3.24
+  clock uncertainty                               -0.06      3.18
+  library setup time                              -0.13      3.04
+  transparency close edge                                    3.04
+
+  data required time                                         3.04
+  ------------------------------------------------------------------------
+  data required time                                         3.04
+  data arrival time                                         -2.35
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.69
+
+
+
+  Startpoint: srm_decision_valid (input port clocked by dec_clk)
+  Endpoint: u_srm_residue/dec_total_reg[2] (rising edge-triggered flip-flop clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+  input external delay                             1.05      1.30 r
+  srm_decision_valid (in)                          0.00      1.30 r
+  u_srm_residue/U36/Y (NAND3XL)                    0.35      1.64 f
+  u_srm_residue/U31/Y (INVXL)                      0.43      2.08 r
+  u_srm_residue/U114/Y (NAND2XL)                   0.16      2.24 f
+  u_srm_residue/dec_total_reg[2]/D (DFFSX1)        0.00      2.24 f
+  data arrival time                                          2.24
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.25      3.25
+  u_srm_residue/dec_total_reg[2]/CK (DFFSX1)       0.00      3.25 r
+  clock uncertainty                               -0.06      3.19
+  library setup time                              -0.25      2.93
+  data required time                                         2.93
+  ------------------------------------------------------------------------
+  data required time                                         2.93
+  data arrival time                                         -2.24
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.70
+
+
+
+  Startpoint: u_srm_residue/clk_gate_dec_total_reg/latch (negative level-sensitive latch clocked by dec_clk)
+  Endpoint: u_srm_residue/clk_gate_dec_total_reg/main_gate (rising clock gating-check end-point clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: dec_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (fall edge)                        1.50      1.50
+  clock network delay (propagated)                 0.23      1.73
+
+  u_srm_residue/clk_gate_dec_total_reg/latch/GN (TLATNXL)
+                                                   0.00      1.73 f
+  u_srm_residue/clk_gate_dec_total_reg/latch/Q (TLATNXL)
+                                                   0.51      2.24 f
+  u_srm_residue/clk_gate_dec_total_reg/main_gate/A (AND2X2)
+                                                   0.00      2.24 f
+  data arrival time                                          2.24
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.00      3.00
+  u_srm_residue/clk_gate_dec_total_reg/main_gate/B (AND2X2)
+                                                   0.00      3.00 r
+  clock uncertainty                               -0.06      2.94
+  library setup time                              -0.00      2.94
+  data required time                                         2.94
+  ------------------------------------------------------------------------
+  data required time                                         2.94
+  data arrival time                                         -2.24
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.70
+
+
+
+  Startpoint: srm_decision_valid (input port clocked by dec_clk)
+  Endpoint: u_srm_residue/dec_ones_reg[3] (rising edge-triggered flip-flop clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+  input external delay                             1.05      1.30 r
+  srm_decision_valid (in)                          0.00      1.30 r
+  u_srm_residue/U36/Y (NAND3XL)                    0.35      1.64 f
+  u_srm_residue/U31/Y (INVXL)                      0.43      2.08 r
+  u_srm_residue/U115/Y (OAI211XL)                  0.22      2.30 f
+  u_srm_residue/dec_ones_reg[3]/D (DFFSX1)         0.00      2.30 f
+  data arrival time                                          2.30
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.32      3.32
+  u_srm_residue/dec_ones_reg[3]/CK (DFFSX1)        0.00      3.32 r
+  clock uncertainty                               -0.06      3.26
+  library setup time                              -0.25      3.01
+  data required time                                         3.01
+  ------------------------------------------------------------------------
+  data required time                                         3.01
+  data arrival time                                         -2.30
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.71
+
+
+
+  Startpoint: srm_decision_valid (input port clocked by dec_clk)
+  Endpoint: u_srm_residue/dec_total_reg[0] (rising edge-triggered flip-flop clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+  input external delay                             1.05      1.30 r
+  srm_decision_valid (in)                          0.00      1.30 r
+  u_srm_residue/U36/Y (NAND3XL)                    0.35      1.64 f
+  u_srm_residue/U31/Y (INVXL)                      0.43      2.08 r
+  u_srm_residue/U117/Y (NAND2BXL)                  0.10      2.17 f
+  u_srm_residue/dec_total_reg[0]/D (DFFSX1)        0.00      2.17 f
+  data arrival time                                          2.17
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.25      3.25
+  u_srm_residue/dec_total_reg[0]/CK (DFFSX1)       0.00      3.25 r
+  clock uncertainty                               -0.06      3.19
+  library setup time                              -0.24      2.94
+  data required time                                         2.94
+  ------------------------------------------------------------------------
+  data required time                                         2.94
+  data arrival time                                         -2.17
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.77
+
+
+
+  Startpoint: srm_decision_valid (input port clocked by dec_clk)
+  Endpoint: u_srm_residue/clk_gate_dec_total_reg/main_gate (rising clock gating-check end-point clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+  input external delay                             1.05      1.30 r
+  srm_decision_valid (in)                          0.00      1.30 r
+  u_srm_residue/U36/Y (NAND3XL)                    0.35      1.64 f
+  u_srm_residue/U33/Y (NAND2XL)                    0.25      1.89 r
+  u_srm_residue/clk_gate_dec_total_reg/latch/D (TLATNXL)
+                                                   0.00      1.89 r
+  ------------------------------------------------------------------------
+  transparency window #1
+
+  clock dec_clk(fall edge)                         1.50      1.50
+  clock latency (propagated)                       0.23      1.73
+  clock uncertainty                               -0.06      1.67
+  transparency open edge                                     1.67
+
+  clock dec_clk(rise edge)                         3.00      3.00
+  clock latency (propagated)                       0.24      3.24
+  clock uncertainty                               -0.06      3.18
+  library setup time                              -0.14      3.04
+  transparency close edge                                    3.04
+
+  available borrow at through pin                  1.15      1.89
+  ------------------------------------------------------------------------
+  u_srm_residue/clk_gate_dec_total_reg/latch/D (TLATNXL)
+                                                   0.00      1.89 r
+  u_srm_residue/clk_gate_dec_total_reg/latch/Q (TLATNXL)
+                                                   0.28      2.17 r
+  u_srm_residue/clk_gate_dec_total_reg/main_gate/A (AND2X2)
+                                                   0.00      2.17 r
+  data arrival time                                          2.17
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.00      3.00
+  u_srm_residue/clk_gate_dec_total_reg/main_gate/B (AND2X2)
+                                                   0.00      3.00 r
+  clock uncertainty                               -0.06      2.94
+  library setup time                              -0.00      2.94
+  data required time                                         2.94
+  ------------------------------------------------------------------------
+  data required time                                         2.94
+  data arrival time                                         -2.17
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.77
+
+
+
+  Startpoint: srm_decision_valid (input port clocked by dec_clk)
+  Endpoint: u_srm_residue/clk_gate_dec_ones_reg/latch (negative level-sensitive latch clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+  input external delay                             1.05      1.30 f
+  srm_decision_valid (in)                          0.00      1.30 f
+  u_srm_residue/U36/Y (NAND3XL)                    0.38      1.68 r
+  u_srm_residue/U31/Y (INVXL)                      0.31      1.99 f
+  u_srm_residue/U116/Y (OAI2BB1XL)                 0.31      2.30 f
+  u_srm_residue/clk_gate_dec_ones_reg/latch/D (TLATNXL)
+                                                   0.00      2.30 f
+  data arrival time                                          2.30
+
+  clock dec_clk(fall edge)                         1.50      1.50
+  clock latency (propagated)                       0.23      1.73
+  clock uncertainty                               -0.06      1.67
+  transparency open edge                                     1.67
+
+  clock dec_clk(rise edge)                         3.00      3.00
+  clock network delay (propagated)                 0.24      3.24
+  clock uncertainty                               -0.06      3.18
+  library setup time                              -0.09      3.09
+  transparency close edge                                    3.09
+
+  data required time                                         3.09
+  ------------------------------------------------------------------------
+  data required time                                         3.09
+  data arrival time                                         -2.30
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.79
+
+
+
+  Startpoint: srm_decision_valid (input port clocked by dec_clk)
+  Endpoint: u_srm_residue/dec_ones_reg[0] (rising edge-triggered flip-flop clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+  input external delay                             1.05      1.30 r
+  srm_decision_valid (in)                          0.00      1.30 r
+  u_srm_residue/U36/Y (NAND3XL)                    0.35      1.64 f
+  u_srm_residue/U31/Y (INVXL)                      0.43      2.08 r
+  u_srm_residue/U6/Y (NAND2BXL)                    0.12      2.20 f
+  u_srm_residue/dec_ones_reg[0]/D (DFFSX1)         0.00      2.20 f
+  data arrival time                                          2.20
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.32      3.32
+  u_srm_residue/dec_ones_reg[0]/CK (DFFSX1)        0.00      3.32 r
+  clock uncertainty                               -0.06      3.26
+  library setup time                              -0.24      3.02
+  data required time                                         3.02
+  ------------------------------------------------------------------------
+  data required time                                         3.02
+  data arrival time                                         -2.20
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.82
+
+
+
+  Startpoint: srm_decision_valid (input port clocked by dec_clk)
+  Endpoint: u_srm_residue/dec_ones_reg[2] (rising edge-triggered flip-flop clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+  input external delay                             1.05      1.30 r
+  srm_decision_valid (in)                          0.00      1.30 r
+  u_srm_residue/U36/Y (NAND3XL)                    0.35      1.64 f
+  u_srm_residue/U31/Y (INVXL)                      0.43      2.08 r
+  u_srm_residue/U112/Y (NAND2XL)                   0.12      2.20 f
+  u_srm_residue/dec_ones_reg[2]/D (DFFSX1)         0.00      2.20 f
+  data arrival time                                          2.20
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.32      3.32
+  u_srm_residue/dec_ones_reg[2]/CK (DFFSX1)        0.00      3.32 r
+  clock uncertainty                               -0.06      3.26
+  library setup time                              -0.24      3.02
+  data required time                                         3.02
+  ------------------------------------------------------------------------
+  data required time                                         3.02
+  data arrival time                                         -2.20
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.83
+
+
+
+  Startpoint: u_srm_residue/go_tgl_s2_reg (rising edge-triggered flip-flop clocked by dec_clk)
+  Endpoint: u_srm_residue/dec_total_reg[3] (rising edge-triggered flip-flop clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: dec_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.24      0.24
+
+  u_srm_residue/go_tgl_s2_reg/CK (DFFSX1)          0.00      0.24 r
+  u_srm_residue/go_tgl_s2_reg/Q (DFFSX1)           0.59      0.83 f
+  u_srm_residue/U39/Y (MXI2X1)                     0.26      1.09 r
+  u_srm_residue/U36/Y (NAND3XL)                    0.36      1.45 f
+  u_srm_residue/U31/Y (INVXL)                      0.43      1.89 r
+  u_srm_residue/U7/Y (OAI211XL)                    0.20      2.09 f
+  u_srm_residue/dec_total_reg[3]/D (DFFSX1)        0.00      2.09 f
+  data arrival time                                          2.09
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.25      3.25
+  u_srm_residue/dec_total_reg[3]/CK (DFFSX1)       0.00      3.25 r
+  clock uncertainty                               -0.06      3.19
+  library setup time                              -0.26      2.93
+  data required time                                         2.93
+  ------------------------------------------------------------------------
+  data required time                                         2.93
+  data arrival time                                         -2.09
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.84
+
+
+
+  Startpoint: u_srm_residue/go_tgl_s2_reg (rising edge-triggered flip-flop clocked by dec_clk)
+  Endpoint: u_srm_residue/dec_total_reg[2] (rising edge-triggered flip-flop clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: dec_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.24      0.24
+
+  u_srm_residue/go_tgl_s2_reg/CK (DFFSX1)          0.00      0.24 r
+  u_srm_residue/go_tgl_s2_reg/Q (DFFSX1)           0.59      0.83 f
+  u_srm_residue/U39/Y (MXI2X1)                     0.26      1.09 r
+  u_srm_residue/U36/Y (NAND3XL)                    0.36      1.45 f
+  u_srm_residue/U31/Y (INVXL)                      0.43      1.89 r
+  u_srm_residue/U114/Y (NAND2XL)                   0.16      2.05 f
+  u_srm_residue/dec_total_reg[2]/D (DFFSX1)        0.00      2.05 f
+  data arrival time                                          2.05
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.25      3.25
+  u_srm_residue/dec_total_reg[2]/CK (DFFSX1)       0.00      3.25 r
+  clock uncertainty                               -0.06      3.19
+  library setup time                              -0.25      2.93
+  data required time                                         2.93
+  ------------------------------------------------------------------------
+  data required time                                         2.93
+  data arrival time                                         -2.05
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.88
+
+
+
+  Startpoint: u_srm_residue/go_tgl_s2_reg (rising edge-triggered flip-flop clocked by dec_clk)
+  Endpoint: u_srm_residue/dec_ones_reg[3] (rising edge-triggered flip-flop clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: dec_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.24      0.24
+
+  u_srm_residue/go_tgl_s2_reg/CK (DFFSX1)          0.00      0.24 r
+  u_srm_residue/go_tgl_s2_reg/Q (DFFSX1)           0.59      0.83 f
+  u_srm_residue/U39/Y (MXI2X1)                     0.26      1.09 r
+  u_srm_residue/U36/Y (NAND3XL)                    0.36      1.45 f
+  u_srm_residue/U31/Y (INVXL)                      0.43      1.89 r
+  u_srm_residue/U115/Y (OAI211XL)                  0.22      2.11 f
+  u_srm_residue/dec_ones_reg[3]/D (DFFSX1)         0.00      2.11 f
+  data arrival time                                          2.11
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.32      3.32
+  u_srm_residue/dec_ones_reg[3]/CK (DFFSX1)        0.00      3.32 r
+  clock uncertainty                               -0.06      3.26
+  library setup time                              -0.25      3.01
+  data required time                                         3.01
+  ------------------------------------------------------------------------
+  data required time                                         3.01
+  data arrival time                                         -2.11
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.90
+
+
+
+  Startpoint: srm_decision_valid (input port clocked by dec_clk)
+  Endpoint: u_srm_residue/dec_total_reg[0] (rising edge-triggered flip-flop clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+  input external delay                             1.05      1.30 f
+  srm_decision_valid (in)                          0.00      1.30 f
+  u_srm_residue/U36/Y (NAND3XL)                    0.38      1.68 r
+  u_srm_residue/U31/Y (INVXL)                      0.31      1.99 f
+  u_srm_residue/U117/Y (NAND2BXL)                  0.16      2.15 r
+  u_srm_residue/dec_total_reg[0]/D (DFFSX1)        0.00      2.15 r
+  data arrival time                                          2.15
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.25      3.25
+  u_srm_residue/dec_total_reg[0]/CK (DFFSX1)       0.00      3.25 r
+  clock uncertainty                               -0.06      3.19
+  library setup time                              -0.12      3.07
+  data required time                                         3.07
+  ------------------------------------------------------------------------
+  data required time                                         3.07
+  data arrival time                                         -2.15
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.92
+
+
+
+  Startpoint: srm_decision_valid (input port clocked by dec_clk)
+  Endpoint: u_srm_residue/dec_total_reg[4] (rising edge-triggered flip-flop clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+  input external delay                             1.05      1.30 r
+  srm_decision_valid (in)                          0.00      1.30 r
+  u_srm_residue/U36/Y (NAND3XL)                    0.35      1.64 f
+  u_srm_residue/U17/Y (AOI21XL)                    0.24      1.89 r
+  u_srm_residue/U5/Y (OAI21XL)                     0.12      2.00 f
+  u_srm_residue/dec_total_reg[4]/D (DFFSX1)        0.00      2.00 f
+  data arrival time                                          2.00
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.25      3.25
+  u_srm_residue/dec_total_reg[4]/CK (DFFSX1)       0.00      3.25 r
+  clock uncertainty                               -0.06      3.19
+  library setup time                              -0.24      2.94
+  data required time                                         2.94
+  ------------------------------------------------------------------------
+  data required time                                         2.94
+  data arrival time                                         -2.00
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.94
+
+
+
+  Startpoint: srm_decision_valid (input port clocked by dec_clk)
+  Endpoint: u_srm_residue/dec_ones_reg[0] (rising edge-triggered flip-flop clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+  input external delay                             1.05      1.30 f
+  srm_decision_valid (in)                          0.00      1.30 f
+  u_srm_residue/U36/Y (NAND3XL)                    0.38      1.68 r
+  u_srm_residue/U31/Y (INVXL)                      0.31      1.99 f
+  u_srm_residue/U6/Y (NAND2BXL)                    0.18      2.17 r
+  u_srm_residue/dec_ones_reg[0]/D (DFFSX1)         0.00      2.17 r
+  data arrival time                                          2.17
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.32      3.32
+  u_srm_residue/dec_ones_reg[0]/CK (DFFSX1)        0.00      3.32 r
+  clock uncertainty                               -0.06      3.26
+  library setup time                              -0.12      3.14
+  data required time                                         3.14
+  ------------------------------------------------------------------------
+  data required time                                         3.14
+  data arrival time                                         -2.17
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.97
+
+
+
+  Startpoint: srm_decision_valid (input port clocked by dec_clk)
+  Endpoint: u_srm_residue/dec_total_reg[1] (rising edge-triggered flip-flop clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+  input external delay                             1.05      1.30 r
+  srm_decision_valid (in)                          0.00      1.30 r
+  u_srm_residue/U36/Y (NAND3XL)                    0.35      1.64 f
+  u_srm_residue/U110/Y (OR2XL)                     0.31      1.95 f
+  u_srm_residue/dec_total_reg[1]/D (DFFSX1)        0.00      1.95 f
+  data arrival time                                          1.95
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.25      3.25
+  u_srm_residue/dec_total_reg[1]/CK (DFFSX1)       0.00      3.25 r
+  clock uncertainty                               -0.06      3.19
+  library setup time                              -0.24      2.95
+  data required time                                         2.95
+  ------------------------------------------------------------------------
+  data required time                                         2.95
+  data arrival time                                         -1.95
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.00
+
+
+
+  Startpoint: srm_decision_valid (input port clocked by dec_clk)
+  Endpoint: u_srm_residue/dec_ones_reg[4] (rising edge-triggered flip-flop clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+  input external delay                             1.05      1.30 r
+  srm_decision_valid (in)                          0.00      1.30 r
+  u_srm_residue/U36/Y (NAND3XL)                    0.35      1.64 f
+  u_srm_residue/U16/Y (AOI21XL)                    0.23      1.88 r
+  u_srm_residue/U4/Y (OAI21XL)                     0.15      2.03 f
+  u_srm_residue/dec_ones_reg[4]/D (DFFSX1)         0.00      2.03 f
+  data arrival time                                          2.03
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.32      3.32
+  u_srm_residue/dec_ones_reg[4]/CK (DFFSX1)        0.00      3.32 r
+  clock uncertainty                               -0.06      3.26
+  library setup time                              -0.24      3.02
+  data required time                                         3.02
+  ------------------------------------------------------------------------
+  data required time                                         3.02
+  data arrival time                                         -2.03
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.00
+
+
+
+  Startpoint: srm_decision_valid (input port clocked by dec_clk)
+  Endpoint: u_srm_residue/dec_ones_reg[2] (rising edge-triggered flip-flop clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+  input external delay                             1.05      1.30 f
+  srm_decision_valid (in)                          0.00      1.30 f
+  u_srm_residue/U36/Y (NAND3XL)                    0.38      1.68 r
+  u_srm_residue/U31/Y (INVXL)                      0.31      1.99 f
+  u_srm_residue/U112/Y (NAND2XL)                   0.15      2.14 r
+  u_srm_residue/dec_ones_reg[2]/D (DFFSX1)         0.00      2.14 r
+  data arrival time                                          2.14
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.32      3.32
+  u_srm_residue/dec_ones_reg[2]/CK (DFFSX1)        0.00      3.32 r
+  clock uncertainty                               -0.06      3.26
+  library setup time                              -0.12      3.15
+  data required time                                         3.15
+  ------------------------------------------------------------------------
+  data required time                                         3.15
+  data arrival time                                         -2.14
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.01
+
+
+
+  Startpoint: u_srm_residue/dec_ones_reg[1] (rising edge-triggered flip-flop clocked by dec_clk)
+  Endpoint: u_srm_residue/dec_ones_reg[4] (rising edge-triggered flip-flop clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: dec_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.32      0.32
+
+  u_srm_residue/dec_ones_reg[1]/CK (DFFSX1)        0.00      0.32 r
+  u_srm_residue/dec_ones_reg[1]/QN (DFFSX1)        0.62      0.94 r
+  u_srm_residue/U12/Y (NAND2XL)                    0.19      1.13 f
+  u_srm_residue/U30/Y (NOR2XL)                     0.29      1.42 r
+  u_srm_residue/U9/Y (NAND2XL)                     0.21      1.63 f
+  u_srm_residue/U16/Y (AOI21XL)                    0.22      1.85 r
+  u_srm_residue/U4/Y (OAI21XL)                     0.15      2.00 f
+  u_srm_residue/dec_ones_reg[4]/D (DFFSX1)         0.00      2.00 f
+  data arrival time                                          2.00
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.32      3.32
+  u_srm_residue/dec_ones_reg[4]/CK (DFFSX1)        0.00      3.32 r
+  clock uncertainty                               -0.06      3.26
+  library setup time                              -0.24      3.02
+  data required time                                         3.02
+  ------------------------------------------------------------------------
+  data required time                                         3.02
+  data arrival time                                         -2.00
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.02
+
+
+
+  Startpoint: u_srm_residue/dec_total_reg[0] (rising edge-triggered flip-flop clocked by dec_clk)
+  Endpoint: u_srm_residue/dec_total_reg[4] (rising edge-triggered flip-flop clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: dec_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+
+  u_srm_residue/dec_total_reg[0]/CK (DFFSX1)       0.00      0.25 r
+  u_srm_residue/dec_total_reg[0]/QN (DFFSX1)       0.60      0.84 r
+  u_srm_residue/U13/Y (NAND2XL)                    0.18      1.02 f
+  u_srm_residue/U34/Y (NOR2XL)                     0.32      1.34 r
+  u_srm_residue/U8/Y (NAND2XL)                     0.22      1.56 f
+  u_srm_residue/U17/Y (AOI21XL)                    0.23      1.78 r
+  u_srm_residue/U5/Y (OAI21XL)                     0.12      1.90 f
+  u_srm_residue/dec_total_reg[4]/D (DFFSX1)        0.00      1.90 f
+  data arrival time                                          1.90
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.25      3.25
+  u_srm_residue/dec_total_reg[4]/CK (DFFSX1)       0.00      3.25 r
+  clock uncertainty                               -0.06      3.19
+  library setup time                              -0.24      2.94
+  data required time                                         2.94
+  ------------------------------------------------------------------------
+  data required time                                         2.94
+  data arrival time                                         -1.90
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.04
+
+
+
+  Startpoint: u_srm_residue/dec_total_reg[3] (rising edge-triggered flip-flop clocked by dec_clk)
+  Endpoint: u_srm_residue/dec_done_tgl_reg (rising edge-triggered flip-flop clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: dec_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+
+  u_srm_residue/dec_total_reg[3]/CK (DFFSX1)       0.00      0.25 r
+  u_srm_residue/dec_total_reg[3]/Q (DFFSX1)        0.69      0.93 r
+  u_srm_residue/U107/Y (NAND2XL)                   0.08      1.01 f
+  u_srm_residue/U10/Y (NAND4BXL)                   0.32      1.33 f
+  u_srm_residue/U125/Y (OR2XL)                     0.33      1.65 f
+  u_srm_residue/U126/Y (NAND2XL)                   0.12      1.78 r
+  u_srm_residue/U3/Y (OAI21XL)                     0.11      1.89 f
+  u_srm_residue/dec_done_tgl_reg/D (DFFSX1)        0.00      1.89 f
+  data arrival time                                          1.89
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.25      3.25
+  u_srm_residue/dec_done_tgl_reg/CK (DFFSX1)       0.00      3.25 r
+  clock uncertainty                               -0.06      3.19
+  library setup time                              -0.24      2.94
+  data required time                                         2.94
+  ------------------------------------------------------------------------
+  data required time                                         2.94
+  data arrival time                                         -1.89
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.05
+
+
+
+  Startpoint: srm_decision_valid (input port clocked by dec_clk)
+  Endpoint: u_srm_residue/dec_ones_reg[1] (rising edge-triggered flip-flop clocked by dec_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock dec_clk (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+  input external delay                             1.05      1.30 r
+  srm_decision_valid (in)                          0.00      1.30 r
+  u_srm_residue/U36/Y (NAND3XL)                    0.35      1.64 f
+  u_srm_residue/U109/Y (OR2XL)                     0.30      1.94 f
+  u_srm_residue/dec_ones_reg[1]/D (DFFSX1)         0.00      1.94 f
+  data arrival time                                          1.94
+
+  clock dec_clk (rise edge)                        3.00      3.00
+  clock network delay (propagated)                 0.32      3.32
+  u_srm_residue/dec_ones_reg[1]/CK (DFFSX1)        0.00      3.32 r
+  clock uncertainty                               -0.06      3.26
+  library setup time                              -0.23      3.03
+  data required time                                         3.03
+  ------------------------------------------------------------------------
+  data required time                                         3.03
+  data arrival time                                         -1.94
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.09
+
+
+1

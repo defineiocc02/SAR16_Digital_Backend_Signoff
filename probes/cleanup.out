@@ -1,0 +1,16 @@
+﻿=== leftover files I created in /tmp (should be none) ===
+  none
+
+=== VM disk headroom ===
+/dev/nvme0n1p3 1008G  353G  656G  35% /
+
+=== does the project still hold superseded big files worth noting ===
+4.3M	/home/<user>/sar16_work/proj_paper_core/calibre/sar_digi_paper_core_merged.gds.superseded
+ssh : bash: line 10: /dev/null
+At line:12 char:27
++ ... r",""; $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 10: /dev/null:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+: Permission denied

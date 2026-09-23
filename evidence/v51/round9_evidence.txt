@@ -1,0 +1,84 @@
+### round-9 LVS knob matrix (raw lines from p28/p29)
+/tmp/p28.out:  RC=0 elapsed=16s
+/tmp/p28.out:  verdict: LVS completed.  CPU TIME = 1  REAL TIME = 1  LVHEAP = 91/120/120  MALLOC = 152/152/153  ELAPSED TIME = 15
+/tmp/p28.out:     Ports:            178       178
+/tmp/p28.out:     Nets:           26704     26813    *
+/tmp/p28.out:     Instances:      24938     24958    *    MN (4 pins)
+/tmp/p28.out:     Total Inst:     49864     49916
+/tmp/p28.out:  --- Total Inst ---
+/tmp/p28.out:     Total Inst:     50686     50026
+/tmp/p28.out:     Total Inst:     49864     49916
+/tmp/p28.out:       Total Inst:      49853      49853           11           63
+/tmp/p28.out:  RC=0 elapsed=16s
+/tmp/p28.out:  verdict: LVS completed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 72/98/98  MALLOC = 132/132/132  ELAPSED TIME = 14
+/tmp/p28.out:     Ports:            178       178
+/tmp/p28.out:     Nets:            4753      4784    *
+/tmp/p28.out:     Instances:         98        98         MN (4 pins)
+/tmp/p28.out:  --- Total Inst ---
+/tmp/p28.out:     Total Inst:      3830      3814
+/tmp/p28.out:     Total Inst:      3799      3802
+/tmp/p28.out:       Total Inst:       3799       3799            0            3
+/tmp/p29.out:---- variant G : box=nobox  +[LVS REDUCE SERIES MOS YES]  RC=0  21s
+/tmp/p29.out:     LVS completed. INCORRECT. See report file: /tmp/lvsbox/lvsG.rep
+/tmp/p29.out:     inject in report : LVS INJECT LOGIC                       NO
+/tmp/p29.out:      Ports:            178       178
+/tmp/p29.out:      Nets:           26676     26813    *
+/tmp/p29.out:      Instances:      24918     24958    *    MN (4 pins)
+/tmp/p29.out:     Total Inst:      49825      49825           11           91
+/tmp/p29.out:     incorrect-net blocks : 35
+/tmp/p29.out:---- variant H : box=nobox  +[LVS SHORT EQUIVALENT NODES YES]  RC=4  2s
+/tmp/p29.out:     inject in report : 
+/tmp/p29.out:     incorrect-net blocks : 
+/tmp/p29.out:---- variant I : box=nobox  +[LVS EXPAND UNBALANCED CELLS NO]  RC=0  19s
+/tmp/p29.out:     LVS completed. INCORRECT. See report file: /tmp/lvsbox/lvsI.rep
+/tmp/p29.out:     inject in report : LVS INJECT LOGIC                       NO
+/tmp/p29.out:      Ports:            178       178
+/tmp/p29.out:      Nets:           26704     26813    *
+/tmp/p29.out:      Instances:      24938     24958    *    MN (4 pins)
+/tmp/p29.out:     Total Inst:      49853      49853           11           63
+/tmp/p29.out:     incorrect-net blocks : 34
+/tmp/p29.out:---- variant J : box=box  +[LVS REDUCE SERIES MOS YES]  RC=0  18s
+/tmp/p29.out:     LVS completed. INCORRECT. See report file: /tmp/lvsbox/lvsJ.rep
+/tmp/p29.out:     inject in report : LVS INJECT LOGIC                       NO
+/tmp/p29.out:      Ports:            178       178
+/tmp/p29.out:      Nets:            4750      4784    *
+/tmp/p29.out:      Instances:         95        98    *    MN (4 pins)
+/tmp/p29.out:     Total Inst:       3796       3796            0            6
+/tmp/p29.out:     incorrect-net blocks : 11
+
+### proof that LVS BOX CELL LIST silently no-ops (lvsC.log)
+533:LVS BOX CELL LIST "/tmp/lvsbox/boxlist.txt"
+3815:WARNING: LVS BOX cell "/tmp/lvsbox/boxlist.txt" not located or not allowed.
+3818:WARNING: LVS BOX cell "CELL" not located or not allowed.
+3821:WARNING: LVS BOX cell "LIST" not located or not allowed.
+17084:WARNING: LVS BOX cell "/tmp/lvsbox/boxlist.txt" not found in input.
+17085:WARNING: LVS BOX cell "CELL" not found in input.
+17086:WARNING: LVS BOX cell "LIST" not found in input.
+
+### best-config (variant F, boxed + INJECT NO) verdict block
+                               OVERALL COMPARISON RESULTS
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Components with non-identical signal pins.
+  Error:    Different numbers of nets.
+  Error:    Different numbers of instances.
+  Error:    Connectivity errors.
+  Error:    Property errors.
+  Error:    Cells with non-floating extra pins.
+  Warning:  Components with non-identical power or ground pins.
+
+
+**************************************************************************************************************
+
+### variant F report size / variant D report size
+-rw-rw-r--. 1 <user> <user> 588976 Sep 18 21:25 /tmp/lvsbox/lvsD.rep
+-rw-rw-r--. 1 <user> <user> 493228 Sep 18 21:26 /tmp/lvsbox/lvsF.rep
+-rw-rw-r--. 1 <user> <user> 540967 Sep 18 21:28 /tmp/lvsbox/lvsJ.rep

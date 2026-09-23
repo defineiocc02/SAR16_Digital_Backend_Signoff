@@ -1,0 +1,30 @@
+### 1. the tie chain (P&R Verilog)
+384:CLKINVX3 HFSINV_106_588 ( .A ( HFSNET_8 ) , .Y ( HFSNET_4 ) ) ;
+392:CLKINVX4 HFSINV_246_605 ( .A ( HFSNET_8 ) , .Y ( HFSNET_6 ) ) ;
+413:INVX3 HFSINV_15018_625 ( .A ( HFSNET_8 ) , .Y ( HFSNET_9 ) ) ;
+
+### 2. HFSNET_8 has no driver (expect: no hits)
+
+### 3. rst_n of the two big blocks points at HFSNET_119
+6160:    .clk ( ctosc_gls_0 ) , .rst_n ( HFSNET_119 ) , 
+6213:    .rst_n ( HFSNET_119 ) , .start ( srm_start ) , 
+
+### 4. HFSNET / HFSINV counts across the three netlists
+  sar_digi_paper_core_pnr.v                                  HFSNET=1841   HFSINV=85
+  sar16.cdl                                                  HFSNET=1627   HFSINV=85
+  sar_digi_paper_core.sp                                     HFSNET=0      HFSINV=0
+
+### 5. fix attempt 2 result (patch all HFSNET -> 1'b1): still INCORRECT
+LVS completed. INCORRECT. See report file: /tmp/lvs10/lvsK.rep
+       --- 637 Connections On This Net ---                       --- 2063 Connections On This Net ---
+
+### 6. best config (boxed + INJECT NO, unpatched source): only VDD is wrong
+LVS completed. INCORRECT. See report file: /tmp/lvs10/lvsF.rep
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+  1    Net VDD                                                   VDD
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+ 51    ** missing instance **                                    Xu_calib_ctrl/XU438/M9  MP(P18)

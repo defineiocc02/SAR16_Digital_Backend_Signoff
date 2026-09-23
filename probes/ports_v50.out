@@ -1,0 +1,18 @@
+﻿source top ports : 176
+layout top ports : 177
+
+source-only : 1
+   rst_n
+
+layout-only : 2
+   VDD
+   VSS
+
+weight_rd_data in source: 0
+weight_rd_data in layout: 0
+
+srm_residue_o in source: 10
+srm_residue_o in layout: 10
+
+expected signal ports = 232 - 30 - 20 = 182
+GDS labels said        = 176 signal + 2 supply = 178

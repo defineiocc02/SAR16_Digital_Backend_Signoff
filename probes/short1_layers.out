@@ -1,0 +1,31 @@
+﻿top-cell shapes: 38431
+M2 full-height straps: 34
+SHORT 1 rectangles: 13
+
+   SN 1     label/via anchor at (408.540, 0.357)  [skip]
+   SN 141   label/via anchor at (425.000, 428.100)  [skip]
+   SN 24    (408.350,41.300)-(423.910,41.580)  15.56x0.28   layer=CHILD-CELL/UNKNOWN  crosses 1 M2 strap(s) at x=[412.5]
+   SN 34    (423.530,50.820)-(426.330,51.100)   2.80x0.28   layer=CHILD-CELL/UNKNOWN  crosses 1 M2 strap(s) at x=[425.0]
+   SN 18    (408.410,41.310)-(408.670,41.570)   0.26x0.26   layer=CHILD-CELL/UNKNOWN  crosses 0 M2 strap(s) at x=[]
+   SN 25    (423.590,41.310)-(423.850,41.570)   0.26x0.26   layer=CHILD-CELL/UNKNOWN  crosses 0 M2 strap(s) at x=[]
+   SN 33    (423.590,50.830)-(423.850,51.090)   0.26x0.26   layer=CHILD-CELL/UNKNOWN  crosses 0 M2 strap(s) at x=[]
+   SN 35    (426.230,50.830)-(426.490,51.090)   0.26x0.26   layer=CHILD-CELL/UNKNOWN  crosses 0 M2 strap(s) at x=[]
+   SN 3     (408.400,0.000)-(408.680,41.580)   0.28x41.58  layer=CHILD-CELL/UNKNOWN  crosses 0 M2 strap(s) at x=[]
+   SN 26    (423.580,41.300)-(423.860,51.100)   0.28x9.80   layer=CHILD-CELL/UNKNOWN  crosses 0 M2 strap(s) at x=[]
+   SN 36    (426.220,50.820)-(426.500,79.660)   0.28x28.84  layer=CHILD-CELL/UNKNOWN  crosses 0 M2 strap(s) at x=[]
+   SN 54    (424.610,80.510)-(424.870,80.770)   0.26x0.26   layer=CHILD-CELL/UNKNOWN  crosses 1 M2 strap(s) at x=[425.0]
+   SN 47    (426.230,79.520)-(426.490,79.780)   0.26x0.26   layer=CHILD-CELL/UNKNOWN  crosses 0 M2 strap(s) at x=[]
+python : Traceback (most recent call last):
+At line:1 char:163
++ ... 6_handover; python short1_layers.py "D:\<vault>\Document\Obsidian\日常 ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "E:\ReedLab\tmp\sar16_handover\short1_layers.py", line 108, in <module>
+    main()
+    ~~~~^^
+  File "E:\ReedLab\tmp\sar16_handover\short1_layers.py", line 99, in main
+    for t, l, x, y in top["labels"]:
+                      ~~~^^^^^^^^^^
+KeyError: 'labels'

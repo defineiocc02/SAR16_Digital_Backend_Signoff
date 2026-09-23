@@ -1,0 +1,58 @@
+﻿=== STA script: how is the SDC referenced? ===
+10:#   * SDC  -> $PRJ/constraints/sar_digi_paper_core.sdc
+41:if {![info exists SDC_EXTRA]}   { set SDC_EXTRA "" }
+56:set SDC  $PRJ/constraints/sar_digi_paper_core.sdc
+82:puts "  sdc     : $SDC"
+83:if {$SDC_EXTRA ne ""} { puts "  sdc ovl : $SDC_EXTRA" }
+87:set need [list $NET $SPEF $SDC $LIB_FILE]
+88:if {$SDC_EXTRA ne ""} { lappend need $SDC_EXTRA }
+100:set_app_var sh_source_uses_search_path true
+110:source $SDC
+111:if {$SDC_EXTRA ne ""} {
+112:    puts "INFO: sourcing constraint overlay $SDC_EXTRA"
+113:    source $SDC_EXTRA
+120:        puts "FATAL: clock '$C' did not survive the SDC - every number below would be meaningless."
+
+=== run_sta wrapper ===
+35:KEY=$(grep -cE '^read_parasitics|^read_verilog|STA_RESULT|apply_derates|^source \$SDC' "$PTSCRIPT")
+44:for F in "$PNR/out/${TOP}_pnr.v" "$PRJ/constraints/sar_digi_paper_core.sdc"; do
+65:    pt_shell -f "$PTSCRIPT" \
+104:        pt_shell -f "$PTSCRIPT" \
+
+=== the IO_MIN_FRAC block in the signoff SDC ===
+set DCLK_PERIOD       [expr {3.0}]
+set DCLK_HALF         [expr {$DCLK_PERIOD / 2.0}]
+
+# Fraction of the period allowed for external logic on synchronous ports.
+# IO_MIN_FRAC is the ASSUMED external HOLD requirement at the boundary; it is
+# applied as a negative `-min` output delay and is the ONLY known source of
+# timing violations for output ports. At synthesis the clock is ideal, so a
+# launching flop has no insertion delay to push data out and the external hold
+# requirement cannot be met; there is nothing for DC to optimise. The correct
+# places to close them are (a) clock-tree insertion delay and output hold
+# buffers in place & route, or (b) relaxing this assumption.
+set IO_MAX_FRAC       0.35
+set IO_MIN_FRAC       0.05
+set IO_MAX_DELAY      [expr {$CLK_PERIOD * $IO_MAX_FRAC}]
+set IO_MIN_DELAY      [expr {$CLK_PERIOD * $IO_MIN_FRAC}]
+
+# Comparator input: the asynchronous source is assumed close to the capturing
+# edge. The real relaxation comes from the calibration FSM, which waits
+# COMP_WAIT_CYC (=16) clocks after applying the DAC trial before sampling.
+
+=== and the output-delay side ===
+76:#   from every set_clock_* / set_input_delay / set_output_delay below. Use
+173:set_output_delay -clock $CLK_NAME -max $IO_MAX_DELAY $DIG_OUT_PORTS
+174:set_output_delay -clock $CLK_NAME -min [expr {-$IO_MIN_DELAY}] $DIG_OUT_PORTS
+179:set_output_delay -clock $CLK_NAME -max [expr {$CLK_PERIOD * 0.45}] [get_ports {dac_p_force[*] dac_n_force[*]}]
+180:set_output_delay -clock $CLK_NAME -min 0.0                          [get_ports {dac_p_force[*] dac_n_force[*]}]
+
+=== what the P&R stage SDC says (the one written by write_sdc) ===
+387:set_input_delay -clock [get_clocks {clk}] -min 0.5 [get_ports {start_calib}]
+388:set_input_delay -clock [get_clocks {clk}] -max 3.5 [get_ports {start_calib}]
+393:set_input_delay -clock [get_clocks {clk}] -min 0 [get_ports {calib_comp_out}]
+394:set_input_delay -clock [get_clocks {clk}] -max 1 [get_ports {calib_comp_out}]
+399:set_output_delay -clock [get_clocks {clk}] -min -0.5 [get_ports {calib_done}]
+400:set_output_delay -clock [get_clocks {clk}] -max 3.5 [get_ports {calib_done}]
+405:set_output_delay -clock [get_clocks {clk}] -min -0.5 [get_ports \
+407:set_output_delay -clock [get_clocks {clk}] -max 3.5 [get_ports \

@@ -1,0 +1,9 @@
+﻿############ KIT TEST DONE ############
+ssh : sed: can't read /tmp/ka.out
+At line:10 char:6
++ $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | Out-Fi ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (sed: can't read /tmp/ka.out:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+: No such file or directory

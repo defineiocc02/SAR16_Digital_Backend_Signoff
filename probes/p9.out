@@ -1,0 +1,91 @@
+﻿########## A. SDC files ##########
+total 24
+drwxrwxr-x.  2 <user> <user>    72 Sep 17 22:01 .
+drwxrwxr-x. 22 <user> <user>  4096 Sep 18 18:09 ..
+-rw-rw-r--.  1 <user> <user>  7214 Sep 17 22:01 sar_digi_paper_core_pnr.sdc
+-rw-rw-r--.  1 <user> <user> 10735 Sep 17 21:51 sar_digi_paper_core.sdc
+--- /home/<user>/sar16_work/proj_paper_core/constraints/sar_digi_paper_core_pnr.sdc
+97:    weight_rd_en
+98:    weight_rd_addr[*]
+132:    weight_rd_data[*]
+136:    srm_residue_o[*]
+--- /home/<user>/sar16_work/proj_paper_core/constraints/sar_digi_paper_core.sdc
+126:    weight_rd_en
+127:    weight_rd_addr[*]
+166:    weight_rd_data[*]
+170:    srm_residue_o[*]
+
+########## B. testbenches / sim sources ##########
+/home/<user>/sar16_work/proj_paper_core/tb/tb_sar16_paper_core.sv
+/home/<user>/sar16_work/proj_paper_core/tb/tb_sar16_core_pwr.sv
+--- /home/<user>/sar16_work/proj_paper_core/tb/tb_sar16_paper_core.sv
+31://   4  INTERFACE               raw_code_o timing; weight_rd_data tied low
+185:        .weight_rd_en(p_wrd_en), .weight_rd_addr(p_wrd_addr), .weight_rd_data(p_wrd_data),
+192:        .srm_residue_o(p_srm_residue)
+492:        chk("4  weight_rd_data is tied low in the stream build", p_wrd_data === '0,
+--- /home/<user>/sar16_work/proj_paper_core/tb/tb_sar16_core_pwr.sv
+61:    logic                  weight_rd_en = 1'b0;
+62:    logic [4:0]            weight_rd_addr = '0;
+63:    logic signed [29:0]    weight_rd_data;
+72:    logic signed [29:0]    srm_residue_o;
+85:        .weight_rd_en(weight_rd_en), .weight_rd_addr(weight_rd_addr),
+86:        .weight_rd_data(weight_rd_data),
+93:        .srm_residue_o(srm_residue_o)
+
+########## C. other RTL consumers ##########
+/home/<user>/sar16_work/proj_paper_core/rtl/sar_digi_paper_core.sv:44://     3. the SRM residue estimate         -> srm_residue_o / srm_residue_valid_o
+/home/<user>/sar16_work/proj_paper_core/rtl/sar_digi_paper_core.sv:137:    input  logic                     weight_rd_en,
+/home/<user>/sar16_work/proj_paper_core/rtl/sar_digi_paper_core.sv:138:    input  logic [4:0]               weight_rd_addr,
+/home/<user>/sar16_work/proj_paper_core/rtl/sar_digi_paper_core.sv:139:    output logic signed [WEIGHT_WIDTH-1:0] weight_rd_data,
+/home/<user>/sar16_work/proj_paper_core/rtl/sar_digi_paper_core.sv:156:    output logic signed [WEIGHT_WIDTH-1:0] srm_residue_o
+/home/<user>/sar16_work/proj_paper_core/rtl/sar_digi_paper_core.sv:222:    assign srm_residue_o = srm_residue_q;
+/home/<user>/sar16_work/proj_paper_core/rtl/sar_digi_paper_core.sv:300:            // Gated by weight_rd_en so the synthesised mux folds to constants in
+/home/<user>/sar16_work/proj_paper_core/rtl/sar_digi_paper_core.sv:303:                if (weight_rd_en && (weight_rd_addr < 5'(CAP_NUM)))
+/home/<user>/sar16_work/proj_paper_core/rtl/sar_digi_paper_core.sv:304:                    weight_rd_data = weight_tab[weight_rd_addr];
+/home/<user>/sar16_work/proj_paper_core/rtl/sar_digi_paper_core.sv:306:                    weight_rd_data = '0;
+/home/<user>/sar16_work/proj_paper_core/rtl/sar_digi_paper_core.sv:315:            assign weight_rd_data = '0;
+
+########## D. the top's declaration of srm_residue_q and WEIGHT_WIDTH use ##########
+79:    parameter int  WEIGHT_WIDTH      = 30,      // signed, Q8: LSB_0 = 256
+135:    output logic signed [WEIGHT_WIDTH-1:0] w_wr_data,
+139:    output logic signed [WEIGHT_WIDTH-1:0] weight_rd_data,
+156:    output logic signed [WEIGHT_WIDTH-1:0] srm_residue_o
+162:    logic signed [WEIGHT_WIDTH-1:0] srm_residue_q;
+169:        .WEIGHT_WIDTH      (WEIGHT_WIDTH),
+200:        .RESIDUE_WIDTH  (WEIGHT_WIDTH),
+219:        .residue_q        (srm_residue_q)
+222:    assign srm_residue_o = srm_residue_q;
+228:    function automatic logic signed [WEIGHT_WIDTH-1:0] seed_w(input int k);
+229:        logic signed [WEIGHT_WIDTH-1:0] v;
+231:            v = WEIGHT_WIDTH'(REF_WEIGHT_LSB);
+233:                v = v <<< 1;            // in WEIGHT_WIDTH bits: 256<<19 = 2^27 fits
+289:            logic signed [WEIGHT_WIDTH-1:0] weight_tab [0:CAP_NUM-1];
+327:        if (WEIGHT_WIDTH < 28)
+328:            $error("sar_digi_paper_core: WEIGHT_WIDTH must hold LSB_0 << (CAP_NUM-1); 28 is the minimum for CAP_NUM=20, LSB_0=256.");
+333:        if ((longint'(REF_WEIGHT_LSB) << (CAP_NUM-1)) > ((longint'(1) << (WEIGHT_WIDTH-2)) - 1))
+334:            $error("sar_digi_paper_core: the ideal weight ramp LSB_0<<(CAP_NUM-1) overflows WEIGHT_WIDTH; raise WEIGHT_WIDTH.");
+
+########## E. reproduce_all.sh stage list (what a re-run would execute) ##########
+15:#   6 manifest    collect_result.sh + diff against RESULT_BASELINE.env
+39:          echo "### STAGE $1 : $2      [$(date '+%T')  elapsed $(( $(date +%s) - T0 ))s]"; \
+42:# --- SYNC_STAGE_SCRIPTS ------------------------------------------------------
+48:# parasitic-diode removal in run_lvs_paper_core.sh.
+57:        echo "REPRO status=STAGE_SCRIPT_MISSING"; exit 1
+66:for _S in run_dc_paper_core.sh run_pnr_paper_core.sh run_sta_paper_core.sh \
+67:          run_calibre_drc_paper_core.sh run_lvs_paper_core.sh collect_result.sh; do
+70:echo "STAGE_SCRIPTS_SYNCED"
+71:# --- end SYNC_STAGE_SCRIPTS --------------------------------------------------
+120:bash /tmp/run_dc_paper_core.sh
+121:grep -aE 'DC_AREA|GUARD_|status=' /tmp/run_dc_paper_core_dc.log 2>/dev/null || true
+133:bash /tmp/run_pnr_paper_core.sh
+139:bash /tmp/run_sta_paper_core.sh
+155:bash /tmp/run_calibre_drc_paper_core.sh
+164:bash /tmp/run_lvs_paper_core.sh
+171:bash /tmp/collect_result.sh "$CUR"
+ssh : bash: line 31: $'\r': command not found
+At line:1 char:224
++ ... r",""; $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 31: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

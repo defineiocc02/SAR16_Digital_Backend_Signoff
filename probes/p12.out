@@ -1,0 +1,322 @@
+﻿########## size / head ##########
+77767 B  /home/<user>/sar16_work/proj_paper_core/calibre/lvs/lvs.rep.shorts
+sar_digi_paper_core 10000
+SHORT 1.  rst_n - VDD in sar_digi_paper_core
+15 15 6 Sep 18 18:14:06 2026
+2 Shorted texts: 
+"rst_n" at (408.540, 0.357) on layer "M2" SN 1
+"VDD" at (425.000, 428.100) on layer "M2" SN 141
+Serial_No. 0
+Tag 1.1
+Options
+p 1 4
+SN 1
+4085399 3574
+4085401 3574
+4085401 3576
+4085399 3576
+p 2 4
+SN 141
+4249999 4280999
+4250001 4280999
+4250001 4281001
+4249999 4281001
+p 3 4
+SN 24
+4083500 413000
+4239100 413000
+4239100 415800
+4083500 415800
+p 4 4
+SN 34
+4235300 508200
+4263300 508200
+4263300 511000
+4235300 511000
+p 5 4
+SN 18
+4084100 413100
+4086700 413100
+4086700 415700
+4084100 415700
+p 6 4
+SN 25
+4235900 413100
+4238500 413100
+4238500 415700
+4235900 415700
+p 7 4
+SN 33
+4235900 508300
+4238500 508300
+4238500 510900
+
+########## entries mentioning rst_n ##########
+2:SHORT 1.  rst_n - VDD in sar_digi_paper_core
+5:"rst_n" at (408.540, 0.357) on layer "M2" SN 1
+
+########## how many short groups ##########
+35
+
+########## the VDD group in full (first 60 lines of it) ##########
+SHORT 1.  rst_n - VDD in sar_digi_paper_core
+15 15 6 Sep 18 18:14:06 2026
+2 Shorted texts: 
+"rst_n" at (408.540, 0.357) on layer "M2" SN 1
+"VDD" at (425.000, 428.100) on layer "M2" SN 141
+Serial_No. 0
+Tag 1.1
+Options
+p 1 4
+SN 1
+4085399 3574
+4085401 3574
+4085401 3576
+4085399 3576
+p 2 4
+SN 141
+4249999 4280999
+4250001 4280999
+4250001 4281001
+4249999 4281001
+p 3 4
+SN 24
+4083500 413000
+4239100 413000
+4239100 415800
+4083500 415800
+p 4 4
+SN 34
+4235300 508200
+4263300 508200
+4263300 511000
+4235300 511000
+p 5 4
+SN 18
+4084100 413100
+4086700 413100
+4086700 415700
+4084100 415700
+p 6 4
+SN 25
+4235900 413100
+4238500 413100
+4238500 415700
+4235900 415700
+p 7 4
+SN 33
+4235900 508300
+4238500 508300
+4238500 510900
+4235900 510900
+p 8 4
+SN 35
+4262300 508300
+4264900 508300
+4264900 510900
+4262300 510900
+p 9 4
+SN 3
+4084000 0
+4086800 0
+4086800 415800
+
+########## ERC report ##########
+
+
+==================================================================================
+=== CALIBRE::ERC-H SUMMARY REPORT
+===
+Execution Date/Time:          Fri Sep 18 18:13:58 2026
+Calibre Version:              v2025.1_16.10    Thu Jan 2 11:57:45 PST 2025
+Rule File Pathname:           mylvs.lvs
+Rule File Title:              
+Layout System:                GDSII
+Layout Path(s):               /home/<user>/sar16_work/proj_paper_core/calibre/sar_digi_paper_core_merged.gds
+Layout Primary Cell:          sar_digi_paper_core
+Current Directory:            /home/<user>/sar16_work/proj_paper_core/calibre/lvs
+User Name:                    <user>
+Maximum Results/ERC Check:    100
+Maximum ERC Result Vertices:  4096
+ERC Results Database:         erc.db (ASCII)
+ERC PATHCHK Results Database: svdb/sar_digi_paper_core.pathchk.erc
+ERC PATHCHK Report:           svdb/sar_digi_paper_core.pathchk.rep
+Layout Depth:                 ALL
+Text Depth:                   PRIMARY
+Summary Report File:          erc.rep (REPLACE)
+Geometry Flagging:            ACUTE = NO  SKEW = YES  ANGLED = NO  OFFGRID = YES
+                              NONSIMPLE POLYGON = NO  NONSIMPLE PATH = NO
+Excluded Cells:              
+CheckText Mapping:            COMMENT TEXT + RULE FILE INFORMATION
+Layers:                       MEMORY-BASED
+Keep Empty Checks:            YES
+----------------------------------------------------------------------------------
+--- RUNTIME WARNINGS
+---
+There is no data for layout net name SAVDD?.
+There is no data for layout net name ?VCC?.
+There is no data for layout net name SAVSS?.
+There is no data for layout net name ?GND?.
+There is no data for layout net name SAVSS?.
+There is no data for layout net name ?GND?.
+There is no data for layout net name SAVSS?.
+There is no data for layout net name ?GND?.
+There is no data for layout net name SAVSS?.
+There is no data for layout net name ?GND?.
+There is no data for layout net name SAVDD?.
+There is no data for layout net name ?VCC?.
+There is no data for layout net name SAVSS?.
+There is no data for layout net name ?GND?.
+There is no data for layout net name SAVDD?.
+There is no data for layout net name ?VCC?.
+There is no data for layout net name SAVDD?.
+There is no data for layout net name ?VCC?.
+----------------------------------------------------------------------------------
+--- ORIGINAL LAYER STATISTICS
+---
+LAYER OPCBM ..... TOTAL Original Geometry Count = 0     (0)
+LAYER OPCBP ..... TOTAL Original Geometry Count = 0     (0)
+LAYER OPCBA ..... TOTAL Original Geometry Count = 0     (0)
+LAYER SUBD ...... TOTAL Original Geometry Count = 0     (0)
+LAYER NW ........ TOTAL Original Geometry Count = 112   (3676)
+LAYER DNW ....... TOTAL Original Geometry Count = 0     (0)
+LAYER ESD5V ..... TOTAL Original Geometry Count = 0     (0)
+LAYER ESDIO2 .... TOTAL Original Geometry Count = 0     (0)
+LAYER FUSEMK1 ... TOTAL Original Geometry Count = 0     (0)
+LAYER EFUSE ..... TOTAL Original Geometry Count = 0     (0)
+LAYER GTFUSE .... TOTAL Original Geometry Count = 0     (0)
+LAYER FUSE ...... TOTAL Original Geometry Count = 0     (0)
+LAYER INDMY ..... TOTAL Original Geometry Count = 0     (0)
+LAYER INST ...... TOTAL Original Geometry Count = 0     (0)
+LAYER DSTR ...... TOTAL Original Geometry Count = 0     (0)
+LAYER DMPNP ..... TOTAL Original Geometry Count = 0     (0)
+LAYER VARMOS .... TOTAL Original Geometry Count = 0     (0)
+LAYER HRPDMY .... TOTAL Original Geometry Count = 0     (0)
+LAYER RESAA ..... TOTAL Original Geometry Count = 0     (0)
+LAYER RESP1 ..... TOTAL Original Geometry Count = 0     (0)
+LAYER SAB ....... TOTAL Original Geometry Count = 0     (0)
+LAYER ESD1 ...... TOTAL Original Geometry Count = 0     (0)
+LAYER HRP ....... TOTAL Original Geometry Count = 0     (0)
+LAYER SP ........ TOTAL Original Geometry Count = 224   (7352)
+LAYER GT ........ TOTAL Original Geometry Count = 1618  (73062)
+LAYER MVP ....... TOTAL Original Geometry Count = 0     (0)
+LAYER MVN ....... TOTAL Original Geometry Count = 0     (0)
+LAYER PSUB ...... TOTAL Original Geometry Count = 0     (0)
+LAYER AA ........ TOTAL Original Geometry Count = 535   (21160)
+LAYER SN ........ TOTAL Original Geometry Count = 224   (7352)
+LAYER RESCKT .... TOTAL Original Geometry Count = 0     (0)
+LAYER RESNW ..... TOTAL Original Geometry Count = 0     (0)
+LAYER RFDEV ..... TOTAL Original Geometry Count = 0     (0)
+LAYER RESP3T .... TOTAL Original Geometry Count = 0     (0)
+LAYER MIMDMY .... TOTAL Original Geometry Count = 0     (0)
+LAYER MIM ....... TOTAL Original Geometry Count = 0     (0)
+LAYER MOMDMY .... TOTAL Original Geometry Count = 0     (0)
+LAYER DG ........ TOTAL Original Geometry Count = 0     (0)
+LAYER CT ........ TOTAL Original Geometry Count = 2166  (87545)
+LAYER M1R ....... TOTAL Original Geometry Count = 0     (0)
+LAYER M1 ........ TOTAL Original Geometry Count = 23269 (53109)
+LAYER M2R ....... TOTAL Original Geometry Count = 0     (0)
+LAYER M2 ........ TOTAL Original Geometry Count = 44689 (44689)
+LAYER M3R ....... TOTAL Original Geometry Count = 0     (0)
+LAYER M3 ........ TOTAL Original Geometry Count = 26647 (26647)
+LAYER M4R ....... TOTAL Original Geometry Count = 0     (0)
+LAYER M4 ........ TOTAL Original Geometry Count = 6864  (6864)
+LAYER M5R ....... TOTAL Original Geometry Count = 0     (0)
+LAYER M5 ........ TOTAL Original Geometry Count = 381   (381)
+LAYER M6R ....... TOTAL Original Geometry Count = 0     (0)
+LAYER M6 ........ TOTAL Original Geometry Count = 26    (26)
+LAYER CAPBP ..... TOTAL Original Geometry Count = 0     (0)
+LAYER V5 ........ TOTAL Original Geometry Count = 17    (17)
+LAYER MIMCKT .... TOTAL Original Geometry Count = 0     (0)
+LAYER V4 ........ TOTAL Original Geometry Count = 242   (242)
+LAYER V3 ........ TOTAL Original Geometry Count = 4020  (4020)
+LAYER V2 ........ TOTAL Original Geometry Count = 12457 (12457)
+LAYER V1 ........ TOTAL Original Geometry Count = 16037 (16037)
+LAYER DNWTR ..... TOTAL Original Geometry Count = 0     (0)
+LAYER MOSCKT .... TOTAL Original Geometry Count = 0     (0)
+LAYER iNC ....... TOTAL Original Geometry Count = 0     (0)
+LAYER iPC ....... TOTAL Original Geometry Count = 0     (0)
+LAYER NFDMK ..... TOTAL Original Geometry Count = 0     (0)
+----------------------------------------------------------------------------------
+--- RULECHECK RESULTS STATISTICS
+---
+RULECHECK pathchk_bad ................... TOTAL Result Count = 0  (0)
+RULECHECK ptd_to_power .................. TOTAL Result Count = 0  (0)
+RULECHECK ntd_to_ground ................. TOTAL Result Count = 0  (0)
+RULECHECK mntopg ........................ TOTAL Result Count = 59 (59)
+RULECHECK mptopg ........................ TOTAL Result Count = 5  (5)
+RULECHECK ptap_outside_dnw_non_ground ... TOTAL Result Count = 0  (0)
+RULECHECK nwell_floating ................ NOT EXECUTED
+RULECHECK nwell_not_to_power ............ TOTAL Result Count = 0  (0)
+RULECHECK pwell_not_to_ground ........... TOTAL Result Count = 0  (0)
+----------------------------------------------------------------------------------
+--- ERC PATHCHK RESULTS STATISTICS
+---
+  PATHCHK POWER && ! GROUND NOFLOAT:
+  PATHCHK GROUND && ! POWER NOFLOAT:
+  PATHCHK ! LABELED NOFLOAT:
+----------------------------------------------------------------------------------
+--- SUMMARY
+---
+TOTAL CPU Time:                              3
+TOTAL REAL Time:                             8
+TOTAL Original Layer Geometries:             139528 (364636)
+TOTAL ERC RuleChecks Executed:               8
+TOTAL ERC RuleCheck Results Generated:       64 (64)
+TOTAL ERC PATHCHK Operations Executed:       3
+
+########## deck: every CONNECT / SCONNECT / soft-connect rule ##########
+1514:CONNECT metal3 metal2 BY via2b
+1515:CONNECT metal3 MIM    BY via2a
+1516:CONNECT metal2 mimcap
+1517:CONNECT mimcap metal1 BY via1
+1518:CONNECT metal2 mimcap_ckt
+1519:CONNECT mimcap_ckt metal1 BY via1
+1520:CONNECT metal2 metal1 BY via1
+1528:CONNECT metal3 metal2 BY via2b
+1529:CONNECT metal3 MIM    BY via2a
+1530:CONNECT metal2 mim2cap
+1531:CONNECT mim2cap metal1 BY via1
+1532:CONNECT metal2 mim2cap_ckt
+1533:CONNECT mim2cap_ckt metal1 BY via1
+1534:CONNECT metal2 metal1 BY via1
+1542:CONNECT metal4 metal3 BY via3b
+1543:CONNECT metal4 MIM    BY via3a
+1544:CONNECT metal3 mimcap
+1545:CONNECT mimcap metal2 BY via2
+1546:CONNECT metal3 mimcap_ckt
+1547:CONNECT mimcap_ckt metal2 BY via2
+1548:CONNECT metal3 metal2 BY via2
+1549:CONNECT metal2 metal1 BY via1
+1557:CONNECT metal4 metal3 BY via3b
+1558:CONNECT metal4 MIM    BY via3a
+1559:CONNECT metal3 mim2cap
+1560:CONNECT mim2cap metal2 BY via2
+1561:CONNECT metal3 mim2cap_ckt
+1562:CONNECT mim2cap_ckt metal2 BY via2
+1563:CONNECT metal3 metal2 BY via2
+1564:CONNECT metal2 metal1 BY via1
+1572:CONNECT metal5 metal4 BY via4b
+1573:CONNECT metal5 MIM    BY via4a
+1574:CONNECT metal4 mimcap
+1575:CONNECT mimcap metal3 BY via3
+1576:CONNECT metal4 mimcap_ckt
+1577:CONNECT mimcap_ckt metal3 BY via3
+1578:CONNECT metal4 metal3 BY via3
+1579:CONNECT metal3 metal2 BY via2
+1580:CONNECT metal2 metal1 BY via1
+1588:CONNECT metal5 metal4 BY via4b
+
+########## deck: nwell/psub to power ties ##########
+1732:SCONNECT ntd nwell   BY ntd_nwell_subcont
+1733:SCONNECT ntd dnwell  BY ntd_dnwell_subcont
+1735:SCONNECT ptd pnpcoll   BY dnwd_ptd_psub_subcont
+1737:SCONNECT ptd psub_all  BY dnwd_ptd_psub_subcont
+1738:SCONNECT ptd bulk_all  BY dnwd_ptd_psub_subcont
+ssh : bash: line 35: $'\r': command not found
+At line:1 char:231
++ ...  "`n"; $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 35: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

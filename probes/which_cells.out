@@ -1,0 +1,39 @@
+﻿top cell references 115 distinct masters, 34356 placements
+
+master                   placements  shapes layers                         has AA/GT?
+$$via1                      12931       3 61,62,70                       NO (frame only)
+$$via2                      12613       3 62,63,71                       NO (frame only)
+$$via3                       3584       3 63,64,72                       NO (frame only)
+$$via1_5200_5200_1_2         1462       4 61,62,70                       NO (frame only)
+DFFSXL                        781       8 127,141                        NO (frame only)
+NAND2XL                       528       6 127,141                        NO (frame only)
+NOR2XL                        236       6 127,141                        NO (frame only)
+DFFSX1                        215       8 127,141                        NO (frame only)
+INVXL                         206       5 127,141                        NO (frame only)
+OAI21XL                       187       7 127,141                        NO (frame only)
+AOI22XL                       184       8 127,141                        NO (frame only)
+$$via4                        134       3 64,65,73                       NO (frame only)
+AOI21XL                       130       7 127,141                        NO (frame only)
+CLKBUFX2                       89       5 127,141                        NO (frame only)
+NAND2BXL                       67       6 127,141                        NO (frame only)
+OR2XL                          60       6 127,141                        NO (frame only)
+AOI222XL                       54      10 127,141                        NO (frame only)
+NAND3XL                        45       7 127,141                        NO (frame only)
+AOI211XL                       43       8 127,141                        NO (frame only)
+TLATNXL                        40       7 127,141                        NO (frame only)
+
+=== totals over ALL masters the top cell places ===
+   logic placements WITH device geometry   : 0
+   logic placements as FRAME ONLY (no AA/GT): 3626
+
+=== so who references the renamed, full-geometry cells? ===
+   renamed full-geometry cells: 109
+   of those, referenced by anything: 109
+      nor2_4xaww9wwwww8wv2e2y        <- ['NOR2X4']
+      aoi221_lxaww9wwwwwmdub9ly      <- ['AOI221XL']
+      and2_1xawwqwwwww3ividdy        <- ['AND2X1']
+      dffs_4xawwfcwwwwd6szgjy        <- ['DFFSX4']
+      muxi2_1xaww9wwwwwnqtgdly       <- ['MXI2X1']
+      buf_4xaww6wwwwwa68o5ay         <- ['BUFX4']
+      nor2b_1xawwqwwwww1il58iy       <- ['NOR2BX1']
+      aoi31_lxaww6wwwww5dehxdy       <- ['AOI31XL']

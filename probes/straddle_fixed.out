@@ -1,0 +1,49 @@
+﻿instances with device geometry: 3626
+
+=== CONTROL: 300 random cell centres ===
+   AA covering the point: {1: 79, 2: 154, 3: 56, 4: 10, 5: 1}
+   GT covering the point: {1: 96, 2: 153, 3: 45, 4: 6}
+
+=== the 35 flagged points ===
+   AA covering the point: {0: 20, 1: 11, 2: 3, 3: 1}
+   GT covering the point: {0: 17, 1: 13, 2: 5}
+
+   points with AA>=1 and GT>=1 (a real transistor): 15
+   points with AA==0 (no diffusion at all)        : 20
+
+inst         dev   type      AA/GT instance counts
+X0/X199      M0    MN(N18)   AA=3 GT=2
+X0/X355      M4    MP(P18)   AA=0 GT=0
+X0/X434      M10   MP(P18)   AA=0 GT=0
+X0/X436      M10   MP(P18)   AA=0 GT=0
+X0/X439      M8    MP(P18)   AA=0 GT=0
+X1/X335      M4    MP(P18)   AA=0 GT=0
+X1/X378      M1    MN(N18)   AA=2 GT=2
+X1/X378      M3    MN(N18)   AA=1 GT=1
+X1/X378      M7    MP(P18)   AA=1 GT=2
+X1/X378      M8    MP(P18)   AA=1 GT=1
+X2           M4    MN(N18)   AA=2 GT=2
+X2           M62   MP(P18)   AA=1 GT=1
+X2/X159      M2    MP(P18)   AA=1 GT=1
+X2/X370      M8    MN(N18)   AA=1 GT=1
+X2/X370      M9    MN(N18)   AA=1 GT=1
+X2/X370      M11   MN(N18)   AA=1 GT=1
+X2/X370      M12   MN(N18)   AA=1 GT=1
+X2/X370      M23   MP(P18)   AA=0 GT=0
+X2/X370      M24   MP(P18)   AA=0 GT=0
+X2/X370      M26   MP(P18)   AA=0 GT=1
+X2/X370      M27   MP(P18)   AA=0 GT=1
+X2/X441      M10   MP(P18)   AA=0 GT=0
+X3/X247      M4    MP(P18)   AA=2 GT=2
+X4/X280      M4    MP(P18)   AA=0 GT=0
+X4/X436      M14   MN(N18)   AA=1 GT=1
+X5/X149      M4    MP(P18)   AA=0 GT=1
+X5/X354      M0    MN(N18)   AA=0 GT=0
+X5/X354      M1    MN(N18)   AA=0 GT=0
+X6/X173      M5    MP(P18)   AA=1 GT=1
+X6/X175      M5    MP(P18)   AA=0 GT=0
+X6/X424      M2    MN(N18)   AA=0 GT=0
+X7/X238      M2    MN(N18)   AA=0 GT=0
+X7/X238      M3    MN(N18)   AA=0 GT=0
+X7/X238      M7    MP(P18)   AA=0 GT=0
+X7/X238      M8    MP(P18)   AA=0 GT=0

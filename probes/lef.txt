@@ -1,0 +1,15 @@
+﻿file            : D:\<vault>\Document\Obsidian\�ճ�\10_��Ŀ��\2025_16bit5Msar\02_������֤\sar16_digi_v4_paper_aligned\delivery_final\gds\sar_digi_paper_core.lef
+MACRO total     : 113
+total PINs      : 112
+MACROs w/ OBS   : 0
+MACROs w/ SIZE  : 113
+block 'sar_digi_paper_core' present as MACRO: False
+distinct SIZE lines: 17
+      25 x SIZE 2.64 BY 5.04 ;
+      20 x SIZE 3.3 BY 5.04 ;
+      16 x SIZE 3.96 BY 5.04 ;
+      14 x SIZE 4.62 BY 5.04 ;
+       8 x SIZE 1.98 BY 5.04 ;
+MACROs with 0 PIN: 1 ['expanded_util']
+top-10 by PIN count: [('DFFSX1', 1), ('INVXL', 1), ('INVX2', 1), ('CLKINVX3', 1), ('DFFSX2', 1), ('DFFSXL', 1), ('DFFSX4', 1), ('OAI221XL', 1), ('NOR2X1', 1), ('AND2X2', 1)]
+LAYER statements: 793

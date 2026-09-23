@@ -1,0 +1,87 @@
+****************************************
+Report : qor
+Design : sar_digi_paper_core
+Version: W-2024.09-SP3
+Date   : Fri Sep 18 20:26:36 2026
+****************************************
+
+  Timing Path Group '**clock_gating_default**' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                            1
+  Critical Path Length:                  0.3545
+  Critical Path Slack:                   1.0860
+  Total Negative Slack:                  0.0000
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'clk' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                            3
+  Critical Path Length:                  3.9287
+  Critical Path Slack:                   1.0278
+  Total Negative Slack:                  0.0000
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'dec_clk' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                            3
+  Critical Path Length:                  1.5964
+  Critical Path Slack:                   0.0000
+  Total Negative Slack:                  0.0000
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group '**clock_gating_default**' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            1
+  Critical Path Length:                  0.3269
+  Critical Path Slack:                   0.1000
+  Total Negative Slack:                  0.0000
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'clk' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            2
+  Critical Path Length:                  0.4565
+  Critical Path Slack:                  -0.0935
+  Total Negative Slack:                 -0.9710
+  No. of Violating Paths:                    22
+  ---------------------------------------------
+
+  Timing Path Group 'dec_clk' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            1
+  Critical Path Length:                  0.2383
+  Critical Path Slack:                   0.1342
+  Total Negative Slack:                  0.0000
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Area
+  ---------------------------------------------
+  Net Interconnect area:                 0.0000
+  Total cell area:                  102300.4062
+  Design Area:                      102300.4062
+  ---------------------------------------------
+
+
+  Cell & Pin Count
+  ---------------------------------------------
+  Pin Count:                              14027
+  Hierarchical Cell Count:                   43
+  Hierarchical Port Count:                  363
+  Leaf Cell Count:                         3626
+  ---------------------------------------------
+
+
+  Design Rule Violations
+  ---------------------------------------------
+  Total No. of Pins in Design:            14027
+  max_fanout Count:                          65
+  max_fanout Cost:                     437.0000
+  Total DRC Cost:                      437.0000
+  ---------------------------------------------
+
+1

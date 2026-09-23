@@ -1,0 +1,28 @@
+﻿=== NOR2XL : 7 element(s) ===
+   SREF      layer=None  datatype=None  points=1
+   TEXT      layer=141   datatype=0     points=1 text='VDD'
+   TEXT      layer=141   datatype=0     points=1 text='B'
+   TEXT      layer=141   datatype=0     points=1 text='A'
+   TEXT      layer=141   datatype=0     points=1 text='VSS'
+   TEXT      layer=141   datatype=0     points=1 text='Y'
+   BOUNDARY  layer=127   datatype=0     points=5
+
+=== INVXL : 6 element(s) ===
+   SREF      layer=None  datatype=None  points=1
+   TEXT      layer=141   datatype=0     points=1 text='VDD'
+   TEXT      layer=141   datatype=0     points=1 text='A'
+   TEXT      layer=141   datatype=0     points=1 text='VSS'
+   TEXT      layer=141   datatype=0     points=1 text='Y'
+   BOUNDARY  layer=127   datatype=0     points=5
+
+=== DFFSX1 : 9 element(s) ===
+   SREF      layer=None  datatype=None  points=1
+   TEXT      layer=141   datatype=0     points=1 text='VDD'
+   TEXT      layer=141   datatype=0     points=1 text='CK'
+   TEXT      layer=141   datatype=0     points=1 text='D'
+   TEXT      layer=141   datatype=0     points=1 text='SN'
+   TEXT      layer=141   datatype=0     points=1 text='QN'
+   TEXT      layer=141   datatype=0     points=1 text='VSS'
+   TEXT      layer=141   datatype=0     points=1 text='Q'
+   BOUNDARY  layer=127   datatype=0     points=5
+

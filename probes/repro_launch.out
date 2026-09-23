@@ -1,0 +1,10 @@
+﻿launched pid=675441
+=== first 40 lines ===
+ssh : head: cannot open '/home/<user>/sar16_work/proj_paper_core/logs/repro_v50.log'$'\r' for reading: No such file or di
+rectory
+At line:13 char:27
++ ... r",""; $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (head: cannot op...le or directory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

@@ -1,0 +1,20 @@
+﻿M2 shapes in top cell: 17657
+union-find pairs examined: 31671
+
+largest M2 components (root, #shapes):
+   root=16660  shapes=17     labels=0 []
+   root=11745  shapes=16     labels=0 []
+   root=10916  shapes=16     labels=0 []
+   root=16433  shapes=16     labels=0 []
+   root=1026   shapes=14     labels=0 []
+   root=16332  shapes=14     labels=0 []
+
+=== the component that carries each named pin ===
+   rst_n      : stub=(408.400,0.000)-(408.680,0.715)  component shapes=2  co-labels=['rst_n']
+   clk        : stub=(422.920,0.000)-(423.200,0.715)  component shapes=2  co-labels=['clk']
+   dec_clk    : stub=(415.660,0.000)-(415.940,0.715)  component shapes=2  co-labels=['dec_clk']
+   VDD        : stub=(424.700,0.000)-(425.300,428.400)  component shapes=3  co-labels=['VDD']
+   VSS        : stub=(412.200,0.000)-(412.800,428.400)  component shapes=3  co-labels=['VSS']
+   calib_done : stub=(385.960,0.000)-(386.240,0.715)  component shapes=2  co-labels=['calib_done']
+
+rst_n M2 component extent: (408.40,0.00)-(408.68,41.58) um  = 0.3 x 41.6 um

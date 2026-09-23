@@ -1,0 +1,51 @@
+﻿=== before ===
+/dev/nvme0n1p3 1008G  353G  656G  35% /
+
+=== my scratch in /tmp ===
+13M	/tmp/rpt_v51
+5.4M	/tmp/handover
+4.8M	/tmp/handover51
+-rw-r--r--. 1 <user> <user> 14862 Sep 18 17:55 /tmp/AH_patch_final.py
+-rw-r--r--. 1 <user> <user>  5425 Sep 18 17:57 /tmp/AI_fix_drc_cap.py
+-rw-r--r--. 1 <user> <user>  4046 Sep 18 18:10 /tmp/AJ_fix_reports.py
+-rw-r--r--. 1 <user> <user>  3746 Sep 18 18:13 /tmp/AM_add_trim.py
+-rw-rw-r--. 1 <user> <user> 48107 Sep 17 14:21 /tmp/antnote.txt
+-rw-rw-r--. 1 <user> <user>   318 Sep 17 23:41 /tmp/api2.tcl
+-rw-rw-r--. 1 <user> <user>   244 Sep 17 23:41 /tmp/api3.tcl
+-rw-rw-r--. 1 <user> <user>   237 Sep 17 23:41 /tmp/api4.tcl
+-rw-rw-r--. 1 <user> <user>   231 Sep 17 23:41 /tmp/api.tcl
+-rwxrwxr-x. 1 <user> <user>  1541 Sep 16 19:21 /tmp/apply_wall.sh
+-rw-rw-r--. 1 <user> <user>  2013 Sep 17 17:39 /tmp/arch_ls.txt
+-rw-r--r--. 1 <user> <user> 16483 Sep 18 11:39 /tmp/bad.tcl
+-rw-rw-r--. 1 <user> <user>   969 Sep 17 09:46 /tmp/be1.sh
+-rw-rw-r--. 1 <user> <user>  1390 Sep 17 09:47 /tmp/be2.sh
+-rw-rw-r--. 1 <user> <user>   559 Sep 17 09:47 /tmp/be3.sh
+-rw-rw-r--. 1 <user> <user>  1739 Sep 17 09:48 /tmp/be4.sh
+-rw-rw-r--. 1 <user> <user>  1124 Sep 17 09:48 /tmp/be5.sh
+-rw-rw-r--. 1 <user> <user>  1765 Sep 17 09:49 /tmp/be6.sh
+-rw-rw-r--. 1 <user> <user>   925 Sep 17 09:49 /tmp/be7.sh
+-rwxr-xr-x. 1 <user> <user>  2672 Sep 16 17:27 /tmp/bench_desktop.sh
+
+=== my probe logs inside the project ===
+-rw-rw-r--. 1 <user> <user> 6630 Sep 18 20:18 /home/<user>/sar16_work/proj_paper_core/fc_pinh2.log
+-rw-rw-r--. 1 <user> <user> 2483 Sep 18 20:17 /home/<user>/sar16_work/proj_paper_core/fc_pinhelp.log
+-rw-rw-r--. 1 <user> <user> 1170 Sep 18 20:15 /home/<user>/sar16_work/proj_paper_core/fc_pinprobe2.log
+-rw-rw-r--. 1 <user> <user> 4046 Sep 18 20:16 /home/<user>/sar16_work/proj_paper_core/fc_pinprobe3.log
+-rw-rw-r--. 1 <user> <user> 1170 Sep 18 20:03 /home/<user>/sar16_work/proj_paper_core/fc_pinprobe.log
+
+=== KEPT (rollback path) ===
+   rtl/.bak_v50                     4 file(s)
+   constraints/.bak_v50             2 file(s)
+   tb/.bak_v50                      2 file(s)
+   scripts/.bak_pinfix              1 file(s)
+   scripts/.bak_globals             1 file(s)
+
+=== after ===
+/dev/nvme0n1p3 1008G  353G  656G  35% /
+
+=== residual scratch check (want none) ===
+   none
+   no probe logs left in the project
+
+=== project size ===
+78M	/home/<user>/sar16_work/proj_paper_core

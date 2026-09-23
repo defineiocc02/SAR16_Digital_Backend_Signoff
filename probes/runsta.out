@@ -1,0 +1,122 @@
+﻿=== run_sta_paper_core.sh (full, it is short) ===
+     1	#!/bin/bash
+     2	# =============================================================================
+     3	# run_sta_paper_core.sh - sign-off STA (3 corners + OCV derate sweep) for the
+     4	#                         ON-DIE digital core.
+     5	#
+     6	# The PT script is HAND-WRITTEN here (scripts/sta_pt_paper_core.tcl), not sed-
+     7	# derived from another file, so there is no derivation to guard. What IS guarded
+     8	# is that the script is not empty or truncated, because that failure mode already
+     9	# cost a run on the v4 line: PT started, defined the -x variables, sourced an
+    10	# EMPTY file, exited in seconds with PT_RC=0, and every log line looked normal.
+    11	# Two independent guards protect against it here:
+    12	#   (a) a size + key-line-count check on the script itself;
+    13	#   (b) a per-corner "STA marker lines = N" check, where N = 0 means the script
+    14	#       did not run -- the only trustworthy evidence that analysis happened.
+    15	# CMD-001 is also grepped for: this PrimeTime release rejects a combined
+    16	# -early/-late derate call as TEXT ONLY, so a rejected derate would otherwise
+    17	# publish a nominal number as an OCV result.
+    18	# =============================================================================
+    19	exec > /tmp/sta_pc.out 2>&1
+    20	set -u
+    21	
+    22	PRJ=/home/<user>/sar16_work/proj_paper_core
+    23	PNR=$PRJ/pnr
+    24	TOP=sar_digi_paper_core
+    25	PTSCRIPT=$PRJ/scripts/sta_pt_paper_core.tcl
+    26	
+    27	echo "############ STA paper_core   $(date '+%F %T') ############"
+    28	
+    29	# ---- 1. the PT script must exist AND look like the real thing --------------
+    30	if [ ! -s "$PTSCRIPT" ]; then
+    31	    echo "FATAL: $PTSCRIPT missing or empty"
+    32	    echo "STA_PC status=NO_PT_SCRIPT"; exit 1
+    33	fi
+    34	SZ=$(stat -c%s "$PTSCRIPT")
+    35	KEY=$(grep -cE '^read_parasitics|^read_verilog|STA_RESULT|apply_derates|^source \$SDC' "$PTSCRIPT")
+    36	echo "PT script : $PTSCRIPT   ($SZ B)   key lines = $KEY  (must be >= 4)"
+    37	if [ "$KEY" -lt 4 ]; then
+    38	    echo "FATAL: the PT script does not look like the intended one (key lines = $KEY)."
+    39	    echo "STA_PC status=EMPTY_OR_TRUNCATED_PT_SCRIPT"; exit 1
+    40	fi
+    41	
+    42	# ---- 2. inputs ------------------------------------------------------------
+    43	echo "--- required inputs ---"
+    44	for F in "$PNR/out/${TOP}_pnr.v" "$PRJ/constraints/sar_digi_paper_core.sdc"; do
+    45	    if [ -s "$F" ]; then echo "  OK   $F ($(stat -c%s "$F") B)"; else echo "  MISS $F"; exit 1; fi
+    46	done
+    47	SPEF=$(ls -1 $PNR/out/${TOP}_pnr.spef*.spef 2>/dev/null | head -1)
+    48	if [ -z "$SPEF" ]; then echo "FATAL: no SPEF found"; exit 1; fi
+    49	echo "  SPEF $SPEF ($(stat -c%s "$SPEF") B)"
+    50	
+    51	mkdir -p "$PNR/reports/sta" "$PNR/logs"
+    52	: > "$PNR/reports/sta/sta_pc_summary.txt"
+    53	
+    54	# ---- 3. three corners -----------------------------------------------------
+    55	echo ""
+    56	echo "############ corners (derate 0) ############"
+    57	for C in typical slow fast; do
+    58	    echo "##  corner = $C"
+    59	    # derate MUST be pinned to 1.0 here.  The PT script's own defaults are
+    60	    # 1.05/0.95, so omitting these variables silently turned the "3-corner
+    61	    # nominal" pass into a 5 %-DERATED pass.  It was invisible in the summary and
+    62	    # only showed up because the derate sweep's 0 % control reported slow as
+    63	    # 0 violations while this pass reported 37 -- i.e. two experiments labelled
+    64	    # the same thing.  Pin them explicitly.
+    65	    pt_shell -f "$PTSCRIPT" \
+    66	             -x "set CORNER $C ; set TAG pc ; set PNR_TAG {} ; set DER_LATE 1.0 ; set DER_EARLY 1.0" \
+    67	             -output_log_file "$PNR/logs/sta_pc_${C}.log" \
+    68	             > "$PNR/logs/sta_pc_${C}.stdout" 2>&1
+    69	    echo "PT_RC=$?"
+    70	    N=$(grep -acE '^STA_(RESULT|DONE)' "$PNR/logs/sta_pc_${C}.stdout"); N=${N:-0}
+    71	    echo "  STA marker lines = $N   (0 means the script did not run)"
+    72	    if [ "$N" = "0" ]; then
+    73	        echo "  FATAL: no STA marker lines at corner $C."
+    74	        tail -30 "$PNR/logs/sta_pc_${C}.stdout"
+    75	        echo "STA_PC status=NO_ANALYSIS corner=$C"
+    76	        exit 1
+    77	    fi
+    78	    grep -hE "^STA_(RESULT|WORST_SETUP|WORST_HOLD|FMAX_EST|DONE)" \
+    79	         "$PNR/logs/sta_pc_${C}.stdout" >> "$PNR/reports/sta/sta_pc_summary.txt"
+    80	    # Anchor on a real ERROR line. A bare 'CMD-001' pattern matches the PT
+    81	    # SCRIPT'S OWN COMMENTS (which explain this exact trap) because PT echoes the
+    82	    # sourced file into its stdout -- a guard that fires on its own documentation.
+    83	    # This is the THIRD time in this project a grep-style guard matched its own
+    84	    # text (DC's GHM guard, DC's wire-load guard, now this one). The pattern must
+    85	    # always be anchored to the tool's error syntax.
+    86	    CMD=$(grep -acE '^Error.*(CMD-001|Cannot specify)' "$PNR/logs/sta_pc_${C}.stdout"); CMD=${CMD:-0}
+    87	    if [ "$CMD" != "0" ]; then echo "  ** WARNING: real CMD-001 error at corner $C"; fi
+    88	done
+    89	echo "--- corner summary ---"
+    90	cat "$PNR/reports/sta/sta_pc_summary.txt"
+    91	
+    92	# ---- 4. OCV derate sweep, including the 0 % CONTROL point ------------------
+    93	# The 0 % point is a control, not a formality: it must reproduce the corner run's
+    94	# numbers exactly. If it does not, the derivation or the environment changed
+    95	# something and every other point is uninterpretable.
+    96	echo ""
+    97	echo "############ OCV derate sweep ############"
+    98	: > "$PNR/reports/sta/sta_pc_derate.txt"
+    99	for C in slow fast; do
+   100	    for P in 0 3 5 8; do
+   101	        LATE=$(awk "BEGIN{printf \"%.4f\", 1+$P/100}")
+   102	        EARLY=$(awk "BEGIN{printf \"%.4f\", 1-$P/100}")
+   103	        echo "##  corner=$C derate=${P}%  late=$LATE early=$EARLY"
+   104	        pt_shell -f "$PTSCRIPT" \
+   105	                 -x "set CORNER $C ; set TAG p${P} ; set PNR_TAG {} ; set DER_LATE $LATE ; set DER_EARLY $EARLY" \
+   106	                 -output_log_file "$PNR/logs/sta_pc_${C}_p${P}.log" \
+   107	                 > "$PNR/logs/sta_pc_${C}_p${P}.stdout" 2>&1
+   108	        # Same anchoring rule as the corner loop: on a real Error line only.
+   109	        CMD=$(grep -acE '^Error.*(CMD-001|Cannot specify)' "$PNR/logs/sta_pc_${C}_p${P}.stdout"); CMD=${CMD:-0}
+   110	        if [ "$CMD" != "0" ]; then
+   111	            echo "  ** FATAL: the derate command was rejected (CMD-001) at $C / ${P}%"
+   112	        fi
+   113	        grep -hE "^STA_(DERATE|DERATE_CHECK|RESULT|WORST_SETUP|WORST_HOLD|FMAX_EST|DONE)" \
+   114	             "$PNR/logs/sta_pc_${C}_p${P}.stdout" >> "$PNR/reports/sta/sta_pc_derate.txt"
+   115	    done
+   116	done
+   117	echo "--- derate summary ---"
+   118	cat "$PNR/reports/sta/sta_pc_derate.txt"
+   119	
+   120	echo ""
+   121	echo "STA_PC_ALL_DONE"

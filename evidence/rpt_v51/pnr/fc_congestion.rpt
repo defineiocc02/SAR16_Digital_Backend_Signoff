@@ -1,0 +1,15 @@
+****************************************
+Report : congestion
+Design : sar_digi_paper_core
+Version: W-2024.09-SP3
+Date   : Fri Sep 18 20:24:14 2026
+****************************************
+
+Layer     |    overflow     |              # GRCs has
+Name      |  total  |  max  | overflow (%)      | max overflow
+---------------------------------------------------------------
+Both Dirs |     511 |     4 |     364  ( 2.52%) |       7
+H routing |      84 |     3 |      67  ( 0.93%) |       3
+V routing |     427 |     4 |     297  ( 4.11%) |       7
+
+1

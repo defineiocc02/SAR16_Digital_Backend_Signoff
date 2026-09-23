@@ -1,0 +1,15 @@
+﻿kit cells: 957   merged cells: 225
+
+cell       kit inner cell                 kit inner layers                       merged inner cell                      merged inner layers
+INVXL      inv_lxawwdwwwww9lxghuy         10:4,14:1,30:3,40:2,43:2,50:8,61:4     10:4,14:1,30:3,40:2,43:2,50:8,61:4     IDENTICAL
+NOR2XL     nor2_lxaww7wwwwwaq2l26y        10:4,14:1,30:6,40:2,43:2,50:9,61:5     10:4,14:1,30:6,40:2,43:2,50:9,61:5     IDENTICAL
+DFFSX1     dffs_1xawwzywwwwjerv2iy        10:9,14:1,30:48,40:2,43:2,50:51,61:14  10:9,14:1,30:48,40:2,43:2,50:51,61:14  IDENTICAL
+NAND2BXL   nand2b_lxawwqwwwwwmvsokiy      10:5,14:1,30:9,40:2,43:2,50:12,61:6    10:5,14:1,30:9,40:2,43:2,50:12,61:6    IDENTICAL
+AOI21XL    aoi21_lxawwqwwwwwto68dry       10:4,14:1,30:9,40:2,43:2,50:12,61:7    10:4,14:1,30:9,40:2,43:2,50:12,61:7    IDENTICAL
+XNOR2XL    xnor2_lxawwpwwwww14qlpjy       10:4,14:1,30:19,40:2,43:2,50:23,61:9   10:4,14:1,30:19,40:2,43:2,50:23,61:9   IDENTICAL
+CLKBUFX2   clkbuf_2xawwqwwwww2w4dyly      10:4,14:1,30:6,40:2,43:2,50:10,61:5    10:4,14:1,30:6,40:2,43:2,50:10,61:5    IDENTICAL
+
+=== bbox comparison for the inner cells ===
+   INVXL      kit (-430, -400, 1750, 5580)   merged (-4300, -4000, 17500, 55800)
+   NOR2XL     kit (-430, -400, 2410, 5580)   merged (-4300, -4000, 24100, 55800)
+   DFFSX1     kit (-430, -400, 12970, 5580)   merged (-4300, -4000, 129700, 55800)

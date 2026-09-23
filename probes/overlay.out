@@ -1,0 +1,60 @@
+﻿=== how is SDC_EXTRA supplied? ===
+--- tcl side ---
+
+if {![info exists CORNER]}      { set CORNER typical }
+if {![info exists TAG]}         { set TAG "" }
+if {![info exists SDC_EXTRA]}   { set SDC_EXTRA "" }
+if {![info exists DER_LATE]}    { set DER_LATE 1.05 }
+if {![info exists DER_EARLY]}   { set DER_EARLY 0.95 }
+if {![info exists OCV_CELLCHECK]} { set OCV_CELLCHECK 1 }
+if {![info exists PNR_TAG]} {
+    exit 1
+}
+puts "INFO: linked $TOP, cells = [sizeof_collection [get_cells -hier * -filter "is_hierarchical==false"]]"
+
+# --- constraints -------------------------------------------------------------
+source $SDC
+if {$SDC_EXTRA ne ""} {
+    puts "INFO: sourcing constraint overlay $SDC_EXTRA"
+    source $SDC_EXTRA
+}
+
+set_propagated_clock [all_clocks]
+puts "INFO: clocks = [get_object_name [get_clocks]] (propagated)"
+foreach C {clk dec_clk} {
+
+=== the three boundary assumptions actually in play ===
+-- 1. DIG_IN_PORTS min delay (drives the slow/25 violations)
+120:set DIG_IN_PORTS [get_ports {
+127:set_input_delay -clock $CLK_NAME -max $IO_MAX_DELAY $DIG_IN_PORTS
+128:set_input_delay -clock $CLK_NAME -min $IO_MIN_DELAY $DIG_IN_PORTS
+140:set_input_delay -clock $CLK_NAME -min 0.0              [get_ports calib_comp_out]
+-- 2. calib_comp_out min delay (drives the typical/1 violation)
+26:#     * `calib_comp_out` is an ASYNCHRONOUS input.  Static timing cannot prove
+139:set_input_delay -clock $CLK_NAME -max $CMP_MAX_DELAY [get_ports calib_comp_out]
+140:set_input_delay -clock $CLK_NAME -min 0.0              [get_ports calib_comp_out]
+-- 3. DIG_OUT_PORTS min delay = -IO_MIN_DELAY (drives the fast/4 flop-to-output)
+174:set_output_delay -clock $CLK_NAME -min [expr {-$IO_MIN_DELAY}] $DIG_OUT_PORTS
+180:set_output_delay -clock $CLK_NAME -min 0.0                          [get_ports {dac_p_force[*] dac_n_force[*]}]
+
+=== the worst-path arithmetic, straight from the report ===
+  clock network delay (propagated)                        0.00       0.00
+  input external delay                                    0.50       0.50 r
+  U18/Y (INVXL)                                           0.05 &     0.55 f
+  data arrival time                                                  0.55
+  clock uncertainty                                       0.05       0.80
+  library hold time                                      -0.05       0.75
+  data required time                                                 0.75
+  data required time                                                 0.75
+  data arrival time                                                 -0.55
+  slack (VIOLATED)                                                  -0.20
+  clock network delay (propagated)                        0.00       0.00
+  input external delay                                    0.50       0.50 f
+  U18/Y (INVXL)                                           0.07 &     0.57 r
+  data arrival time                                                  0.57
+  clock uncertainty                                       0.05       0.80
+  library hold time                                      -0.08       0.72
+  data required time                                                 0.72
+  data required time                                                 0.72
+  data arrival time                                                 -0.57
+  slack (VIOLATED)                                                  -0.15

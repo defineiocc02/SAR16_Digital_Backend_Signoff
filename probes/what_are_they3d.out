@@ -1,0 +1,55 @@
+﻿flagged layout-only transistors: 35
+
+inst         dev   type      cell where the GEOMETRY is layers
+X0/X199      M0    MN(N18)   inv_lxawwdwwwww9lxghuy AA,GT,SN
+X0/X355      M4    MP(P18)   (not in any placement) -
+X0/X434      M10   MP(P18)   (not in any placement) -
+X0/X436      M10   MP(P18)   (not in any placement) -
+X0/X439      M8    MP(P18)   (not in any placement) -
+X1/X335      M4    MP(P18)   (not in any placement) -
+X1/X378      M1    MN(N18)   aoi21_lxawwqwwwwwto68dry AA,GT,SN,M1
+X1/X378      M3    MN(N18)   xnor2_lxawwpwwwww14qlpjy AA,GT,SN,M1
+X1/X378      M7    MP(P18)   aoi21_lxawwqwwwwwto68dry AA,AA?,GT,SP?,M1
+X1/X378      M8    MP(P18)   xnor2_lxawwpwwwww14qlpjy AA,AA?,GT,SP?,M1
+X2           M4    MN(N18)   and4_lxawwewwwwwz726o2y SN
+X2           M62   MP(P18)   oai211_1xawwewwwww2x7f9ty AA,AA?,GT,SP?,M1
+X2/X159      M2    MP(P18)   nand2_lxaww7wwwwwc3vmtty AA,AA?,GT,SP?
+X2/X370      M8    MN(N18)   nand2b_lxawwqwwwwwmvsokiy AA,GT,SN,M1
+X2/X370      M9    MN(N18)   nand2b_lxawwqwwwwwmvsokiy AA,GT,SN,M1
+X2/X370      M11   MN(N18)   nor2_lxaww7wwwwwaq2l26y AA,GT,SN,CONT?,M1
+X2/X370      M12   MN(N18)   nor2_lxaww7wwwwwaq2l26y AA,GT,SN
+X2/X370      M23   MP(P18)   nand2b_lxawwqwwwwwmvsokiy AA,AA?,GT,SP?,M1
+X2/X370      M24   MP(P18)   $$via1 (no deeper)     -
+X2/X370      M26   MP(P18)   nor2_lxaww7wwwwwaq2l26y AA,AA?,GT,SP?,M1
+X2/X370      M27   MP(P18)   nor2_lxaww7wwwwwaq2l26y AA,AA?,GT,SP?
+X2/X441      M10   MP(P18)   (not in any placement) -
+X3/X247      M4    MP(P18)   dffs_lxawwzywwwwqic91sy AA,AA?,GT,SP?,M1
+X4/X280      M4    MP(P18)   (not in any placement) -
+X4/X436      M14   MN(N18)   dffs_1xawwzywwwwjerv2iy AA,GT,SN,M1
+X5/X149      M4    MP(P18)   dffs_1xawwzywwwwjerv2iy AA,AA?,GT,SP?,M1
+X5/X354      M0    MN(N18)   (not in any placement) -
+X5/X354      M1    MN(N18)   (not in any placement) -
+X6/X173      M5    MP(P18)   $$via1 (no deeper)     -
+X6/X175      M5    MP(P18)   (not in any placement) -
+X6/X424      M2    MN(N18)   (not in any placement) -
+X7/X238      M2    MN(N18)   (not in any placement) -
+X7/X238      M3    MN(N18)   (not in any placement) -
+X7/X238      M7    MP(P18)   (not in any placement) -
+X7/X238      M8    MP(P18)   (not in any placement) -
+
+=== real geometry cell for each flagged device ===
+   (no placement)                     15
+   nor2_lxaww7wwwwwaq2l26y            4
+   nand2b_lxawwqwwwwwmvsokiy          3
+   aoi21_lxawwqwwwwwto68dry           2
+   xnor2_lxawwpwwwww14qlpjy           2
+   $$via1                             2
+   dffs_1xawwzywwwwjerv2iy            2
+   inv_lxawwdwwwww9lxghuy             1
+   and4_lxawwewwwwwz726o2y            1
+   oai211_1xawwewwwww2x7f9ty          1
+   nand2_lxaww7wwwwwc3vmtty           1
+   dffs_lxawwzywwwwqic91sy            1
+
+=== flagged points sitting on BOTH diffusion(AA) and poly(GT) ===
+   17 of 35

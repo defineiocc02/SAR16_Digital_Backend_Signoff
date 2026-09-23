@@ -1,0 +1,36 @@
+﻿=== �鵵 (25 �� -> 205 �ļ�, 90M) ===
+   02_������֤\sar16_digi_v4_paper_aligned\delivery               -> 01_��ȡ���Ľ�����\delivery   [28M, 32 files]
+   02_������֤\sar16_digi_v4_paper_aligned\delivery_v42           -> 01_��ȡ���Ľ�����\delivery_v42   [21M, 23 files]
+   02_������֤\sar16_digi_v4_paper_aligned\delivery_round3        -> 01_��ȡ���Ľ�����\delivery_round3   [10M, 10 files]
+   02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images     -> 03_��ȡ����Դ����ͼ��\gds_images   [2M, 12 files]
+   02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images_v43 -> 03_��ȡ����Դ����ͼ��\gds_images_v43   [1M, 11 files]
+   02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes -> 02_̽����һ���Խű�\probes   [83K, 59 files]
+   02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42 -> 02_̽����һ���Խű�\remote_v42   [134K, 18 files]
+   02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote -> 05_Զ��ԭʼץȡ\remote   [26M, 23 files]
+   02_������֤\sar16_digi_v4_paper_aligned\tb\tb_sar16_v4.sv      -> 03_��ȡ����Դ����ͼ��\tb_sar16_v4.sv   [67K, 1 files]
+   04_������¼\SAR16_v4.1_��������������_20260918.md                    -> 04_��ʷ��������\SAR16_v4.1_��������������_20260918.md   [20K, 1 files]
+   04_������¼\SAR16_v4.2_�ڶ��ָĽ�_ʱ��պ��븴��Ȩ����_20260918.md            -> 04_��ʷ��������\SAR16_v4.2_�ڶ��ָĽ�_ʱ��պ��븴��Ȩ����_20260918.md   [14K, 1 files]
+   04_������¼\SAR16_v4.2_ʱ��ǩ�˱���_20260918.md                      -> 04_��ʷ��������\SAR16_v4.2_ʱ��ǩ�˱���_20260918.md   [8K, 1 files]
+   04_������¼\SAR16_v4.2_����������¼����.html                           -> 04_��ʷ��������\SAR16_v4.2_����������¼����.html   [49K, 1 files]
+   04_������¼\SAR16_v4paper_���ܱ���_20260917.md                     -> 04_��ʷ��������\SAR16_v4paper_���ܱ���_20260917.md   [8K, 1 files]
+   04_������¼\SAR16_v4paper_ʱ�򱨸�_20260917.md                     -> 04_��ʷ��������\SAR16_v4paper_ʱ�򱨸�_20260917.md   [11K, 1 files]
+   04_������¼\SAR16_v4paper_���߱���_20260917.md                     -> 04_��ʷ��������\SAR16_v4paper_���߱���_20260917.md   [14K, 1 files]
+   04_������¼\SAR16_v4paper_���ս���_GDS�븴��_20260918.md              -> 04_��ʷ��������\SAR16_v4paper_���ս���_GDS�븴��_20260918.md   [14K, 1 files]
+   04_������¼\SAR16_v4�������ֺ������_20260917.md                       -> 04_��ʷ��������\SAR16_v4�������ֺ������_20260917.md   [21K, 1 files]
+   04_������¼\SAR16_v4���Ķ���ʵ������֤��¼_20260917.md                    -> 04_��ʷ��������\SAR16_v4���Ķ���ʵ������֤��¼_20260917.md   [19K, 1 files]
+   04_������¼\SAR16_v4��������_���Ĺ���һ����_20260917.md                   -> 04_��ʷ��������\SAR16_v4��������_���Ĺ���һ����_20260917.md   [19K, 1 files]
+   04_������¼\SAR16_Ƭ��Ƭ��߽����������_20260917.md                      -> 04_��ʷ��������\SAR16_Ƭ��Ƭ��߽����������_20260917.md   [12K, 1 files]
+   04_������¼\SAR16_SRM_LUT����������Ż�_20260917.md                   -> 04_��ʷ��������\SAR16_SRM_LUT����������Ż�_20260917.md   [8K, 1 files]
+   04_������¼\SAR16_���ս������_20260917.md                           -> 04_��ʷ��������\SAR16_���ս������_20260917.md   [13K, 1 files]
+   04_������¼\SAR16�������̶�������_20260917.md                          -> 04_��ʷ��������\SAR16�������̶�������_20260917.md   [28K, 1 files]
+   04_������¼\SAR16_GDSͼ���������.html                               -> 04_��ʷ��������\SAR16_GDSͼ���������.html   [2M, 1 files]
+
+=== ɾ�� (2 �ļ�, 22M) ===
+   02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\lib_slow.lib 11M   PDK ��׼��Ԫ�⸱����11 MB����������ݣ���Ӧ���ڹ��������ɴ� $K ����ȡ��
+   02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\lib_typical.lib 11M   PDK ��׼��Ԫ�⸱����11 MB��ͬ�ϣ�
+
+=== ��״ ===
+   �鵵ǰ��1582 �ļ� / 246M
+   �����Ԥ�ƣ�1580 �ļ� / 225M
+
+DRY RUN ���� δ���κθĶ����� --run ִ�С�

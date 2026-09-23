@@ -1,0 +1,30 @@
+﻿=== before ===
+202
+90
+=== after ===
+112
+   experiment files moved: 90
+   leftovers in the project: 0
+0
+
+=== keep only the four reports that carry the result ===
+total 568
+drwxrwxr-x.  2 <user> <user>  4096 Sep 18 21:12 .
+drwxrwxrwt. 17 root root 28672 Sep 18 21:12 ..
+-rw-rw-r--.  1 <user> <user>   796 Sep 18 21:11 sta_pc_fast_hf2_check.rpt
+-rw-rw-r--.  1 <user> <user>  1002 Sep 18 21:11 sta_pc_fast_hf2_clock_latency.rpt
+   keeping sta_pc_fast_holdfix_hold.rpt (6488 B)
+   keeping sta_pc_slow_holdfix_hold.rpt (2488 B)
+   keeping sta_pc_typical_holdfix_hold.rpt (2421 B)
+   keeping sta_pc_fast_hf2_hold.rpt (340 B)
+   keeping sta_pc_slow_hf2_hold.rpt (340 B)
+   keeping sta_pc_typical_hf2_hold.rpt (340 B)
+   keeping sta_pc_fast_hf3_hold.rpt (340 B)
+   keeping sta_pc_slow_hf3_hold.rpt (340 B)
+   keeping sta_pc_typical_hf3_hold.rpt (340 B)
+   after pruning: 81 file(s), 440K
+
+=== baseline hold reports still intact ===
+   33192 /home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_pc_hold.rpt
+   55107 /home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_slow_pc_hold.rpt
+   2421 /home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_typical_pc_hold.rpt

@@ -1,0 +1,21 @@
+STA_RESULT corner=typical tag=pc viol_setup=0 wns_setup=0.0000 tns_setup=0.0000 viol_hold=1 wns_hold=-0.0320 tns_hold=-0.0320
+STA_WORST_SETUP corner=typical clock=clk slack=0.980740 start=start_calib end=u_calib_ctrl/clk_gate_target_bit_reg/latch/D levels=
+STA_FMAX_EST corner=typical clock=clk period_ns=10.000 slack_ns=0.9807 pmin_ns=9.019 fmax_mhz=110.9
+STA_WORST_SETUP corner=typical clock=dec_clk slack=0.000000 start=srm_decision_valid end=u_srm_residue/clk_gate_dec_ones_reg/latch/D levels=
+STA_FMAX_EST corner=typical clock=dec_clk period_ns=3.000 slack_ns=0.0000 pmin_ns=3.000 fmax_mhz=333.3
+STA_WORST_HOLD corner=typical slack=-0.031957 start=calib_comp_out end=u_calib_ctrl/comp_out_r_reg/D
+STA_DONE corner=typical tag=pc
+STA_RESULT corner=slow tag=pc viol_setup=0 wns_setup=0.0000 tns_setup=0.0000 viol_hold=16 wns_hold=-0.2020 tns_hold=-2.5834
+STA_WORST_SETUP corner=slow clock=clk slack=0.794725 start=start_calib end=u_calib_ctrl/clk_gate_target_bit_reg/latch/D levels=
+STA_FMAX_EST corner=slow clock=clk period_ns=10.000 slack_ns=0.7947 pmin_ns=9.205 fmax_mhz=108.6
+STA_WORST_SETUP corner=slow clock=dec_clk slack=0.000000 start=u_srm_residue/go_tgl_s2_reg/CK end=u_srm_residue/clk_gate_dec_ones_reg/latch/D levels=
+STA_FMAX_EST corner=slow clock=dec_clk period_ns=3.000 slack_ns=0.0000 pmin_ns=3.000 fmax_mhz=333.3
+STA_WORST_HOLD corner=slow slack=-0.201956 start=raw_bits_i[15] end=raw_code_o_reg[15]/D
+STA_DONE corner=slow tag=pc
+STA_RESULT corner=fast tag=pc viol_setup=0 wns_setup=0.0000 tns_setup=0.0000 viol_hold=12 wns_hold=-0.0538 tns_hold=-0.3051
+STA_WORST_SETUP corner=fast clock=clk slack=1.073170 start=start_calib end=u_calib_ctrl/clk_gate_target_bit_reg/latch/D levels=
+STA_FMAX_EST corner=fast clock=clk period_ns=10.000 slack_ns=1.0732 pmin_ns=8.927 fmax_mhz=112.0
+STA_WORST_SETUP corner=fast clock=dec_clk slack=0.000000 start=srm_decision_valid end=u_srm_residue/clk_gate_dec_ones_reg/latch/D levels=
+STA_FMAX_EST corner=fast clock=dec_clk period_ns=3.000 slack_ns=0.0000 pmin_ns=3.000 fmax_mhz=333.3
+STA_WORST_HOLD corner=fast slack=-0.053847 start=u_calib_ctrl/calib_done_pulse_reg/CK end=calib_done_pulse
+STA_DONE corner=fast tag=pc

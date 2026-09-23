@@ -1,0 +1,78 @@
+﻿########## A. rst_n fanout, several calibers ##########
+-- source CDL (/home/<user>/sar16_work/proj_paper_core/calibre/lvs/sar16.cdl)
+   lines containing rst_n              : 57
+   rst_n as a whole token              : 57
+   RST_N (upper) token                 : 0
+-- post-route netlist (/home/<user>/sar16_work/proj_paper_core/pnr/out/sar_digi_paper_core_pnr.v)
+   lines containing rst_n              : 60
+   rst_n as a whole token              : 60
+   .rst_n( port connections           : 0
+
+########## B. top-level port list, source vs layout ##########
+-- source top .SUBCKT port count:
+   source top ports parsed : 5
+   rst_n present in source : True
+
+########## C. layout extracted top .SUBCKT port count ##########
+   layout top ports parsed : 20
+   rst_n present in layout : False
+   VDD/VSS present         : True False
+
+########## D. INCORRECT INSTANCES section: what is extra ##########
+                                 INCORRECT INSTANCES
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+ 53    X0/X414/M0(136.1200,389.2200)  MN(N18)                    ** missing instance **
+         g: 653                                                    ** HFSNET_73 **
+         s: VSS                                                    ** VSS **
+         d: VDD                                                    ** VDD **
+         b: VSS                                                    ** VSS **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 54    X0/X414/M2(136.1200,390.7800)  MP(P18)                    ** missing instance **
+         g: 653                                                    ** HFSNET_73 **
+         s: VDD                                                    ** VDD **
+         d: VDD                                                    ** VDD **
+         b: VDD                                                    ** VDD **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 55    X0/X435/M2(12.9200,397.1600)  MN(N18)                     ** missing instance **
+         g: X0/481                                                 ** Xu_srm_residue/Xu_lut/n39 **
+         s: X0/250                                                 ** Xu_srm_residue/Xu_lut/n48 **
+         d: X0/250                                                 ** Xu_srm_residue/Xu_lut/n48 **
+         b: VSS                                                    ** VSS **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 56    X0/X435/M3(13.6800,397.1600)  MN(N18)                     ** missing instance **
+         g: X0/910                                                 ** no similar net **
+         s: X0/250                                                 ** Xu_srm_residue/Xu_lut/n48 **
+         d: X0/X435/9                                              ** Xu_srm_residue/Xu_lut/XU11/net36 **
+         b: VSS                                                    ** VSS **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 57    X0/X435/M7(12.9000,395.3500)  MP(P18)                     ** missing instance **
+         g: X0/910                                                 ** no similar net **
+         s: X0/250                                                 ** Xu_srm_residue/Xu_lut/n48 **
+         d: X0/250                                                 ** Xu_srm_residue/Xu_lut/n48 **
+         b: VDD                                                    ** VDD **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 58    X0/X435/M8(13.7000,395.3500)  MP(P18)                     ** missing instance **
+         g: X0/481                                                 ** Xu_srm_residue/Xu_lut/n39 **
+         s: X0/250                                                 ** Xu_srm_residue/Xu_lut/n48 **
+         d: X0/X435/9                                              ** Xu_srm_residue/Xu_lut/XU11/net36 **
+         b: VDD                                                    ** VDD **
+ssh : bash: line 56: $'\r': command not found
+At line:1 char:221
++ ... r",""; $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 56: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

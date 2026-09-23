@@ -1,0 +1,17 @@
+﻿=== uploaded md5 on VM ===
+30369a2239b57f447979a9469f4592a2  /home/<user>/sar16_work/proj_paper_core/rtl/sar_digi_paper_core.sv
+8d66c891010b2a1e4ce3212bcf84d7ce  /home/<user>/sar16_work/proj_paper_core/constraints/sar_digi_paper_core.sdc
+285ef171ff0515f856ef668c20701e59  /home/<user>/sar16_work/proj_paper_core/constraints/sar_digi_paper_core_pnr.sdc
+38396e2d58617e2f05326c7e1f3523ce  /home/<user>/sar16_work/proj_paper_core/tb/tb_sar16_paper_core.sv
+b35c84bc75bdb0b8fe03193ca91dd21f  /home/<user>/sar16_work/proj_paper_core/tb/tb_sar16_core_pwr.sv
+
+=== port count the RTL now declares (grep, not a guess) ===
+31
+--- still present? (want 0 hits outside comments) ---
+   0
+
+=== srm_residue_o declaration ===
+44://     3. the SRM residue estimate         -> srm_residue_o / srm_residue_valid_o
+71://   * `srm_residue_o` is published in the estimator's own RES_Q_W bits (10), not
+187:    output logic signed [SRM_RES_W-1:0] srm_residue_o
+253:    assign srm_residue_o = srm_residue_q;

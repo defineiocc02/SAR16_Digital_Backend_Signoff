@@ -1,0 +1,34 @@
+﻿log bytes: 2483
+
+puts "PINHELP-BEGIN"
+PINHELP-BEGIN
+puts "=== place_pins -help ==="
+=== place_pins -help ===
+place_pins -help
+Usage: place_pins    # Perform pin placement in design planning
+        [-use_existing_routing]
+                               (Use existed global routing for pin placement)
+        [-nets nets]           (Place block pins that connected to nets.)
+        [-exclude_nets nets]   (Place all the block pins except those nets.)
+        [-nets_to_exclude_from_routing nets]
+                               (Skip net routing for those nets.)
+        [-pins pins]           (Place selected block pins.)
+        [-ports ports]         (Place selected top level terminals.)
+        [-cells cells]         (Place block pins on selected block cells.)
+        [-self]                (Only place pins on current design)
+        [-legalize]            (Only legalize pin placement)
+puts "PINHELP-END"
+PINHELP-END
+exit 0
+Maximum memory usage for this session: 2147.29 MB
+Maximum memory usage for this session including child processes: 2147.29 MB
+CPU usage for this session:      9 seconds (  0.00 hours)
+Elapsed time for this session:     14 seconds (  0.00 hours)
+Thank you for using Fusion Compiler.
+ssh : bash: line 21: $'\r': command not found
+At line:1 char:232
++ ...  "`n"; $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 21: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

@@ -1,0 +1,20 @@
+﻿=== typical : 1 violating hold path(s) ===
+   port -> port               1
+   worst: calib_comp_out                             -> u_calib_ctrl/comp_out_r_reg                 -0.0300 ns
+
+=== slow : 25 violating hold path(s) ===
+   input port -> flop         25
+   worst: raw_bits_i[15]                             -> raw_code_o_reg[15]                          -0.2000 ns
+
+=== fast : 13 violating hold path(s) ===
+   port -> port               9
+   flop -> output port        4
+   worst: u_calib_ctrl/calib_done_pulse_reg          -> calib_done_pulse                            -0.0500 ns
+
+=== how many DISTINCT startpoints/endpoints ===
+   slow     startpoints=13 endpoints=13
+            startpoint sample: ['raw_bits_i[10]', 'raw_bits_i[11]', 'raw_bits_i[12]', 'raw_bits_i[13]', 'raw_bits_i[14]', 'raw_bits_i[15]']
+            endpoint   sample: ['raw_code_o_reg[10]', 'raw_code_o_reg[11]', 'raw_code_o_reg[12]', 'raw_code_o_reg[13]', 'raw_code_o_reg[14]', 'raw_code_o_reg[15]']
+   fast     startpoints=10 endpoints=10
+            startpoint sample: ['calib_comp_out', 'raw_code_o_reg[0]', 'raw_code_o_reg[1]', 'raw_code_o_reg[6]', 'raw_code_o_reg[9]', 'u_calib_ctrl/calib_done_pulse_reg']
+            endpoint   sample: ['calib_done_pulse', 'calib_mode_en', 'calib_overrange', 'raw_code_o[0]', 'raw_code_o[1]', 'raw_code_o[6]']

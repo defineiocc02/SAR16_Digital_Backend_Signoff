@@ -1,0 +1,131 @@
+﻿=== export section (lines 600-680) ===
+  600  # =============================================================================
+  601  # Reports
+  602  # =============================================================================
+  603  stage "reports"
+  604  redirect $RPT/fc_qor.rpt          { report_qor }
+  605  redirect $RPT/fc_util.rpt         { report_utilization }
+  606  redirect $RPT/fc_area.rpt         { report_area }
+  607  redirect $RPT/fc_timing_setup.rpt { report_timing -delay_type max -max_paths 25 -nworst 2 }
+  608  redirect $RPT/fc_timing_hold.rpt  { report_timing -delay_type min -max_paths 25 -nworst 2 }
+  609  redirect $RPT/fc_violators.rpt    { report_constraint -all_violators }
+  610  redirect $RPT/fc_clock_qor.rpt    { report_clock_qor }
+  611  redirect $RPT/fc_congestion.rpt   { report_congestion }
+  612  run "check_routes"      {check_routes}
+  613  redirect $RPT/fc_check_routes.rpt { check_routes }
+  614  # report_route is NOT available in this FC release. It was added to the parent
+  615  # script without a guard and aborted the whole run at the reports stage after
+  616  # every stage had reported OK, leaving an output directory with no netlist.
+  617  if {[catch {redirect $RPT/fc_route.rpt { report_route }} m]} {
+  618      puts "NOTE: report_route unavailable in this FC release ($m)"
+  619      puts "NOTE: routing evidence comes from fc_check_routes.rpt and"
+  620      puts "      fc_congestion.rpt instead."
+  621  }
+  622  
+  623  # =============================================================================
+  624  # Outputs
+  625  # =============================================================================
+  626  stage "write outputs"
+  627  run "write_verilog"   {write_verilog $OUT/${TOP}_pnr.v}
+  628  run "write_sdc"       {write_sdc -output $OUT/${TOP}_pnr.sdc}
+  629  run "write_parasitics" {write_parasitics -format spef -output $OUT/${TOP}_pnr.spef}
+  630  # write_gds / write_lef take the file name as a POSITIONAL argument in this FC
+  631  # release. `-output` gives CMD-011, `-output_file` gives CMD-010, and NEITHER
+  632  # aborts the flow.
+  633  run "write_gds"       {write_gds $OUT/${TOP}.gds}
+  634  # round 3: NO -design meant write_lef defaulted to -library and emitted a pure
+  635  # TECHNOLOGY lef (25 LAYER, 0 MACRO, 0 PIN).  With -design this release also
+  636  # writes the frame view of every referenced cell (112 MACRO / 650 PIN).
+  637  # The block's OWN abstract is still not produced -- create_abstract is the
+  638  # remaining candidate -- and that gap is recorded, not papered over.
+  639  run "write_lef"       {write_lef -design ${TOP} $OUT/${TOP}.lef}
+  640  
+  641  run "save_block"      {save_block -as sar16_route_paper_core}
+  642  run "save_lib"        {save_lib}
+  643  
+  644  # --- export guard: the return codes above cannot detect a missing export -----
+  645  set gds_ok 0
+  646  set lef_ok 0
+  647  if {[file exists $OUT/${TOP}.gds] && [file size $OUT/${TOP}.gds] > 0} { set gds_ok 1 }
+  648  if {[file exists $OUT/${TOP}.lef] && [file size $OUT/${TOP}.lef] > 0} { set lef_ok 1 }
+  649  # v4.2: census the exported interface. A block whose GDS carries fewer pin
+  650  # shapes than its netlist has ports is not a deliverable, and the mismatch is
+  651  # invisible in the file sizes, so it is counted here.
+  652  if {[catch {
+  653      set _tp [sizeof_collection [get_terminals -quiet *]]
+  654      set _tc [sizeof_collection [get_terminals -quiet -filter "direction==in || direction==out || direction==inout"]]
+  655      set _lbl 0
+  656      catch {set _lbl [llength [get_attribute [get_terminals -quiet *] name]]}
+  657      puts "IFACE_TERMINALS total=$_tp signal=$_tc"
+  658      puts "IFACE_LEF_BYTES [expr {$lef_ok ? [file size $OUT/${TOP}.lef] : 0}]"
+  659  } _ie]} { puts "IFACE_FAIL (contained): $_ie" }
+  660  
+  661  puts "EXPORT_RESULT gds=$gds_ok lef=$lef_ok"
+  662  if {$gds_ok} { puts "EXPORT_GDS_BYTES [file size $OUT/${TOP}.gds]" }
+  663  if {$lef_ok} { puts "EXPORT_LEF_BYTES [file size $OUT/${TOP}.lef]" }
+  664  if {!($gds_ok && $lef_ok)} {
+  665      puts "FATAL: GDS or LEF was not written. The stage return codes were clean."
+  666      puts "       This is the known silent-failure mode of write_gds/write_lef."
+  667  }
+  668  foreach F [list ${TOP}_pnr.v ${TOP}_pnr.sdc ${TOP}.gds] {
+  669      if {[file exists $OUT/$F]} {
+  670          if {[catch {set h [exec md5sum $OUT/$F]} m]} { set h "md5 unavailable" }
+  671          puts "OUTPUT_MD5 $F $h"
+  672      }
+  673  }
+  674  
+  675  # =============================================================================
+  676  # Summary
+  677  # =============================================================================
+  678  puts ""
+  679  puts "##############################################################"
+  680  puts "##  STAGE SUMMARY"
+
+=== every write_* call in the script ===
+577:# flow has already lost a round to `write_gds -output` (CMD-011) and to
+627:run "write_verilog"   {write_verilog $OUT/${TOP}_pnr.v}
+628:run "write_sdc"       {write_sdc -output $OUT/${TOP}_pnr.sdc}
+629:run "write_parasitics" {write_parasitics -format spef -output $OUT/${TOP}_pnr.spef}
+630:# write_gds / write_lef take the file name as a POSITIONAL argument in this FC
+633:run "write_gds"       {write_gds $OUT/${TOP}.gds}
+634:# round 3: NO -design meant write_lef defaulted to -library and emitted a pure
+639:run "write_lef"       {write_lef -design ${TOP} $OUT/${TOP}.lef}
+666:    puts "       This is the known silent-failure mode of write_gds/write_lef."
+
+=== the interface census block ===
+  625  # =============================================================================
+  626  stage "write outputs"
+  627  run "write_verilog"   {write_verilog $OUT/${TOP}_pnr.v}
+  628  run "write_sdc"       {write_sdc -output $OUT/${TOP}_pnr.sdc}
+  629  run "write_parasitics" {write_parasitics -format spef -output $OUT/${TOP}_pnr.spef}
+  630  # write_gds / write_lef take the file name as a POSITIONAL argument in this FC
+  631  # release. `-output` gives CMD-011, `-output_file` gives CMD-010, and NEITHER
+  632  # aborts the flow.
+  633  run "write_gds"       {write_gds $OUT/${TOP}.gds}
+  634  # round 3: NO -design meant write_lef defaulted to -library and emitted a pure
+  635  # TECHNOLOGY lef (25 LAYER, 0 MACRO, 0 PIN).  With -design this release also
+  636  # writes the frame view of every referenced cell (112 MACRO / 650 PIN).
+  637  # The block's OWN abstract is still not produced -- create_abstract is the
+  638  # remaining candidate -- and that gap is recorded, not papered over.
+  639  run "write_lef"       {write_lef -design ${TOP} $OUT/${TOP}.lef}
+  640  
+  641  run "save_block"      {save_block -as sar16_route_paper_core}
+  642  run "save_lib"        {save_lib}
+  643  
+  644  # --- export guard: the return codes above cannot detect a missing export -----
+  645  set gds_ok 0
+  646  set lef_ok 0
+  647  if {[file exists $OUT/${TOP}.gds] && [file size $OUT/${TOP}.gds] > 0} { set gds_ok 1 }
+  648  if {[file exists $OUT/${TOP}.lef] && [file size $OUT/${TOP}.lef] > 0} { set lef_ok 1 }
+  649  # v4.2: census the exported interface. A block whose GDS carries fewer pin
+  650  # shapes than its netlist has ports is not a deliverable, and the mismatch is
+  651  # invisible in the file sizes, so it is counted here.
+  652  if {[catch {
+  653      set _tp [sizeof_collection [get_terminals -quiet *]]
+  654      set _tc [sizeof_collection [get_terminals -quiet -filter "direction==in || direction==out || direction==inout"]]
+  655      set _lbl 0
+  656      catch {set _lbl [llength [get_attribute [get_terminals -quiet *] name]]}
+  657      puts "IFACE_TERMINALS total=$_tp signal=$_tc"
+  658      puts "IFACE_LEF_BYTES [expr {$lef_ok ? [file size $OUT/${TOP}.lef] : 0}]"
+  659  } _ie]} { puts "IFACE_FAIL (contained): $_ie" }
+  660  

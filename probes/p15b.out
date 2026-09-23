@@ -1,0 +1,50 @@
+﻿-rw-rw-r--. 1 <user> <user> 4046 Sep 18 20:16 /home/<user>/sar16_work/proj_paper_core/fc_pinprobe3.log
+--- procs ---
+--- log content ---
+
+
+
+                              Fusion Compiler (TM)
+
+                Version W-2024.09-SP3 for linux64 - Jan 16, 2025
+  This release has significant feature enhancements. Please review the Release
+                       Notes associated with this release.
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+ 
+puts "PINPROBE-BEGIN"
+PINPROBE-BEGIN
+foreach c {place_pins set_pin_physical_constraints set_individual_pin_constraints \
+           create_pin_guide edit_pin set_block_pin_constraints remove_pin_guide \
+           set_pin_constraints create_boundary set_keepout_margin set_pnet_options \
+           create_abstract write_lef_abstract} {
+    puts [format "  %-34s %s" $c [expr {[llength [info commands $c]] > 0 ? "EXISTS" : "absent"}]]
+}
+  place_pins                         EXISTS
+  set_pin_physical_constraints       absent
+  set_individual_pin_constraints     EXISTS
+  create_pin_guide                   EXISTS
+  edit_pin                           absent
+  set_block_pin_constraints          EXISTS
+  remove_pin_guide                   absent
+ssh : bash: line 7: $'\r': command not found
+At line:1 char:426
++ ... "; $probe | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 7: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

@@ -1,0 +1,78 @@
+﻿=== $PC/reports ===
+total 268
+drwxrwxr-x.  2 <user> <user>   4096 Sep 18 20:27 .
+drwxrwxr-x. 22 <user> <user>   4096 Sep 18 20:26 ..
+-rw-rw-r--.  1 <user> <user>   1045 Sep 18 20:19 area_flat_precleanup.rpt
+-rw-rw-r--.  1 <user> <user>   1045 Sep 18 20:19 area_flat.rpt
+-rw-rw-r--.  1 <user> <user>  10420 Sep 18 20:19 area.rpt
+-rw-rw-r--.  1 <user> <user>   2247 Sep 18 20:19 check_design.rpt
+-rw-rw-r--.  1 <user> <user>    304 Sep 18 20:19 check_timing.rpt
+-rw-rw-r--.  1 <user> <user>   2547 Sep 18 20:19 clock_gating.rpt
+-rw-rw-r--.  1 <user> <user>    671 Sep 18 20:19 clocks.rpt
+-rw-rw-r--.  1 <user> <user>    365 Sep 18 20:19 link.rpt
+-rw-rw-r--.  1 <user> <user>   1872 Sep 18 20:19 power.rpt
+-rw-rw-r--.  1 <user> <user>   2863 Sep 18 20:19 qor.rpt
+-rw-rw-r--.  1 <user> <user>   9749 Sep 18 20:19 resources.rpt
+-rw-rw-r--.  1 <user> <user>   2380 Sep 18 20:27 RESULT_BASELINE.env
+-rw-rw-r--.  1 <user> <user>   2380 Sep 18 20:29 RESULT_CURRENT.env
+-rw-rw-r--.  1 <user> <user>  37531 Sep 18 20:19 timing_hold.rpt
+-rw-rw-r--.  1 <user> <user> 141478 Sep 18 20:19 timing_setup.rpt
+-rw-rw-r--.  1 <user> <user>   9446 Sep 18 20:19 violators.rpt
+
+=== $PC/pnr/reports (recursive, files only) ===
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/fc_pg.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/fc_qor.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/fc_util.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/fc_area.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/fc_timing_setup.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/fc_timing_hold.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/fc_violators.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/fc_clock_qor.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/fc_congestion.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/fc_check_routes.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/fc_route.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_summary.txt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_typical_pc_derate.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_typical_pc_coverage.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_typical_pc_check.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_typical_pc_clock_skew.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_typical_pc_clock_latency.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_typical_pc_setup.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_typical_pc_hold.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_typical_pc_violators.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_typical_pc_qor.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_typical_pc_drc.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_slow_pc_derate.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_slow_pc_coverage.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_slow_pc_check.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_slow_pc_clock_skew.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_slow_pc_clock_latency.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_slow_pc_setup.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_slow_pc_hold.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_slow_pc_violators.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_slow_pc_qor.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_slow_pc_drc.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_pc_derate.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_pc_coverage.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_pc_check.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_pc_clock_skew.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_pc_clock_latency.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_pc_setup.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_pc_hold.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_pc_violators.rpt
+
+=== collect_result.sh: where does it write? ===
+28:RPT=$P/reports
+29:OUT=${1:-$RPT/RESULT_CURRENT.env}
+30:mkdir -p "$(dirname "$OUT")"
+133:echo "fc_util=$(num "$P/pnr/reports/fc_util.rpt" 'Utilization Ratio:')"
+134:echo "fc_block_area=$(num "$P/pnr/reports/fc_util.rpt" 'Total Area:')"
+135:echo "fc_capacity_area=$(num "$P/pnr/reports/fc_util.rpt" 'Total Capacity Area:')"
+143:for line in $(grep -ah 'STA_FMAX_EST corner=' "$P/pnr/reports/sta/sta_pc_summary.txt" 2>/dev/null \
+154:    v=$(grep -ah "STA_DERATE_CHECK corner=slow tag=$t " "$P/pnr/reports/sta/sta_pc_derate.txt" 2>/dev/null \
+177:} > "$OUT"
+179:echo "wrote $OUT  ($(grep -cv '^#' "$OUT") keys)"
+
+=== staged ===
+154
+13M	/tmp/rpt_v51

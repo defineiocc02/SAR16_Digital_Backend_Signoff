@@ -1,0 +1,43 @@
+﻿before: 221M   entries: 815
+
+removed entries : 806
+freed bytes     : 227504718  (216 MB)
+manifest        : /tmp/tmp_cleanup_manifest.txt
+
+after: 692K   entries: 10
+
+=== what survived (should be system/sockets only) ===
+total 268
+drwxrwxrwt. 14 root root 28672 Sep 18 20:34 .
+dr-xr-xr-x. 17 root root   236 Jun 22 22:04 ..
+drwxrwxrwx.  3 <user> <user>  4096 Sep 18 18:09 .cadence
+drwx------.  2 <user> <user>    20 Sep 16 17:35 .esd-1000
+-rw-rw-rw-.  1 <user> <user>     0 Sep 16 09:49 .FNP_SERVERLOG_LOCK.lck
+drwxrwxrwt.  2 root root   186 Sep 16 17:35 .ICE-unix
+-rw-rw-r--.  1 <user> <user>     2 Sep 18 07:25 .PMTCN
+drwxrwxr-x.  2 <user> <user>     6 Sep 16 10:08 .rce
+-rw-rw-r--.  1 <user> <user>    24 Sep 17 10:25 .spaceModel.sar_adc_digital_top.134246.1000
+-rw-rw-r--.  1 <user> <user>    24 Sep 17 10:59 .spaceModel.sar_adc_digital_top.141181.1000
+-rw-rw-r--.  1 <user> <user>    24 Sep 17 11:18 .spaceModel.sar_adc_digital_top.146881.1000
+-rw-rw-r--.  1 <user> <user>    24 Sep 17 14:17 .spaceModel.sar_adc_digital_top.188459.1000
+-rw-rw-r--.  1 <user> <user>    24 Sep 17 14:52 .spaceModel.sar_adc_digital_top.201227.1000
+-rw-rw-r--.  1 <user> <user>    24 Sep 17 15:31 .spaceModel.sar_adc_digital_top.213146.1000
+-rw-rw-r--.  1 <user> <user>    24 Sep 17 15:36 .spaceModel.sar_adc_digital_top.217617.1000
+-rw-rw-r--.  1 <user> <user>    24 Sep 17 20:14 .spaceModel.sar_adc_digital_top.264687.1000
+-rw-rw-r--.  1 <user> <user>    24 Sep 17 20:30 .spaceModel.sar_adc_digital_top.274297.1000
+-rw-rw-r--.  1 <user> <user>    24 Sep 17 22:04 .spaceModel.sar_digi_paper_core.294350.1000
+-rw-rw-r--.  1 <user> <user>    24 Sep 17 23:20 .spaceModel.sar_digi_paper_core.309320.1000
+
+=== safety: the project and its backups are untouched ===
+78M	/home/<user>/sar16_work/proj_paper_core
+/home/<user>/sar16_work/proj_paper_core/rtl/.bak_v50:
+sar_calib_ctrl_serial.sv
+sar_digi_paper_core.sv
+srm_residue_estimator.sv
+srm_residue_lut.sv
+
+/home/<user>/sar16_work/proj_paper_core/scripts/.bak_globals:
+run_lvs_paper_core.sh.20260918_202826
+
+/home/<user>/sar16_work/proj_paper_core/scripts/.bak_pinfix:
+fc_pnr_paper_core.tcl.20260918_201855

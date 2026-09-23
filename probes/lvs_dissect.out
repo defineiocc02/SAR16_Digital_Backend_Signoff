@@ -1,0 +1,102 @@
+﻿=== INITIAL NUMBERS ===
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:            178       179    *
+
+ Nets:           26761     26876    *
+
+ Instances:      25298     24992    *    MN (4 pins)
+                 25388     25034    *    MP (4 pins)
+                ------    ------
+ Total Inst:     50686     50026
+
+
+NUMBERS OF OBJECTS
+
+=== AFTER TRANSFORMATION ===
+component type                         layout     source    delta flag
+Ports                                     178        178       +0 
+Nets                                    12146      12255     -109 *
+MN (4 pins)                                27         13      +14 *
+Total Inst                              19375      19325      +50 
+
+=== error / warning lines ===
+   Error    Different numbers of nets.
+   Error    Different numbers of instances.
+   Error    Connectivity errors.
+   Error    Property errors.
+   Warning  Ambiguity points were found and resolved arbitrarily.
+   Error    Different numbers of nets (see below).
+   Error    Different numbers of instances (see below).
+   Error    Connectivity errors.
+   Error    Property errors.
+   Warning  Ambiguity points were found and resolved arbitrarily.
+
+=== INCORRECT NETS: first line of each entry ===
+count: 50
+     1  VDD                                VDD
+     2  VSS                                VSS
+     3  X0/596                             Xu_calib_ctrl/n1089
+     4  X0/270                             Xu_calib_ctrl/n1224
+     5  X0/398                             Xu_calib_ctrl/shadow_weights[18][13]
+     6  604                                Xu_calib_ctrl/shadow_weights[18][10]
+     7  110                                Xu_calib_ctrl/shadow_weights[18][9]
+     8  X0/558                             Xu_calib_ctrl/XU1510/xn
+     9  X0/538                             Xu_calib_ctrl/n1879
+    10  37                                 Xu_calib_ctrl/HFSNET_313
+    11  20                                 Xu_calib_ctrl/HFSNET_320
+    12  575                                Xu_calib_ctrl/HFSNET_317
+    13  33                                 Xu_calib_ctrl/HFSNET_297
+    14  14                                 Xu_calib_ctrl/shadow_weights[13][8]
+    15  63                                 Xu_calib_ctrl/HFSNET_288
+    16  78                                 Xu_calib_ctrl/n70
+    17  581                                Xu_calib_ctrl/shadow_weights[6][18]
+    18  22                                 Xu_calib_ctrl/shadow_weights[6][1]
+    19  29                                 Xu_calib_ctrl/shadow_weights[6][2]
+    20  80                                 Xu_calib_ctrl/HFSNET_302
+    21  1                                  Xu_calib_ctrl/HFSNET_316
+    22  X0/343                             Xu_calib_ctrl/shadow_weights[6][12]
+    23  89                                 Xu_calib_ctrl/gre_a_INV_1810_47
+    24  87                                 Xu_calib_ctrl/HFSNET_301
+    25  121                                Xu_calib_ctrl/HFSNET_347
+   ...
+
+=== INCORRECT NETS: connection-count deltas ===
+   VDD                                layout  14636  source  13702  delta   +934
+   VSS                                layout  13913  source  13899  delta    +14
+   X0/398                             layout      5  source      4  delta     +1
+   604                                layout      5  source      4  delta     +1
+   110                                layout      5  source      4  delta     +1
+   X0/538                             layout      4  source      3  delta     +1
+   20                                 layout     64  source     43  delta    +21
+   33                                 layout     53  source     43  delta    +10
+   14                                 layout      3  source      2  delta     +1
+   63                                 layout     46  source     41  delta     +5
+   78                                 layout     46  source     41  delta     +5
+   581                                layout      3  source      2  delta     +1
+   22                                 layout      3  source      2  delta     +1
+   29                                 layout      3  source      2  delta     +1
+   80                                 layout     48  source     43  delta     +5
+   total entries: 40
+
+=== INCORRECT INSTANCES: what is extra ===
+   'missing instance' lines: 35
+     51    X0/X199/M0(347.6200,379.3100)  MN(N18)
+     52    X0/X355/M4(300.2000,374.9300)  MP(P18)
+     53    X0/X434/M10(212.9050,365.1800)  MP(P18)
+     54    X0/X436/M10(212.9050,405.5000)  MP(P18)
+     55    X0/X439/M8(213.2950,390.8600)  MP(P18)
+     56    X1/X335/M4(412.6000,344.6900)  MP(P18)
+     57    X1/X378/M1(365.0250,358.9200)  MN(N18)
+     58    X1/X378/M3(366.7800,358.9200)  MN(N18)
+     59    X1/X378/M7(364.9500,361.2000)  MP(P18)
+     60    X1/X378/M8(366.0500,360.7800)  MP(P18)
+     61    X2/M4(101.6350,298.2550)  MN(N18)
+     62    X2/M62(287.1000,270.3400)  MP(P18)
+   parent cells: [('X2/X370', 8), ('X1/X378', 4), ('X7/X238', 4), ('X2', 2), ('X5/X354', 2), ('X0/X199', 1), ('X0/X355', 1), ('X0/X434', 1)]
+   device types: [(('MP', 'P18'), 263), (('MN', 'N18'), 204)]
+
+=== how many nets carry 'no similar net' ===
+   462

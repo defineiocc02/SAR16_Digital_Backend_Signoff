@@ -1,0 +1,37 @@
+﻿=== baseline (from the project's own v5.1 run) ===
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:            178       179    *
+
+ Nets:           26761     26876    *
+
+ Instances:      25298     24992    *    MN (4 pins)
+                 25388     25034    *    MP (4 pins)
+                ------    ------
+   shorts: 0
+
+=== variant deck checks ===
+   LVS REPORT  -> LVS REPORT "/tmp/exp141/exp141.rep"
+   PORT 141 lines remaining: 0  (want 0)
+   commented lines        : 4  (want 4)
+   LAYOUT PATH  -> LAYOUT PATH "/home/<user>/sar16_work/proj_paper_core/calibre/sar_digi_paper_core_merged.gds"
+   SOURCE PATH  -> SOURCE PATH "/home/<user>/sar16_work/proj_paper_core/calibre/lvs/sar16.cdl"
+   PRECISION    -> PRECISION 10000
+
+=== running the variant ===
+rc=4  elapsed 2s
+
+=== variant result ===
+   verdict : 
+   nets(incorrect) : 
+   shorts  : 0
+
+=== after transformation ===
+
+=== project evidence untouched? ===
+   Sep 18 20:28  /home/<user>/sar16_work/proj_paper_core/calibre/lvs/lvs.rep
+
+EXP141_DONE

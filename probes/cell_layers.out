@@ -1,0 +1,40 @@
+﻿total cells: 225
+
+=== INVXL : 2 layer/datatype pairs ===
+   layer 127   datatype 0     1 shape(s)
+   layer 141   datatype None  4 shape(s)
+
+=== NOR2XL : 2 layer/datatype pairs ===
+   layer 127   datatype 0     1 shape(s)
+   layer 141   datatype None  5 shape(s)
+
+=== DFFSX1 : 2 layer/datatype pairs ===
+   layer 127   datatype 0     1 shape(s)
+   layer 141   datatype None  7 shape(s)
+
+=== NAND2BXL : 2 layer/datatype pairs ===
+   layer 127   datatype 0     1 shape(s)
+   layer 141   datatype None  5 shape(s)
+
+=== layer/datatype pairs across ALL cells (pair -> #cells using it) ===
+   layer 61    datatype 0     112 cells
+   layer 14    datatype 0     109 cells
+   layer 10    datatype 0     109 cells
+   layer 40    datatype 0     109 cells
+   layer 43    datatype 0     109 cells
+   layer 50    datatype 0     109 cells
+   layer 30    datatype 0     109 cells
+   layer 141   datatype None  109 cells
+   layer 127   datatype 0     109 cells
+   layer 62    datatype 0     4 cells
+   layer 63    datatype 0     3 cells
+   layer 64    datatype 0     3 cells
+   layer 65    datatype 0     3 cells
+   layer 66    datatype 0     2 cells
+   layer 70    datatype 0     2 cells
+   layer 62    datatype None  1 cells
+   layer 63    datatype None  1 cells
+   layer 71    datatype 0     1 cells
+   layer 72    datatype 0     1 cells
+   layer 73    datatype 0     1 cells
+   layer 74    datatype 0     1 cells

@@ -1,0 +1,180 @@
+{
+  "when": "2026-09-18 20:32:25",
+  "archive_root": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918",
+  "summary": {
+    "archive_items": 25,
+    "archive_files": 203,
+    "archive_bytes": 71792078,
+    "delete_files": 2,
+    "delete_bytes": 22913813,
+    "keep_files": 1589,
+    "keep_bytes": 235524911
+  },
+  "moves": [
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\02_仿真验证\\sar16_digi_v4_paper_aligned\\delivery",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\01_被取代的交付包/delivery",
+      "files": 32,
+      "bytes": 29361483
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\02_仿真验证\\sar16_digi_v4_paper_aligned\\delivery_v42",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\01_被取代的交付包/delivery_v42",
+      "files": 23,
+      "bytes": 21787641
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\02_仿真验证\\sar16_digi_v4_paper_aligned\\delivery_round3",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\01_被取代的交付包/delivery_round3",
+      "files": 10,
+      "bytes": 10840951
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\02_仿真验证\\sar16_digi_v4_paper_aligned\\backend\\gds_images",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\03_被取代的源码与图像/gds_images",
+      "files": 12,
+      "bytes": 1583764
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\02_仿真验证\\sar16_digi_v4_paper_aligned\\backend\\gds_images_v43",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\03_被取代的源码与图像/gds_images_v43",
+      "files": 11,
+      "bytes": 1480512
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\02_仿真验证\\sar16_digi_v4_paper_aligned\\backend\\scripts\\probes",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\02_探针与一次性脚本/probes",
+      "files": 59,
+      "bytes": 84822
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\02_仿真验证\\sar16_digi_v4_paper_aligned\\backend\\scripts\\remote_v42",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\02_探针与一次性脚本/remote_v42",
+      "files": 18,
+      "bytes": 137293
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\02_仿真验证\\sar16_digi_v4_paper_aligned\\backend\\analysis\\raw\\remote",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\05_远端原始抓取/remote",
+      "files": 21,
+      "bytes": 4181130
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\02_仿真验证\\sar16_digi_v4_paper_aligned\\tb/tb_sar16_v4.sv",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\03_被取代的源码与图像\\tb_sar16_v4.sv",
+      "files": 1,
+      "bytes": 68491
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\04_工作记录\\SAR16_v4.1_遗留问题逐项解决_20260918.md",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\04_历史工作报告\\SAR16_v4.1_遗留问题逐项解决_20260918.md",
+      "files": 1,
+      "bytes": 20820
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\04_工作记录\\SAR16_v4.2_第二轮改进_时序闭合与复现权威性_20260918.md",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\04_历史工作报告\\SAR16_v4.2_第二轮改进_时序闭合与复现权威性_20260918.md",
+      "files": 1,
+      "bytes": 14473
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\04_工作记录\\SAR16_v4.2_时序签核报告_20260918.md",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\04_历史工作报告\\SAR16_v4.2_时序签核报告_20260918.md",
+      "files": 1,
+      "bytes": 8187
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\04_工作记录\\SAR16_v4.2_完整工作记录报告.html",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\04_历史工作报告\\SAR16_v4.2_完整工作记录报告.html",
+      "files": 1,
+      "bytes": 50233
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\04_工作记录\\SAR16_v4paper_功能报告_20260917.md",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\04_历史工作报告\\SAR16_v4paper_功能报告_20260917.md",
+      "files": 1,
+      "bytes": 8636
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\04_工作记录\\SAR16_v4paper_时序报告_20260917.md",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\04_历史工作报告\\SAR16_v4paper_时序报告_20260917.md",
+      "files": 1,
+      "bytes": 10885
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\04_工作记录\\SAR16_v4paper_布线报告_20260917.md",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\04_历史工作报告\\SAR16_v4paper_布线报告_20260917.md",
+      "files": 1,
+      "bytes": 14252
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\04_工作记录\\SAR16_v4paper_最终交付_GDS与复现_20260918.md",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\04_历史工作报告\\SAR16_v4paper_最终交付_GDS与复现_20260918.md",
+      "files": 1,
+      "bytes": 14522
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\04_工作记录\\SAR16_v4完整数字后端流程_20260917.md",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\04_历史工作报告\\SAR16_v4完整数字后端流程_20260917.md",
+      "files": 1,
+      "bytes": 21953
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\04_工作记录\\SAR16_v4论文对齐实现与验证记录_20260917.md",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\04_历史工作报告\\SAR16_v4论文对齐实现与验证记录_20260917.md",
+      "files": 1,
+      "bytes": 19784
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\04_工作记录\\SAR16_v4独立复审_论文功能一致性_20260917.md",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\04_历史工作报告\\SAR16_v4独立复审_论文功能一致性_20260917.md",
+      "files": 1,
+      "bytes": 19752
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\04_工作记录\\SAR16_片内片外边界与面积对齐_20260917.md",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\04_历史工作报告\\SAR16_片内片外边界与面积对齐_20260917.md",
+      "files": 1,
+      "bytes": 12048
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\04_工作记录\\SAR16_SRM_LUT面积归因与优化_20260917.md",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\04_历史工作报告\\SAR16_SRM_LUT面积归因与优化_20260917.md",
+      "files": 1,
+      "bytes": 8419
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\04_工作记录\\SAR16_最终结果汇总_20260917.md",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\04_历史工作报告\\SAR16_最终结果汇总_20260917.md",
+      "files": 1,
+      "bytes": 12827
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\04_工作记录\\SAR16数字流程对照评估_20260917.md",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\04_历史工作报告\\SAR16数字流程对照评估_20260917.md",
+      "files": 1,
+      "bytes": 28676
+    },
+    {
+      "src": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\04_工作记录\\SAR16_GDS图像分析报告.html",
+      "dst": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\05_归档\\SAR16后端_20260918\\04_历史工作报告\\SAR16_GDS图像分析报告.html",
+      "files": 1,
+      "bytes": 2000524
+    }
+  ],
+  "deletes": [
+    {
+      "path": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\02_仿真验证\\sar16_digi_v4_paper_aligned\\backend\\analysis\\raw\\remote\\lib_slow.lib",
+      "bytes": 11480289,
+      "md5": "2419cf9c05b1f441ff395821c944ec98",
+      "reason": "PDK 标准单元库副本（11 MB，属厂商数据，不应留在工作区，可从 $K 重新取）"
+    },
+    {
+      "path": "D:\\<vault>\\Document\\Obsidian\\日常\\10_项目区\\2025_16bit5Msar\\02_仿真验证\\sar16_digi_v4_paper_aligned\\backend\\analysis\\raw\\remote\\lib_typical.lib",
+      "bytes": 11433524,
+      "md5": "84013b2257ddac3c21c67c5dd1702cb2",
+      "reason": "PDK 标准单元库副本（11 MB，同上）"
+    }
+  ],
+  "recomputed_from_archive": true
+}

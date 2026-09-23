@@ -1,0 +1,28 @@
+****************************************
+Report : clock timing
+	-type latency
+	-launch
+	-nworst 1
+	-setup
+Design : sar_digi_paper_core
+Version: W-2024.09-SP3
+Date   : Fri Sep 18 20:24:34 2026
+****************************************
+
+  Clock: clk
+
+                                                   --- Latency ---
+  Clock Pin                            Trans   Source  Network Total
+----------------------------------------------------------------------------
+  u_calib_ctrl/accumulator_reg[34]/CK  0.38    0.00    0.53    0.53    rp-+
+----------------------------------------------------------------------------
+
+  Clock: dec_clk
+
+                                                   --- Latency ---
+  Clock Pin                            Trans   Source  Network Total
+----------------------------------------------------------------------------
+  u_srm_residue/dec_ones_reg[0]/CK     0.22    0.00    0.20    0.20    rp-+
+----------------------------------------------------------------------------
+
+1

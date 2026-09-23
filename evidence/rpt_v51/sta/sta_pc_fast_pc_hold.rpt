@@ -1,0 +1,592 @@
+****************************************
+Report : timing
+	-path_type full_clock_expanded
+	-delay_type min
+	-nworst 2
+	-slack_lesser_than 0.00
+	-max_paths 25
+	-sort_by slack
+Design : sar_digi_paper_core
+Version: W-2024.09-SP3
+Date   : Fri Sep 18 20:24:59 2026
+****************************************
+
+
+  Startpoint: u_calib_ctrl/calib_done_pulse_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: calib_done_pulse
+               (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock source latency                                    0.00       0.00
+  clk (in)                                                0.00 &     0.00 r
+  u_calib_ctrl/ZCTSBUF_4055_1393/Y (CLKBUFX8)             0.16 &     0.16 r
+  u_calib_ctrl/calib_done_pulse_reg/CK (DFFSX1)           0.00 &     0.16 r
+  u_calib_ctrl/calib_done_pulse_reg/QN (DFFSX1)           0.26 &     0.43 r
+  copt_gre_h_inst_2295/Y (BUFX1)                          0.07 &     0.50 r
+  calib_done_pulse (out)                                  0.00 &     0.50 r
+  data arrival time                                                  0.50
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.50
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.05
+
+
+  Startpoint: u_calib_ctrl/w_wr_en_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: w_wr_en (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock source latency                                    0.00       0.00
+  clk (in)                                                0.00 &     0.00 r
+  u_calib_ctrl/ZCTSBUF_4055_1393/Y (CLKBUFX8)             0.16 &     0.16 r
+  u_calib_ctrl/w_wr_en_reg/CK (DFFSX1)                    0.00 &     0.16 r
+  u_calib_ctrl/w_wr_en_reg/QN (DFFSX1)                    0.22 &     0.38 r
+  HFSBUF_2_296/Y (CLKBUFX2)                               0.11 &     0.50 r
+  w_wr_en (out)                                           0.00 &     0.50 r
+  data arrival time                                                  0.50
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.50
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.05
+
+
+  Startpoint: u_calib_ctrl/calib_overrange_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: calib_overrange
+               (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock source latency                                    0.00       0.00
+  clk (in)                                                0.00 &     0.00 r
+  u_calib_ctrl/ZCTSBUF_4055_1393/Y (CLKBUFX8)             0.16 &     0.16 r
+  u_calib_ctrl/calib_overrange_reg/CK (DFFSX1)            0.00 &     0.16 r
+  u_calib_ctrl/calib_overrange_reg/QN (DFFSX1)            0.20 &     0.36 r
+  u_calib_ctrl/HFSBUF_24_407/Y (BUFX2)                    0.15 &     0.51 r
+  calib_overrange (out)                                   0.00 &     0.51 r
+  data arrival time                                                  0.51
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.51
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.04
+
+
+  Startpoint: calib_comp_out
+               (input port clocked by clk)
+  Endpoint: u_calib_ctrl/comp_out_r_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  input external delay                                    0.00       0.00 r
+  calib_comp_out (in)                                     0.00 &     0.00 r
+  u_calib_ctrl/HFSINV_4_321/Y (INVXL)                     0.11 &     0.11 f
+  u_calib_ctrl/comp_out_r_reg/D (DFFSX1)                  0.00 &     0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock source latency                                    0.00       0.00
+  clk (in)                                                0.00 &     0.00 r
+  u_calib_ctrl/ZCTSBUF_4055_1393/Y (CLKBUFX8)             0.16 &     0.16 r
+  u_calib_ctrl/comp_out_r_reg/CK (DFFSX1)                 0.00 &     0.16 r
+  clock reconvergence pessimism                           0.00       0.16
+  clock uncertainty                                       0.05       0.21
+  library hold time                                      -0.07       0.15
+  data required time                                                 0.15
+  ------------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.12
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.03
+
+
+  Startpoint: raw_code_o_reg[9]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: raw_code_o[9]
+               (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock source latency                                    0.00       0.00
+  clk (in)                                                0.00 &     0.00 r
+  ctosc_gls_inst_1718/Y (CLKBUFX8)                        0.15 &     0.15 r
+  raw_code_o_reg[9]/CK (DFFSX1)                           0.01 &     0.16 r
+  raw_code_o_reg[9]/QN (DFFSX1)                           0.21 &     0.37 r
+  HFSBUF_2_59/Y (CLKBUFX2)                                0.15 &     0.52 r
+  raw_code_o[9] (out)                                     0.00 &     0.52 r
+  data arrival time                                                  0.52
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.52
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.03
+
+
+  Startpoint: raw_code_o_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: raw_code_o[0]
+               (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock source latency                                    0.00       0.00
+  clk (in)                                                0.00 &     0.00 r
+  ZCTSBUF_5981_1396/Y (CLKBUFX4)                          0.17 &     0.17 r
+  raw_code_o_reg[0]/CK (DFFSX1)                           0.00 &     0.17 r
+  raw_code_o_reg[0]/QN (DFFSX1)                           0.23 &     0.40 r
+  HFSBUF_2_40/Y (CLKBUFX2)                                0.12 &     0.52 r
+  raw_code_o[0] (out)                                     0.00 &     0.52 r
+  data arrival time                                                  0.52
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.52
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.03
+
+
+  Startpoint: raw_code_o_reg[6]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: raw_code_o[6]
+               (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock source latency                                    0.00       0.00
+  clk (in)                                                0.00 &     0.00 r
+  ctosc_gls_inst_1718/Y (CLKBUFX8)                        0.15 &     0.15 r
+  raw_code_o_reg[6]/CK (DFFSX1)                           0.01 &     0.16 r
+  raw_code_o_reg[6]/QN (DFFSX1)                           0.21 &     0.37 r
+  HFSBUF_2_56/Y (CLKBUFX2)                                0.15 &     0.52 r
+  raw_code_o[6] (out)                                     0.00 &     0.52 r
+  data arrival time                                                  0.52
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.52
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.03
+
+
+  Startpoint: u_calib_ctrl/calib_overrange_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: calib_overrange
+               (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock source latency                                    0.00       0.00
+  clk (in)                                                0.00 &     0.00 r
+  u_calib_ctrl/ZCTSBUF_4055_1393/Y (CLKBUFX8)             0.16 &     0.16 r
+  u_calib_ctrl/calib_overrange_reg/CK (DFFSX1)            0.00 &     0.16 r
+  u_calib_ctrl/calib_overrange_reg/QN (DFFSX1)            0.23 &     0.40 f
+  u_calib_ctrl/HFSBUF_24_407/Y (BUFX2)                    0.13 &     0.52 f
+  calib_overrange (out)                                   0.00 &     0.53 f
+  data arrival time                                                  0.53
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.53
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: u_calib_ctrl/calib_mode_en_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: calib_mode_en
+               (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock source latency                                    0.00       0.00
+  clk (in)                                                0.00 &     0.00 r
+  ctosc_gls_inst_1718/Y (CLKBUFX8)                        0.15 &     0.15 r
+  u_calib_ctrl/clk_gate_calib_done_reg/main_gate/Y (AND2X2)
+                                                          0.09 &     0.24 r
+  u_calib_ctrl/calib_mode_en_reg/CK (DFFSX1)              0.00 &     0.24 r
+  u_calib_ctrl/calib_mode_en_reg/QN (DFFSX1)              0.21 &     0.45 r
+  HFSBUF_2_249/Y (CLKBUFX2)                               0.08 &     0.53 r
+  calib_mode_en (out)                                     0.00 &     0.53 r
+  data arrival time                                                  0.53
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.53
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: u_calib_ctrl/calib_done_pulse_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: calib_done_pulse
+               (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock source latency                                    0.00       0.00
+  clk (in)                                                0.00 &     0.00 r
+  u_calib_ctrl/ZCTSBUF_4055_1393/Y (CLKBUFX8)             0.16 &     0.16 r
+  u_calib_ctrl/calib_done_pulse_reg/CK (DFFSX1)           0.00 &     0.16 r
+  u_calib_ctrl/calib_done_pulse_reg/QN (DFFSX1)           0.28 &     0.44 f
+  copt_gre_h_inst_2295/Y (BUFX1)                          0.09 &     0.53 f
+  calib_done_pulse (out)                                  0.00 &     0.53 f
+  data arrival time                                                  0.53
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.53
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: raw_code_o_reg[1]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: raw_code_o[1]
+               (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock source latency                                    0.00       0.00
+  clk (in)                                                0.00 &     0.00 r
+  ZCTSBUF_5981_1396/Y (CLKBUFX4)                          0.17 &     0.17 r
+  raw_code_o_reg[1]/CK (DFFSX1)                           0.00 &     0.17 r
+  raw_code_o_reg[1]/QN (DFFSX1)                           0.23 &     0.40 r
+  HFSBUF_2_51/Y (CLKBUFX2)                                0.13 &     0.53 r
+  raw_code_o[1] (out)                                     0.00 &     0.54 r
+  data arrival time                                                  0.54
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.54
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+  Startpoint: u_calib_ctrl/w_wr_en_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: w_wr_en (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock source latency                                    0.00       0.00
+  clk (in)                                                0.00 &     0.00 r
+  u_calib_ctrl/ZCTSBUF_4055_1393/Y (CLKBUFX8)             0.16 &     0.16 r
+  u_calib_ctrl/w_wr_en_reg/CK (DFFSX1)                    0.00 &     0.16 r
+  u_calib_ctrl/w_wr_en_reg/QN (DFFSX1)                    0.25 &     0.41 f
+  HFSBUF_2_296/Y (CLKBUFX2)                               0.13 &     0.54 f
+  w_wr_en (out)                                           0.00 &     0.54 f
+  data arrival time                                                  0.54
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.54
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+  Startpoint: u_srm_residue/busy_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: srm_busy (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock source latency                                    0.00       0.00
+  clk (in)                                                0.00 &     0.00 r
+  ctosc_gls_inst_1718/Y (CLKBUFX8)                        0.15 &     0.15 r
+  u_srm_residue/busy_reg/CK (DFFSX1)                      0.01 &     0.16 r
+  u_srm_residue/busy_reg/QN (DFFSX1)                      0.20 &     0.36 r
+  u_srm_residue/HFSBUF_77_475/Y (CLKBUFX3)                0.18 &     0.54 r
+  srm_busy (out)                                          0.01 &     0.54 r
+  data arrival time                                                  0.54
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.54
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+  Startpoint: raw_code_o_reg[2]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: raw_code_o[2]
+               (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock source latency                                    0.00       0.00
+  clk (in)                                                0.00 &     0.00 r
+  ctosc_gls_inst_1718/Y (CLKBUFX8)                        0.15 &     0.15 r
+  raw_code_o_reg[2]/CK (DFFSX1)                           0.01 &     0.16 r
+  raw_code_o_reg[2]/QN (DFFSX1)                           0.22 &     0.37 r
+  HFSBUF_2_52/Y (BUFX2)                                   0.17 &     0.54 r
+  raw_code_o[2] (out)                                     0.01 &     0.55 r
+  data arrival time                                                  0.55
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.55
+  ------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                     -0.00
+
+
+  Startpoint: u_calib_ctrl/calib_done_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: calib_done (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock source latency                                    0.00       0.00
+  clk (in)                                                0.00 &     0.00 r
+  ctosc_gls_inst_1718/Y (CLKBUFX8)                        0.15 &     0.15 r
+  u_calib_ctrl/clk_gate_calib_done_reg/main_gate/Y (AND2X2)
+                                                          0.09 &     0.24 r
+  u_calib_ctrl/calib_done_reg/CK (DFFSX1)                 0.00 &     0.24 r
+  u_calib_ctrl/calib_done_reg/QN (DFFSX1)                 0.22 &     0.46 r
+  HFSBUF_2_248/Y (CLKBUFX2)                               0.09 &     0.55 r
+  calib_done (out)                                        0.00 &     0.55 r
+  data arrival time                                                  0.55
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.55
+  ------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                     -0.00
+
+
+  Startpoint: raw_code_o_reg[2]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: raw_code_o[2]
+               (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+  Min Data Paths Derating Factor  : 1.00
+  Min Clock Paths Derating Factor : 1.00
+  Max Clock Paths Derating Factor : 1.00
+  Min Timing Check Derating Factor : 1.00
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock source latency                                    0.00       0.00
+  clk (in)                                                0.00 &     0.00 r
+  ctosc_gls_inst_1718/Y (CLKBUFX8)                        0.15 &     0.15 r
+  raw_code_o_reg[2]/CK (DFFSX1)                           0.01 &     0.16 r
+  raw_code_o_reg[2]/QN (DFFSX1)                           0.25 &     0.40 f
+  HFSBUF_2_52/Y (BUFX2)                                   0.14 &     0.54 f
+  raw_code_o[2] (out)                                     0.01 &     0.55 f
+  data arrival time                                                  0.55
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                   0.50       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.55
+  ------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                     -0.00
+
+
+1

@@ -1,0 +1,14 @@
+﻿bytes            : 186570
+lines            : 6893
+MACRO (col0)     : 112
+MACRO anywhere   : 113
+PIN              : 652
+PORT             : 652
+OBS              : 86
+END <name>       : 152
+first 5 names    : ['DFFSX1', 'INVXL', 'INVX2', 'CLKINVX3', 'DFFSX2']
+last 3 names     : ['OR4X1', 'MX2XL', 'NOR4XL']
+block abstract?  : False
+expanded_util?   : False
+VERSION          : ['VERSION 5.8 ;']
+UNITS            : ['  DATABASE MICRONS 1000 ;']

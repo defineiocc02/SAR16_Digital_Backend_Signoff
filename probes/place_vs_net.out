@@ -1,0 +1,11 @@
+﻿netlist modules defined : 44
+flattened instance count: 3626 (over 109 distinct leaf masters)
+layout logic placements : 3626 (over 109 distinct masters)
+
+=== masters placed in the LAYOUT that the FLATTENED NETLIST never instantiates ===
+   (none)
+
+=== masters the NETLIST instantiates that the LAYOUT does not place ===
+   (none)
+
+=== counts differ ===

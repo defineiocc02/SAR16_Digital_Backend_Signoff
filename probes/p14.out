@@ -1,0 +1,14 @@
+﻿log bytes: 1170
+=== existence table ===
+
+=== usage strings ===
+
+=== man place_pins (goes to stdout) ===
+No manual entry for place_pins
+ssh : bash: line 33: $'\r': command not found
+At line:1 char:232
++ ...  "`n"; $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 33: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

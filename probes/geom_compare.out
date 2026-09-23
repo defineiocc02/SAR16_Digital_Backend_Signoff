@@ -1,0 +1,13 @@
+﻿merged GDS: 225 cells
+cells with device geometry (10+30): 109
+frame-only cells                  : 0
+kit GDS   : 957 cells
+
+=== frame name -> renamed geometry cell -> layer histogram comparison ===
+frame        -> geometry cell               layers                                     kit cell layers
+INVXL        inv_lxawwdwwwww9lxghuy         10:4,14:1,30:3,40:2,43:2,50:8,61:4         127:1   DIFFERENT
+NOR2XL       nor2_lxaww7wwwwwaq2l26y        10:4,14:1,30:6,40:2,43:2,50:9,61:5         127:1   DIFFERENT
+DFFSX1       dffs_1xawwzywwwwjerv2iy        10:9,14:1,30:48,40:2,43:2,50:51,61:14      127:1   DIFFERENT
+NAND2BXL     nand2b_lxawwqwwwwwmvsokiy      10:5,14:1,30:9,40:2,43:2,50:12,61:6        127:1   DIFFERENT
+AOI21XL      aoi21_lxawwqwwwwwto68dry       10:4,14:1,30:9,40:2,43:2,50:12,61:7        127:1   DIFFERENT
+XNOR2XL      xnor2_lxawwpwwwww14qlpjy       10:4,14:1,30:19,40:2,43:2,50:23,61:9       127:1   DIFFERENT

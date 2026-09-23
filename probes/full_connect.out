@@ -1,0 +1,13 @@
+﻿nodes: M1=7871  M2=17657  total=25528
+same-layer unions: 9812
+via instances: {'$$via1': 13115, '$$via2': 12457, '$$via3': 4020, '$$via1_5200_5200_1_2': 1462, '$$via4': 242, '$$via5': 17}
+$$via1 cross-layer unions applied: 6183
+
+=== component membership per pin label ===
+labels sharing a component with another label: 0 component(s)
+
+=== explicit question ===
+   rst_n    -> component 11812  shapes=2     co-labels=[]
+   VDD      -> component 84     shapes=94    co-labels=[]
+   VSS      -> component 85     shapes=118   co-labels=[]
+   clk      -> component 11810  shapes=2     co-labels=[]

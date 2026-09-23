@@ -1,0 +1,44 @@
+﻿=== scripts referencing the REMOVED ports (want none) ===
+/home/<user>/sar16_work/proj_paper_core/scripts/dc_synth_paper_core.tcl:98:# `weight_rd_data[29:0]` is driven in the RTL by
+/home/<user>/sar16_work/proj_paper_core/scripts/dc_synth_paper_core.tcl:99:#     assign weight_rd_data[N] = 1'b0;
+/home/<user>/sar16_work/proj_paper_core/scripts/dc_synth_paper_core.tcl:105:#     Warning: The port named 'weight_rd_data[0]' cannot be isolated because it
+/home/<user>/sar16_work/proj_paper_core/scripts/fc_pnr_paper_core.tcl:512:#     weight_rd_data[3,6,9,13,17,21,24,28]   (8)
+/home/<user>/sar16_work/proj_paper_core/scripts/fc_pnr_paper_core.tcl:527:# tb/tb_sar16_paper_core.sv (Phase 4 checks "weight_rd_data is tied low") still
+/home/<user>/sar16_work/proj_paper_core/scripts/patch_pnr_and_lvs.py:7:    The P&R netlist declares 30-bit weight_rd_data / srm_residue_o, but 28 bits
+/home/<user>/sar16_work/proj_paper_core/scripts/patch_pnr_and_lvs.py:9:        weight_rd_data[3,6,9,13,17,21,24,28]      (8 bits)
+/home/<user>/sar16_work/proj_paper_core/scripts/patch_pnr_and_lvs.py:204:#     weight_rd_data[3,6,9,13,17,21,24,28]   (8)
+/home/<user>/sar16_work/proj_paper_core/scripts/patch_pnr_and_lvs.py:219:# tb/tb_sar16_paper_core.sv (Phase 4 checks "weight_rd_data is tied low") still
+/home/<user>/sar16_work/proj_paper_core/scripts/patch_round3.py:7:        Warning: The port named 'weight_rd_data[0]' cannot be isolated because
+/home/<user>/sar16_work/proj_paper_core/scripts/patch_round3.py:13:        assign weight_rd_data[N] = 1'b0;
+/home/<user>/sar16_work/proj_paper_core/scripts/patch_round3.py:84:# `weight_rd_data[29:0]` is driven in the RTL by
+/home/<user>/sar16_work/proj_paper_core/scripts/patch_round3.py:85:#     assign weight_rd_data[N] = 1'b0;
+/home/<user>/sar16_work/proj_paper_core/scripts/patch_round3.py:91:#     Warning: The port named 'weight_rd_data[0]' cannot be isolated because it
+/home/<user>/sar16_work/proj_paper_core/tb/tb_sar16_paper_core.sv:489:        // raw_code_o timing check. The former "weight_rd_data is tied low" check
+
+=== scripts referencing srm_residue_o (must not assume 30 bits) ===
+/home/<user>/sar16_work/proj_paper_core/scripts/fc_pnr_paper_core.tcl:513:#     srm_residue_o[9], srm_residue_o[11..29] (20)
+/home/<user>/sar16_work/proj_paper_core/scripts/patch_pnr_and_lvs.py:7:    The P&R netlist declares 30-bit weight_rd_data / srm_residue_o, but 28 bits
+/home/<user>/sar16_work/proj_paper_core/scripts/patch_pnr_and_lvs.py:10:        srm_residue_o[9,11,12,...,29]             (20 bits)
+/home/<user>/sar16_work/proj_paper_core/scripts/patch_pnr_and_lvs.py:205:#     srm_residue_o[9], srm_residue_o[11..29] (20)
+
+=== DC / STA logs so far ===
+drwxrwxr-x. 20 <user> <user>   4096 Sep 18 20:04 ..
+-rw-rw-r--.  1 <user> <user>  63403 Sep 18 20:04 dc.log
+-rw-rw-r--.  1 <user> <user>    228 Sep 18 20:04 dc_ss.log
+-rw-rw-r--.  1 <user> <user> 951805 Sep 18 18:05 fc_pnr.log
+-rw-rw-r--.  1 <user> <user>   4440 Sep 18 20:04 repro_v50.log
+-rw-rw-r--.  1 <user> <user>    175 Sep 17 21:51 rtl_md5.txt
+
+    puts "INFO: clock '$CLK' period = [get_attribute [get_clocks $CLK] period] ns"
+    puts "WARNING: wire load model $WLM_NAME NOT applied ($msg)"
+DC_ARM status=OK tag= libmode=typical area=97892.625106
+############################################################
+### DC paper_core arm tag='_ss' libmode=slow   Fri Sep 18 20:04:59 CST 2026
+############################################################
+ssh : bash: line 12: $'\r': command not found
+At line:1 char:666
++ ... "; $probe | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 12: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

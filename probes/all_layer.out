@@ -1,0 +1,13 @@
+﻿nodes (M1..M6 shapes in top cell): 38431
+same-layer unions: 13770
+cross-layer unions by via: {'$$via1': 4721, '$$via2': 11715, '$$via3': 3989, '$$via1_5200_5200_1_2': 1462, '$$via4': 225, '$$via5': 6}
+
+=== components carrying more than one label: 3 ===
+   component 85      shapes=144    labels(25): ['VSS', 'weight_rd_data[10]', 'weight_rd_data[11]', 'weight_rd_data[12]', 'weight_rd_data[13]', 'weight_rd_data[14]', 'weight_rd_data[15]', 'weight_rd_data[16]', 'weight_rd_data[17]', 'weight_rd_data[19]', 'weight_rd_data[1]', 'weight_rd_data[20]']
+   component 8214    shapes=44     labels(21): ['srm_residue_o[10]', 'srm_residue_o[11]', 'srm_residue_o[12]', 'srm_residue_o[13]', 'srm_residue_o[14]', 'srm_residue_o[15]', 'srm_residue_o[16]', 'srm_residue_o[17]', 'srm_residue_o[18]', 'srm_residue_o[19]', 'srm_residue_o[20]', 'srm_residue_o[21]']
+   component 9617    shapes=4      labels(2): ['weight_rd_data[2]', 'weight_rd_data[3]']
+
+=== explicit question: rst_n vs VDD ===
+   rst_n component = 230 (shapes=19, co-labels=['rst_n'])
+   VDD   component = 84 (shapes=101, co-labels=['VDD'])
+   SAME COMPONENT  = False

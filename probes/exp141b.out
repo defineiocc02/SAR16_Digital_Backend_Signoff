@@ -1,0 +1,33 @@
+﻿LVS REPORT lines: 2  (want 2: the path + the OPTION line)
+422:LVS REPORT "/tmp/exp141/exp141.rep"
+423:LVS REPORT OPTION A B C D S
+PORT 141 remaining: 0  (want 0)
+
+rc=0  elapsed 17s
+
+=== variant result ===
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:            178       179    *
+
+ Nets:           26761     26876    *
+
+ Instances:      25298     24992    *    MN (4 pins)
+                 25388     25034    *    MP (4 pins)
+                ------    ------
+verdict:   INCORRECT 
+incorrect nets: 50
+shorts: 0
+
+=== after transformation ===
+ssh : head: invalid trailing option -- 
+At line:26 char:6
++ $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | Out-Fi ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (head: invalid trailing option -- :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Try 'head --help' for more information.

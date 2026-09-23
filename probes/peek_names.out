@@ -1,0 +1,32 @@
+﻿=== kit CDL: do the mismatching names exist as .SUBCKT? ===
+   _sdw2v       0
+   _sup2v       0
+   _pdw2v       0
+   _pup2v       0
+   _pmp2b       0
+   _nand2b      0
+   _invv        0
+   _smn2b       0
+   _smp2b       0
+   _bitcoreb    0
+   _mx2v        0
+
+=== how many .SUBCKT in the kit CDL, and their naming style ===
+471
+.subckt ADDFHX1 CO S A B CI
+.subckt ADDFHX2 CO S A B CI
+.subckt ADDFHX4 CO S A B CI
+.subckt ADDFHXL CO S A B CI
+.subckt ADDFX1 CO S A B CI
+.subckt ADDFX2 CO S A B CI
+.subckt ADDFX4 CO S A B CI
+.subckt ADDFXL CO S A B CI
+.subckt ADDHX1 CO S A B
+.subckt ADDHX2 CO S A B
+.subckt ADDHX4 CO S A B
+.subckt ADDHXL CO S A B
+
+=== does the source netlist (v2lvs output) use those names? ===
+0
+
+=== what the extracted layout netlist calls them ===

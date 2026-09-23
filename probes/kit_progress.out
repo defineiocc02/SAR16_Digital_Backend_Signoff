@@ -1,0 +1,6 @@
+﻿=== kit test progress ===
+8 /home/<user>/sar16_work/proj_paper_core/kitcheck/kit_lvs_results.csv
+ 716595       01:10 bash /tmp/ka.sh
+ 719276       00:02 /opt/mentor/calibre2025/aok_cal_2025.1_16.10/pkgs/icv/pvt/calibre -lvs -hier AND3X1.lvs
+ 719416       00:01 /opt/mentor/calibre2025/aok_cal_2025.1_16.10/pkgs/icv/pvt/calibre -lvs -hier AND3X1.lvs
+

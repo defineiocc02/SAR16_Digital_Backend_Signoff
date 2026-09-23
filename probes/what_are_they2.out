@@ -1,0 +1,55 @@
+﻿flagged layout-only transistors: 35
+
+inst         dev   type      owning cell            local coords (um)        layers in that cell
+X0/X199      M0    MN(N18)   INVXL                  (0.46, 1.31)             L127
+X0/X355      M4    MP(P18)   -                      --                       (none)
+X0/X434      M10   MP(P18)   -                      --                       (none)
+X0/X436      M10   MP(P18)   -                      --                       (none)
+X0/X439      M8    MP(P18)   -                      --                       (none)
+X1/X335      M4    MP(P18)   -                      --                       (none)
+X1/X378      M1    MN(N18)   AOI21XL                (2.02, 3.96)             L127
+X1/X378      M3    MN(N18)   XNOR2XL                (3.12, 1.08)             L127
+X1/X378      M7    MP(P18)   AOI21XL                (1.95, 1.68)             L127
+X1/X378      M8    MP(P18)   XNOR2XL                (2.39, 2.94)             L127
+X2           M4    MN(N18)   AND4XL                 (3.96, 4.14)             L127
+X2           M62   MP(P18)   OAI211X1               (1.98, 3.22)             L127
+X2/X159      M2    MP(P18)   NAND2XL                (0.55, 2.98)             L127
+X2/X370      M8    MN(N18)   NAND2BXL               (1.29, 3.50)             L127
+X2/X370      M9    MN(N18)   NAND2BXL               (0.57, 3.50)             L127
+X2/X370      M11   MN(N18)   NOR2XL                 (1.10, 3.73)             L127
+X2/X370      M12   MN(N18)   NOR2XL                 (0.39, 3.73)             L127
+X2/X370      M23   MP(P18)   NAND2BXL               (1.69, 1.77)             L127
+X2/X370      M24   MP(P18)   NAND2BXL               (0.96, 1.77)             L127
+X2/X370      M26   MP(P18)   NOR2XL                 (1.39, 1.96)             L127
+X2/X370      M27   MP(P18)   NOR2XL                 (0.67, 1.96)             L127
+X2/X441      M10   MP(P18)   -                      --                       (none)
+X3/X247      M4    MP(P18)   DFFSXL                 (7.16, 1.97)             L127
+X4/X280      M4    MP(P18)   -                      --                       (none)
+X4/X436      M14   MN(N18)   DFFSX1                 (10.32, 0.58)            L127
+X5/X149      M4    MP(P18)   DFFSX1                 (3.40, 1.97)             L127
+X5/X354      M0    MN(N18)   -                      --                       (none)
+X5/X354      M1    MN(N18)   -                      --                       (none)
+X6/X173      M5    MP(P18)   OAI21XL                (1.90, 3.30)             L127
+X6/X175      M5    MP(P18)   -                      --                       (none)
+X6/X424      M2    MN(N18)   -                      --                       (none)
+X7/X238      M2    MN(N18)   -                      --                       (none)
+X7/X238      M3    MN(N18)   -                      --                       (none)
+X7/X238      M7    MP(P18)   -                      --                       (none)
+X7/X238      M8    MP(P18)   -                      --                       (none)
+
+=== owning cells ===
+   (no cell)                    15
+   NAND2BXL                     4
+   NOR2XL                       4
+   AOI21XL                      2
+   XNOR2XL                      2
+   DFFSX1                       2
+   INVXL                        1
+   AND4XL                       1
+   OAI211X1                     1
+   NAND2XL                      1
+   DFFSXL                       1
+   OAI21XL                      1
+
+=== how many flagged points sit on AA and/or GT (a real device needs them) ===
+   0 of 35

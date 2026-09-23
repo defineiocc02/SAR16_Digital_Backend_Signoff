@@ -1,0 +1,24 @@
+﻿placed logic instances with device geometry: 3626
+flagged devices: 35
+
+   X0/X199      M0    MN(N18)   at (347.6200,379.3100)  AA=['OAI21XL'] GT=[]
+   X0/X355      M4    MP(P18)   at (300.2000,374.9300)  AA=[] GT=[]
+   X0/X434      M10   MP(P18)   at (212.9050,365.1800)  AA=[] GT=[]
+   X0/X436      M10   MP(P18)   at (212.9050,405.5000)  AA=[] GT=[]
+   X0/X439      M8    MP(P18)   at (213.2950,390.8600)  AA=[] GT=[]
+   X1/X335      M4    MP(P18)   at (412.6000,344.6900)  AA=[] GT=[]
+   X1/X378      M1    MN(N18)   at (365.0250,358.9200)  AA=['AOI21XL', 'NAND2XL', 'XNOR2XL'] GT=['AOI21XL']
+   X1/X378      M3    MN(N18)   at (366.7800,358.9200)  AA=['XNOR2XL'] GT=[]
+   X1/X378      M7    MP(P18)   at (364.9500,361.2000)  AA=['XNOR2XL'] GT=['XNOR2XL']
+   X1/X378      M8    MP(P18)   at (366.0500,360.7800)  AA=['AOI21XL', 'XNOR2XL'] GT=['AOI21XL', 'XNOR2XL']
+   X2           M4    MN(N18)   at (101.6350,298.2550)  AA=['AND4XL', 'AOI221XL', 'INVXL'] GT=['AND4XL', 'AOI221XL']
+   X2           M62   MP(P18)   at (287.1000,270.3400)  AA=['NAND2XL', 'OAI211X1'] GT=['OAI211X1']
+   X2/X159      M2    MP(P18)   at (428.2300,270.0950)  AA=['NAND2XL'] GT=['NAND2XL']
+   X2/X370      M8    MN(N18)   at (401.9150,288.8250)  AA=['NAND2BXL'] GT=['NAND2BXL']
+   X2/X370      M9    MN(N18)   at (401.1950,288.8250)  AA=['NAND2BXL'] GT=['NAND2BXL']
+   X2/X370      M11   MN(N18)   at (399.0850,288.5850)  AA=['NOR2XL'] GT=['NOR2XL']
+   X2/X370      M12   MN(N18)   at (398.3650,288.5850)  AA=['NOR2XL'] GT=['NOR2XL']
+
+=== summary ===
+   flagged devices with at least one AA/GT found : 20 of 35
+   devices whose AA and GT come from DIFFERENT instances: 0

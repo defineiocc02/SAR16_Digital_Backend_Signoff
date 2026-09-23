@@ -1,0 +1,54 @@
+﻿log bytes: 3802
+puts "AB-BEGIN"
+AB-BEGIN
+foreach c {create_abstract write_lef_abstract write_lef write_def write_gds \
+           write_verilog write_block_summary create_boundary remove_boundary \
+           set_boundary create_abstract_model abstract_model} {
+    puts [format "  %-26s %s" $c [expr {[llength [info commands $c]] > 0 ? "EXISTS" : "absent"}]]
+}
+  create_abstract            EXISTS
+  write_lef_abstract         absent
+  write_lef                  EXISTS
+  write_def                  EXISTS
+  write_gds                  EXISTS
+  write_verilog              EXISTS
+  write_block_summary        absent
+  create_boundary            absent
+  remove_boundary            absent
+  set_boundary               absent
+  create_abstract_model      absent
+  abstract_model             absent
+puts "AB-MID"
+AB-MID
+puts "=== create_abstract -help ==="
+=== create_abstract -help ===
+create_abstract -help
+Usage: create_abstract    # Create an abstract
+        [-placement]           (Create abstract for non-timing applications)
+        [-timing_level level]  (Control detail of timing abstract: 
+                                Values: boundary, compact, 
+                                full_interface, none)
+        [-estimate_timing]     (Run virtual timing optimization)
+        [-host_options host_options_name]
+                               (Host options to use)
+        [-work_dir path]       (Directory to put scripts and log files for child block abstract creation)
+        [-blocks list_of_blocks]
+                               (List of block designs to run)
+        [-all_blocks]          (Create abstract view for all child blocks)
+        [-force_recreate]      (Force to re-create block abstract views from the top level)
+        [-read_only]           (Create read-only abstract)
+        [-preserve_block_instances (false|true)]
+                               (Create Nested Physical Hierarchy. Do not flatten the design.)
+        [-include_objects pins_nets]
+                               (include the objects mentioned)
+        [-target_use implementation | planning]
+                               (target flow usage of the abstract: 
+                                Values: implementation, planning)
+puts "AB-END"
+AB-END
+exit 0
+Maximum memory usage for this session: 2147.29 MB
+Maximum memory usage for this session including child processes: 2147.29 MB
+CPU usage for this session:     10 seconds (  0.00 hours)
+Elapsed time for this session:     19 seconds (  0.01 hours)
+Thank you for using Fusion Compiler.

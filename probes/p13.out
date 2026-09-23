@@ -1,0 +1,37 @@
+﻿
+=== also: how does the current script call place_pins? ===
+562-# --- pin placement + placement ------------------------------------------------
+563-
+564:run "place_pins" {place_pins -self}
+565-
+566-run "create_placement"        {create_placement}
+567-run "place_opt"               {place_opt}
+568-
+
+=== and what layers does the block use for pins now? ===
+24:# NO POWER PLAN: no UPF, no PG pins; VDD/VSS come from the enclosing analog top.
+211:#   * DRC: `M1_6` and `BD_2a` each pinned at the 1000-result cap -- METAL1 had no
+220:# so the tool can derive the rail geometry from the pin shapes.
+230:#     {connect_pg_net -net VDD [get_pins -hier -filter "name=~VDD"]}
+314:#   1. `create_via_rule ... -layer METAL1` -- there is NO -layer option (CMD-010).
+382:# a tool decision and pinning it here would bend the straps off the rows the moment
+396:    # -extend_low/-extend_high design_boundary_and_generate_pin sends the strap all the
+404:                              -extend_low design_boundary_and_generate_pin \
+405:                              -extend_high design_boundary_and_generate_pin]
+409:                              -extend_low design_boundary_and_generate_pin \
+410:                              -extend_high design_boundary_and_generate_pin]
+517:# placer only creates pin geometry for ports that have one, so the routed GDS
+521:# its pins missing cannot be connected by the enclosing top.
+524:# port a real net, hence a real pin and a real driven value. The logical
+543:            set _dp [get_pins -quiet -of_objects $_nets -filter "direction==out"]
+553:            puts "ISO_BLOCKER: the 28 constant-driven outputs will keep their missing pins."
+562:# --- pin placement + placement ------------------------------------------------
+564:run "place_pins" {place_pins -self}
+629:# v4.2: census the exported interface. A block whose GDS carries fewer pin
+ssh : bash: line 28: $'\r': command not found
+At line:1 char:232
++ ...  "`n"; $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 28: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

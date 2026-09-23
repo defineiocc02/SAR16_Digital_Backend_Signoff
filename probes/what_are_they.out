@@ -1,0 +1,62 @@
+﻿flagged layout-only transistors: 35
+
+=== owning cell ===
+   (top level / routing area)         15
+   NAND2BXL                           4
+   NOR2XL                             4
+   AOI21XL                            2
+   XNOR2XL                            2
+   DFFSX1                             2
+   INVXL                              1
+   AND4XL                             1
+   OAI211X1                           1
+   NAND2XL                            1
+   DFFSXL                             1
+   OAI21XL                            1
+
+=== layer mix at the flagged points (+/-0.02 um) ===
+   (nothing)                                18
+   M2                                       8
+   M2,M4                                    3
+   M4                                       2
+   M3,M4                                    1
+   M3                                       1
+   M2,M3                                    1
+   M2,M3,M4                                 1
+
+=== detail ===
+   X0/X199      M0   MN(N18) at (347.6200,379.3100)  cell=INVXL                  local=(4600.00,13100.00)  layers=
+   X0/X355      M4   MP(P18) at (300.2000,374.9300)  cell=-                      local=  --    layers=M2
+   X0/X434      M10  MP(P18) at (212.9050,365.1800)  cell=-                      local=  --    layers=
+   X0/X436      M10  MP(P18) at (212.9050,405.5000)  cell=-                      local=  --    layers=
+   X0/X439      M8   MP(P18) at (213.2950,390.8600)  cell=-                      local=  --    layers=
+   X1/X335      M4   MP(P18) at (412.6000,344.6900)  cell=-                      local=  --    layers=M2
+   X1/X378      M1   MN(N18) at (365.0250,358.9200)  cell=AOI21XL                local=(20250.00,39600.00)  layers=M2,M4
+   X1/X378      M3   MN(N18) at (366.7800,358.9200)  cell=XNOR2XL                local=(31200.00,10800.00)  layers=
+   X1/X378      M7   MP(P18) at (364.9500,361.2000)  cell=AOI21XL                local=(19500.00,16800.00)  layers=M3,M4
+   X1/X378      M8   MP(P18) at (366.0500,360.7800)  cell=XNOR2XL                local=(23900.00,29400.00)  layers=
+   X2           M4   MN(N18) at (101.6350,298.2550)  cell=AND4XL                 local=(39550.00,41450.00)  layers=M2
+   X2           M62  MP(P18) at (287.1000,270.3400)  cell=OAI211X1               local=(19800.00,32200.00)  layers=
+   X2/X159      M2   MP(P18) at (428.2300,270.0950)  cell=NAND2XL                local=(5500.00,29750.00)  layers=M2,M4
+   X2/X370      M8   MN(N18) at (401.9150,288.8250)  cell=NAND2BXL               local=(12950.00,34950.00)  layers=M4
+   X2/X370      M9   MN(N18) at (401.1950,288.8250)  cell=NAND2BXL               local=(5750.00,34950.00)  layers=M2
+   X2/X370      M11  MN(N18) at (399.0850,288.5850)  cell=NOR2XL                 local=(11050.00,37350.00)  layers=
+   X2/X370      M12  MN(N18) at (398.3650,288.5850)  cell=NOR2XL                 local=(3850.00,37350.00)  layers=
+   X2/X370      M23  MP(P18) at (402.3050,290.5450)  cell=NAND2BXL               local=(16850.00,17750.00)  layers=
+   X2/X370      M24  MP(P18) at (401.5850,290.5450)  cell=NAND2BXL               local=(9650.00,17750.00)  layers=
+   X2/X370      M26  MP(P18) at (399.3650,290.3600)  cell=NOR2XL                 local=(13850.00,19600.00)  layers=
+   X2/X370      M27  MP(P18) at (398.6450,290.3600)  cell=NOR2XL                 local=(6650.00,19600.00)  layers=M2
+   X2/X441      M10  MP(P18) at (212.1350,274.4600)  cell=-                      local=  --    layers=
+   X3/X247      M4   MP(P18) at (287.6600,239.9500)  cell=DFFSXL                 local=(71600.00,19700.00)  layers=M2,M4
+   X4/X280      M4   MP(P18) at (412.4000,173.3300)  cell=-                      local=  --    layers=M2
+   X4/X436      M14  MN(N18) at (211.6250,176.9800)  cell=DFFSX1                 local=(103250.00,5800.00)  layers=M3
+   X5/X149      M4   MP(P18) at (374.9800, 98.8300)  cell=DFFSX1                 local=(34000.00,19700.00)  layers=M2
+   X5/X354      M0   MN(N18) at (244.9800,145.1400)  cell=-                      local=  --    layers=
+   X5/X354      M1   MN(N18) at (244.2600,145.1400)  cell=-                      local=  --    layers=M4
+   X6/X173      M5   MP(P18) at (196.6000, 58.7400)  cell=OAI21XL                local=(19000.00,33000.00)  layers=M2,M3
+   X6/X175      M5   MP(P18) at (202.5400, 62.2200)  cell=-                      local=  --    layers=M2,M3,M4
+   X6/X424      M2   MN(N18) at (224.8500, 43.9800)  cell=-                      local=  --    layers=M2
+   X7/X238      M2   MN(N18) at (260.9800, 26.2000)  cell=-                      local=  --    layers=
+   X7/X238      M3   MN(N18) at (260.2200, 26.2000)  cell=-                      local=  --    layers=
+   X7/X238      M7   MP(P18) at (261.0000, 28.0100)  cell=-                      local=  --    layers=
+   X7/X238      M8   MP(P18) at (260.2000, 28.0100)  cell=-                      local=  --    layers=

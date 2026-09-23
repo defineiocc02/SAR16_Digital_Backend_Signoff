@@ -1,0 +1,94 @@
+﻿########## A. is there a DEF with a PINS section? ##########
+--- also look for pin/io reports ---
+/home/<user>/sar16_work/proj_paper_core/scripts/probe_fix_pins_pg.tcl
+/home/<user>/sar16_work/proj_paper_core/reports/violators.rpt
+/home/<user>/sar16_work/proj_paper_core/reports_ss/violators.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/fc_violators.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/fc_congestion.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_typical_pc_violators.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_slow_pc_violators.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_pc_violators.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_slow_p0_violators.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_slow_p3_violators.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_slow_p5_violators.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_slow_p8_violators.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_p0_violators.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_p3_violators.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_p5_violators.rpt
+/home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_p8_violators.rpt
+
+########## B. FC P&R log: pin-placement lines ##########
+191:Top level ports: 232
+796:            puts "ISO_FAIL set_isolate_ports: $_m"
+837:# --- pin placement + placement ------------------------------------------------
+838:run "place_pins" {place_pins -self}
+839:Information: Starting 'place_pins' (FLW-8000)
+850:Number of block ports: 232
+854:Number of pins created: 232
+857:Information: Ending   'place_pins' (FLW-8001)
+859:#### STAGE OK: place_pins
+16841:##    place_pins=OK
+
+########## C. INCORRECT NETS: header of every entry ##########
+  1    Net VDD                                                   VDD
+       --- 15246 Connections On This Net ---                     --- 13747 Connections On This Net ---
+  2    Net VSS                                                   VSS
+       --- 13999 Connections On This Net ---                     --- 13951 Connections On This Net ---
+  3    Net CALIB_OVERRANGE_BITS[10]                              CALIB_OVERRANGE_BITS[10]
+       --- 4 Connections On This Net ---                         --- 4 Connections On This Net ---
+  4    Net CALIB_OVERRANGE_BITS[5]                               CALIB_OVERRANGE_BITS[5]
+       --- 6 Connections On This Net ---                         --- 6 Connections On This Net ---
+  5    Net CALIB_OVERRANGE_BITS[15]                              CALIB_OVERRANGE_BITS[15]
+       --- 4 Connections On This Net ---                         --- 4 Connections On This Net ---
+  6    Net X0/250                                                Xu_srm_residue/Xu_lut/n48
+       --- 17 Connections On This Net ---                        --- 9 Connections On This Net ---
+  7    Net 18                                                    Xu_srm_residue/cap_ones[3]
+       --- 10 Connections On This Net ---                        --- 7 Connections On This Net ---
+  8    Net X0/316                                                Xu_srm_residue/n41
+       --- 11 Connections On This Net ---                        --- 11 Connections On This Net ---
+  9    Net X0/397                                                Xu_calib_ctrl/Xcalc_result_r_reg[5]/pm
+       --- 8 Connections On This Net ---                         --- 8 Connections On This Net ---
+ 10    Net 128                                                   Xu_calib_ctrl/HFSNET_380
+       --- 48 Connections On This Net ---                        --- 43 Connections On This Net ---
+ 11    Net X0/502                                                Xu_srm_residue/Xresidue_valid_reg/pm
+       --- 9 Connections On This Net ---                         --- 9 Connections On This Net ---
+ 12    Net X0/519                                                Xu_calib_ctrl/XU1509/xo
+       --- 8 Connections On This Net ---                         --- 8 Connections On This Net ---
+ 13    Net 113                                                   Xu_calib_ctrl/HFSNET_369
+       --- 58 Connections On This Net ---                        --- 43 Connections On This Net ---
+ 14    Net 239                                                   Xu_calib_ctrl/HFSNET_340
+       --- 53 Connections On This Net ---                        --- 43 Connections On This Net ---
+ 15    Net 36                                                    Xu_calib_ctrl/HFSNET_332
+       --- 46 Connections On This Net ---                        --- 46 Connections On This Net ---
+ 16    Net 71                                                    Xu_calib_ctrl/HFSNET_373
+       --- 48 Connections On This Net ---                        --- 48 Connections On This Net ---
+ 17    Net 653                                                   HFSNET_73
+       --- 7 Connections On This Net ---                         --- 8 Connections On This Net ---
+ 18    Net X0/315                                                Xu_srm_residue/Xdone_pending_reg/pm
+       --- 9 Connections On This Net ---                         --- 9 Connections On This Net ---
+ 19    Net X0/509                                                Xu_srm_residue/Xtot_g_s1_reg[3]/pm
+       --- 9 Connections On This Net ---                         --- 9 Connections On This Net ---
+ 20    Net 34                                                    Xu_calib_ctrl/HFSNET_328
+       --- 48 Connections On This Net ---                        --- 48 Connections On This Net ---
+
+########## D. count of incorrect nets / instances / ports ##########
+50
+
+########## E. child cells referenced by the delivered GDS top cell ##########
+top cell 'sar_digi_paper_core' references 118 distinct child cells, 34989 SREFs
+child cells whose name looks like a via / fill / decap:
+   $$via1                                   13115
+   $$via1_5200_5200_1_2                     1462
+   $$via2                                   12457
+   $$via3                                   4020
+   $$via4                                   242
+   $$via5                                   17
+total structs defined: 231
+first 10 child names: ['$$via1', '$$via1_5200_5200_1_2', '$$via2', '$$via3', '$$via4', '$$via5', 'ADDFHXL', 'ADDFX1', 'ADDHXL', 'AND2X1']
+ssh : bash: line 58: $'\r': command not found
+At line:1 char:233
++ ... r",""; $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 58: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

@@ -1,0 +1,124 @@
+ 
+****************************************
+Report : area
+Design : sar_digi_paper_core
+Version: W-2024.09-SP3
+Date   : Fri Sep 18 20:19:41 2026
+****************************************
+
+Library(s) Used:
+
+    typical (File: /home/<user>/Project/DESIGN/14BIT_ADC/smic18/digital/sc/synopsys/typical.db)
+
+Number of ports:                          487
+Number of nets:                          3438
+Number of cells:                         2918
+Number of combinational cells:           1822
+Number of sequential cells:              1051
+Number of macros/black boxes:               0
+Number of buf/inv:                        295
+Number of references:                       5
+
+Combinational area:              32478.969954
+Buf/Inv area:                     2667.772855
+Noncombinational area:           65413.655151
+Macro/Black Box area:                0.000000
+Net Interconnect area:          388641.912689
+
+Total cell area:                 97892.625106
+Total area:                     486534.537795
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  ------------------------------------------------------------------------------------------------------------------
+sar_digi_paper_core               97892.6251    100.0    153.0144   1327.2336  0.0000  sar_digi_paper_core
+u_calib_ctrl                      88106.3564     90.0  28713.4851  57180.8152  0.0000  sar_calib_ctrl_serial_20_30_16_32_5_256_1_1
+u_calib_ctrl/clk_gate_accumulator_reg
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_11
+u_calib_ctrl/clk_gate_avg_cnt_reg    63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_12
+u_calib_ctrl/clk_gate_avg_rounded_r_reg
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_3
+u_calib_ctrl/clk_gate_avg_rounded_r_reg_0
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_2
+u_calib_ctrl/clk_gate_calc_cnt_reg
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_4
+u_calib_ctrl/clk_gate_calc_result_r_reg
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_1
+u_calib_ctrl/clk_gate_calib_done_reg
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_14
+u_calib_ctrl/clk_gate_meas_val_n_reg
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_5
+u_calib_ctrl/clk_gate_meas_val_p_reg
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_6
+u_calib_ctrl/clk_gate_sar_ptr_reg    63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_10
+u_calib_ctrl/clk_gate_shadow_weights_reg[0]
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_0
+u_calib_ctrl/clk_gate_shadow_weights_reg[10]
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_24
+u_calib_ctrl/clk_gate_shadow_weights_reg[11]
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_23
+u_calib_ctrl/clk_gate_shadow_weights_reg[12]
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_22
+u_calib_ctrl/clk_gate_shadow_weights_reg[13]
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_21
+u_calib_ctrl/clk_gate_shadow_weights_reg[14]
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_20
+u_calib_ctrl/clk_gate_shadow_weights_reg[15]
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_19
+u_calib_ctrl/clk_gate_shadow_weights_reg[16]
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_18
+u_calib_ctrl/clk_gate_shadow_weights_reg[17]
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_17
+u_calib_ctrl/clk_gate_shadow_weights_reg[18]
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_16
+u_calib_ctrl/clk_gate_shadow_weights_reg[19]
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_15
+u_calib_ctrl/clk_gate_shadow_weights_reg[1]
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_33
+u_calib_ctrl/clk_gate_shadow_weights_reg[2]
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_32
+u_calib_ctrl/clk_gate_shadow_weights_reg[3]
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_31
+u_calib_ctrl/clk_gate_shadow_weights_reg[4]
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_30
+u_calib_ctrl/clk_gate_shadow_weights_reg[5]
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_29
+u_calib_ctrl/clk_gate_shadow_weights_reg[6]
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_28
+u_calib_ctrl/clk_gate_shadow_weights_reg[7]
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_27
+u_calib_ctrl/clk_gate_shadow_weights_reg[8]
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_26
+u_calib_ctrl/clk_gate_shadow_weights_reg[9]
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_25
+u_calib_ctrl/clk_gate_target_bit_reg
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_13
+u_calib_ctrl/clk_gate_temp_acc_reg_0
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_1_2
+u_calib_ctrl/clk_gate_w_wr_addr_reg
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_8
+u_calib_ctrl/clk_gate_w_wr_data_reg
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_7
+u_calib_ctrl/clk_gate_wait_cnt_reg
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_9
+u_srm_residue                      8306.0208      8.5   1716.4224   5441.9903  0.0000  srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH10_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64
+u_srm_residue/clk_gate_cap_ones_reg
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH10_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64_3
+u_srm_residue/clk_gate_dec_ones_reg
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH10_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64_0
+u_srm_residue/clk_gate_dec_total_reg
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH10_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64_4
+u_srm_residue/clk_gate_residue_q_small_reg
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH10_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64_1
+u_srm_residue/clk_gate_stall_cnt_reg
+                                     63.2016      0.1     26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH10_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64_2
+u_srm_residue/u_lut                 831.6000      0.8    831.6000      0.0000  0.0000  srm_residue_lut_22_128_8_8_10_1
+--------------------------------  ----------  -------  ----------  ----------  ------  ------------------------------------------------------------------------------------------------------------------
+Total                                                  32478.9700  65413.6552  0.0000
+
+1

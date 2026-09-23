@@ -1,0 +1,23 @@
+****************************************
+Report : area
+Design : sar_digi_paper_core
+Version: W-2024.09-SP3
+Date   : Fri Sep 18 20:24:14 2026
+****************************************
+
+Number of ports:                          627
+Number of nets:                          4246
+Number of cells:                         3626
+Number of combinational cells:           2575
+Number of sequential cells:              1051
+Number of macros/black boxes:               0
+Number of buf/inv:                        521
+Number of references:                     109
+
+Combinational area:                  36816.60
+Buf/Inv area:                         5881.08
+Noncombinational area:               65483.51
+Macro/Black Box area:                    0.00
+
+Total cell area:                    102300.11
+1

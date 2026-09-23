@@ -1,0 +1,162 @@
+****************************************
+Report : constraint
+	-all_violators
+	-max_capacitance
+	-max_transition
+	-max_fanout
+Design : sar_digi_paper_core
+Version: W-2024.09-SP3
+Date   : Fri Sep 18 20:25:23 2026
+****************************************
+
+
+   max_transition
+
+                             Required        Actual
+   Pin                      Transition     Transition        Slack
+   -----------------------------------------------------------------
+   u_calib_ctrl/meas_val_n_reg[26]/D
+                                0.80           0.81          -0.01  (VIOLATED)
+   u_calib_ctrl/meas_val_p_reg[26]/D
+                                0.80           0.81          -0.01  (VIOLATED)
+   u_calib_ctrl/U2098/Y         0.80           0.81          -0.01  (VIOLATED)
+   srm_total_count[2]           0.80           0.80           0.00  (VIOLATED: increase significant digits)
+   HFSBUF_2_318/Y               0.80           0.80           0.00  (VIOLATED: increase significant digits)
+   srm_ones_count[0]            0.80           0.80           0.00  (VIOLATED: increase significant digits)
+   HFSBUF_2_301/Y               0.80           0.80           0.00  (VIOLATED: increase significant digits)
+
+
+   max_fanout
+
+                             Required        Actual
+   Pin                        Fanout         Fanout          Slack
+   -----------------------------------------------------------------
+   u_calib_ctrl/ZCTSBUF_4055_1393/Y
+                               24.00          44.00         -20.00  (VIOLATED)
+   ctosc_gls_inst_1718/Y       24.00          40.00         -16.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_1920_582/Y
+                               24.00          40.00         -16.00  (VIOLATED)
+   HFSINV_8439_622/Y           24.00          36.00         -12.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_2730_599/Y
+                               24.00          36.00         -12.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_4577_586/Y
+                               24.00          36.00         -12.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_8622_615/Y
+                               24.00          35.00         -11.00  (VIOLATED)
+   u_calib_ctrl/gre_a_INV_7090_inst_2341/Y
+                               24.00          35.00         -11.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_7880_607/Y
+                               24.00          33.00          -9.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_1122_592/Y
+                               24.00          32.00          -8.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_8782_611/Y
+                               24.00          32.00          -8.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_10240_617/Y
+                               24.00          32.00          -8.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_10909_618/Y
+                               24.00          32.00          -8.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_520_603/Y
+                               24.00          31.00          -7.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_1524_595/Y
+                               24.00          31.00          -7.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_1906_581/Y
+                               24.00          31.00          -7.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_2547_584/Y
+                               24.00          31.00          -7.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_4613_602/Y
+                               24.00          31.00          -7.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_10061_616/Y
+                               24.00          31.00          -7.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_12227_620/Y
+                               24.00          31.00          -7.00  (VIOLATED)
+   u_calib_ctrl/ZBUF_3430_inst_1002/Y
+                               24.00          31.00          -7.00  (VIOLATED)
+   u_calib_ctrl/gre_a_INV_4409_inst_2346/Y
+                               24.00          31.00          -7.00  (VIOLATED)
+   u_calib_ctrl/gre_a_INV_6696_inst_2347/Y
+                               24.00          31.00          -7.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_224_578/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_2067_598/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_5261_591/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_8037_608/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_11467_610/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/ZBUF_1431_inst_1018/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/ZCTSBUF_247_1371/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/ZCTSBUF_247_1382/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/ZCTSBUF_251_1374/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/ZCTSBUF_251_1376/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/ZCTSBUF_251_1378/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/ZCTSBUF_251_1388/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/ZCTSBUF_255_1368/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/ZCTSBUF_255_1381/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/ZCTSBUF_255_1386/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/ZCTSBUF_255_1387/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/ZCTSBUF_255_1390/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/ZCTSBUF_259_1380/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/ZCTSBUF_259_1383/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/clk_gate_meas_val_n_reg/main_gate/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/clk_gate_meas_val_p_reg/main_gate/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/clk_gate_shadow_weights_reg[4]/main_gate/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/clk_gate_shadow_weights_reg[5]/main_gate/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/clk_gate_shadow_weights_reg[9]/main_gate/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/clk_gate_shadow_weights_reg[10]/main_gate/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/clk_gate_shadow_weights_reg[11]/main_gate/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/clk_gate_shadow_weights_reg[12]/main_gate/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/clk_gate_shadow_weights_reg[14]/main_gate/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/clk_gate_shadow_weights_reg[16]/main_gate/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/clk_gate_shadow_weights_reg[18]/main_gate/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/gre_a_INV_2579_inst_2348/Y
+                               24.00          30.00          -6.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_792_594/Y
+                               24.00          29.00          -5.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_955_593/Y
+                               24.00          28.00          -4.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_8934_614/Y
+                               24.00          28.00          -4.00  (VIOLATED)
+   u_srm_residue/HFSINV_246_605/Y
+                               24.00          28.00          -4.00  (VIOLATED)
+   HFSINV_7443_624/Y           24.00          27.00          -3.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_9181_612/Y
+                               24.00          27.00          -3.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_12586_621/Y
+                               24.00          26.00          -2.00  (VIOLATED)
+   u_calib_ctrl/gre_a_INV_2209_inst_2339/Y
+                               24.00          26.00          -2.00  (VIOLATED)
+   HFSINV_13612_623/Y          24.00          25.00          -1.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_1817_596/Y
+                               24.00          25.00          -1.00  (VIOLATED)
+   u_calib_ctrl/HFSINV_4202_601/Y
+                               24.00          25.00          -1.00  (VIOLATED)
+
+
+1

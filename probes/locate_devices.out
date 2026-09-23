@@ -1,0 +1,15 @@
+﻿merged GDS: 225 cells
+top cell SREFs: 34356
+flagged layout-only transistors: 35
+
+=== master cells holding the flagged transistors ===
+   (not inside any SREF)  35
+
+=== per-cell detail ===
+   ? :
+      X0/X199        M0   MN(N18)  at (347.6200, 379.3100)
+      X0/X355        M4   MP(P18)  at (300.2000, 374.9300)
+      X0/X434        M10  MP(P18)  at (212.9050, 365.1800)
+      X0/X436        M10  MP(P18)  at (212.9050, 405.5000)
+      X0/X439        M8   MP(P18)  at (213.2950, 390.8600)
+      X1/X335        M4   MP(P18)  at (412.6000, 344.6900)

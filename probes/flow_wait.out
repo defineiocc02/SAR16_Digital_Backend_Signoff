@@ -1,0 +1,26 @@
+﻿############ FLOW FINISHED (or 15 min elapsed) ############
+
+=== stage markers ===
+12:### STAGE 0 : PREFLIGHT      [20:03:56  elapsed 0s]
+24:  file OK   /home/<user>/Project/DESIGN/14BIT_ADC/smic18/Calibre/SMIC_CalDRC_018LGMS_1833_V1.19_REV1_0/SMIC_CalDRC_018LGMS_1833_V1.19_REV1_0.drc
+61:### STAGE 1 : SYNTHESIS (DC, both arms)      [20:03:56  elapsed 0s]
+75:DC_ARM status=OK tag= libmode=typical area=97892.625106
+88:DC_ARM status=OK tag=_ss libmode=slow area=101581.602856
+112:### STAGE 2 : PLACE & ROUTE (Fusion Compiler)      [20:05:30  elapsed 94s]
+118:FC_RC=0
+187:### STAGE 3 : SIGN-OFF STA (PrimeTime, 3 corners + OCV sweep)      [20:10:42  elapsed 406s]
+203:### STAGE 4 : CALIBRE DRC on the delivered GDS      [20:13:38  elapsed 582s]
+ssh : tail: cannot open '/home/<user>/sar16_work/proj_paper_core/logs/repro_v50.log'$'\r' for reading: No such file or di
+rectory
+At line:16 char:6
++ $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | Out-Fi ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (tail: cannot op...le or directory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+207:    DRC_RC=0   elapsed 19 s
+213:### STAGE 5 : CALIBRE LVS      [20:14:14  elapsed 618s]
+224:### STAGE 6 : MANIFEST      [20:14:40  elapsed 644s]
+302:  REPRO status=BASELINE_SET
+
+=== tail 30 ===

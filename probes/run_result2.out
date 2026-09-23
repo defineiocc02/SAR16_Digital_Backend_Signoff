@@ -1,0 +1,17 @@
+﻿=== the one remaining short ===
+SHORT 1.  rst_n - VDD in sar_digi_paper_core
+
+=== port lists (exact, both sides) ===
+--- extraction report label conflicts ---
+1
+          (1)  name  "rst_n"  at location  (402.6,0.3575)  on layer  62 "M2"
+          (2)  name  "VDD"  at location  (425,428.1)  on layer  62 "M2"
+
+=== copy the artifacts I need for local analysis ===
+ssh : ls: cannot access '/tmp/handover/'$'\r': No such file or directory
+At line:22 char:6
++ $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | Out-Fi ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ls: cannot acce...le or directory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

@@ -1,0 +1,246 @@
+Cell Min-Routing-Layer = METAL1
+Cell Max-Routing-Layer = METAL6
+Turn off antenna since no rule is specified
+Information: Option route.detail.force_end_on_preferred_grid will be ignored since none of the layers have preferred grid. (ZRT-703)
+Info: number of net_type_blockage: 0 
+Information: Via ladder engine would be activated for pattern must join connection in certain commands. Please refer to man-page for the command list. (ZRT-619)
+Warning: Port  VSS at {{165.660,427.305} {178.200,428.800}} is out of boundary. Cannot be routed. (ZRT-720)
+Warning: Port  VDD at {{386.760,-0.400} {390.720,1.250}} is out of boundary. Cannot be routed. (ZRT-720)
+Warning: Port  VSS at {{291.720,426.945} {294.360,428.800}} is out of boundary. Cannot be routed. (ZRT-720)
+Warning: Port  VSS at {{306.240,427.825} {311.520,428.800}} is out of boundary. Cannot be routed. (ZRT-720)
+Warning: Port  VDD at {{215.160,-0.400} {221.100,1.275}} is out of boundary. Cannot be routed. (ZRT-720)
+Warning: Port  VDD at {{225.060,-0.400} {231.000,1.275}} is out of boundary. Cannot be routed. (ZRT-720)
+Warning: Port  VSS at {{297.000,427.825} {299.640,428.800}} is out of boundary. Cannot be routed. (ZRT-720)
+Warning: Port  VSS at {{300.960,427.825} {303.600,428.800}} is out of boundary. Cannot be routed. (ZRT-720)
+Warning: Port  VDD at {{411.840,-0.400} {424.380,2.100}} is out of boundary. Cannot be routed. (ZRT-720)
+Warning: Port  VDD at {{240.900,-0.400} {243.540,0.575}} is out of boundary. Cannot be routed. (ZRT-720)
+Skipping 26 ectangle_only route guides because they don't cover the design boundary in the layer's  preferred direction.
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 10.05 outside the layer range. (ZRT-707)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 10.05 outside the layer range on clock nets. (ZRT-718)
+Information: When applicable layer based tapering will taper up to 0.00 in distance from the pin. (ZRT-706)
+Warning: Standard cell pin ADDFX2/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin OAI22XL/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NAND3X1/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOI2BB2X1/B0 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NOR3XL/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOI222X4/B1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin BUFX2/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin OAI22X1/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin OAI21XL/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOI222X1/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NAND3XL/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin OAI31X1/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin OAI2BB1XL/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin INVX12/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOI221X1/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOI221X1/C0 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOI221X1/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin ADDFXL/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin CLKBUFXL/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOI21XL/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOI21X1/A0 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOI21X1/B0 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin DFFSX1/CK has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOI221XL/A0 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOI221XL/C0 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NAND4X1/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AND2XL/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOI32XL/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NOR2BX2/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin DFFSXL/Q has no valid via regions. (ZRT-044)
+Warning: Standard cell pin XNOR2X1/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin XNOR2X1/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin DLY3X1/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NOR2X4/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NOR2X4/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin DLY4X1/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NOR3BX1/AN has no valid via regions. (ZRT-044)
+Warning: Standard cell pin DLY2X1/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NAND2X2/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NAND2X2/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NAND2XL/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOI22X2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin XOR2X1/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOI22X2/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin XOR2X1/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin TLATNXL/QN has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AND4X2/C has no valid via regions. (ZRT-044)
+Warning: Standard cell pin XNOR2XL/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin XNOR2XL/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin XOR2XL/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin XOR2XL/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin CMPR32X1/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NAND4X2/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NAND4X2/D has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NOR3BX2/AN has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NOR3BX2/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NOR3BX2/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NOR4X1/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin ADDHXL/CO has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOI211XL/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin ADDHXL/S has no valid via regions. (ZRT-044)
+Warning: Standard cell pin OAI2BB1X1/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin ADDFX1/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin OAI31XL/A0 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin OAI31XL/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOI2BB1X1/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin OAI2BB1X2/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin ADDFHX1/CI has no valid via regions. (ZRT-044)
+Warning: Standard cell pin ADDFHX1/CO has no valid via regions. (ZRT-044)
+Warning: Standard cell pin ADDFHX1/S has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NOR3X1/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOI31XL/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOI22XL/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin CMPR22X1/CO has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOI2BB1XL/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOI2BB1X2/B0 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NAND4XL/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NAND4XL/C has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NAND4XL/D has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NOR4BX1/C has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NOR4BX1/D has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NOR4BXL/C has no valid via regions. (ZRT-044)
+Warning: Standard cell pin NOR4BXL/D has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOI2BB2XL/Y has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOI211X1/B0 has no valid via regions. (ZRT-044)
+
+
+Start checking for open nets ... 
+
+Total number of nets = 3780, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+
+Check 3780 nets, 0 have Errors
+
+[CHECK OPEN NETS] Elapsed real time: 0:00:00 
+[CHECK OPEN NETS] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[CHECK OPEN NETS] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[CHECK OPEN NETS] Total (MB): Used   20  Alloctr   22  Proc 5913 
+Printing options for 'route.common.*'
+common.eco_route_fix_existing_drc                       :	 true                
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.detail.*'
+detail.antenna                                          :	 true                
+detail.eco_route_use_soft_spacing_for_timing_optimization:	 true                
+
+Printing options for 'route.auto_via_ladder.*'
+
+
+Begin full DRC check ...
+
+Information: Using 8 threads for routing. (ZRT-444)
+Checked	1/9 Partitions, Violations =	203
+Checked	2/9 Partitions, Violations =	240
+Checked	3/9 Partitions, Violations =	429
+Checked	4/9 Partitions, Violations =	440
+Checked	5/9 Partitions, Violations =	440
+Checked	6/9 Partitions, Violations =	446
+Checked	7/9 Partitions, Violations =	619
+Checked	8/9 Partitions, Violations =	639
+Checked	9/9 Partitions, Violations =	745
+[DRC CHECK] Elapsed real time: 0:00:00 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[DRC CHECK] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[DRC CHECK] Total (MB): Used  105  Alloctr  107  Proc 5913 
+Warning: No antenna rules defined, Skip antenna analysis. (ZRT-309)
+Information: Merged away 305 aligned/redundant DRCs. (ZRT-305)
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	440
+	Diff net spacing : 184
+	Diff net via-cut spacing : 14
+	Less than minimum area : 1
+	Less than minimum width : 10
+	Same net spacing : 2
+	Short : 229
+
+Information: The app option "route.detail.report_soft_drc_separately" will be on-by-default in future release. (ZRT-807)
+	@@@@@@@ TOTAL SOFT VIOLATIONS =	0
+
+
+Total Wire Length =                    224124 micron
+Total Number of Contacts =             29268
+Total Number of Wires =                32700
+Total Number of PtConns =              3364
+Total Number of Routed Wires =       31213
+Total Routed Wire Length =           222850 micron
+Total Number of Routed Contacts =       29268
+	Layer    METAL1 :       6365 micron
+	Layer    METAL2 :      54143 micron
+	Layer    METAL3 :     101293 micron
+	Layer    METAL4 :      55166 micron
+	Layer    METAL5 :       5663 micron
+	Layer    METAL6 :        220 micron
+	Via        via5 :          6
+	Via        via4 :        134
+	Via        via3 :       3584
+	Via        via2 :      12590
+	Via   via2(rot) :         23
+	Via        via1 :       2021
+	Via   via1(rot) :      10910
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.00% (0 / 29268 vias)
+ 
+    Layer VIA12      =  0.00% (0      / 12931   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (12931   vias)
+    Layer VIA23      =  0.00% (0      / 12613   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (12613   vias)
+    Layer VIA34      =  0.00% (0      / 3584    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (3584    vias)
+    Layer VIA45      =  0.00% (0      / 134     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (134     vias)
+    Layer VIA56      =  0.00% (0      / 6       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (6       vias)
+ 
+  Total double via conversion rate    =  0.00% (0 / 29268 vias)
+ 
+    Layer VIA12      =  0.00% (0      / 12931   vias)
+    Layer VIA23      =  0.00% (0      / 12613   vias)
+    Layer VIA34      =  0.00% (0      / 3584    vias)
+    Layer VIA45      =  0.00% (0      / 134     vias)
+    Layer VIA56      =  0.00% (0      / 6       vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.00% (0 / 29268 vias)
+ 
+    Layer VIA12      =  0.00% (0      / 12931   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (12931   vias)
+    Layer VIA23      =  0.00% (0      / 12613   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (12613   vias)
+    Layer VIA34      =  0.00% (0      / 3584    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (3584    vias)
+    Layer VIA45      =  0.00% (0      / 134     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (134     vias)
+    Layer VIA56      =  0.00% (0      / 6       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (6       vias)
+ 
+
+
+Verify Summary:
+
+Total number of nets = 3780, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+
+Total number of DRCs = 440
+Total number of antenna violations = no antenna rules defined
+Total number of tie to rail violations = not checked
+Total number of tie to rail directly violations = not checked
+
+

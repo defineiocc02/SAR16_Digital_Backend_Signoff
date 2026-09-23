@@ -1,0 +1,43 @@
+﻿=== view directories physically present in the library ===
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core/sar16_route_paper_core
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core/sar16_route_paper_core/cstrs
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core/sar16_route_paper_core/pgroute
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core/sar16_route_paper_core/design.ndm
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core/sar16_route_paper_core/data_map.design.0.ndm
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core/sar16_route_paper_core/data_map.design.1.ndm
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core/sar16_route_paper_core/SHADOW_DESIGN_0.design.ndm
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core/sar16_route_paper_core/attach
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core/tech_parasitic.ndm
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core/lib.ndm
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core/attach
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core/attach/lib.tech.parasitic.tlup
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core/sar_digi_paper_core
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core/sar_digi_paper_core/design.ndm
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core/sar_digi_paper_core/data_map.design.0.ndm
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core/sar_digi_paper_core/data_map.design.1.ndm
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core/sar_digi_paper_core/SHADOW_DESIGN_0.design.ndm
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core/sar_digi_paper_core/attach
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core/sar_digi_paper_core/cstrs
+/home/<user>/sar16_work/proj_paper_core/pnr/sar16_pnr_paper_core/sar_digi_paper_core/pgroute
+
+puts "LV-BEGIN"
+LV-BEGIN
+    puts [format "  %-14s %s" $c [expr {[llength [info commands $c]] > 0 ? "EXISTS" : "absent"}]]
+  get_blocks     EXISTS
+  get_designs    EXISTS
+  get_views      absent
+  get_libs       EXISTS
+  current_lib    EXISTS
+puts "LIBS: [get_object_name [current_lib]]"
+LIBS: sar16_pnr_paper_core
+    puts "BLOCKS: [get_object_name [get_blocks -quiet *]]"
+BLOCKS: 
+    puts "DESIGNS: [get_object_name [get_designs -quiet *]]"
+DESIGNS: 
+    catch {puts "VIEWS(sar_digi_paper_core): [get_object_name [get_views -quiet -of_objects [get_designs -quiet sar_digi_paper_core]]]"}
+    catch {puts "VIEWS(route): [get_object_name [get_views -quiet -of_objects [get_designs -quiet sar16_route_paper_core]]]"}
+puts "LV-END"
+
+=== kit test progress ===
+24 /home/<user>/sar16_work/proj_paper_core/kitcheck/kit_lvs_results.csv

@@ -1,0 +1,88 @@
+﻿=== �鵵 (25 �� -> 205 �ļ�, 90M) ===
+   02_������֤\sar16_digi_v4_paper_aligned\delivery               -> 01_��ȡ���Ľ�����\delivery   [28M, 32 files]
+   02_������֤\sar16_digi_v4_paper_aligned\delivery_v42           -> 01_��ȡ���Ľ�����\delivery_v42   [21M, 23 files]
+   02_������֤\sar16_digi_v4_paper_aligned\delivery_round3        -> 01_��ȡ���Ľ�����\delivery_round3   [10M, 10 files]
+   02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images     -> 03_��ȡ����Դ����ͼ��\gds_images   [2M, 12 files]
+   02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images_v43 -> 03_��ȡ����Դ����ͼ��\gds_images_v43   [1M, 11 files]
+   02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes -> 02_̽����һ���Խű�\probes   [83K, 59 files]
+   02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42 -> 02_̽����һ���Խű�\remote_v42   [134K, 18 files]
+   02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote -> 05_Զ��ԭʼץȡ\remote   [26M, 23 files]
+   02_������֤\sar16_digi_v4_paper_aligned\tb\tb_sar16_v4.sv      -> 03_��ȡ����Դ����ͼ��\tb_sar16_v4.sv   [67K, 1 files]
+   04_������¼\SAR16_v4.1_��������������_20260918.md                    -> 04_��ʷ��������\SAR16_v4.1_��������������_20260918.md   [20K, 1 files]
+   04_������¼\SAR16_v4.2_�ڶ��ָĽ�_ʱ��պ��븴��Ȩ����_20260918.md            -> 04_��ʷ��������\SAR16_v4.2_�ڶ��ָĽ�_ʱ��պ��븴��Ȩ����_20260918.md   [14K, 1 files]
+   04_������¼\SAR16_v4.2_ʱ��ǩ�˱���_20260918.md                      -> 04_��ʷ��������\SAR16_v4.2_ʱ��ǩ�˱���_20260918.md   [8K, 1 files]
+   04_������¼\SAR16_v4.2_����������¼����.html                           -> 04_��ʷ��������\SAR16_v4.2_����������¼����.html   [49K, 1 files]
+   04_������¼\SAR16_v4paper_���ܱ���_20260917.md                     -> 04_��ʷ��������\SAR16_v4paper_���ܱ���_20260917.md   [8K, 1 files]
+   04_������¼\SAR16_v4paper_ʱ�򱨸�_20260917.md                     -> 04_��ʷ��������\SAR16_v4paper_ʱ�򱨸�_20260917.md   [11K, 1 files]
+   04_������¼\SAR16_v4paper_���߱���_20260917.md                     -> 04_��ʷ��������\SAR16_v4paper_���߱���_20260917.md   [14K, 1 files]
+   04_������¼\SAR16_v4paper_���ս���_GDS�븴��_20260918.md              -> 04_��ʷ��������\SAR16_v4paper_���ս���_GDS�븴��_20260918.md   [14K, 1 files]
+   04_������¼\SAR16_v4�������ֺ������_20260917.md                       -> 04_��ʷ��������\SAR16_v4�������ֺ������_20260917.md   [21K, 1 files]
+   04_������¼\SAR16_v4���Ķ���ʵ������֤��¼_20260917.md                    -> 04_��ʷ��������\SAR16_v4���Ķ���ʵ������֤��¼_20260917.md   [19K, 1 files]
+   04_������¼\SAR16_v4��������_���Ĺ���һ����_20260917.md                   -> 04_��ʷ��������\SAR16_v4��������_���Ĺ���һ����_20260917.md   [19K, 1 files]
+   04_������¼\SAR16_Ƭ��Ƭ��߽����������_20260917.md                      -> 04_��ʷ��������\SAR16_Ƭ��Ƭ��߽����������_20260917.md   [12K, 1 files]
+   04_������¼\SAR16_SRM_LUT����������Ż�_20260917.md                   -> 04_��ʷ��������\SAR16_SRM_LUT����������Ż�_20260917.md   [8K, 1 files]
+   04_������¼\SAR16_���ս������_20260917.md                           -> 04_��ʷ��������\SAR16_���ս������_20260917.md   [13K, 1 files]
+   04_������¼\SAR16�������̶�������_20260917.md                          -> 04_��ʷ��������\SAR16�������̶�������_20260917.md   [28K, 1 files]
+   04_������¼\SAR16_GDSͼ���������.html                               -> 04_��ʷ��������\SAR16_GDSͼ���������.html   [2M, 1 files]
+
+=== ɾ�� (2 �ļ�, 22M) ===
+   02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\lib_slow.lib 11M   PDK ��׼��Ԫ�⸱����11 MB����������ݣ���Ӧ���ڹ��������ɴ� $K ����ȡ��
+   02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\lib_typical.lib 11M   PDK ��׼��Ԫ�⸱����11 MB��ͬ�ϣ�
+
+=== ��״ ===
+   �鵵ǰ��1582 �ļ� / 246M
+   �����Ԥ�ƣ�1580 �ļ� / 225M
+
+=== ִ�� ===
+   deleted 02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\lib_slow.lib
+   deleted 02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote\lib_typical.lib
+   moved  02_������֤\sar16_digi_v4_paper_aligned\delivery
+   moved  02_������֤\sar16_digi_v4_paper_aligned\delivery_v42
+   moved  02_������֤\sar16_digi_v4_paper_aligned\delivery_round3
+   moved  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images
+   moved  02_������֤\sar16_digi_v4_paper_aligned\backend\gds_images_v43
+   moved  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes
+   moved  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42
+   moved  02_������֤\sar16_digi_v4_paper_aligned\backend\analysis\raw\remote
+   moved  02_������֤\sar16_digi_v4_paper_aligned\tb\tb_sar16_v4.sv
+   moved  04_������¼\SAR16_v4.1_��������������_20260918.md
+   moved  04_������¼\SAR16_v4.2_�ڶ��ָĽ�_ʱ��պ��븴��Ȩ����_20260918.md
+   moved  04_������¼\SAR16_v4.2_ʱ��ǩ�˱���_20260918.md
+   moved  04_������¼\SAR16_v4.2_����������¼����.html
+   moved  04_������¼\SAR16_v4paper_���ܱ���_20260917.md
+   moved  04_������¼\SAR16_v4paper_ʱ�򱨸�_20260917.md
+   moved  04_������¼\SAR16_v4paper_���߱���_20260917.md
+   moved  04_������¼\SAR16_v4paper_���ս���_GDS�븴��_20260918.md
+   moved  04_������¼\SAR16_v4�������ֺ������_20260917.md
+   moved  04_������¼\SAR16_v4���Ķ���ʵ������֤��¼_20260917.md
+   moved  04_������¼\SAR16_v4��������_���Ĺ���һ����_20260917.md
+   moved  04_������¼\SAR16_Ƭ��Ƭ��߽����������_20260917.md
+   moved  04_������¼\SAR16_SRM_LUT����������Ż�_20260917.md
+   moved  04_������¼\SAR16_���ս������_20260917.md
+   moved  04_������¼\SAR16�������̶�������_20260917.md
+   moved  04_������¼\SAR16_GDSͼ���������.html
+
+MOVE_LOG.csv written (27 rows)
+
+=== ���������Ժ˶ԣ������ĵ� -> �鵵����===
+   REF  .workbuddy\memory\2026-09-17.md  ->  SAR16_v4�������ֺ������_20260917.md
+   REF  .workbuddy\memory\2026-09-18.md  ->  02_������֤/sar16_digi_v4_paper_aligned/delivery
+   REF  .workbuddy\memory\MEMORY.md  ->  04_������¼/SAR16_v4.2_�ڶ��ָĽ�_ʱ��պ��븴��Ȩ����_20260918.md
+   REF  02_������֤\20260729_full_sar_behavioral_4420022\README.md  ->  delivery
+   REF  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\docs\VERIFICATION.md  ->  delivery
+   REF  02_������֤\20260729_full_sar_behavioral_4420022\delivery_full_sar_behavioral_validation_20260729\logs\PDF_QA_SUMMARY.md  ->  delivery
+   REF  02_������֤\20260729_full_sar_behavioral_5b25c13\BACKUP_README.md  ->  delivery
+   REF  02_������֤\20260729_full_sar_behavioral_5b25c13\full_sar_behavioral_validation_20260729\docs\VERIFICATION.md  ->  delivery
+   REF  02_������֤\20260729_full_sar_behavioral_f055093\README.md  ->  delivery
+   REF  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\docs\VERIFICATION.md  ->  delivery
+   REF  02_������֤\20260729_full_sar_behavioral_f055093\delivery_full_sar_behavioral_validation_20260729\logs\PDF_QA_SUMMARY.md  ->  delivery
+   REF  02_������֤\20260729_full_sar_behavioral_main_39436dd\README.md  ->  delivery
+   REF  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\docs\VERIFICATION.md  ->  delivery
+   REF  02_������֤\20260729_full_sar_behavioral_main_39436dd\delivery_full_sar_behavioral_validation_20260729\logs\PDF_QA_SUMMARY.md  ->  delivery
+   REF  02_������֤\20260729_full_sar_behavioral_main_f621410\README.md  ->  delivery
+   REF  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\docs\VERIFICATION.md  ->  delivery
+   REF  02_������֤\20260729_full_sar_behavioral_main_f621410\delivery_full_sar_behavioral_validation_20260729\logs\PDF_QA_SUMMARY.md  ->  delivery
+   REF  02_������֤\sar16_digi_v4_paper_aligned\README.md  ->  tb_sar16_v4.sv
+   REF  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\collect_result.sh  ->  delivery
+   REF  02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\make_delivery_report.py  ->  delivery
+   total 83 referencing document(s)

@@ -1,0 +1,31 @@
+﻿puts "WV-BEGIN"
+WV-BEGIN
+puts "CURRENT=[get_object_name [current_block]]"
+CURRENT=sar16_pnr_paper_core:sar16_route_paper_core.design
+puts "TERMS=[sizeof_collection [get_terminals -quiet *]]"
+TERMS=244
+if {[catch {write_lef -design sar_digi_paper_core /tmp/v1.lef} m]} { puts "V1-FAIL $m" } else { puts "V1-OK" }
+V1-OK
+if {[catch {write_lef -design sar_digi_paper_core -include cell /tmp/v2.lef} m]} { puts "V2-FAIL $m" } else { puts "V2-OK" }
+V2-OK
+if {[catch {write_lef -design sar_digi_paper_core -include {cell tech} /tmp/v3.lef} m]} { puts "V3-FAIL $m" } else { puts "V3-OK" }
+V3-OK
+if {[catch {write_lef -design sar_digi_paper_core -include tech /tmp/v4.lef} m]} { puts "V4-FAIL $m" } else { puts "V4-OK" }
+V4-OK
+if {[catch {write_lef -design sar16_route_paper_core -include cell /tmp/v5.lef} m]} { puts "V5-FAIL $m" } else { puts "V5-OK" }
+V5-OK
+if {[catch {write_lef -library sar16_pnr_paper_core -include cell /tmp/v6.lef} m]} { puts "V6-FAIL $m" } else { puts "V6-OK" }
+V6-OK
+puts "WV-END"
+WV-END
+
+=== census each written lef ===
+   v1.lef       179596 B  MACRO=109   blockMACRO=0   PIN=630
+   v2.lef       176050 B  MACRO=109   blockMACRO=0   PIN=630
+   v3.lef       179596 B  MACRO=109   blockMACRO=0   PIN=630
+   v4.lef         3709 B  MACRO=0     blockMACRO=0   PIN=0
+   v5.lef       176050 B  MACRO=109   blockMACRO=0   PIN=630
+   v6.lef          163 B  MACRO=0     blockMACRO=0   PIN=0
+
+=== kit test progress ===
+21 /home/<user>/sar16_work/proj_paper_core/kitcheck/kit_lvs_results.csv

@@ -1,0 +1,9 @@
+﻿structs in file: 225
+DUPLICATE struct names: 0
+
+=== per-cell shape totals for a few standard cells (ALL occurrences) ===
+   INVXL      idx=207  shapes=5     layers=[127, 141]
+   NOR2XL     idx=50   shapes=6     layers=[127, 141]
+   DFFSX1     idx=216  shapes=8     layers=[127, 141]
+   NAND2BXL   idx=224  shapes=6     layers=[127, 141]
+   MXI2XL     idx=182  shapes=7     layers=[127, 141]

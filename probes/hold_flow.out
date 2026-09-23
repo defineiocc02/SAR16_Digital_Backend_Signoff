@@ -1,0 +1,86 @@
+﻿=== does the P&R flow do any HOLD optimisation? ===
+528:# holds.
+587:run "place_opt"               {place_opt}
+590:stage "clock_opt"
+591:run "clock_opt"               {clock_opt}
+596:    puts "NOTE: route_auto failed, relying on route_opt to route from scratch"
+598:run "route_opt"               {route_opt}
+608:redirect $RPT/fc_timing_hold.rpt  { report_timing -delay_type min -max_paths 25 -nworst 2 }
+
+=== the stages the flow actually runs, in order ===
+124:stage "create_lib"
+133:stage "read_verilog + link"
+158:stage "read_parasitic_tech"
+180:stage "read_sdc"
+200:stage "initialize_floorplan"
+226:stage "power_plan"
+582:run "set_block_pin_constraints" {set_block_pin_constraints -self -stacking_allowed none}
+584:run "place_pins" {place_pins -self}
+586:run "create_placement"        {create_placement}
+587:run "place_opt"               {place_opt}
+590:stage "clock_opt"
+591:run "clock_opt"               {clock_opt}
+594:stage "routing"
+598:run "route_opt"               {route_opt}
+603:stage "reports"
+612:run "check_routes"      {check_routes}
+626:stage "write outputs"
+627:run "write_verilog"   {write_verilog $OUT/${TOP}_pnr.v}
+628:run "write_sdc"       {write_sdc -output $OUT/${TOP}_pnr.sdc}
+629:run "write_parasitics" {write_parasitics -format spef -output $OUT/${TOP}_pnr.spef}
+633:run "write_gds"       {write_gds $OUT/${TOP}.gds}
+639:run "write_lef"       {write_lef -design ${TOP} $OUT/${TOP}.lef}
+641:run "save_block"      {save_block -as sar16_route_paper_core}
+642:run "save_lib"        {save_lib}
+
+=== sign-off SDC: the I/O min-delay placeholder ===
+39:set CLK_PERIOD        [expr {10.0}]
+40:set CLK_HALF          [expr {$CLK_PERIOD / 2.0}]
+46:set DCLK_PERIOD       [expr {3.0}]
+47:set DCLK_HALF         [expr {$DCLK_PERIOD / 2.0}]
+50:# IO_MIN_FRAC is the ASSUMED external HOLD requirement at the boundary; it is
+57:set IO_MAX_FRAC       0.35
+58:set IO_MIN_FRAC       0.05
+59:set IO_MAX_DELAY      [expr {$CLK_PERIOD * $IO_MAX_FRAC}]
+60:set IO_MIN_DELAY      [expr {$CLK_PERIOD * $IO_MIN_FRAC}]
+65:set CMP_MAX_DELAY     [expr {$CLK_PERIOD * 0.10}]
+76:#   from every set_clock_* / set_input_delay / set_output_delay below. Use
+80:create_clock -name $CLK_NAME  -period $CLK_PERIOD  -waveform [list 0.0 $CLK_HALF]  [get_ports $CLK_NAME]
+81:create_clock -name $DCLK_NAME -period $DCLK_PERIOD -waveform [list 0.0 $DCLK_HALF] [get_ports $DCLK_NAME]
+83:set_clock_uncertainty -setup [expr {$CLK_PERIOD * 0.02}]  [get_clocks $CLK_NAME]
+84:set_clock_uncertainty -hold  [expr {$CLK_PERIOD * 0.005}] [get_clocks $CLK_NAME]
+85:set_clock_uncertainty -setup [expr {$DCLK_PERIOD * 0.02}]  [get_clocks $DCLK_NAME]
+86:set_clock_uncertainty -hold  [expr {$DCLK_PERIOD * 0.005}] [get_clocks $DCLK_NAME]
+127:set_input_delay -clock $CLK_NAME -max $IO_MAX_DELAY $DIG_IN_PORTS
+128:set_input_delay -clock $CLK_NAME -min $IO_MIN_DELAY $DIG_IN_PORTS
+135:set_input_delay -clock $DCLK_NAME -max [expr {$DCLK_PERIOD * 0.35}] $DEC_IN_PORTS
+
+=== clock latency report (slow) ===
+****************************************
+Report : clock timing
+	-type latency
+	-launch
+	-nworst 1
+	-setup
+Design : sar_digi_paper_core
+Version: W-2024.09-SP3
+Date   : Fri Sep 18 20:24:46 2026
+****************************************
+
+  Clock: clk
+
+                                                   --- Latency ---
+  Clock Pin                            Trans   Source  Network Total
+----------------------------------------------------------------------------
+  u_calib_ctrl/accumulator_reg[32]/CK  0.56    0.00    0.81    0.81    rp-+
+----------------------------------------------------------------------------
+
+  Clock: dec_clk
+
+                                                   --- Latency ---
+  Clock Pin                            Trans   Source  Network Total
+----------------------------------------------------------------------------
+  u_srm_residue/dec_ones_reg[0]/CK     0.33    0.00    0.32    0.32    rp-+
+----------------------------------------------------------------------------
+
+1

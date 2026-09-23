@@ -1,0 +1,55 @@
+﻿=== snapshot the baseline reports so I can prove they are untouched ===
+3
+=== overlay written ===
+   # Overlay: restate ONLY the three placeholder boundary hold assumptions.
+   # The base sign-off SDC is not modified in any way.
+   set_input_delay -clock clk -min 0.70 [get_ports {raw_bits_i[*] data_valid_i start_calib srm_start residue_consume_i}]
+   set_input_delay -clock clk -min 0.03 [get_ports calib_comp_out]
+   set_output_delay -clock clk -min -0.45 [get_ports {calib_done calib_done_pulse calib_mode_en calib_overrange calib_overrange_bits[*] raw_code_o[*] raw_code_valid_o w_wr_en w_wr_addr[*] w_wr_data[*] srm_busy srm_done srm_residue_valid srm_residue_o[*] srm_ones_count[*] srm_total_count[*] srm_count_shortfall srm_stalled}]
+
+=== does the STA script name its reports by TAG? ===
+40:if {![info exists TAG]}         { set TAG "" }
+45:if {![info exists PNR_TAG]} {
+46:    set PNR_TAG [expr {[info exists ::env(PNR_TAG)] ? $::env(PNR_TAG) : ""}]
+48:set SUF [expr {$TAG eq "" ? "" : "_$TAG"}]
+51:set PNR $PRJ/pnr${PNR_TAG}
+78:puts "  corner  : $CORNER   tag='$TAG'"
+
+############ re-measuring with the overlay ############
+## corner = typical
+   PT_RC=0
+       puts "INFO: sourcing constraint overlay $SDC_EXTRA"
+   INFO: sourcing constraint overlay /tmp/holdexp/ovl.sdc
+   STA_RESULT corner=typical tag=holdfix viol_setup=0 wns_setup=0.0000 tns_setup=0.0000 viol_hold=1 wns_hold=-0.0020 tns_hold=-0.0020
+   STA_WORST_HOLD corner=typical slack=-0.001957 start=calib_comp_out end=u_calib_ctrl/comp_out_r_reg/D
+   STA_DONE corner=typical tag=holdfix
+## corner = slow
+   PT_RC=0
+       puts "INFO: sourcing constraint overlay $SDC_EXTRA"
+   INFO: sourcing constraint overlay /tmp/holdexp/ovl.sdc
+   STA_RESULT corner=slow tag=holdfix viol_setup=0 wns_setup=0.0000 tns_setup=0.0000 viol_hold=1 wns_hold=-0.0020 tns_hold=-0.0020
+   STA_WORST_HOLD corner=slow slack=-0.001956 start=raw_bits_i[15] end=raw_code_o_reg[15]/D
+   STA_DONE corner=slow tag=holdfix
+## corner = fast
+   PT_RC=0
+       puts "INFO: sourcing constraint overlay $SDC_EXTRA"
+   INFO: sourcing constraint overlay /tmp/holdexp/ovl.sdc
+   STA_RESULT corner=fast tag=holdfix viol_setup=0 wns_setup=0.0000 tns_setup=0.0000 viol_hold=3 wns_hold=-0.0038 tns_hold=-0.0079
+   STA_WORST_HOLD corner=fast slack=-0.003847 start=u_calib_ctrl/calib_done_pulse_reg/CK end=calib_done_pulse
+   STA_DONE corner=fast tag=holdfix
+
+=== baseline reports untouched? ===
+3
+   (count of unchanged baseline hold reports; expect 5)
+
+=== any holdfix reports produced? ===
+-rw-rw-r--. 1 <user> <user>   796 Sep 18 21:10 /home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_holdfix_check.rpt
+-rw-rw-r--. 1 <user> <user>  1002 Sep 18 21:10 /home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_holdfix_clock_latency.rpt
+-rw-rw-r--. 1 <user> <user>  1005 Sep 18 21:10 /home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_holdfix_clock_skew.rpt
+-rw-rw-r--. 1 <user> <user>  1230 Sep 18 21:10 /home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_holdfix_coverage.rpt
+-rw-rw-r--. 1 <user> <user>   980 Sep 18 21:10 /home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_holdfix_derate.rpt
+-rw-rw-r--. 1 <user> <user>  8007 Sep 18 21:10 /home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_holdfix_drc.rpt
+-rw-rw-r--. 1 <user> <user>  6488 Sep 18 21:10 /home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_holdfix_hold.rpt
+-rw-rw-r--. 1 <user> <user>  3389 Sep 18 21:10 /home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_holdfix_qor.rpt
+-rw-rw-r--. 1 <user> <user>   340 Sep 18 21:10 /home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_holdfix_setup.rpt
+-rw-rw-r--. 1 <user> <user> 19302 Sep 18 21:10 /home/<user>/sar16_work/proj_paper_core/pnr/reports/sta/sta_pc_fast_holdfix_violators.rpt

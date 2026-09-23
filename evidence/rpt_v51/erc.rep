@@ -1,0 +1,142 @@
+
+
+==================================================================================
+=== CALIBRE::ERC-H SUMMARY REPORT
+===
+Execution Date/Time:          Fri Sep 18 20:28:47 2026
+Calibre Version:              v2025.1_16.10    Thu Jan 2 11:57:45 PST 2025
+Rule File Pathname:           mylvs.lvs
+Rule File Title:              
+Layout System:                GDSII
+Layout Path(s):               /home/<user>/sar16_work/proj_paper_core/calibre/sar_digi_paper_core_merged.gds
+Layout Primary Cell:          sar_digi_paper_core
+Current Directory:            /home/<user>/sar16_work/proj_paper_core/calibre/lvs
+User Name:                    <user>
+Maximum Results/ERC Check:    100
+Maximum ERC Result Vertices:  4096
+ERC Results Database:         erc.db (ASCII)
+ERC PATHCHK Results Database: svdb/sar_digi_paper_core.pathchk.erc
+ERC PATHCHK Report:           svdb/sar_digi_paper_core.pathchk.rep
+Layout Depth:                 ALL
+Text Depth:                   PRIMARY
+Summary Report File:          erc.rep (REPLACE)
+Geometry Flagging:            ACUTE = NO  SKEW = YES  ANGLED = NO  OFFGRID = YES
+                              NONSIMPLE POLYGON = NO  NONSIMPLE PATH = NO
+Excluded Cells:              
+CheckText Mapping:            COMMENT TEXT + RULE FILE INFORMATION
+Layers:                       MEMORY-BASED
+Keep Empty Checks:            YES
+----------------------------------------------------------------------------------
+--- RUNTIME WARNINGS
+---
+There is no data for layout net name SAVDD?.
+There is no data for layout net name ?VCC?.
+There is no data for layout net name SAVSS?.
+There is no data for layout net name ?GND?.
+There is no data for layout net name SAVSS?.
+There is no data for layout net name ?GND?.
+There is no data for layout net name SAVSS?.
+There is no data for layout net name ?GND?.
+There is no data for layout net name SAVSS?.
+There is no data for layout net name ?GND?.
+There is no data for layout net name SAVDD?.
+There is no data for layout net name ?VCC?.
+There is no data for layout net name SAVSS?.
+There is no data for layout net name ?GND?.
+There is no data for layout net name SAVDD?.
+There is no data for layout net name ?VCC?.
+There is no data for layout net name SAVDD?.
+There is no data for layout net name ?VCC?.
+----------------------------------------------------------------------------------
+--- ORIGINAL LAYER STATISTICS
+---
+LAYER OPCBM ..... TOTAL Original Geometry Count = 0     (0)
+LAYER OPCBP ..... TOTAL Original Geometry Count = 0     (0)
+LAYER OPCBA ..... TOTAL Original Geometry Count = 0     (0)
+LAYER SUBD ...... TOTAL Original Geometry Count = 0     (0)
+LAYER NW ........ TOTAL Original Geometry Count = 109   (3626)
+LAYER DNW ....... TOTAL Original Geometry Count = 0     (0)
+LAYER ESD5V ..... TOTAL Original Geometry Count = 0     (0)
+LAYER ESDIO2 .... TOTAL Original Geometry Count = 0     (0)
+LAYER FUSEMK1 ... TOTAL Original Geometry Count = 0     (0)
+LAYER EFUSE ..... TOTAL Original Geometry Count = 0     (0)
+LAYER GTFUSE .... TOTAL Original Geometry Count = 0     (0)
+LAYER FUSE ...... TOTAL Original Geometry Count = 0     (0)
+LAYER INDMY ..... TOTAL Original Geometry Count = 0     (0)
+LAYER INST ...... TOTAL Original Geometry Count = 0     (0)
+LAYER DSTR ...... TOTAL Original Geometry Count = 0     (0)
+LAYER DMPNP ..... TOTAL Original Geometry Count = 0     (0)
+LAYER VARMOS .... TOTAL Original Geometry Count = 0     (0)
+LAYER HRPDMY .... TOTAL Original Geometry Count = 0     (0)
+LAYER RESAA ..... TOTAL Original Geometry Count = 0     (0)
+LAYER RESP1 ..... TOTAL Original Geometry Count = 0     (0)
+LAYER SAB ....... TOTAL Original Geometry Count = 0     (0)
+LAYER ESD1 ...... TOTAL Original Geometry Count = 0     (0)
+LAYER HRP ....... TOTAL Original Geometry Count = 0     (0)
+LAYER SP ........ TOTAL Original Geometry Count = 218   (7252)
+LAYER GT ........ TOTAL Original Geometry Count = 1534  (72588)
+LAYER MVP ....... TOTAL Original Geometry Count = 0     (0)
+LAYER MVN ....... TOTAL Original Geometry Count = 0     (0)
+LAYER PSUB ...... TOTAL Original Geometry Count = 0     (0)
+LAYER AA ........ TOTAL Original Geometry Count = 517   (20929)
+LAYER SN ........ TOTAL Original Geometry Count = 218   (7252)
+LAYER RESCKT .... TOTAL Original Geometry Count = 0     (0)
+LAYER RESNW ..... TOTAL Original Geometry Count = 0     (0)
+LAYER RFDEV ..... TOTAL Original Geometry Count = 0     (0)
+LAYER RESP3T .... TOTAL Original Geometry Count = 0     (0)
+LAYER MIMDMY .... TOTAL Original Geometry Count = 0     (0)
+LAYER MIM ....... TOTAL Original Geometry Count = 0     (0)
+LAYER MOMDMY .... TOTAL Original Geometry Count = 0     (0)
+LAYER DG ........ TOTAL Original Geometry Count = 0     (0)
+LAYER CT ........ TOTAL Original Geometry Count = 2056  (86445)
+LAYER M1R ....... TOTAL Original Geometry Count = 0     (0)
+LAYER M1 ........ TOTAL Original Geometry Count = 23091 (52750)
+LAYER M2R ....... TOTAL Original Geometry Count = 0     (0)
+LAYER M2 ........ TOTAL Original Geometry Count = 44445 (44445)
+LAYER M3R ....... TOTAL Original Geometry Count = 0     (0)
+LAYER M3 ........ TOTAL Original Geometry Count = 26311 (26311)
+LAYER M4R ....... TOTAL Original Geometry Count = 0     (0)
+LAYER M4 ........ TOTAL Original Geometry Count = 6008  (6008)
+LAYER M5R ....... TOTAL Original Geometry Count = 0     (0)
+LAYER M5 ........ TOTAL Original Geometry Count = 212   (212)
+LAYER M6R ....... TOTAL Original Geometry Count = 0     (0)
+LAYER M6 ........ TOTAL Original Geometry Count = 9     (9)
+LAYER CAPBP ..... TOTAL Original Geometry Count = 0     (0)
+LAYER V5 ........ TOTAL Original Geometry Count = 6     (6)
+LAYER MIMCKT .... TOTAL Original Geometry Count = 0     (0)
+LAYER V4 ........ TOTAL Original Geometry Count = 134   (134)
+LAYER V3 ........ TOTAL Original Geometry Count = 3584  (3584)
+LAYER V2 ........ TOTAL Original Geometry Count = 12613 (12613)
+LAYER V1 ........ TOTAL Original Geometry Count = 15849 (15849)
+LAYER DNWTR ..... TOTAL Original Geometry Count = 0     (0)
+LAYER MOSCKT .... TOTAL Original Geometry Count = 0     (0)
+LAYER iNC ....... TOTAL Original Geometry Count = 0     (0)
+LAYER iPC ....... TOTAL Original Geometry Count = 0     (0)
+LAYER NFDMK ..... TOTAL Original Geometry Count = 0     (0)
+----------------------------------------------------------------------------------
+--- RULECHECK RESULTS STATISTICS
+---
+RULECHECK pathchk_bad ................... TOTAL Result Count = 0  (0)
+RULECHECK ptd_to_power .................. TOTAL Result Count = 0  (0)
+RULECHECK ntd_to_ground ................. TOTAL Result Count = 0  (0)
+RULECHECK mntopg ........................ TOTAL Result Count = 38 (38)
+RULECHECK mptopg ........................ TOTAL Result Count = 2  (2)
+RULECHECK ptap_outside_dnw_non_ground ... TOTAL Result Count = 0  (0)
+RULECHECK nwell_floating ................ NOT EXECUTED
+RULECHECK nwell_not_to_power ............ TOTAL Result Count = 0  (0)
+RULECHECK pwell_not_to_ground ........... TOTAL Result Count = 0  (0)
+----------------------------------------------------------------------------------
+--- ERC PATHCHK RESULTS STATISTICS
+---
+  PATHCHK POWER && ! GROUND NOFLOAT:
+  PATHCHK GROUND && ! POWER NOFLOAT:
+  PATHCHK ! LABELED NOFLOAT:
+----------------------------------------------------------------------------------
+--- SUMMARY
+---
+TOTAL CPU Time:                              3
+TOTAL REAL Time:                             6
+TOTAL Original Layer Geometries:             136914 (360013)
+TOTAL ERC RuleChecks Executed:               8
+TOTAL ERC RuleCheck Results Generated:       40 (40)
+TOTAL ERC PATHCHK Operations Executed:       3

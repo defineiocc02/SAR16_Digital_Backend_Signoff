@@ -1,0 +1,278 @@
+﻿=== long structures in the top cell ===
+
+-- BAR-H : 198
+   layer 61 (M1): 86
+      (0.000,-0.400)-(429.660,0.400)  429.660 x 0.800
+      (0.000,4.640)-(429.660,5.440)  429.660 x 0.800
+      (0.000,9.680)-(429.660,10.480)  429.660 x 0.800
+      (0.000,14.720)-(429.660,15.520)  429.660 x 0.800
+      (0.000,19.760)-(429.660,20.560)  429.660 x 0.800
+      (0.000,24.800)-(429.660,25.600)  429.660 x 0.800
+      (0.000,29.840)-(429.660,30.640)  429.660 x 0.800
+      (0.000,34.880)-(429.660,35.680)  429.660 x 0.800
+      (0.000,39.920)-(429.660,40.720)  429.660 x 0.800
+      (0.000,44.960)-(429.660,45.760)  429.660 x 0.800
+      (0.000,50.000)-(429.660,50.800)  429.660 x 0.800
+      (0.000,55.040)-(429.660,55.840)  429.660 x 0.800
+   layer 63 (M3): 77
+      (7.120,40.180)-(190.880,40.460)  183.760 x 0.280
+      (26.260,225.540)-(146.000,225.820)  119.740 x 0.280
+      (31.540,161.700)-(142.040,161.980)  110.500 x 0.280
+      (32.860,238.420)-(155.240,238.700)  122.380 x 0.280
+      (40.120,228.900)-(149.300,229.180)  109.180 x 0.280
+      (43.420,40.740)-(193.520,41.020)  150.100 x 0.280
+      (47.380,221.060)-(157.880,221.340)  110.500 x 0.280
+      (51.340,9.940)-(190.220,10.220)  138.880 x 0.280
+      (61.240,177.380)-(316.940,177.660)  255.700 x 0.280
+      (64.540,210.420)-(183.620,210.700)  119.080 x 0.280
+      (65.200,41.300)-(244.340,41.580)  179.140 x 0.280
+      (70.480,132.020)-(182.960,132.300)  112.480 x 0.280
+   layer 65 (M5): 35
+      (21.640,132.840)-(287.900,133.120)  266.260 x 0.280
+      (29.560,163.340)-(283.940,163.620)  254.380 x 0.280
+      (36.820,141.380)-(262.820,141.660)  226.000 x 0.280
+      (50.020,116.370)-(297.140,116.650)  247.120 x 0.280
+      (57.940,0.470)-(303.740,0.750)  245.800 x 0.280
+      (65.200,194.450)-(262.820,194.730)  197.620 x 0.280
+      (65.200,234.100)-(264.800,234.380)  199.600 x 0.280
+      (73.780,249.960)-(257.540,250.240)  183.760 x 0.280
+      (75.100,228.610)-(263.480,228.890)  188.380 x 0.280
+      (83.680,223.730)-(202.100,224.010)  118.420 x 0.280
+      (89.620,131.620)-(280.640,131.900)  191.020 x 0.280
+      (90.280,92.580)-(332.780,92.860)  242.500 x 0.280
+
+-- STRAP-V : 167
+   layer 62 (M2): 38
+      (12.200,0.000)-(12.800,428.400)  0.600 x 428.400
+      (14.380,0.435)-(14.660,131.180)  0.280 x 130.745
+      (24.700,0.000)-(25.300,428.400)  0.600 x 428.400
+      (37.200,0.000)-(37.800,428.400)  0.600 x 428.400
+      (49.700,0.000)-(50.300,428.400)  0.600 x 428.400
+      (62.200,0.000)-(62.800,428.400)  0.600 x 428.400
+      (74.700,0.000)-(75.300,428.400)  0.600 x 428.400
+      (87.200,0.000)-(87.800,428.400)  0.600 x 428.400
+      (99.700,0.000)-(100.300,428.400)  0.600 x 428.400
+      (112.200,0.000)-(112.800,428.400)  0.600 x 428.400
+      (124.700,0.000)-(125.300,428.400)  0.600 x 428.400
+      (137.200,0.000)-(137.800,428.400)  0.600 x 428.400
+   layer 64 (M4): 126
+      (10.420,158.340)-(10.700,384.860)  0.280 x 226.520
+      (21.640,0.980)-(21.920,133.120)  0.280 x 132.140
+      (36.160,0.980)-(36.440,138.610)  0.280 x 137.630
+      (44.740,123.080)-(45.020,288.540)  0.280 x 165.460
+      (73.780,123.620)-(74.060,227.500)  0.280 x 103.880
+      (77.080,88.340)-(77.360,212.940)  0.280 x 124.600
+      (88.960,135.940)-(89.240,267.260)  0.280 x 131.320
+      (99.520,106.260)-(99.800,209.020)  0.280 x 102.760
+      (101.500,230.020)-(101.780,332.780)  0.280 x 102.760
+      (102.160,213.970)-(102.440,355.180)  0.280 x 141.210
+      (102.820,104.580)-(103.100,211.820)  0.280 x 107.240
+      (104.800,84.420)-(105.080,227.670)  0.280 x 143.250
+   layer 66 (M6): 3
+      (400.680,38.210)-(401.120,335.110)  0.440 x 296.900
+      (403.530,36.990)-(403.970,380.250)  0.440 x 343.260
+      (422.530,1.000)-(422.970,138.080)  0.440 x 137.080
+
+
+=== label census: 234 labels ===
+
+--- labels whose anchor is inside a BAR/STRAP/LONG structure: 130 ---
+   clk                          lbl-layer M2  at ( 423.060,   0.357)  --> M1@BAR-H 429.66x0.80
+   dec_clk                      lbl-layer M2  at ( 415.800,   0.357)  --> M1@BAR-H 429.66x0.80
+   rst_n                        lbl-layer M2  at ( 408.540,   0.357)  --> M1@BAR-H 429.66x0.80
+   start_calib                  lbl-layer M2  at ( 401.280,   0.357)  --> M1@BAR-H 429.66x0.80
+   calib_comp_out               lbl-layer M2  at ( 394.020,   0.357)  --> M1@BAR-H 429.66x0.80
+   calib_done                   lbl-layer M2  at ( 386.100,   0.357)  --> M1@BAR-H 429.66x0.80
+   calib_done_pulse             lbl-layer M2  at ( 379.500,   0.357)  --> M1@BAR-H 429.66x0.80
+   calib_mode_en                lbl-layer M2  at ( 372.240,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_p_force[19]              lbl-layer M2  at ( 364.980,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_p_force[18]              lbl-layer M2  at ( 357.720,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_p_force[17]              lbl-layer M2  at ( 351.120,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_p_force[16]              lbl-layer M2  at ( 342.540,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_p_force[15]              lbl-layer M2  at ( 335.280,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_p_force[14]              lbl-layer M2  at ( 328.020,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_p_force[13]              lbl-layer M2  at ( 320.760,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_p_force[12]              lbl-layer M2  at ( 313.500,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_p_force[11]              lbl-layer M2  at ( 306.240,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_p_force[10]              lbl-layer M2  at ( 298.320,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_p_force[9]               lbl-layer M2  at ( 291.720,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_p_force[8]               lbl-layer M2  at ( 284.460,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_p_force[7]               lbl-layer M2  at ( 277.200,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_p_force[6]               lbl-layer M2  at ( 269.940,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_p_force[5]               lbl-layer M2  at ( 261.360,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_p_force[4]               lbl-layer M2  at ( 255.420,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_p_force[3]               lbl-layer M2  at ( 248.160,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_p_force[2]               lbl-layer M2  at ( 240.900,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_p_force[1]               lbl-layer M2  at ( 233.640,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_p_force[0]               lbl-layer M2  at ( 226.380,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_n_force[19]              lbl-layer M2  at ( 219.120,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_n_force[18]              lbl-layer M2  at ( 211.200,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_n_force[17]              lbl-layer M2  at ( 203.940,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_n_force[16]              lbl-layer M2  at ( 196.680,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_n_force[15]              lbl-layer M2  at ( 189.420,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_n_force[14]              lbl-layer M2  at ( 182.160,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_n_force[13]              lbl-layer M2  at ( 176.220,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_n_force[12]              lbl-layer M2  at ( 167.640,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_n_force[11]              lbl-layer M2  at ( 160.380,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_n_force[10]              lbl-layer M2  at ( 153.120,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_n_force[9]               lbl-layer M2  at ( 145.860,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_n_force[8]               lbl-layer M2  at ( 138.600,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_n_force[7]               lbl-layer M2  at ( 131.340,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_n_force[6]               lbl-layer M2  at ( 123.420,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_n_force[5]               lbl-layer M2  at ( 116.820,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_n_force[4]               lbl-layer M2  at ( 109.560,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_n_force[3]               lbl-layer M2  at ( 102.300,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_n_force[2]               lbl-layer M2  at (  95.040,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_n_force[1]               lbl-layer M2  at (  86.460,   0.357)  --> M1@BAR-H 429.66x0.80
+   dac_n_force[0]               lbl-layer M2  at (  80.520,   0.357)  --> M1@BAR-H 429.66x0.80
+   calib_overrange              lbl-layer M2  at (  72.600,   0.357)  --> M1@BAR-H 429.66x0.80
+   calib_overrange_bits[19]     lbl-layer M2  at (  65.340,   0.357)  --> M1@BAR-H 429.66x0.80
+   calib_overrange_bits[18]     lbl-layer M2  at (  58.080,   0.357)  --> M1@BAR-H 429.66x0.80
+   calib_overrange_bits[17]     lbl-layer M2  at (  51.480,   0.357)  --> M1@BAR-H 429.66x0.80
+   calib_overrange_bits[16]     lbl-layer M2  at (  43.560,   0.357)  --> M1@BAR-H 429.66x0.80
+   calib_overrange_bits[15]     lbl-layer M2  at (  36.300,   0.357)  --> M1@BAR-H 429.66x0.80
+   calib_overrange_bits[14]     lbl-layer M2  at (  29.040,   0.357)  --> M1@BAR-H 429.66x0.80
+   calib_overrange_bits[13]     lbl-layer M2  at (  21.780,   0.357)  --> M1@BAR-H 429.66x0.80
+   calib_overrange_bits[12]     lbl-layer M2  at (  14.520,   0.357)  --> M1@BAR-H 429.66x0.80
+   calib_overrange_bits[11]     lbl-layer M2  at (   7.260,   0.357)  --> M1@BAR-H 429.66x0.80
+   w_wr_addr[0]                 lbl-layer M2  at ( 423.060, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[29]                lbl-layer M2  at ( 415.800, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[28]                lbl-layer M2  at ( 408.540, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[27]                lbl-layer M2  at ( 401.280, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[26]                lbl-layer M2  at ( 394.020, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[25]                lbl-layer M2  at ( 386.100, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[24]                lbl-layer M2  at ( 379.500, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[23]                lbl-layer M2  at ( 372.240, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[22]                lbl-layer M2  at ( 364.980, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[21]                lbl-layer M2  at ( 357.720, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[20]                lbl-layer M2  at ( 351.120, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[19]                lbl-layer M2  at ( 342.540, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[18]                lbl-layer M2  at ( 335.280, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[17]                lbl-layer M2  at ( 328.020, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[16]                lbl-layer M2  at ( 320.760, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[15]                lbl-layer M2  at ( 314.160, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[14]                lbl-layer M2  at ( 306.240, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[13]                lbl-layer M2  at ( 298.980, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[12]                lbl-layer M2  at ( 291.720, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[11]                lbl-layer M2  at ( 284.460, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[10]                lbl-layer M2  at ( 277.200, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[9]                 lbl-layer M2  at ( 269.940, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[8]                 lbl-layer M2  at ( 261.360, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[7]                 lbl-layer M2  at ( 255.420, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[6]                 lbl-layer M2  at ( 248.160, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[5]                 lbl-layer M2  at ( 240.900, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[4]                 lbl-layer M2  at ( 233.640, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[3]                 lbl-layer M2  at ( 226.380, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[2]                 lbl-layer M2  at ( 219.120, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[1]                 lbl-layer M2  at ( 211.200, 428.043)  --> M1@BAR-H 429.66x0.80
+   w_wr_data[0]                 lbl-layer M2  at ( 203.940, 428.043)  --> M1@BAR-H 429.66x0.80
+   weight_rd_en                 lbl-layer M2  at ( 196.680, 428.043)  --> M1@BAR-H 429.66x0.80
+   weight_rd_addr[4]            lbl-layer M2  at ( 189.420, 428.043)  --> M1@BAR-H 429.66x0.80
+   weight_rd_addr[3]            lbl-layer M2  at ( 182.160, 428.043)  --> M1@BAR-H 429.66x0.80
+   weight_rd_addr[2]            lbl-layer M2  at ( 176.220, 428.043)  --> M1@BAR-H 429.66x0.80
+   weight_rd_addr[1]            lbl-layer M2  at ( 167.640, 428.043)  --> M1@BAR-H 429.66x0.80
+   weight_rd_addr[0]            lbl-layer M2  at ( 160.380, 428.043)  --> M1@BAR-H 429.66x0.80
+   srm_start                    lbl-layer M2  at ( 153.120, 428.043)  --> M1@BAR-H 429.66x0.80
+   srm_decision_valid           lbl-layer M2  at ( 145.860, 428.043)  --> M1@BAR-H 429.66x0.80
+   srm_decision_bit             lbl-layer M2  at ( 139.260, 428.043)  --> M1@BAR-H 429.66x0.80
+   residue_consume_i            lbl-layer M2  at ( 131.340, 428.043)  --> M1@BAR-H 429.66x0.80
+   srm_busy                     lbl-layer M2  at ( 123.420, 428.043)  --> M1@BAR-H 429.66x0.80
+   srm_done                     lbl-layer M2  at ( 116.820, 428.043)  --> M1@BAR-H 429.66x0.80
+   srm_residue_valid            lbl-layer M2  at ( 109.560, 428.043)  --> M1@BAR-H 429.66x0.80
+   srm_ones_count[4]            lbl-layer M2  at ( 102.300, 428.043)  --> M1@BAR-H 429.66x0.80
+   srm_ones_count[3]            lbl-layer M2  at (  95.040, 428.043)  --> M1@BAR-H 429.66x0.80
+   srm_ones_count[2]            lbl-layer M2  at (  89.100, 428.043)  --> M1@BAR-H 429.66x0.80
+   srm_ones_count[1]            lbl-layer M2  at (  80.520, 428.043)  --> M1@BAR-H 429.66x0.80
+   srm_ones_count[0]            lbl-layer M2  at (  72.600, 428.043)  --> M1@BAR-H 429.66x0.80
+   srm_total_count[4]           lbl-layer M2  at (  65.340, 428.043)  --> M1@BAR-H 429.66x0.80
+   srm_total_count[3]           lbl-layer M2  at (  58.080, 428.043)  --> M1@BAR-H 429.66x0.80
+   srm_total_count[2]           lbl-layer M2  at (  51.480, 428.043)  --> M1@BAR-H 429.66x0.80
+   srm_total_count[1]           lbl-layer M2  at (  43.560, 428.043)  --> M1@BAR-H 429.66x0.80
+   srm_total_count[0]           lbl-layer M2  at (  36.300, 428.043)  --> M1@BAR-H 429.66x0.80
+   srm_count_shortfall          lbl-layer M2  at (  29.040, 428.043)  --> M1@BAR-H 429.66x0.80
+   srm_stalled                  lbl-layer M2  at (  21.780, 428.043)  --> M1@BAR-H 429.66x0.80
+   srm_residue_o[8]             lbl-layer M2  at (  14.520, 428.043)  --> M1@BAR-H 429.66x0.80
+   srm_residue_o[7]             lbl-layer M2  at (   7.260, 428.043)  --> M1@BAR-H 429.66x0.80
+   VDD                          lbl-layer M2  at ( 425.000, 428.100)  --> M1@BAR-H 429.66x0.80 | M2@STRAP-V 0.60x428.40
+   VSS                          lbl-layer M2  at ( 412.500, 428.100)  --> M1@BAR-H 429.66x0.80 | M2@STRAP-V 0.60x428.40
+   calib_overrange_bits[3]      lbl-layer M3  at ( 429.303, 367.920)  --> M1@BAR-H 429.66x0.80
+   raw_bits_i[15]               lbl-layer M3  at ( 429.303, 302.400)  --> M1@BAR-H 429.66x0.80
+   raw_bits_i[6]                lbl-layer M3  at ( 429.303, 236.880)  --> M1@BAR-H 429.66x0.80
+   raw_code_o[17]               lbl-layer M3  at ( 429.303, 171.360)  --> M1@BAR-H 429.66x0.80
+   raw_code_o[8]                lbl-layer M3  at ( 429.303, 105.840)  --> M1@BAR-H 429.66x0.80
+   raw_code_valid_o             lbl-layer M3  at ( 429.303,  40.320)  --> M1@BAR-H 429.66x0.80
+   weight_rd_data[29]           lbl-layer M3  at (   0.357, 367.920)  --> M1@BAR-H 429.66x0.80
+   weight_rd_data[20]           lbl-layer M3  at (   0.357, 302.400)  --> M1@BAR-H 429.66x0.80
+   weight_rd_data[11]           lbl-layer M3  at (   0.357, 236.880)  --> M1@BAR-H 429.66x0.80
+   weight_rd_data[2]            lbl-layer M3  at (   0.357, 171.360)  --> M1@BAR-H 429.66x0.80
+   srm_residue_o[24]            lbl-layer M3  at (   0.357,  40.320)  --> M1@BAR-H 429.66x0.80
+   srm_residue_o[20]            lbl-layer M3  at (   0.357, 105.840)  --> M1@BAR-H 429.66x0.80
+
+--- how many labels have NO geometry under them at all ---
+   0 : []
+
+--- label anchor distribution (edge vs interior) ---
+   bottom (y<1)     58
+   left   (x<1)     58
+   right  (x>429)   58
+   top    (y>428)   60
+
+--- bottom-edge labels in detail (y<1) ---
+   clk                          at ( 423.060, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dec_clk                      at ( 415.800, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   rst_n                        at ( 408.540, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   start_calib                  at ( 401.280, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   calib_comp_out               at ( 394.020, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   calib_done                   at ( 386.100, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   calib_done_pulse             at ( 379.500, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   calib_mode_en                at ( 372.240, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_p_force[19]              at ( 364.980, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_p_force[18]              at ( 357.720, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_p_force[17]              at ( 351.120, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_p_force[16]              at ( 342.540, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_p_force[15]              at ( 335.280, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_p_force[14]              at ( 328.020, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_p_force[13]              at ( 320.760, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_p_force[12]              at ( 313.500, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_p_force[11]              at ( 306.240, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_p_force[10]              at ( 298.320, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_p_force[9]               at ( 291.720, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_p_force[8]               at ( 284.460, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_p_force[7]               at ( 277.200, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_p_force[6]               at ( 269.940, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_p_force[5]               at ( 261.360, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_p_force[4]               at ( 255.420, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_p_force[3]               at ( 248.160, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_p_force[2]               at ( 240.900, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_p_force[1]               at ( 233.640, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_p_force[0]               at ( 226.380, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_n_force[19]              at ( 219.120, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_n_force[18]              at ( 211.200, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_n_force[17]              at ( 203.940, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_n_force[16]              at ( 196.680, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_n_force[15]              at ( 189.420, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_n_force[14]              at ( 182.160, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_n_force[13]              at ( 176.220, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_n_force[12]              at ( 167.640, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_n_force[11]              at ( 160.380, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_n_force[10]              at ( 153.120, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_n_force[9]               at ( 145.860, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_n_force[8]               at ( 138.600, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_n_force[7]               at ( 131.340, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_n_force[6]               at ( 123.420, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_n_force[5]               at ( 116.820, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_n_force[4]               at ( 109.560, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_n_force[3]               at ( 102.300, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_n_force[2]               at (  95.040, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_n_force[1]               at (  86.460, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   dac_n_force[0]               at (  80.520, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   calib_overrange              at (  72.600, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   calib_overrange_bits[19]     at (  65.340, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   calib_overrange_bits[18]     at (  58.080, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub'), ('M4', 'stub')]
+   calib_overrange_bits[17]     at (  51.480, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   calib_overrange_bits[16]     at (  43.560, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   calib_overrange_bits[15]     at (  36.300, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   calib_overrange_bits[14]     at (  29.040, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   calib_overrange_bits[13]     at (  21.780, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   calib_overrange_bits[12]     at (  14.520, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]
+   calib_overrange_bits[11]     at (   7.260, 0.357) layer M2  hits=[('M1', 'BAR-H'), ('M2', 'stub')]

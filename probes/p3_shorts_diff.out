@@ -1,0 +1,63 @@
+﻿########## A. short-circuit warnings: this round vs earlier round ##########
+lvs.rep.ext : 3 short-circuit warning(s), 6296 B, mtime 2026-09-18 18:14:06
+lvsA.rep.ext : 2 short-circuit warning(s), 77932 B, mtime 2026-09-18 07:25:59
+
+########## B. earlier round (lvsA.rep.ext) 鈥?the short groups ##########
+WARNING:  Short circuit - Different names on one net:
+          Net Id:  445
+          (1)  name  "srm_residue_o[10]"  at location  (0.3575,57.12)  on layer  63 "M3"
+          (2)  name  "srm_residue_o[11]"  at location  (0.3575,64.96)  on layer  63 "M3"
+          (3)  name  "srm_residue_o[12]"  at location  (0.3575,72.8)  on layer  63 "M3"
+          (4)  name  "srm_residue_o[13]"  at location  (0.3575,80.08)  on layer  63 "M3"
+          (5)  name  "srm_residue_o[14]"  at location  (0.3575,3.92)  on layer  63 "M3"
+--
+WARNING:  Short circuit - Different names on one net:
+          Net Id:  619
+          (1)  name  "weight_rd_data[0]"  at location  (0.3575,378)  on layer  63 "M3"
+          (2)  name  "weight_rd_data[10]"  at location  (15.18,448.2025)  on layer  62 "M2"
+          (3)  name  "weight_rd_data[11]"  at location  (23.1,448.2025)  on layer  62 "M2"
+          (4)  name  "weight_rd_data[12]"  at location  (30.36,448.2025)  on layer  62 "M2"
+          (5)  name  "weight_rd_data[13]"  at location  (38.28,448.2025)  on layer  62 "M2"
+
+########## C. this round (lvs.rep.ext) 鈥?group headers only ##########
+          Net Id:  103
+          (1)  name  "rst_n"  at location  (408.54,0.3575)  on layer  62 "M2"
+          (2)  name  "VDD"  at location  (425,428.1)  on layer  62 "M2"
+          Net Id:  448
+          (1)  name  "srm_residue_o[10]"  at location  (0.3575,54.88)  on layer  63 "M3"
+          (2)  name  "srm_residue_o[11]"  at location  (0.3575,62.16)  on layer  63 "M3"
+          Net Id:  463
+          (1)  name  "VSS"  at location  (412.5,428.1)  on layer  62 "M2"
+          (2)  name  "weight_rd_data[0]"  at location  (0.3575,156.8)  on layer  63 "M3"
+
+########## D. how many nets carry >1 label, this round ##########
+3
+
+########## E. does the extracted top cell contain rst_n on the VDD net? ##########
+--- .SUBCKT sar_digi_paper_core in the extracted netlist? ---
+5347:.SUBCKT sar_digi_paper_core dec_clk calib_overrange_bits[3] clk srm_decision_bit w_wr_data[22] calib_overrange_bits[10] w_wr_data[20] calib_overrange_bits[9] calib_overrange_bits[5] calib_overrange_bits[8] calib_overrange_bits[7] calib_overrange_bits[4] calib_overrange_bits[6] VDD w_wr_data[18] calib_overrange_bits[2] calib_overrange_bits[1] raw_bits_i[16] raw_bits_i[17] raw_bits_i[19]
+--- all .SUBCKT in extracted netlist (count) ---
+153
+--- any line mentioning rst_n in the extracted netlist ---
+
+########## F. the extracted top subckt: first 12 lines after the header ##########
+.SUBCKT sar_digi_paper_core dec_clk calib_overrange_bits[3] clk srm_decision_bit w_wr_data[22] calib_overrange_bits[10] w_wr_data[20] calib_overrange_bits[9] calib_overrange_bits[5] calib_overrange_bits[8] calib_overrange_bits[7] calib_overrange_bits[4] calib_overrange_bits[6] VDD w_wr_data[18] calib_overrange_bits[2] calib_overrange_bits[1] raw_bits_i[16] raw_bits_i[17] raw_bits_i[19]
++ raw_bits_i[18] data_valid_i w_wr_addr[4] w_wr_addr[1] calib_overrange_bits[0] raw_bits_i[14] raw_bits_i[12] raw_bits_i[13] raw_bits_i[15] w_wr_addr[2] w_wr_addr[3] raw_bits_i[3] srm_residue_o[10] calib_overrange_bits[12] VSS calib_overrange_bits[15] calib_overrange_bits[11] calib_overrange_bits[18] raw_bits_i[0] raw_bits_i[1]
++ calib_overrange_bits[13] calib_overrange_bits[14] calib_overrange_bits[17] calib_overrange_bits[16] calib_overrange raw_code_o[6] calib_overrange_bits[19] srm_residue_o[0] srm_residue_o[1] srm_residue_o[2] srm_residue_o[3] srm_residue_o[4] srm_residue_o[5] srm_residue_o[6] raw_bits_i[9] raw_bits_i[10] raw_bits_i[11] raw_bits_i[2] raw_bits_i[4] raw_bits_i[5]
++ raw_bits_i[6] raw_bits_i[7] raw_bits_i[8] raw_code_o[14] raw_code_o[15] raw_code_o[16] raw_code_o[17] raw_code_o[18] raw_code_o[19] raw_code_o[7] raw_code_o[8] raw_code_o[9] raw_code_o[10] raw_code_o[11] raw_code_o[12] raw_code_o[13] raw_code_o[0] raw_code_o[1] raw_code_o[2] raw_code_o[3]
++ raw_code_o[4] raw_code_o[5] w_wr_en raw_code_valid_o srm_residue_o[7] srm_residue_o[8] srm_stalled srm_count_shortfall srm_total_count[0] srm_total_count[1] srm_total_count[2] srm_total_count[3] srm_total_count[4] srm_ones_count[0] srm_ones_count[1] srm_ones_count[2] srm_ones_count[3] srm_ones_count[4] srm_residue_valid srm_done
++ srm_busy residue_consume_i srm_decision_valid srm_start weight_rd_addr[0] weight_rd_addr[1] weight_rd_addr[2] weight_rd_addr[3] weight_rd_addr[4] weight_rd_en w_wr_data[0] w_wr_data[1] w_wr_data[2] w_wr_data[3] w_wr_data[4] w_wr_data[5] w_wr_data[6] w_wr_data[7] w_wr_data[8] w_wr_data[9]
++ w_wr_data[10] w_wr_data[11] w_wr_data[12] w_wr_data[13] w_wr_data[14] w_wr_data[15] w_wr_data[16] w_wr_data[17] w_wr_data[24] w_wr_data[19] w_wr_data[21] w_wr_data[23] w_wr_data[25] w_wr_data[26] w_wr_data[27] w_wr_data[28] w_wr_data[29] w_wr_addr[0] start_calib calib_mode_en
++ calib_done_pulse calib_done dac_n_force[0] dac_n_force[1] dac_n_force[2] dac_n_force[3] dac_n_force[4] dac_n_force[5] dac_n_force[6] dac_n_force[7] dac_n_force[8] dac_n_force[9] dac_n_force[10] dac_n_force[11] dac_n_force[12] dac_n_force[13] dac_n_force[14] dac_n_force[15] dac_n_force[16] dac_n_force[17]
++ dac_n_force[18] dac_n_force[19] dac_p_force[0] dac_p_force[1] dac_p_force[2] dac_p_force[3] dac_p_force[4] dac_p_force[5] dac_p_force[6] dac_p_force[7] dac_p_force[8] dac_p_force[9] dac_p_force[10] dac_p_force[11] dac_p_force[12] dac_p_force[13] dac_p_force[14] dac_p_force[15] dac_p_force[16] dac_p_force[17]
++ dac_p_force[18] dac_p_force[19] calib_comp_out
+** N=1270 EP=183 IP=3044 FDC=51025
+X0 dec_clk 35 8 9 10 11 726 12 13 14 15 16 17 18 19 20 21 226 22 VSS
++ 26 23 24 25 775 29 27 28 31 32 33 34 36 37 38 39 40 799 41 w_wr_data[15]
+ssh : bash: line 41: $'\r': command not found
+At line:1 char:226
++ ... r",""; $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 41: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

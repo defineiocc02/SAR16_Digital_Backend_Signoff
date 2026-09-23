@@ -1,0 +1,76 @@
+﻿########## A. deck: layer map + TEXT handling ##########
+412:LVS GLOBALS ARE PORTS                 NO
+422:LVS REPORT "/home/<user>/sar16_work/proj_paper_core/calibre/lvs/lvs.rep"
+423:LVS REPORT OPTION A B C D S
+431:ERC SUMMARY REPORT erc.rep
+435:PEX REPORT LUMPED none
+436:PEX REPORT DISTRIBUTED none
+450:LVS IGNORE PORTS               NO
+451:LVS CHECK PORT NAMES           YES
+480:LAYER MAP       19 DATATYPE 2 1920
+512:LAYER MAP       63 TEXTTYPE 63 363
+518:LAYER MAP       96 DATATYPE 0 960
+520:LAYER MAP       96 DATATYPE 1 961
+523:LAYER MAP       131 DATATYPE 1 300 // Dummy for psub
+538:LAYER MAP       131 DATATYPE 5 1315
+546:LAYER MAP       131 DATATYPE 6 1316
+549:LAYER MAP       131 DATATYPE 2 1312
+554:LAYER MAP       211 DATATYPE 1 2111
+556:LAYER MAP       183 DATATYPE 2 1832 
+558:LAYER MAP       131 DATATYPE 3 1313
+564:LAYER MAP       133 DATATYPE 3 1333
+566:LAYER MAP       133 DATATYPE 1 1331
+570:LAYER MAP       81 DATATYPE 152 8152
+572:LAYER MAP       81 DATATYPE 1 811
+574:LAYER MAP       81 DATATYPE 2 812
+578:TEXT LAYER 146 ATTACH 146 metal6
+579:PORT LAYER TEXT 146
+580:TEXT LAYER 66 ATTACH 66 metal6
+581:PORT LAYER TEXT 66
+582:TEXT LAYER 145 ATTACH 145 metal5
+583:PORT LAYER TEXT 145
+584:TEXT LAYER 65  ATTACH 65  metal5
+585:PORT LAYER TEXT 65
+586:TEXT LAYER 144 ATTACH 144 metal4
+587:PORT LAYER TEXT 144
+588:TEXT LAYER 64  ATTACH 64  metal4
+589:PORT LAYER TEXT 64
+590:TEXT LAYER 143 ATTACH 143 metal3
+591:PORT LAYER TEXT 143
+592:TEXT LAYER 63  ATTACH 63  metal3
+593:PORT LAYER TEXT 63
+
+########## B. what layer is the pin text drawn on in the delivered GDS ##########
+   (extraction report said layer 62 'M2' and 63 'M3' for the pin labels)
+512:LAYER MAP       63 TEXTTYPE 63 363
+580:TEXT LAYER 66 ATTACH 66 metal6
+584:TEXT LAYER 65  ATTACH 65  metal5
+588:TEXT LAYER 64  ATTACH 64  metal4
+592:TEXT LAYER 63  ATTACH 63  metal3
+596:TEXT LAYER 62  ATTACH 62  metal2
+600:TEXT LAYER 61 ATTACH 61 metal1
+607:TEXT LAYER 65  ATTACH 65  metal5
+611:TEXT LAYER 64  ATTACH 64  metal4
+615:TEXT LAYER 63  ATTACH 63  metal3
+619:TEXT LAYER 62  ATTACH 62  metal2
+623:TEXT LAYER 61 ATTACH 61 metal1
+630:TEXT LAYER 64  ATTACH 64  metal4
+634:TEXT LAYER 63  ATTACH 63  metal3
+638:TEXT LAYER 62  ATTACH 62  metal2
+642:TEXT LAYER 61 ATTACH 61 metal1
+649:TEXT LAYER 63  ATTACH 63  metal3
+653:TEXT LAYER 62  ATTACH 62  metal2
+657:TEXT LAYER 61 ATTACH 61 metal1
+
+########## C. place_pins usage in THIS release ##########
+No manual entry for place_pins
+
+########## D. pin-related commands that exist ##########
+--- fc_shell command existence ---
+ssh : bash: line 32: $'\r': command not found
+At line:1 char:227
++ ... r",""; $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 32: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

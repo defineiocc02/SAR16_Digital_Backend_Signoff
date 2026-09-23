@@ -1,0 +1,55 @@
+﻿flagged layout-only transistors: 35
+
+inst         dev   type      cell where the GEOMETRY is layers
+X0/X199      M0    MN(N18)   INVXL (no deeper)      -
+X0/X355      M4    MP(P18)   (not in any placement) -
+X0/X434      M10   MP(P18)   (not in any placement) -
+X0/X436      M10   MP(P18)   (not in any placement) -
+X0/X439      M8    MP(P18)   (not in any placement) -
+X1/X335      M4    MP(P18)   (not in any placement) -
+X1/X378      M1    MN(N18)   AOI21XL (no deeper)    -
+X1/X378      M3    MN(N18)   XNOR2XL (no deeper)    -
+X1/X378      M7    MP(P18)   AOI21XL (no deeper)    -
+X1/X378      M8    MP(P18)   XNOR2XL (no deeper)    -
+X2           M4    MN(N18)   AND4XL (no deeper)     -
+X2           M62   MP(P18)   OAI211X1 (no deeper)   -
+X2/X159      M2    MP(P18)   NAND2XL (no deeper)    -
+X2/X370      M8    MN(N18)   NAND2BXL (no deeper)   -
+X2/X370      M9    MN(N18)   NAND2BXL (no deeper)   -
+X2/X370      M11   MN(N18)   NOR2XL (no deeper)     -
+X2/X370      M12   MN(N18)   NOR2XL (no deeper)     -
+X2/X370      M23   MP(P18)   NAND2BXL (no deeper)   -
+X2/X370      M24   MP(P18)   $$via1 (no deeper)     -
+X2/X370      M26   MP(P18)   NOR2XL (no deeper)     -
+X2/X370      M27   MP(P18)   NOR2XL (no deeper)     -
+X2/X441      M10   MP(P18)   (not in any placement) -
+X3/X247      M4    MP(P18)   DFFSXL (no deeper)     -
+X4/X280      M4    MP(P18)   (not in any placement) -
+X4/X436      M14   MN(N18)   DFFSX1 (no deeper)     -
+X5/X149      M4    MP(P18)   DFFSX1 (no deeper)     -
+X5/X354      M0    MN(N18)   (not in any placement) -
+X5/X354      M1    MN(N18)   (not in any placement) -
+X6/X173      M5    MP(P18)   $$via1 (no deeper)     -
+X6/X175      M5    MP(P18)   (not in any placement) -
+X6/X424      M2    MN(N18)   (not in any placement) -
+X7/X238      M2    MN(N18)   (not in any placement) -
+X7/X238      M3    MN(N18)   (not in any placement) -
+X7/X238      M7    MP(P18)   (not in any placement) -
+X7/X238      M8    MP(P18)   (not in any placement) -
+
+=== real geometry cell for each flagged device ===
+   (no placement)                     15
+   NOR2XL                             4
+   NAND2BXL                           3
+   AOI21XL                            2
+   XNOR2XL                            2
+   $$via1                             2
+   DFFSX1                             2
+   INVXL                              1
+   AND4XL                             1
+   OAI211X1                           1
+   NAND2XL                            1
+   DFFSXL                             1
+
+=== flagged points sitting on BOTH diffusion(AA) and poly(GT) ===
+   0 of 35

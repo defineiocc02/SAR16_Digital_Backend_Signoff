@@ -1,0 +1,34 @@
+﻿=== pulled ===
+total 11044
+drwxrwxr-x.  2 <user> <user>    4096 Sep 18 20:30 .
+drwxrwxrwt. 70 root root   28672 Sep 18 20:30 ..
+-rw-rw-r--.  1 <user> <user>   63403 Sep 18 20:19 dc.log
+-rw-rw-r--.  1 <user> <user>   32910 Sep 18 20:27 drc_CAL.SUM
+-rw-rw-r--.  1 <user> <user>    7548 Sep 18 20:28 erc.rep
+-rw-rw-r--.  1 <user> <user>  923410 Sep 18 20:24 fc_pnr.log
+-rw-rw-r--.  1 <user> <user> 1006433 Sep 18 20:28 lvs.rep
+-rw-rw-r--.  1 <user> <user>     934 Sep 18 20:28 lvs.rep.ext
+-rw-rw-r--.  1 <user> <user>  132878 Sep 18 20:28 mylvs.lvs
+-rw-rw-r--.  1 <user> <user>   14507 Sep 18 20:27 repro_v51.log
+-rw-rw-r--.  1 <user> <user>    2380 Sep 18 20:27 RESULT_BASELINE.env
+-rw-rw-r--.  1 <user> <user>    2380 Sep 18 20:29 RESULT_CURRENT.env
+-rw-rw-r--.  1 <user> <user>  290874 Sep 18 20:28 sar16.cdl
+-rw-rw-r--.  1 <user> <user> 3464522 Sep 18 20:24 sar_digi_paper_core.gds
+-rw-rw-r--.  1 <user> <user>  179611 Sep 18 20:24 sar_digi_paper_core.lef
+-rw-rw-r--.  1 <user> <user> 4243084 Sep 18 20:26 sar_digi_paper_core_merged.gds
+-rw-rw-r--.  1 <user> <user>   83282 Sep 18 20:24 sar_digi_paper_core_pnr.sdc
+-rw-rw-r--.  1 <user> <user>  378258 Sep 18 20:24 sar_digi_paper_core_pnr.v
+-rw-rw-r--.  1 <user> <user>  397678 Sep 18 20:28 sar_digi_paper_core.sp
+
+=== report_pack tree ===
+ssh : find: ‘/tmp/rpt_v51/report_pack’: No such file or directory
+At line:1 char:244
++ ... | Out-Null; ssh -o BatchMode=yes <user>@<vm-ip> "sed -i 's/\r$// ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (find: ‘/tmp/rpt...le or directory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+=== sizes ===
+11M	/tmp/rpt_v51
+du: cannot access '/tmp/rpt_v51/report_pack': No such file or directory

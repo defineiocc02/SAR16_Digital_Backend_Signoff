@@ -1,0 +1,17 @@
+﻿launched pid=689528
+=== launch tail ===
+### STAGE 1 : SYNTHESIS (DC, both arms)      [20:19:00  elapsed 0s]
+############################################################################
+############################################################
+### DC paper_core arm tag='' libmode=typical   Fri Sep 18 20:19:00 CST 2026
+############################################################
+
+=== did the new constraint line get into the running tcl? ===
+ssh : grep: scripts/fc_pnr_paper_core.tcl
+At line:16 char:6
++ $s | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | Out-Fi ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (grep: scripts/fc_pnr_paper_core.tcl:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+: No such file or directory

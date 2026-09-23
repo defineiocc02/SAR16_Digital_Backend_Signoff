@@ -1,0 +1,219 @@
+﻿
+########## backend/analysis (whole) ##########
+path: D:\<vault>\Document\Obsidian\�ճ�\10_��Ŀ��\2025_16bit5Msar\02_������֤\sar16_digi_v4_paper_aligned\backend\analysis
+  files=69  bytes=26M
+          11M  09-17 21:18  raw\remote\lib_slow.lib
+          11M  09-17 21:18  raw\remote\lib_typical.lib
+           1M  09-17 21:28  raw\remote\v4ss_mapped_netlist.v
+           1M  09-17 21:17  raw\remote\v4_mapped_netlist.v
+           1M  09-17 21:28  raw\remote\v3_mapped_netlist.v
+         137K  09-17 21:28  raw\remote\v4_reports_timing_setup.rpt
+          66K  09-17 21:33  raw\remote\v4_logs_dc.log
+          45K  09-17 21:39  ����˱�_20260917.md
+          29K  09-17 21:17  raw\remote\v4_reports_resources.rpt
+          29K  09-17 21:33  raw\remote\v4_rtl_sar_reconstruction.sv
+          29K  09-17 21:28  raw\remote\v3_reports_resources.rpt
+          28K  09-17 21:33  raw\remote\v4_rtl_srm_residue_estimator.sv
+          26K  09-17 21:33  raw\remote\v4_rtl_sar_calib_ctrl_serial.sv
+          19K  09-17 21:28  raw\derived\per_module_celltype.txt
+          14K  09-17 21:19  ����Ŀ��ֵ�嵥_20260917.md
+          13K  09-17 21:30  raw\derived\compare.md
+          12K  09-17 21:33  raw\remote\v4_constraints_sdc
+          10K  09-17 21:28  raw\parse_area.py
+          10K  09-17 21:17  raw\remote\v4_scripts_dc_synth.tcl
+           9K  09-17 21:33  raw\remote\v3_rtl_srm_residue_estimator.sv
+           9K  09-17 21:29  raw\delta.py
+           9K  09-17 21:27  raw\derived\probe_miss.txt
+           7K  09-17 21:31  raw\cone.py
+           7K  09-17 21:37  raw\README.md
+           6K  09-17 21:32  raw\derived\array_area.md
+           6K  09-17 21:35  raw\derived\module_category.md
+           6K  09-17 21:34  raw\cone_break.py
+           5K  09-17 21:35  raw\modcat.py
+           5K  09-17 21:30  raw\attrib.py
+           5K  09-17 21:28  raw\derived\celltype_top.txt
+           4K  09-17 21:28  raw\derived\reg_arrays.txt
+           4K  09-17 21:34  raw\derived\cone_breakdown.md
+           4K  09-17 21:32  raw\derived\v3_detail.md
+           4K  09-17 21:25  raw\diagnose.py
+           4K  09-17 21:32  raw\v3_detail.py
+           4K  09-17 21:32  raw\array_area.py
+           3K  09-17 21:28  raw\remote\v4_reports_qor.rpt
+           3K  09-17 21:24  raw\derived\reg_ledger.txt
+           2K  09-17 21:28  raw\remote\v4_reports_clock_gating.rpt
+           2K  09-17 21:28  raw\remote\v3_reports_area.rpt
+    �� 29 more
+
+########## backend/scripts/probes ##########
+path: D:\<vault>\Document\Obsidian\�ճ�\10_��Ŀ��\2025_16bit5Msar\02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\probes
+  files=59  bytes=83K
+           3K  09-18 07:19  probe_merge_fix.sh
+           3K  09-18 07:20  probe_filemerge.sh
+           3K  09-18 07:15  recon_all.sh
+           3K  09-18 08:07  probe_wns.sh
+           3K  09-18 08:15  probe_wns2.sh
+           2K  09-17 20:37  probe_merge2.sh
+           2K  09-18 07:17  recon_pdk.sh
+           2K  09-18 07:27  probe_pg_api.sh
+           2K  09-18 07:20  probe_merge_api.sh
+           2K  09-17 23:46  probe_gds_masters.sh
+           2K  09-18 07:25  probe_lvs_ports.sh
+           2K  09-18 07:21  probe_filemerge2.sh
+           2K  09-18 08:25  probe_lvs_ports3.sh
+           2K  09-18 08:58  go_jobs.sh
+           2K  09-17 20:04  probe_dc.sh
+    �� 44 more
+
+########## backend/scripts/remote_v42 ##########
+path: D:\<vault>\Document\Obsidian\�ճ�\10_��Ŀ��\2025_16bit5Msar\02_������֤\sar16_digi_v4_paper_aligned\backend\scripts\remote_v42
+  files=18  bytes=134K
+          24K  09-18 09:39  fc_pnr_paper_core.tcl
+          18K  09-18 09:40  patch_pnr_and_lvs.py
+          11K  09-18 09:39  reproduce_all.sh
+          11K  09-18 09:39  run_lvs_paper_core.sh
+           9K  09-18 09:40  run_calibre_drc_paper_core.sh
+           9K  09-18 09:40  fix_repro_authority.py
+           8K  09-18 09:40  collect_result.sh
+           6K  09-18 09:40  run_sta_paper_core.sh
+           5K  09-18 09:40  diag_lvs_objs.sh
+           5K  09-18 09:39  pg_probe2.tcl
+           5K  09-18 09:40  diag_lvs_ports.sh
+           4K  09-18 09:39  pg_build_probe.tcl
+           4K  09-18 09:40  pg_syntax_probe.tcl
+           4K  09-18 09:40  diag_lvs_root.sh
+           3K  09-18 09:40  run_dc_paper_core.sh
+    �� 3 more
+
+########## _audit ##########
+path: D:\<vault>\Document\Obsidian\�ճ�\10_��Ŀ��\2025_16bit5Msar\_audit
+  files=513  bytes=76M
+           8M  09-18 13:56  TASK-000R_20260918\round3_e2e\sar_digi_paper_core_merged.gds
+           8M  09-18 09:58  TASK-000R_20260918\remote\calibre\sar_digi_paper_core_merged.gds
+           7M  09-18 18:14  TASK-000R_20260918\final_delivery\sar_digi_paper_core_pnr.spef.smic18_par_125.spef
+           7M  09-18 09:56  TASK-000R_20260918\remote\pnr\out\sar_digi_paper_core_pnr.spef.smic18_par_125.spef
+           4M  09-17 23:42  TASK-000R_20260918\remote\calibre\sar_digi_paper_core_merged.gds.superseded
+           4M  09-18 18:12  TASK-000R_20260918\round3_e2e\final_delivered.gds
+           4M  09-18 18:14  TASK-000R_20260918\final_delivery\sar_digi_paper_core_merged.gds
+           3M  09-18 09:56  TASK-000R_20260918\remote\pnr\out\sar_digi_paper_core.gds
+           3M  09-18 13:33  TASK-000R_20260918\evidence\card4b\abstract_write_def.def
+           2M  09-18 09:53  TASK-000R_20260918\remote\mapped_ss\sar_digi_paper_core_sdf.sdf
+           2M  09-18 09:53  TASK-000R_20260918\remote\mapped\sar_digi_paper_core_sdf.sdf
+           1M  09-18 09:59  TASK-000R_20260918\remote\calibre\drc\drc.log
+           1M  09-18 09:58  TASK-000R_20260918\remote\calibre\drc\geomcheck.log
+           1M  09-18 12:01  TASK-000R_20260918\evidence\card2b\unit.log
+           1M  09-18 07:26  TASK-000R_20260918\remote\calibre\lvs\lvsA.rep
+           1M  09-18 09:59  TASK-000R_20260918\remote\calibre\lvs\lvs.rep
+        1011K  09-18 18:14  TASK-000R_20260918\final_delivery\lvs.rep
+         930K  09-18 07:26  TASK-000R_20260918\remote\calibre\lvs\lvsA.log
+         929K  09-18 18:14  TASK-000R_20260918\final_delivery\fc_pnr.log
+         923K  09-18 13:56  TASK-000R_20260918\round3_e2e\fc_pnr_round3.log
+         901K  09-18 09:59  TASK-000R_20260918\remote\calibre\lvs\lvs.log
+         866K  09-18 13:56  TASK-000R_20260918\round3_e2e\lvs.rep
+         830K  09-18 09:56  TASK-000R_20260918\remote\logs\fc_pnr.log
+         456K  09-18 11:40  TASK-000R_20260918\evidence\card3_slow_v2\22_coverage_untested.rpt
+         384K  09-18 09:53  TASK-000R_20260918\remote\mapped_ss\sar_digi_paper_core.ddc
+    �� 488 more
+
+########## 00_��Ŀ���� ##########
+path: D:\<vault>\Document\Obsidian\�ճ�\10_��Ŀ��\2025_16bit5Msar\00_��Ŀ����
+  files=6  bytes=4M
+           4M  08-30 13:40  �߾��ȵ͹���Split-Sampling SAR ADC�ؼ������о����ⱨ��.pdf
+         497K  08-30 13:40  SAR_ADC_Research_Overview.pptx
+          48K  08-30 14:28  ���ⱨ��.md
+          33K  08-30 14:28  ���ⱨ��PPT��������.md
+          11K  08-30 14:28  README.md
+         777B  08-30 14:28  ���ܵĴ��µ�.md
+
+########## 03_IP���˵���� ##########
+path: D:\<vault>\Document\Obsidian\�ճ�\10_��Ŀ��\2025_16bit5Msar\03_IP���˵����
+  files=4  bytes=34K
+          18K  08-30 14:28  �������Խű�ʹ��˵��.md
+           9K  08-30 14:28  FPGAʹ�ð�.md
+           6K  08-30 14:28  �����㷨���ά���ļ�.md
+         593B  08-30 14:28  README.md
+
+########## 05_�鵵 ##########
+path: D:\<vault>\Document\Obsidian\�ճ�\10_��Ŀ��\2025_16bit5Msar\05_�鵵
+  files=14  bytes=184K
+          31K  08-30 14:28  IP���˵����_�ɰ�\SAR ADC У׼������ v2.0.md
+          29K  08-30 14:28  IP���˵����_�ɰ�\SAR ADC У׼������.md
+          27K  08-30 14:28  IP���˵����_�ɰ�\SAR ADC �����ع�����.md
+          18K  08-30 14:28  IP���˵����_�ɰ�\�������Խű�ʹ��˵��.md
+          14K  08-30 14:28  ǰ��������_�ɰ�\PSS+PNOISE.md
+          13K  08-30 14:28  ǰ��������_�ɰ�\ǰ����.md
+          10K  08-30 14:28  �����ƻ�_�ɰ�\�����ƻ�_v1.0.md
+           9K  08-30 14:28  IP���˵����_�ɰ�\FPGAʹ�ð�.md
+           7K  08-30 14:28  ǰ��������_�ɰ�\MATLAB����.md
+           6K  08-30 14:28  ǰ��������_�ɰ�\���Է���.md
+           6K  08-30 14:28  IP���˵����_�ɰ�\�����㷨���ά���ļ�.md
+           6K  08-30 14:28  ǰ��������_�ɰ�\AZ.md
+           5K  08-30 14:28  ǰ��������_�ɰ�\��������.md
+           2K  08-30 14:28  README.md
+
+
+########## backend/scripts top level ##########
+         646B  _fix_report.py
+           1K  _rechist.py
+           1K  calibre_chain.sh
+           8K  collect_result.sh
+          12K  dc_synth_paper_core.tcl
+          10K  dc_synth_v4.tcl
+           5K  diag_lvs_objs.sh
+           5K  diag_lvs_ports.sh
+           4K  diag_lvs_root.sh
+          17K  fc_pnr_paper_core.tcl
+          12K  fc_pnr_v4paper.tcl
+           4K  final_calibre.sh
+           7K  fix_precision_and_run.sh
+           9K  fix_repro_authority.py
+           3K  gaps_v43.sh
+          11K  gds_analyze.py
+           3K  gds_text_census.py
+          17K  gds_tool.py
+          68K  make_delivery_report.py
+          28K  make_four_md.py
+          30K  make_gds_report.py
+          18K  patch_pnr_and_lvs.py
+           8K  patch_round3.py
+           4K  pg_build_probe.tcl
+           6K  pg_probe.tcl
+           5K  pg_probe2.tcl
+           4K  pg_syntax_probe.tcl
+           2K  port_census_v42.sh
+           4K  port_census_v43.sh
+         493B  probe_backend.sh
+         667B  probe_cmd001.sh
+           1K  probe_final.sh
+           2K  probe_final_state.sh
+           4K  probe_fix_pins_pg.tcl
+         798B  probe_pc_area.sh
+         685B  probe_scan.sh
+         940B  probe_scan2.sh
+         894B  probe_spef.sh
+           1K  probe_sta_pc.sh
+           1K  probe_sta_power.sh
+         621B  probe_tb_sta.sh
+          83K  probes/  (59 files)
+         134K  remote_v42/  (18 files)
+           5K  render_all.py
+          12K  reproduce_all.sh
+           2K  rerun_all_fixed.sh
+         706B  run_backend_paper_core.sh
+           9K  run_calibre.sh
+           9K  run_calibre_drc_paper_core.sh
+           3K  run_dc_paper_core.sh
+           5K  run_dc_v4.sh
+           8K  run_flow_paper.sh
+           5K  run_formality_paper_core.sh
+          10K  run_lvs_paper_core.sh
+           3K  run_pnr_paper_core.sh
+           4K  run_pwr_pt.sh
+           6K  run_sta_only.sh
+           6K  run_sta_paper_core.sh
+           3K  run_tb_paper_core.sh
+           6K  scan_lut_area.tcl
+           3K  setup_paper_core.sh
+           1K  setup_v4_proj.sh
+          13K  sta_pt_paper_core.tcl
+           4K  summarize_open_issues.sh
+           3K  verify_delivery_gds.sh

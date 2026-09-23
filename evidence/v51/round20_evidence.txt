@@ -1,0 +1,29 @@
+BOX_NAMES=109
+RC=0 elapsed=16s
+LVS completed. INCORRECT. See report file: /tmp/lvs20/lvsN.rep
+
+=== BOX warnings: which names were NOT located ===
+  (count: 0)
+
+=== device table (initial) ===
+                  Layout    Source         Component Type
+                  ------    ------         --------------
+   Ports:            178       179    *
+  
+   Nets:            7800      4715    *
+  
+   Instances:         15        15         ADDFHXL (5 pins)
+                       2         2         ADDFX1 (5 pins)
+                       1         1         ADDHXL (4 pins)
+
+=== device table (after transformation) ===
+                  Layout    Source         Component Type
+                  ------    ------         --------------
+   Ports:            178       178
+  
+   Nets:            4678      4709    *
+  
+   Instances:         15        15         ADDFHXL (5 pins)
+                       2         2         ADDFX1 (5 pins)
+                       1         1         ADDHXL (4 pins)
+=== LVS20_DONE ===

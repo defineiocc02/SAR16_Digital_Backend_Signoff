@@ -1,0 +1,45 @@
+﻿=== running? ===
+ 669096    01:17:50 timeout 10800 /opt/synopsys/syn/W-2024.09-SP3/bin/dc_shell -no_gui -f out/run_dc.snapshot.tcl
+ 669097    01:17:50 /opt/synopsys/syn/W-2024.09-SP3/linux64/syn/bin/common_shell_exec -shell dc_shell -r /opt/synopsys/syn/W-2024.09-SP3 -no_gui -f out/run_dc.snapshot.tcl
+ 675441       00:55 bash scripts/reproduce_all.sh 0
+ 675474       00:55 timeout 3600 dc_shell -f scripts/dc_synth_paper_core.tcl
+ 675475       00:55 /opt/synopsys/syn/W-2024.09-SP3/linux64/syn/bin/common_shell_exec -shell dc_shell -r /opt/synopsys/syn/W-2024.09-SP3 -f scripts/dc_synth_paper_core.tcl
+
+=== log tail ===
+    < 14a7ffb0db919cf7fbce88190e216433  scripts/pg_build_probe.tcl
+    < 285ef171ff0515f856ef668c20701e59  constraints/sar_digi_paper_core_pnr.sdc
+    < 30369a2239b57f447979a9469f4592a2  rtl/sar_digi_paper_core.sv
+    < 43bc19d3fadf70b1a770726b6070e82b  scripts/pg_probe2.tcl
+    < 44890f4d10e108bd8135421a314a8d4c  scripts/fc_pnr_paper_core.tcl
+    ---
+    > 26454d5a4be9c4d47e0854e8cd8148c4  scripts/dc_synth_paper_core.tcl
+    9,11c3,5
+    < 65cb5e4c5493a47559030982075d2cf9  scripts/pg_probe.tcl
+    < 7b01c91f1a97df40e68634f06aa4fa8d  scripts/sta_pt_paper_core.tcl
+    < 8d66c891010b2a1e4ce3212bcf84d7ce  constraints/sar_digi_paper_core.sdc
+    ---
+    > 7b842b2c354771f565a52e9775a87f15  scripts/fc_pnr_paper_core.tcl
+    > 845ae8426d81d627963bf823aba47268  constraints/sar_digi_paper_core.sdc
+    > a01424c3a3f0eaeeb06d85a09b43ab4c  rtl/sar_calib_ctrl_serial.sv
+    14,15c8,10
+    < c164a1368fafe4916ffba2a65596367e  rtl/sar_calib_ctrl_serial.sv
+    < e4bbd37abbb78461014dc7c00be5e78e  scripts/pg_syntax_probe.tcl
+    ---
+    > bbed38aee5565138aeb425440a7b78e5  rtl/sar_digi_paper_core.sv
+    > d67f8bcc82f0ddf07561a6e50c0ca3e2  constraints/sar_digi_paper_core_pnr.sdc
+    > fddfcc304cc68563480df75383dce23c  scripts/sta_pt_paper_core.tcl
+          (a difference means the numbers below are for a DIFFERENT design)
+
+############################################################################
+### STAGE 1 : SYNTHESIS (DC, both arms)      [20:03:56  elapsed 0s]
+############################################################################
+############################################################
+### DC paper_core arm tag='' libmode=typical   Fri Sep 18 20:03:56 CST 2026
+############################################################
+ssh : bash: line 7: $'\r': command not found
+At line:1 char:527
++ ... "; $probe | ssh -o BatchMode=yes <user>@<vm-ip> "bash -s" 2>&1 | ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 7: $'\r': command not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
