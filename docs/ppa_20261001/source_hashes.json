@@ -1,0 +1,13 @@
+{
+  "evidence/rpt_v51/sar_digi_paper_core_pnr.v": "a408bdd6e24f1cc586f648687d4dc294c7c8fba8d7a02253e859c1182a5e1eaf",
+  "evidence/rpt_v51/sar_digi_paper_core.lef": "1de04fa0635fe905517a43b0694ab2626b9f0615efa03ce6ace1cfa9358a46fa",
+  "evidence/rpt_v51/dc/area.rpt": "99efe4e23784b9bc7ea4dd09bae07717abd8b16aaea5c03e027b345e8af87092",
+  "evidence/rpt_v51/dc/power.rpt": "a21f86e2715f81e812dbffe1bd89a122762efcf036c13a96626dfdb4e0002b5d",
+  "evidence/rtl_baseline/srm_residue_estimator.sv": "0415e909529ffa85e1a7ddd7fc6a57137afc7397e8d314399ba5a3cf503898a9",
+  "evidence/rtl_baseline/srm_residue_lut.sv": "d3335201c8de1692e31cab9f28b8a9862ffbace3710529599ac8f241ed98bbdf",
+  "evidence/rtl_baseline/sar_calib_ctrl_serial.sv": "8e7fe237eb2f3fe66b2d1017d00dbfb1bdd22a42ce640222bd2dbfbbdae3fa4c",
+  "evidence/rtl_baseline/sar_digi_paper_core.sv": "cfb3548a9aa6e6bfa3d9395f02c5695d12e075415931185db8da461804139022",
+  "tests/tb_srm_latency.sv": "27b549379ac6c3a2d4c73462caa8ff5fdde2541fe5a44c263fc4f0f8977932ed",
+  "tools/run_srm_latency.py": "53727bee688d3258aff9502d6f8991a7112bf57a6f02545b890452566fbc266a",
+  "tools/analyze_ppa.py": "4c2870484313180cbfcbb9472bcdac42bb09d5c7a397ceaf4484a361d958a727"
+}

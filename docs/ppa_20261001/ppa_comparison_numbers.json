@@ -1,0 +1,58 @@
+{
+  "paper": {
+    "doi": "10.1109/JSSC.2025.3526595",
+    "sample_rate_msps": 5.0,
+    "total_power_mw": 5.31,
+    "active_area_mm2": 0.57,
+    "sndr_db": 93.7,
+    "low_frequency_enob_from_sndr": 15.272425249169435,
+    "logic_power_from_figure15_mw": 1.5292799999999998,
+    "srm_counter_power_from_figure15_mw": 0.39293999999999996,
+    "logic_plus_srm_power_mw": 1.9222199999999998,
+    "lut_synthesis_area_um2": 484.0,
+    "lut_synthesis_power_uw": 4.7,
+    "srm_analog_window_ns": 70.0,
+    "sar_conversion_model_ns": 60.0,
+    "schreier_from_sndr_db": 180.4284548759057
+  },
+  "baseline": {
+    "dc_area_um2": 97892.625106,
+    "calibration_dc_area_um2": 88106.3564,
+    "srm_dc_area_um2": 8306.0208,
+    "lut_dc_area_um2": 831.6,
+    "pnr_area_um2": 102300.10560000465,
+    "gds_die_area_um2": 184839.45679999999,
+    "dc_default_activity_power_mw": 2.546,
+    "calibration_default_activity_power_mw": 1.76,
+    "srm_default_activity_power_mw": 0.556
+  },
+  "conditional_estimates_not_new_ppa": {
+    "lut_area_ratio_to_paper": 1.7181818181818183,
+    "digital_default_power_ratio_to_paper_logic_plus_srm": 1.324510201745898,
+    "die_fraction_of_paper_active_area": 0.32427974877192983,
+    "trusted_storage_gross_saving_fraction": 0.1112050464980118,
+    "two_pipeline_registers_gross_saving_um2": 3822.0336000000025,
+    "combined_gross_saving_fraction": 0.14856604018988762,
+    "after_combined_gross_cell_area_um2": 87101.78400000461,
+    "after_trusted_gross_cell_area_um2": 90923.81760000462,
+    "row_capacity_reduction_55_to_65_percent": 0.14492307692307704,
+    "row_capacity_reduction_55_to_70_percent": 0.20599999999999996,
+    "paper_like_average_measurement_lower_bound_us_14x64_at_5Msps": 179.2
+  },
+  "whole_chip_power_scenarios": [
+    {
+      "assumption": "same analog power, SNDR and bandwidth as paper; all Logic+SRM class power scaled",
+      "digital_class_reduction_fraction": 0.25,
+      "resulting_total_mw": 4.829445,
+      "whole_chip_reduction_fraction": 0.09050000000000002,
+      "schreier_gain_db": 0.4119729660049765
+    },
+    {
+      "assumption": "same analog power, SNDR and bandwidth as paper; all Logic+SRM class power scaled",
+      "digital_class_reduction_fraction": 0.5,
+      "resulting_total_mw": 4.34889,
+      "whole_chip_reduction_fraction": 0.18099999999999994,
+      "schreier_gain_db": 0.8671609823958148
+    }
+  ]
+}

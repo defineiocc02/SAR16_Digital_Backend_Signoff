@@ -1,12 +1,12 @@
 # 后端恢复验收与后续发展
 
-日期 2026-09-30。先恢复可复现基线，再关闭正确性/签核问题，最后优化 PPA。当前没有新的 DC/FC/PT/Calibre 成果。
+初始日期 2026-09-30，2026-10-01 补充 [PPA 与论文对标](ppa_paper_comparison_20261001.md) 的发现。先恢复可复现基线，再关闭正确性/签核问题，最后优化 PPA。当前没有新的 DC/FC/PT/Calibre 成果，原 RTL 未改。
 
 ## 里程碑与完成标准
 
 | 阶段 | 工作 | 通过标准 |
 |---|---|---|
-| M0：公开静态基线 | 文档、161 份 evidence hash、LUT/语法/SDC 错误传播、独立 RTL smoke | `make check`、`make smoke` 有成功标记，范围明确，历史 evidence 不变 |
+| M0：公开静态基线 | 文档、161 份 evidence hash、LUT/语法/SDC 错误传播、独立 RTL smoke、网表/LEF 面积对账和 SRM 相位实验 | `make check`、`make smoke`、`make ppa` 有成功标记，范围明确，历史 evidence 不变 |
 | M1：工具与复现恢复 | 找回私有环境和版本化主脚本，创建独立 run 目录 | 固定输入/工具/库/RC/deck/命令与 hash；小设计完成工具/许可证/库检查，失败可定位 |
 | M2：功能/约束闭合 | 独立校准数值、SRM 时钟/相位/异常回归、CDC/RDC、reset release、GLS/LEC | 参数/接口契约通过，CDC/RDC 未解释问题清零，所有例外有原因与证据 |
 | M3：物理签核闭合 | PG、LVS、DRC、hold、电气规则、天线/密度、MMMC/RC | 结果清零或有正式批准且适用的 waiver，未覆盖检查逐项解释，最终产物身份一致 |
@@ -31,7 +31,11 @@ Gray 编码目前由二进制计数器组合生成，需评价跃迁毛刺、数
 
 回归覆盖：全部 ones count、重复启动、busy 中请求、start/consume 冲突、held start、时钟比/相位、decision gap、部分计数超时、结果覆盖、暂停时钟、忙时复位、raw/residue 配对；校准覆盖两方向、两次完整 sweep、LSB 参考段、保护 MSB、失配/offset/noise/overrange 和权重数值参考。
 
-增加四状态 RTL/GLS、SDF min/typ/max、自判定 checker、门控/脉宽检查及完整 Formality。two-state smoke 和历史相位对齐读数不能代替这些验收。5 MS/s 要按 200 ns 连续样本间隔测整条请求/采集/发布/消费链，而不是仅比较 `22 × 3 ns`。
+新的独立 SRM 实验在 10/3 ns 时钟、12 个相位、200 ns 请求间隔下通过 1200 个样本；接受 start 到 done 为 120 ns。这为该配置的处理节拍提供基线，但启动后立即驱动的反例只收到 20/22 次决策，必须补可靠 armed/ready 或经验证的 prearm 协议。将末次决策冻结、跨域发布与后续采样重叠时，补 sample ID/队列或等价保存机制，验收 raw/residue 一一配对和真实消费者吞吐。
+
+校准控制器当前仅用二值比较器输出，没有 SRM 残差反馈；与论文启用 SS + SRM 的校准流程存在算法缺口。先固定残差单位、权重重构、P/N 样本和平均次数含义，再集成残差修正及独立定点参考。协议通过不能代替含噪声/失配/offset 的精度验收。
+
+增加四状态 RTL/GLS、SDF min/typ/max、自判定 checker、门控/脉宽检查及完整 Formality。two-state smoke、独立 SRM 相位实验和历史读数不能代替这些验收。5 MS/s 要按 200 ns 连续样本间隔测整条请求/采集/发布/消费链，验收模拟保持窗口、错误恢复和重构输出。
 
 ## M3：综合、布局布线和签核门槛
 
@@ -47,13 +51,15 @@ Gray 编码目前由二进制计数器组合生成，需评价跃迁毛刺、数
 | hold | 同步输入、异步比较器同步器第一级、输出分别处理；用真实 min arrival/负 output delay/CTS 边界决定缓冲和例外，不能统一松约束擦除违例 |
 | 交付 | GDS/LEF/网表/SPEF/SDF/SDC/报告 hash 对齐，机器可读 PASS/FAIL/UNKNOWN，waiver 带范围、原因和批准来源 |
 
-scalar derate 扫点可作敏感度分析，不能自动证明完整 MMMC、foundry OCV 或不同 RC corner 已覆盖。功耗分运行/校准/空闲窗口，给出活动覆盖率、时间/频率、PVT 和时钟树/IO 是否计入。
+scalar derate 扫点可作敏感度分析，不能自动证明完整 MMMC、foundry OCV 或不同 RC corner 已覆盖。功耗至少分 reset/startup、完整校准、5 MS/s 稳态转换、空闲、异常/重校准窗口，给出活动覆盖率、时间/频率、PVT 和时钟树/IO 是否计入。当前 DC 2.546 mW 未活动标注，不作为模式功耗或论文差距的验收值。
 
 ## M4：可能的发展方向
 
 **面积/布线**：以 55/60/65/70% 为候选扫点，比较 cell/buffer/CTS area、overflow、线长、拥塞、hold、DRC 和功耗。M5/M6 使用少可作为层资源实验入口，但用途要由 tech/RC、模拟噪声和布线约束决定。约 20.6% 面积下降目前只是理想比例计算。
 
-**校准逻辑**：历史校准面积 88,106.356 µm²，明显大于 SRM 的 8,306.021 µm²。优先分析内部 `shadow_weights`、加法路径、门控/复位与串行访问，而不是继续削减 LUT。RAM/shared arithmetic 或缩位宽会改变时序/初始化行为，先做独立数值与等价性验收。
+**校准逻辑**：历史校准面积 88,106.356 µm²，明显大于 SRM 的 8,306.021 µm²。网表保留了 180 个参考位 `shadow_weights[0..5]` DFF，单元毛面积占全块约 11.12%；优先把参考常量与 6..19 可写权重分开，并在结构上限定写地址。`avg_rounded_r` / `calc_result_r` 各有 30 个 DFF，复核保留控制时序时能否消除部分数据快照；与参考段合计约 14.86% 毛单元面积。两项尚未实现，必须先过 reset/合法协议/定点边界和等价回归，再比较同库同约束的新综合、布线和功耗，新增 buffer、CDC 或算法逻辑会改变最终收益。RAM/shared arithmetic 或缩位宽会改变时序/初始化行为，先做独立数值与等价性验收。
+
+**工作模式功耗**：已有细粒度 clock-gating，不能把校准模块默认估算的 1.760 mW 再直接当作新增节省。评估整体校准域受控 ICG、可靠唤醒和 SRM 比较窗口门控；以真实活动与 post-route 寄生验证。论文 Logic + SRM counter 预算约 1.922 mW，可作为补齐完整数字边界后的目标参考；当前部分数字块与该预算不能直接排名。
 
 **接口/整机**：明确 raw/residue sample ID、错误状态和 ready/consume，评估权重发布/重构/外部 IO 的系统成本，再决定是否片上重构或串行化。如果改变边界，原核心面积不能与新整机面积直接比较。
 
