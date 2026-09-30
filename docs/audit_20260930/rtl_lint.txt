@@ -1,0 +1,122 @@
+%Warning-WIDTHTRUNC: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:155:43: Operator VAR 'LAST_TARGET_BIT' expects 5 bits on the Initial value, but Initial value's SUB generates 32 bits.
+                                                                          : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  155 |     localparam logic [CAP_IDX_WIDTH-1:0]  LAST_TARGET_BIT  = CAP_NUM - 1;
+      |                                           ^~~~~~~~~~~~~~~
+                     ... For warning description see https://verilator.org/warn/WIDTHTRUNC?v=0.000
+                     ... Use "/* verilator lint_off WIDTHTRUNC */" and lint_on around source to disable this message.
+%Warning-WIDTHTRUNC: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:156:43: Operator VAR 'FIRST_TARGET_BIT' expects 5 bits on the Initial value, but Initial value's ADD generates 32 bits.
+                                                                          : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  156 |     localparam logic [CAP_IDX_WIDTH-1:0]  FIRST_TARGET_BIT = MAX_CALIB_BIT + 1;
+      |                                           ^~~~~~~~~~~~~~~~
+%Warning-WIDTHTRUNC: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:157:43: Operator VAR 'PROT_START_IDX' expects 5 bits on the Initial value, but Initial value's VARREF 'PROTECT_START_BIT' generates 32 bits.
+                                                                          : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  157 |     localparam logic [CAP_IDX_WIDTH-1:0]  PROT_START_IDX   = PROTECT_START_BIT;
+      |                                           ^~~~~~~~~~~~~~
+%Warning-WIDTHTRUNC: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:158:43: Operator VAR 'PROT_SEARCH_IDX' expects 5 bits on the Initial value, but Initial value's VARREF 'PROTECT_SEARCH_TOPBIT' generates 32 bits.
+                                                                          : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  158 |     localparam logic [CAP_IDX_WIDTH-1:0]  PROT_SEARCH_IDX  = PROTECT_SEARCH_TOPBIT;
+      |                                           ^~~~~~~~~~~~~~~
+%Warning-WIDTHTRUNC: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:159:43: Operator VAR 'WAIT_INIT' expects 5 bits on the Initial value, but Initial value's VARREF 'COMP_WAIT_CYC' generates 32 bits.
+                                                                          : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  159 |     localparam logic [WAIT_CNT_WIDTH-1:0] WAIT_INIT        = COMP_WAIT_CYC;
+      |                                           ^~~~~~~~~
+%Warning-WIDTHTRUNC: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:160:43: Operator VAR 'CALC_LAST' expects 5 bits on the Initial value, but Initial value's VARREF 'CAP_NUM' generates 32 bits.
+                                                                          : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  160 |     localparam logic [CALC_CNT_WIDTH-1:0] CALC_LAST        = CAP_NUM;
+      |                                           ^~~~~~~~~
+%Warning-WIDTHTRUNC: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:161:43: Operator VAR 'AVG_LAST' expects 5 bits on the Initial value, but Initial value's SUB generates 32 bits.
+                                                                          : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  161 |     localparam logic [AVG_CNT_WIDTH-1:0]  AVG_LAST         = AVG_LOOPS - 1;
+      |                                           ^~~~~~~~
+%Warning-WIDTHTRUNC: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:163:48: Operator VAR 'REF_WEIGHT_INIT' expects 30 bits on the Initial value, but Initial value's VARREF 'REF_WEIGHT_LSB' generates 32 bits.
+                                                                          : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  163 |     localparam logic signed [WEIGHT_WIDTH-1:0] REF_WEIGHT_INIT = REF_WEIGHT_LSB;
+      |                                                ^~~~~~~~~~~~~~~
+%Warning-WIDTHTRUNC: evidence/rtl_baseline/srm_residue_estimator.sv:155:34: Operator VAR 'DEC_TARGET' expects 5 bits on the Initial value, but Initial value's VARREF 'DECISION_COUNT' generates 32 bits.
+                                                                          : ... note: In instance 'sar_digi_paper_core.u_srm_residue'
+  155 |     localparam logic [CNT_W-1:0] DEC_TARGET  = DECISION_COUNT;
+      |                                  ^~~~~~~~~~
+%Warning-WIDTHTRUNC: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:278:27: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's SHIFTRS generates 37 bits.
+                                                                          : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  278 |                     ref_f = (a_f + (ACCUM_W'(1) <<< AVG_SHIFT)) >>> (AVG_SHIFT + 1);
+      |                           ^
+%Warning-WIDTHEXPAND: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:279:35: Operator ADD expects 32 bits on the RHS, but RHS's VARREF 'HALF_LSB' generates 30 bits.
+                                                                           : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  279 |                     ref_f = ref_f + HALF_LSB;
+      |                                   ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=0.000
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHTRUNC: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:282:27: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's SHIFTRS generates 37 bits.
+                                                                          : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  282 |                     new_f = ACCUM_W'(a_f + ROUND_K) >>> (AVG_SHIFT + 1);
+      |                           ^
+%Warning-WIDTHEXPAND: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:403:49: Operator ADD expects 36 bits on the RHS, but RHS's ARRAYSEL generates 30 bits.
+                                                                           : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  403 |             compensated_meas = compensated_meas + shadow_weights[PROTECT_LOW_BIT];
+      |                                                 ^
+%Warning-WIDTHEXPAND: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:405:49: Operator ADD expects 36 bits on the RHS, but RHS's ARRAYSEL generates 30 bits.
+                                                                           : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  405 |             compensated_meas = compensated_meas + shadow_weights[PROTECT_START_BIT]
+      |                                                 ^
+%Warning-WIDTHEXPAND: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:406:48: Operator ADD expects 36 bits on the RHS, but RHS's ARRAYSEL generates 30 bits.
+                                                                           : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  406 |                                                + shadow_weights[PROTECT_LOW_BIT];
+      |                                                ^
+%Warning-WIDTHEXPAND: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:404:33: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'target_bit' generates 5 bits.
+                                                                           : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  404 |         end else if (target_bit == CAP_NUM - 1) begin
+      |                                 ^~
+%Warning-WIDTHEXPAND: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:402:24: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'target_bit' generates 5 bits.
+                                                                           : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  402 |         if (target_bit == PROTECT_START_BIT) begin
+      |                        ^~
+%Warning-WIDTHEXPAND: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:417:33: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'target_bit' generates 5 bits.
+                                                                           : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  417 |         end else if (target_bit == CAP_NUM - 1) begin
+      |                                 ^~
+%Warning-WIDTHEXPAND: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:415:24: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'target_bit' generates 5 bits.
+                                                                           : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  415 |         if (target_bit == PROTECT_START_BIT) begin
+      |                        ^~
+%Warning-WIDTHEXPAND: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:459:53: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'calc_cnt' generates 5 bits.
+                                                                           : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  459 |             S_PHASE_P_CALC:  next_state = (calc_cnt == CAP_NUM)
+      |                                                     ^~
+%Warning-WIDTHEXPAND: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:465:53: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'calc_cnt' generates 5 bits.
+                                                                           : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  465 |             S_PHASE_N_CALC:  next_state = (calc_cnt == CAP_NUM)
+      |                                                     ^~
+%Warning-WIDTHEXPAND: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:610:50: Operator ADD expects 36 bits on the RHS, but RHS's ARRAYSEL generates 30 bits.
+                                                                           : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  610 |                             temp_acc <= temp_acc + shadow_weights[calc_cnt];
+      |                                                  ^
+%Warning-WIDTHEXPAND: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:624:48: Operator ADD expects 37 bits on the RHS, but RHS's VARREF 'meas_val_p' generates 30 bits.
+                                                                           : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  624 |                     accumulator <= accumulator + meas_val_p + meas_val_n;
+      |                                                ^
+%Warning-WIDTHEXPAND: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:624:61: Operator ADD expects 37 bits on the RHS, but RHS's VARREF 'meas_val_n' generates 30 bits.
+                                                                           : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  624 |                     accumulator <= accumulator + meas_val_p + meas_val_n;
+      |                                                             ^
+%Warning-WIDTHTRUNC: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:740:33: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's SHIFTRS generates 37 bits.
+                                                                          : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  740 |     always_comb calc_result_ext = avg_rounded_r >>> (AVG_SHIFT + 1);
+      |                                 ^
+%Warning-UNUSEDSIGNAL: evidence/rtl_baseline/sar_calib_ctrl_serial.sv:350:37: Signal is not used: 'calc_result_wire'
+                                                                            : ... note: In instance 'sar_digi_paper_core.u_calib_ctrl'
+  350 |     logic signed [WEIGHT_WIDTH-1:0] calc_result_wire;
+      |                                     ^~~~~~~~~~~~~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=0.000
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-SYNCASYNCNET: evidence/rtl_baseline/sar_digi_paper_core.sv:127:18: Signal flopped as both synchronous and async: 'rst_n'
+                       evidence/rtl_baseline/sar_digi_paper_core.sv:280:14: ... Location of async usage
+  280 |         if (!rst_n) begin
+      |              ^~~~~
+                       evidence/rtl_baseline/sar_calib_ctrl_serial.sv:768:13: ... Location of sync usage
+  768 |         if (rst_n && (state == S_UPDATE_WEIGHT) && (calc_result_r <= 0))
+      |             ^~~~~
+                       ... For warning description see https://verilator.org/warn/SYNCASYNCNET?v=0.000
+                       ... Use "/* verilator lint_off SYNCASYNCNET */" and lint_on around source to disable this message.
+- V e r i l a t i o n   R e p o r t:  rev vUNKNOWN-built20260516-4e853d8
+- Verilator: Built from 0.256 MB sources in 5 modules, into 0.107 MB in 3 C++ files needing 0.000 MB
+- Verilator: Walltime 0.053 s (elab=0.011, cvt=0.021, bld=0.000); cpu 0.030 s on 1 threads; allocated 18.375 MB

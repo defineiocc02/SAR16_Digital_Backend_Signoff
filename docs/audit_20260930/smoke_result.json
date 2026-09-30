@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "simulator": "rev vUNKNOWN-built20260516-4e853d8",
+  "defines": [
+    "SIMULATION"
+  ],
+  "scope": "zero-delay two-state RTL: LUT, raw export, SRM, calibration publish protocol",
+  "excluded": [
+    "metastability/CDC/RDC proof",
+    "four-state X propagation",
+    "SDF timing",
+    "calibration analog accuracy",
+    "full ADC ENOB/SNDR",
+    "physical signoff"
+  ]
+}

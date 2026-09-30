@@ -49,14 +49,28 @@ def main():
     ap.add_argument('--frac-out', type=int, default=8)
     ap.add_argument('--clamp', type=int, default=-258)
     a = ap.parse_args()
+    if not 2 <= a.n <= 31:
+        ap.error('--n must be in [2,31] for the 5-bit RTL index')
+    if a.sigma_q8 <= 0:
+        ap.error('--sigma-q8 must be positive')
+    if not 0 <= a.frac_out <= 16:
+        ap.error('--frac-out must be in [0,16]')
+    if not -32767 <= a.clamp <= 0:
+        ap.error('--clamp must be in [-32767,0], in output fixed-point units')
     sigma = a.sigma_q8 / 256.0
-    print('// half table, P = (cnt + 0.5)/(N + 1), N=%d sigma_q8=%d frac_out=%d'
-          % (a.n, a.sigma_q8, a.frac_out))
+    entries = []
     for cnt in range(a.n // 2 + 1):
         p = (cnt + 0.5) / (a.n + 1)
         v = int(round(sigma * Phi_inv(p) * (2 ** a.frac_out)))
         if cnt == 0:
             v = max(v, a.clamp)
+        # The mirrored positive half must also fit the emitted signed literal.
+        if not -32767 <= v <= 32767:
+            ap.error('table exceeds the emitted signed 16-bit width')
+        entries.append(v)
+    print('// half table, P = (cnt + 0.5)/(N + 1), N=%d sigma_q8=%d frac_out=%d'
+          % (a.n, a.sigma_q8, a.frac_out))
+    for cnt, v in enumerate(entries):
         print('            5\'d%-2d : tbl_q8 = -16\'sd%d;' % (cnt, -v) if v < 0
               else '            5\'d%-2d : tbl_q8 =  16\'sd%d;' % (cnt, v))
     print('            default: tbl_q8 = 16\'sd0;')

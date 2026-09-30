@@ -1,0 +1,141 @@
+{
+  "repository_checks": "PASS",
+  "baseline_commit": "537cd6d32949789fc129b5e1d6f00d77864b53ec",
+  "immutable_evidence_files": 161,
+  "python_syntax_files": 126,
+  "shell_syntax_files": 118,
+  "lut": {
+    "half_entries": 12,
+    "full_entries": 23,
+    "model": "P=(k+0.5)/23; sigma=0.5; Q8; endpoint clamp=-258",
+    "range_q8": [
+      -258,
+      258
+    ]
+  },
+  "historical_signoff": {
+    "signoff_status": "NOT_CLOSED",
+    "sta": {
+      "typical": {
+        "viol_setup": "0",
+        "wns_setup": "0.0000",
+        "tns_setup": "0.0000",
+        "viol_hold": "1",
+        "wns_hold": "-0.0320",
+        "tns_hold": "-0.0320",
+        "clk_setup_slack_ns": 0.98074,
+        "coverage": {
+          "setup": {
+            "total": 1051,
+            "untested": 12
+          },
+          "hold": {
+            "total": 1051,
+            "untested": 12
+          },
+          "recovery": {
+            "total": 1011,
+            "untested": 1011
+          },
+          "removal": {
+            "total": 1011,
+            "untested": 1011
+          },
+          "min_pulse_width": {
+            "total": 3073,
+            "untested": 1011
+          }
+        },
+        "electrical_violations": {
+          "max_fanout": 65
+        }
+      },
+      "slow": {
+        "viol_setup": "0",
+        "wns_setup": "0.0000",
+        "tns_setup": "0.0000",
+        "viol_hold": "16",
+        "wns_hold": "-0.2020",
+        "tns_hold": "-2.5834",
+        "clk_setup_slack_ns": 0.794725,
+        "coverage": {
+          "setup": {
+            "total": 1051,
+            "untested": 12
+          },
+          "hold": {
+            "total": 1051,
+            "untested": 12
+          },
+          "recovery": {
+            "total": 1011,
+            "untested": 1011
+          },
+          "removal": {
+            "total": 1011,
+            "untested": 1011
+          },
+          "min_pulse_width": {
+            "total": 3073,
+            "untested": 1011
+          }
+        },
+        "electrical_violations": {
+          "max_transition": 3,
+          "max_fanout": 65
+        }
+      },
+      "fast": {
+        "viol_setup": "0",
+        "wns_setup": "0.0000",
+        "tns_setup": "0.0000",
+        "viol_hold": "12",
+        "wns_hold": "-0.0538",
+        "tns_hold": "-0.3051",
+        "clk_setup_slack_ns": 1.07317,
+        "coverage": {
+          "setup": {
+            "total": 1051,
+            "untested": 12
+          },
+          "hold": {
+            "total": 1051,
+            "untested": 12
+          },
+          "recovery": {
+            "total": 1011,
+            "untested": 1011
+          },
+          "removal": {
+            "total": 1011,
+            "untested": 1011
+          },
+          "min_pulse_width": {
+            "total": 3073,
+            "untested": 1011
+          }
+        },
+        "electrical_violations": {
+          "max_fanout": 65
+        }
+      }
+    },
+    "hold_corner_sum": 29,
+    "drc": {
+      "rulechecks": 421,
+      "column_1": 2956,
+      "parenthesized_column": 3402,
+      "truncated_rules": [
+        "BD_1",
+        "BD_2a"
+      ]
+    },
+    "lvs": "INCORRECT",
+    "pre_optimization_pg_floating_std_cells": {
+      "VDD": 3513,
+      "VSS": 3513
+    },
+    "fc_route_drc": 440,
+    "note": "Historical report parsing, not a new EDA run or final PG proof."
+  }
+}

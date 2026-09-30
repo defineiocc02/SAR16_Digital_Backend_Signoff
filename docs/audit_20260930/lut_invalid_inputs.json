@@ -1,0 +1,50 @@
+[
+  {
+    "arguments": [
+      "--n",
+      "0"
+    ],
+    "exit_code": 2,
+    "rejected_before_output": true
+  },
+  {
+    "arguments": [
+      "--n",
+      "32"
+    ],
+    "exit_code": 2,
+    "rejected_before_output": true
+  },
+  {
+    "arguments": [
+      "--sigma-q8",
+      "0"
+    ],
+    "exit_code": 2,
+    "rejected_before_output": true
+  },
+  {
+    "arguments": [
+      "--frac-out",
+      "17"
+    ],
+    "exit_code": 2,
+    "rejected_before_output": true
+  },
+  {
+    "arguments": [
+      "--clamp",
+      "-32768"
+    ],
+    "exit_code": 2,
+    "rejected_before_output": true
+  },
+  {
+    "arguments": [
+      "--sigma-q8",
+      "999999999"
+    ],
+    "exit_code": 2,
+    "rejected_before_output": true
+  }
+]

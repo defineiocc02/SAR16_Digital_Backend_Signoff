@@ -1,0 +1,21 @@
+name: Repository and RTL smoke checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  public-checks:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Install public verification tools
+        run: sudo apt-get update && sudo apt-get install -y verilator tcl
+      - name: Repository consistency and SDC error handling
+        run: make check
+      - name: Standalone zero-delay RTL protocol smoke
+        run: make smoke
+      - name: Baseline SRM phase sweep and conditional PPA analysis
+        run: make ppa

@@ -1,0 +1,68 @@
+{
+  "scope": "PNR logical netlist instances and delivered LEF dimensions; no implementation changed",
+  "leaf_cells": 3626,
+  "sum_leaf_area_um2": 102300.10560000465,
+  "dff_count": 1011,
+  "shadow_by_address": {
+    "0": 30,
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 30,
+    "8": 30,
+    "9": 30,
+    "10": 30,
+    "11": 30,
+    "12": 30,
+    "13": 30,
+    "14": 30,
+    "15": 30,
+    "16": 30,
+    "17": 30,
+    "18": 30,
+    "19": 30
+  },
+  "trusted_lsb_dffs": 180,
+  "trusted_lsb_dff_area_um2": 11376.288000000035,
+  "register_groups": {
+    "shadow_weights_reg": {
+      "dff_count": 600,
+      "leaf_area_um2": 37920.96000000017
+    },
+    "accumulator_reg": {
+      "dff_count": 36,
+      "leaf_area_um2": 2275.257600000001
+    },
+    "temp_acc_reg": {
+      "dff_count": 30,
+      "leaf_area_um2": 1896.0480000000011
+    },
+    "meas_val_p_reg": {
+      "dff_count": 30,
+      "leaf_area_um2": 1896.0480000000011
+    },
+    "meas_val_n_reg": {
+      "dff_count": 30,
+      "leaf_area_um2": 1896.0480000000011
+    },
+    "avg_rounded_r_reg": {
+      "dff_count": 30,
+      "leaf_area_um2": 1896.0480000000011
+    },
+    "calc_result_r_reg": {
+      "dff_count": 30,
+      "leaf_area_um2": 1925.985600000001
+    },
+    "w_wr_data_reg": {
+      "dff_count": 30,
+      "leaf_area_um2": 1896.0480000000011
+    },
+    "raw_code_o_reg": {
+      "dff_count": 20,
+      "leaf_area_um2": 1264.0320000000002
+    }
+  }
+}

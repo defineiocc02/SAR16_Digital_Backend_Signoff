@@ -1,0 +1,144 @@
+{
+  "scope": "two-state zero-delay standalone SRM; clk=10 ns dec_clk=3 ns",
+  "simulator": "rev vUNKNOWN-built20260516-4e853d8",
+  "request_interval_ns": 200,
+  "stream_delay_after_accepted_start_ns": 12,
+  "cases": [
+    {
+      "case": 0,
+      "phase_ns": 0.0,
+      "samples": 100,
+      "accepted_to_done_min_ns": 120.0,
+      "accepted_to_done_max_ns": 120.0,
+      "last_to_done_min_ns": 40.5,
+      "last_to_done_max_ns": 42.5,
+      "first_to_last_ns": 63.0
+    },
+    {
+      "case": 1,
+      "phase_ns": 0.25,
+      "samples": 100,
+      "accepted_to_done_min_ns": 120.0,
+      "accepted_to_done_max_ns": 120.0,
+      "last_to_done_min_ns": 41.25,
+      "last_to_done_max_ns": 43.25,
+      "first_to_last_ns": 63.0
+    },
+    {
+      "case": 2,
+      "phase_ns": 0.5,
+      "samples": 100,
+      "accepted_to_done_min_ns": 120.0,
+      "accepted_to_done_max_ns": 120.0,
+      "last_to_done_min_ns": 41.0,
+      "last_to_done_max_ns": 43.0,
+      "first_to_last_ns": 63.0
+    },
+    {
+      "case": 3,
+      "phase_ns": 0.75,
+      "samples": 100,
+      "accepted_to_done_min_ns": 120.0,
+      "accepted_to_done_max_ns": 120.0,
+      "last_to_done_min_ns": 40.75,
+      "last_to_done_max_ns": 42.75,
+      "first_to_last_ns": 63.0
+    },
+    {
+      "case": 4,
+      "phase_ns": 1.0,
+      "samples": 100,
+      "accepted_to_done_min_ns": 120.0,
+      "accepted_to_done_max_ns": 120.0,
+      "last_to_done_min_ns": 40.5,
+      "last_to_done_max_ns": 42.5,
+      "first_to_last_ns": 63.0
+    },
+    {
+      "case": 5,
+      "phase_ns": 1.25,
+      "samples": 100,
+      "accepted_to_done_min_ns": 120.0,
+      "accepted_to_done_max_ns": 120.0,
+      "last_to_done_min_ns": 41.25,
+      "last_to_done_max_ns": 43.25,
+      "first_to_last_ns": 63.0
+    },
+    {
+      "case": 6,
+      "phase_ns": 1.5,
+      "samples": 100,
+      "accepted_to_done_min_ns": 120.0,
+      "accepted_to_done_max_ns": 120.0,
+      "last_to_done_min_ns": 41.0,
+      "last_to_done_max_ns": 43.0,
+      "first_to_last_ns": 63.0
+    },
+    {
+      "case": 7,
+      "phase_ns": 1.75,
+      "samples": 100,
+      "accepted_to_done_min_ns": 120.0,
+      "accepted_to_done_max_ns": 120.0,
+      "last_to_done_min_ns": 40.75,
+      "last_to_done_max_ns": 42.75,
+      "first_to_last_ns": 63.0
+    },
+    {
+      "case": 8,
+      "phase_ns": 2.0,
+      "samples": 100,
+      "accepted_to_done_min_ns": 120.0,
+      "accepted_to_done_max_ns": 120.0,
+      "last_to_done_min_ns": 40.5,
+      "last_to_done_max_ns": 42.5,
+      "first_to_last_ns": 63.0
+    },
+    {
+      "case": 9,
+      "phase_ns": 2.25,
+      "samples": 100,
+      "accepted_to_done_min_ns": 120.0,
+      "accepted_to_done_max_ns": 120.0,
+      "last_to_done_min_ns": 41.25,
+      "last_to_done_max_ns": 43.25,
+      "first_to_last_ns": 63.0
+    },
+    {
+      "case": 10,
+      "phase_ns": 2.5,
+      "samples": 100,
+      "accepted_to_done_min_ns": 120.0,
+      "accepted_to_done_max_ns": 120.0,
+      "last_to_done_min_ns": 41.0,
+      "last_to_done_max_ns": 43.0,
+      "first_to_last_ns": 63.0
+    },
+    {
+      "case": 11,
+      "phase_ns": 2.75,
+      "samples": 100,
+      "accepted_to_done_min_ns": 120.0,
+      "accepted_to_done_max_ns": 120.0,
+      "last_to_done_min_ns": 40.75,
+      "last_to_done_max_ns": 42.75,
+      "first_to_last_ns": 63.0
+    }
+  ],
+  "early_stream_delay_ns": 0,
+  "early_example": {
+    "phase_ns": 0.0,
+    "total": 20,
+    "ones": 0,
+    "shortfall": 1,
+    "stalled": 1,
+    "done_latency_ns": 680.0
+  },
+  "excludes": [
+    "full ADC throughput",
+    "metastability",
+    "SDF",
+    "analog settling/noise",
+    "physical timing closure"
+  ]
+}

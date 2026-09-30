@@ -1,0 +1,30 @@
+GDS UNITS -> 10000 DBU/um   top cell = sar_digi_paper_core
+
+=== per-layer routing drawn by the TOP cell ===
+layer       shapes   BNDRY    PATH    area um2     lenH um     lenV um   dir    minW    medW
+M1            7912    7912       0       31838     44959.7      1306.5     H   0.230   0.230
+M2           17445   17445       0       25571      3178.3     71243.8     V   0.280   0.280
+M3           10114   10114       0       29242    103744.5       690.0     H   0.280   0.280
+M4            2290    2290       0       15630       120.8     55693.3     V   0.280   0.280
+M5              72      72       0        1591      5675.8         7.9     H   0.280   0.280
+M6               3       3       0          97         0.0       220.9     V   0.440   0.440
+TOTAL        37836                                286841.5
+  layers drawn by the top cell: 61, 62, 63, 64, 65, 66
+  census cross-check: 37 836 expected -> MATCH
+
+=== drawn-width histogram (um), routing shapes only ===
+  M1   max=0.800    <0.30:6381 0.30-0.49:1387 0.50-0.99:144
+  M2   max=0.620    <0.30:16097 0.30-0.49:1199 0.50-0.99:149
+  M3   max=0.330    <0.30:10113 0.30-0.49:1
+  M4   max=0.380    <0.30:2250 0.30-0.49:40
+  M5   max=0.280    <0.30:72
+  M6   max=0.440    0.30-0.49:3
+
+=== each $$via master: RAW layers it contains, and how many times it is placed ===
+  $$via1                   layers=61,62,70           shapes=3    placements=12931
+  $$via1_5200_5200_1_2     layers=61,62,70           shapes=4    placements=1462
+  $$via2                   layers=62,63,71           shapes=3    placements=12613
+  $$via3                   layers=63,64,72           shapes=3    placements=3584
+  $$via4                   layers=64,65,73           shapes=3    placements=134
+  $$via5                   layers=65,66,74           shapes=3    placements=6
+  ALL vias                                  total placements = 30730
