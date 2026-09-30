@@ -1,0 +1,37 @@
+GDS UNITS -> 10000 DBU/um   top cell = sar_digi_paper_core
+TEXT labels in TOP            : 178
+TEXT records in the WHOLE file: 808  (across 110 structs)
+  structs carrying TEXT       : sar_digi_paper_core=178, AOI222X1=9, AOI222XL=9, AOI32XL=8, AOI221XL=8
+  --> a FILE-WIDE count is NOT a port count; only the top cell holds ports.
+distinct label names          : 178
+names appearing more than once: 0  (total extra labels: 0)
+
+=== labels per layer ===
+  layer 62   M2           90
+  layer 63   M3           88
+
+=== label extent (um) ===
+  x: 0.357 .. 429.303      y: 0.357 .. 428.100
+  die: 0 .. 430.520   x   0 .. 429.340
+
+=== nearest die edge ===
+  left      44
+  right     44
+  bottom    44
+  top       46
+
+=== labels sitting on a metal layer (i.e. real pins) vs label-only layers ===
+  on metal : 178
+  otherwise: 0
+
+=== sample of distinct names (first 40) ===
+  VDD                     VSS                     calib_comp_out          calib_done
+  calib_done_pulse        calib_mode_en           calib_overrange         calib_overrange_bits[0]
+  calib_overrange_bits[10]  calib_overrange_bits[11]  calib_overrange_bits[12]  calib_overrange_bits[13]
+  calib_overrange_bits[14]  calib_overrange_bits[15]  calib_overrange_bits[16]  calib_overrange_bits[17]
+  calib_overrange_bits[18]  calib_overrange_bits[19]  calib_overrange_bits[1]  calib_overrange_bits[2]
+  calib_overrange_bits[3]  calib_overrange_bits[4]  calib_overrange_bits[5]  calib_overrange_bits[6]
+  calib_overrange_bits[7]  calib_overrange_bits[8]  calib_overrange_bits[9]  clk
+  dac_n_force[0]          dac_n_force[10]         dac_n_force[11]         dac_n_force[12]
+  dac_n_force[13]         dac_n_force[14]         dac_n_force[15]         dac_n_force[16]
+  dac_n_force[17]         dac_n_force[18]         dac_n_force[19]         dac_n_force[1]
