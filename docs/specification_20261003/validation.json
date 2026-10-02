@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-03",
+  "status": "static_planning_artifact_checks_pass",
+  "checks": {
+    "area_sum_and_whitespace": true,
+    "nominal_digital_macro": true,
+    "nominal_area_values": true,
+    "planning_core_geometry": true,
+    "analog_specs.csv_row_count": true,
+    "digital_specs.csv_row_count": true,
+    "pinout_serial32.csv_row_count": true,
+    "pinout_parallel48.csv_row_count": true,
+    "io_serial_1v8_5pf": true,
+    "no_latex_layout_diagnostics": true,
+    "private_paths_absent": true
+  },
+  "pdf": {
+    "pages": 8,
+    "native_editor_compilation": "success",
+    "xelatex_final_source_passes": 2,
+    "visual_qa": "All eight pages rendered with PDFium and reviewed; final changed pages re-rendered. Bundled Poppler lacked Adobe-GB1 data; PDFium displayed and extracted Chinese correctly."
+  },
+  "scope": "No new circuit simulation/synthesis/place-route or electrical/physical signoff; no live OA or raw PDK changes."
+}

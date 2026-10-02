@@ -8,6 +8,8 @@
 
 2026-10-02 已进一步读取远程 16 位模拟项目的 36 个当前原理图，并对照仿真日志和论文核对连接；见 [模拟复现差距与统一接口](docs/analog_digital_integration_20261002.md)。**20 路非二进制冗余物理权重重构为 16 位输出是论文架构，位数不同本身不是差距。** 新增的 [引脚规范](integration/README.md) 保留全部 20 路，区分电容索引、SAR 阶段信号和最终输出。
 
+2026-10-03 新增 [SMIC18 模拟/数字规格、面积与32引脚方案](docs/specification_20261003/README.md)（[8页PDF](docs/specification_20261003/sar16_smic18_spec_floorplan.pdf)、[LaTeX源码](docs/specification_20261003/sar16_smic18_spec_floorplan.tex)）：主方案为两lane串行数据＋独立SPI配置；折叠重构数字macro典型约0.384mm²，核心窗口约0.820mm²，建议先预留1.60×1.60mm裸片。实际SMIC库参数、封装假设及未实现功能分别标记；这不是新的综合、模拟或物理签核结果。
+
 ## 设计边界
 
 本块用于 16 位、5 MS/s 分体采样 SAR ADC 的数字接口与辅助处理，包含串行前台校准、SRM 双时钟域计数/LUT 和 raw code 寄存输出。

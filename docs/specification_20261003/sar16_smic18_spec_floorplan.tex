@@ -1,0 +1,345 @@
+\documentclass[10pt,a4paper,fontset=fandol]{ctexart}
+\usepackage[margin=19mm,top=18mm,bottom=18mm]{geometry}
+\usepackage{booktabs,tabularx,array,multirow,amsmath,amssymb,xcolor,tikz,fancyhdr,enumitem,hyperref}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\definecolor{navy}{HTML}{18354A}\definecolor{teal}{HTML}{117C83}\definecolor{pale}{HTML}{EDF5F5}\definecolor{amber}{HTML}{975E19}
+\hypersetup{colorlinks=true,linkcolor=teal,urlcolor=teal,pdftitle={SAR16 SMIC18 模拟与数字规格及面积引脚预算},pdfauthor={SAR16 project engineering review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\setlist{nosep,leftmargin=1.4em}\renewcommand{\arraystretch}{1.22}\setlength{\tabcolsep}{4pt}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\mm}{\,\mathrm{mm}^2}\newcommand{\um}{\,\mu\mathrm{m}}\newcommand{\uv}{\,\mu\mathrm{V}}
+\newcommand{\hd}[2]{\vspace{2mm}{\color{navy}\LARGE\bfseries #1}\par\vspace{2mm}{\color{teal}#2}\par\vspace{3mm}}
+\newcommand{\sub}[1]{\vspace{2mm}{\color{navy}\large\bfseries #1}\par}
+\newcommand{\note}[1]{\colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep}{#1}}}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small SAR16 · SMIC18 规格与布局预算}\fancyhead[R]{\small 2026-10-03 · v1.0}\fancyfoot[L]{\small 工程目标与估算；未经新综合、PEX 或流片签核}\fancyfoot[R]{\thepage}\setlength{\headheight}{14pt}
+\begin{document}
+\hd{模拟与数字规格、面积及引脚方案}{JSSC 2025 Split-Sampling + SRM 对标 · 32 引脚串行主方案}
+\note{建议首版采用\textbf{两路源同步串行数据输出＋独立 SPI 配置}，保留外供参考、偏置与共模。按折叠重构规划，数字宏典型约 \textbf{0.384 mm$^2$}，核心窗口预算约 \textbf{0.820 mm$^2$}；建议先预留 \textbf{1.60 mm × 1.60 mm 裸片}。这是一版可进一步实现的规格与占位方案，不是已完成芯片的性能。}
+
+\sub{1. 对标口径与模拟总规格}
+\small
+\begin{tabularx}{\linewidth}{P{30mm}P{50mm}Y}\toprule
+项目 & 目标／论文基准 & 条件与验收口径\\\midrule
+工艺与供电 & SMIC18；模拟/数字核心名义1.8 V，开关域3.3 V & 模拟现有原型仍是另一工艺；须在SMIC器件模型中重新验证。IO电压待选。\\
+分辨率与速率 & 16 bit，5 MS/s，200 ns/sample & 20个非二进制冗余权重重构成16位；不能直接截取raw低16位。\\
+输入与参考 & 差分6.6 Vpp；VREFP/N名义3.3/0 V & 输出满量程$-3.3\sim+3.3$ V；采样共模1.65 V为原型目标。\\
+输出LSB & 100.708 $\mu$V & $6.6/2^{16}$；不同于论文约80 $\mu$V的DAC最小权重尺度。\\
+低频动态性能 & 93.7 dBFS；SFDR 105.34 dBc & 论文Fig.19(a)：2.136 kHz、$-1.45$ dBFS、256k点、5 MS/s。\\
+高频动态性能 & SNDR 89.1 dB；SFDR 104.7 dBc & 论文1.0025 MHz、$-1.48$ dBFS；保留原归一口径，不外推到Nyquist。\\
+动态范围／噪声 & DR 95 dB；仿真IRN约38 $\mu$Vrms & DR为论文实测，38来自Table I晶体管仿真；当前原型未验收。\\
+静态线性 & 校准后INL约$\pm0.9$ output LSB & DNL $(-1,+1)$ LSB且无缺码为本次建议目标，非论文精确DNL边界。\\
+共享采样电容 & Cs = 20 pF/侧，共2个 & 大Cs不参加bit cycling；应验证长tracking和分裂采样的实际连接。\\
+CDAC & 名义有效1 pF/侧，20物理冗余位 & 分组6+4+5+5；桥电容4/4/12 Cu；绝对Cu依有效电容定义与寄生重算。\\
+前放与SRM & 前放增益约$10\times8$；SRM 22次 & 同一残差下冻结CDAC；约3 ns/次、约70 ns模拟保持目标。\\
+功耗与面积基准 & 论文5.31 mW、active area 0.57 mm$^2$ & 不能与带pad裸片面积直接比较；IO及外部驱动功耗边界须单列。\\\bottomrule
+\end{tabularx}
+\normalsize
+\sub{2. 本预算解决什么}
+面积预算针对\textbf{纠正连接后的目标架构}：共享两只Cs、较小CDAC、完整SAR相位控制、SRM、校准、片上16位重构、双路串行输出。未计片上精密基准发生器、输入buffer、PLL/DLL；这些功能暂由外部供给。
+
+现有模拟实例中40份20 pF的库存合计为800 pF，不能直接当有效输入电容；21份整块SAR逻辑复制也不能解释为20位冗余。上述结构须先修正，才能使用本规格验收。\textbf{冗余本身是论文设计的一部分，不是20位与16位不一致的问题。}
+
+\small 完整分级规格见 \texttt{analog\_specs.csv}（64项）和 \texttt{digital\_specs.csv}（41项）。表中应区分论文值、历史实现证据、推导值、建议分配与未验证事项。
+\clearpage
+\hd{模拟模块与误差预算}{物理量坐标、噪声合并项和时序窗口要一致}
+\small
+\begin{tabularx}{\linewidth}{P{23mm}P{63mm}Y}\toprule
+模块 & 首版对照规格 & 主要检查\\\midrule
+CDAC/校准 & Cu比值：$1,2,4,8,16,32$；$2,4,8,16$；$2,2,4,8,16$；$8,8,16,32,64$；桥4/4/12 & 低6权重作参考、高14测量；真实电容矩阵、桥寄生、reference MC；SS与SRM参与校准。\\
+Flash & 3个比较器产生2 bit；差分阈值$-1.65,0,+1.65$ V；Cf约50 fF & AZ窗口内完成；offset、noise、kickback、亚稳态及真实功耗。\\
+前放1/2 & gain约10/8；尾电流约1025/240 $\mu$A & 全部支路、CMFB及负载需计功耗；尾电流不等于完整模块电流。\\
+AZ & Caz约1.3 pF/侧；20 ns；名义带宽20 MHz & 约2.5$\tau$的噪声抵消建立不等于16位信号建立；PVT另验。\\
+比较器/SRM & 22次同残差判决；计算$\sigma\Phi^{-1}(P)$并按同坐标扣除 & 相关性、端点LUT、极性、$\sigma$辨识、ready与hold时间；不能复用变化中的SAR残差。\\
+模拟驱动 & 外供reference、VB/VBC、三个VCM & 输入/参考驱动阻抗、参考瞬态与供能端口电流必须测；外供不等于零噪声/零能量。\\\bottomrule
+\end{tabularx}
+\sub{3. 噪声与精度分账}
+\begin{minipage}[t]{.48\linewidth}\raggedright
+\begin{tabularx}{\linewidth}{Yr}\toprule
+输入等效项 & $\mu$Vrms\\\midrule
+采样（论文对照） &22.2\\
+SRM后前放＋量化（合并项）&30.9\\
+参考与输入源（建议）&12.0\\
+建立、失真、校准残余（建议）&15.0\\
+采样抖动（建议）&10.0\\\midrule
+RSS，仅在交叉项可忽略时 &43.780\\\bottomrule
+\end{tabularx}
+\end{minipage}\hfill
+\begin{minipage}[t]{.48\linewidth}\raggedright
+满幅正弦RMS为2.333452 V。93.7 dBFS对应总误差分母约48.195 $\mu$Vrms；上述RSS对应94.535 dBFS，属于设计余量，不是已闭合的噪声结果。
+
+30.9 $\mu$V已包含SRM后量化项，不能再无条件叠加$\mathrm{LSB}/\sqrt{12}$。LUT当前$\sigma=0.5$ DAC LSB；若DAC LSB=80 $\mu$V才折合40 $\mu$V，不能冒充实际比较噪声。
+\end{minipage}
+
+ENOB也需保留幅度口径：93.7 dBFS对应FS等效15.272 bit；在$-1.45$ dBFS输入下，若93.7已做FS归一，则signal-relative SNDR为92.25 dB，对应约15.032 bit。论文低频结果不证明Nyquist同精度：2 ps抖动在2.5 MHz时jitter-only SNR仅90.06 dB；若该处抖动误差只分配10 $\mu$V，则需约0.273 ps，这是额外加强目标。
+
+\sub{4. 200 ns候选时序与内部核心功耗分配}
+\begin{minipage}[t]{.48\linewidth}\raggedright
+\begin{tabularx}{\linewidth}{Yr}\toprule
+非重叠相位预算 & ns\\\midrule
+CDAC采样 &25\\
+冻结/非重叠准备 &5\\
+AZ与Flash并行 &20\\
+其余18次异步SAR &60\\
+22次SRM残差保持 &70\\
+结束复位与保护余量 &20\\\midrule
+合计 &200\\\bottomrule
+\end{tabularx}
+\end{minipage}\hfill
+\begin{minipage}[t]{.48\linewidth}\raggedright
+\begin{tabularx}{\linewidth}{Yr}\toprule
+内部核心建议分配 &mW\\\midrule
+前放1；前放2+CMFB &1.95；0.65\\
+Latch；Flash/模拟时钟 &0.15；0.20\\
+SS/CDAC/开关/电平转换 &0.25\\
+本地偏置分配 &0.20\\
+完整数字正常转换路径 &1.60\\
+未分配余量 &0.31\\\midrule
+目标合计（不含输出IO） &5.31\\\bottomrule
+\end{tabularx}
+\end{minipage}
+
+Cs长tracking与转换重叠，不能再次串行加进200 ns。60 ns来自论文噪声模型的转换时间假设，本次借作待验证目标；平均3.33 ns/bit不能替代逐位最坏建立验证。单次建立误差暂按输入等效0.25 output LSB（25.177 $\mu$V）分配，并结合当次步长、冗余裕量和非线性开关重算。
+
+数字1.60 mW是设计目标，历史DC默认活动估算已为2.546 mW且功能未全，故功耗尚未闭合。输出IO、电源端口及外部驱动另账后，总系统功耗会高于上述核心目标。
+\clearpage
+\hd{数字规格与综合资源}{推荐折叠重构；当前core是辅助数字子系统}
+\small
+\begin{tabularx}{\linewidth}{P{29mm}P{57mm}Y}\toprule
+项目 & 规格／现有事实 & 实现与验证要求\\\midrule
+主时钟 & CLK\_SYS目标100 MHz；历史约束10 ns & 新SAR控制、重构、SPI/输出加入后重做STA。\\
+判决域 & 历史dec\_clk约束3 ns；CLK\_DEC留作bringup/test & 333 MHz封装链未经验证；内部比较器ready事件须资格判定、整形及CDC定义。\\
+采样与吞吐 & CNV目标5 MS/s；每200 ns接收一个样本 & 固定延迟可超过200 ns；队列不得丢失配对。\\
+物理结果 & raw20位；SRM residue为signed10 Q8 & P/N极性、权重与残差单位一致后重构，不能位截断。\\
+校准 & 20个signed30 Q8权重；低6固定、高14发布 & 默认207352个主时钟，100 MHz时约2.074 ms；消费侧需seed低6项。\\
+SRM协议 & 默认22次；历史孤立仿真start到done约120 ns & 70 ns模拟hold不等于数字发布延迟；需prearm、abort和sample epoch。\\
+重构架构 & 每拍读取2权重，10拍求20项，另约3拍处理 & 130 ns为资源调度目标；归一化不能未经分析就假设一拍任意乘法。\\
+配对缓冲 & $2\times(20+10+8+4)=84$ bit & raw、residue、内部tag、flags共同持有；禁止跨样本拼接。\\
+输出缓冲 & $2\times24=48$ bit & 与配对缓冲分开；共132 FF等效位，约0.008343 mm$^2$ cell。\\
+串行数据 & 24 bit/frame；两lane；DCO 100 MHz SDR burst & 每帧12周期/120 ns；DVALID标记frame start；链路120 Mbps。\\
+SPI & CS/SCLK/MOSI/MISO；初期目标$\leq$10 MHz & 配置/校准/状态/权重/调试；不承担5 MS/s数据流。\\
+复位/异常 & 各域同步释放；error/invalid必须可追踪 & SRM超时旧done误归属问题须内部修复，不能仅由wrapper屏蔽。\\\bottomrule
+\end{tabularx}
+
+\sub{5. 两种重构电路的面积含义}
+现有数字cell面积0.102300 mm$^2$、历史宏占地0.184839 mm$^2$，只对应校准/SRM/raw相关逻辑。旧重构源码需要600位权重、216位数据流水及3位valid，合计\textbf{819位存储}；按当前DFF面积折合约0.051762 mm$^2$。这还没有计组合算术。
+
+旧展开路径约16个组内累加级＋3个组间求和级，原声明宽40 bit。19$\times$40个加法器位仅作资源参照已约0.053089 mm$^2$；另有正负选择、写mux、舍入饱和、残差处理和控制。实际综合会优化符号扩展与常量，不能把粗算当精确门数。五项组合链是否满足100 MHz需验证。
+
+\begin{tabularx}{\linewidth}{Yrr}\toprule
+互斥的候选架构 & 新增cell估算/mm$^2$ & 数字macro典型/mm$^2$\\\midrule
+折叠重构＋协议/双缓冲/串行（推荐） &0.075--0.120（典型0.095）&0.383838\\
+旧展开重构＋协议/输出（保守复用） &0.110--0.170（典型0.135）&0.461657\\\bottomrule
+\end{tabularx}
+
+典型宏按$(0.102300+A_{new})/55\%\times1.07$计算，折叠范围0.344929--0.432475 mm$^2$。新增权重存储及132位缓冲已计入，不再叠加。当前600位shadow没有现成重构读口，未计共享存储收益。固定参考权重常量化有潜在减面积空间，但须修改并验证后才能扣除。
+
+历史core尚不包含完整正常SAR sequencer、可用的片上输出重构、SPI及serializer；现校准也未完成论文SS+SRM辅助反馈。重构归一化、内部SRM异常恢复和相位控制是功能缺口，不能通过增加引脚名解决。
+\clearpage
+\hd{SMIC18面积账与敏感性}{用已有库参数收紧估计；芯片面积仍由实现与封装共同决定}
+\small
+已读取授权工艺档案的小范围模型/LEF摘要：名义MIM面密度项约\textbf{0.969 fF/$\mu$m$^2$}；另一MIM2选项约1.99。SP018N 6MT常见I/O本体为\textbf{35×235 $\mu$m}，角单元235×235 $\mu$m。35 $\mu$m是I/O cell pitch，\textbf{不是bonding-pad pitch}；独立焊盘、封装、ESD及电源环仍需选型。
+
+\sub{6. 主方案典型模块占位}
+\begin{tabularx}{\linewidth}{YrP{70mm}}\toprule
+模块 & mm$^2$ & 计算依据/边界\\\midrule
+完整数字macro（折叠候选） &0.383838 & 当前cell＋0.095新增；55\%利用率；7\%局部余量。\\
+共享Cs差分对 &0.053664 & 40 pF总量/0.969密度，乘1.30布局开销。\\
+CDAC差分对 &0.020000 & 独立定制阵列占位；不把MIM密度无限外推到约7.3 fF单元。\\
+Caz、Flash、bootstrap电容 &0.013725 & 2.6＋0.9＋6 pF，乘1.40局部开销；6 pF bootstrap为重设计假设。\\
+本地供电/参考去耦 &0.094943 & 80 pF面积额度，乘1.15；不能由此宣称参考动态已闭合。\\
+模拟有源、开关、驱动及局部版图 &0.090000 & 包含前放/CMFB、latch、Flash、level shifter与偏置分配的工程额度。\\\midrule
+模块合计 &0.656171 & 已含各模块局部布局开销。\\
+核心窗口（20\%全局留白） &\textbf{0.820213} & 合计除以0.8；用于隔离、主干布线、跨域和机动空间。\\\bottomrule
+\end{tabularx}
+
+数字利用率与7\%余量为宏内路由额度，20\%留白为宏间/模拟隔离额度。直接复用两侧现有bootstrap总量约10 pF；名义6 pF需重设计，若恢复10 pF，core增加约0.00722 mm$^2$，仍落在1.6 mm规划内。
+
+若名义有效CDAC确为1 pF/侧，理想桥网络等效为136.973282 Cu，得Cu约7.300694 fF；每侧所有物理电容含桥共273 Cu，差分物理总量约3.986179 pF。\textbf{有效1 pF、物理约2 pF/侧和面积不是同一个量。}模型列出的提取方形结构为15--50 $\mu$m，而7.3 fF按密度折成约2.745 $\mu$m方边；这些提取点不是DRC min/max。小单元模型、边缘项及失配须独立验证；20 pF大Cs也应研究分块组合。故典型CDAC保留0.020 mm$^2$。
+
+\sub{7. 核心与pad ring联合约束}
+\begin{align*}
+A_{core}&=\frac{\sum A_{module}}{1-w},\quad
+L_{die}=\operatorname{ceil}_{50\mu m}\!\left[\max\left(\sqrt{A_{core}}+2(d+c),\ \lceil N/4\rceil p+2k\right)+2s\right].
+\end{align*}
+典型取$d=k=235\ \mu$m、内侧间隔$c=45\ \mu$m、seal额度$s=30\ \mu$m；\textbf{bond pitch $p=90\ \mu$m仍是假设}。按四边均布作几何估算，特殊pad、电源跨接、角部/ESD及真实bonding可能增加尺寸。
+
+\begin{tabularx}{\linewidth}{Yrrrr}\toprule
+设计情景（非PVT corners） & core/mm$^2$ & 32脚边长/mm & 48脚边长/mm & 前提\\\midrule
+紧凑选项 &0.5162 &1.35 &1.40 & MIM2、70 $\mu$m pitch\\
+典型折叠 &0.8202 &1.55 &1.65 & MIM10、90 $\mu$m pitch\\
+保守折叠 &1.1627 &1.75 &1.90 & 更宽余量、110 $\mu$m pitch\\
+典型展开复用 &0.9175 &1.60 &1.65 & 同典型工艺/封装假设\\\bottomrule
+\end{tabularx}
+
+\note{建议32脚折叠方案先按\textbf{1.60 mm边长、2.56 mm$^2$裸片}占位；模型几何值1.55 mm不作为设计上限。48脚典型对照为1.65 mm边长、2.7225 mm$^2$。封装外形尺寸、焊线/倒装、exposed pad、划片道和MPW框架都不等于这些裸片数字。}
+\clearpage
+\hd{概念布局与关键连接}{1.60 mm方形裸片中的950×950 $\mu$m核心预留；非DRC合法版图}
+\begin{center}
+\begin{tikzpicture}[x=.071mm,y=.071mm,font=\small]
+\fill[gray!8] (0,0) rectangle(1600,1600);
+\draw[navy,thick] (0,0) rectangle(1600,1600);
+\draw[gray,dashed] (30,30) rectangle(1570,1570);
+\draw[gray] (265,265) rectangle(1335,1335);
+\fill[white] (325,325) rectangle(1275,1275);
+\draw[teal,dashed,thick] (325,325) rectangle(1275,1275);
+\foreach \t in {460,550,640,730,820,910,1000,1090}{
+\filldraw[fill=gray!25,draw=gray] (\t,40) rectangle +(55,220);
+\filldraw[fill=gray!25,draw=gray] (\t,1340) rectangle +(55,220);
+\filldraw[fill=gray!25,draw=gray] (40,\t) rectangle +(220,55);
+\filldraw[fill=gray!25,draw=gray] (1340,\t) rectangle +(220,55);}
+\filldraw[fill=blue!9,draw=navy] (865,330) rectangle(1275,1270);
+\node[align=center,text=navy] at(1070,930){数字宏预留\\410×940 $\mu$m\\约0.385 mm$^2$};
+\node[align=center,font=\footnotesize] at(1070,610){SAR/SRM/校准\\折叠重构\\配对＋输出缓冲\\SPI＋serializer};
+\filldraw[fill=teal!18,draw=teal] (355,1065) rectangle(555,1200);
+\filldraw[fill=teal!18,draw=teal] (625,1065) rectangle(825,1200);
+\node[align=center,font=\footnotesize] at(455,1132){Cs P\\20 pF};
+\node[align=center,font=\footnotesize] at(725,1132){Cs N\\20 pF};
+\filldraw[fill=teal!10,draw=teal] (390,815) rectangle(505,935);
+\filldraw[fill=teal!10,draw=teal] (675,815) rectangle(790,935);
+\node[align=center,font=\scriptsize] at(447,875){CDAC\\P};\node[align=center,font=\scriptsize] at(732,875){CDAC\\N};
+\filldraw[fill=orange!15,draw=amber] (510,705) rectangle(670,985);
+\node[align=center,font=\footnotesize] at(590,850){前放\\AZ\\CMFB\\Latch};
+\filldraw[fill=orange!12,draw=amber] (365,560) rectangle(805,670);
+\node[align=center,font=\footnotesize] at(585,615){Flash／开关驱动\\电平转换};
+\filldraw[fill=gray!12,draw=gray] (350,350) rectangle(820,515);
+\node[align=center,font=\footnotesize] at(585,432){本地去耦、偏置与供电走廊\\剩余去耦沿模拟外围分布};
+\draw[teal,thick,-{Latex}] (447,815) -- (510,790);
+\draw[teal,thick,-{Latex}] (732,815) -- (670,790);
+\node[fill=white,align=center,font=\footnotesize] at(800,1480){模拟输入/参考/共模邻近模拟区};
+\node[fill=white,align=center,font=\footnotesize,rotate=90] at(1450,800){串行数据/DCO与数字区邻近};
+\node[fill=white,align=center,font=\footnotesize] at(800,145){数字时钟/控制；地和电源分散配置};
+\draw[<->,navy] (0,-65)--(1600,-65) node[midway,fill=white]{1600 $\mu$m};
+\end{tikzpicture}
+\end{center}
+\small
+图中外围矩形是\textbf{功能区和32个信号/电源端子的示意}，不代表实际35 $\mu$m单元、独立bond pad、角单元或最终封装顺序。数字预留0.3854 mm$^2$仅比典型折叠宏大约0.4\%，需实际P\&R验证；不能据此装入0.462 mm$^2$展开宏。各模拟框仅示位置，Cs框按约200×135 $\mu$m面积量级绘制，其他框不是全部子模块面积之和。
+\begin{enumerate}
+\item Cs置于安静模拟侧；两侧匹配、同环境，CDAC参考单元和桥电容按真正权重/寄生矩阵组织，使用dummy与对称路由。不能把所有单位电容画成同一几何却认为属性c值不同就已实现比值。
+\item P/N顶板短而平衡，前放与latch靠近；屏蔽只在验证附加电容后使用。高速时钟、DCO和serializer走线避开Cs、CDAC及前放上方。
+\item 参考主干与回流靠近开关阵列，驱动器/level shifter放在数字与模拟边界。SS、AZ、SAR和SRM的相位必须无毛刺；SRM期间CDAC保持不动。
+\item 1.8 V模拟、3.3 V开关、数字与IO分别定义局部供电/回流和ESD连接。guard ring、deep-N-well、间距、金属密度及seal均依选定PDK规则实施；最终用PEX、IR/EM和噪声检查关闭。
+\end{enumerate}
+\clearpage
+\hd{32引脚逻辑接口清单}{9模拟＋10电源/地＋13数字；编号用于清单，不是已定封装脚位}
+\small\renewcommand{\arraystretch}{1.12}
+\begin{tabularx}{\linewidth}{rP{34mm}P{16mm}Y}\toprule
+编号 & 名称 & 方向 & 用途／名义值\\\midrule
+1 & VIP & 输入 & 差分输入正端。\\
+2 & VIN & 输入 & 差分输入负端。\\
+3 & VREFP & 输入 & 高参考，名义3.3 V；驱动及动态电流待验。\\
+4 & VREFN & 输入 & 低参考，名义0 V；保留独立参考回流。\\
+5 & VCM\_SAMP & 输入 & 采样共模，名义1.65 V。\\
+6 & VCM\_AZ & 输入 & AZ共模，名义0.9 V。\\
+7 & VCM\_AMP & 输入 & 放大器共模，名义1.65 V；首版独立可测。\\
+8 & VB & 输入 & 前放偏置1，外部可调；工作点决定值。\\
+9 & VBC & 输入 & 前放偏置2，外部可调；不与VB隐含合并。\\
+10 & AVDD18\_A & 电源 & 模拟1.8 V。\\
+11 & AGND\_A & 地 & 模拟回流。\\
+12 & AVDD33\_SW & 电源 & 开关域3.3 V，只接核定器件。\\
+13 & AGND\_SW & 地 & 开关/参考瞬态回流。\\
+14 & DVDD18\_CORE & 电源 & 数字核心1.8 V。\\
+15 & DGND\_CORE & 地 & 数字核心回流。\\
+16 & IOVDD & 电源 & 真实pad/ESD选型后确定电压。\\
+17 & IOVSS & 地 & IO驱动及ESD回流。\\
+18 & AGND\_AUX & 地 & 模拟地辅助bond。\\
+19 & DGND\_AUX & 地 & 数字地辅助bond。\\
+20 & CLK\_SYS & 输入 & 目标100 MHz；新增路径与pad时序待验。\\
+21 & CLK\_DEC & 输入 & bringup/test判决时钟；不能承诺333 MHz pad链。\\
+22 & CNV & 输入 & 5 MS/s采样/转换请求；接受规则待实现。\\
+23 & RST\_N & 输入 & 系统低有效复位；各域同步释放。\\
+24 & SPI\_CS\_N & 输入 & SPI低有效片选。\\
+25 & SPI\_SCLK & 输入 & SPI时钟，初期目标不超过10 MHz。\\
+26 & SPI\_MOSI & 输入 & 配置、校准/测试命令。\\
+27 & SPI\_MISO & 输出 & 状态、权重和调试读出；非片选时高阻。\\
+28 & SDOUT0 & 输出 & frame bit 0,2,\ldots,22。\\
+29 & SDOUT1 & 输出 & frame bit 1,3,\ldots,23。\\
+30 & DCO & 输出 & 源同步SDR burst；每帧12周期，目标100 MHz。\\
+31 & DVALID & 输出 & 首个DCO采集沿的frame-start标记。\\
+32 & TEST\_MODE & 输入 & 默认下拉；与SPI组合使用受控调试。\\\bottomrule
+\end{tabularx}
+
+同名电压不代表可立即短接VCM\_SAMP与VCM\_AMP；偏置发生器未实现，不能以省pin为由删除VB/VBC。模拟pad与ESD须满足输入/参考电压范围，电源地的片内/封装连接拓扑由噪声、IR/EM和ESD一起决定。
+
+本方案没有独立STATUS\_N，状态通过SPI或frame flags读取。独立clock/test引脚有利于首版定位相位/判决域问题；以后内部时钟、片上bias或共模buffer通过验证后再讨论减pin。若封装另有exposed pad，应额外定义其电气连接，不能隐含计入这32项。
+
+现有core的31组/176信号为\textbf{片内边界}；提取网表178形式端口还含显式电源，均不能换算成封装脚数。完整逐pin CSV与48脚对照清单随报告交付。
+\clearpage
+\renewcommand{\arraystretch}{1.22}
+\hd{串行时序、功耗与并行对照}{少引脚有助于封装；高频DCO的代价须单独计算}
+\sub{8. 建议的完整数据路径}
+\small
+\begin{center}
+\begin{tikzpicture}[node distance=3mm,font=\small,box/.style={draw=teal,fill=pale,align=center,minimum height=12mm,text width=28mm},>=Latex]
+\node[box](a){raw20＋residue10\\同一sample tag};
+\node[box,right=of a](b){双入口配对缓冲\\84 bit};
+\node[box,right=of b](c){折叠权重重构\\约13主时钟};
+\node[box,right=of c](d){双frame缓冲\\48 bit};
+\node[box,right=of d](e){2 lane＋DCO\\12周期burst};
+\draw[->](a)--(b);\draw[->](b)--(c);\draw[->](c)--(d);\draw[->](d)--(e);
+\end{tikzpicture}
+\end{center}
+
+建议24位帧由16位signed结果、4位状态、4位序号构成。为消除图纸/RTL歧义，首版候选字段明确为\texttt{frame[15:0]=code}、\texttt{[19:16]=flags}、\texttt{[23:20]=seq}；flags从低位到高位依次为sample\_valid、cal\_mode、overrange、srm\_error。两lane按偶数/奇数bit递增发出，字段与极性最终须在RTL规范中冻结。
+
+每秒$24\times5$ M =120 Mbps；两lane平均至少各60 Mbps。目标100 MHz SDR burst每帧12周期，使用率60\%，留下80 ns调度余量。数据与采集DCO可用相反沿建立约5 ns名义半周期窗口，但真实pad/板级偏斜、setup/hold与门控须校核。SPI独立承担配置，不能替代这个高速链路。
+
+\begin{tabularx}{\linewidth}{Yrr}\toprule
+从coherent pair ready起的候选时间 & sample 0 & sample 1\\\midrule
+pair ready &0 ns &200 ns\\
+折叠重构服务 &0--130 ns &200--330 ns\\
+串行输出服务 &130--250 ns &330--450 ns\\\bottomrule
+\end{tabularx}
+
+输出与下一帧重构重叠，故示例维持200 ns帧间隔，但首帧完成需250 ns，模拟采样到pair ready还另加。2 entry只覆盖约定服务时序，不保证所有停顿/故障；timeout、stale done、缺pair、overflow应输出明确invalid/error并清除旧归属。校准期间改变权重必须采用冻结/原子发布，不能一帧使用两套权重。
+
+\sub{9. IO动态功耗敏感性}
+以$P=C_{load}V_{IO}^{2}r_{01}$估计充电能量，$r_{01}$是0到1事件率。随机数据下，两lane 24位串行总数据$r_{01}\approx30$ MHz，DCO每秒60M个上升沿；并行16位数据约20 MHz，DCO约5 MHz。取\textbf{每个输出pin 5 pF}：
+
+\begin{tabularx}{\linewidth}{Yrrr}\toprule
+输出模式与条件 & 数据/mW & DCO/mW & 合计/mW\\\midrule
+串行，3.3 V &1.6335 &3.2670 &4.9005\\
+串行，1.8 V（pad待支持） &0.4860 &0.9720 &1.4580\\
+16位并行，3.3 V &1.0890 &0.2723 &1.3613\\
+16位并行，1.8 V（pad待支持） &0.3240 &0.0810 &0.4050\\\bottomrule
+\end{tabularx}
+
+24位中状态/序号并非随机，上表是统一随机活动假设，真实数据谱将改变数据项。负载2/10 pF时相对表值乘0.4/2；尚未包括pad短路/静态/内部功耗、控制输出与serializer自身功耗。\textbf{5.31 mW核心目标加串行IO后，不等于5.31 mW全芯片。}低电压、短走线和小接收负载值得优先落实，但1.8 V必须有实际pad库与接收端支持。
+
+48脚对照为9模拟＋12电源/地＋4时钟/控制＋4SPI＋16数据＋DCO/DVALID/TEST。它比32脚增加14个data pin和2个辅助VDD bond，典型裸片估算1.65 mm边长；少pin主方案是用户选择，现阶段不将高速输出的低功耗当作既成优势。
+\clearpage
+\hd{实现差距、验收顺序与交付证据}{先闭合功能和单位，再以SMIC18电路与版图证明性能}
+\small
+\begin{tabularx}{\linewidth}{P{22mm}YP{56mm}}\toprule
+里程碑 & 必须完成的工作 & 通过证据\\\midrule
+A 原理/连接 & 保留20冗余位；修正重复整块SAR/逐bit Cs；确定共享采样、桥与P/N映射、BIT0终止角色 & 逐pin真值表、netlist连通性、等效电容矩阵、实际CDAC权重。\\
+B 数字正确性 & SRM arm/abort/epoch；SS+SRM校准；normal SAR相位；权重seed/原子发布；重构尺度与配对 & 故障注入/有界延迟测试、参考模型逐样本一致、跨域与复位检查。\\
+C SMIC模拟迁移 & 选可制造Cu单元；前放/AZ/CMFB/latch/Flash真实电路；开关耐压、参考驱动、bias & DC/噪声/瞬态/PVT/MC及器件端口应力；200 ns相位时间账。\\
+D 芯片级接口 & SPI/serializer及寄存器图；真实pad/bond/ESD选择；供电/地/测试完整性 & 32端子电气定义、100 MHz输出时序/负载、输入clock链、IBIS或电路级IO结果。\\
+E PPA与签核 & 全功能活动标注综合、STA/CDC/RDC、floorplan/CTS/route、模拟PEX、功耗与IR/EM & 功能与几何一致的netlist/GDS；DRC/LVS/ERC通过；低/高频FFT、INL/DNL和模式功耗。\\\bottomrule
+\end{tabularx}
+
+历史物理结果仍有LVS不一致、跨角hold及DRC/布线问题；0.102300 mm$^2$ cell与2.546 mW DC估计不构成完整ADC签核。本次没有运行新的商用综合、布线或Spectre性能仿真，也没有修改远端原始OA/PDK。
+
+\sub{10. 与论文的差距怎样判断}
+\textbf{架构层面具备复现路径，但现有实现不能宣称达到或超过论文。}20位冗余与16位输出是正确方向；差距主要是分裂采样真实拓扑、可制造小CDAC与校准、SRM噪声/相关性建模、完整数字链和模拟/物理验证。降低数字面积不会自动改善SNDR，正确重构与校准只消除其中一类误差。
+
+SMIC18首版更适合把\textbf{可测、可定位、功能完备}作为第一阶段：外供reference/bias、保留独立共模和判决时钟测试、32端子两lane输出。之后再以PEX和实测结果决定共享权重存储、进一步折叠算术、内部时钟、低压IO、偏置/共模集成及去耦优化。任何“超过论文”的结论应在相同输入幅度/频率、吞吐、供能边界和面积口径下提出。
+
+\sub{11. 可复现交付与依据}
+\begin{tabularx}{\linewidth}{P{66mm}Y}\toprule
+交付文件 & 用途\\\midrule
+\texttt{sar16\_smic18\_spec\_floorplan.tex/.pdf} & 本报告可编辑源与正式PDF。\\
+\texttt{analog\_specs.csv}；\texttt{digital\_specs.csv} & 64条模拟、41条数字规格，含来源/目标/限制。\\
+\texttt{pinout\_serial32.csv}；\texttt{pinout\_parallel48.csv} & 完整端子proposal；不是封装vendor脚位表。\\
+\texttt{digital\_pin\_budget.md/.json} & 位宽、协议、资源账、源文件hash与接口细节。\\
+\texttt{area\_model.py}；\texttt{area\_estimate.json} & 标准Python离线重算；参数与面积公式可审查。\\
+\texttt{area\_scenarios.csv}；\texttt{io\_power\_scenarios.csv} & 工艺/架构/封装假设的敏感性表。\\\bottomrule
+\end{tabularx}
+
+运行\texttt{python3 area\_model.py}重算面积/IO表；对本独立tex使用XeLaTeX至少两次。图由TikZ在源文件内生成，无外部图片依赖。
+
+\textbf{主要一手依据：} Huang等，\emph{A 5-MS/s 16-bit Low-Noise and Low-Power Split-Sampling SAR ADC With Eased Driving Burden}，JSSC 2025，pp.813--825，\href{https://doi.org/10.1109/JSSC.2025.3526595}{DOI: 10.1109/JSSC.2025.3526595}。重点为Fig.6、Table I、Fig.19及校准/SRM章节。SMIC参数来自用户授权工艺档案定向读取；公开交付只保留少量规划参数及校验摘要，不包含模型、LEF或工艺原文件。历史RTL/布局与OA证据对应仓库提交\texttt{008e44f}及2026-10-02只读审计。
+
+\note{待定项均已列成工程假设：MIM选项与小Cu几何、实际bond pitch/封装/ESD、IO电压和负载、重构归一化、新功能面积/功耗、全角模拟与版图结果。当前可以确定32脚主接口和预算框架；这些未验收项决定下一版尺寸及最终性能。}
+\end{document}

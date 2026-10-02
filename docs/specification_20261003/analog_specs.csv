@@ -1,0 +1,65 @@
+id,module,parameter,value,unit,evidence_type,source,conditions,current_status,validation
+SYS01,system,process,180,nm,论文设计,p.821 IV; p.823 TableII,论文原型CMOS180nm；当前模拟TSMC18、数字历史SMIC18，不能直接合成一个工艺签核,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,SMIC18重新选择器件、模型和标准单元并集成
+SYS02,system,output_resolution,16,bit,论文设计,p.817 III-A,20个物理冗余控制位加权重构16位,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,校准权重/残差/舍入及最终16位饱和一致
+SYS03,system,sample_rate,5,MS/s,论文实测,p.821 IV; p.823 TableII,所有SS+SRM启用；每200ns完整转换,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,连续转换无遗漏且完整18SAR+22SRM闭合
+SYS04,system,frame_period,200,ns,由论文推导,5MS/s,1/Fs；不是理想脉冲证明转换完成,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,检查模拟相位和same-sample最终输出
+IN01,input,differential_fullscale,6.6,Vpp,论文设计/实测条件,p.817 III-A; p.823 TableII,最大差分范围−3.3..+3.3V；单端CM/余量另验,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,全幅低频/高频、输入CM与器件应力
+IN02,input,external_reference,3.3,V,论文设计,p.817 III-A,原型先外部提供；VrefN/VrefP和共模定义明确,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,ADC端口参考瞬态、阻抗、噪声、返送电荷
+IN03,input,input_commonmode,未完整披露；历史原型1.65,V,论文未给数值/历史参数,p.818 Fig6; historical input.scs1120,1.65V是历史测试值，不是论文已验收值,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,SMIC18 input CM sweep、distortion/headroom
+IN04,input,output_LSB_ideal,100.7080078125,uV,条件推导,6.6Vpp / 2^16,16bit理想均匀输出码步长；不是DAC最小bit权重,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,输入到重构输出增益/尺度/端码核对
+PERF01,system,SNDR_lowfreq,93.7,dBFS,论文实测,p.822 Fig19a/IV,5MS/s；Fin2.136kHz；−1.45dBFS；256kpoints；图中full-scale归一,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,以冻结netlist/model/RTL及相同输入FFT口径验证
+PERF02,system,SFDR_lowfreq,105.34,dBc,论文实测,p.822 Fig19a,条件同PERF01,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,以冻结netlist/model/RTL及相同输入FFT口径验证
+PERF03,system,SNDR_1MHz,89.1,dB reported,论文实测,p.822 Fig19b; p.823 IV,Fin1.0025MHz；−1.48dBFS；5MS/s；须对齐Fig19b归一口径,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,以冻结netlist/model/RTL及相同输入FFT口径验证
+PERF04,system,SFDR_1MHz,104.7,dBc,论文实测,p.822 Fig19b; p.823 IV,条件同PERF03,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,以冻结netlist/model/RTL及相同输入FFT口径验证
+PERF05,system,DR,95,dB,论文实测,p.823 TableII,5MS/s；DR不能替代SNDR,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,短路noise及输入幅度扫测
+PERF06,system,ENOB_FS_equivalent,15.272425249169435,bit,条件推导,(93.7−1.76)/6.02,只在FS等效SNDR定义成立时为15.272；不能称该输入下无条件ENOB,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,先确认FFT归一、noise bandwidth和actual sine amplitude
+PERF07,system,ENOB_signal_relative_if_FS_normalized,15.03156146179402,bit,条件推导,(93.7−1.45−1.76)/6.02,若93.7是FS归一，actual signal SNDR92.25，条件ENOB15.032,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,报告FS等效与signal-relative两列
+LIN01,linearity,INL_measured_range,−0.9..+0.9,output LSB,论文实测,p.821 IV; p.822 Fig17,校准后histogram；不是未校准CDAC线性度,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,完整阵列失配MC、code histogram、INL/DNL
+LIN02,linearity,DNL_target,−1<DNL<+1; no missing codes,output LSB,建议分配,本次预算建议；论文没有明确数字上限,不把Fig17图读数当精确论文界限,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,直方图置信区间、missing codes与PVT
+PWR01,power,supply_domains,1.8;3.3,V,论文设计/实测,p.821 IV,多电压域；偏置/参考/时钟发生器原型先外供,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,电源/IO/reference/bias端口功率分账
+PWR02,power,total_ADC_power_benchmark,5.31,mW,论文实测,p.821 IV/Fig15,5MS/s；外部APx/33500及LTC6237/AD4899等测试驱动器另计,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,全ADC供能端口平均功率；normal/cal/idle分别记录
+PWR04,power,current_DC_default_activity_estimate,2.546,mW,历史EDA默认活动估算,evidence/rpt_v51/dc/power.rpt:41,未标注输入/寄存器活动，缺normalSAR与完整重构/IO；不可作模式功耗,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,代表normal/cal/idle的SAIF/VCD、coverage与physical scope
+PWR05,power,internal_core_design_allocation,5.31,mW,可调整建议,本次预算；不是已验证总芯片值,内部analog+digital目标，不含输出pad驱动任意外接Cload及未设计新增重构功耗保证,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,core真实activity及新模块；IO另算
+PWR06,power,chip_plus_external_interface_power,Pcore+PIO+other_actual_supply_terms,formula,预算边界建议,PIO_dynamic=Cload*VIO^2*r01,r01为0→1事件率；另加pad短路/静态，未知IO负载不可承诺≤5.31,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,pad型号/Cload/事件率/driverstatics、重构新增power
+PWR03,area,paper_active_area,0.57,mm2,论文版图/实测原型,p.821 IV/Fig15,active area，不含pad/die边界；不可直接移植为SMIC18最终面积,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,SMIC18独立布局容量密度/匹配/guardrings/多电压域估算
+SS01,SS sampling,Cs_each,20,pF,论文设计,p.815 II-B; p.817 III-A; p.818 Fig6,差分两侧各1个共享Cs；不参加bit cycling,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,共享/分布拓扑确认及noise-transfer验证
+SS02,SS sampling,Cs_differential_count,2,count,论文设计,p.818 Fig6,2×20pF；算术总和40pF不等于每个单端输入load,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,各相位输入admittance与common-mode source load
+SS03,SS sampling,current_Cs_inventory,40×20p=800p,pF inventory,OA结构事实,"SS_MAIN/C1; top I44<20:1>,I110<20:1>",当前每侧20份局部SS_MAIN；800p非输入等效cap,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,先选定共享还是distributed Cs，再重算输入/噪声/面积
+SS04,SS sampling,sampling_window_tested,25;50,ns,论文仿真/实测测试条件,p.817 Fig5; p.823 Fig22,短CDAC sampling窗口；Cs长tracking与conversion重叠，不能将Cs20p一律限在25ns,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,有限source Rs/buffer、worst input slew及采样误差
+SS05,SS sampling,charge_discharge_delay,3,ns,论文设计/仿真,p.819 III-B/Fig8,Msdc相对Msbot延迟释放；图90/3µm与正文27倍存在差别,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,扫delay、charge injection、distortion、PVT/postlayout
+DAC01,CDAC,CDAC_nominal_each,1,pF,论文设计,p.817 III-A; p.821 III-E,每侧小DAC的论文名义口径；不是全部split电容简单求和,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,底板钳位条件下cap矩阵及各相位输入/参考load
+DAC02,CDAC,physical_bits,20,count,论文设计,p.817 III-A; p.818 Fig6,含冗余、非二进制；最终16bit输出,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,20bit控制与calibration/reconstruction mapping
+DAC03,CDAC,section_counts,6+4+5+5,count,论文图核对,p.818 Fig6 300dpi对齐,当前active拓扑相同；92实例含46ignore,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,filter ignore与冻结物理网络
+DAC04,CDAC,C0_to_C19_Cu,"1,2,4,8,16,32;2,4,8,16;2,2,4,8,16;8,8,16,32,64",Cu,论文图核对,p.818 Fig6,物理cap比例，非effective weight数组,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,PDK几何/端子/寄生解矩阵后得实际weights
+DAC05,CDAC,bridge_Cu,4;4;12,Cu,论文图核对,p.818 Fig6,Cb2位于C14/C15之间；Cu绝对值未公开,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,bridge parasitics/mismatch/reference ratio
+DAC06,CDAC,DAC_LSB,80,uV approx,论文设计,p.817 III-A,最小DAC权重尺度；不同于outputLSB100.708µV,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,真实差分开关幅度/weights/code坐标
+DAC07,CDAC,historical_topcap_conditional,5.12..5.60,pF/side,历史参数+被动网络推导,cf40f；当前top direct128cf和bridge12cf,isolated DAC；bottoms钳位、split top nodes浮置，无amp/Cs负载；allideal解5.47893p,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,fresh netlist及MOM/MIM实际模型；GUI c字段不能代替cap实值
+CAL01,calibration,trusted_reference_bits,6,bit,论文设计,p.817 III-A; p.821 III-E,理想1:2:4:8:16:32先验必须由实际PDK验证,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,6bit参考INL、mismatch MC和实际weights
+CAL02,calibration,measured_high_bits,14,bit,论文设计,p.821 III-E,weights6..19；校准时SS与SRM启用,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,P/N polarity、residue尺度与每次measurement归属
+CAL03,calibration,reference_INL_3sigma,0.39,output LSB,论文MC仿真,p.821 III-E,参考段贡献±0.39LSB；未校准整个CDAC约11bitlinearity,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,SMIC18 referencecap mismatch模型和完整INL
+CAL04,calibration,averaging_benchmark,64,count,论文实测校准验证,p.821 IV; p.822 Fig16,1kHz全幅、1MS/s reconstruction；meanSNDR~94、SFDR~108dBc；不等同RTL32P/Nloops,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,收敛分布；independence、deterministic bias和SRM assisted
+FLASH01,flash,output_bits,2,bit,论文设计,p.817 III-A/Fig6,3比较器thermometer-to-binary，设置CDAC高2位,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,映射、offset/meta、decision timing
+FLASH02,flash,thresholds,−1.65;0;+1.65,V differential,由论文推导,−0.5/0/+0.5 Vref; Vref3.3,AZ阶段完成粗量化；Cf50fF电容输入网络,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,真实reference/offset/cap loading/kickback
+SAR01,normal SAR,normal_decisions,18,count,论文设计,p.817 III-A,Flash设置2高位后，异步解析余18物理位,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,逐位settle/ready/bit-index及最终hold
+AMP01,preamp1,gain,10,V/V nominal,论文设计,p.819 III-C/Fig9,差模开环放大；90/.3µminput、68/.3µmcascode是论文/TSMC原型尺寸,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,SMIC18 gain/input CM、Miller cap、noise/offset/OP
+AMP02,preamp2,gain,8,V/V nominal,论文设计,p.819 III-C/Fig9,6/.18µminput；CMFB稳定latch CM,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,SMIC18差模gain、CMFB稳定性、kickback
+AMP03,preamp,tail_currents,1025;240,uA,论文图设计,p.819 Fig9,两stage tail仅为设计值，不是全preamp功耗；externalbias不免除VDD电流统计,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,OP/PVT及整个电源电流
+AZ01,AZ,Caz_each,1.3,pF,论文设计,p.819 III-C/Fig9,差分耦合两侧各1个；位置为第一级output→第二级input,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,实际C、switch charge/noise/settle
+AZ02,AZ,AZ_window,20,ns,论文设计/分析,p.815 Eq4; p.820 III-D,tau~8ns；2.5tau约91.8%noise amplitude settle,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,SS/AZ真实边沿与残余/相关噪声
+AZ03,AZ,bandwidth,20,MHz,论文设计/仿真,p.820 III-D/Fig13,ff−40C约14MHz，ss125C约30MHz；SNR变动~.5dB,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,SMIC18 BW/noise aliasing及PVT
+AZ04,AZ,finite_settling_noise_penalty,0.74,dB,论文分析,p.815 Eq4,相对fullsettle；不是需要0.5outputLSB的signal-settle定义,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,相关noise transfer model/transientnoise
+SRM01,SRM,decision_count,22,count,论文设计/仿真,p.818 III-A; p.821 Fig14,20–25已近理想movingaverage；CDAC残差冻结,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,22有效比较，无bit更新、same-sample计数/重构
+SRM02,SRM,residue_hold_window,70,ns approx,论文设计/仿真,p.821 III-D,~3ns/decision；不是数字CDC发布延迟,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,analoghold、ready、reset/evaluate、normalconversion200ns预算
+SRM03,SRM,residue_estimator,sigma*Phi_inverse(P); subtract,formula,论文分析,p.819 Eq8,P=ones/N；sigma为相同input坐标decisionnoise，不是post-SRMerror,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,σ_actual/相关性、sign、unit、finitecount bias/endpoint
+SRM04,SRM,RTL_sigma_assumed,0.5,DAC LSB,当前RTL事实+条件换算,evidence/rtl_baseline/sar_digi_paper_core.sv:90,SIGMA_Q8=128/256；DACLSB80µV时为40µVrms≈.397outputLSB；不证明实际noise,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,测得σ_actual后重生成LUT，核对endpoint/quantization
+NOISE01,noise,sampling_analytical,20.4,uVrms,论文分析,p.815 II-B/Eq4,"differential sqrt(2kT/Cs), Cs20p；不是实测总IRN",截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,共享Cs正确noise transfer及实际parasites
+NOISE02,noise,sampling_transistor_sim,22.2,uVrms,论文晶体管仿真,p.821 TableI,SS on；论文模型条件,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,transientnoise/PSD/shortedinput
+NOISE03,noise,preamp_before_SRM,59.1,uVrms,论文晶体管仿真,p.821 TableI,AZ suppressesflicker；if sameDAC80坐标则.73875LSB；不盲替LUTσ,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,decisionσ及PSD、AZstatic noise和sample correlations
+NOISE04,noise,quantization_without_SRM,23.1,uVrms,论文晶体管仿真/量化口径,p.821 TableI,近80/sqrt12；不是最终100.708outputLSB的uniformquant29.07,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,码坐标和final rounding/postSRM联合量化
+NOISE05,noise,preamp_and_quantization_after_SRM,30.9,uVrms combined,论文晶体管仿真,p.821 TableI,合并列；不能再重复加23.1或finalQ noise,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,联合重构模型、finitecountMSE、AZcorrelation
+NOISE06,noise,total_after_SS_SRM,38,uVrms approx,论文晶体管仿真,p.821 TableI,RSS22.2和30.9≈38.048；不同于93.7dBFS等效总误差48.195,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,相同noise bandwidth/stimulus/source及FFT
+NOISE07,system error,total_FS_equivalent_93p7dB,48.19466235875781,uVrms,条件推导,FS_sineRMS/10^(93.7/20),含noise+distortion等SNDRdenominator；需输入增益/FS归一成立；不是纯thermalnoise,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,报告amplitude/normalization与FFT errorbin口径
+SETTLE01,DAC/sampling,proposed_input_referred_settle_error,25.177001953125,uV bound,建议分配,0.25outputLSB建议,需按真实step幅度和每bit非二进制冗余允许量检查，不是论文给的统一限值,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,边沿settling残差、误判及PVT；不要用总周期替代
+CLOCK01,clock,measured_sampling_jitter,2,ps rms,论文测试系统测量,p.823 IV,DSAV334A；低频最好SNDR可成立，近Nyquist有明显jitter限制,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,externalclock+onchipbuffer/logic aperturejitter
+CLOCK02,clock,jitter_SNR_at_Nyquist_2ps,90.05700254611732,dB,条件分析,−20log10(2pi*fin*sigma_t),fin2.5MHz；理想sine jitter-only上限90.057，不能称整机SNDR,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,若高频也目标93.7需更小总jitter与其他noisebudget
+CLOCK03,clock,proposed_jitter_for_10uV_at_Nyquist,0.272823126108214,ps rms,建议分配+条件推导,sigma_v=2pi*fin*Vrms*sigma_t,满幅fin2.5MHz、jitter10µV预算则≤.273ps；这是加强高频目标，不是论文实绩要求,截至2026-10-02 OA静态快照/历史RTL；当前性能未验收,按实际fin/amplitude选择目标；包含所有aperturejitter

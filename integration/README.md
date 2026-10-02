@@ -45,3 +45,8 @@ driver 的 `BITP/BITN` 是现有开关逻辑输入，`dac_p_force/dac_n_force` �
 权重、raw 符号和 SRM 残差须在相同数值坐标中重构；最终 16 位归一化/舍入应在残差处理之后验证。现有源代码的校准/重构功能与接口差距见 [模拟与数字集成审计](../docs/analog_digital_integration_20261002.md)。LVS、DRC、CDC、PVT、5 MS/s 与论文 SNDR 的闭合均不由本目录的静态命名检查建立。
 
 电容映射的 `paper_relative_cap_units` 是论文Fig.6的名义比例，当前MOM模型有效值需要另行验证；它不是已测权重或校准结果。模拟边界表已单列未驱动CLKn和CLK名义3.3V到1.8V latch的连接风险。
+
+
+## 外部封装接口规划
+
+上面的20路物理权重与176/178端口属于片内边界。新的[32引脚串行＋SPI主方案](../docs/specification_20261003/README.md)另列模拟、供电和外部数字端子；[逐pin CSV](../docs/specification_20261003/pinout_serial32.csv)是提案索引，物理package pin和pad instance待定。它需要新增片上重构、配对缓冲、serializer和SPI，不能把现有core直接改名后当作已完成封装top。

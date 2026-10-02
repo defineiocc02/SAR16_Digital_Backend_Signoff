@@ -1,0 +1,42 @@
+category,metric,minimum,nominal_or_value,maximum,unit,evidence_status,source_repo_relative,assumptions_or_limit,required_action
+architecture,physical_weight_count,,20,,branches,RTL_and_OA_index_verified,integration/sar16_core_interface.json,20非二进制冗余权重；不是20bit ADC精度,核对flash编码/P-N符号/权重与残差坐标
+architecture,reconstructed_output_width,,16,,bits,architecture_target;not_current_core_output,docs/analog_digital_integration_20261002.md,16bit是重构最终输出；当前core输出raw20,新增onchip重构；不得raw截断
+interface,internal_port_groups,,31,,groups,checked_against_RTL_PNR_CDL_SP,integration/sar16_core_interface.json,内部混合信号接口,不用它作封装pin预算
+interface,internal_signal_bits,,176,,bits,checked_against_RTL_PNR_CDL_SP,integration/sar16_core_pinmap.csv,source CDL176formal;不是封装pin数,封装采用独立48/32pin方案
+interface,extracted_sp_formals,,178,,pins,checked_extracted_SP,integration/sar16_core_pinmap.csv,176信号+VDD/VSS；源CDL电源为GLOBAL,保持位置wrapper仅适配提取SP
+process,digital_core_process,,SMIC18,,process,historical_library_identified,evidence/rpt_v51/dc/area.rpt,完整foundry/PDK/签核环境待恢复,模拟与数字需在统一工艺重新实现
+voltage,core_nominal_supply,,1.8,,V,historical_DC_operating_voltage,evidence/rpt_v51/dc/power.rpt,不代表IO/3.3V switch耐压,核真实core corners和供电范围
+voltage,io_supply_target,,pending_pad_selection,,V,target_pending_real_SMIC18_pad_ESD,integration/analog_boundary.csv,core历史1.8V；package IO电压/速度未承诺,由真实pad库和接收端确定电平/负载/速度
+clock,housekeeping_clk_period,,10,,ns,historical_constraint_and_STA,constraints/sar_digi_paper_core_pnr.sdc,100MHz；历史hold/CDC/签核仍未闭合,加入新功能后完整STA/CDC/RDC
+clock,decision_clk_period,,3,,ns,historical_constraint_and_isolated_RTL_test,docs/ppa_20261001/latency_result.json,333.333MHz；不是package clockpad可达性证明,bringup/test输入；pad333MHz链未核；内部ready事件方案需CDC重定义，不能绑READYN
+throughput,adc_sample_rate_target,,5,,MS/s,paper_target_not_whole_chip_verified,docs/ppa_paper_comparison_20261001.md,每200ns完整转换/重构/交付一次,做完整mixed-signal data-chain实验
+srm,decisions_per_residue,,22,,decisions,RTL_default,integration/sar16_core_interface.json,固定残差；bit必须覆盖dec_clk有效沿,实现held residue/armed/valid/sample标签
+srm,output_width_and_fraction,,signed10_Q8,,format,RTL_default,integration/sar16_core_interface.json,范围-258..258 Q8；sigma=0.5LSB LUT,确认该LSB和最终output LSB scale/sign
+srm,normal_protocol_accepted_start_to_done,,120,,ns,1200_isolated_zero_delay_samples,docs/ppa_20261001/latency_result.json,12相位×100，间隔200ns；不含模拟/SDF/亚稳态,ready/prearm/timeout recovery/样本配对需补
+srm,last_decision_to_done,40.5,,43.25,ns,1200_isolated_zero_delay_samples,docs/ppa_20261001/latency_result.json,clk10ns dec3ns正常流程；两状态实验,真实CDC/PVT验证
+calibration,default_state_action_cycles,,207352,,clk_cycles,exact_formula_from_RTL,docs/rtl_review_20261002/principle_numbers.json,从默认控制流程计算；不是硅测,误差/噪声/失配/SRM反馈需新验证
+calibration,default_time_at_100MHz,,2.07352,,ms,analytical_cycle_count,docs/rtl_review_20261002/principle_numbers.json,前台校准；32 P/N loops；MAX_CALIB_BIT5,校准期间停止有效data发布/握手
+calibration,published_variable_weights,,14,,weights,RTL_protocol_verified,docs/interface_contract.md,发布6..19；0..5消费侧须初始化；stream无ready,weight valid barrier/重构低6项seed
+calibration,comparator_wait_setting,,16,,clk_cycles,RTL_default,integration/sar16_core_interface.json,实际同步采样约14T=140ns后输入；非settling实测,不能未经模拟验证压缩等待
+area,existing_partial_core_cell,,0.1023001056,,mm2,mapped_PNR_inventory_verified,docs/ppa_20261001/ppa_comparison_numbers.json,不含SAR sequencer/Flash控制/重构/IO/ESD,整机面积另计新增逻辑和模拟块
+area,existing_partial_core_die_footprint,,0.184839457,,mm2,historical_GDS_bbox_verified,docs/ppa_20261001/ppa_comparison_numbers.json,430.520x429.340um；不是整芯片带pad面积,新floorplan不可直接沿用为整die
+area,old_reconstruction_architectural_storage,,819,,FF_equivalent_bits,static_count_not_new_synthesis,sar_reconstruction.sv_local_static_review,600weight+160partial+40sum+16out+3valid,RAM初始化和SRM/normalization功能需补
+area,819bit_DFF_area_reference,,0.0517621104,,mm2,LEF_unit_area_arithmetic,evidence/rpt_v51/sar_digi_paper_core.lef,DFF63.2016um2；不含mux/adder/CTS/布线,不能把此下限当重构完整面积
+area,unrolled_reconstruction_added_cell,0.1,0.125,0.15,mm2,planning_assumption_not_synthesis,digital_pin_budget.json#reconstruction_resources,旧展开路径资源+必要residue/scale glue；组合深度未达标,100MHz真实综合/STA；gain_multiplier单独评估
+area,spi_protocol_output_added_cell,0.01,0.0125,0.02,mm2,planning_assumption_not_synthesis,digital_pin_budget.json#area_budget,CFG/status/test/pairing+output双缓冲132FF+serializer含在本项；不重复加buffer/serializer；不含realpad；名义0.0125用于推荐folded串行，旧展开保守分配名义0.010,定义功能并综合后更新
+area,conservative_unrolled_added_cell_total,0.11,0.135,0.17,mm2,planning_assumption_not_synthesis,digital_pin_budget.json#area_budget,0.125重构+0.010接口典型值；没有优化shadow复用,保持假设与历史baseline分别记录
+area,conservative_unrolled_total_cell,0.2123001056,0.2373001056,0.2723001056,mm2,baseline_plus_assumed_new_logic,digital_pin_budget.json#area_budget,新增结果非DC/FC报告,新完整netlist布局后替换
+area,conservative_unrolled_digital_macro,0.41302020544,0.46165656907636365,0.5297474781672727,mm2,floorplan_assumption,digital_pin_budget.json#area_budget,total_cell/0.55*1.07；55%利用率+7%数字局部余量；不含pad/analog,拥塞/IR/CTS/DRC/LVS确认
+area,two_lane_serializer_incremental_cell,0.003,0.005,0.008,mm2,planning_assumption_not_synthesis,digital_pin_budget.json#area_budget,24bit shift/control/DCO子预算；已含selected协议预算，不能再次相加,输出100MHz SDC/IO load验证
+area,folded_reconstruction_candidate_added_cell,0.065,0.0825,0.1,mm2,selected_architecture_candidate_unimplemented,digital_pin_budget.json#area_budget,2权重/clk，10+约3拍；新600bit权重存储不复用shadow；banked读口,formal/synth/STA及gain规范
+power,historical_default_activity_core_power,,2.546,,mW,unannotated_DC_estimate,evidence/rpt_v51/dc/power.rpt,不是silicon也非按实际转换activity；新IO/重构未含,模式SAIF/VCD与PVT功耗重测
+power,full_digital_and_io_power_budget,,,,mW,target_allocation_pending,,需正常/校准/待机+pad load分别预算,不得由历史2.546mW推导整机差距
+package,parallel_measurement_budget,,48,,logical_pins,comparison_only_complete_list,digital_pin_budget.json#parallel_48,9analog+12power/ground+27digital；VB/VBC独立；非批准bond位置,pad/ESD/封装与测试验证
+package,compact_serial_budget,,32,,logical_pins,user_selected_primary_proposal,digital_pin_budget.json#serial_32,9analog+10power/ground+13digital；VB/VBC独立；未计exposedpad附加terminal,IR/EM/封装/高速IO验证
+link,minimum_ADC_payload_rate,,80,,Mbps,arithmetic_target,digital_pin_budget.json#serial_link,16bit*5MS/s；不含帧/校验/空闲,不能用低速SPICFG替代
+link,24bit_framed_rate,,120,,Mbps,proposed_protocol_arithmetic,digital_pin_budget.json#serial_link,16data+4status+4seq；2lane最低60Mbps/lane,实现frame start/sequence/overflow与sample配对
+link,two_lane_SDR_burst_gross_rate,,200,,Mbps,proposal_not_IO_verified,digital_pin_budget.json#serial_link,复用100MHzclk；12cycles=120ns/200ns；60%占用,选pad并核板级SI与setup/hold
+link,SPI_CFG_initial_clock_target,,10,,MHz,bringup_proposal_not_implemented,digital_pin_budget.json#serial_link,仅低速配置/weight/debug；mode未定义,实现SPICFG CDC和test访问
+area,selected_folded_serial_added_cell_total,0.075,0.095,0.12,mm2,selected_planning_candidate_not_synthesis,digital_pin_budget.json#area_budget,recon .065-.10 + protocol/SPI/132FF buffers/serializer .010-.020；不共享shadow；典型0.0825+0.0125=0.095,功能/数值坐标/CDC/STA/功耗与完整P&R验证
+area,selected_folded_serial_total_cell,0.17730010559999998,0.1973001056,0.2223001056,mm2,selected_planning_candidate_not_synthesis,digital_pin_budget.json#area_budget,历史partial core cell +假设新增logic；不含IO/ESD,功能/数值坐标/CDC/STA/功耗与完整P&R验证
+area,selected_folded_serial_digital_macro,0.34492929634909086,0.3838383872581818,0.43247475089454546,mm2,selected_floorplan_candidate_not_layout,digital_pin_budget.json#area_budget,total_cell/0.55*1.07；不含analog/pad/整芯片margin,功能/数值坐标/CDC/STA/功耗与完整P&R验证

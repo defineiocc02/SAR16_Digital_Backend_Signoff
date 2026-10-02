@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "collected_date": "2026-10-03",
+  "method": "read-only archive member inspection and historical report parsing; no extraction to disk on remote host, no EDA run",
+  "sources": [
+    {
+      "id": "stdcell_lef",
+      "title": "Historical SAR16 leaf standard-cell LEF",
+      "sha256": "1de04fa0635fe905517a43b0694ab2626b9f0615efa03ce6ace1cfa9358a46fa",
+      "scope": "109 standard-cell macro abstracts; no pad or capacitor macros"
+    },
+    {
+      "id": "dc_area",
+      "title": "Historical DC area report",
+      "sha256": "99efe4e23784b9bc7ea4dd09bae07717abd8b16aaea5c03e027b345e8af87092",
+      "scope": "Sep 18 2026 synthesis metadata; not a physical core footprint"
+    },
+    {
+      "id": "dc_power",
+      "title": "Historical DC power report",
+      "sha256": "a21f86e2715f81e812dbffe1bd89a122762efcf036c13a96626dfdb4e0002b5d",
+      "scope": "typical corner, 1.8 V core metadata"
+    },
+    {
+      "id": "mim_mdl",
+      "title": "SMIC18 baseband MIM model metadata",
+      "sha256": "2d6d921fde051a1adfbe09763a327f8a728bff3dfcfc92b5899a52cbfa61d9e9",
+      "scope": "density and stated extraction structures only; model content omitted"
+    },
+    {
+      "id": "mim_ckt",
+      "title": "SMIC18 baseband MIM subcircuit metadata",
+      "sha256": "29de44963792838245b5cdf9ff694136af3730f52581756c152980f0a06dc5b2",
+      "scope": "area capacitance expression and nominal conditions"
+    },
+    {
+      "id": "rf_mim",
+      "title": "SMIC18 RF MIM model metadata",
+      "sha256": "289d5a611afc9b16895958b2fcb6799ffc5a2b989d24246b04693dd1d7f72a2c",
+      "scope": "separate parasitic branches; not a replacement for extracted CDAC coupling"
+    },
+    {
+      "id": "io_lef",
+      "title": "SMIC18 SP018N v1p0 6MT IO LEF metadata",
+      "sha256": "3fe9509f7c019fce9dc8e582a82d268b47b8cabb2fa8a0d3d5e54d349e5de380",
+      "scope": "macro SIZE counts; no full library text"
+    },
+    {
+      "id": "io_lib",
+      "title": "SMIC18 SP018N typical IO Liberty metadata",
+      "sha256": "a68bc2f8610e1288ac9ba3535eb08ed76cc280f96d200c36a354032a7e498c5f",
+      "scope": "library nominal voltage does not establish every IO supply limit"
+    },
+    {
+      "id": "io_application_note",
+      "title": "SMIC standard IO application note v1p7 metadata",
+      "sha256": "5055863ef118204d8092f5f2e0d3421dcb52937201e954e908d7f89a6d834705",
+      "scope": "IO cell pitch versus separate bonding pad placement"
+    },
+    {
+      "id": "pcell_reference",
+      "title": "SMIC18 OA PCell reference manual v1.11_2 metadata",
+      "sha256": "2dc4fa1068f143b181d5115c013707188e0f254c92c98a63c19f66e3d174060d",
+      "scope": "process family and installation options; no fabrication-option proof"
+    }
+  ],
+  "process": {
+    "family": "SMIC 180 nm mixed-signal enhanced RF",
+    "nominal_device_voltage_families_V": [
+      1.8,
+      3.3
+    ],
+    "metal_count": 6,
+    "stack_option_label": "1P6M_5Ia_1TMa2_MIM10",
+    "stack_status": "present in archived installed-option directory; not evidence of a booked wafer option",
+    "historical_digital_core_voltage_V": 1.8,
+    "historical_digital_voltage_status": "confirmed by DC report, typical corner"
+  },
+  "standard_cells": {
+    "macro_count": 109,
+    "row_height_um": 5.04,
+    "site_width_um": 0.66,
+    "minimum_leaf_width_um": 1.32,
+    "maximum_leaf_width_um": 18.48,
+    "source": "stdcell_lef",
+    "scope": "historical leaf abstracts only"
+  },
+  "mim": {
+    "nominal_density_fF_per_um2": 0.969,
+    "nominal_conditions": "25 C, zero applied terminal voltage, zero process and mismatch offsets",
+    "alternative_option_density_fF_per_um2": 1.99,
+    "alternative_option_status": "model available in archive; use as sensitivity only, selection not verified",
+    "density_sources": [
+      "mim_mdl",
+      "mim_ckt"
+    ],
+    "stated_square_extraction_dimensions_um": [
+      15,
+      20,
+      25,
+      30,
+      40,
+      50
+    ],
+    "dimension_status": "stated model extraction structures; these are not proved DRC minimum/maximum dimensions",
+    "legal_minimum_L_um": null,
+    "legal_minimum_W_um": null,
+    "legal_maximum_L_um": null,
+    "legal_maximum_W_um": null,
+    "small_7p3_fF_unit_plate_only_area_um2": 7.533539731682146,
+    "small_7p3_fF_unit_equivalent_square_edge_um": 2.744729445989558,
+    "small_unit_status": "outside listed extraction structures; requires a validated small-capacitor implementation and parasitic extraction",
+    "baseband_fringe_coefficient_status": "no explicit cjsw/fringe coefficient in inspected baseband model; physical fringe and coupling remain unknown",
+    "rf_parasitic_status": "RF models have separate oxide/substrate branches; these do not prove CDAC ratio parasitics",
+    "twenty_pF_plate_only_area_um2": 20639.83488132095,
+    "twenty_pF_equivalent_square_edge_um": 143.66570530687187,
+    "large_cap_status": "single-square equivalent exceeds listed extraction structures; use a validated tiled capacitor bank"
+  },
+  "io": {
+    "library": "SP018N v1p0 6MT",
+    "macro_count": 168,
+    "common_functional_macro_um": [
+      35,
+      235
+    ],
+    "common_size_count": 138,
+    "corner_macro_um": [
+      235,
+      235
+    ],
+    "io_cell_pitch_um": 35,
+    "io_cell_pitch_status": "document defines width plus spacing of adjacent IO cells; this is not bonding-pad pitch",
+    "bonding_pitch_um": null,
+    "bonding_pitch_status": "depends on separate bond pad placement and packaging; not verified in this task",
+    "PADI35_abstract_SIZE_um": [
+      35,
+      76.83
+    ],
+    "PADO35_abstract_SIZE_um": [
+      35,
+      152.83
+    ],
+    "bond_landing_opening_um": null,
+    "bond_landing_status": "PADI35/PADO35 inspected LEF entries contain no PIN; OBS gives full macro-wide blockages, which do not identify landing/opening; actual GDS landing/opening remains unverified",
+    "radial_depth_for_planning_um": 235,
+    "radial_depth_status": "confirmed common macro height, excludes unverified seal ring / dicing and assembly margins",
+    "bond_pad_abstract_PIN_counts": {
+      "PADO35": 0,
+      "PADI35": 0
+    }
+  },
+  "engineering_assumptions": {
+    "bond_pitch_sensitivity_um": [
+      70,
+      90,
+      110
+    ],
+    "bond_pitch_status": "planning assumptions only, not foundry rules",
+    "capacitor_matching_routing_dummy_and_guard_overhead": "not included in plate-only density formula",
+    "analog_cdac_footprint": "allocate separately; do not scale the whole CDAC to the tiny ideal plate area"
+  },
+  "historical_dc": {
+    "cell_count": 2918,
+    "sequential_cell_count": 1051,
+    "total_cell_area_um2": 97892.625106,
+    "report_date": "2026-09-18",
+    "physical_core_area_mm2": null,
+    "status": "mapped-cell area only; report total area includes wire-load interconnect estimate and is not a placed core area"
+  }
+}

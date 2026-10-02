@@ -1,0 +1,960 @@
+{
+  "date": "2026-10-03",
+  "status": "engineering_proposal_and_static_evidence; no SSH or new EDA",
+  "architecture": "20 physical nonbinary redundant weights -> calibrated16bit reconstruction; no raw truncation",
+  "scope": "Digital specs and package pin budgeting only. Existing31groups/176signal bits are internal mixed-signal connections, not package pins.",
+  "evidence": {
+    "ports": {
+      "repo_relative_path": "integration/sar16_core_interface.json",
+      "sha256": "0697613aaf4d0160cb88e3e3f35205f3403d62d087d35fd36c0d545eb047de56"
+    },
+    "pinmap": {
+      "repo_relative_path": "integration/sar16_core_pinmap.csv",
+      "sha256": "e135a50a14ba10a399bb88c4615d9aff4ca6bf68a52f6a11d3741fa100535c2f"
+    },
+    "ppa": {
+      "repo_relative_path": "docs/ppa_20261001/ppa_comparison_numbers.json",
+      "sha256": "f7a4b30f151b56bf60ffedf82a735a9c7780a35b3c5e839c96b35b4daba412bf"
+    },
+    "cal": {
+      "repo_relative_path": "docs/rtl_review_20261002/principle_numbers.json",
+      "sha256": "5327cb886f74647b8f815c0d3c6a034536124e855679ab4971a066ce2c752303"
+    },
+    "latency": {
+      "repo_relative_path": "docs/ppa_20261001/latency_result.json",
+      "sha256": "ef77f7b4f89c782cdf484de6f197b2531841d6d4ccc9f1e1acabbd441e76fe89"
+    },
+    "sta": {
+      "repo_relative_path": "evidence/rpt_v51/sta/sta_pc_summary.txt",
+      "sha256": "855f8b4713a7ca036987b42c4df2a5aceedec3745ed9c5820f1cc5dcc505fe08"
+    },
+    "lef": {
+      "repo_relative_path": "evidence/rpt_v51/sar_digi_paper_core.lef",
+      "sha256": "1de04fa0635fe905517a43b0694ab2626b9f0615efa03ce6ace1cfa9358a46fa"
+    },
+    "power": {
+      "repo_relative_path": "evidence/rpt_v51/dc/power.rpt",
+      "sha256": "a21f86e2715f81e812dbffe1bd89a122762efcf036c13a96626dfdb4e0002b5d"
+    },
+    "analog": {
+      "repo_relative_path": "integration/analog_boundary.csv",
+      "sha256": "4538308ed47525313de4152be8f7c8978ba8c59022f16cacf575383c0880f64f"
+    },
+    "oa": {
+      "repo_relative_path": "docs/analog_integration_20261002/oa_interface_inventory.json",
+      "sha256": "6e38211b636b71b92a8623218f88d3098b9fc1e8bd5d4985352247633d385235"
+    }
+  },
+  "pin_numbering": "Logical budget numbering only; not approved package/bondwire placement. Exposed pad if chosen is an additional terminal and must be defined separately.",
+  "parallel_48": {
+    "total_pins": 48,
+    "analog_signal_pins": 9,
+    "power_ground_pins": 12,
+    "other_digital_pins": 27,
+    "pins": [
+      {
+        "number": 1,
+        "name": "VIP",
+        "direction": "input",
+        "domain": "analog",
+        "meaning": "差分输入正端；输入范围和驱动阻抗待模拟验证",
+        "status": "existing_top_net;package_proposal"
+      },
+      {
+        "number": 2,
+        "name": "VIN",
+        "direction": "input",
+        "domain": "analog",
+        "meaning": "差分输入负端；不得当单端地",
+        "status": "existing_top_net;package_proposal"
+      },
+      {
+        "number": 3,
+        "name": "VREFP",
+        "direction": "input",
+        "domain": "reference",
+        "meaning": "高参考输入；名义3.3V；外部去耦与参考动态电流待定",
+        "status": "existing_top_net;package_proposal"
+      },
+      {
+        "number": 4,
+        "name": "VREFN",
+        "direction": "input",
+        "domain": "reference",
+        "meaning": "低参考输入；名义0V；独立回流/参考pin，不能仅靠数字地代替",
+        "status": "existing_top_net;package_proposal"
+      },
+      {
+        "number": 5,
+        "name": "VCM_SAMP",
+        "direction": "input",
+        "domain": "common_mode",
+        "meaning": "采样共模；名义1.65V；对应VCM_165",
+        "status": "existing_top_net;package_proposal"
+      },
+      {
+        "number": 6,
+        "name": "VCM_AZ",
+        "direction": "input",
+        "domain": "common_mode",
+        "meaning": "比较器AZ共模；名义0.9V；不与采样共模合并",
+        "status": "existing_top_net;package_proposal"
+      },
+      {
+        "number": 7,
+        "name": "VCM_AMP",
+        "direction": "input",
+        "domain": "common_mode",
+        "meaning": "放大器共模；名义1.65V；独立可测，不预设可以与VCM_SAMP短接",
+        "status": "existing_top_net;package_proposal"
+      },
+      {
+        "number": 8,
+        "name": "VB",
+        "direction": "input",
+        "domain": "bias",
+        "meaning": "既有PA/COMP_AZ偏置电压输入；外部可调；需要核定器件工作点和pad保护",
+        "status": "OA_pin_exists;package_voltage_range_pending"
+      },
+      {
+        "number": 9,
+        "name": "VBC",
+        "direction": "input",
+        "domain": "bias",
+        "meaning": "既有PA/COMP_AZ第二偏置电压输入；外部可调；不能隐含与VB或VCM合并",
+        "status": "OA_pin_exists;package_voltage_range_pending"
+      },
+      {
+        "number": 10,
+        "name": "AVDD18_A",
+        "direction": "power",
+        "domain": "analog_1v8",
+        "meaning": "模拟1.8V供电；SMIC18具体器件/IO耐压待核",
+        "status": "package_proposal;physical_implementation_required"
+      },
+      {
+        "number": 11,
+        "name": "AGND_A",
+        "direction": "power",
+        "domain": "analog_ground",
+        "meaning": "模拟回流",
+        "status": "package_proposal;physical_implementation_required"
+      },
+      {
+        "number": 12,
+        "name": "AVDD33_SW",
+        "direction": "power",
+        "domain": "switch_3v3",
+        "meaning": "采样/CDAC switch 3.3V供电；只能接核定厚氧/高压器件",
+        "status": "package_proposal;physical_implementation_required"
+      },
+      {
+        "number": 13,
+        "name": "AGND_SW",
+        "direction": "power",
+        "domain": "switch_ground",
+        "meaning": "开关/参考瞬态回流；片内星点/隔离待版图定义",
+        "status": "package_proposal;physical_implementation_required"
+      },
+      {
+        "number": 14,
+        "name": "DVDD18_CORE",
+        "direction": "power",
+        "domain": "digital_1v8",
+        "meaning": "数字core1.8V供电；历史DC名义工作电压",
+        "status": "package_proposal;physical_implementation_required"
+      },
+      {
+        "number": 15,
+        "name": "DGND_CORE",
+        "direction": "power",
+        "domain": "digital_ground",
+        "meaning": "数字core回流",
+        "status": "package_proposal;physical_implementation_required"
+      },
+      {
+        "number": 16,
+        "name": "IOVDD",
+        "direction": "power",
+        "domain": "io_supply",
+        "meaning": "真实SMIC18 pad/ESD库待选；IO电压与接收端共同定义，当前不承诺1.8V/3.3V兼容或速度",
+        "status": "package_proposal;physical_implementation_required"
+      },
+      {
+        "number": 17,
+        "name": "IOVSS",
+        "direction": "power",
+        "domain": "io_ground",
+        "meaning": "I/O驱动和ESD回流",
+        "status": "package_proposal;physical_implementation_required"
+      },
+      {
+        "number": 18,
+        "name": "AVDD18_AUX",
+        "direction": "power",
+        "domain": "analog_1v8",
+        "meaning": "与AVDD18_A同电源的辅助bond；位置按IR/EM/噪声确定",
+        "status": "package_proposal;physical_implementation_required"
+      },
+      {
+        "number": 19,
+        "name": "AGND_AUX",
+        "direction": "power",
+        "domain": "analog_ground",
+        "meaning": "与AGND_A同域的辅助bond",
+        "status": "package_proposal;physical_implementation_required"
+      },
+      {
+        "number": 20,
+        "name": "DVDD18_AUX",
+        "direction": "power",
+        "domain": "digital_1v8",
+        "meaning": "与DVDD18_CORE同电源的辅助bond",
+        "status": "package_proposal;physical_implementation_required"
+      },
+      {
+        "number": 21,
+        "name": "DGND_AUX",
+        "direction": "power",
+        "domain": "digital_ground",
+        "meaning": "与DGND_CORE同域的辅助bond",
+        "status": "package_proposal;physical_implementation_required"
+      },
+      {
+        "number": 22,
+        "name": "CLK_SYS",
+        "direction": "input",
+        "domain": "digital_io",
+        "meaning": "100MHz housekeeping/输出控制目标；历史core约束10ns；pad速度未知",
+        "status": "existing_core_port;new_pad_required"
+      },
+      {
+        "number": 23,
+        "name": "CLK_DEC",
+        "direction": "input",
+        "domain": "digital_io",
+        "meaning": "bringup/test决策域clock输入；3ns为历史core/test条件，333.3MHz pad链/板级能力未核；正常运行的内部ready事件方案需重新定义CDC，不能直接绑READYN",
+        "status": "existing_core_port;new_pad_required"
+      },
+      {
+        "number": 24,
+        "name": "CNV",
+        "direction": "input",
+        "domain": "digital_io",
+        "meaning": "5MS/s转换请求/采样触发目标；新相位控制和请求接受协议必须实现",
+        "status": "new_function_required"
+      },
+      {
+        "number": 25,
+        "name": "RST_N",
+        "direction": "input",
+        "domain": "digital_io",
+        "meaning": "低有效系统复位；需各域同步释放；不能直接别名模拟RST/RSTT相位",
+        "status": "existing_core_port;reset_adapter_required"
+      },
+      {
+        "number": 26,
+        "name": "SPI_CS_N",
+        "direction": "input",
+        "domain": "digital_io",
+        "meaning": "仅配置/校准命令/测试选择；低有效片选",
+        "status": "new_function_required"
+      },
+      {
+        "number": 27,
+        "name": "SPI_SCLK",
+        "direction": "input",
+        "domain": "digital_io",
+        "meaning": "初期调试建议<=10MHz；SPI mode/CDC待实现",
+        "status": "new_function_required"
+      },
+      {
+        "number": 28,
+        "name": "SPI_MOSI",
+        "direction": "input",
+        "domain": "digital_io",
+        "meaning": "仅配置与控制写入；不承担每秒5M样本",
+        "status": "new_function_required"
+      },
+      {
+        "number": 29,
+        "name": "SPI_MISO",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "读status/weight/debug；CS_N无效时高阻需IO pad支持",
+        "status": "new_function_required"
+      },
+      {
+        "number": 30,
+        "name": "DOUT[0]",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "校准重构signed16输出bit0；不是raw_bits截断",
+        "status": "new_reconstruction_and_output_required"
+      },
+      {
+        "number": 31,
+        "name": "DOUT[1]",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "校准重构signed16输出bit1；不是raw_bits截断",
+        "status": "new_reconstruction_and_output_required"
+      },
+      {
+        "number": 32,
+        "name": "DOUT[2]",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "校准重构signed16输出bit2；不是raw_bits截断",
+        "status": "new_reconstruction_and_output_required"
+      },
+      {
+        "number": 33,
+        "name": "DOUT[3]",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "校准重构signed16输出bit3；不是raw_bits截断",
+        "status": "new_reconstruction_and_output_required"
+      },
+      {
+        "number": 34,
+        "name": "DOUT[4]",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "校准重构signed16输出bit4；不是raw_bits截断",
+        "status": "new_reconstruction_and_output_required"
+      },
+      {
+        "number": 35,
+        "name": "DOUT[5]",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "校准重构signed16输出bit5；不是raw_bits截断",
+        "status": "new_reconstruction_and_output_required"
+      },
+      {
+        "number": 36,
+        "name": "DOUT[6]",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "校准重构signed16输出bit6；不是raw_bits截断",
+        "status": "new_reconstruction_and_output_required"
+      },
+      {
+        "number": 37,
+        "name": "DOUT[7]",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "校准重构signed16输出bit7；不是raw_bits截断",
+        "status": "new_reconstruction_and_output_required"
+      },
+      {
+        "number": 38,
+        "name": "DOUT[8]",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "校准重构signed16输出bit8；不是raw_bits截断",
+        "status": "new_reconstruction_and_output_required"
+      },
+      {
+        "number": 39,
+        "name": "DOUT[9]",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "校准重构signed16输出bit9；不是raw_bits截断",
+        "status": "new_reconstruction_and_output_required"
+      },
+      {
+        "number": 40,
+        "name": "DOUT[10]",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "校准重构signed16输出bit10；不是raw_bits截断",
+        "status": "new_reconstruction_and_output_required"
+      },
+      {
+        "number": 41,
+        "name": "DOUT[11]",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "校准重构signed16输出bit11；不是raw_bits截断",
+        "status": "new_reconstruction_and_output_required"
+      },
+      {
+        "number": 42,
+        "name": "DOUT[12]",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "校准重构signed16输出bit12；不是raw_bits截断",
+        "status": "new_reconstruction_and_output_required"
+      },
+      {
+        "number": 43,
+        "name": "DOUT[13]",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "校准重构signed16输出bit13；不是raw_bits截断",
+        "status": "new_reconstruction_and_output_required"
+      },
+      {
+        "number": 44,
+        "name": "DOUT[14]",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "校准重构signed16输出bit14；不是raw_bits截断",
+        "status": "new_reconstruction_and_output_required"
+      },
+      {
+        "number": 45,
+        "name": "DOUT[15]",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "校准重构signed16输出bit15；不是raw_bits截断",
+        "status": "new_reconstruction_and_output_required"
+      },
+      {
+        "number": 46,
+        "name": "DCO",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "源同步输出参考沿；目标每有效16bit样本一沿/5MHz frame",
+        "status": "new_function_required"
+      },
+      {
+        "number": 47,
+        "name": "DVALID",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "在DCO参考沿标记16bit样本有效；校准/错误帧的规则待实现",
+        "status": "new_function_required"
+      },
+      {
+        "number": 48,
+        "name": "TEST_MODE",
+        "direction": "input",
+        "domain": "digital_io",
+        "meaning": "板上默认拉低；高电平仅受控测试，结合SPI实现scan/debug访问",
+        "status": "new_function_required"
+      }
+    ],
+    "role": "comparison_measurement_proposal"
+  },
+  "serial_32": {
+    "total_pins": 32,
+    "analog_signal_pins": 9,
+    "power_ground_pins": 10,
+    "other_digital_pins": 13,
+    "pins": [
+      {
+        "number": 1,
+        "name": "VIP",
+        "direction": "input",
+        "domain": "analog",
+        "meaning": "差分输入正端；输入范围和驱动阻抗待模拟验证",
+        "status": "existing_top_net;package_proposal"
+      },
+      {
+        "number": 2,
+        "name": "VIN",
+        "direction": "input",
+        "domain": "analog",
+        "meaning": "差分输入负端；不得当单端地",
+        "status": "existing_top_net;package_proposal"
+      },
+      {
+        "number": 3,
+        "name": "VREFP",
+        "direction": "input",
+        "domain": "reference",
+        "meaning": "高参考输入；名义3.3V；外部去耦与参考动态电流待定",
+        "status": "existing_top_net;package_proposal"
+      },
+      {
+        "number": 4,
+        "name": "VREFN",
+        "direction": "input",
+        "domain": "reference",
+        "meaning": "低参考输入；名义0V；独立回流/参考pin，不能仅靠数字地代替",
+        "status": "existing_top_net;package_proposal"
+      },
+      {
+        "number": 5,
+        "name": "VCM_SAMP",
+        "direction": "input",
+        "domain": "common_mode",
+        "meaning": "采样共模；名义1.65V；对应VCM_165",
+        "status": "existing_top_net;package_proposal"
+      },
+      {
+        "number": 6,
+        "name": "VCM_AZ",
+        "direction": "input",
+        "domain": "common_mode",
+        "meaning": "比较器AZ共模；名义0.9V；不与采样共模合并",
+        "status": "existing_top_net;package_proposal"
+      },
+      {
+        "number": 7,
+        "name": "VCM_AMP",
+        "direction": "input",
+        "domain": "common_mode",
+        "meaning": "放大器共模；名义1.65V；独立可测，不预设可以与VCM_SAMP短接",
+        "status": "existing_top_net;package_proposal"
+      },
+      {
+        "number": 8,
+        "name": "VB",
+        "direction": "input",
+        "domain": "bias",
+        "meaning": "既有PA/COMP_AZ偏置电压输入；外部可调；需要核定器件工作点和pad保护",
+        "status": "OA_pin_exists;package_voltage_range_pending"
+      },
+      {
+        "number": 9,
+        "name": "VBC",
+        "direction": "input",
+        "domain": "bias",
+        "meaning": "既有PA/COMP_AZ第二偏置电压输入；外部可调；不能隐含与VB或VCM合并",
+        "status": "OA_pin_exists;package_voltage_range_pending"
+      },
+      {
+        "number": 10,
+        "name": "AVDD18_A",
+        "direction": "power",
+        "domain": "analog_1v8",
+        "meaning": "模拟1.8V供电；SMIC18具体器件/IO耐压待核",
+        "status": "package_proposal;physical_implementation_required"
+      },
+      {
+        "number": 11,
+        "name": "AGND_A",
+        "direction": "power",
+        "domain": "analog_ground",
+        "meaning": "模拟回流",
+        "status": "package_proposal;physical_implementation_required"
+      },
+      {
+        "number": 12,
+        "name": "AVDD33_SW",
+        "direction": "power",
+        "domain": "switch_3v3",
+        "meaning": "采样/CDAC switch 3.3V供电；只能接核定厚氧/高压器件",
+        "status": "package_proposal;physical_implementation_required"
+      },
+      {
+        "number": 13,
+        "name": "AGND_SW",
+        "direction": "power",
+        "domain": "switch_ground",
+        "meaning": "开关/参考瞬态回流；片内星点/隔离待版图定义",
+        "status": "package_proposal;physical_implementation_required"
+      },
+      {
+        "number": 14,
+        "name": "DVDD18_CORE",
+        "direction": "power",
+        "domain": "digital_1v8",
+        "meaning": "数字core1.8V供电；历史DC名义工作电压",
+        "status": "package_proposal;physical_implementation_required"
+      },
+      {
+        "number": 15,
+        "name": "DGND_CORE",
+        "direction": "power",
+        "domain": "digital_ground",
+        "meaning": "数字core回流",
+        "status": "package_proposal;physical_implementation_required"
+      },
+      {
+        "number": 16,
+        "name": "IOVDD",
+        "direction": "power",
+        "domain": "io_supply",
+        "meaning": "真实SMIC18 pad/ESD库待选；IO电压与接收端共同定义，当前不承诺1.8V/3.3V兼容或速度",
+        "status": "package_proposal;physical_implementation_required"
+      },
+      {
+        "number": 17,
+        "name": "IOVSS",
+        "direction": "power",
+        "domain": "io_ground",
+        "meaning": "I/O驱动和ESD回流",
+        "status": "package_proposal;physical_implementation_required"
+      },
+      {
+        "number": 18,
+        "name": "AGND_AUX",
+        "direction": "power",
+        "domain": "analog_ground",
+        "meaning": "与AGND_A同域的辅助bond",
+        "status": "package_proposal;physical_implementation_required"
+      },
+      {
+        "number": 19,
+        "name": "DGND_AUX",
+        "direction": "power",
+        "domain": "digital_ground",
+        "meaning": "与DGND_CORE同域的辅助bond",
+        "status": "package_proposal;physical_implementation_required"
+      },
+      {
+        "number": 20,
+        "name": "CLK_SYS",
+        "direction": "input",
+        "domain": "digital_io",
+        "meaning": "100MHz housekeeping/输出控制目标；历史core约束10ns；pad速度未知",
+        "status": "existing_core_port;new_pad_required"
+      },
+      {
+        "number": 21,
+        "name": "CLK_DEC",
+        "direction": "input",
+        "domain": "digital_io",
+        "meaning": "bringup/test决策域clock输入；3ns为历史core/test条件，333.3MHz pad链/板级能力未核；正常运行的内部ready事件方案需重新定义CDC，不能直接绑READYN",
+        "status": "existing_core_port;new_pad_required"
+      },
+      {
+        "number": 22,
+        "name": "CNV",
+        "direction": "input",
+        "domain": "digital_io",
+        "meaning": "5MS/s转换请求/采样触发目标；新相位控制和请求接受协议必须实现",
+        "status": "new_function_required"
+      },
+      {
+        "number": 23,
+        "name": "RST_N",
+        "direction": "input",
+        "domain": "digital_io",
+        "meaning": "低有效系统复位；需各域同步释放；不能直接别名模拟RST/RSTT相位",
+        "status": "existing_core_port;reset_adapter_required"
+      },
+      {
+        "number": 24,
+        "name": "SPI_CS_N",
+        "direction": "input",
+        "domain": "digital_io",
+        "meaning": "仅配置/校准命令/测试选择；低有效片选",
+        "status": "new_function_required"
+      },
+      {
+        "number": 25,
+        "name": "SPI_SCLK",
+        "direction": "input",
+        "domain": "digital_io",
+        "meaning": "初期调试建议<=10MHz；SPI mode/CDC待实现",
+        "status": "new_function_required"
+      },
+      {
+        "number": 26,
+        "name": "SPI_MOSI",
+        "direction": "input",
+        "domain": "digital_io",
+        "meaning": "仅配置与控制写入；不承担每秒5M样本",
+        "status": "new_function_required"
+      },
+      {
+        "number": 27,
+        "name": "SPI_MISO",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "读status/weight/debug；CS_N无效时高阻需IO pad支持",
+        "status": "new_function_required"
+      },
+      {
+        "number": 28,
+        "name": "SDOUT0",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "24bit frame偶数位lane：0,2,...22；MSB/LSB顺序按帧协议固定",
+        "status": "new_serializer_and_reconstruction_required"
+      },
+      {
+        "number": 29,
+        "name": "SDOUT1",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "24bit frame奇数位lane：1,3,...23",
+        "status": "new_serializer_and_reconstruction_required"
+      },
+      {
+        "number": 30,
+        "name": "DCO",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "源同步SDR burst时钟；建议复用100MHz CLK_SYS，24bit frame需12个沿",
+        "status": "new_function_required"
+      },
+      {
+        "number": 31,
+        "name": "DVALID",
+        "direction": "output",
+        "domain": "digital_io",
+        "meaning": "一拍frame-start；从该DCO沿起收12个双lane位对；不等同ADC精度valid",
+        "status": "new_function_required"
+      },
+      {
+        "number": 32,
+        "name": "TEST_MODE",
+        "direction": "input",
+        "domain": "digital_io",
+        "meaning": "板上默认拉低；高电平仅受控测试，结合SPI实现scan/debug访问",
+        "status": "new_function_required"
+      }
+    ],
+    "role": "selected_primary_proposal"
+  },
+  "serial_link": {
+    "sample_rate_sps": 5000000,
+    "sample_width_bits": 16,
+    "payload_minimum_bps": 80000000,
+    "recommended_frame_bits": 24,
+    "framed_required_bps": 120000000,
+    "frame_fields": {
+      "bits_15_0": "signed16 reconstructed ADC code",
+      "bit_16": "sample_valid",
+      "bit_17": "cal_mode",
+      "bit_18": "overrange",
+      "bit_19": "srm_error",
+      "bits_23_20": "sequence_mod16"
+    },
+    "lane_count": 2,
+    "lane_minimum_average_bps": 60000000,
+    "recommended_source_synchronous_burst": {
+      "clock_hz": 100000000,
+      "mode": "SDR, two data lanes, source DCO",
+      "gross_bps": 200000000,
+      "dco_cycles_per_frame": 12,
+      "burst_duration_ns": 120,
+      "sample_period_ns": 200,
+      "idle_budget_ns": 80,
+      "utilization": 0.6
+    },
+    "other_options": [
+      "A 20bit minimal frame still needs100Mbps aggregate; two50Mbps lanes leave no idle margin.",
+      "A 32bit frame with CRC8 needs160Mbps aggregate; two100Mbps SDR lanes use16 cycles/160ns and40ns idle, before physical/timing margins.",
+      "One lane needs at least120Mbps for the24bit frame; faster signaling needs a proven SMIC18 I/O/board contract."
+    ],
+    "spi_cfg": "Separate low-rate configuration/debug bus, initial <=10MHz proposal; cannot transport full-rate5MS/s16bit ADC output.",
+    "timing_status": "100MHz SDR is a scheduling target only. Real SMIC18 pad/ESD voltage, speed, skew, receiver setup/hold, load and board SI are unverified; no serializer exists in current core.",
+    "pairing_status": "Internal raw/residue association must use retained samples and tags; short outgoing sequence count is only a diagnostic and does not prove CDC/association.",
+    "launch_capture_phase": "Prefer data launch and source DCO capture separated in phase (e.g. opposite edges, nominal5ns at100MHz) with clean clock gating. This is a proposed IO timing contract; actual pad/board skew and setup/hold must be signed off."
+  },
+  "reconstruction_resources": {
+    "source": "local downloaded sar_reconstruction.sv; static reading only; not new synthesis",
+    "storage_bits": {
+      "weight_ram": 600,
+      "partial_sums": 160,
+      "sum_stage2": 40,
+      "adc_dout": 16,
+      "valid_flags": 3,
+      "total_architectural_ff_equivalent_bits": 819
+    },
+    "temporary_variables": "Three named 40bit blocking temporaries are same-cycle scaling expressions; no additional persistent 120bit bank is required by the algorithm. Optimization/elaboration still needs synthesis.",
+    "cell_area_reference_um2": {
+      "DFFSXL_or_DFFSX1": 63.2016,
+      "ADDFX1": 69.8544,
+      "NAND2X1": 9.9792
+    },
+    "ff_equivalent_area_mm2": {
+      "weight_ram": 0.03792096,
+      "pipeline_data_216bits": 0.013651545599999999,
+      "valid_3bits": 0.0001896048,
+      "total_819bits": 0.0517621104
+    },
+    "combinational_resource_model": {
+      "group_accumulation_add_levels": 16,
+      "global_sum_add_levels": 3,
+      "nominal_add_width_bits": 40,
+      "full_adder_bit_slots_upper_reference": 760,
+      "naive_19x40_ADDFX1_area_mm2": 0.053089344,
+      "extra_unmapped": "20 signed +/- selections, 4 initial negations, weight write enables/muxes/clock gates, constant rounder, saturation, SRM subtraction and protocol logic; fixed sign extension can reduce upper carry logic."
+    },
+    "limitations": [
+      "819 is an architectural bit count, not a mapped-cell count; the unreset initial RAM requires valid hardware initialization.",
+      "Current core shadow 600 FF has no reconstruction read port; reuse requires architectural change and verification.",
+      "Legacy reconstruction omits SRM subtraction and calibrated total-weight gain normalization; its initial low six weights are zero until seeded.",
+      "The area range does not establish 100MHz timing across a five-term combinational accumulation chain.",
+      "A fully programmable final gain multiplier or deep FIFO is not covered as an implemented function; coefficient/macro choice may move the budget."
+    ],
+    "source_filename": "sar_reconstruction.sv",
+    "source_sha256": "2ca489dd14528b12765022b8e871fdfcd394d88247ff3a58f9e4b54f26375499",
+    "source_line_count": 205
+  },
+  "area_budget": {
+    "units": "mm2",
+    "verified_existing_partial_core": {
+      "mapped_cell": 0.1023001056,
+      "historical_die_footprint": 0.184839457,
+      "die_width_um": 430.52,
+      "die_height_um": 429.34,
+      "not_whole_adc_or_pad_ring": true
+    },
+    "default_unrolled_reconstruction_new_cell": {
+      "min": 0.1,
+      "nominal": 0.125,
+      "max": 0.15,
+      "status": "resource_based_assumption_not_synthesis"
+    },
+    "spi_protocol_parallel_output_new_cell": {
+      "min": 0.01,
+      "nominal": 0.01,
+      "max": 0.02,
+      "status": "assumed_minimal_interface_budget_not_synthesis",
+      "scope": "CFG/status/test, raw/residue pairing and separate output double buffers, serializer/control glue;132FF buffer model is included, no extra addition. No realpad area."
+    },
+    "default_parallel_total_new_cell": {
+      "min": 0.11,
+      "nominal": 0.135,
+      "max": 0.17
+    },
+    "default_parallel_total_cell": {
+      "min": 0.2123001056,
+      "nominal": 0.2373001056,
+      "max": 0.2723001056
+    },
+    "default_parallel_digital_macro": {
+      "min": 0.41302020544,
+      "nominal": 0.46165656907636365,
+      "max": 0.5297474781672727,
+      "utilization_assumption": 0.55,
+      "local_margin_factor": 1.07,
+      "formula": "(existing_cell + new_cell) / 0.55 * 1.07; no pad ring, analog area or whole-chip floorplan margin"
+    },
+    "serializer_two_lane_incremental_cell": {
+      "min": 0.003,
+      "nominal": 0.005,
+      "max": 0.008,
+      "status": "assumed_24bit_shift/control/DCO_glue_not_synthesis",
+      "scope": "Sub-budget inside the combined interface allocation for selected serial方案; do not add again to selected_folded_serial_total_new_cell."
+    },
+    "default_serial_total_cell": {
+      "min": 0.2123001056,
+      "nominal": 0.2373001056,
+      "max": 0.2723001056
+    },
+    "default_serial_digital_macro": {
+      "min": 0.41302020544,
+      "nominal": 0.46165656907636365,
+      "max": 0.5297474781672727,
+      "utilization_assumption": 0.55,
+      "local_margin_factor": 1.07,
+      "formula": "(existing_cell + new_cell) / 0.55 * 1.07; no pad ring, analog area or whole-chip floorplan margin"
+    },
+    "folded_reconstruction_alternative_new_cell": {
+      "min": 0.065,
+      "nominal": 0.0825,
+      "max": 0.1,
+      "status": "selected_architecture_candidate_not_implemented",
+      "target_schedule": "two weights per 100MHz cycle: 10 accumulation cycles plus approximately 3 merge/residue/round cycles; not measured",
+      "constraints": "600bit new weight memory retained; no automatic shadow reuse. Two banked reads/cycle, 35bit safe accumulators, raw/residue double buffering, tags and errors need functional/formal/synth/STA; final gain/scale rules pending."
+    },
+    "exclusions": [
+      "Real SMIC18 pad and ESD ring, level shifters/high-voltage devices and their keepouts",
+      "Analog custom macros, digital/analog isolation and chip seal ring",
+      "Unbudgeted large variable-gain multiplier, deep sample FIFO, redundant shadow refresh or timing-driven extra pipeline",
+      "Any claim that old non-SMIC analog layout can be directly merged into the SMIC18 digital layout"
+    ],
+    "selected_folded_serial_total_new_cell": {
+      "min": 0.075,
+      "nominal": 0.095,
+      "max": 0.12,
+      "status": "selected_planning_candidate_not_synthesis",
+      "scope": "folded reconstruction .065-.100 plus SPI/protocol/132FF buffers/serializer .010-.020; serializer/buffers included, not double counted",
+      "nominal_decomposition": "0.0825 folded reconstruction + 0.0125 combined interface = 0.095 mm2"
+    },
+    "selected_folded_serial_total_cell": {
+      "min": 0.17730010559999998,
+      "nominal": 0.1973001056,
+      "max": 0.2223001056
+    },
+    "selected_folded_serial_digital_macro": {
+      "min": 0.34492929634909086,
+      "nominal": 0.3838383872581818,
+      "max": 0.43247475089454546,
+      "utilization_assumption": 0.55,
+      "local_margin_factor": 1.07,
+      "formula": "(existing_cell + selected_new_cell) / 0.55 * 1.07; no analog/pad ring"
+    },
+    "conservative_unrolled_baseline_note": "New cell nominal .135 -> macro .461656569mm2; interface allocation includes selected serial output. Old expanded arithmetic is a conservative reuse/reference scenario, not the selected folded plan.",
+    "selected_folded_serial_interface_new_cell": {
+      "min": 0.01,
+      "nominal": 0.0125,
+      "max": 0.02,
+      "status": "planning_assumption_not_synthesis",
+      "scope": "SPI/protocol/132FF pairing-frame buffers/serializer combined; buffers also serve serializer, do not add serializer sub-budget again"
+    }
+  },
+  "required_new_functions": [
+    "Onchip weighted reconstruction including low-six initialization, SRM sign/scale, residue subtraction and final normalization/rounding/saturation",
+    "SPI CFG/status/weight debug and TEST_MODE route; SPI does not exist in current core",
+    "Raw/sample retention, SRM ready/prearm, timeout/stale-done recovery, reset-release synchronization and sample association",
+    "CNV/analog phase ownership and safe DAC-force mux; abstract force code is not a gate switch signal",
+    "Parallel source-synchronous output register/valid or24bit two-lane serializer, frame start, limited elastic buffer and output timing",
+    "SMIC18-specific pads, ESD, voltage-domain interfaces and package/power verification",
+    "Internal bias generation or validated VCM sharing can later save pins; neither is assumed in the48/32pin prototype.",
+    "Repair original SRM arm/abort/stale-done ownership inside the RTL; external pin protocol alone is insufficient."
+  ],
+  "bias_status": "VB/VBC remain two external adjustable voltage pins in the first prototype; no internal bias generator implementation is assumed.",
+  "selection": {
+    "primary": "serial_32",
+    "user_preference": "Fewer package pins; serial sample output plus separate SPI configuration",
+    "comparison_only": "parallel_48",
+    "area_primary": "folded two-weight/cycle candidate; not implemented or verified"
+  },
+  "folded_pipeline_schedule": {
+    "status": "illustrative_budget; not executed or formal proof",
+    "housekeeping_period_ns": 10,
+    "per_sample_reconstruction_cycles": 13,
+    "per_sample_reconstruction_time_ns": 130,
+    "stages": [
+      "t0..t100ns: two banked weights/clk, 10cycles for20 terms",
+      "t100..t110ns: merge two35bit partial sums",
+      "t110..t120ns: residue sign/scale conversion and subtract (exact format pending)",
+      "t120..t130ns: defined normalization/round/saturation and enqueue24bit frame"
+    ],
+    "serial_time_ns": 120,
+    "sample_interval_ns": 200,
+    "overlap": "Frame k can serialize while sample k+1 reconstructs using separate registers/clock enables. Need raw/residue double-buffered slots and an output frame latch/limited queue.",
+    "example_two_samples": [
+      {
+        "sample": 0,
+        "pair_ready_ns": 0,
+        "reconstruct_start_ns": 0,
+        "reconstruct_end_ns": 130,
+        "serialize_start_ns": 130,
+        "serialize_end_ns": 250
+      },
+      {
+        "sample": 1,
+        "pair_ready_ns": 200,
+        "reconstruct_start_ns": 200,
+        "reconstruct_end_ns": 330,
+        "serialize_start_ns": 330,
+        "serialize_end_ns": 450
+      }
+    ],
+    "latency": "Example is measured from coherent raw/residue pair ready, not from analog CNV. Pipeline250ns initial delivery latency is compatible with200ns sample spacing if all stages keep the rate.",
+    "faults": "Current SRM late old-done misattribution requires an internal arm/abort/epoch repair and verification. A package handshake cannot mask the RTL bug. On timeout/missing pair/queue overflow emit explicit invalid/error frame and release/flush ownership; two entries do not guarantee recovery under unbounded stalls.",
+    "gain_note": "A programmable normalization multiply cannot be assumed to fit one cycle or this area. Either prove a pre-normalized weight/residue coordinate established during calibration, or add a separately pipelined gain unit and its budget."
+  },
+  "interface_buffer_resources": {
+    "status": "proposed_explicit_storage_model; not new RTL/synthesis",
+    "pair_entry": {
+      "raw_bits": 20,
+      "residue_bits": 10,
+      "sample_tag_bits": 8,
+      "flags_bits": 4,
+      "total_bits": 42
+    },
+    "pair_entries": 2,
+    "pair_bits": 84,
+    "output_frame_bits": 24,
+    "output_entries": 2,
+    "output_bits": 48,
+    "total_buffer_ff_equivalent_bits": 132,
+    "DFF_reference_area_mm2": 0.008342611199999999,
+    "accounting": "Already inside .010-.020mm2 combined protocol/SPI/output budget; do not add again. Output buffer can supply serializer state, rather than unconditionally adding another24bit bank.",
+    "limits": "No SPI configuration/state registers or gates included in132-bit floor; actual buffers also need valid/ownership and implemented reset/write behavior. Total budget remains an assumption."
+  }
+}

@@ -1,0 +1,942 @@
+{
+  "title": "SAR16 analog specs and conditional budget",
+  "date": "2026-10-03",
+  "scope": "Offline allocation/checkpoint only; no web/SSH/new EDA, no repo edits. Current status uses 2026-10-02 OA capture and frozen original RTL, not live current ADE.",
+  "paper": {
+    "doi": "10.1109/JSSC.2025.3526595",
+    "title": "A5-MS/s16-bit Low-Noise and Low-Power Split Sampling SAR ADC With Eased Driving Burden",
+    "journal": "IEEE JSSC60(3),813–825,March2025",
+    "pdf_pages": 13,
+    "source_sha256": "ce15bb9cad0b57df238d21a2e66adde791f86c414a80f18e972651fc09c77e85",
+    "source_policy": "local read-only text/figure inspection; no original paper republishing"
+  },
+  "source_hashes": {
+    "analog_interface_20261002/paper_analog_requirements.json": "51b972faec8b336fc456f4172b1f5aace5cacc0e7d8b39d4be16c82bc2212713",
+    "analog_interface_20261002/oa_paper_comparison.json": "75eff3ae79e3c9906dc8dc237f44c0a0714ce346b64cc2add0253ebe9e33f3c1",
+    "repo/evidence/rtl_baseline/sar_digi_paper_core.sv": "cfb3548a9aa6e6bfa3d9395f02c5695d12e075415931185db8da461804139022"
+  },
+  "prototype_assumptions": {
+    "target_process": "SMIC18; exact device options/cap densities and voltage ratings await real PDK validation",
+    "input_buffer": "external",
+    "reference_generator_driver": "external first prototype",
+    "bias_voltage_current_generator": "external first prototype; transistor VDD-tail power still counts in ADC",
+    "clock_generator": "external first prototype; on-chip clock buffer/logic jitter still counts",
+    "output_pad_IO": "Separate budget. P_IO,dynamic = Cload*VIO^2*r01 per pin (r01 is0to1 event rate); include pad shortcircuit/static additionally. Unknown pad/load cannot be guaranteed within5.31mW.",
+    "current_digital_power_evidence": "DC2.546mW uses default unannotated activity; no normalmode acceptance. Added normalSAR/reconstruction/IO power remains unknown.",
+    "internal_core_target_mW": 5.31,
+    "power_boundary": "Internal core allocation is separate from output pad IO. Track power entering ADC supply/reference/bias/clock terminals; separately record off-chip source/driver generation losses. External-reference status alone does not remove energy delivered to DAC. Match paper boundary before exact P comparison.",
+    "topology": "shared Cs20p per side and Fig6 CDAC intended; current distributed40×20p OA is not assumed final"
+  },
+  "spec_rows": [
+    {
+      "id": "SYS01",
+      "module": "system",
+      "parameter": "process",
+      "value": 180,
+      "unit": "nm",
+      "evidence_type": "论文设计",
+      "source": "p.821 IV; p.823 TableII",
+      "conditions": "论文原型CMOS180nm；当前模拟TSMC18、数字历史SMIC18，不能直接合成一个工艺签核",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "SMIC18重新选择器件、模型和标准单元并集成"
+    },
+    {
+      "id": "SYS02",
+      "module": "system",
+      "parameter": "output_resolution",
+      "value": 16,
+      "unit": "bit",
+      "evidence_type": "论文设计",
+      "source": "p.817 III-A",
+      "conditions": "20个物理冗余控制位加权重构16位",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "校准权重/残差/舍入及最终16位饱和一致"
+    },
+    {
+      "id": "SYS03",
+      "module": "system",
+      "parameter": "sample_rate",
+      "value": 5,
+      "unit": "MS/s",
+      "evidence_type": "论文实测",
+      "source": "p.821 IV; p.823 TableII",
+      "conditions": "所有SS+SRM启用；每200ns完整转换",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "连续转换无遗漏且完整18SAR+22SRM闭合"
+    },
+    {
+      "id": "SYS04",
+      "module": "system",
+      "parameter": "frame_period",
+      "value": 200,
+      "unit": "ns",
+      "evidence_type": "由论文推导",
+      "source": "5MS/s",
+      "conditions": "1/Fs；不是理想脉冲证明转换完成",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "检查模拟相位和same-sample最终输出"
+    },
+    {
+      "id": "IN01",
+      "module": "input",
+      "parameter": "differential_fullscale",
+      "value": 6.6,
+      "unit": "Vpp",
+      "evidence_type": "论文设计/实测条件",
+      "source": "p.817 III-A; p.823 TableII",
+      "conditions": "最大差分范围−3.3..+3.3V；单端CM/余量另验",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "全幅低频/高频、输入CM与器件应力"
+    },
+    {
+      "id": "IN02",
+      "module": "input",
+      "parameter": "external_reference",
+      "value": 3.3,
+      "unit": "V",
+      "evidence_type": "论文设计",
+      "source": "p.817 III-A",
+      "conditions": "原型先外部提供；VrefN/VrefP和共模定义明确",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "ADC端口参考瞬态、阻抗、噪声、返送电荷"
+    },
+    {
+      "id": "IN03",
+      "module": "input",
+      "parameter": "input_commonmode",
+      "value": "未完整披露；历史原型1.65",
+      "unit": "V",
+      "evidence_type": "论文未给数值/历史参数",
+      "source": "p.818 Fig6; historical input.scs1120",
+      "conditions": "1.65V是历史测试值，不是论文已验收值",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "SMIC18 input CM sweep、distortion/headroom"
+    },
+    {
+      "id": "IN04",
+      "module": "input",
+      "parameter": "output_LSB_ideal",
+      "value": 100.7080078125,
+      "unit": "uV",
+      "evidence_type": "条件推导",
+      "source": "6.6Vpp / 2^16",
+      "conditions": "16bit理想均匀输出码步长；不是DAC最小bit权重",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "输入到重构输出增益/尺度/端码核对"
+    },
+    {
+      "id": "PERF01",
+      "module": "system",
+      "parameter": "SNDR_lowfreq",
+      "value": 93.7,
+      "unit": "dBFS",
+      "evidence_type": "论文实测",
+      "source": "p.822 Fig19a/IV",
+      "conditions": "5MS/s；Fin2.136kHz；−1.45dBFS；256kpoints；图中full-scale归一",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "以冻结netlist/model/RTL及相同输入FFT口径验证"
+    },
+    {
+      "id": "PERF02",
+      "module": "system",
+      "parameter": "SFDR_lowfreq",
+      "value": 105.34,
+      "unit": "dBc",
+      "evidence_type": "论文实测",
+      "source": "p.822 Fig19a",
+      "conditions": "条件同PERF01",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "以冻结netlist/model/RTL及相同输入FFT口径验证"
+    },
+    {
+      "id": "PERF03",
+      "module": "system",
+      "parameter": "SNDR_1MHz",
+      "value": 89.1,
+      "unit": "dB reported",
+      "evidence_type": "论文实测",
+      "source": "p.822 Fig19b; p.823 IV",
+      "conditions": "Fin1.0025MHz；−1.48dBFS；5MS/s；须对齐Fig19b归一口径",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "以冻结netlist/model/RTL及相同输入FFT口径验证"
+    },
+    {
+      "id": "PERF04",
+      "module": "system",
+      "parameter": "SFDR_1MHz",
+      "value": 104.7,
+      "unit": "dBc",
+      "evidence_type": "论文实测",
+      "source": "p.822 Fig19b; p.823 IV",
+      "conditions": "条件同PERF03",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "以冻结netlist/model/RTL及相同输入FFT口径验证"
+    },
+    {
+      "id": "PERF05",
+      "module": "system",
+      "parameter": "DR",
+      "value": 95,
+      "unit": "dB",
+      "evidence_type": "论文实测",
+      "source": "p.823 TableII",
+      "conditions": "5MS/s；DR不能替代SNDR",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "短路noise及输入幅度扫测"
+    },
+    {
+      "id": "PERF06",
+      "module": "system",
+      "parameter": "ENOB_FS_equivalent",
+      "value": 15.272425249169435,
+      "unit": "bit",
+      "evidence_type": "条件推导",
+      "source": "(93.7−1.76)/6.02",
+      "conditions": "只在FS等效SNDR定义成立时为15.272；不能称该输入下无条件ENOB",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "先确认FFT归一、noise bandwidth和actual sine amplitude"
+    },
+    {
+      "id": "PERF07",
+      "module": "system",
+      "parameter": "ENOB_signal_relative_if_FS_normalized",
+      "value": 15.03156146179402,
+      "unit": "bit",
+      "evidence_type": "条件推导",
+      "source": "(93.7−1.45−1.76)/6.02",
+      "conditions": "若93.7是FS归一，actual signal SNDR92.25，条件ENOB15.032",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "报告FS等效与signal-relative两列"
+    },
+    {
+      "id": "LIN01",
+      "module": "linearity",
+      "parameter": "INL_measured_range",
+      "value": "−0.9..+0.9",
+      "unit": "output LSB",
+      "evidence_type": "论文实测",
+      "source": "p.821 IV; p.822 Fig17",
+      "conditions": "校准后histogram；不是未校准CDAC线性度",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "完整阵列失配MC、code histogram、INL/DNL"
+    },
+    {
+      "id": "LIN02",
+      "module": "linearity",
+      "parameter": "DNL_target",
+      "value": "−1<DNL<+1; no missing codes",
+      "unit": "output LSB",
+      "evidence_type": "建议分配",
+      "source": "本次预算建议；论文没有明确数字上限",
+      "conditions": "不把Fig17图读数当精确论文界限",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "直方图置信区间、missing codes与PVT"
+    },
+    {
+      "id": "PWR01",
+      "module": "power",
+      "parameter": "supply_domains",
+      "value": "1.8;3.3",
+      "unit": "V",
+      "evidence_type": "论文设计/实测",
+      "source": "p.821 IV",
+      "conditions": "多电压域；偏置/参考/时钟发生器原型先外供",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "电源/IO/reference/bias端口功率分账"
+    },
+    {
+      "id": "PWR02",
+      "module": "power",
+      "parameter": "total_ADC_power_benchmark",
+      "value": 5.31,
+      "unit": "mW",
+      "evidence_type": "论文实测",
+      "source": "p.821 IV/Fig15",
+      "conditions": "5MS/s；外部APx/33500及LTC6237/AD4899等测试驱动器另计",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "全ADC供能端口平均功率；normal/cal/idle分别记录"
+    },
+    {
+      "id": "PWR04",
+      "module": "power",
+      "parameter": "current_DC_default_activity_estimate",
+      "value": 2.546,
+      "unit": "mW",
+      "evidence_type": "历史EDA默认活动估算",
+      "source": "evidence/rpt_v51/dc/power.rpt:41",
+      "conditions": "未标注输入/寄存器活动，缺normalSAR与完整重构/IO；不可作模式功耗",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "代表normal/cal/idle的SAIF/VCD、coverage与physical scope"
+    },
+    {
+      "id": "PWR05",
+      "module": "power",
+      "parameter": "internal_core_design_allocation",
+      "value": 5.31,
+      "unit": "mW",
+      "evidence_type": "可调整建议",
+      "source": "本次预算；不是已验证总芯片值",
+      "conditions": "内部analog+digital目标，不含输出pad驱动任意外接Cload及未设计新增重构功耗保证",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "core真实activity及新模块；IO另算"
+    },
+    {
+      "id": "PWR06",
+      "module": "power",
+      "parameter": "chip_plus_external_interface_power",
+      "value": "Pcore+PIO+other_actual_supply_terms",
+      "unit": "formula",
+      "evidence_type": "预算边界建议",
+      "source": "PIO_dynamic=Cload*VIO^2*r01",
+      "conditions": "r01为0→1事件率；另加pad短路/静态，未知IO负载不可承诺≤5.31",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "pad型号/Cload/事件率/driverstatics、重构新增power"
+    },
+    {
+      "id": "PWR03",
+      "module": "area",
+      "parameter": "paper_active_area",
+      "value": 0.57,
+      "unit": "mm2",
+      "evidence_type": "论文版图/实测原型",
+      "source": "p.821 IV/Fig15",
+      "conditions": "active area，不含pad/die边界；不可直接移植为SMIC18最终面积",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "SMIC18独立布局容量密度/匹配/guardrings/多电压域估算"
+    },
+    {
+      "id": "SS01",
+      "module": "SS sampling",
+      "parameter": "Cs_each",
+      "value": 20,
+      "unit": "pF",
+      "evidence_type": "论文设计",
+      "source": "p.815 II-B; p.817 III-A; p.818 Fig6",
+      "conditions": "差分两侧各1个共享Cs；不参加bit cycling",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "共享/分布拓扑确认及noise-transfer验证"
+    },
+    {
+      "id": "SS02",
+      "module": "SS sampling",
+      "parameter": "Cs_differential_count",
+      "value": 2,
+      "unit": "count",
+      "evidence_type": "论文设计",
+      "source": "p.818 Fig6",
+      "conditions": "2×20pF；算术总和40pF不等于每个单端输入load",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "各相位输入admittance与common-mode source load"
+    },
+    {
+      "id": "SS03",
+      "module": "SS sampling",
+      "parameter": "current_Cs_inventory",
+      "value": "40×20p=800p",
+      "unit": "pF inventory",
+      "evidence_type": "OA结构事实",
+      "source": "SS_MAIN/C1; top I44<20:1>,I110<20:1>",
+      "conditions": "当前每侧20份局部SS_MAIN；800p非输入等效cap",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "先选定共享还是distributed Cs，再重算输入/噪声/面积"
+    },
+    {
+      "id": "SS04",
+      "module": "SS sampling",
+      "parameter": "sampling_window_tested",
+      "value": "25;50",
+      "unit": "ns",
+      "evidence_type": "论文仿真/实测测试条件",
+      "source": "p.817 Fig5; p.823 Fig22",
+      "conditions": "短CDAC sampling窗口；Cs长tracking与conversion重叠，不能将Cs20p一律限在25ns",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "有限source Rs/buffer、worst input slew及采样误差"
+    },
+    {
+      "id": "SS05",
+      "module": "SS sampling",
+      "parameter": "charge_discharge_delay",
+      "value": 3,
+      "unit": "ns",
+      "evidence_type": "论文设计/仿真",
+      "source": "p.819 III-B/Fig8",
+      "conditions": "Msdc相对Msbot延迟释放；图90/3µm与正文27倍存在差别",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "扫delay、charge injection、distortion、PVT/postlayout"
+    },
+    {
+      "id": "DAC01",
+      "module": "CDAC",
+      "parameter": "CDAC_nominal_each",
+      "value": 1,
+      "unit": "pF",
+      "evidence_type": "论文设计",
+      "source": "p.817 III-A; p.821 III-E",
+      "conditions": "每侧小DAC的论文名义口径；不是全部split电容简单求和",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "底板钳位条件下cap矩阵及各相位输入/参考load"
+    },
+    {
+      "id": "DAC02",
+      "module": "CDAC",
+      "parameter": "physical_bits",
+      "value": 20,
+      "unit": "count",
+      "evidence_type": "论文设计",
+      "source": "p.817 III-A; p.818 Fig6",
+      "conditions": "含冗余、非二进制；最终16bit输出",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "20bit控制与calibration/reconstruction mapping"
+    },
+    {
+      "id": "DAC03",
+      "module": "CDAC",
+      "parameter": "section_counts",
+      "value": "6+4+5+5",
+      "unit": "count",
+      "evidence_type": "论文图核对",
+      "source": "p.818 Fig6 300dpi对齐",
+      "conditions": "当前active拓扑相同；92实例含46ignore",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "filter ignore与冻结物理网络"
+    },
+    {
+      "id": "DAC04",
+      "module": "CDAC",
+      "parameter": "C0_to_C19_Cu",
+      "value": "1,2,4,8,16,32;2,4,8,16;2,2,4,8,16;8,8,16,32,64",
+      "unit": "Cu",
+      "evidence_type": "论文图核对",
+      "source": "p.818 Fig6",
+      "conditions": "物理cap比例，非effective weight数组",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "PDK几何/端子/寄生解矩阵后得实际weights"
+    },
+    {
+      "id": "DAC05",
+      "module": "CDAC",
+      "parameter": "bridge_Cu",
+      "value": "4;4;12",
+      "unit": "Cu",
+      "evidence_type": "论文图核对",
+      "source": "p.818 Fig6",
+      "conditions": "Cb2位于C14/C15之间；Cu绝对值未公开",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "bridge parasitics/mismatch/reference ratio"
+    },
+    {
+      "id": "DAC06",
+      "module": "CDAC",
+      "parameter": "DAC_LSB",
+      "value": 80,
+      "unit": "uV approx",
+      "evidence_type": "论文设计",
+      "source": "p.817 III-A",
+      "conditions": "最小DAC权重尺度；不同于outputLSB100.708µV",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "真实差分开关幅度/weights/code坐标"
+    },
+    {
+      "id": "DAC07",
+      "module": "CDAC",
+      "parameter": "historical_topcap_conditional",
+      "value": "5.12..5.60",
+      "unit": "pF/side",
+      "evidence_type": "历史参数+被动网络推导",
+      "source": "cf40f；当前top direct128cf和bridge12cf",
+      "conditions": "isolated DAC；bottoms钳位、split top nodes浮置，无amp/Cs负载；allideal解5.47893p",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "fresh netlist及MOM/MIM实际模型；GUI c字段不能代替cap实值"
+    },
+    {
+      "id": "CAL01",
+      "module": "calibration",
+      "parameter": "trusted_reference_bits",
+      "value": 6,
+      "unit": "bit",
+      "evidence_type": "论文设计",
+      "source": "p.817 III-A; p.821 III-E",
+      "conditions": "理想1:2:4:8:16:32先验必须由实际PDK验证",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "6bit参考INL、mismatch MC和实际weights"
+    },
+    {
+      "id": "CAL02",
+      "module": "calibration",
+      "parameter": "measured_high_bits",
+      "value": 14,
+      "unit": "bit",
+      "evidence_type": "论文设计",
+      "source": "p.821 III-E",
+      "conditions": "weights6..19；校准时SS与SRM启用",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "P/N polarity、residue尺度与每次measurement归属"
+    },
+    {
+      "id": "CAL03",
+      "module": "calibration",
+      "parameter": "reference_INL_3sigma",
+      "value": 0.39,
+      "unit": "output LSB",
+      "evidence_type": "论文MC仿真",
+      "source": "p.821 III-E",
+      "conditions": "参考段贡献±0.39LSB；未校准整个CDAC约11bitlinearity",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "SMIC18 referencecap mismatch模型和完整INL"
+    },
+    {
+      "id": "CAL04",
+      "module": "calibration",
+      "parameter": "averaging_benchmark",
+      "value": 64,
+      "unit": "count",
+      "evidence_type": "论文实测校准验证",
+      "source": "p.821 IV; p.822 Fig16",
+      "conditions": "1kHz全幅、1MS/s reconstruction；meanSNDR~94、SFDR~108dBc；不等同RTL32P/Nloops",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "收敛分布；independence、deterministic bias和SRM assisted"
+    },
+    {
+      "id": "FLASH01",
+      "module": "flash",
+      "parameter": "output_bits",
+      "value": 2,
+      "unit": "bit",
+      "evidence_type": "论文设计",
+      "source": "p.817 III-A/Fig6",
+      "conditions": "3比较器thermometer-to-binary，设置CDAC高2位",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "映射、offset/meta、decision timing"
+    },
+    {
+      "id": "FLASH02",
+      "module": "flash",
+      "parameter": "thresholds",
+      "value": "−1.65;0;+1.65",
+      "unit": "V differential",
+      "evidence_type": "由论文推导",
+      "source": "−0.5/0/+0.5 Vref; Vref3.3",
+      "conditions": "AZ阶段完成粗量化；Cf50fF电容输入网络",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "真实reference/offset/cap loading/kickback"
+    },
+    {
+      "id": "SAR01",
+      "module": "normal SAR",
+      "parameter": "normal_decisions",
+      "value": 18,
+      "unit": "count",
+      "evidence_type": "论文设计",
+      "source": "p.817 III-A",
+      "conditions": "Flash设置2高位后，异步解析余18物理位",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "逐位settle/ready/bit-index及最终hold"
+    },
+    {
+      "id": "AMP01",
+      "module": "preamp1",
+      "parameter": "gain",
+      "value": 10,
+      "unit": "V/V nominal",
+      "evidence_type": "论文设计",
+      "source": "p.819 III-C/Fig9",
+      "conditions": "差模开环放大；90/.3µminput、68/.3µmcascode是论文/TSMC原型尺寸",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "SMIC18 gain/input CM、Miller cap、noise/offset/OP"
+    },
+    {
+      "id": "AMP02",
+      "module": "preamp2",
+      "parameter": "gain",
+      "value": 8,
+      "unit": "V/V nominal",
+      "evidence_type": "论文设计",
+      "source": "p.819 III-C/Fig9",
+      "conditions": "6/.18µminput；CMFB稳定latch CM",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "SMIC18差模gain、CMFB稳定性、kickback"
+    },
+    {
+      "id": "AMP03",
+      "module": "preamp",
+      "parameter": "tail_currents",
+      "value": "1025;240",
+      "unit": "uA",
+      "evidence_type": "论文图设计",
+      "source": "p.819 Fig9",
+      "conditions": "两stage tail仅为设计值，不是全preamp功耗；externalbias不免除VDD电流统计",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "OP/PVT及整个电源电流"
+    },
+    {
+      "id": "AZ01",
+      "module": "AZ",
+      "parameter": "Caz_each",
+      "value": 1.3,
+      "unit": "pF",
+      "evidence_type": "论文设计",
+      "source": "p.819 III-C/Fig9",
+      "conditions": "差分耦合两侧各1个；位置为第一级output→第二级input",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "实际C、switch charge/noise/settle"
+    },
+    {
+      "id": "AZ02",
+      "module": "AZ",
+      "parameter": "AZ_window",
+      "value": 20,
+      "unit": "ns",
+      "evidence_type": "论文设计/分析",
+      "source": "p.815 Eq4; p.820 III-D",
+      "conditions": "tau~8ns；2.5tau约91.8%noise amplitude settle",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "SS/AZ真实边沿与残余/相关噪声"
+    },
+    {
+      "id": "AZ03",
+      "module": "AZ",
+      "parameter": "bandwidth",
+      "value": 20,
+      "unit": "MHz",
+      "evidence_type": "论文设计/仿真",
+      "source": "p.820 III-D/Fig13",
+      "conditions": "ff−40C约14MHz，ss125C约30MHz；SNR变动~.5dB",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "SMIC18 BW/noise aliasing及PVT"
+    },
+    {
+      "id": "AZ04",
+      "module": "AZ",
+      "parameter": "finite_settling_noise_penalty",
+      "value": 0.74,
+      "unit": "dB",
+      "evidence_type": "论文分析",
+      "source": "p.815 Eq4",
+      "conditions": "相对fullsettle；不是需要0.5outputLSB的signal-settle定义",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "相关noise transfer model/transientnoise"
+    },
+    {
+      "id": "SRM01",
+      "module": "SRM",
+      "parameter": "decision_count",
+      "value": 22,
+      "unit": "count",
+      "evidence_type": "论文设计/仿真",
+      "source": "p.818 III-A; p.821 Fig14",
+      "conditions": "20–25已近理想movingaverage；CDAC残差冻结",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "22有效比较，无bit更新、same-sample计数/重构"
+    },
+    {
+      "id": "SRM02",
+      "module": "SRM",
+      "parameter": "residue_hold_window",
+      "value": 70,
+      "unit": "ns approx",
+      "evidence_type": "论文设计/仿真",
+      "source": "p.821 III-D",
+      "conditions": "~3ns/decision；不是数字CDC发布延迟",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "analoghold、ready、reset/evaluate、normalconversion200ns预算"
+    },
+    {
+      "id": "SRM03",
+      "module": "SRM",
+      "parameter": "residue_estimator",
+      "value": "sigma*Phi_inverse(P); subtract",
+      "unit": "formula",
+      "evidence_type": "论文分析",
+      "source": "p.819 Eq8",
+      "conditions": "P=ones/N；sigma为相同input坐标decisionnoise，不是post-SRMerror",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "σ_actual/相关性、sign、unit、finitecount bias/endpoint"
+    },
+    {
+      "id": "SRM04",
+      "module": "SRM",
+      "parameter": "RTL_sigma_assumed",
+      "value": 0.5,
+      "unit": "DAC LSB",
+      "evidence_type": "当前RTL事实+条件换算",
+      "source": "evidence/rtl_baseline/sar_digi_paper_core.sv:90",
+      "conditions": "SIGMA_Q8=128/256；DACLSB80µV时为40µVrms≈.397outputLSB；不证明实际noise",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "测得σ_actual后重生成LUT，核对endpoint/quantization"
+    },
+    {
+      "id": "NOISE01",
+      "module": "noise",
+      "parameter": "sampling_analytical",
+      "value": 20.4,
+      "unit": "uVrms",
+      "evidence_type": "论文分析",
+      "source": "p.815 II-B/Eq4",
+      "conditions": "differential sqrt(2kT/Cs), Cs20p；不是实测总IRN",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "共享Cs正确noise transfer及实际parasites"
+    },
+    {
+      "id": "NOISE02",
+      "module": "noise",
+      "parameter": "sampling_transistor_sim",
+      "value": 22.2,
+      "unit": "uVrms",
+      "evidence_type": "论文晶体管仿真",
+      "source": "p.821 TableI",
+      "conditions": "SS on；论文模型条件",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "transientnoise/PSD/shortedinput"
+    },
+    {
+      "id": "NOISE03",
+      "module": "noise",
+      "parameter": "preamp_before_SRM",
+      "value": 59.1,
+      "unit": "uVrms",
+      "evidence_type": "论文晶体管仿真",
+      "source": "p.821 TableI",
+      "conditions": "AZ suppressesflicker；if sameDAC80坐标则.73875LSB；不盲替LUTσ",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "decisionσ及PSD、AZstatic noise和sample correlations"
+    },
+    {
+      "id": "NOISE04",
+      "module": "noise",
+      "parameter": "quantization_without_SRM",
+      "value": 23.1,
+      "unit": "uVrms",
+      "evidence_type": "论文晶体管仿真/量化口径",
+      "source": "p.821 TableI",
+      "conditions": "近80/sqrt12；不是最终100.708outputLSB的uniformquant29.07",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "码坐标和final rounding/postSRM联合量化"
+    },
+    {
+      "id": "NOISE05",
+      "module": "noise",
+      "parameter": "preamp_and_quantization_after_SRM",
+      "value": 30.9,
+      "unit": "uVrms combined",
+      "evidence_type": "论文晶体管仿真",
+      "source": "p.821 TableI",
+      "conditions": "合并列；不能再重复加23.1或finalQ noise",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "联合重构模型、finitecountMSE、AZcorrelation"
+    },
+    {
+      "id": "NOISE06",
+      "module": "noise",
+      "parameter": "total_after_SS_SRM",
+      "value": 38,
+      "unit": "uVrms approx",
+      "evidence_type": "论文晶体管仿真",
+      "source": "p.821 TableI",
+      "conditions": "RSS22.2和30.9≈38.048；不同于93.7dBFS等效总误差48.195",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "相同noise bandwidth/stimulus/source及FFT"
+    },
+    {
+      "id": "NOISE07",
+      "module": "system error",
+      "parameter": "total_FS_equivalent_93p7dB",
+      "value": 48.19466235875781,
+      "unit": "uVrms",
+      "evidence_type": "条件推导",
+      "source": "FS_sineRMS/10^(93.7/20)",
+      "conditions": "含noise+distortion等SNDRdenominator；需输入增益/FS归一成立；不是纯thermalnoise",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "报告amplitude/normalization与FFT errorbin口径"
+    },
+    {
+      "id": "SETTLE01",
+      "module": "DAC/sampling",
+      "parameter": "proposed_input_referred_settle_error",
+      "value": 25.177001953125,
+      "unit": "uV bound",
+      "evidence_type": "建议分配",
+      "source": "0.25outputLSB建议",
+      "conditions": "需按真实step幅度和每bit非二进制冗余允许量检查，不是论文给的统一限值",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "边沿settling残差、误判及PVT；不要用总周期替代"
+    },
+    {
+      "id": "CLOCK01",
+      "module": "clock",
+      "parameter": "measured_sampling_jitter",
+      "value": 2,
+      "unit": "ps rms",
+      "evidence_type": "论文测试系统测量",
+      "source": "p.823 IV",
+      "conditions": "DSAV334A；低频最好SNDR可成立，近Nyquist有明显jitter限制",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "externalclock+onchipbuffer/logic aperturejitter"
+    },
+    {
+      "id": "CLOCK02",
+      "module": "clock",
+      "parameter": "jitter_SNR_at_Nyquist_2ps",
+      "value": 90.05700254611732,
+      "unit": "dB",
+      "evidence_type": "条件分析",
+      "source": "−20log10(2pi*fin*sigma_t)",
+      "conditions": "fin2.5MHz；理想sine jitter-only上限90.057，不能称整机SNDR",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "若高频也目标93.7需更小总jitter与其他noisebudget"
+    },
+    {
+      "id": "CLOCK03",
+      "module": "clock",
+      "parameter": "proposed_jitter_for_10uV_at_Nyquist",
+      "value": 0.272823126108214,
+      "unit": "ps rms",
+      "evidence_type": "建议分配+条件推导",
+      "source": "sigma_v=2pi*fin*Vrms*sigma_t",
+      "conditions": "满幅fin2.5MHz、jitter10µV预算则≤.273ps；这是加强高频目标，不是论文实绩要求",
+      "current_status": "截至2026-10-02 OA静态快照/历史RTL；当前性能未验收",
+      "validation": "按实际fin/amplitude选择目标；包含所有aperturejitter"
+    }
+  ],
+  "derived": {
+    "output_LSB_uV": 100.7080078125,
+    "output_ideal_uniform_quantization_sigma_uV": 29.071897710048905,
+    "fullscale_sine_RMS_V": 2.3334523779156067,
+    "FS_equivalent_error_for93p7_uVrms": 48.19466235875781,
+    "signal_relative_if_FS_normalized_SNDR_dB": 92.25,
+    "ENOB_FS_equivalent": 15.272425249169435,
+    "ENOB_signal_relative_conditional": 15.03156146179402,
+    "error_if93p7_were_signal_relative_at_minus1p45_uVrms": 40.784856823897805,
+    "RTL_assumed_sigma_DAC_LSB": 0.5,
+    "RTL_sigma_if_DAC80uV_uVrms": 40,
+    "RTL_sigma_over_outputLSB": 0.3971878787878788,
+    "TableI_RSS_SS_SRM_uVrms": 38.04799600504605,
+    "internal_core_power_allocation_sum_mW": 5.31,
+    "noise_budget_RSS_uVrms": 43.77956144138495,
+    "noise_budget_FS_equivalent_dB": 94.53455070612002,
+    "remaining_quadrature_error_uVrms": 20.151314594206188,
+    "timing_sum_ns": 200
+  },
+  "suggested_power_allocations": [
+    {
+      "module": "preamp1",
+      "target_mW": 1.95,
+      "rationale": "接近论文tail1.025mA×1.8V的1.845mW，仍需含全部branch",
+      "evidence_type": "内部core可调整建议，未仿真，不含输出padIO承诺"
+    },
+    {
+      "module": "preamp2_CMFB",
+      "target_mW": 0.65,
+      "rationale": "tail.24mA×1.8V=.432mW仅作量级，CMFB与负载全计",
+      "evidence_type": "内部core可调整建议，未仿真，不含输出padIO承诺"
+    },
+    {
+      "module": "latch",
+      "target_mW": 0.15,
+      "rationale": "含reset/evaluate动态电流",
+      "evidence_type": "内部core可调整建议，未仿真，不含输出padIO承诺"
+    },
+    {
+      "module": "SS_CDAC_switch_levelshift",
+      "target_mW": 0.25,
+      "rationale": "共享Cs目标；包含analog control levelshift，不含外部driver",
+      "evidence_type": "内部core可调整建议，未仿真，不含输出padIO承诺"
+    },
+    {
+      "module": "flash_analog_clock",
+      "target_mW": 0.2,
+      "rationale": "Flash真实电路及模拟时钟分配；行为模型不是功耗值",
+      "evidence_type": "内部core可调整建议，未仿真，不含输出padIO承诺"
+    },
+    {
+      "module": "local_bias_distribution",
+      "target_mW": 0.2,
+      "rationale": "原型externalbias；保留本地分配/辅助余量",
+      "evidence_type": "内部core可调整建议，未仿真，不含输出padIO承诺"
+    },
+    {
+      "module": "digital_normal_SAR_SRM_cal_reconstruction",
+      "target_mW": 1.6,
+      "rationale": "normal5MS/s含SRM与reconstruction；cal mode另测peak/average",
+      "evidence_type": "内部core可调整建议，未仿真，不含输出padIO承诺"
+    },
+    {
+      "module": "unallocated_margin",
+      "target_mW": 0.31,
+      "rationale": "可调整，不能用历史默认activity替代",
+      "evidence_type": "内部core可调整建议，未仿真，不含输出padIO承诺"
+    }
+  ],
+  "suggested_noise_allocations": [
+    {
+      "component": "sampling",
+      "target_uVrms": 22.2,
+      "rationale": "论文TableI SS sampling，参考目标",
+      "evidence_type": "reference target / suggested allocation, not achieved"
+    },
+    {
+      "component": "preamp_quantization_after_SRM",
+      "target_uVrms": 30.9,
+      "rationale": "论文TableI合并项，不重复加单独quantnoise",
+      "evidence_type": "reference target / suggested allocation, not achieved"
+    },
+    {
+      "component": "reference_and_input_source",
+      "target_uVrms": 12,
+      "rationale": "建议；外部供给仍会注入ADC误差",
+      "evidence_type": "reference target / suggested allocation, not achieved"
+    },
+    {
+      "component": "settling_distortion_calibration_residual",
+      "target_uVrms": 15,
+      "rationale": "建议；含input-dependent error，先按等效RMS分账",
+      "evidence_type": "reference target / suggested allocation, not achieved"
+    },
+    {
+      "component": "clock_jitter",
+      "target_uVrms": 10,
+      "rationale": "建议；Fin明确，低频余量不是高频已达标",
+      "evidence_type": "reference target / suggested allocation, not achieved"
+    }
+  ],
+  "suggested_nonoverlap_timing": [
+    {
+      "phase": "CDAC_sampling",
+      "target_ns": 25,
+      "rationale": "论文测试采用25/50ns，选25作首版预算"
+    },
+    {
+      "phase": "freeze_nonoverlap_SS_transfer_preparation",
+      "target_ns": 5,
+      "rationale": "建议预留；不是论文完整数值边沿规范"
+    },
+    {
+      "phase": "AZ_plus_flash",
+      "target_ns": 20,
+      "rationale": "论文Taz20ns；Flash与AZ重叠"
+    },
+    {
+      "phase": "normal18_async_SAR",
+      "target_ns": 60,
+      "rationale": "论文noise model Tconv60ns，本次作为待验证目标；不是实测deadline"
+    },
+    {
+      "phase": "22_SRM_hold_decisions",
+      "target_ns": 70,
+      "rationale": "论文≈70ns模拟残差hold"
+    },
+    {
+      "phase": "end_reset_guard",
+      "target_ns": 20,
+      "rationale": "建议余量；digital publish可流水且必须维护same-sample"
+    }
+  ],
+  "noise_combination_limit": "RSS allocation needs orthogonal error accounting or negligible cross terms. Actual sample correlations, AZ stationary noise, quantization/SRM coupling, distortion and deterministic errors require joint model/FFT. Do not add 29.072uV final uniformquantization to30.9uV combined term blindly.",
+  "verification_priority": [
+    "Resolve shared Cs versus current distributed topology; MOM actual ratios/bulk and correct 1pF CDAC geometry in SMIC18",
+    "Establish OP/gain/bandwidth/noise and comparator ready/nearzero delay across corners",
+    "Integrate18SAR+22SRM within200ns with held DAC and correct raw/residue/weight sample binding",
+    "Perform SS+SRM assisted calibration and6bit reference MC, INL/DNL and convergence",
+    "Repeat lowfrequency/highfrequency measurements with stated amplitude/FS normalization, source noise and totaljitter",
+    "Measure all ADC power terminals and external prototype driver losses separately, normal/cal/idle activity"
+  ]
+}

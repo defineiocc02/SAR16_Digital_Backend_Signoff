@@ -1,0 +1,460 @@
+{
+  "date": "2026-10-03",
+  "scope": "Corrected target SMIC18 architecture: shared Cs, external reference/bias generators, on-chip final-code reconstruction.",
+  "evidence": {
+    "baseline_cell_mm2": 0.1023001056,
+    "baseline_routed_block_mm2": 0.1848394568,
+    "nominal_mim_density_ff_um2": 0.969,
+    "optional_mim2_density_ff_um2": 1.99,
+    "sp018n_io_body_depth_um": 235,
+    "sp018n_corner_extent_um": 235,
+    "sp018n_io_cell_pitch_um": 35
+  },
+  "reconstruction_policy": "32-pin two-lane serial plus separate SPI is primary. Folded two-weight/cycle reconstruction is proposed, unimplemented. Direct wide reconstruction is a mutually exclusive comparison. New storage and 132-bit pairing/frame buffers are included; no shadow-memory sharing credit.",
+  "assumptions": "Bond pitch70/90/110um, seal, clearance, new cell area, CDAC footprint and analog allowances remain estimates. Scenarios are design choices, not PVT corners. MIM nominal c0 is model data, not an all-size valid extracted capacitance. No validated pad-to-package assembly.",
+  "capacitor_network": {
+    "paper_effective_cdac_pf_per_side_assumed": 1,
+    "ideal_top_cu": 136.97328193539812,
+    "ideal_unit_ff": 7.30069387160949,
+    "physical_sum_cu_per_side_including_bridges": 273,
+    "physical_sum_pf_both_sides": 3.9861788538987817,
+    "cdac_density_scaling_status": "Independent .020mm2 nominal footprint retained until unit geometry/model range, matching and PEX are validated."
+  },
+  "recommendation": {
+    "pin_count": 32,
+    "architecture": "nominal_folded",
+    "planning_die_side_mm": 1.6,
+    "planning_die_area_mm2": 2.56,
+    "conceptual_core_window_mm": [
+      0.95,
+      0.95
+    ],
+    "digital_reservation_um": [
+      410,
+      940
+    ],
+    "status": "Floorplan reservation, not placed-and-routed result or package dimensions"
+  },
+  "exclusions": [
+    "on-chip bandgap or precision reference driver",
+    "input buffer",
+    "PLL/DLL",
+    "SRAM compiler substitution",
+    "package outline area",
+    "scribe lane and MPW frame beyond placeholder seal allowance",
+    "physical implementation signoff"
+  ],
+  "io_power_assumptions": "P=Cload*VIO^2*r01. Random data; 24-bit 5MS/s serial frames, 100MHz 12-cycle DCO bursts. Excludes control-pin switching, pad internal/short-circuit/static and internal serializer power. 1.8V is a conditional IO choice, not yet approved by selected pad.",
+  "io_power_scenarios": [
+    {
+      "mode": "serial_2lane_24bit",
+      "load_pf_per_pin": 2,
+      "io_voltage_v": 1.8,
+      "data_dynamic_mw": 0.19440000000000002,
+      "dco_dynamic_mw": 0.38880000000000003,
+      "total_dynamic_mw": 0.5832
+    },
+    {
+      "mode": "parallel_16bit",
+      "load_pf_per_pin": 2,
+      "io_voltage_v": 1.8,
+      "data_dynamic_mw": 0.1296,
+      "dco_dynamic_mw": 0.0324,
+      "total_dynamic_mw": 0.16199999999999998
+    },
+    {
+      "mode": "serial_2lane_24bit",
+      "load_pf_per_pin": 2,
+      "io_voltage_v": 3.3,
+      "data_dynamic_mw": 0.6534,
+      "dco_dynamic_mw": 1.3068,
+      "total_dynamic_mw": 1.9602
+    },
+    {
+      "mode": "parallel_16bit",
+      "load_pf_per_pin": 2,
+      "io_voltage_v": 3.3,
+      "data_dynamic_mw": 0.4356,
+      "dco_dynamic_mw": 0.1089,
+      "total_dynamic_mw": 0.5445
+    },
+    {
+      "mode": "serial_2lane_24bit",
+      "load_pf_per_pin": 5,
+      "io_voltage_v": 1.8,
+      "data_dynamic_mw": 0.486,
+      "dco_dynamic_mw": 0.972,
+      "total_dynamic_mw": 1.458
+    },
+    {
+      "mode": "parallel_16bit",
+      "load_pf_per_pin": 5,
+      "io_voltage_v": 1.8,
+      "data_dynamic_mw": 0.324,
+      "dco_dynamic_mw": 0.081,
+      "total_dynamic_mw": 0.405
+    },
+    {
+      "mode": "serial_2lane_24bit",
+      "load_pf_per_pin": 5,
+      "io_voltage_v": 3.3,
+      "data_dynamic_mw": 1.6334999999999997,
+      "dco_dynamic_mw": 3.2669999999999995,
+      "total_dynamic_mw": 4.900499999999999
+    },
+    {
+      "mode": "parallel_16bit",
+      "load_pf_per_pin": 5,
+      "io_voltage_v": 3.3,
+      "data_dynamic_mw": 1.089,
+      "dco_dynamic_mw": 0.27225,
+      "total_dynamic_mw": 1.36125
+    },
+    {
+      "mode": "serial_2lane_24bit",
+      "load_pf_per_pin": 10,
+      "io_voltage_v": 1.8,
+      "data_dynamic_mw": 0.972,
+      "dco_dynamic_mw": 1.944,
+      "total_dynamic_mw": 2.916
+    },
+    {
+      "mode": "parallel_16bit",
+      "load_pf_per_pin": 10,
+      "io_voltage_v": 1.8,
+      "data_dynamic_mw": 0.648,
+      "dco_dynamic_mw": 0.162,
+      "total_dynamic_mw": 0.81
+    },
+    {
+      "mode": "serial_2lane_24bit",
+      "load_pf_per_pin": 10,
+      "io_voltage_v": 3.3,
+      "data_dynamic_mw": 3.2669999999999995,
+      "dco_dynamic_mw": 6.533999999999999,
+      "total_dynamic_mw": 9.800999999999998
+    },
+    {
+      "mode": "parallel_16bit",
+      "load_pf_per_pin": 10,
+      "io_voltage_v": 3.3,
+      "data_dynamic_mw": 2.178,
+      "dco_dynamic_mw": 0.5445,
+      "total_dynamic_mw": 2.7225
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario": "compact_option",
+      "pin_count": 32,
+      "parameters": {
+        "cap_density": 1.99,
+        "cs_overhead": 1.2,
+        "cdac_overhead": 2.5,
+        "cdac_floor": 0.012,
+        "boot_pf": 4,
+        "decap_pf": 40,
+        "decap_overhead": 1.1,
+        "new_digital_cell": 0.075,
+        "digital_util": 0.6,
+        "digital_margin": 1.05,
+        "analog_other": 0.065,
+        "core_whitespace": 0.15,
+        "pad_pitch": 0.07,
+        "corner_extent": 0.235,
+        "pad_depth": 0.235,
+        "inner_clearance": 0.035,
+        "seal_allowance": 0.025
+      },
+      "module_areas_mm2": {
+        "digital_macro": 0.3102751848,
+        "cs_pair": 0.024120603015075376,
+        "cdac_pair": 0.012,
+        "caz_flash_boot": 0.0052763819095477385,
+        "supply_ref_decap": 0.022110552763819097,
+        "analog_active_and_local_layout": 0.065
+      },
+      "module_sum_mm2": 0.43878272248844225,
+      "core_window_mm2": 0.5162149676334615,
+      "core_equivalent_square_mm": 0.7184810141078618,
+      "pad_side_constraint_mm": 1.03,
+      "core_plus_ring_side_mm": 1.2584810141078617,
+      "die_side_mm": 1.35,
+      "die_area_mm2": 1.8225000000000002,
+      "limiting_constraint": "core_plus_ring"
+    },
+    {
+      "scenario": "compact_option",
+      "pin_count": 48,
+      "parameters": {
+        "cap_density": 1.99,
+        "cs_overhead": 1.2,
+        "cdac_overhead": 2.5,
+        "cdac_floor": 0.012,
+        "boot_pf": 4,
+        "decap_pf": 40,
+        "decap_overhead": 1.1,
+        "new_digital_cell": 0.075,
+        "digital_util": 0.6,
+        "digital_margin": 1.05,
+        "analog_other": 0.065,
+        "core_whitespace": 0.15,
+        "pad_pitch": 0.07,
+        "corner_extent": 0.235,
+        "pad_depth": 0.235,
+        "inner_clearance": 0.035,
+        "seal_allowance": 0.025
+      },
+      "module_areas_mm2": {
+        "digital_macro": 0.3102751848,
+        "cs_pair": 0.024120603015075376,
+        "cdac_pair": 0.012,
+        "caz_flash_boot": 0.0052763819095477385,
+        "supply_ref_decap": 0.022110552763819097,
+        "analog_active_and_local_layout": 0.065
+      },
+      "module_sum_mm2": 0.43878272248844225,
+      "core_window_mm2": 0.5162149676334615,
+      "core_equivalent_square_mm": 0.7184810141078618,
+      "pad_side_constraint_mm": 1.31,
+      "core_plus_ring_side_mm": 1.2584810141078617,
+      "die_side_mm": 1.4,
+      "die_area_mm2": 1.9599999999999997,
+      "limiting_constraint": "pad_perimeter"
+    },
+    {
+      "scenario": "nominal_folded",
+      "pin_count": 32,
+      "parameters": {
+        "cap_density": 0.969,
+        "cs_overhead": 1.3,
+        "cdac_overhead": 3.0,
+        "cdac_floor": 0.02,
+        "boot_pf": 6,
+        "decap_pf": 80,
+        "decap_overhead": 1.15,
+        "new_digital_cell": 0.095,
+        "digital_util": 0.55,
+        "digital_margin": 1.07,
+        "analog_other": 0.09,
+        "core_whitespace": 0.2,
+        "pad_pitch": 0.09,
+        "corner_extent": 0.235,
+        "pad_depth": 0.235,
+        "inner_clearance": 0.045,
+        "seal_allowance": 0.03
+      },
+      "module_areas_mm2": {
+        "digital_macro": 0.3838383872581818,
+        "cs_pair": 0.05366357069143447,
+        "cdac_pair": 0.02,
+        "caz_flash_boot": 0.01372549019607843,
+        "supply_ref_decap": 0.09494324045407636,
+        "analog_active_and_local_layout": 0.09
+      },
+      "module_sum_mm2": 0.656170688599771,
+      "core_window_mm2": 0.8202133607497137,
+      "core_equivalent_square_mm": 0.9056563149173719,
+      "pad_side_constraint_mm": 1.19,
+      "core_plus_ring_side_mm": 1.4656563149173718,
+      "die_side_mm": 1.55,
+      "die_area_mm2": 2.4025000000000003,
+      "limiting_constraint": "core_plus_ring"
+    },
+    {
+      "scenario": "nominal_folded",
+      "pin_count": 48,
+      "parameters": {
+        "cap_density": 0.969,
+        "cs_overhead": 1.3,
+        "cdac_overhead": 3.0,
+        "cdac_floor": 0.02,
+        "boot_pf": 6,
+        "decap_pf": 80,
+        "decap_overhead": 1.15,
+        "new_digital_cell": 0.095,
+        "digital_util": 0.55,
+        "digital_margin": 1.07,
+        "analog_other": 0.09,
+        "core_whitespace": 0.2,
+        "pad_pitch": 0.09,
+        "corner_extent": 0.235,
+        "pad_depth": 0.235,
+        "inner_clearance": 0.045,
+        "seal_allowance": 0.03
+      },
+      "module_areas_mm2": {
+        "digital_macro": 0.3838383872581818,
+        "cs_pair": 0.05366357069143447,
+        "cdac_pair": 0.02,
+        "caz_flash_boot": 0.01372549019607843,
+        "supply_ref_decap": 0.09494324045407636,
+        "analog_active_and_local_layout": 0.09
+      },
+      "module_sum_mm2": 0.656170688599771,
+      "core_window_mm2": 0.8202133607497137,
+      "core_equivalent_square_mm": 0.9056563149173719,
+      "pad_side_constraint_mm": 1.55,
+      "core_plus_ring_side_mm": 1.4656563149173718,
+      "die_side_mm": 1.65,
+      "die_area_mm2": 2.7224999999999997,
+      "limiting_constraint": "pad_perimeter"
+    },
+    {
+      "scenario": "conservative_folded",
+      "pin_count": 32,
+      "parameters": {
+        "cap_density": 0.969,
+        "cs_overhead": 1.45,
+        "cdac_overhead": 4.0,
+        "cdac_floor": 0.03,
+        "boot_pf": 10,
+        "decap_pf": 120,
+        "decap_overhead": 1.2,
+        "new_digital_cell": 0.12,
+        "digital_util": 0.5,
+        "digital_margin": 1.1,
+        "analog_other": 0.125,
+        "core_whitespace": 0.25,
+        "pad_pitch": 0.11,
+        "corner_extent": 0.235,
+        "pad_depth": 0.235,
+        "inner_clearance": 0.055,
+        "seal_allowance": 0.04
+      },
+      "module_areas_mm2": {
+        "digital_macro": 0.48906023232,
+        "cs_pair": 0.05985552115583075,
+        "cdac_pair": 0.03,
+        "caz_flash_boot": 0.019504643962848296,
+        "supply_ref_decap": 0.14860681114551083,
+        "analog_active_and_local_layout": 0.125
+      },
+      "module_sum_mm2": 0.87202720858419,
+      "core_window_mm2": 1.1627029447789201,
+      "core_equivalent_square_mm": 1.0782870419229382,
+      "pad_side_constraint_mm": 1.35,
+      "core_plus_ring_side_mm": 1.658287041922938,
+      "die_side_mm": 1.75,
+      "die_area_mm2": 3.0625,
+      "limiting_constraint": "core_plus_ring"
+    },
+    {
+      "scenario": "conservative_folded",
+      "pin_count": 48,
+      "parameters": {
+        "cap_density": 0.969,
+        "cs_overhead": 1.45,
+        "cdac_overhead": 4.0,
+        "cdac_floor": 0.03,
+        "boot_pf": 10,
+        "decap_pf": 120,
+        "decap_overhead": 1.2,
+        "new_digital_cell": 0.12,
+        "digital_util": 0.5,
+        "digital_margin": 1.1,
+        "analog_other": 0.125,
+        "core_whitespace": 0.25,
+        "pad_pitch": 0.11,
+        "corner_extent": 0.235,
+        "pad_depth": 0.235,
+        "inner_clearance": 0.055,
+        "seal_allowance": 0.04
+      },
+      "module_areas_mm2": {
+        "digital_macro": 0.48906023232,
+        "cs_pair": 0.05985552115583075,
+        "cdac_pair": 0.03,
+        "caz_flash_boot": 0.019504643962848296,
+        "supply_ref_decap": 0.14860681114551083,
+        "analog_active_and_local_layout": 0.125
+      },
+      "module_sum_mm2": 0.87202720858419,
+      "core_window_mm2": 1.1627029447789201,
+      "core_equivalent_square_mm": 1.0782870419229382,
+      "pad_side_constraint_mm": 1.79,
+      "core_plus_ring_side_mm": 1.658287041922938,
+      "die_side_mm": 1.9,
+      "die_area_mm2": 3.61,
+      "limiting_constraint": "pad_perimeter"
+    },
+    {
+      "scenario": "nominal_direct_reuse",
+      "pin_count": 32,
+      "parameters": {
+        "cap_density": 0.969,
+        "cs_overhead": 1.3,
+        "cdac_overhead": 3.0,
+        "cdac_floor": 0.02,
+        "boot_pf": 6,
+        "decap_pf": 80,
+        "decap_overhead": 1.15,
+        "new_digital_cell": 0.135,
+        "digital_util": 0.55,
+        "digital_margin": 1.07,
+        "analog_other": 0.09,
+        "core_whitespace": 0.2,
+        "pad_pitch": 0.09,
+        "corner_extent": 0.235,
+        "pad_depth": 0.235,
+        "inner_clearance": 0.045,
+        "seal_allowance": 0.03
+      },
+      "module_areas_mm2": {
+        "digital_macro": 0.46165656907636365,
+        "cs_pair": 0.05366357069143447,
+        "cdac_pair": 0.02,
+        "caz_flash_boot": 0.01372549019607843,
+        "supply_ref_decap": 0.09494324045407636,
+        "analog_active_and_local_layout": 0.09
+      },
+      "module_sum_mm2": 0.7339888704179528,
+      "core_window_mm2": 0.9174860880224409,
+      "core_equivalent_square_mm": 0.957854941012699,
+      "pad_side_constraint_mm": 1.19,
+      "core_plus_ring_side_mm": 1.517854941012699,
+      "die_side_mm": 1.6,
+      "die_area_mm2": 2.5600000000000005,
+      "limiting_constraint": "core_plus_ring"
+    },
+    {
+      "scenario": "nominal_direct_reuse",
+      "pin_count": 48,
+      "parameters": {
+        "cap_density": 0.969,
+        "cs_overhead": 1.3,
+        "cdac_overhead": 3.0,
+        "cdac_floor": 0.02,
+        "boot_pf": 6,
+        "decap_pf": 80,
+        "decap_overhead": 1.15,
+        "new_digital_cell": 0.135,
+        "digital_util": 0.55,
+        "digital_margin": 1.07,
+        "analog_other": 0.09,
+        "core_whitespace": 0.2,
+        "pad_pitch": 0.09,
+        "corner_extent": 0.235,
+        "pad_depth": 0.235,
+        "inner_clearance": 0.045,
+        "seal_allowance": 0.03
+      },
+      "module_areas_mm2": {
+        "digital_macro": 0.46165656907636365,
+        "cs_pair": 0.05366357069143447,
+        "cdac_pair": 0.02,
+        "caz_flash_boot": 0.01372549019607843,
+        "supply_ref_decap": 0.09494324045407636,
+        "analog_active_and_local_layout": 0.09
+      },
+      "module_sum_mm2": 0.7339888704179528,
+      "core_window_mm2": 0.9174860880224409,
+      "core_equivalent_square_mm": 0.957854941012699,
+      "pad_side_constraint_mm": 1.55,
+      "core_plus_ring_side_mm": 1.517854941012699,
+      "die_side_mm": 1.65,
+      "die_area_mm2": 2.7224999999999997,
+      "limiting_constraint": "pad_perimeter"
+    }
+  ]
+}
