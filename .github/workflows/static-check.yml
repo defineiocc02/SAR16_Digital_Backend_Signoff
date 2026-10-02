@@ -19,3 +19,5 @@ jobs:
         run: make smoke
       - name: Baseline SRM phase sweep and conditional PPA analysis
         run: make ppa
+      - name: Baseline RTL principles and known limitation characterization
+        run: make review

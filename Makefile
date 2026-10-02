@@ -1,7 +1,7 @@
 PYTHON ?= python3
 VERILATOR ?= verilator
 
-.PHONY: check smoke ppa
+.PHONY: check smoke ppa review
 check:
 	$(PYTHON) tools/check_repo.py --output build/repository_check.json
 	tclsh tests/check_sdc.tcl
@@ -12,3 +12,8 @@ smoke:
 ppa:
 	$(PYTHON) tools/run_srm_latency.py --verilator "$(VERILATOR)"
 	$(PYTHON) tools/analyze_ppa.py
+
+review:
+	$(PYTHON) tools/run_rtl_review.py --verilator "$(VERILATOR)"
+	$(PYTHON) tools/analyze_rtl_principles.py
+	$(PYTHON) tools/inventory_synthesis.py

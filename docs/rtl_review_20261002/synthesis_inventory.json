@@ -1,0 +1,3179 @@
+{
+  "scope": "immutable delivered logical PNR netlist instances and delivered LEF SIZE dimensions",
+  "sources_sha256": {
+    "evidence/rpt_v51/sar_digi_paper_core_pnr.v": "a408bdd6e24f1cc586f648687d4dc294c7c8fba8d7a02253e859c1182a5e1eaf",
+    "evidence/rpt_v51/sar_digi_paper_core.lef": "1de04fa0635fe905517a43b0694ab2626b9f0615efa03ce6ace1cfa9358a46fa",
+    "evidence/rtl_baseline/sar_calib_ctrl_serial.sv": "8e7fe237eb2f3fe66b2d1017d00dbfb1bdd22a42ce640222bd2dbfbbdae3fa4c",
+    "evidence/rtl_baseline/sar_digi_paper_core.sv": "cfb3548a9aa6e6bfa3d9395f02c5695d12e075415931185db8da461804139022",
+    "evidence/rtl_baseline/srm_residue_estimator.sv": "0415e909529ffa85e1a7ddd7fc6a57137afc7397e8d314399ba5a3cf503898a9",
+    "evidence/rtl_baseline/srm_residue_lut.sv": "d3335201c8de1692e31cab9f28b8a9862ffbace3710529599ac8f241ed98bbdf",
+    "evidence/rpt_v51/dc/timing_setup.rpt": "f0dd2952f14ee65ec77bc11df12335d5c82fc003eaecdfb941a0162ed68ff2ca",
+    "evidence/rpt_v51/dc/area_flat.rpt": "4e7f931a260796a4249890c46bf7c936b9053e5a603514c49fbd70a55201dbbf",
+    "evidence/rpt_v51/dc/area.rpt": "99efe4e23784b9bc7ea4dd09bae07717abd8b16aaea5c03e027b345e8af87092",
+    "evidence/rpt_v51/pnr/fc_area.rpt": "58ff3ad4243877c2b147b83156ff6c74b0996b4af5bede8109bbb0bb6402a847"
+  },
+  "classification_rule": "DFF/TLAT/BUF/INV/ADDF/ADDH/MX families plus named pin checks; other_combinational includes decomposed comparisons/arithmetic/mux/control",
+  "totals": {
+    "count": 3626,
+    "area_um2": 102300.105600005
+  },
+  "families": {
+    "adder_primitive": {
+      "count": 18,
+      "area_um2": 1274.0112
+    },
+    "buffer": {
+      "count": 195,
+      "area_um2": 2967.1488
+    },
+    "dff": {
+      "count": 1011,
+      "area_um2": 64019.8944
+    },
+    "inverter": {
+      "count": 326,
+      "area_um2": 2913.9264
+    },
+    "latch": {
+      "count": 40,
+      "area_um2": 1463.616
+    },
+    "mux_primitive": {
+      "count": 8,
+      "area_um2": 189.6048
+    },
+    "other_combinational": {
+      "count": 2028,
+      "area_um2": 29471.904
+    }
+  },
+  "hierarchy": {
+    "(top direct)": {
+      "total": {
+        "count": 173,
+        "area_um2": 3306.4416
+      },
+      "families": {
+        "adder_primitive": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "buffer": {
+          "count": 125,
+          "area_um2": 1743.0336
+        },
+        "dff": {
+          "count": 21,
+          "area_um2": 1327.2336
+        },
+        "inverter": {
+          "count": 27,
+          "area_um2": 236.1744
+        },
+        "latch": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "mux_primitive": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "other_combinational": {
+          "count": 0,
+          "area_um2": 0
+        }
+      }
+    },
+    "u_calib_ctrl": {
+      "total": {
+        "count": 3170,
+        "area_um2": 90777.456000004
+      },
+      "families": {
+        "adder_primitive": {
+          "count": 18,
+          "area_um2": 1274.0112
+        },
+        "buffer": {
+          "count": 67,
+          "area_um2": 1174.2192
+        },
+        "dff": {
+          "count": 904,
+          "area_um2": 57257.3232
+        },
+        "inverter": {
+          "count": 276,
+          "area_um2": 2504.7792
+        },
+        "latch": {
+          "count": 35,
+          "area_um2": 1280.664
+        },
+        "mux_primitive": {
+          "count": 1,
+          "area_um2": 26.6112
+        },
+        "other_combinational": {
+          "count": 1869,
+          "area_um2": 27259.848
+        }
+      }
+    },
+    "u_srm_residue": {
+      "total": {
+        "count": 283,
+        "area_um2": 8216.208
+      },
+      "families": {
+        "adder_primitive": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "buffer": {
+          "count": 3,
+          "area_um2": 49.896
+        },
+        "dff": {
+          "count": 86,
+          "area_um2": 5435.3376
+        },
+        "inverter": {
+          "count": 23,
+          "area_um2": 172.9728
+        },
+        "latch": {
+          "count": 5,
+          "area_um2": 182.952
+        },
+        "mux_primitive": {
+          "count": 7,
+          "area_um2": 162.9936
+        },
+        "other_combinational": {
+          "count": 159,
+          "area_um2": 2212.056
+        }
+      }
+    }
+  },
+  "cell_types": {
+    "ADDFHXL": {
+      "count": 15,
+      "area_um2": 1097.712
+    },
+    "ADDFX1": {
+      "count": 2,
+      "area_um2": 139.7088
+    },
+    "ADDHXL": {
+      "count": 1,
+      "area_um2": 36.5904
+    },
+    "AND2X1": {
+      "count": 4,
+      "area_um2": 53.2224
+    },
+    "AND2X2": {
+      "count": 25,
+      "area_um2": 332.64
+    },
+    "AND2X4": {
+      "count": 16,
+      "area_um2": 266.112
+    },
+    "AND2XL": {
+      "count": 5,
+      "area_um2": 66.528
+    },
+    "AND3X1": {
+      "count": 2,
+      "area_um2": 33.264
+    },
+    "AND3X2": {
+      "count": 1,
+      "area_um2": 16.632
+    },
+    "AND3X4": {
+      "count": 2,
+      "area_um2": 39.9168
+    },
+    "AND3XL": {
+      "count": 7,
+      "area_um2": 116.424
+    },
+    "AND4XL": {
+      "count": 9,
+      "area_um2": 179.6256
+    },
+    "AOI211X1": {
+      "count": 2,
+      "area_um2": 33.264
+    },
+    "AOI211X2": {
+      "count": 1,
+      "area_um2": 29.9376
+    },
+    "AOI211X4": {
+      "count": 1,
+      "area_um2": 33.264
+    },
+    "AOI211XL": {
+      "count": 43,
+      "area_um2": 715.176
+    },
+    "AOI21X1": {
+      "count": 5,
+      "area_um2": 66.528
+    },
+    "AOI21XL": {
+      "count": 130,
+      "area_um2": 1729.728
+    },
+    "AOI221XL": {
+      "count": 1,
+      "area_um2": 23.2848
+    },
+    "AOI222X1": {
+      "count": 5,
+      "area_um2": 133.056
+    },
+    "AOI222XL": {
+      "count": 54,
+      "area_um2": 1437.0048
+    },
+    "AOI22X1": {
+      "count": 14,
+      "area_um2": 232.848
+    },
+    "AOI22X2": {
+      "count": 4,
+      "area_um2": 119.7504
+    },
+    "AOI22XL": {
+      "count": 184,
+      "area_um2": 3060.288
+    },
+    "AOI2BB1XL": {
+      "count": 4,
+      "area_um2": 66.528
+    },
+    "AOI2BB2X1": {
+      "count": 2,
+      "area_um2": 46.5696
+    },
+    "AOI2BB2XL": {
+      "count": 4,
+      "area_um2": 93.1392
+    },
+    "AOI31XL": {
+      "count": 2,
+      "area_um2": 33.264
+    },
+    "AOI32XL": {
+      "count": 2,
+      "area_um2": 46.5696
+    },
+    "BUFX1": {
+      "count": 26,
+      "area_um2": 345.9456
+    },
+    "BUFX12": {
+      "count": 3,
+      "area_um2": 99.792
+    },
+    "BUFX16": {
+      "count": 2,
+      "area_um2": 86.4864
+    },
+    "BUFX2": {
+      "count": 12,
+      "area_um2": 159.6672
+    },
+    "BUFX4": {
+      "count": 6,
+      "area_um2": 99.792
+    },
+    "BUFX8": {
+      "count": 6,
+      "area_um2": 179.6256
+    },
+    "BUFXL": {
+      "count": 10,
+      "area_um2": 133.056
+    },
+    "CLKBUFX2": {
+      "count": 89,
+      "area_um2": 1184.1984
+    },
+    "CLKBUFX3": {
+      "count": 20,
+      "area_um2": 266.112
+    },
+    "CLKBUFX4": {
+      "count": 7,
+      "area_um2": 116.424
+    },
+    "CLKBUFX8": {
+      "count": 11,
+      "area_um2": 256.1328
+    },
+    "CLKBUFXL": {
+      "count": 3,
+      "area_um2": 39.9168
+    },
+    "CLKINVX1": {
+      "count": 3,
+      "area_um2": 29.9376
+    },
+    "CLKINVX2": {
+      "count": 4,
+      "area_um2": 39.9168
+    },
+    "CLKINVX3": {
+      "count": 22,
+      "area_um2": 219.5424
+    },
+    "CLKINVX4": {
+      "count": 18,
+      "area_um2": 239.5008
+    },
+    "CLKINVX8": {
+      "count": 16,
+      "area_um2": 319.3344
+    },
+    "CLKINVXL": {
+      "count": 1,
+      "area_um2": 9.9792
+    },
+    "CMPR32X1": {
+      "count": 11,
+      "area_um2": 768.3984
+    },
+    "DFFSX1": {
+      "count": 215,
+      "area_um2": 13588.344
+    },
+    "DFFSX2": {
+      "count": 14,
+      "area_um2": 977.9616
+    },
+    "DFFSX4": {
+      "count": 1,
+      "area_um2": 93.1392
+    },
+    "DFFSXL": {
+      "count": 781,
+      "area_um2": 49360.4496
+    },
+    "INVX1": {
+      "count": 4,
+      "area_um2": 26.6112
+    },
+    "INVX2": {
+      "count": 12,
+      "area_um2": 119.7504
+    },
+    "INVX3": {
+      "count": 7,
+      "area_um2": 93.1392
+    },
+    "INVX4": {
+      "count": 32,
+      "area_um2": 425.7792
+    },
+    "INVX8": {
+      "count": 1,
+      "area_um2": 19.9584
+    },
+    "INVXL": {
+      "count": 206,
+      "area_um2": 1370.4768
+    },
+    "MX2XL": {
+      "count": 1,
+      "area_um2": 26.6112
+    },
+    "MXI2X1": {
+      "count": 1,
+      "area_um2": 23.2848
+    },
+    "MXI2XL": {
+      "count": 6,
+      "area_um2": 139.7088
+    },
+    "NAND2BXL": {
+      "count": 67,
+      "area_um2": 891.4752
+    },
+    "NAND2X1": {
+      "count": 11,
+      "area_um2": 109.7712
+    },
+    "NAND2X2": {
+      "count": 6,
+      "area_um2": 99.792
+    },
+    "NAND2XL": {
+      "count": 528,
+      "area_um2": 5269.0176
+    },
+    "NAND3BXL": {
+      "count": 3,
+      "area_um2": 49.896
+    },
+    "NAND3X1": {
+      "count": 6,
+      "area_um2": 79.8336
+    },
+    "NAND3XL": {
+      "count": 45,
+      "area_um2": 598.752
+    },
+    "NAND4BX1": {
+      "count": 1,
+      "area_um2": 23.2848
+    },
+    "NAND4BXL": {
+      "count": 6,
+      "area_um2": 119.7504
+    },
+    "NAND4X1": {
+      "count": 2,
+      "area_um2": 33.264
+    },
+    "NAND4XL": {
+      "count": 23,
+      "area_um2": 382.536
+    },
+    "NOR2BX1": {
+      "count": 4,
+      "area_um2": 53.2224
+    },
+    "NOR2BX2": {
+      "count": 1,
+      "area_um2": 19.9584
+    },
+    "NOR2BXL": {
+      "count": 9,
+      "area_um2": 119.7504
+    },
+    "NOR2X1": {
+      "count": 15,
+      "area_um2": 149.688
+    },
+    "NOR2X2": {
+      "count": 7,
+      "area_um2": 116.424
+    },
+    "NOR2X4": {
+      "count": 2,
+      "area_um2": 46.5696
+    },
+    "NOR2XL": {
+      "count": 236,
+      "area_um2": 2355.0912
+    },
+    "NOR3BX1": {
+      "count": 1,
+      "area_um2": 19.9584
+    },
+    "NOR3X1": {
+      "count": 1,
+      "area_um2": 13.3056
+    },
+    "NOR3X2": {
+      "count": 4,
+      "area_um2": 93.1392
+    },
+    "NOR3XL": {
+      "count": 10,
+      "area_um2": 133.056
+    },
+    "NOR4BX1": {
+      "count": 1,
+      "area_um2": 19.9584
+    },
+    "NOR4BXL": {
+      "count": 5,
+      "area_um2": 99.792
+    },
+    "NOR4X1": {
+      "count": 1,
+      "area_um2": 19.9584
+    },
+    "OAI211X1": {
+      "count": 1,
+      "area_um2": 19.9584
+    },
+    "OAI211XL": {
+      "count": 28,
+      "area_um2": 558.8352
+    },
+    "OAI21X1": {
+      "count": 9,
+      "area_um2": 149.688
+    },
+    "OAI21XL": {
+      "count": 187,
+      "area_um2": 2488.1472
+    },
+    "OAI221XL": {
+      "count": 21,
+      "area_um2": 488.9808
+    },
+    "OAI22X2": {
+      "count": 9,
+      "area_um2": 269.4384
+    },
+    "OAI22XL": {
+      "count": 37,
+      "area_um2": 738.4608
+    },
+    "OAI2BB1X1": {
+      "count": 5,
+      "area_um2": 83.16
+    },
+    "OAI2BB1XL": {
+      "count": 33,
+      "area_um2": 548.856
+    },
+    "OAI2BB2XL": {
+      "count": 2,
+      "area_um2": 46.5696
+    },
+    "OAI31XL": {
+      "count": 2,
+      "area_um2": 39.9168
+    },
+    "OR2X1": {
+      "count": 2,
+      "area_um2": 26.6112
+    },
+    "OR2XL": {
+      "count": 60,
+      "area_um2": 798.336
+    },
+    "OR3X1": {
+      "count": 2,
+      "area_um2": 39.9168
+    },
+    "OR3X2": {
+      "count": 1,
+      "area_um2": 19.9584
+    },
+    "OR3XL": {
+      "count": 1,
+      "area_um2": 16.632
+    },
+    "OR4X1": {
+      "count": 3,
+      "area_um2": 59.8752
+    },
+    "OR4XL": {
+      "count": 1,
+      "area_um2": 19.9584
+    },
+    "TLATNXL": {
+      "count": 40,
+      "area_um2": 1463.616
+    },
+    "XNOR2X1": {
+      "count": 15,
+      "area_um2": 399.168
+    },
+    "XNOR2XL": {
+      "count": 27,
+      "area_um2": 718.5024
+    },
+    "XOR2X1": {
+      "count": 18,
+      "area_um2": 479.0016
+    },
+    "XOR2XL": {
+      "count": 29,
+      "area_um2": 771.7248
+    }
+  },
+  "register_groups": {
+    "(top direct)/raw_code_o_reg": {
+      "count": 20,
+      "area_um2": 1264.032,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "(top direct)/raw_code_valid_o_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_calib_ctrl/accumulator_reg": {
+      "count": 36,
+      "area_um2": 2275.2576,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    "u_calib_ctrl/avg_cnt_reg": {
+      "count": 5,
+      "area_um2": 316.008,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "u_calib_ctrl/avg_rounded_r_reg": {
+      "count": 30,
+      "area_um2": 1896.048,
+      "actual_bit_indices": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    "u_calib_ctrl/calc_cnt_reg": {
+      "count": 5,
+      "area_um2": 316.008,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "u_calib_ctrl/calc_result_r_reg": {
+      "count": 30,
+      "area_um2": 1925.9856,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "u_calib_ctrl/calib_done_pulse_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_calib_ctrl/calib_done_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_calib_ctrl/calib_mode_en_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_calib_ctrl/calib_overrange_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_calib_ctrl/comp_out_r_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_calib_ctrl/comp_out_rr_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_calib_ctrl/meas_val_n_reg": {
+      "count": 30,
+      "area_um2": 1896.048,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "u_calib_ctrl/meas_val_p_reg": {
+      "count": 30,
+      "area_um2": 1896.048,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "u_calib_ctrl/orr_r_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_calib_ctrl/overrange_acc_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_calib_ctrl/overrange_bits_reg": {
+      "count": 20,
+      "area_um2": 1317.2544,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "u_calib_ctrl/sar_code_reg": {
+      "count": 20,
+      "area_um2": 1264.032,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "u_calib_ctrl/sar_ptr_reg": {
+      "count": 5,
+      "area_um2": 316.008,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "u_calib_ctrl/shadow_weights_reg": {
+      "count": 600,
+      "area_um2": 37920.96,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "u_calib_ctrl/state_reg": {
+      "count": 4,
+      "area_um2": 252.8064,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "u_calib_ctrl/target_bit_reg": {
+      "count": 5,
+      "area_um2": 335.9664,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "u_calib_ctrl/temp_acc_reg": {
+      "count": 30,
+      "area_um2": 1896.048,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "u_calib_ctrl/w_wr_addr_reg": {
+      "count": 5,
+      "area_um2": 316.008,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "u_calib_ctrl/w_wr_data_reg": {
+      "count": 30,
+      "area_um2": 1896.048,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "u_calib_ctrl/w_wr_en_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_calib_ctrl/wait_cnt_reg": {
+      "count": 5,
+      "area_um2": 316.008,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "u_calib_ctrl/wr_idx_r_reg": {
+      "count": 5,
+      "area_um2": 335.9664,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "u_srm_residue/busy_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_srm_residue/cap_ones_reg": {
+      "count": 5,
+      "area_um2": 316.008,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "u_srm_residue/cap_shortfall_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_srm_residue/cap_total_reg": {
+      "count": 5,
+      "area_um2": 316.008,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "u_srm_residue/count_shortfall_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_srm_residue/dec_done_tgl_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_srm_residue/dec_ones_reg": {
+      "count": 5,
+      "area_um2": 316.008,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "u_srm_residue/dec_run_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_srm_residue/dec_total_reg": {
+      "count": 5,
+      "area_um2": 316.008,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "u_srm_residue/done_pending_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_srm_residue/done_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_srm_residue/go_tgl_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_srm_residue/go_tgl_s1_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_srm_residue/go_tgl_s2_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_srm_residue/go_tgl_s3_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_srm_residue/ones_count_reg": {
+      "count": 5,
+      "area_um2": 316.008,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "u_srm_residue/ones_g_s1_reg": {
+      "count": 5,
+      "area_um2": 316.008,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "u_srm_residue/ones_g_s2_reg": {
+      "count": 5,
+      "area_um2": 316.008,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "u_srm_residue/residue_q_small_reg": {
+      "count": 10,
+      "area_um2": 632.016,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "u_srm_residue/residue_valid_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_srm_residue/stall_cnt_reg": {
+      "count": 7,
+      "area_um2": 442.4112,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "u_srm_residue/stalled_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_srm_residue/state_reg": {
+      "count": 3,
+      "area_um2": 189.6048,
+      "actual_bit_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    "u_srm_residue/tgl_ref_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_srm_residue/tgl_s1_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_srm_residue/tgl_s2_reg": {
+      "count": 1,
+      "area_um2": 63.2016,
+      "actual_bit_indices": []
+    },
+    "u_srm_residue/tot_g_s1_reg": {
+      "count": 5,
+      "area_um2": 316.008,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "u_srm_residue/tot_g_s2_reg": {
+      "count": 5,
+      "area_um2": 316.008,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "u_srm_residue/total_count_reg": {
+      "count": 5,
+      "area_um2": 316.008,
+      "actual_bit_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  "shadow_by_address": {
+    "0": {
+      "count": 30,
+      "area_um2": 1896.048
+    },
+    "1": {
+      "count": 30,
+      "area_um2": 1896.048
+    },
+    "2": {
+      "count": 30,
+      "area_um2": 1896.048
+    },
+    "3": {
+      "count": 30,
+      "area_um2": 1896.048
+    },
+    "4": {
+      "count": 30,
+      "area_um2": 1896.048
+    },
+    "5": {
+      "count": 30,
+      "area_um2": 1896.048
+    },
+    "6": {
+      "count": 30,
+      "area_um2": 1896.048
+    },
+    "7": {
+      "count": 30,
+      "area_um2": 1896.048
+    },
+    "8": {
+      "count": 30,
+      "area_um2": 1896.048
+    },
+    "9": {
+      "count": 30,
+      "area_um2": 1896.048
+    },
+    "10": {
+      "count": 30,
+      "area_um2": 1896.048
+    },
+    "11": {
+      "count": 30,
+      "area_um2": 1896.048
+    },
+    "12": {
+      "count": 30,
+      "area_um2": 1896.048
+    },
+    "13": {
+      "count": 30,
+      "area_um2": 1896.048
+    },
+    "14": {
+      "count": 30,
+      "area_um2": 1896.048
+    },
+    "15": {
+      "count": 30,
+      "area_um2": 1896.048
+    },
+    "16": {
+      "count": 30,
+      "area_um2": 1896.048
+    },
+    "17": {
+      "count": 30,
+      "area_um2": 1896.048
+    },
+    "18": {
+      "count": 30,
+      "area_um2": 1896.048
+    },
+    "19": {
+      "count": 30,
+      "area_um2": 1896.048
+    }
+  },
+  "shadow_reference_cell_types": {
+    "DFFSXL": 162,
+    "DFFSX1": 18
+  },
+  "reference_only_nonzero_reset_bits": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "reference_semantically_variable_bits_after_valid_reset": 0,
+  "rtl_declared_register_widths_default": {
+    "shadow_weights": 600,
+    "accumulator": 37,
+    "temp_acc": 36,
+    "meas_val_p": 30,
+    "meas_val_n": 30,
+    "avg_rounded_r": 37,
+    "calc_result_r": 32,
+    "w_wr_data": 30,
+    "raw_code_o": 20
+  },
+  "clock_gate_instances": [
+    {
+      "name": "u_calib_ctrl/clk_gate_shadow_weights_reg[0]",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_0",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_389",
+        "EN": "u_calib_ctrl/N1842",
+        "ENCLK": "u_calib_ctrl/net1660",
+        "TE": "1'b0",
+        "ZCTSNET_0": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1040,
+      "contents": {
+        "count": 2,
+        "area_um2": 49.896
+      },
+      "direct_dff_clock_loads": 0,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 1,
+          "area_um2": 29.9376
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_shadow_weights_reg[1]",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_33",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_390",
+        "EN": "u_calib_ctrl/N1841",
+        "ENCLK": "u_calib_ctrl/net1666",
+        "TE": "1'b0",
+        "ZCTSNET_1": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1044,
+      "contents": {
+        "count": 3,
+        "area_um2": 63.2016
+      },
+      "direct_dff_clock_loads": 0,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 1,
+          "area_um2": 29.9376
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_shadow_weights_reg[2]",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_32",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_389",
+        "EN": "u_calib_ctrl/N1840",
+        "ENCLK": "u_calib_ctrl/net1671",
+        "TE": "1'b0",
+        "ZCTSNET_2": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1047,
+      "contents": {
+        "count": 2,
+        "area_um2": 49.896
+      },
+      "direct_dff_clock_loads": 0,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 1,
+          "area_um2": 29.9376
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_shadow_weights_reg[3]",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_31",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_390",
+        "EN": "u_calib_ctrl/N1839",
+        "ENCLK": "u_calib_ctrl/net1676",
+        "TE": "1'b0",
+        "ZCTSNET_1": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1050,
+      "contents": {
+        "count": 3,
+        "area_um2": 63.2016
+      },
+      "direct_dff_clock_loads": 0,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 1,
+          "area_um2": 29.9376
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_shadow_weights_reg[4]",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_30",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_390",
+        "EN": "u_calib_ctrl/HFSNET_234",
+        "ENCLK": "u_calib_ctrl/net1681",
+        "TE": "1'b0",
+        "ZCTSNET_0": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1053,
+      "contents": {
+        "count": 2,
+        "area_um2": 53.2224
+      },
+      "direct_dff_clock_loads": 30,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_shadow_weights_reg[5]",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_29",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_390",
+        "EN": "u_calib_ctrl/N1837",
+        "ENCLK": "u_calib_ctrl/net1686",
+        "TE": "1'b0",
+        "ZCTSNET_2": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1056,
+      "contents": {
+        "count": 2,
+        "area_um2": 53.2224
+      },
+      "direct_dff_clock_loads": 30,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_shadow_weights_reg[6]",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_28",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_389",
+        "EN": "u_calib_ctrl/N1836",
+        "ENCLK": "u_calib_ctrl/net1691",
+        "TE": "1'b0",
+        "ZCTSNET_0": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1059,
+      "contents": {
+        "count": 3,
+        "area_um2": 63.2016
+      },
+      "direct_dff_clock_loads": 0,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 1,
+          "area_um2": 33.264
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_shadow_weights_reg[7]",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_27",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_390",
+        "EN": "u_calib_ctrl/N1835",
+        "ENCLK": "u_calib_ctrl/net1696",
+        "TE": "1'b0",
+        "ZCTSNET_2": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1062,
+      "contents": {
+        "count": 3,
+        "area_um2": 63.2016
+      },
+      "direct_dff_clock_loads": 0,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 1,
+          "area_um2": 23.2848
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_shadow_weights_reg[8]",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_26",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_389",
+        "EN": "u_calib_ctrl/N1834",
+        "ENCLK": "u_calib_ctrl/net1701",
+        "TE": "1'b0",
+        "ZCTSNET_0": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1065,
+      "contents": {
+        "count": 2,
+        "area_um2": 49.896
+      },
+      "direct_dff_clock_loads": 0,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 1,
+          "area_um2": 29.9376
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_shadow_weights_reg[9]",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_25",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_390",
+        "EN": "u_calib_ctrl/N1833",
+        "ENCLK": "u_calib_ctrl/net1706",
+        "TE": "1'b0",
+        "ZCTSNET_2": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1068,
+      "contents": {
+        "count": 3,
+        "area_um2": 66.528
+      },
+      "direct_dff_clock_loads": 30,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_shadow_weights_reg[10]",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_24",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_389",
+        "EN": "u_calib_ctrl/N1832",
+        "ENCLK": "u_calib_ctrl/net1711",
+        "TE": "1'b0",
+        "ZCTSNET_0": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1071,
+      "contents": {
+        "count": 2,
+        "area_um2": 53.2224
+      },
+      "direct_dff_clock_loads": 30,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_shadow_weights_reg[11]",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_23",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_390",
+        "EN": "u_calib_ctrl/N1831",
+        "ENCLK": "u_calib_ctrl/net1716",
+        "TE": "1'b0",
+        "ZCTSNET_2": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1074,
+      "contents": {
+        "count": 3,
+        "area_um2": 66.528
+      },
+      "direct_dff_clock_loads": 30,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_shadow_weights_reg[12]",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_22",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_390",
+        "EN": "u_calib_ctrl/N1830",
+        "ENCLK": "u_calib_ctrl/net1721",
+        "TE": "1'b0",
+        "ZCTSNET_0": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1077,
+      "contents": {
+        "count": 2,
+        "area_um2": 53.2224
+      },
+      "direct_dff_clock_loads": 30,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_shadow_weights_reg[13]",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_21",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_389",
+        "EN": "u_calib_ctrl/HFSNET_250",
+        "ENCLK": "u_calib_ctrl/net1726",
+        "TE": "1'b0",
+        "ZCTSNET_1": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1080,
+      "contents": {
+        "count": 3,
+        "area_um2": 63.2016
+      },
+      "direct_dff_clock_loads": 0,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 1,
+          "area_um2": 43.2432
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_shadow_weights_reg[14]",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_20",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_390",
+        "EN": "u_calib_ctrl/N1828",
+        "ENCLK": "u_calib_ctrl/net1731",
+        "TE": "1'b0",
+        "ZCTSNET_1": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1083,
+      "contents": {
+        "count": 2,
+        "area_um2": 53.2224
+      },
+      "direct_dff_clock_loads": 30,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_shadow_weights_reg[15]",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_19",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_389",
+        "EN": "u_calib_ctrl/N1827",
+        "ENCLK": "u_calib_ctrl/net1736",
+        "TE": "1'b0",
+        "ZCTSNET_0": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1086,
+      "contents": {
+        "count": 2,
+        "area_um2": 49.896
+      },
+      "direct_dff_clock_loads": 0,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 1,
+          "area_um2": 33.264
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_shadow_weights_reg[16]",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_18",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_389",
+        "EN": "u_calib_ctrl/N1826",
+        "ENCLK": "u_calib_ctrl/net1741",
+        "TE": "1'b0",
+        "ZCTSNET_0": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1089,
+      "contents": {
+        "count": 2,
+        "area_um2": 53.2224
+      },
+      "direct_dff_clock_loads": 30,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_shadow_weights_reg[17]",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_17",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_389",
+        "EN": "u_calib_ctrl/N1825",
+        "ENCLK": "u_calib_ctrl/net1746",
+        "TE": "1'b0",
+        "ZCTSNET_0": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1092,
+      "contents": {
+        "count": 2,
+        "area_um2": 49.896
+      },
+      "direct_dff_clock_loads": 0,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 1,
+          "area_um2": 29.9376
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_shadow_weights_reg[18]",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_16",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_389",
+        "EN": "u_calib_ctrl/N1824",
+        "ENCLK": "u_calib_ctrl/net1751",
+        "TE": "1'b0",
+        "ZCTSNET_0": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1095,
+      "contents": {
+        "count": 2,
+        "area_um2": 53.2224
+      },
+      "direct_dff_clock_loads": 30,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_shadow_weights_reg[19]",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_15",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_389",
+        "EN": "u_calib_ctrl/N1823",
+        "ENCLK": "u_calib_ctrl/net1756",
+        "TE": "1'b0",
+        "ZCTSNET_0": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1098,
+      "contents": {
+        "count": 2,
+        "area_um2": 49.896
+      },
+      "direct_dff_clock_loads": 0,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 1,
+          "area_um2": 23.2848
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_calib_done_reg",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_14",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_391",
+        "EN": "u_calib_ctrl/N1485",
+        "ENCLK": "u_calib_ctrl/net1761",
+        "TE": "1'b0",
+        "ZCTSNET_0": "ctosc_gls_0"
+      },
+      "source_line": 1101,
+      "contents": {
+        "count": 2,
+        "area_um2": 49.896
+      },
+      "direct_dff_clock_loads": 3,
+      "clock_tree_loads": {
+        "dff_sinks": 3,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_target_bit_reg",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_13",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_391",
+        "EN": "u_calib_ctrl/N1488",
+        "ENCLK": "u_calib_ctrl/net1766",
+        "TE": "1'b0",
+        "ZCTSNET_0": "ZCTSNET_127"
+      },
+      "source_line": 1104,
+      "contents": {
+        "count": 2,
+        "area_um2": 53.2224
+      },
+      "direct_dff_clock_loads": 24,
+      "clock_tree_loads": {
+        "dff_sinks": 24,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_avg_cnt_reg",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_12",
+      "pins": {
+        "CLK": "ZCTSNET_127",
+        "EN": "u_calib_ctrl/N1536",
+        "ENCLK": "u_calib_ctrl/net1771",
+        "TE": "1'b0"
+      },
+      "source_line": 1107,
+      "contents": {
+        "count": 2,
+        "area_um2": 49.896
+      },
+      "direct_dff_clock_loads": 20,
+      "clock_tree_loads": {
+        "dff_sinks": 20,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_accumulator_reg",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_11",
+      "pins": {
+        "CLK": "ZCTSNET_127",
+        "EN": "u_calib_ctrl/N1536",
+        "ENCLK": "u_calib_ctrl/net1776",
+        "TE": "1'b0"
+      },
+      "source_line": 1109,
+      "contents": {
+        "count": 2,
+        "area_um2": 49.896
+      },
+      "direct_dff_clock_loads": 21,
+      "clock_tree_loads": {
+        "dff_sinks": 21,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_sar_ptr_reg",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_10",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_391",
+        "EN": "u_calib_ctrl/N1602",
+        "ENCLK": "u_calib_ctrl/net1781",
+        "TE": "1'b0"
+      },
+      "source_line": 1111,
+      "contents": {
+        "count": 2,
+        "area_um2": 49.896
+      },
+      "direct_dff_clock_loads": 5,
+      "clock_tree_loads": {
+        "dff_sinks": 5,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_wait_cnt_reg",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_9",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_391",
+        "EN": "u_calib_ctrl/N1608",
+        "ENCLK": "u_calib_ctrl/net1786",
+        "TE": "1'b0"
+      },
+      "source_line": 1113,
+      "contents": {
+        "count": 2,
+        "area_um2": 53.2224
+      },
+      "direct_dff_clock_loads": 24,
+      "clock_tree_loads": {
+        "dff_sinks": 24,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_w_wr_addr_reg",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_8",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_389",
+        "EN": "u_calib_ctrl/N1822",
+        "ENCLK": "u_calib_ctrl/net1791",
+        "TE": "1'b0",
+        "ZCTSNET_0": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1115,
+      "contents": {
+        "count": 2,
+        "area_um2": 49.896
+      },
+      "direct_dff_clock_loads": 18,
+      "clock_tree_loads": {
+        "dff_sinks": 18,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_w_wr_data_reg",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_7",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_389",
+        "EN": "u_calib_ctrl/N1822",
+        "ENCLK": "u_calib_ctrl/net1796",
+        "TE": "1'b0",
+        "ZCTSNET_0": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1118,
+      "contents": {
+        "count": 2,
+        "area_um2": 49.896
+      },
+      "direct_dff_clock_loads": 17,
+      "clock_tree_loads": {
+        "dff_sinks": 17,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_meas_val_p_reg",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_6",
+      "pins": {
+        "CLK": "ZCTSNET_126",
+        "EN": "u_calib_ctrl/N1692",
+        "ENCLK": "u_calib_ctrl/net1801",
+        "TE": "1'b0",
+        "ZCTSNET_1": "ZCTSNET_127"
+      },
+      "source_line": 1121,
+      "contents": {
+        "count": 2,
+        "area_um2": 53.2224
+      },
+      "direct_dff_clock_loads": 30,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_meas_val_n_reg",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_5",
+      "pins": {
+        "CLK": "ZCTSNET_126",
+        "EN": "u_calib_ctrl/N1723",
+        "ENCLK": "u_calib_ctrl/net1806",
+        "TE": "1'b0",
+        "ZCTSNET_1": "ZCTSNET_127"
+      },
+      "source_line": 1124,
+      "contents": {
+        "count": 2,
+        "area_um2": 53.2224
+      },
+      "direct_dff_clock_loads": 30,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_calc_cnt_reg",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_4",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_391",
+        "EN": "u_calib_ctrl/N1614",
+        "ENCLK": "u_calib_ctrl/net1811",
+        "TE": "1'b0"
+      },
+      "source_line": 1127,
+      "contents": {
+        "count": 2,
+        "area_um2": 49.896
+      },
+      "direct_dff_clock_loads": 5,
+      "clock_tree_loads": {
+        "dff_sinks": 5,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_avg_rounded_r_reg",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_3",
+      "pins": {
+        "CLK": "ZCTSNET_127",
+        "EN": "u_calib_ctrl/N1754",
+        "ENCLK": "u_calib_ctrl/net1816",
+        "TE": "1'b0"
+      },
+      "source_line": 1129,
+      "contents": {
+        "count": 2,
+        "area_um2": 49.896
+      },
+      "direct_dff_clock_loads": 18,
+      "clock_tree_loads": {
+        "dff_sinks": 18,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_avg_rounded_r_reg_0",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_2",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_391",
+        "EN": "u_calib_ctrl/N1754",
+        "ENCLK": "u_calib_ctrl/net1821",
+        "TE": "1'b0",
+        "ZCTSNET_0": "ZCTSNET_127"
+      },
+      "source_line": 1131,
+      "contents": {
+        "count": 2,
+        "area_um2": 53.2224
+      },
+      "direct_dff_clock_loads": 18,
+      "clock_tree_loads": {
+        "dff_sinks": 18,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_calc_result_r_reg",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_1",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_389",
+        "EN": "u_calib_ctrl/N1791",
+        "ENCLK": "u_calib_ctrl/net1826",
+        "TE": "1'b0",
+        "ZCTSNET_0": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 1134,
+      "contents": {
+        "count": 2,
+        "area_um2": 49.896
+      },
+      "direct_dff_clock_loads": 0,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 1,
+          "area_um2": 23.2848
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_calib_ctrl/clk_gate_temp_acc_reg_0",
+      "module": "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_1_2",
+      "pins": {
+        "CLK": "u_calib_ctrl/ZCTSNET_389",
+        "EN": "u_calib_ctrl/n2328",
+        "ENCLK": "u_calib_ctrl/n2326",
+        "TE": "1'b0",
+        "ZCTSNET_0": "u_calib_ctrl/ZCTSNET_391"
+      },
+      "source_line": 2228,
+      "contents": {
+        "count": 2,
+        "area_um2": 49.896
+      },
+      "direct_dff_clock_loads": 0,
+      "clock_tree_loads": {
+        "dff_sinks": 30,
+        "buffer_inverter_tree": {
+          "count": 1,
+          "area_um2": 23.2848
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_srm_residue/clk_gate_dec_ones_reg",
+      "module": "SNPS_CLOCK_GATE_HIGH_srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH10_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64_0",
+      "pins": {
+        "CLK": "dec_clk",
+        "EN": "u_srm_residue/N43",
+        "ENCLK": "u_srm_residue/net1622",
+        "TE": "1'b0",
+        "ctosc_gls_0": "u_srm_residue/ctosc_gls_0"
+      },
+      "source_line": 186,
+      "contents": {
+        "count": 2,
+        "area_um2": 49.896
+      },
+      "direct_dff_clock_loads": 5,
+      "clock_tree_loads": {
+        "dff_sinks": 5,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_srm_residue/clk_gate_dec_total_reg",
+      "module": "SNPS_CLOCK_GATE_HIGH_srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH10_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64_4",
+      "pins": {
+        "CLK": "dec_clk",
+        "EN": "u_srm_residue/N49",
+        "ENCLK": "u_srm_residue/net1628",
+        "TE": "1'b0",
+        "ctosc_gls_0": "u_srm_residue/ctosc_gls_0"
+      },
+      "source_line": 189,
+      "contents": {
+        "count": 2,
+        "area_um2": 49.896
+      },
+      "direct_dff_clock_loads": 7,
+      "clock_tree_loads": {
+        "dff_sinks": 7,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_srm_residue/clk_gate_cap_ones_reg",
+      "module": "SNPS_CLOCK_GATE_HIGH_srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH10_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64_3",
+      "pins": {
+        "CLK": "ctosc_gls_0",
+        "EN": "u_srm_residue/N105",
+        "ENCLK": "u_srm_residue/net1633",
+        "TE": "1'b0"
+      },
+      "source_line": 192,
+      "contents": {
+        "count": 2,
+        "area_um2": 49.896
+      },
+      "direct_dff_clock_loads": 11,
+      "clock_tree_loads": {
+        "dff_sinks": 11,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_srm_residue/clk_gate_stall_cnt_reg",
+      "module": "SNPS_CLOCK_GATE_HIGH_srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH10_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64_2",
+      "pins": {
+        "CLK": "ctosc_gls_0",
+        "EN": "u_srm_residue/n124",
+        "ENCLK": "u_srm_residue/net1638",
+        "TE": "1'b0"
+      },
+      "source_line": 194,
+      "contents": {
+        "count": 2,
+        "area_um2": 49.896
+      },
+      "direct_dff_clock_loads": 9,
+      "clock_tree_loads": {
+        "dff_sinks": 9,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    },
+    {
+      "name": "u_srm_residue/clk_gate_residue_q_small_reg",
+      "module": "SNPS_CLOCK_GATE_HIGH_srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH10_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64_1",
+      "pins": {
+        "CLK": "ctosc_gls_0",
+        "EN": "u_srm_residue/n123",
+        "ENCLK": "u_srm_residue/net1643",
+        "TE": "1'b0"
+      },
+      "source_line": 196,
+      "contents": {
+        "count": 2,
+        "area_um2": 53.2224
+      },
+      "direct_dff_clock_loads": 21,
+      "clock_tree_loads": {
+        "dff_sinks": 21,
+        "buffer_inverter_tree": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "leaf_sink_nets": 1
+      }
+    }
+  ],
+  "clock_gate_count": 40,
+  "clock_gate_contents": {
+    "count": 87,
+    "area_um2": 2138.8752
+  },
+  "clock_domain_register_loads_through_buffers_and_clock_gates": {
+    "clk": {
+      "dff_sinks": 996,
+      "buffer_inverter_tree": {
+        "count": 19,
+        "area_um2": 535.5504
+      },
+      "leaf_sink_nets": 42
+    },
+    "dec_clk": {
+      "dff_sinks": 15,
+      "buffer_inverter_tree": {
+        "count": 1,
+        "area_um2": 13.3056
+      },
+      "leaf_sink_nets": 3
+    }
+  },
+  "register_clock_pin_loads_by_net": {
+    "ZCTSNET_126": 15,
+    "ZCTSNET_127": 3,
+    "ctosc_gls_0": 33,
+    "u_calib_ctrl/ZCTSNET_366": 30,
+    "u_calib_ctrl/ZCTSNET_369": 30,
+    "u_calib_ctrl/ZCTSNET_372": 30,
+    "u_calib_ctrl/ZCTSNET_374": 30,
+    "u_calib_ctrl/ZCTSNET_376": 30,
+    "u_calib_ctrl/ZCTSNET_378": 30,
+    "u_calib_ctrl/ZCTSNET_379": 30,
+    "u_calib_ctrl/ZCTSNET_380": 30,
+    "u_calib_ctrl/ZCTSNET_381": 30,
+    "u_calib_ctrl/ZCTSNET_384": 30,
+    "u_calib_ctrl/ZCTSNET_385": 30,
+    "u_calib_ctrl/ZCTSNET_386": 30,
+    "u_calib_ctrl/ZCTSNET_388": 30,
+    "u_calib_ctrl/ZCTSNET_391": 11,
+    "u_calib_ctrl/net1681": 30,
+    "u_calib_ctrl/net1686": 30,
+    "u_calib_ctrl/net1706": 30,
+    "u_calib_ctrl/net1711": 30,
+    "u_calib_ctrl/net1716": 30,
+    "u_calib_ctrl/net1721": 30,
+    "u_calib_ctrl/net1731": 30,
+    "u_calib_ctrl/net1741": 30,
+    "u_calib_ctrl/net1751": 30,
+    "u_calib_ctrl/net1761": 3,
+    "u_calib_ctrl/net1766": 24,
+    "u_calib_ctrl/net1771": 20,
+    "u_calib_ctrl/net1776": 21,
+    "u_calib_ctrl/net1781": 5,
+    "u_calib_ctrl/net1786": 24,
+    "u_calib_ctrl/net1791": 18,
+    "u_calib_ctrl/net1796": 17,
+    "u_calib_ctrl/net1801": 30,
+    "u_calib_ctrl/net1806": 30,
+    "u_calib_ctrl/net1811": 5,
+    "u_calib_ctrl/net1816": 18,
+    "u_calib_ctrl/net1821": 18,
+    "u_srm_residue/ctosc_gls_0": 3,
+    "u_srm_residue/net1622": 5,
+    "u_srm_residue/net1628": 7,
+    "u_srm_residue/net1633": 11,
+    "u_srm_residue/net1638": 9,
+    "u_srm_residue/net1643": 21
+  },
+  "register_async_reset_pin_loads_by_net": {
+    "HFSNET_119": 22,
+    "HFSNET_120": 24,
+    "HFSNET_121": 36,
+    "HFSNET_122": 25,
+    "HFSNET_123": 27,
+    "u_calib_ctrl/HFSNET_331": 22,
+    "u_calib_ctrl/HFSNET_332": 30,
+    "u_calib_ctrl/HFSNET_333": 32,
+    "u_calib_ctrl/HFSNET_334": 28,
+    "u_calib_ctrl/HFSNET_335": 29,
+    "u_calib_ctrl/HFSNET_336": 31,
+    "u_calib_ctrl/HFSNET_337": 25,
+    "u_calib_ctrl/HFSNET_338": 24,
+    "u_calib_ctrl/HFSNET_339": 30,
+    "u_calib_ctrl/HFSNET_340": 36,
+    "u_calib_ctrl/HFSNET_342": 24,
+    "u_calib_ctrl/HFSNET_343": 31,
+    "u_calib_ctrl/HFSNET_344": 31,
+    "u_calib_ctrl/HFSNET_345": 19,
+    "u_calib_ctrl/HFSNET_347": 33,
+    "u_calib_ctrl/HFSNET_348": 30,
+    "u_calib_ctrl/HFSNET_349": 24,
+    "u_calib_ctrl/HFSNET_350": 30,
+    "u_calib_ctrl/HFSNET_351": 32,
+    "u_calib_ctrl/HFSNET_352": 27,
+    "u_calib_ctrl/HFSNET_353": 22,
+    "u_calib_ctrl/HFSNET_354": 28,
+    "u_calib_ctrl/HFSNET_355": 35,
+    "u_calib_ctrl/HFSNET_356": 31,
+    "u_calib_ctrl/HFSNET_357": 32,
+    "u_calib_ctrl/HFSNET_358": 32,
+    "u_calib_ctrl/HFSNET_360": 30,
+    "u_calib_ctrl/HFSNET_361": 26,
+    "u_srm_residue/HFSNET_4": 22,
+    "u_srm_residue/HFSNET_6": 28,
+    "u_srm_residue/HFSNET_9": 23
+  },
+  "reference_clock_pin_loads_by_net": {
+    "u_calib_ctrl/ZCTSNET_369": 30,
+    "u_calib_ctrl/ZCTSNET_379": 30,
+    "u_calib_ctrl/ZCTSNET_380": 30,
+    "u_calib_ctrl/ZCTSNET_381": 30,
+    "u_calib_ctrl/net1681": 30,
+    "u_calib_ctrl/net1686": 30
+  },
+  "reference_reset_pin_loads_by_net": {
+    "u_calib_ctrl/HFSNET_331": 3,
+    "u_calib_ctrl/HFSNET_332": 12,
+    "u_calib_ctrl/HFSNET_333": 19,
+    "u_calib_ctrl/HFSNET_334": 11,
+    "u_calib_ctrl/HFSNET_335": 11,
+    "u_calib_ctrl/HFSNET_336": 13,
+    "u_calib_ctrl/HFSNET_337": 6,
+    "u_calib_ctrl/HFSNET_338": 14,
+    "u_calib_ctrl/HFSNET_339": 11,
+    "u_calib_ctrl/HFSNET_340": 16,
+    "u_calib_ctrl/HFSNET_342": 10,
+    "u_calib_ctrl/HFSNET_343": 18,
+    "u_calib_ctrl/HFSNET_344": 6,
+    "u_calib_ctrl/HFSNET_350": 5,
+    "u_calib_ctrl/HFSNET_351": 9,
+    "u_calib_ctrl/HFSNET_352": 3,
+    "u_calib_ctrl/HFSNET_354": 2,
+    "u_calib_ctrl/HFSNET_355": 11
+  },
+  "rst_n_buffer_inverter_tree_to_SN": {
+    "dff_sinks": 1011,
+    "buffer_inverter_tree": {
+      "count": 39,
+      "area_um2": 575.4672
+    },
+    "leaf_sink_nets": 36
+  },
+  "rst_n_buffer_inverter_tree_to_RN": {
+    "dff_sinks": 0,
+    "buffer_inverter_tree": {
+      "count": 39,
+      "area_um2": 575.4672
+    },
+    "leaf_sink_nets": 0
+  },
+  "lut": {
+    "total": {
+      "count": 64,
+      "area_um2": 848.232
+    },
+    "families": {
+      "adder_primitive": {
+        "count": 0,
+        "area_um2": 0
+      },
+      "buffer": {
+        "count": 0,
+        "area_um2": 0
+      },
+      "dff": {
+        "count": 0,
+        "area_um2": 0
+      },
+      "inverter": {
+        "count": 10,
+        "area_um2": 66.528
+      },
+      "latch": {
+        "count": 0,
+        "area_um2": 0
+      },
+      "mux_primitive": {
+        "count": 4,
+        "area_um2": 93.1392
+      },
+      "other_combinational": {
+        "count": 50,
+        "area_um2": 688.5648
+      }
+    }
+  },
+  "opportunity_estimates": {
+    "scope": "gross removed register/ICG leaf area, not net new synthesis/PNR PPA",
+    "trusted_registers": {
+      "count": 180,
+      "area_um2": 11376.288
+    },
+    "trusted_six_clock_gate_contents": {
+      "count": 14,
+      "area_um2": 332.64
+    },
+    "snapshot_registers": {
+      "count": 60,
+      "area_um2": 3822.0336
+    },
+    "trusted_180_dff_fraction_of_pnr": 0.11120504649801687
+  },
+  "recursive_range_estimates_not_new_synthesis": {
+    "scope": "mathematical candidate under valid reset/defaults/qualified FSM addresses; not a sequential formal proof or synthesis result",
+    "defaults": {
+      "AVG_LOOPS": 32,
+      "REF_WEIGHT_LSB": 256,
+      "HALF_LSB": 128,
+      "MAX_CALIB_BIT": 5,
+      "CAP_NUM": 20
+    },
+    "recurrence": "Wmax(k)=sum(Wmax(0..k-1))+128=254*2**k for k=6..19",
+    "writable_entries": [
+      {
+        "address": 6,
+        "max_reachable_weight_q8_candidate": 16256,
+        "min_unsigned_bits_if_nonnegative_proven": 14,
+        "min_signed_bits_for_bound": 15,
+        "mapped_dffs_above_signed_bound": {
+          "count": 15,
+          "area_um2": 948.024
+        }
+      },
+      {
+        "address": 7,
+        "max_reachable_weight_q8_candidate": 32512,
+        "min_unsigned_bits_if_nonnegative_proven": 15,
+        "min_signed_bits_for_bound": 16,
+        "mapped_dffs_above_signed_bound": {
+          "count": 14,
+          "area_um2": 884.8224
+        }
+      },
+      {
+        "address": 8,
+        "max_reachable_weight_q8_candidate": 65024,
+        "min_unsigned_bits_if_nonnegative_proven": 16,
+        "min_signed_bits_for_bound": 17,
+        "mapped_dffs_above_signed_bound": {
+          "count": 13,
+          "area_um2": 821.6208
+        }
+      },
+      {
+        "address": 9,
+        "max_reachable_weight_q8_candidate": 130048,
+        "min_unsigned_bits_if_nonnegative_proven": 17,
+        "min_signed_bits_for_bound": 18,
+        "mapped_dffs_above_signed_bound": {
+          "count": 12,
+          "area_um2": 758.4192
+        }
+      },
+      {
+        "address": 10,
+        "max_reachable_weight_q8_candidate": 260096,
+        "min_unsigned_bits_if_nonnegative_proven": 18,
+        "min_signed_bits_for_bound": 19,
+        "mapped_dffs_above_signed_bound": {
+          "count": 11,
+          "area_um2": 695.2176
+        }
+      },
+      {
+        "address": 11,
+        "max_reachable_weight_q8_candidate": 520192,
+        "min_unsigned_bits_if_nonnegative_proven": 19,
+        "min_signed_bits_for_bound": 20,
+        "mapped_dffs_above_signed_bound": {
+          "count": 10,
+          "area_um2": 632.016
+        }
+      },
+      {
+        "address": 12,
+        "max_reachable_weight_q8_candidate": 1040384,
+        "min_unsigned_bits_if_nonnegative_proven": 20,
+        "min_signed_bits_for_bound": 21,
+        "mapped_dffs_above_signed_bound": {
+          "count": 9,
+          "area_um2": 568.8144
+        }
+      },
+      {
+        "address": 13,
+        "max_reachable_weight_q8_candidate": 2080768,
+        "min_unsigned_bits_if_nonnegative_proven": 21,
+        "min_signed_bits_for_bound": 22,
+        "mapped_dffs_above_signed_bound": {
+          "count": 8,
+          "area_um2": 505.6128
+        }
+      },
+      {
+        "address": 14,
+        "max_reachable_weight_q8_candidate": 4161536,
+        "min_unsigned_bits_if_nonnegative_proven": 22,
+        "min_signed_bits_for_bound": 23,
+        "mapped_dffs_above_signed_bound": {
+          "count": 7,
+          "area_um2": 442.4112
+        }
+      },
+      {
+        "address": 15,
+        "max_reachable_weight_q8_candidate": 8323072,
+        "min_unsigned_bits_if_nonnegative_proven": 23,
+        "min_signed_bits_for_bound": 24,
+        "mapped_dffs_above_signed_bound": {
+          "count": 6,
+          "area_um2": 379.2096
+        }
+      },
+      {
+        "address": 16,
+        "max_reachable_weight_q8_candidate": 16646144,
+        "min_unsigned_bits_if_nonnegative_proven": 24,
+        "min_signed_bits_for_bound": 25,
+        "mapped_dffs_above_signed_bound": {
+          "count": 5,
+          "area_um2": 316.008
+        }
+      },
+      {
+        "address": 17,
+        "max_reachable_weight_q8_candidate": 33292288,
+        "min_unsigned_bits_if_nonnegative_proven": 25,
+        "min_signed_bits_for_bound": 26,
+        "mapped_dffs_above_signed_bound": {
+          "count": 4,
+          "area_um2": 252.8064
+        }
+      },
+      {
+        "address": 18,
+        "max_reachable_weight_q8_candidate": 66584576,
+        "min_unsigned_bits_if_nonnegative_proven": 26,
+        "min_signed_bits_for_bound": 27,
+        "mapped_dffs_above_signed_bound": {
+          "count": 3,
+          "area_um2": 189.6048
+        }
+      },
+      {
+        "address": 19,
+        "max_reachable_weight_q8_candidate": 133169152,
+        "min_unsigned_bits_if_nonnegative_proven": 27,
+        "min_signed_bits_for_bound": 28,
+        "mapped_dffs_above_signed_bound": {
+          "count": 2,
+          "area_um2": 126.4032
+        }
+      }
+    ],
+    "writable_signed_bit_budget": 301,
+    "writable_unsigned_bit_budget": 287,
+    "gross_dffs_above_signed_bound": 119,
+    "gross_area_above_signed_bound_um2": 7520.9904,
+    "required_proof": [
+      "reset assumption",
+      "FSM/write-address reachability",
+      "P/N compensated sum bounds including protected bits",
+      "average rounding and truncation/overflow",
+      "parameter freeze",
+      "no force/SEU/illegal-state behavior extension"
+    ]
+  },
+  "dc_typical_wireload_timing_paths": [
+    {
+      "startpoint": "u_calib_ctrl/meas_val_p_reg[1]",
+      "endpoint": "u_calib_ctrl/accumulator_reg[35]",
+      "arrival_ns_report_precision": 9.63,
+      "slack_ns_report_precision": 0.0,
+      "full_adder_CO_points_on_path": 28,
+      "source_line": 16
+    },
+    {
+      "startpoint": "u_calib_ctrl/calc_cnt_reg[0]",
+      "endpoint": "u_calib_ctrl/temp_acc_reg[29]",
+      "arrival_ns_report_precision": 9.65,
+      "slack_ns_report_precision": 0.0,
+      "full_adder_CO_points_on_path": 27,
+      "source_line": 90
+    },
+    {
+      "startpoint": "u_calib_ctrl/shadow_weights_reg[17][0]",
+      "endpoint": "u_calib_ctrl/meas_val_p_reg[29]",
+      "arrival_ns_report_precision": 9.62,
+      "slack_ns_report_precision": 0.0,
+      "full_adder_CO_points_on_path": 2,
+      "source_line": 164
+    },
+    {
+      "startpoint": "u_calib_ctrl/shadow_weights_reg[17][0]",
+      "endpoint": "u_calib_ctrl/meas_val_n_reg[29]",
+      "arrival_ns_report_precision": 9.62,
+      "slack_ns_report_precision": 0.0,
+      "full_adder_CO_points_on_path": 2,
+      "source_line": 236
+    },
+    {
+      "startpoint": "u_calib_ctrl/shadow_weights_reg[17][0]",
+      "endpoint": "u_calib_ctrl/meas_val_p_reg[29]",
+      "arrival_ns_report_precision": 9.62,
+      "slack_ns_report_precision": 0.01,
+      "full_adder_CO_points_on_path": 2,
+      "source_line": 308
+    },
+    {
+      "startpoint": "u_calib_ctrl/shadow_weights_reg[17][0]",
+      "endpoint": "u_calib_ctrl/meas_val_n_reg[29]",
+      "arrival_ns_report_precision": 9.62,
+      "slack_ns_report_precision": 0.01,
+      "full_adder_CO_points_on_path": 2,
+      "source_line": 380
+    },
+    {
+      "startpoint": "u_calib_ctrl/meas_val_p_reg[1]",
+      "endpoint": "u_calib_ctrl/accumulator_reg[35]",
+      "arrival_ns_report_precision": 9.62,
+      "slack_ns_report_precision": 0.01,
+      "full_adder_CO_points_on_path": 28,
+      "source_line": 452
+    },
+    {
+      "startpoint": "u_calib_ctrl/calc_cnt_reg[1]",
+      "endpoint": "u_calib_ctrl/temp_acc_reg[29]",
+      "arrival_ns_report_precision": 9.64,
+      "slack_ns_report_precision": 0.01,
+      "full_adder_CO_points_on_path": 27,
+      "source_line": 526
+    },
+    {
+      "startpoint": "u_calib_ctrl/calc_cnt_reg[0]",
+      "endpoint": "u_calib_ctrl/temp_acc_reg[28]",
+      "arrival_ns_report_precision": 9.43,
+      "slack_ns_report_precision": 0.22,
+      "full_adder_CO_points_on_path": 26,
+      "source_line": 600
+    },
+    {
+      "startpoint": "u_calib_ctrl/shadow_weights_reg[17][0]",
+      "endpoint": "u_calib_ctrl/meas_val_p_reg[28]",
+      "arrival_ns_report_precision": 9.39,
+      "slack_ns_report_precision": 0.23,
+      "full_adder_CO_points_on_path": 2,
+      "source_line": 673
+    },
+    {
+      "startpoint": "u_calib_ctrl/shadow_weights_reg[17][0]",
+      "endpoint": "u_calib_ctrl/meas_val_n_reg[28]",
+      "arrival_ns_report_precision": 9.39,
+      "slack_ns_report_precision": 0.23,
+      "full_adder_CO_points_on_path": 2,
+      "source_line": 742
+    },
+    {
+      "startpoint": "u_calib_ctrl/shadow_weights_reg[17][0]",
+      "endpoint": "u_calib_ctrl/meas_val_p_reg[28]",
+      "arrival_ns_report_precision": 9.39,
+      "slack_ns_report_precision": 0.23,
+      "full_adder_CO_points_on_path": 2,
+      "source_line": 811
+    },
+    {
+      "startpoint": "u_calib_ctrl/shadow_weights_reg[17][0]",
+      "endpoint": "u_calib_ctrl/meas_val_n_reg[28]",
+      "arrival_ns_report_precision": 9.39,
+      "slack_ns_report_precision": 0.23,
+      "full_adder_CO_points_on_path": 2,
+      "source_line": 881
+    },
+    {
+      "startpoint": "u_calib_ctrl/calc_cnt_reg[1]",
+      "endpoint": "u_calib_ctrl/temp_acc_reg[28]",
+      "arrival_ns_report_precision": 9.42,
+      "slack_ns_report_precision": 0.23,
+      "full_adder_CO_points_on_path": 26,
+      "source_line": 951
+    },
+    {
+      "startpoint": "u_calib_ctrl/meas_val_p_reg[1]",
+      "endpoint": "u_calib_ctrl/accumulator_reg[34]",
+      "arrival_ns_report_precision": 9.43,
+      "slack_ns_report_precision": 0.3,
+      "full_adder_CO_points_on_path": 28,
+      "source_line": 1024
+    },
+    {
+      "startpoint": "u_calib_ctrl/meas_val_p_reg[1]",
+      "endpoint": "u_calib_ctrl/accumulator_reg[34]",
+      "arrival_ns_report_precision": 9.42,
+      "slack_ns_report_precision": 0.31,
+      "full_adder_CO_points_on_path": 28,
+      "source_line": 1097
+    },
+    {
+      "startpoint": "u_calib_ctrl/calc_cnt_reg[0]",
+      "endpoint": "u_calib_ctrl/temp_acc_reg[27]",
+      "arrival_ns_report_precision": 9.26,
+      "slack_ns_report_precision": 0.39,
+      "full_adder_CO_points_on_path": 25,
+      "source_line": 1170
+    },
+    {
+      "startpoint": "start_calib",
+      "endpoint": "u_calib_ctrl/clk_gate_target_bit_reg/latch",
+      "arrival_ns_report_precision": 4.41,
+      "slack_ns_report_precision": 0.39,
+      "full_adder_CO_points_on_path": 0,
+      "source_line": 1242
+    },
+    {
+      "startpoint": "u_calib_ctrl/calc_cnt_reg[1]",
+      "endpoint": "u_calib_ctrl/temp_acc_reg[27]",
+      "arrival_ns_report_precision": 9.25,
+      "slack_ns_report_precision": 0.4,
+      "full_adder_CO_points_on_path": 25,
+      "source_line": 1296
+    },
+    {
+      "startpoint": "start_calib",
+      "endpoint": "u_calib_ctrl/clk_gate_target_bit_reg/latch",
+      "arrival_ns_report_precision": 4.29,
+      "slack_ns_report_precision": 0.51,
+      "full_adder_CO_points_on_path": 0,
+      "source_line": 1368
+    },
+    {
+      "startpoint": "srm_decision_valid",
+      "endpoint": "u_srm_residue/clk_gate_dec_ones_reg/latch",
+      "arrival_ns_report_precision": 1.71,
+      "slack_ns_report_precision": 0.0,
+      "full_adder_CO_points_on_path": 0,
+      "source_line": 1422
+    },
+    {
+      "startpoint": "srm_decision_valid",
+      "endpoint": "u_srm_residue/clk_gate_dec_ones_reg/latch",
+      "arrival_ns_report_precision": 1.63,
+      "slack_ns_report_precision": 0.0,
+      "full_adder_CO_points_on_path": 0,
+      "source_line": 1480
+    },
+    {
+      "startpoint": "srm_decision_valid",
+      "endpoint": "u_srm_residue/clk_gate_dec_total_reg/latch",
+      "arrival_ns_report_precision": 1.5,
+      "slack_ns_report_precision": 0.0,
+      "full_adder_CO_points_on_path": 0,
+      "source_line": 1538
+    },
+    {
+      "startpoint": "srm_decision_valid",
+      "endpoint": "u_srm_residue/clk_gate_dec_total_reg/latch",
+      "arrival_ns_report_precision": 1.45,
+      "slack_ns_report_precision": 0.0,
+      "full_adder_CO_points_on_path": 0,
+      "source_line": 1595
+    },
+    {
+      "startpoint": "u_srm_residue/clk_gate_dec_ones_reg/latch",
+      "endpoint": "u_srm_residue/clk_gate_dec_ones_reg/main_gate",
+      "arrival_ns_report_precision": 1.91,
+      "slack_ns_report_precision": 1.03,
+      "full_adder_CO_points_on_path": 0,
+      "source_line": 1652
+    },
+    {
+      "startpoint": "u_srm_residue/clk_gate_dec_ones_reg/latch",
+      "endpoint": "u_srm_residue/clk_gate_dec_ones_reg/main_gate",
+      "arrival_ns_report_precision": 1.82,
+      "slack_ns_report_precision": 1.12,
+      "full_adder_CO_points_on_path": 0,
+      "source_line": 1691
+    },
+    {
+      "startpoint": "u_srm_residue/clk_gate_dec_total_reg/latch",
+      "endpoint": "u_srm_residue/clk_gate_dec_total_reg/main_gate",
+      "arrival_ns_report_precision": 1.82,
+      "slack_ns_report_precision": 1.12,
+      "full_adder_CO_points_on_path": 0,
+      "source_line": 1729
+    },
+    {
+      "startpoint": "u_srm_residue/clk_gate_dec_total_reg/latch",
+      "endpoint": "u_srm_residue/clk_gate_dec_total_reg/main_gate",
+      "arrival_ns_report_precision": 1.76,
+      "slack_ns_report_precision": 1.18,
+      "full_adder_CO_points_on_path": 0,
+      "source_line": 1767
+    },
+    {
+      "startpoint": "u_srm_residue/dec_ones_reg[1]",
+      "endpoint": "u_srm_residue/dec_ones_reg[4]",
+      "arrival_ns_report_precision": 1.57,
+      "slack_ns_report_precision": 1.2,
+      "full_adder_CO_points_on_path": 0,
+      "source_line": 1805
+    },
+    {
+      "startpoint": "u_srm_residue/dec_total_reg[0]",
+      "endpoint": "u_srm_residue/dec_total_reg[4]",
+      "arrival_ns_report_precision": 1.54,
+      "slack_ns_report_precision": 1.23,
+      "full_adder_CO_points_on_path": 0,
+      "source_line": 1844
+    },
+    {
+      "startpoint": "u_srm_residue/dec_total_reg[1]",
+      "endpoint": "u_srm_residue/dec_total_reg[4]",
+      "arrival_ns_report_precision": 1.5,
+      "slack_ns_report_precision": 1.28,
+      "full_adder_CO_points_on_path": 0,
+      "source_line": 1883
+    },
+    {
+      "startpoint": "srm_decision_valid",
+      "endpoint": "u_srm_residue/dec_ones_reg[4]",
+      "arrival_ns_report_precision": 1.49,
+      "slack_ns_report_precision": 1.28,
+      "full_adder_CO_points_on_path": 0,
+      "source_line": 1922
+    },
+    {
+      "startpoint": "srm_decision_valid",
+      "endpoint": "u_srm_residue/dec_ones_reg[3]",
+      "arrival_ns_report_precision": 1.49,
+      "slack_ns_report_precision": 1.28,
+      "full_adder_CO_points_on_path": 0,
+      "source_line": 1961
+    },
+    {
+      "startpoint": "srm_decision_valid",
+      "endpoint": "u_srm_residue/dec_total_reg[3]",
+      "arrival_ns_report_precision": 1.49,
+      "slack_ns_report_precision": 1.28,
+      "full_adder_CO_points_on_path": 0,
+      "source_line": 2000
+    },
+    {
+      "startpoint": "srm_decision_valid",
+      "endpoint": "u_srm_residue/dec_ones_reg[2]",
+      "arrival_ns_report_precision": 1.47,
+      "slack_ns_report_precision": 1.31,
+      "full_adder_CO_points_on_path": 0,
+      "source_line": 2039
+    },
+    {
+      "startpoint": "srm_decision_valid",
+      "endpoint": "u_srm_residue/dec_total_reg[2]",
+      "arrival_ns_report_precision": 1.47,
+      "slack_ns_report_precision": 1.31,
+      "full_adder_CO_points_on_path": 0,
+      "source_line": 2078
+    },
+    {
+      "startpoint": "srm_decision_valid",
+      "endpoint": "u_srm_residue/dec_total_reg[0]",
+      "arrival_ns_report_precision": 1.47,
+      "slack_ns_report_precision": 1.31,
+      "full_adder_CO_points_on_path": 0,
+      "source_line": 2117
+    },
+    {
+      "startpoint": "srm_decision_valid",
+      "endpoint": "u_srm_residue/dec_ones_reg[0]",
+      "arrival_ns_report_precision": 1.47,
+      "slack_ns_report_precision": 1.31,
+      "full_adder_CO_points_on_path": 0,
+      "source_line": 2156
+    },
+    {
+      "startpoint": "srm_decision_valid",
+      "endpoint": "u_srm_residue/dec_total_reg[3]",
+      "arrival_ns_report_precision": 1.53,
+      "slack_ns_report_precision": 1.34,
+      "full_adder_CO_points_on_path": 0,
+      "source_line": 2195
+    },
+    {
+      "startpoint": "srm_decision_valid",
+      "endpoint": "u_srm_residue/dec_ones_reg[3]",
+      "arrival_ns_report_precision": 1.53,
+      "slack_ns_report_precision": 1.34,
+      "full_adder_CO_points_on_path": 0,
+      "source_line": 2234
+    }
+  ],
+  "module_definition_lines": {
+    "SNPS_CLOCK_GATE_HIGH_srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH10_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64_1": 7,
+    "SNPS_CLOCK_GATE_HIGH_srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH10_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64_2": 19,
+    "SNPS_CLOCK_GATE_HIGH_srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH10_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64_3": 31,
+    "SNPS_CLOCK_GATE_HIGH_srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH10_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64_4": 43,
+    "SNPS_CLOCK_GATE_HIGH_srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH10_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64_0": 56,
+    "srm_residue_lut_22_128_8_8_10_1": 69,
+    "srm_residue_estimator_DECISION_COUNT22_RESIDUE_WIDTH10_RES_FRAC8_SIGMA_Q8128_STALL_CYCLES64": 151,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_1_2": 529,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_1": 542,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_2": 555,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_3": 568,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_4": 580,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_5": 592,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_6": 605,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_7": 618,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_8": 631,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_9": 644,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_10": 656,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_11": 668,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_12": 680,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_13": 692,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_14": 705,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_15": 718,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_16": 731,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_17": 744,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_18": 757,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_19": 770,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_20": 783,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_21": 796,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_22": 810,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_23": 823,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_24": 837,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_25": 850,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_26": 864,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_27": 877,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_28": 891,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_29": 905,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_30": 918,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_31": 931,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_32": 945,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_33": 958,
+    "SNPS_CLOCK_GATE_HIGH_sar_calib_ctrl_serial_20_30_16_32_5_256_1_1_0": 972,
+    "sar_calib_ctrl_serial_20_30_16_32_5_256_1_1": 985,
+    "sar_digi_paper_core": 6119
+  },
+  "limits": [
+    "LEF area is geometry, not timing/power/capacitance",
+    "BUF/INV clock/reset tracing gives logical pin counts and geometry, not capacitance/skew or recovery/removal signoff",
+    "primitive mux/add counts are not exact RTL operator counts; comparator/decode logic is decomposed",
+    "unobserved weight_export table removal is RTL synthesis expectation; WEIGHT_EXPORT_REG=1 not re-synthesized here"
+  ]
+}

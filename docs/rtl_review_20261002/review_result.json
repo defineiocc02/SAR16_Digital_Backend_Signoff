@@ -1,0 +1,88 @@
+{
+  "status": "CHARACTERIZATION_PASS_KNOWN_LIMITATIONS_REPRODUCED",
+  "scope": "two-state zero-delay immutable leaf RTL, clk=10 ns dec_clk=3 ns; calibration first writable target only, ideal reference weights 1..32 LSB",
+  "simulator": "rev vUNKNOWN-built20260516-4e853d8",
+  "calibration_cases": [
+    {
+      "case": 0,
+      "target_lsb": 33.0,
+      "offset_lsb": 0.0,
+      "loops": 32,
+      "round_half": true,
+      "measured_q8": 8448
+    },
+    {
+      "case": 1,
+      "target_lsb": 33.05,
+      "offset_lsb": 0.0,
+      "loops": 32,
+      "round_half": true,
+      "measured_q8": 8576
+    },
+    {
+      "case": 2,
+      "target_lsb": 33.53,
+      "offset_lsb": 0.0,
+      "loops": 32,
+      "round_half": true,
+      "measured_q8": 8576
+    },
+    {
+      "case": 3,
+      "target_lsb": 33.99,
+      "offset_lsb": 0.0,
+      "loops": 32,
+      "round_half": true,
+      "measured_q8": 8576
+    },
+    {
+      "case": 4,
+      "target_lsb": 33.53,
+      "offset_lsb": 0.0,
+      "loops": 1,
+      "round_half": true,
+      "measured_q8": 8576
+    },
+    {
+      "case": 5,
+      "target_lsb": 33.53,
+      "offset_lsb": 0.5,
+      "loops": 32,
+      "round_half": true,
+      "measured_q8": 8704
+    },
+    {
+      "case": 6,
+      "target_lsb": 33.53,
+      "offset_lsb": 0.0,
+      "loops": 32,
+      "round_half": false,
+      "measured_q8": 8448
+    }
+  ],
+  "srm_boundary_records": [
+    "kind=start_consume requests=2 publications=1 busy=0 valid=0",
+    "kind=held_start total=21 shortfall=1 stalled=1",
+    "kind=late_old_done new_requested_ones=0 published_ones=22 total=22 shortfall=0 new_start_to_done_ns=40.000"
+  ],
+  "lut_format_records": [
+    "kind=coarse_asymmetry k1_q4=-13 k21_q4=12 pair_sum_q4=-1",
+    "kind=q9_scale published_q9=-258 expected_rescaled_q9=-516"
+  ],
+  "excludes": [
+    "full calibrated CDAC",
+    "analog noise/settling",
+    "metastability",
+    "four-state X",
+    "gate-level SDF",
+    "physical signoff",
+    "RTL repair"
+  ],
+  "sources_sha256": {
+    "evidence/rtl_baseline/srm_residue_estimator.sv": "0415e909529ffa85e1a7ddd7fc6a57137afc7397e8d314399ba5a3cf503898a9",
+    "evidence/rtl_baseline/srm_residue_lut.sv": "d3335201c8de1692e31cab9f28b8a9862ffbace3710529599ac8f241ed98bbdf",
+    "evidence/rtl_baseline/sar_calib_ctrl_serial.sv": "8e7fe237eb2f3fe66b2d1017d00dbfb1bdd22a42ce640222bd2dbfbbdae3fa4c",
+    "tests/tb_rtl_review.sv": "bd1ab766563294c6f5fda1d524a10739257de1e3296b0cf69c21591803eec72e",
+    "tools/run_rtl_review.py": "e4204ba0a1b01e8926e178b981c78c020296ca1b4da4a8fa7ab953e6af5a9743"
+  }
+}

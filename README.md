@@ -4,7 +4,7 @@
 
 **当前状态：可以审计和运行独立 RTL 冒烟测试，物理签核尚未闭合。** LVS、hold、DRC、最终 PG 连通性证据和 CDC/RDC 仍需整改；仓库名中的 Signoff 表示工作范围，不表示已经具备流片条件。
 
-2026-09-30 的静态接手结论见 [静态审计报告](docs/static_audit_20260930.md)；2026-10-01 新增 [RTL PPA 与 JSSC 2025 对标分析](docs/ppa_paper_comparison_20261001.md)，包含网表面积对账、SRM 持续请求实验和优化候选。集成与整改要求见 [当前接口契约](docs/interface_contract.md)、[恢复流程与发展路线](docs/backend_recovery_plan.md)。原始 `evidence/` 保持不变，历史报告用于追溯。
+2026-09-30 的静态接手结论见 [静态审计报告](docs/static_audit_20260930.md)；2026-10-01 的 [RTL PPA 与 JSSC 2025 对标分析](docs/ppa_paper_comparison_20261001.md) 包含面积对账和 SRM 持续请求实验。2026-10-02 再次完整复核四份 RTL 和论文原理，新增 [原理、功能与综合电路详解](docs/rtl_principle_review_20261002.md)：确认了默认 SRM 超时后旧完成事件错配、校准量化偏差以及非默认 LUT 格式问题。集成与整改要求见 [当前接口契约](docs/interface_contract.md)、[恢复流程与发展路线](docs/backend_recovery_plan.md)。原始 `evidence/` 保持不变，历史报告用于追溯。
 
 ## 设计边界
 
@@ -30,6 +30,7 @@ cd SAR16_Digital_Backend_Signoff
 make check
 make smoke
 make ppa
+make review
 ```
 
 指定已有 Verilator 时：
@@ -44,7 +45,8 @@ make ppa VERILATOR=/path/to/verilator
 | `make check` | 161 份历史证据 SHA-256、Python/Bash 语法（文件数随新增工具更新）、LUT 半表 12 项和全表 23 项、历史 STA/DRC/LVS 摘要一致性；SDC 11 个正常/故障场景 | `build/repository_check.json` |
 | `make smoke` | 全部 LUT 地址、raw 输出、SRM 正常/重启/超时/复位，校准两轮各 14 次权重发布；当前 166 项检查 | `build/smoke/{build.log,run.log,result.json}` |
 | `make ppa` | 原始网表/LEF 的 3626 个叶单元及面积对账；SRM 12 相位 × 100 样本、200 ns 请求间隔和过早驱动反例；论文条件计算 | `build/ppa/` |
-| GitHub Actions | 同样的公开检查、独立 RTL 冒烟测试和 PPA 复现 | PR / Actions 检查结果 |
+| `make review` | 7 个首目标校准、3 个 SRM 协议边界、2 个 LUT 格式实验；实际 LUT 精确 Binomial 统计；层级/门控/clock/reset 库存 | `build/rtl_review/` |
+| GitHub Actions | 同样的公开检查、RTL 冒烟、PPA 复现和已知局限表征 | PR / Actions 检查结果 |
 
 **检查通过只表示这些检查通过。** Verilator 测试使用两状态、零延迟 RTL；SDC 用 Tcl mock 检查错误传播，尚未在 FC 验证。它们不证明亚稳态安全、四状态 X 行为、门级 SDF 时序、模拟校准精度或物理签核通过。Lint 警告保留在日志中，未静默屏蔽。
 
@@ -54,7 +56,7 @@ make ppa VERILATOR=/path/to/verilator
 python3 tools/gen_srm_lut.py --n 22 --sigma-q8 128 --frac-out 8 --clamp -258
 ```
 
-此脚本是根据交付表还原的生成器，默认输出与历史半表完全一致。原 RTL 注释里的 `gen/gen_srm_lut.py --sigma-uv ...` 不是本仓库可执行命令。端点 clamp 是还原假设，不能作为模拟噪声模型已经验证的证据。
+此脚本是根据交付表还原的生成器，默认输出与历史半表完全一致。原 RTL 注释里的 `gen/gen_srm_lut.py --sigma-uv ...` 不是本仓库可执行命令。默认 −258 由有限概率修正后自然舍入得到，当前 clamp 不额外改变它；端点数值不能作为模拟噪声/冗余范围已经验证的证据。
 
 ## PPA 与 JSSC 2025 对标结论
 
@@ -67,6 +69,8 @@ python3 tools/gen_srm_lut.py --n 22 --sigma-q8 128 --frac-out 8 --clamp -258
 | 孤立 SRM 支持 200 ns 请求间隔 | 1200 个正常样本全部通过；接受 start 到 done 为 120 ns，最后比较到 done 为 40.5–43.25 ns。两状态、零延迟结果不证明完整 ADC 5 MS/s、CDC 或 SDF 时序 |
 | start 与决策域 ready 的边界 | phase=0、启动后立即驱动时只收集 20/22 次比较，随后 shortfall/stalled；需明确 prearm/ready 和 raw/residue 样本配对 |
 | 校准算法尚未闭合 | 论文校准启用 SS 和 SRM；当前校准控制器没有 SRM 残差输入，不能把默认 P/N averaging 当作论文的 SRM-assisted 校准 |
+| 异常恢复存在确定性错配 | 超时未取消决策域测量；晚到旧 done 能把旧 22/22 全 1 计数发布给新全 0 请求，且不置错误标记。`make review` 已复现；修复前超时需受控复位/重同步 |
+| 数值保证需收紧 | 半 LSB 是限定模型下的中心估计；无噪声重复平均不消除固定量化偏差。LUT 应冻结 Q8，非默认 Q9/降精度右移存在尺度/偏置问题 |
 | 功耗需要真实工作模式 | 2.546 mW 是未活动标注的 DC 值；论文 Logic + SRM counter 预算约 1.922 mW。边界和活动不同，二者差值不能作为实测性能差距 |
 
 本次增加文档、解析工具和实验入口，**原 RTL 未改**，上述面积百分比均为候选结构的毛收益；没有新增综合、布线或活动标注功耗结果。论文整机 0.57 mm² / 5.31 mW / 93.7 dB SNDR 与当前部分数字块的 cell/die area、默认活动功耗不能直接排名。
@@ -108,6 +112,7 @@ GDS 的顶层布线普查复核为 37,836 个金属图形、30,730 个过孔实�
 | `tests/`、`Makefile`、`.github/workflows/` | 当前公开检查和独立测试入口 |
 | `docs/static_audit_20260930.md`、`docs/backend_recovery_plan.md` | 当前问题台账、恢复门槛和发展方向 |
 | `docs/ppa_paper_comparison_20261001.md`、`docs/ppa_20261001/` | JSSC 对标、候选收益与冻结的独立 SRM/面积解析结果 |
+| `docs/rtl_principle_review_20261002.md`、`docs/rtl_review_20261002/` | 四模块深度复核、原理修正、风险复现和综合资源详账 |
 | `docs/baseline_manifest.json` | 161 份原始交付/报告的 SHA-256 锁定清单 |
 | `report/`、`docs/_过程记录/` | 历史报告和过程，包括已撤回的判断 |
 | `tools/`、`probes/` | 分析工具与历史一次性脚本，不是统一生产后端流程 |

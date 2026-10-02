@@ -1,0 +1,18 @@
+SIMULATOR version=rev vUNKNOWN-built20260516-4e853d8
+LUT_FORMAT_REPRO kind=coarse_asymmetry k1_q4=-13 k21_q4=12 pair_sum_q4=-1
+LUT_FORMAT_REPRO kind=q9_scale published_q9=-258 expected_rescaled_q9=-516
+SRM_BOUNDARY_REPRO kind=start_consume requests=2 publications=1 busy=0 valid=0
+SRM_BOUNDARY_REPRO kind=held_start total=21 shortfall=1 stalled=1
+SRM_BOUNDARY_REPRO kind=late_old_done new_requested_ones=0 published_ones=22 total=22 shortfall=0 new_start_to_done_ns=40.000
+CAL_QUANT_REPRO case=4 target_lsb=33.53000 offset_lsb=0.00000 loops=1 round_half=1 measured_q8=8576
+CAL_QUANT_REPRO case=0 target_lsb=33.00000 offset_lsb=0.00000 loops=32 round_half=1 measured_q8=8448
+CAL_QUANT_REPRO case=1 target_lsb=33.05000 offset_lsb=0.00000 loops=32 round_half=1 measured_q8=8576
+CAL_QUANT_REPRO case=2 target_lsb=33.53000 offset_lsb=0.00000 loops=32 round_half=1 measured_q8=8576
+CAL_QUANT_REPRO case=3 target_lsb=33.99000 offset_lsb=0.00000 loops=32 round_half=1 measured_q8=8576
+CAL_QUANT_REPRO case=5 target_lsb=33.53000 offset_lsb=0.50000 loops=32 round_half=1 measured_q8=8704
+CAL_QUANT_REPRO case=6 target_lsb=33.53000 offset_lsb=0.00000 loops=32 round_half=0 measured_q8=8448
+RTL_REVIEW_CHARACTERIZATION_PASS calibration_cases=7 srm_boundary_cases=3 lut_format_cases=2
+- tb_rtl_review.sv:189: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.49
+- Verilator: $finish at 80us; walltime 0.084 s; speed 963.198 us/s
+- Verilator: cpu 0.083 s on 1 threads; allocated 2 MB

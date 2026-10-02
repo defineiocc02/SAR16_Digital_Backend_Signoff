@@ -2,6 +2,8 @@
 
 **判断：孤立 SRM 具备处理 5 MS/s 请求的数字基础，面积和运行功耗有可解释的优化空间；当前不能声称达到或超过论文整机性能。** 最主要的差距是 SRM 与校准尚未形成论文中的闭环、功耗缺少工作模式活动标注，以及物理签核缺口。提高 RTL 时钟频率不能代替 ADC 的精度、采样速度或能效证明。
 
+**2026-10-02 补充复核：**[原理与 RTL 电路详解](rtl_principle_review_20261002.md) 新增默认 SRM 超时后旧完成事件错误归属、半 LSB 校准量化偏差和非默认 LUT 格式的独立复现。本文 1200 个正常样本结论仍限于正常流程，不能推广到任意异常恢复；11.12%/14.86% 是毛寄存器预算。默认 LUT −258 由有限概率修正自然舍入得到，当前 clamp 未额外改变端点。PNR LUT 为 848.232 µm²，本文 831.6 µm²为 DC 值。原日期的冻结结果保留，新增证据为 `make review`。
+
 日期：2026-10-01。对标文献为 Huang et al., *A 5-MS/s 16-bit Low-Noise and Low-Power Split Sampling SAR ADC With Eased Driving Burden*，IEEE JSSC 60(3), 813–825 (2025)，[DOI](https://doi.org/10.1109/JSSC.2025.3526595)。已核对本地 13 页原文，尤其 Fig. 6、Fig. 15、Table I、III-C/III-E 和测量结果。公开指标也由[作者所在学校的论文记录](https://researchportal.hkust.edu.hk/en/publications/a-5-mss-16-bit-low-noise-and-low-power-split-sampling-sar-adc-wit/)核验。
 
 RTL/后端基线是仓库 v5.1 原始 evidence；本轮分析起点为审计分支提交 `6cd7ff5e0b4a420fb9b25e10a84524eb326f9fce`。本轮没有修改 RTL，没有新商业综合、布局布线或功耗分析。新增的是网表/LEF 联合面积解析、独立 SRM 协议延迟实验和条件计算。

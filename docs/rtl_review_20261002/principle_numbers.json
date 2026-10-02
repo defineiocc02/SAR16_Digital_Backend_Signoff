@@ -1,0 +1,384 @@
+{
+  "scope": "analytical characterization of fixed v5.1 RTL; no commercial EDA",
+  "input_sha256": {
+    "evidence/rtl_baseline/srm_residue_lut.sv": "d3335201c8de1692e31cab9f28b8a9862ffbace3710529599ac8f241ed98bbdf",
+    "evidence/rtl_baseline/sar_calib_ctrl_serial.sv": "8e7fe237eb2f3fe66b2d1017d00dbfb1bdd22a42ce640222bd2dbfbbdae3fa4c"
+  },
+  "lut": {
+    "scope": "exact finite sum for iid Gaussian-threshold decisions; no Monte Carlo",
+    "actual_rom_values_q8": [
+      -258,
+      -194,
+      -158,
+      -131,
+      -110,
+      -91,
+      -74,
+      -58,
+      -43,
+      -28,
+      -14,
+      0,
+      14,
+      28,
+      43,
+      58,
+      74,
+      91,
+      110,
+      131,
+      158,
+      194,
+      258
+    ],
+    "decision_count": 22,
+    "sigma_actual_lsb": 0.5,
+    "sigma_lut_lsb": 0.5,
+    "iid_binomial_cases": [
+      {
+        "truth_lsb": -1.0,
+        "probability_of_one": 0.02275013194817921,
+        "mean_lsb": -0.8945302874288156,
+        "bias_lsb": 0.10546971257118443,
+        "std_lsb": 0.14607876777980444,
+        "rmse_lsb": 0.1801745449998814,
+        "endpoint_probability": 0.6027311683852585
+      },
+      {
+        "truth_lsb": -0.5,
+        "probability_of_one": 0.15865525393145707,
+        "mean_lsb": -0.4944231930519314,
+        "bias_lsb": 0.005576806948068613,
+        "std_lsb": 0.1617140536058474,
+        "rmse_lsb": 0.16181018481347492,
+        "endpoint_probability": 0.022357730400323062
+      },
+      {
+        "truth_lsb": 0.0,
+        "probability_of_one": 0.5,
+        "mean_lsb": 0.0,
+        "bias_lsb": 0.0,
+        "std_lsb": 0.13296663352570512,
+        "rmse_lsb": 0.13296663352570512,
+        "endpoint_probability": 4.76837158203125e-07
+      },
+      {
+        "truth_lsb": 0.5,
+        "probability_of_one": 0.8413447460685429,
+        "mean_lsb": 0.49442319305193144,
+        "bias_lsb": -0.005576806948068558,
+        "std_lsb": 0.1617140536058474,
+        "rmse_lsb": 0.16181018481347492,
+        "endpoint_probability": 0.022357730400323062
+      },
+      {
+        "truth_lsb": 1.0,
+        "probability_of_one": 0.9772498680518208,
+        "mean_lsb": 0.8945302874288156,
+        "bias_lsb": -0.10546971257118443,
+        "std_lsb": 0.14607876777980444,
+        "rmse_lsb": 0.1801745449998814,
+        "endpoint_probability": 0.6027311683852585
+      }
+    ],
+    "endpoint": {
+      "probability_with_pseudocount": 0.021739130434782608,
+      "unrounded_endpoint_lsb": -1.0095431002915711,
+      "rounded_endpoint_q8": -258,
+      "reconstructed_generator_bound_q8": -258,
+      "after_bound_q8": -258,
+      "bound_changes_default_value": false,
+      "actual_rom_endpoint_q8": -258
+    },
+    "frac_out_4": {
+      "method": "signed arithmetic right shift by 4, then restore Q8 by left shift",
+      "all_nonzero_pairs": [
+        {
+          "count_negative": 0,
+          "count_positive": 22,
+          "negative_q4": -17,
+          "positive_q4": 16,
+          "pair_sum_q4": -1,
+          "negative_published_q8": -272,
+          "positive_published_q8": 256
+        },
+        {
+          "count_negative": 1,
+          "count_positive": 21,
+          "negative_q4": -13,
+          "positive_q4": 12,
+          "pair_sum_q4": -1,
+          "negative_published_q8": -208,
+          "positive_published_q8": 192
+        },
+        {
+          "count_negative": 2,
+          "count_positive": 20,
+          "negative_q4": -10,
+          "positive_q4": 9,
+          "pair_sum_q4": -1,
+          "negative_published_q8": -160,
+          "positive_published_q8": 144
+        },
+        {
+          "count_negative": 3,
+          "count_positive": 19,
+          "negative_q4": -9,
+          "positive_q4": 8,
+          "pair_sum_q4": -1,
+          "negative_published_q8": -144,
+          "positive_published_q8": 128
+        },
+        {
+          "count_negative": 4,
+          "count_positive": 18,
+          "negative_q4": -7,
+          "positive_q4": 6,
+          "pair_sum_q4": -1,
+          "negative_published_q8": -112,
+          "positive_published_q8": 96
+        },
+        {
+          "count_negative": 5,
+          "count_positive": 17,
+          "negative_q4": -6,
+          "positive_q4": 5,
+          "pair_sum_q4": -1,
+          "negative_published_q8": -96,
+          "positive_published_q8": 80
+        },
+        {
+          "count_negative": 6,
+          "count_positive": 16,
+          "negative_q4": -5,
+          "positive_q4": 4,
+          "pair_sum_q4": -1,
+          "negative_published_q8": -80,
+          "positive_published_q8": 64
+        },
+        {
+          "count_negative": 7,
+          "count_positive": 15,
+          "negative_q4": -4,
+          "positive_q4": 3,
+          "pair_sum_q4": -1,
+          "negative_published_q8": -64,
+          "positive_published_q8": 48
+        },
+        {
+          "count_negative": 8,
+          "count_positive": 14,
+          "negative_q4": -3,
+          "positive_q4": 2,
+          "pair_sum_q4": -1,
+          "negative_published_q8": -48,
+          "positive_published_q8": 32
+        },
+        {
+          "count_negative": 9,
+          "count_positive": 13,
+          "negative_q4": -2,
+          "positive_q4": 1,
+          "pair_sum_q4": -1,
+          "negative_published_q8": -32,
+          "positive_published_q8": 16
+        },
+        {
+          "count_negative": 10,
+          "count_positive": 12,
+          "negative_q4": -1,
+          "positive_q4": 0,
+          "pair_sum_q4": -1,
+          "negative_published_q8": -16,
+          "positive_published_q8": 0
+        }
+      ],
+      "iid_zero_residue": {
+        "truth_lsb": 0.0,
+        "probability_of_one": 0.5,
+        "mean_lsb": -0.02599412202835083,
+        "bias_lsb": -0.02599412202835083,
+        "std_lsb": 0.12354403182674563,
+        "rmse_lsb": 0.12624904823416583,
+        "endpoint_probability": 4.76837158203125e-07
+      },
+      "zero_bias_paired_formula_lsb": -0.02599412202835083
+    },
+    "decision_correlation_examples": {
+      "formula": "N_eff=N/(1+(N-1)*rho)",
+      "examples": [
+        {
+          "decision_equicorrelation_rho": 0.0,
+          "mean_variance_inflation": 1.0,
+          "effective_independent_decisions": 22.0
+        },
+        {
+          "decision_equicorrelation_rho": 0.05,
+          "mean_variance_inflation": 2.05,
+          "effective_independent_decisions": 10.731707317073171
+        },
+        {
+          "decision_equicorrelation_rho": 0.2,
+          "mean_variance_inflation": 5.2,
+          "effective_independent_decisions": 4.230769230769231
+        },
+        {
+          "decision_equicorrelation_rho": 0.5,
+          "mean_variance_inflation": 11.5,
+          "effective_independent_decisions": 1.9130434782608696
+        },
+        {
+          "decision_equicorrelation_rho": 1.0,
+          "mean_variance_inflation": 22.0,
+          "effective_independent_decisions": 1.0
+        }
+      ],
+      "restriction": "rho describes Bernoulli decision correlation, not analog Gaussian voltage correlation"
+    },
+    "assumptions": [
+      "held residue throughout each decision group",
+      "decision 1 iff residue + noise > 0",
+      "zero comparator offset",
+      "iid Gaussian noise for binomial cases",
+      "correlation examples characterize probability-mean variance only"
+    ],
+    "excludes": [
+      "real ADC SNDR/ENOB",
+      "analog-noise validation",
+      "metastability and physical timing"
+    ]
+  },
+  "calibration": {
+    "defaults": {
+      "CAP_NUM": 20,
+      "COMP_WAIT_CYC": 16,
+      "AVG_LOOPS": 32,
+      "MAX_CALIB_BIT": 5
+    },
+    "formula": "T_k=1+L*(2*(1+(C+1)*n_k+(N+1))+1)+3",
+    "targets": [
+      {
+        "target_bit": 6,
+        "search_bits": 6,
+        "sar_cycles_each_phase": 102,
+        "calc_cycles_each_phase": 21,
+        "cycles_each_pn_loop": 249,
+        "state_action_cycles": 7972
+      },
+      {
+        "target_bit": 7,
+        "search_bits": 7,
+        "sar_cycles_each_phase": 119,
+        "calc_cycles_each_phase": 21,
+        "cycles_each_pn_loop": 283,
+        "state_action_cycles": 9060
+      },
+      {
+        "target_bit": 8,
+        "search_bits": 8,
+        "sar_cycles_each_phase": 136,
+        "calc_cycles_each_phase": 21,
+        "cycles_each_pn_loop": 317,
+        "state_action_cycles": 10148
+      },
+      {
+        "target_bit": 9,
+        "search_bits": 9,
+        "sar_cycles_each_phase": 153,
+        "calc_cycles_each_phase": 21,
+        "cycles_each_pn_loop": 351,
+        "state_action_cycles": 11236
+      },
+      {
+        "target_bit": 10,
+        "search_bits": 10,
+        "sar_cycles_each_phase": 170,
+        "calc_cycles_each_phase": 21,
+        "cycles_each_pn_loop": 385,
+        "state_action_cycles": 12324
+      },
+      {
+        "target_bit": 11,
+        "search_bits": 11,
+        "sar_cycles_each_phase": 187,
+        "calc_cycles_each_phase": 21,
+        "cycles_each_pn_loop": 419,
+        "state_action_cycles": 13412
+      },
+      {
+        "target_bit": 12,
+        "search_bits": 12,
+        "sar_cycles_each_phase": 204,
+        "calc_cycles_each_phase": 21,
+        "cycles_each_pn_loop": 453,
+        "state_action_cycles": 14500
+      },
+      {
+        "target_bit": 13,
+        "search_bits": 13,
+        "sar_cycles_each_phase": 221,
+        "calc_cycles_each_phase": 21,
+        "cycles_each_pn_loop": 487,
+        "state_action_cycles": 15588
+      },
+      {
+        "target_bit": 14,
+        "search_bits": 14,
+        "sar_cycles_each_phase": 238,
+        "calc_cycles_each_phase": 21,
+        "cycles_each_pn_loop": 521,
+        "state_action_cycles": 16676
+      },
+      {
+        "target_bit": 15,
+        "search_bits": 15,
+        "sar_cycles_each_phase": 255,
+        "calc_cycles_each_phase": 21,
+        "cycles_each_pn_loop": 555,
+        "state_action_cycles": 17764
+      },
+      {
+        "target_bit": 16,
+        "search_bits": 16,
+        "sar_cycles_each_phase": 272,
+        "calc_cycles_each_phase": 21,
+        "cycles_each_pn_loop": 589,
+        "state_action_cycles": 18852
+      },
+      {
+        "target_bit": 17,
+        "search_bits": 17,
+        "sar_cycles_each_phase": 289,
+        "calc_cycles_each_phase": 21,
+        "cycles_each_pn_loop": 623,
+        "state_action_cycles": 19940
+      },
+      {
+        "target_bit": 18,
+        "search_bits": 17,
+        "sar_cycles_each_phase": 289,
+        "calc_cycles_each_phase": 21,
+        "cycles_each_pn_loop": 623,
+        "state_action_cycles": 19940
+      },
+      {
+        "target_bit": 19,
+        "search_bits": 17,
+        "sar_cycles_each_phase": 289,
+        "calc_cycles_each_phase": 21,
+        "cycles_each_pn_loop": 623,
+        "state_action_cycles": 19940
+      }
+    ],
+    "sum_search_bits": 172,
+    "total_state_action_cycles": 207352,
+    "time_ms_at_100mhz": 2.07352,
+    "first_target_cycles_if_avg_loops_1": 253,
+    "counting_boundary": "INIT_TARGET through the final UPDATE_WEIGHT state actions; excludes start/observer convention",
+    "excludes": [
+      "analog settling adequacy",
+      "SRM-assisted calibration",
+      "calibration accuracy"
+    ]
+  }
+}

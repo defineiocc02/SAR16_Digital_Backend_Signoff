@@ -1,0 +1,180 @@
+SYNTHESIS_INVENTORY_PASS cells=3626 area_um2=102300.1056
+{
+  "families": {
+    "adder_primitive": {
+      "count": 18,
+      "area_um2": 1274.0112
+    },
+    "buffer": {
+      "count": 195,
+      "area_um2": 2967.1488
+    },
+    "dff": {
+      "count": 1011,
+      "area_um2": 64019.8944
+    },
+    "inverter": {
+      "count": 326,
+      "area_um2": 2913.9264
+    },
+    "latch": {
+      "count": 40,
+      "area_um2": 1463.616
+    },
+    "mux_primitive": {
+      "count": 8,
+      "area_um2": 189.6048
+    },
+    "other_combinational": {
+      "count": 2028,
+      "area_um2": 29471.904
+    }
+  },
+  "hierarchy": {
+    "(top direct)": {
+      "total": {
+        "count": 173,
+        "area_um2": 3306.4416
+      },
+      "families": {
+        "adder_primitive": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "buffer": {
+          "count": 125,
+          "area_um2": 1743.0336
+        },
+        "dff": {
+          "count": 21,
+          "area_um2": 1327.2336
+        },
+        "inverter": {
+          "count": 27,
+          "area_um2": 236.1744
+        },
+        "latch": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "mux_primitive": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "other_combinational": {
+          "count": 0,
+          "area_um2": 0
+        }
+      }
+    },
+    "u_calib_ctrl": {
+      "total": {
+        "count": 3170,
+        "area_um2": 90777.456000004
+      },
+      "families": {
+        "adder_primitive": {
+          "count": 18,
+          "area_um2": 1274.0112
+        },
+        "buffer": {
+          "count": 67,
+          "area_um2": 1174.2192
+        },
+        "dff": {
+          "count": 904,
+          "area_um2": 57257.3232
+        },
+        "inverter": {
+          "count": 276,
+          "area_um2": 2504.7792
+        },
+        "latch": {
+          "count": 35,
+          "area_um2": 1280.664
+        },
+        "mux_primitive": {
+          "count": 1,
+          "area_um2": 26.6112
+        },
+        "other_combinational": {
+          "count": 1869,
+          "area_um2": 27259.848
+        }
+      }
+    },
+    "u_srm_residue": {
+      "total": {
+        "count": 283,
+        "area_um2": 8216.208
+      },
+      "families": {
+        "adder_primitive": {
+          "count": 0,
+          "area_um2": 0
+        },
+        "buffer": {
+          "count": 3,
+          "area_um2": 49.896
+        },
+        "dff": {
+          "count": 86,
+          "area_um2": 5435.3376
+        },
+        "inverter": {
+          "count": 23,
+          "area_um2": 172.9728
+        },
+        "latch": {
+          "count": 5,
+          "area_um2": 182.952
+        },
+        "mux_primitive": {
+          "count": 7,
+          "area_um2": 162.9936
+        },
+        "other_combinational": {
+          "count": 159,
+          "area_um2": 2212.056
+        }
+      }
+    }
+  },
+  "clock_gate_count": 40,
+  "lut": {
+    "total": {
+      "count": 64,
+      "area_um2": 848.232
+    },
+    "families": {
+      "adder_primitive": {
+        "count": 0,
+        "area_um2": 0
+      },
+      "buffer": {
+        "count": 0,
+        "area_um2": 0
+      },
+      "dff": {
+        "count": 0,
+        "area_um2": 0
+      },
+      "inverter": {
+        "count": 10,
+        "area_um2": 66.528
+      },
+      "latch": {
+        "count": 0,
+        "area_um2": 0
+      },
+      "mux_primitive": {
+        "count": 4,
+        "area_um2": 93.1392
+      },
+      "other_combinational": {
+        "count": 50,
+        "area_um2": 688.5648
+      }
+    }
+  }
+}
