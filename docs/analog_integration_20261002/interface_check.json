@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "groups": 31,
+  "signal_bits": 176,
+  "extracted_formals": 178,
+  "leaf_lef_macros": 109,
+  "top_macro_lef_present": false,
+  "source_cdl_power": "global VDD/VSS unchanged",
+  "scope": "Names, widths, signed groups, bit bijection and positional adapter only",
+  "electrical_physical_and_protocol_signoff": "not established",
+  "analog_weight_rows": 20,
+  "analog_boundary_rows": 29,
+  "oa_driver_connections": 20,
+  "raw_polarity": "pending"
+}

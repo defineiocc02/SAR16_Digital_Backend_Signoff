@@ -1,0 +1,156 @@
+{
+  "date": "2026-10-02",
+  "source_distribution": "Original remote OA, netlists, PDK paths and paper PDF are not redistributed. Design-level port inventories and findings only.",
+  "text_sources": [
+    {
+      "label": "august_spectre.out",
+      "sha256": "b53e4644fa22ec7efd544f0f96b788c81555342ab6342e76cc9e30663e61f024",
+      "bytes": 13658
+    },
+    {
+      "label": "fia_active.state",
+      "sha256": "bfcfcc7122e5a21f670bcfa701ba37c72c2fcb5016c28de00017bbf1fdd9016f",
+      "bytes": 40963
+    },
+    {
+      "label": "latest_input.scs",
+      "sha256": "3e558ab7473c083fd732a05c5a93f9f0663eb9d8ca9700f2bca06046b0dc0b0e",
+      "bytes": 98639
+    },
+    {
+      "label": "latest_spectre.out",
+      "sha256": "be887e747b31a3a0ee696f81832964208e0beb7c842c930241df80d2f79fc9a3",
+      "bytes": 15417
+    },
+    {
+      "label": "noise_analyses.state",
+      "sha256": "d92724f0104af1f40f2bdea8536836d7ceae0dbf4e6ee2afa5e7a2da3e2fbf92",
+      "bytes": 47336
+    },
+    {
+      "label": "noise_maestro.log",
+      "sha256": "23eed3b5890c11b68db1737f56ad69b5fe9f120017500e6a6d3bb6c20159cc45",
+      "bytes": 336
+    },
+    {
+      "label": "noise_outputs.state",
+      "sha256": "830d207b949f927972a2bc08a685b0281e379fc045370bb74457397788916d05",
+      "bytes": 17528
+    },
+    {
+      "label": "noise_variables.state",
+      "sha256": "b378be921504f187416b09670718e53738a24ed4ffb7ed07a6cd231219f803d3",
+      "bytes": 1390
+    },
+    {
+      "label": "preamp_analyses.state",
+      "sha256": "86d8414c765176d653875dfac8d7f341106009a5cefd051db6a7d6ba13846510",
+      "bytes": 3657
+    },
+    {
+      "label": "preamp_outputs.state",
+      "sha256": "ac9d5fad01382d5e6a75ad7f6699897d0dd8a77f32581de33243d84aee3fc0c5",
+      "bytes": 9042
+    },
+    {
+      "label": "previous_spectre.out",
+      "sha256": "8b0122ecce65c2a08ae980b18bf12ac2ad638a5a638d38ab37b60e09a2aea438",
+      "bytes": 15391
+    },
+    {
+      "label": "top_ExplorerRun_0.log",
+      "sha256": "38c8ac432082130241f2c96c144df821d3ca84efb45cb60d6ff0cb0fa8d5f12a",
+      "bytes": 368
+    },
+    {
+      "label": "top_Interactive_6.log",
+      "sha256": "0b65ad6baff4a667528f5c4f5ece4cb525dbb91c0a144cc1faf62a97131ab12b",
+      "bytes": 532
+    },
+    {
+      "label": "top_Interactive_7.log",
+      "sha256": "1e8870d3e92a4b3754c8fa88b0b5ebca9f3d8115ca5786d1f262236a523f33c7",
+      "bytes": 368
+    },
+    {
+      "label": "top_Interactive_8.log",
+      "sha256": "cec2eae3ce2f9439958bb64366fbbc986dba73f445db971c4dc9d66f085a14c1",
+      "bytes": 368
+    },
+    {
+      "label": "top_Interactive_9.log",
+      "sha256": "69194b5e8739394c272f40e5658e7c797ac14e2277fec8d9332d22141eb82106",
+      "bytes": 368
+    },
+    {
+      "label": "top_active.state",
+      "sha256": "04445be284d051fa6e471958aa3f78c33573e72cd78a6f92ee06e6992ea24cd3",
+      "bytes": 117260
+    },
+    {
+      "label": "top_ams_analyses.state",
+      "sha256": "554726856cb06b6755b748f7d1a6a0e4a4cd3e5bf3ed8053b176c55938de3b71",
+      "bytes": 5931
+    },
+    {
+      "label": "top_ams_outputs.state",
+      "sha256": "a049e94f3dbf763fa3c7b9877fd1fcbd33163197ae1dfa6d445dd6d55da59de1",
+      "bytes": 26847
+    },
+    {
+      "label": "top_ams_variables.state",
+      "sha256": "93c72f798a0c4a9608553dd95e8305b9bfd5f3a5c05735ae1ec6d6cfe3127058",
+      "bytes": 1714
+    },
+    {
+      "label": "top_expand.cfg",
+      "sha256": "d1bf5e01eb754646d3d5aa53d89bc380f10db2689460b80acab45ef54c7e03cb",
+      "bytes": 3806
+    },
+    {
+      "label": "top_maestro.sdb",
+      "sha256": "01621ac37cb9d1a32ab0393855755a76b11bd9213ff55dc9ccdd49264ec16466",
+      "bytes": 60578
+    },
+    {
+      "label": "top_netlister10.log",
+      "sha256": "49b71c55116661685423f99bfee5671aae9d8e0c169fce6683ac84a7ac06d5e6",
+      "bytes": 3353
+    },
+    {
+      "label": "top_run10.log",
+      "sha256": "6e9954b37c264c7a7513c8dc6f9d53b74737b41fcc036946d1e68f57c42c68ba",
+      "bytes": 370
+    },
+    {
+      "label": "top_run12.log",
+      "sha256": "dd6e35bbc92faaf6a6b20fa69799bceddd1593b63f520f35a921f826e795dc90",
+      "bytes": 370
+    },
+    {
+      "label": "top_xrun10.log",
+      "sha256": "8026925dc6b5c6e6b46cc6184833f1881e9879163e008f64ee5eec7421129818",
+      "bytes": 6339
+    },
+    {
+      "label": "Digital_Process.sv",
+      "sha256": "9cb2727cdeaf3fb3b3f70e3f7b94bf958c88b8f763e2413408e1a29a96d0814a",
+      "bytes": 9298
+    },
+    {
+      "label": "sar_adc_controller.sv",
+      "sha256": "db9eca395ee92994d3ad7061b59f31519e4c8251014be7ca39a343c87322f97e",
+      "bytes": 3916
+    },
+    {
+      "label": "sar_reconstruction.sv",
+      "sha256": "2ca489dd14528b12765022b8e871fdfcd394d88247ff3a58f9e4b54f26375499",
+      "bytes": 7038
+    },
+    {
+      "label": "Flash.va",
+      "sha256": "08b0cb307a00d676cd4e57b6803d97517572b9e2ea531a865568a57bee3d6ea1",
+      "bytes": 1336
+    }
+  ]
+}

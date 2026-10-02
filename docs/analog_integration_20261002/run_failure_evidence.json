@@ -1,0 +1,35 @@
+{
+  "scope": "Historical run failures only; no new simulation. Full private logs not redistributed.",
+  "events": [
+    {
+      "source": "top_xrun10.log",
+      "line": 148,
+      "message": "Xcelium_MixedSignal_App 23.00 - license checkout failed"
+    },
+    {
+      "source": "top_xrun10.log",
+      "line": 149,
+      "message": "xmsim: *F,NOLICN: Unable to checkout license for the simulation. 'lic_error LMF-03005'."
+    },
+    {
+      "source": "latest_spectre.out",
+      "line": 66,
+      "message": "The instance `I90' is referencing an undefined model or subcircuit, `flash_decoder_adder'. Either include the file containing the definition of `flash_decoder_adder', or define `flash_decoder_adder' before running the simulation."
+    },
+    {
+      "source": "latest_spectre.out",
+      "line": 143,
+      "message": "spectre terminated prematurely due to fatal error."
+    },
+    {
+      "source": "previous_spectre.out",
+      "line": 66,
+      "message": "The instance `I90' is referencing an undefined model or subcircuit, `flash_decoder_adder'. Either include the file containing the definition of `flash_decoder_adder', or define `flash_decoder_adder' before running the simulation."
+    },
+    {
+      "source": "previous_spectre.out",
+      "line": 143,
+      "message": "spectre terminated prematurely due to fatal error."
+    }
+  ]
+}

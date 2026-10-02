@@ -1,0 +1,463 @@
+{
+  "date": "2026-10-02",
+  "method": "Static cross-check of parent-generated read-only OA snapshot; no EDA, waveform, or reliability simulation",
+  "oa_snapshot_sha256": "50461710048e1fe9cbf9bdcd96e92ea99406711a4f9fd4ec34874e539021ab69",
+  "source_cells": [
+    {
+      "library": "SAR_16B_5M_TB",
+      "cell": "TEST_TRAN_ALL_TRANSISTOR_wFLash_ver6",
+      "source_sha256": "ff9ee4606e1bcc42832f7cad215b459dba06b47f5aed5dddffff57cf5d4884be",
+      "source_unchanged": true
+    },
+    {
+      "library": "SAR_16B_5M_CORE",
+      "cell": "SAR_Logic_transistor_woflash",
+      "source_sha256": "708b17a452bc78fe5148d480189be1fa34af5bc90d87fbd734bff65fdb49b17d",
+      "source_unchanged": true
+    },
+    {
+      "library": "SAR_16B_5M_CORE",
+      "cell": "LOGIC_NOR_GATE_1",
+      "source_sha256": "fedbfa70ff1059c97c0dc5f7450972394b3034d2ae5010f259092f627701c64f",
+      "source_unchanged": true
+    },
+    {
+      "library": "SAR_16B_5M_CORE",
+      "cell": "COMP_AZ",
+      "source_sha256": "d0d2558d94cb2dedc1617ff780e905d5d1585308c0d6414590e74e7ee5b76f47",
+      "source_unchanged": true
+    },
+    {
+      "library": "SAR_16B_5M_CORE",
+      "cell": "COMP_LATCH",
+      "source_sha256": "5821ae7a748c271563617d8f3fa5b7db093ca9b525fc2ba6065fb2d3a0102067",
+      "source_unchanged": true
+    }
+  ],
+  "CLKn_unfed": {
+    "status": "Verified no active top-level driver in this schematic snapshot; terminal net exists with only comparator load",
+    "top_formal_pin_count": 0,
+    "all_active_top_CLKn_connections": [
+      {
+        "instance": "I8",
+        "cell": "COMP_AZ",
+        "term": "CLKn",
+        "net": "CLKn"
+      }
+    ],
+    "top_CLKn_net": {
+      "connections": [
+        "I8.CLKn"
+      ],
+      "numBits": 1,
+      "sigType": "signal",
+      "isGlobal": false
+    },
+    "comparator_to_latch_instance": {
+      "name": "I2",
+      "library": "SAR_16B_5M_CORE",
+      "cell": "COMP_LATCH",
+      "terms": {
+        "CLKn": "CLKn",
+        "AGND": "AGND",
+        "CLK": "CLK",
+        "VDD": "VDD",
+        "vo3n": "vo3n",
+        "vo3p": "vo3p",
+        "vo2n": "vo2n",
+        "vo2p": "vo2p"
+      },
+      "params": {},
+      "nlAction": null
+    },
+    "latch_clkn_net": {
+      "connections": [
+        "M20.G"
+      ],
+      "numBits": 1,
+      "sigType": "signal",
+      "isGlobal": false
+    },
+    "latch_M20": {
+      "name": "M20",
+      "library": "tsmc18",
+      "cell": "nmos2v",
+      "terms": {
+        "D": "net019",
+        "B": "AGND",
+        "G": "clkn",
+        "S": "net012"
+      },
+      "params": {
+        "model": "nch"
+      },
+      "nlAction": null
+    },
+    "historical_netlist_evidence": {
+      "file": "latest_input.scs",
+      "top_comp_instance_lines": [
+        1094,
+        1095
+      ],
+      "latch_M20_lines": [
+        130,
+        132
+      ],
+      "statement": "No top vsource or other active instance drives CLKn; save netlist has only I8 load."
+    },
+    "pending": "Define and validate complementary/reset clock timing; do not assume CLKn=logical not of CLK without circuit verification"
+  },
+  "CLK_domain_crossing": {
+    "status": "Verified topology from 3.3 V internal ideal supply to latch clock gates; actual waveform and reliability bounds unverified",
+    "internal_source": {
+      "name": "V0",
+      "library": "analogLib",
+      "cell": "vdc",
+      "terms": {
+        "PLUS": "net028",
+        "MINUS": "DGND"
+      },
+      "params": {
+        "vdc": "3.3",
+        "srcType": "dc"
+      },
+      "nlAction": null
+    },
+    "clock_generating_gate": {
+      "name": "I273",
+      "library": "SAR_16B_5M_CORE",
+      "cell": "LOGIC_NOR_GATE_1",
+      "terms": {
+        "DGND": "DGND",
+        "DVDD": "net028",
+        "VOUT": "CLK",
+        "VIN1": "net042",
+        "VIN2": "SET<20>"
+      },
+      "params": {},
+      "nlAction": null
+    },
+    "clock_gate_master_active_instances": [
+      {
+        "name": "M6",
+        "library": "tsmc18",
+        "cell": "pmos3v",
+        "terms": {
+          "D": "VOUT",
+          "B": "DVDD",
+          "G": "net030",
+          "S": "DVDD"
+        },
+        "params": {
+          "model": "pch3"
+        },
+        "nlAction": null
+      },
+      {
+        "name": "M4",
+        "library": "tsmc18",
+        "cell": "pmos3v",
+        "terms": {
+          "D": "net030",
+          "B": "DVDD",
+          "G": "net027",
+          "S": "DVDD"
+        },
+        "params": {
+          "model": "pch3"
+        },
+        "nlAction": null
+      },
+      {
+        "name": "M0",
+        "library": "tsmc18",
+        "cell": "pmos3v",
+        "terms": {
+          "D": "net17",
+          "B": "DVDD",
+          "G": "VIN1",
+          "S": "DVDD"
+        },
+        "params": {
+          "model": "pch3"
+        },
+        "nlAction": null
+      },
+      {
+        "name": "M1",
+        "library": "tsmc18",
+        "cell": "pmos3v",
+        "terms": {
+          "D": "net027",
+          "B": "DVDD",
+          "G": "VIN2",
+          "S": "net17"
+        },
+        "params": {
+          "model": "pch3"
+        },
+        "nlAction": null
+      },
+      {
+        "name": "M7",
+        "library": "tsmc18",
+        "cell": "nmos3v",
+        "terms": {
+          "D": "VOUT",
+          "B": "DGND",
+          "G": "net030",
+          "S": "DGND"
+        },
+        "params": {
+          "model": "nch3"
+        },
+        "nlAction": null
+      },
+      {
+        "name": "M5",
+        "library": "tsmc18",
+        "cell": "nmos3v",
+        "terms": {
+          "D": "net030",
+          "B": "DGND",
+          "G": "net027",
+          "S": "DGND"
+        },
+        "params": {
+          "model": "nch3"
+        },
+        "nlAction": null
+      },
+      {
+        "name": "M3",
+        "library": "tsmc18",
+        "cell": "nmos3v",
+        "terms": {
+          "D": "net027",
+          "B": "DGND",
+          "G": "VIN2",
+          "S": "DGND"
+        },
+        "params": {
+          "model": "nch3"
+        },
+        "nlAction": null
+      },
+      {
+        "name": "M2",
+        "library": "tsmc18",
+        "cell": "nmos3v",
+        "terms": {
+          "D": "net027",
+          "B": "DGND",
+          "G": "VIN1",
+          "S": "DGND"
+        },
+        "params": {
+          "model": "nch3"
+        },
+        "nlAction": null
+      }
+    ],
+    "top_sar_instance": {
+      "name": "I689<20:0>",
+      "library": "SAR_16B_5M_CORE",
+      "cell": "SAR_Logic_transistor_woflash",
+      "terms": {
+        "Dflash<1:0>": "<*21>Dflash<1:0>",
+        "DGND": "<*21>AGND",
+        "PRST": "<*21>CLK00",
+        "RST": "<*21>CLK0",
+        "DVDD": "<*21>DVDD",
+        "SET<0:20>": "<*21>SET<0:20>",
+        "BITP<20:0>": "<*21>BITP<20:0>",
+        "BITN<20:0>": "<*21>BITN<20:0>",
+        "CLK": "<*21>CLK",
+        "COMP": "<*21>COMP",
+        "COMN": "<*21>COMN",
+        "CCLK": "<*21>READYN"
+      },
+      "params": {},
+      "nlAction": null
+    },
+    "top_comparator_instance": {
+      "name": "I8",
+      "library": "SAR_16B_5M_CORE",
+      "cell": "COMP_AZ",
+      "terms": {
+        "READYN": "READYN",
+        "CLKDAC_top": "CLKDAC_top",
+        "VCM_Amp": "VCM_Amp",
+        "VCM_AZ": "VCM",
+        "AGND": "AGND",
+        "CLK": "CLK",
+        "P": "P",
+        "CLKAZ": "CLKAZ",
+        "CLKn": "CLKn",
+        "N": "N",
+        "VDD": "AVDD",
+        "vo3n": "COMN",
+        "vo3p": "COMP",
+        "VBC": "VBC",
+        "VB": "VB"
+      },
+      "params": {},
+      "nlAction": null
+    },
+    "comparator_supply_source": {
+      "name": "V45",
+      "library": "analogLib",
+      "cell": "vdc",
+      "terms": {
+        "PLUS": "AVDD",
+        "MINUS": "AGND"
+      },
+      "params": {
+        "vdc": "1.8",
+        "srcType": "dc"
+      },
+      "nlAction": null
+    },
+    "comparator_to_latch_instance": {
+      "name": "I2",
+      "library": "SAR_16B_5M_CORE",
+      "cell": "COMP_LATCH",
+      "terms": {
+        "CLKn": "CLKn",
+        "AGND": "AGND",
+        "CLK": "CLK",
+        "VDD": "VDD",
+        "vo3n": "vo3n",
+        "vo3p": "vo3p",
+        "vo2n": "vo2n",
+        "vo2p": "vo2p"
+      },
+      "params": {},
+      "nlAction": null
+    },
+    "latch_clk_net": {
+      "connections": [
+        "M22.G",
+        "M18.G",
+        "M23.G",
+        "M12.G",
+        "M15.G",
+        "M21.G"
+      ],
+      "numBits": 1,
+      "sigType": "signal",
+      "isGlobal": false
+    },
+    "active_latch_CLK_gate_loads": [
+      {
+        "name": "M12",
+        "library": "tsmc18",
+        "cell": "nmos2v",
+        "terms": {
+          "D": "net016",
+          "B": "AGND",
+          "G": "clk",
+          "S": "AGND"
+        },
+        "params": {
+          "model": "nch"
+        },
+        "nlAction": null
+      },
+      {
+        "name": "M22",
+        "library": "tsmc18",
+        "cell": "pmos2v",
+        "terms": {
+          "D": "net019",
+          "B": "VDD",
+          "G": "clk",
+          "S": "VDD"
+        },
+        "params": {
+          "model": "pch"
+        },
+        "nlAction": null
+      },
+      {
+        "name": "M21",
+        "library": "tsmc18",
+        "cell": "pmos2v",
+        "terms": {
+          "D": "net012",
+          "B": "VDD",
+          "G": "clk",
+          "S": "VDD"
+        },
+        "params": {
+          "model": "pch"
+        },
+        "nlAction": null
+      },
+      {
+        "name": "M18",
+        "library": "tsmc18",
+        "cell": "pmos2v",
+        "terms": {
+          "D": "vo3p",
+          "B": "VDD",
+          "G": "clk",
+          "S": "VDD"
+        },
+        "params": {
+          "model": "pch"
+        },
+        "nlAction": null
+      },
+      {
+        "name": "M15",
+        "library": "tsmc18",
+        "cell": "pmos2v",
+        "terms": {
+          "D": "vo3n",
+          "B": "VDD",
+          "G": "clk",
+          "S": "VDD"
+        },
+        "params": {
+          "model": "pch"
+        },
+        "nlAction": null
+      }
+    ],
+    "historical_netlist_evidence": {
+      "file": "latest_input.scs",
+      "generator_lines": [
+        485,
+        487
+      ],
+      "latch_clk_gate_lines": [
+        [
+          139,
+          141
+        ],
+        [
+          148,
+          150
+        ],
+        [
+          151,
+          153
+        ],
+        [
+          154,
+          156
+        ],
+        [
+          163,
+          165
+        ]
+      ],
+      "top_comp_instance_lines": [
+        1094,
+        1095
+      ]
+    },
+    "pending": "Level/threshold, clock generation and oxide/reliability margin checks with correct PDK operating limits; no claim of observed overvoltage waveform or damage"
+  }
+}

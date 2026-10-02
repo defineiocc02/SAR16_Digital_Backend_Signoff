@@ -1,0 +1,42 @@
+{
+  "model": "Ideal Fig.6 split CDAC, bottom plates at AC ground, internal nodes floating, no extra loading/parasitics",
+  "paper_group_sums_cu": [
+    63,
+    30,
+    32,
+    128
+  ],
+  "bridge_cu": [
+    4,
+    4,
+    12
+  ],
+  "recursive_equivalent_steps": [
+    {
+      "bridge_cu": 4,
+      "next_direct_group_cu": 30,
+      "combined_cu": 33.76119402985075
+    },
+    {
+      "bridge_cu": 4,
+      "next_direct_group_cu": 32,
+      "combined_cu": 35.576284584980236
+    },
+    {
+      "bridge_cu": 12,
+      "next_direct_group_cu": 128,
+      "combined_cu": 136.97328193539812
+    }
+  ],
+  "top_equivalent_cu": 136.97328193539812,
+  "historical_cf_fF": 40,
+  "conditional_top_pF": 5.478931277415925,
+  "top_lower_bound_pF": 5.12,
+  "top_upper_bound_pF": 5.6000000000000005,
+  "not_established": [
+    "actual MOM capacitance",
+    "input admittance in each phase",
+    "comparator and switch parasitic loading",
+    "transistor simulation or measured capacitance"
+  ]
+}

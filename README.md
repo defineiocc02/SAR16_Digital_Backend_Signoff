@@ -6,6 +6,8 @@
 
 2026-09-30 的静态接手结论见 [静态审计报告](docs/static_audit_20260930.md)；2026-10-01 的 [RTL PPA 与 JSSC 2025 对标分析](docs/ppa_paper_comparison_20261001.md) 包含面积对账和 SRM 持续请求实验。2026-10-02 再次完整复核四份 RTL 和论文原理，新增 [原理、功能与综合电路详解](docs/rtl_principle_review_20261002.md)：确认了默认 SRM 超时后旧完成事件错配、校准量化偏差以及非默认 LUT 格式问题。集成与整改要求见 [当前接口契约](docs/interface_contract.md)、[恢复流程与发展路线](docs/backend_recovery_plan.md)。原始 `evidence/` 保持不变，历史报告用于追溯。
 
+2026-10-02 已进一步读取远程 16 位模拟项目的 36 个当前原理图，并对照仿真日志和论文核对连接；见 [模拟复现差距与统一接口](docs/analog_digital_integration_20261002.md)。**20 路非二进制冗余物理权重重构为 16 位输出是论文架构，位数不同本身不是差距。** 新增的 [引脚规范](integration/README.md) 保留全部 20 路，区分电容索引、SAR 阶段信号和最终输出。
+
 ## 设计边界
 
 本块用于 16 位、5 MS/s 分体采样 SAR ADC 的数字接口与辅助处理，包含串行前台校准、SRM 双时钟域计数/LUT 和 raw code 寄存输出。
@@ -31,6 +33,7 @@ make check
 make smoke
 make ppa
 make review
+make interface
 ```
 
 指定已有 Verilator 时：
@@ -46,6 +49,7 @@ make ppa VERILATOR=/path/to/verilator
 | `make smoke` | 全部 LUT 地址、raw 输出、SRM 正常/重启/超时/复位，校准两轮各 14 次权重发布；当前 166 项检查 | `build/smoke/{build.log,run.log,result.json}` |
 | `make ppa` | 原始网表/LEF 的 3626 个叶单元及面积对账；SRM 12 相位 × 100 样本、200 ns 请求间隔和过早驱动反例；论文条件计算 | `build/ppa/` |
 | `make review` | 7 个首目标校准、3 个 SRM 协议边界、2 个 LUT 格式实验；实际 LUT 精确 Binomial 统计；层级/门控/clock/reset 库存 | `build/rtl_review/` |
+| `make interface` | 31组/176位与两份SPICE端口次序、178行pinmap及位置适配器；20路权重索引/OA driver连接；5个正常与故障测试 | `build/sar16_interface_check.json` |
 | GitHub Actions | 同样的公开检查、RTL 冒烟、PPA 复现和已知局限表征 | PR / Actions 检查结果 |
 
 **检查通过只表示这些检查通过。** Verilator 测试使用两状态、零延迟 RTL；SDC 用 Tcl mock 检查错误传播，尚未在 FC 验证。它们不证明亚稳态安全、四状态 X 行为、门级 SDF 时序、模拟校准精度或物理签核通过。Lint 警告保留在日志中，未静默屏蔽。
@@ -120,7 +124,7 @@ GDS 的顶层布线普查复核为 37,836 个金属图形、30,730 个过孔实�
 
 **缺少完整商业工具复现闭环。** `dc_synth_paper_core.tcl`、`fc_pnr_paper_core.tcl`、`sta_pt_paper_core.tcl`、主驱动/结果收集/GDS merge 脚本、SPEF、SDF、标准单元仿真模型和完整 Formality run 均未入库。日志能辅助找回设置，不能代替版本化脚本或寄生参数文件。
 
-工艺库和厂商 PDK 不在公开仓库，设计自己的 LEF 已保留。远程主机、许可证和私有 PDK 路径只在恢复后的私有环境配置中维护。本轮确认 SSH 连通，但未验证 DC/FC/PT 的可执行环境和许可证，也未启动商业 EDA。
+公开仓库不补充私有 PDK、主机或许可证配置。现存同名 `sar_digi_paper_core.lef` 包含 109 个标准单元 MACRO，**没有本数字核心的顶层 MACRO**，不能当作已交付的 178-pin core abstract。2026-10-02 使用隔离 Virtuoso 只读批处理读取远程模拟原理图，源文件哈希均未改变；未重新综合、布线或运行整机模拟仿真。DC/FC/PT 的当前可用性和许可证仍待恢复阶段验证。
 
 历史探针包含清理、覆盖和重跑操作，脱敏路径也不能直接执行。`make check` 只检查它们的语法；新实验采用独立 run 目录。新的 RTL 改动先建维护版本并重跑等价/回归，原始 evidence 不覆盖。
 

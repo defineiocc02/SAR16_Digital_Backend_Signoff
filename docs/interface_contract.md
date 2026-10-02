@@ -9,7 +9,7 @@
 | `clk` | housekeeping 域，历史约束 10 ns |
 | `dec_clk` | SRM 判决域，历史约束 3 ns，与 `clk` 异步 |
 | `rst_n` | 低有效异步复位，送到两个时钟域；当前 RTL 没有各域同步释放电路 |
-| `VDD/VSS` | GDS/LEF 的电源端口；RTL 未建模电源，不能据此证明标准单元 PG 已连接 |
+| `VDD/VSS` | GDS 标签及提取 SPICE 的电源端口；source CDL 使用 global，RTL 未建模电源；现存 LEF 没有 core MACRO，不能据此证明 PG 已连接 |
 
 reset 应覆盖两个域的启动条件。如何同步释放及验证 recovery/removal 仍需 RDC 与 STA 关闭；不能把历史文档的“像普通同步复位一样用”当作已经验收的硅上契约。
 
@@ -52,3 +52,9 @@ reset 应覆盖两个域的启动条件。如何同步释放及验证 recovery/r
 ## raw 与 residue 配对
 
 `raw_code_o/raw_code_valid_o` 是 `clk` 寄存输出，raw 数据在 valid=0 时也可以变化，消费者只在 valid=1 时接受。raw 与 residue 没有 sample ID、FIFO 或配对校验，上游必须保证一一对应及数据保存时间。SRM 完成后的数字发布可与下一次采样/转换重叠，但消费者必须保存对应 raw，防止新 raw 覆盖尚未发布 residue 所属的样本。后续接口设计需要把采样编号、错误状态、arm 时刻和消费规则纳入验收。
+
+## 远程模拟项目与引脚统一
+
+[2026-10-02 集成核对](analog_digital_integration_20261002.md) 已读取 36 个当前 OA 原理图。20 路冗余物理电容按 `C_i ↔ BITD<i+1>/BITU<i+1>` 建立索引；原理图的 21 路 SET/逻辑状态不能直接当成 20 位 raw 数据，P/N 控制的电气极性也不能仅按名字认定。数字 core 的31组接口保持稳定，逐位方括号/尖括号别名及 source/extracted SPICE 端口次序以 [机器可检验的引脚规范](../integration/README.md) 为准。
+
+远程模拟使用 TSMC18，当前后端工件使用 SMIC18；二者 RTL/行为联合验证可建立接口，物理 GDS/标准单元不能直接拼成同一工艺的芯片。模拟端 RST/PRST/CLKAZ 是各自相位控制，不能映射为数字全局低有效 `rst_n`。

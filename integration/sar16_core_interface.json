@@ -1,0 +1,284 @@
+{
+  "schema_version": 1,
+  "top_module": "sar_digi_paper_core",
+  "adapter_subckt": "sar16_core_pin_adapter",
+  "scope": "Default-parameter signal naming and positional extracted-SP adapter; electrical and physical integration remain unverified.",
+  "parameters": {
+    "CAP_NUM": 20,
+    "WEIGHT_WIDTH": 30,
+    "COMP_WAIT_CYC": 16,
+    "AVG_LOOPS": 32,
+    "MAX_CALIB_BIT": 5,
+    "REF_WEIGHT_LSB": 256,
+    "SRM_DECISIONS": 22,
+    "SRM_RES_FRAC": 8,
+    "SRM_SIGMA_Q8": 128,
+    "SRM_STALL_CYCLES": 64,
+    "SRM_RES_W": 10,
+    "CALIB_ROUND_HALF_LSB": 1,
+    "WEIGHT_EXPORT_REG": 0
+  },
+  "canonical_order": "RTL declaration group order; each bus from MSB to LSB; then VDD, VSS for the extracted-SP adapter only.",
+  "ports": [
+    {
+      "name": "clk",
+      "direction": "input",
+      "width": 1,
+      "signed": false,
+      "domain": "clock_source"
+    },
+    {
+      "name": "dec_clk",
+      "direction": "input",
+      "width": 1,
+      "signed": false,
+      "domain": "clock_source"
+    },
+    {
+      "name": "rst_n",
+      "direction": "input",
+      "width": 1,
+      "signed": false,
+      "domain": "async_reset_both_domains"
+    },
+    {
+      "name": "start_calib",
+      "direction": "input",
+      "width": 1,
+      "signed": false,
+      "domain": "clk"
+    },
+    {
+      "name": "calib_comp_out",
+      "direction": "input",
+      "width": 1,
+      "signed": false,
+      "domain": "async_into_clk_2ff"
+    },
+    {
+      "name": "calib_done",
+      "direction": "output",
+      "width": 1,
+      "signed": false,
+      "domain": "clk"
+    },
+    {
+      "name": "calib_done_pulse",
+      "direction": "output",
+      "width": 1,
+      "signed": false,
+      "domain": "clk"
+    },
+    {
+      "name": "calib_mode_en",
+      "direction": "output",
+      "width": 1,
+      "signed": false,
+      "domain": "clk"
+    },
+    {
+      "name": "dac_p_force",
+      "direction": "output",
+      "width": 20,
+      "signed": false,
+      "domain": "clk_derived_combinational",
+      "msb": 19,
+      "lsb": 0
+    },
+    {
+      "name": "dac_n_force",
+      "direction": "output",
+      "width": 20,
+      "signed": false,
+      "domain": "clk_derived_combinational",
+      "msb": 19,
+      "lsb": 0
+    },
+    {
+      "name": "calib_overrange",
+      "direction": "output",
+      "width": 1,
+      "signed": false,
+      "domain": "clk"
+    },
+    {
+      "name": "calib_overrange_bits",
+      "direction": "output",
+      "width": 20,
+      "signed": false,
+      "domain": "clk",
+      "msb": 19,
+      "lsb": 0
+    },
+    {
+      "name": "data_valid_i",
+      "direction": "input",
+      "width": 1,
+      "signed": false,
+      "domain": "clk"
+    },
+    {
+      "name": "raw_bits_i",
+      "direction": "input",
+      "width": 20,
+      "signed": false,
+      "domain": "clk",
+      "msb": 19,
+      "lsb": 0
+    },
+    {
+      "name": "raw_code_o",
+      "direction": "output",
+      "width": 20,
+      "signed": false,
+      "domain": "clk",
+      "msb": 19,
+      "lsb": 0
+    },
+    {
+      "name": "raw_code_valid_o",
+      "direction": "output",
+      "width": 1,
+      "signed": false,
+      "domain": "clk"
+    },
+    {
+      "name": "w_wr_en",
+      "direction": "output",
+      "width": 1,
+      "signed": false,
+      "domain": "clk"
+    },
+    {
+      "name": "w_wr_addr",
+      "direction": "output",
+      "width": 5,
+      "signed": false,
+      "domain": "clk",
+      "msb": 4,
+      "lsb": 0
+    },
+    {
+      "name": "w_wr_data",
+      "direction": "output",
+      "width": 30,
+      "signed": true,
+      "domain": "clk",
+      "msb": 29,
+      "lsb": 0
+    },
+    {
+      "name": "srm_start",
+      "direction": "input",
+      "width": 1,
+      "signed": false,
+      "domain": "clk"
+    },
+    {
+      "name": "srm_decision_valid",
+      "direction": "input",
+      "width": 1,
+      "signed": false,
+      "domain": "dec_clk"
+    },
+    {
+      "name": "srm_decision_bit",
+      "direction": "input",
+      "width": 1,
+      "signed": false,
+      "domain": "dec_clk"
+    },
+    {
+      "name": "residue_consume_i",
+      "direction": "input",
+      "width": 1,
+      "signed": false,
+      "domain": "clk"
+    },
+    {
+      "name": "srm_busy",
+      "direction": "output",
+      "width": 1,
+      "signed": false,
+      "domain": "clk"
+    },
+    {
+      "name": "srm_done",
+      "direction": "output",
+      "width": 1,
+      "signed": false,
+      "domain": "clk"
+    },
+    {
+      "name": "srm_residue_valid",
+      "direction": "output",
+      "width": 1,
+      "signed": false,
+      "domain": "clk"
+    },
+    {
+      "name": "srm_ones_count",
+      "direction": "output",
+      "width": 5,
+      "signed": false,
+      "domain": "clk",
+      "msb": 4,
+      "lsb": 0
+    },
+    {
+      "name": "srm_total_count",
+      "direction": "output",
+      "width": 5,
+      "signed": false,
+      "domain": "clk",
+      "msb": 4,
+      "lsb": 0
+    },
+    {
+      "name": "srm_count_shortfall",
+      "direction": "output",
+      "width": 1,
+      "signed": false,
+      "domain": "clk"
+    },
+    {
+      "name": "srm_stalled",
+      "direction": "output",
+      "width": 1,
+      "signed": false,
+      "domain": "clk"
+    },
+    {
+      "name": "srm_residue_o",
+      "direction": "output",
+      "width": 10,
+      "signed": true,
+      "domain": "clk",
+      "msb": 9,
+      "lsb": 0
+    }
+  ],
+  "adapter_power_pins": [
+    "VDD",
+    "VSS"
+  ],
+  "evidence": {
+    "rtl": "evidence/rtl_baseline/sar_digi_paper_core.sv",
+    "pnr_verilog": "evidence/rpt_v51/sar_digi_paper_core_pnr.v",
+    "source_cdl": "evidence/rpt_v51/sar16.cdl",
+    "extracted_sp": "evidence/rpt_v51/sar_digi_paper_core.sp",
+    "leaf_lef": "evidence/rpt_v51/sar_digi_paper_core.lef",
+    "oa_inventory": "docs/analog_integration_20261002/oa_interface_inventory.json"
+  },
+  "expected": {
+    "groups": 31,
+    "signal_bits": 176,
+    "extracted_formals": 178,
+    "leaf_lef_macros": 109,
+    "analog_weight_rows": 20
+  },
+  "source_cdl_power": "VDD and VSS are .GLOBAL, not formal top ports; original evidence is not rewritten.",
+  "electrical_status": "pending: VDD range, thresholds, drive/load, level translation, P/N switch truth table and raw bit polarity.",
+  "architecture": "20 physical nonbinary redundant weights reconstruct a calibrated 16-bit output; raw width is not a paper-reproduction gap.",
+  "physical_status": "LVS is not closed; different foundry/PDK designs require reimplementation before a common physical integration."
+}
