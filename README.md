@@ -1,5 +1,10 @@
 # SAR16 片上数字核 · 数字后端接手与签核
 
+> **定位与证据状态（2026-10-02）**：这是 16 位 SAR 数字后端的交付审计与签核证据仓库，尚未完成流片签核。现有证据仍有 LVS INCORRECT、跨角 hold 违规与被截断的 DRC 计数；功能等价通过不能替代物理签核。进一步的静态审计与 PPA 对标见 [待合入改进](https://github.com/defineiocc02/SAR16_Digital_Backend_Signoff/pull/1)，其内容在合入前不属于默认分支基线。
+
+> **导航**：返回 [项目总览](https://github.com/defineiocc02)。
+
+
 对一个 **16 位 5 MS/s 分体采样 SAR ADC 的数字核**（`sar_digi_paper_core`，SMIC 0.18 µm 1P6M）
 所做的**接手复核 + 独立核查 + 缺陷修复 + 签核**的完整工作记录。
 
