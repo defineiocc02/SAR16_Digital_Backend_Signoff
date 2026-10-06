@@ -1,0 +1,30 @@
+[
+  {
+    "net": "clk",
+    "pin": "clkbuf_0_clk/A",
+    "layer": "met3",
+    "side_area_ratio": 58.13,
+    "limit": 400.0
+  },
+  {
+    "net": "clk",
+    "pin": "clkbuf_0_clk/A",
+    "layer": "met4",
+    "side_area_ratio": 7.38,
+    "limit": 400.0
+  },
+  {
+    "net": "_0827_",
+    "pin": "_2775_/A1",
+    "layer": "met1",
+    "side_area_ratio": 2.85,
+    "limit": 400.0
+  },
+  {
+    "net": "clknet_4_8_0_clk",
+    "pin": "clkbuf_leaf_22_clk/A",
+    "layer": "met3",
+    "side_area_ratio": 7.97,
+    "limit": 400.0
+  }
+]

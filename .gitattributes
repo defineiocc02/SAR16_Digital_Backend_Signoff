@@ -1,0 +1,13 @@
+# Frozen scientific inputs/evidence are byte-exact, including tool-emitted whitespace.
+repairs/sky130hs_20261006/** -text -whitespace
+# Keep review focused on first-party sources; native outputs remain directly downloadable.
+*.odb binary linguist-generated=true
+*.gds binary linguist-generated=true
+*.spef linguist-generated=true
+*.sdf linguist-generated=true
+*.def linguist-generated=true
+*.rpt linguist-generated=true
+*.log linguist-generated=true
+*.lyrdb linguist-generated=true
+**/results/*.v linguist-generated=true
+**/identity/*_from_odb*.v linguist-generated=true

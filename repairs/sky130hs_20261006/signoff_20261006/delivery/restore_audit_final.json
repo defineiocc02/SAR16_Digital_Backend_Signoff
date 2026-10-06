@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "archive_count": 5,
+  "every_archive_under_9000000_bytes": true,
+  "empty_directory_extract_pass": true,
+  "all_payload_hashes_pass": true,
+  "payload_file_count": 3383,
+  "runtime_path_relocation_only": true,
+  "fresh_os_tool_rebuild": false,
+  "note": "Inputs extracted into an empty new directory and every byte hash verified; native tools are reused for subsequent smoke, not claimed installed on a second OS",
+  "strict_lvs_from_restored_local_inputs": "PASS: unique match, zero property errors",
+  "restored_top_nets": [
+    4335,
+    4335
+  ]
+}

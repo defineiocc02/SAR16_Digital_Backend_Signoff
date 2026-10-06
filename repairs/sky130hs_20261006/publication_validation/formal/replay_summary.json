@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "proof_jobs": 9,
+  "negative_controls": 5,
+  "candidate_input_hashes_unchanged": true,
+  "fresh_odb_exports_match": true,
+  "scope": "Same frozen default-parameter digital equivalence and ODB/export identity; not new extracted LVS"
+}

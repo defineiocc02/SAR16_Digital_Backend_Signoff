@@ -1,0 +1,30 @@
+{
+  "pages": 4,
+  "visual_qa": "All 4 rendered pages inspected: Chinese glyphs, tables, complete layout and bridge images, page numbers and source references readable; no clipping/overlap.",
+  "checks": {
+    "candidate_v2_diodefree": true,
+    "1.062018": true,
+    "0.153111": true,
+    "0.947274": true,
+    "0.050880": true,
+    "8,900": true,
+    "14,657": true,
+    "700": true,
+    "bc8f2590c514a8f8bfb819057fcf0f848fc8107b0726860d7581b8bcdadd8c4b": true,
+    "规则豁免": true,
+    "SNDR": true,
+    "ENOB": true
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/delivery/SAR16_SKY130HS_DRC_LVS_Final_20261006.pdf",
+      "bytes": 1558727,
+      "sha256": "634bcde560c0091649bf314b5744546a7c5b974c73762c82915c697e8d007b59"
+    },
+    {
+      "path": "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/delivery/SAR16_SKY130HS_DRC_LVS_Final_20261006.docx",
+      "bytes": 6411033,
+      "sha256": "255f15f524e8083e3879e94a0c05e197f1f09d4967e4d13668228e3e8e4979db"
+    }
+  ]
+}

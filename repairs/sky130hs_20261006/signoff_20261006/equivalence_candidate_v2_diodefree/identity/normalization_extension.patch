@@ -1,0 +1,27 @@
+--- original/normalize.py
++++ candidate/driver/normalize.py
+@@ -32,11 +32,13 @@
+  with (OUT/'logs'/f'models_{tech}.log').open('w') as f:subprocess.run([YS,'-Q','-T','-s',str(p)],stdout=f,stderr=subprocess.STDOUT,check=True)
+ physical_models={}
+ for tech,info in cfg.get('physical_only',{}).items():
+- lef=Path(info['lef']).read_text(); text=['// Proven no-functional-pin WELLTAP model; nominal-power digital abstraction.','// LEF SHA256: '+before[info['lef']]];audit={}
++ lef=Path(info['lef']).read_text(); text=['// Proven no-functional-pin WELLTAP/SPACER model; nominal-power digital abstraction.','// LEF SHA256: '+before[info['lef']]];audit={}
+  for cell in info['cells']:
+   match=re.search(r'^MACRO\s+'+re.escape(cell)+r'\b.*?^END\s+'+re.escape(cell)+r'\s*$',lef,re.M|re.S)
+   assert match,'Physical macro absent from pinned LEF: '+cell
+-  block=match.group();assert re.search(r'CLASS\s+CORE\s+WELLTAP\s*;',block), 'Only verified WELLTAP cells may use this abstraction'
++  block=match.group();class_match=re.search(r'CLASS\s+CORE\s+(WELLTAP|SPACER)\s*;',block)
++  assert class_match, 'Only verified WELLTAP/SPACER cells may use this abstraction'
++  macro_class='CORE '+class_match.group(1)
+   pins=[]
+   for pin,body in re.findall(r'  PIN (\S+)\n(.*?)  END \1',block,re.S):
+    direction=re.search(r'DIRECTION\s+(\w+)',body).group(1);use=re.search(r'USE\s+(\w+)',body).group(1)
+@@ -44,7 +46,7 @@
+    pins.append(pin)
+   assert pins,'Missing power-pin evidence'
+   text.append('module '+cell+'('+','.join(pins)+');')
+-  text.extend('inout '+pin+';' for pin in pins);text.append('endmodule');audit[cell]={'class':'CORE WELLTAP','power_only_pins':pins,'functional_outputs':0}
++  text.extend('inout '+pin+';' for pin in pins);text.append('endmodule');audit[cell]={'class':macro_class,'power_only_pins':pins,'functional_outputs':0}
+  path=OUT/'models'/f'{tech}_physical_only.v';path.write_text('\n'.join(text)+'\n');physical_models[tech]=path
+  (OUT/'models'/f'{tech}_physical_only_audit.json').write_text(json.dumps(audit,indent=2)+'\n')
+ for label in ['rtl',*cfg['netlists']]:

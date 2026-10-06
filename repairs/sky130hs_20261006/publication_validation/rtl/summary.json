@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "rtl_sha256": {
+    "sar_digi_paper_core.sv": "cfb3548a9aa6e6bfa3d9395f02c5695d12e075415931185db8da461804139022",
+    "sar_calib_ctrl_serial.sv": "bff398bd6e1e99b9008b39a673c252caa389e6ea50d4f51d3d7e1d6de9e6ea1d",
+    "srm_residue_estimator.sv": "113265c69b6fa7550906c17290a66b7507f51221231751a99d72a8f580f110de",
+    "srm_residue_lut.sv": "d3335201c8de1692e31cab9f28b8a9862ffbace3710529599ac8f241ed98bbdf"
+  },
+  "testbench_sha256": {
+    "tb_srm_repair.sv": "da5034ffaf9beeb40bdacee33d409aaf6ccee737fe46b6182710ac2eb21469dc",
+    "tb_srm_latency.sv": "570d355d73496df59265935d4d30e8e85cf31efa41c1fb8d7541a6f8958fc8c0",
+    "tb_sar16_smoke.sv": "4aab17d6194d529154d40b93e8a6a4164f1dc255040ea3065ac4e7542006e251"
+  },
+  "tool_versions": {
+    "verilator": "Verilator 5.032 2025-01-01 rev (Debian 5.032-1+b2)",
+    "iverilog": "Icarus Verilog version 12.0 (stable) ()",
+    "vvp": "Icarus Verilog runtime version 12.0 (stable) ()"
+  },
+  "checks": [
+    {
+      "name": "lint",
+      "status": "PASS",
+      "returncode": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.114,
+      "log": "logs/lint.log",
+      "expected_marker": null
+    },
+    {
+      "name": "tb_srm_repair_build",
+      "status": "PASS",
+      "returncode": 0,
+      "timed_out": false,
+      "elapsed_seconds": 3.376,
+      "log": "logs/tb_srm_repair_build.log",
+      "expected_marker": null
+    },
+    {
+      "name": "tb_srm_repair",
+      "status": "PASS",
+      "returncode": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.008,
+      "log": "logs/tb_srm_repair.log",
+      "expected_marker": "SRM_REPAIR_PASS checks=39"
+    },
+    {
+      "name": "tb_srm_latency_build",
+      "status": "PASS",
+      "returncode": 0,
+      "timed_out": false,
+      "elapsed_seconds": 6.937,
+      "log": "logs/tb_srm_latency_build.log",
+      "expected_marker": null
+    },
+    {
+      "name": "tb_srm_latency",
+      "status": "PASS",
+      "returncode": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.165,
+      "log": "logs/tb_srm_latency.log",
+      "expected_marker": "SRM_LATENCY_EXPERIMENT_PASS phases=12 normal_samples=1200"
+    },
+    {
+      "name": "tb_sar16_smoke_build",
+      "status": "PASS",
+      "returncode": 0,
+      "timed_out": false,
+      "elapsed_seconds": 4.629,
+      "log": "logs/tb_sar16_smoke_build.log",
+      "expected_marker": null
+    },
+    {
+      "name": "tb_sar16_smoke",
+      "status": "PASS",
+      "returncode": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.766,
+      "log": "logs/tb_sar16_smoke.log",
+      "expected_marker": "SAR16_SMOKE_PASS checks=166"
+    },
+    {
+      "name": "icarus_repair_build",
+      "status": "PASS",
+      "returncode": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.016,
+      "log": "logs/icarus_repair_build.log",
+      "expected_marker": null
+    },
+    {
+      "name": "icarus_repair",
+      "status": "PASS",
+      "returncode": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.016,
+      "log": "logs/icarus_repair.log",
+      "expected_marker": "SRM_REPAIR_PASS checks=39"
+    }
+  ],
+  "scope": "Frozen optimized RTL digital protocol and latency regression; no analog accuracy, physical CDC/RDC, SDF, or silicon signoff claim"
+}

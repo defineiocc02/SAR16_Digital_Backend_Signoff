@@ -1,0 +1,10 @@
+{
+  "candidate_gds_sha256": "bc8f2590c514a8f8bfb819057fcf0f848fc8107b0726860d7581b8bcdadd8c4b",
+  "independent_verification_gds_sha256": "78dc8d8fbb18744369b61d7ade83511b09a335677566fda005c101f7b82a46a2",
+  "all_gds_records_other_than_BGNLIB_BGNSTR_timestamps_byte_identical": true,
+  "timestamp_records_per_file": [
+    111,
+    111
+  ],
+  "normalized_sha256": "bc6b9033f48b7b592ecd5a3a37ed1201f0a53ff08aa2be1680712e90eca200ef"
+}

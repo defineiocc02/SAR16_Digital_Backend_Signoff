@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "frozen candidate srm_residue_lut.sv",
+      "pass": true
+    },
+    {
+      "name": "frozen candidate sar_digi_paper_core.sv",
+      "pass": true
+    },
+    {
+      "name": "frozen candidate sar_calib_ctrl_serial.sv",
+      "pass": true
+    },
+    {
+      "name": "frozen candidate srm_residue_estimator.sv",
+      "pass": true
+    },
+    {
+      "name": "unchanged baseline sar_calib_ctrl_serial.sv",
+      "pass": true
+    },
+    {
+      "name": "unchanged baseline sar_digi_paper_core.sv",
+      "pass": true
+    },
+    {
+      "name": "unchanged baseline srm_residue_estimator.sv",
+      "pass": true
+    },
+    {
+      "name": "unchanged baseline srm_residue_lut.sv",
+      "pass": true
+    },
+    {
+      "name": "baseline_invariant",
+      "pass": true
+    },
+    {
+      "name": "storage_equivalence",
+      "pass": true
+    },
+    {
+      "name": "reset_base",
+      "pass": true
+    },
+    {
+      "name": "calib_bmc",
+      "pass": true
+    },
+    {
+      "name": "calib_induction",
+      "pass": true
+    },
+    {
+      "name": "calib_publish_bmc",
+      "pass": true
+    },
+    {
+      "name": "calib_publish_induction",
+      "pass": true
+    },
+    {
+      "name": "calib_cover",
+      "pass": true
+    },
+    {
+      "name": "tb_sar16_smoke",
+      "pass": true
+    },
+    {
+      "name": "tb_srm_repair",
+      "pass": true
+    },
+    {
+      "name": "tb_srm_latency",
+      "pass": true
+    },
+    {
+      "name": "iverilog_repair",
+      "pass": true
+    },
+    {
+      "name": "two full calibration sweeps",
+      "pass": true
+    },
+    {
+      "name": "negative mutation detected",
+      "pass": true
+    },
+    {
+      "name": "fallback_low status",
+      "pass": true
+    },
+    {
+      "name": "fallback_low invariant_status",
+      "pass": true
+    },
+    {
+      "name": "fallback_low reset_base_status",
+      "pass": true
+    },
+    {
+      "name": "fallback_high status",
+      "pass": true
+    },
+    {
+      "name": "fallback_high invariant_status",
+      "pass": true
+    },
+    {
+      "name": "fallback_high reset_base_status",
+      "pass": true
+    },
+    {
+      "name": "alternate_legal status",
+      "pass": true
+    },
+    {
+      "name": "alternate_legal invariant_status",
+      "pass": true
+    },
+    {
+      "name": "alternate_legal reset_base_status",
+      "pass": true
+    },
+    {
+      "name": "exact mapped area",
+      "pass": true
+    },
+    {
+      "name": "846 flops",
+      "pass": true
+    },
+    {
+      "name": "only calibration source changed",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "mutation": "XOR bit 0 of every measured weight on writeback; production RTL untouched",
+  "expected": "proof failure",
+  "detected": true,
+  "returncode": 1,
+  "counterexample": "negative_control/formal/counterexample.vcd"
+}

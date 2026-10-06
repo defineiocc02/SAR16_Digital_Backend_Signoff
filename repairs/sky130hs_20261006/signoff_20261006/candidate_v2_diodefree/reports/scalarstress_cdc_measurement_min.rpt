@@ -1,0 +1,230 @@
+CDC_ENTRY gray u_srm_residue.ones_g[0] u_srm_residue.ones_g_s1[0] MEASUREMENT_ONLY_MIN
+Startpoint: _6120_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6179_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: path delay
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000 ^ _6120_/CLK (sky130_fd_sc_hs__dfrtp_1)
+   0.190209    0.190209 ^ _6120_/Q (sky130_fd_sc_hs__dfrtp_1)
+   0.000135    0.190343 ^ _6179_/D (sky130_fd_sc_hs__dfrtp_1)
+               0.190343   data arrival time
+
+   0.000000    0.000000   min_delay
+  -0.026024   -0.026024   library hold time
+              -0.026024   data required time
+-----------------------------------------------------------------
+              -0.026024   data required time
+              -0.190343   data arrival time
+-----------------------------------------------------------------
+               0.216368   slack (MET)
+
+
+CDC_ENTRY gray u_srm_residue.ones_g[1] u_srm_residue.ones_g_s1[1] MEASUREMENT_ONLY_MIN
+Startpoint: _6121_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6180_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: path delay
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000 ^ _6121_/CLK (sky130_fd_sc_hs__dfrtp_1)
+   0.190301    0.190301 ^ _6121_/Q (sky130_fd_sc_hs__dfrtp_1)
+   0.000148    0.190449 ^ _6180_/D (sky130_fd_sc_hs__dfrtp_1)
+               0.190449   data arrival time
+
+   0.000000    0.000000   min_delay
+  -0.026093   -0.026093   library hold time
+              -0.026093   data required time
+-----------------------------------------------------------------
+              -0.026093   data required time
+              -0.190449   data arrival time
+-----------------------------------------------------------------
+               0.216542   slack (MET)
+
+
+CDC_ENTRY gray u_srm_residue.ones_g[2] u_srm_residue.ones_g_s1[2] MEASUREMENT_ONLY_MIN
+Startpoint: _6122_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6181_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: path delay
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000 ^ _6122_/CLK (sky130_fd_sc_hs__dfrtp_1)
+   0.191710    0.191710 ^ _6122_/Q (sky130_fd_sc_hs__dfrtp_1)
+   0.000128    0.191838 ^ _6181_/D (sky130_fd_sc_hs__dfrtp_1)
+               0.191838   data arrival time
+
+   0.000000    0.000000   min_delay
+  -0.026933   -0.026933   library hold time
+              -0.026933   data required time
+-----------------------------------------------------------------
+              -0.026933   data required time
+              -0.191838   data arrival time
+-----------------------------------------------------------------
+               0.218771   slack (MET)
+
+
+CDC_ENTRY gray u_srm_residue.ones_g[3] u_srm_residue.ones_g_s1[3] MEASUREMENT_ONLY_MIN
+Startpoint: _6123_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6182_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: path delay
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000 ^ _6123_/CLK (sky130_fd_sc_hs__dfrtp_1)
+   0.187089    0.187089 ^ _6123_/Q (sky130_fd_sc_hs__dfrtp_1)
+   0.000081    0.187170 ^ _6182_/D (sky130_fd_sc_hs__dfrtp_1)
+               0.187170   data arrival time
+
+   0.000000    0.000000   min_delay
+  -0.024190   -0.024190   library hold time
+              -0.024190   data required time
+-----------------------------------------------------------------
+              -0.024190   data required time
+              -0.187170   data arrival time
+-----------------------------------------------------------------
+               0.211360   slack (MET)
+
+
+CDC_ENTRY gray u_srm_residue.ones_g[4] u_srm_residue.ones_g_s1[4] MEASUREMENT_ONLY_MIN
+Startpoint: _6124_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6183_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: path delay
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000 ^ _6124_/CLK (sky130_fd_sc_hs__dfrtp_1)
+   0.240608    0.240608 ^ _6124_/Q (sky130_fd_sc_hs__dfrtp_1)
+   0.000431    0.241040 ^ _6183_/D (sky130_fd_sc_hs__dfrtp_1)
+               0.241040   data arrival time
+
+   0.000000    0.000000   min_delay
+  -0.046257   -0.046257   library hold time
+              -0.046257   data required time
+-----------------------------------------------------------------
+              -0.046257   data required time
+              -0.241040   data arrival time
+-----------------------------------------------------------------
+               0.287297   slack (MET)
+
+
+CDC_ENTRY gray u_srm_residue.total_g[0] u_srm_residue.tot_g_s1[0] MEASUREMENT_ONLY_MIN
+Startpoint: _6125_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6130_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: path delay
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000 ^ _6125_/CLK (sky130_fd_sc_hs__dfrtp_1)
+   0.198478    0.198478 ^ _6125_/Q (sky130_fd_sc_hs__dfrtp_1)
+   0.000228    0.198706 ^ _6130_/D (sky130_fd_sc_hs__dfrtp_1)
+               0.198706   data arrival time
+
+   0.000000    0.000000   min_delay
+  -0.031350   -0.031350   library hold time
+              -0.031350   data required time
+-----------------------------------------------------------------
+              -0.031350   data required time
+              -0.198706   data arrival time
+-----------------------------------------------------------------
+               0.230056   slack (MET)
+
+
+CDC_ENTRY gray u_srm_residue.total_g[1] u_srm_residue.tot_g_s1[1] MEASUREMENT_ONLY_MIN
+Startpoint: _6126_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6131_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: path delay
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000 ^ _6126_/CLK (sky130_fd_sc_hs__dfrtp_1)
+   0.185295    0.185295 ^ _6126_/Q (sky130_fd_sc_hs__dfrtp_1)
+   0.000087    0.185382 ^ _6131_/D (sky130_fd_sc_hs__dfrtp_1)
+               0.185382   data arrival time
+
+   0.000000    0.000000   min_delay
+  -0.023303   -0.023303   library hold time
+              -0.023303   data required time
+-----------------------------------------------------------------
+              -0.023303   data required time
+              -0.185382   data arrival time
+-----------------------------------------------------------------
+               0.208685   slack (MET)
+
+
+CDC_ENTRY gray u_srm_residue.total_g[2] u_srm_residue.tot_g_s1[2] MEASUREMENT_ONLY_MIN
+Startpoint: _6127_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6132_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: path delay
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000 ^ _6127_/CLK (sky130_fd_sc_hs__dfrtp_1)
+   0.192922    0.192922 ^ _6127_/Q (sky130_fd_sc_hs__dfrtp_1)
+   0.000142    0.193063 ^ _6132_/D (sky130_fd_sc_hs__dfrtp_1)
+               0.193063   data arrival time
+
+   0.000000    0.000000   min_delay
+  -0.027909   -0.027909   library hold time
+              -0.027909   data required time
+-----------------------------------------------------------------
+              -0.027909   data required time
+              -0.193063   data arrival time
+-----------------------------------------------------------------
+               0.220973   slack (MET)
+
+
+CDC_ENTRY gray u_srm_residue.total_g[3] u_srm_residue.tot_g_s1[3] MEASUREMENT_ONLY_MIN
+Startpoint: _6128_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6133_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: path delay
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000 ^ _6128_/CLK (sky130_fd_sc_hs__dfrtp_1)
+   0.190734    0.190734 ^ _6128_/Q (sky130_fd_sc_hs__dfrtp_1)
+   0.000194    0.190928 ^ _6133_/D (sky130_fd_sc_hs__dfrtp_1)
+               0.190928   data arrival time
+
+   0.000000    0.000000   min_delay
+  -0.026531   -0.026531   library hold time
+              -0.026531   data required time
+-----------------------------------------------------------------
+              -0.026531   data required time
+              -0.190928   data arrival time
+-----------------------------------------------------------------
+               0.217458   slack (MET)
+
+
+CDC_ENTRY gray u_srm_residue.total_g[4] u_srm_residue.tot_g_s1[4] MEASUREMENT_ONLY_MIN
+Startpoint: _6129_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6134_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: path delay
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000 ^ _6129_/CLK (sky130_fd_sc_hs__dfrtp_1)
+   0.250031    0.250031 ^ _6129_/Q (sky130_fd_sc_hs__dfrtp_1)
+   0.000734    0.250765 ^ _6134_/D (sky130_fd_sc_hs__dfrtp_1)
+               0.250765   data arrival time
+
+   0.000000    0.000000   min_delay
+  -0.049160   -0.049160   library hold time
+              -0.049160   data required time
+-----------------------------------------------------------------
+              -0.049160   data required time
+              -0.250765   data arrival time
+-----------------------------------------------------------------
+               0.299925   slack (MET)
+
+

@@ -1,0 +1,290 @@
+Startpoint: _6193_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6126_ (recovery check against rising-edge clock dec_clk)
+Path Group: asynchronous
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock dec_clk (rise edge)
+   0.224432    0.224432   clock network delay (propagated)
+   0.000000    0.224432 ^ _6193_/CLK (sky130_fd_sc_hs__dfrtp_2)
+   0.340117    0.564549 ^ _6193_/Q (sky130_fd_sc_hs__dfrtp_2)
+   0.163141    0.727690 ^ load_slew301/X (sky130_fd_sc_hs__buf_8)
+   0.008899    0.736589 ^ _6126_/RESET_B (sky130_fd_sc_hs__dfrtp_1)
+               0.736589   data arrival time
+
+   3.000000    3.000000   clock dec_clk (rise edge)
+   0.222198    3.222198   clock network delay (propagated)
+  -0.060000    3.162198   clock uncertainty
+   0.000000    3.162198   clock reconvergence pessimism
+               3.162198 ^ _6126_/CLK (sky130_fd_sc_hs__dfrtp_1)
+  -0.149074    3.013123   library recovery time
+               3.013123   data required time
+-----------------------------------------------------------------
+               3.013123   data required time
+              -0.736589   data arrival time
+-----------------------------------------------------------------
+               2.276534   slack (MET)
+
+
+Startpoint: _6193_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6127_ (recovery check against rising-edge clock dec_clk)
+Path Group: asynchronous
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock dec_clk (rise edge)
+   0.224432    0.224432   clock network delay (propagated)
+   0.000000    0.224432 ^ _6193_/CLK (sky130_fd_sc_hs__dfrtp_2)
+   0.340117    0.564549 ^ _6193_/Q (sky130_fd_sc_hs__dfrtp_2)
+   0.163141    0.727690 ^ load_slew301/X (sky130_fd_sc_hs__buf_8)
+   0.008771    0.736461 ^ _6127_/RESET_B (sky130_fd_sc_hs__dfrtp_1)
+               0.736461   data arrival time
+
+   3.000000    3.000000   clock dec_clk (rise edge)
+   0.222112    3.222112   clock network delay (propagated)
+  -0.060000    3.162112   clock uncertainty
+   0.000000    3.162112   clock reconvergence pessimism
+               3.162112 ^ _6127_/CLK (sky130_fd_sc_hs__dfrtp_1)
+  -0.149066    3.013046   library recovery time
+               3.013046   data required time
+-----------------------------------------------------------------
+               3.013046   data required time
+              -0.736461   data arrival time
+-----------------------------------------------------------------
+               2.276584   slack (MET)
+
+
+Startpoint: _6193_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6109_ (recovery check against rising-edge clock dec_clk)
+Path Group: asynchronous
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock dec_clk (rise edge)
+   0.224432    0.224432   clock network delay (propagated)
+   0.000000    0.224432 ^ _6193_/CLK (sky130_fd_sc_hs__dfrtp_2)
+   0.340117    0.564549 ^ _6193_/Q (sky130_fd_sc_hs__dfrtp_2)
+   0.163141    0.727690 ^ load_slew301/X (sky130_fd_sc_hs__buf_8)
+   0.008830    0.736521 ^ _6109_/RESET_B (sky130_fd_sc_hs__dfrtp_1)
+               0.736521   data arrival time
+
+   3.000000    3.000000   clock dec_clk (rise edge)
+   0.222231    3.222231   clock network delay (propagated)
+  -0.060000    3.162231   clock uncertainty
+   0.000000    3.162231   clock reconvergence pessimism
+               3.162231 ^ _6109_/CLK (sky130_fd_sc_hs__dfrtp_1)
+  -0.149070    3.013161   library recovery time
+               3.013161   data required time
+-----------------------------------------------------------------
+               3.013161   data required time
+              -0.736521   data arrival time
+-----------------------------------------------------------------
+               2.276640   slack (MET)
+
+
+Startpoint: _6193_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6125_ (recovery check against rising-edge clock dec_clk)
+Path Group: asynchronous
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock dec_clk (rise edge)
+   0.224432    0.224432   clock network delay (propagated)
+   0.000000    0.224432 ^ _6193_/CLK (sky130_fd_sc_hs__dfrtp_2)
+   0.340117    0.564549 ^ _6193_/Q (sky130_fd_sc_hs__dfrtp_2)
+   0.163141    0.727690 ^ load_slew301/X (sky130_fd_sc_hs__buf_8)
+   0.008938    0.736628 ^ _6125_/RESET_B (sky130_fd_sc_hs__dfrtp_1)
+               0.736628   data arrival time
+
+   3.000000    3.000000   clock dec_clk (rise edge)
+   0.222440    3.222440   clock network delay (propagated)
+  -0.060000    3.162440   clock uncertainty
+   0.000000    3.162440   clock reconvergence pessimism
+               3.162440 ^ _6125_/CLK (sky130_fd_sc_hs__dfrtp_1)
+  -0.149076    3.013364   library recovery time
+               3.013364   data required time
+-----------------------------------------------------------------
+               3.013364   data required time
+              -0.736628   data arrival time
+-----------------------------------------------------------------
+               2.276736   slack (MET)
+
+
+Startpoint: _6193_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6128_ (recovery check against rising-edge clock dec_clk)
+Path Group: asynchronous
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock dec_clk (rise edge)
+   0.224432    0.224432   clock network delay (propagated)
+   0.000000    0.224432 ^ _6193_/CLK (sky130_fd_sc_hs__dfrtp_2)
+   0.340117    0.564549 ^ _6193_/Q (sky130_fd_sc_hs__dfrtp_2)
+   0.163141    0.727690 ^ load_slew301/X (sky130_fd_sc_hs__buf_8)
+   0.008681    0.736371 ^ _6128_/RESET_B (sky130_fd_sc_hs__dfrtp_1)
+               0.736371   data arrival time
+
+   3.000000    3.000000   clock dec_clk (rise edge)
+   0.222443    3.222443   clock network delay (propagated)
+  -0.060000    3.162443   clock uncertainty
+   0.000000    3.162443   clock reconvergence pessimism
+               3.162443 ^ _6128_/CLK (sky130_fd_sc_hs__dfrtp_1)
+  -0.149060    3.013383   library recovery time
+               3.013383   data required time
+-----------------------------------------------------------------
+               3.013383   data required time
+              -0.736371   data arrival time
+-----------------------------------------------------------------
+               2.277012   slack (MET)
+
+
+Startpoint: _6193_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6129_ (recovery check against rising-edge clock dec_clk)
+Path Group: asynchronous
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock dec_clk (rise edge)
+   0.224432    0.224432   clock network delay (propagated)
+   0.000000    0.224432 ^ _6193_/CLK (sky130_fd_sc_hs__dfrtp_2)
+   0.340117    0.564549 ^ _6193_/Q (sky130_fd_sc_hs__dfrtp_2)
+   0.163141    0.727690 ^ load_slew301/X (sky130_fd_sc_hs__buf_8)
+   0.008065    0.735756 ^ _6129_/RESET_B (sky130_fd_sc_hs__dfrtp_1)
+               0.735756   data arrival time
+
+   3.000000    3.000000   clock dec_clk (rise edge)
+   0.221999    3.221998   clock network delay (propagated)
+  -0.060000    3.161999   clock uncertainty
+   0.000000    3.161999   clock reconvergence pessimism
+               3.161999 ^ _6129_/CLK (sky130_fd_sc_hs__dfrtp_1)
+  -0.149026    3.012973   library recovery time
+               3.012973   data required time
+-----------------------------------------------------------------
+               3.012973   data required time
+              -0.735756   data arrival time
+-----------------------------------------------------------------
+               2.277217   slack (MET)
+
+
+Startpoint: _6193_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6100_ (recovery check against rising-edge clock dec_clk)
+Path Group: asynchronous
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock dec_clk (rise edge)
+   0.224432    0.224432   clock network delay (propagated)
+   0.000000    0.224432 ^ _6193_/CLK (sky130_fd_sc_hs__dfrtp_2)
+   0.340117    0.564549 ^ _6193_/Q (sky130_fd_sc_hs__dfrtp_2)
+   0.163141    0.727690 ^ load_slew301/X (sky130_fd_sc_hs__buf_8)
+   0.007948    0.735639 ^ _6100_/RESET_B (sky130_fd_sc_hs__dfrtp_1)
+               0.735639   data arrival time
+
+   3.000000    3.000000   clock dec_clk (rise edge)
+   0.222118    3.222118   clock network delay (propagated)
+  -0.060000    3.162117   clock uncertainty
+   0.000000    3.162117   clock reconvergence pessimism
+               3.162117 ^ _6100_/CLK (sky130_fd_sc_hs__dfrtp_1)
+  -0.149019    3.013098   library recovery time
+               3.013098   data required time
+-----------------------------------------------------------------
+               3.013098   data required time
+              -0.735639   data arrival time
+-----------------------------------------------------------------
+               2.277460   slack (MET)
+
+
+Startpoint: _6193_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6190_ (recovery check against rising-edge clock dec_clk)
+Path Group: asynchronous
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock dec_clk (rise edge)
+   0.224432    0.224432   clock network delay (propagated)
+   0.000000    0.224432 ^ _6193_/CLK (sky130_fd_sc_hs__dfrtp_2)
+   0.340117    0.564549 ^ _6193_/Q (sky130_fd_sc_hs__dfrtp_2)
+   0.163141    0.727690 ^ load_slew301/X (sky130_fd_sc_hs__buf_8)
+   0.007321    0.735011 ^ _6190_/RESET_B (sky130_fd_sc_hs__dfrtp_1)
+               0.735011   data arrival time
+
+   3.000000    3.000000   clock dec_clk (rise edge)
+   0.222867    3.222867   clock network delay (propagated)
+  -0.060000    3.162867   clock uncertainty
+   0.000000    3.162867   clock reconvergence pessimism
+               3.162867 ^ _6190_/CLK (sky130_fd_sc_hs__dfrtp_1)
+  -0.148724    3.014142   library recovery time
+               3.014142   data required time
+-----------------------------------------------------------------
+               3.014142   data required time
+              -0.735011   data arrival time
+-----------------------------------------------------------------
+               2.279131   slack (MET)
+
+
+Startpoint: _6193_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6185_ (recovery check against rising-edge clock dec_clk)
+Path Group: asynchronous
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock dec_clk (rise edge)
+   0.224432    0.224432   clock network delay (propagated)
+   0.000000    0.224432 ^ _6193_/CLK (sky130_fd_sc_hs__dfrtp_2)
+   0.340117    0.564549 ^ _6193_/Q (sky130_fd_sc_hs__dfrtp_2)
+   0.163141    0.727690 ^ load_slew301/X (sky130_fd_sc_hs__buf_8)
+   0.007193    0.734884 ^ _6185_/RESET_B (sky130_fd_sc_hs__dfrtp_1)
+               0.734884   data arrival time
+
+   3.000000    3.000000   clock dec_clk (rise edge)
+   0.223093    3.223093   clock network delay (propagated)
+  -0.060000    3.163093   clock uncertainty
+   0.000000    3.163093   clock reconvergence pessimism
+               3.163093 ^ _6185_/CLK (sky130_fd_sc_hs__dfrtp_1)
+  -0.148717    3.014376   library recovery time
+               3.014376   data required time
+-----------------------------------------------------------------
+               3.014376   data required time
+              -0.734884   data arrival time
+-----------------------------------------------------------------
+               2.279492   slack (MET)
+
+
+Startpoint: _6193_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6123_ (recovery check against rising-edge clock dec_clk)
+Path Group: asynchronous
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock dec_clk (rise edge)
+   0.224432    0.224432   clock network delay (propagated)
+   0.000000    0.224432 ^ _6193_/CLK (sky130_fd_sc_hs__dfrtp_2)
+   0.340117    0.564549 ^ _6193_/Q (sky130_fd_sc_hs__dfrtp_2)
+   0.163141    0.727690 ^ load_slew301/X (sky130_fd_sc_hs__buf_8)
+   0.006177    0.733867 ^ _6123_/RESET_B (sky130_fd_sc_hs__dfrtp_1)
+               0.733867   data arrival time
+
+   3.000000    3.000000   clock dec_clk (rise edge)
+   0.223205    3.223205   clock network delay (propagated)
+  -0.060000    3.163205   clock uncertainty
+   0.000000    3.163205   clock reconvergence pessimism
+               3.163205 ^ _6123_/CLK (sky130_fd_sc_hs__dfrtp_1)
+  -0.148669    3.014536   library recovery time
+               3.014536   data required time
+-----------------------------------------------------------------
+               3.014536   data required time
+              -0.733867   data arrival time
+-----------------------------------------------------------------
+               2.280668   slack (MET)
+
+

@@ -1,0 +1,3871 @@
+{
+  "candidate_usage_source": "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/verification/candidate_v1/reports/design_cell_usage.json",
+  "candidate_usage_sha256": "fd129d0e2c6dc3e8f96ca5318bfdad975a2634e7cf514b911cdd5f5784afc85a",
+  "selected_reference_commit": "968e0c3b60c103c2df1da4981b11ff603d55a88a",
+  "used_master_count": 99,
+  "instance_count": 14657,
+  "new_filler_masters": {
+    "sky130_fd_sc_hs__fill_1": 1941,
+    "sky130_fd_sc_hs__fill_2": 1590,
+    "sky130_fd_sc_hs__fill_4": 1349,
+    "sky130_fd_sc_hs__fill_8": 4012
+  },
+  "gds_byte_identical_count": 99,
+  "pin_order_match_count": 99,
+  "spice_coverage_count": 99,
+  "cdl_coverage_count": 99,
+  "cells": [
+    {
+      "cell": "sky130_fd_sc_hs__a2111oi_1",
+      "instance_count": 5,
+      "gds_path": "cells/a2111oi/sky130_fd_sc_hs__a2111oi_1.gds",
+      "original_gds_blob_sha1": "5a178c4a433170cf801df4672a54dfb5f0381b12",
+      "selected_gds_blob_sha1": "5a178c4a433170cf801df4672a54dfb5f0381b12",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/a2111oi/sky130_fd_sc_hs__a2111oi_1.spice",
+        "sha256": "804fac45269422d34db8b440e00e37ef4260d6e3b4ae41da1880dd964d604ac9",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "C1",
+          "D1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/a2111oi/sky130_fd_sc_hs__a2111oi_1.cdl",
+        "sha256": "c0abdba7cb6495f5d86c6782e118170d696a8b0046a61afe65ab4e85d09f9252",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "C1",
+          "D1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__a211o_1",
+      "instance_count": 3,
+      "gds_path": "cells/a211o/sky130_fd_sc_hs__a211o_1.gds",
+      "original_gds_blob_sha1": "c98fab38415788edf6d4c5a5db1683ddd11a12e0",
+      "selected_gds_blob_sha1": "c98fab38415788edf6d4c5a5db1683ddd11a12e0",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/a211o/sky130_fd_sc_hs__a211o_1.spice",
+        "sha256": "2c48b4c6d81a8502239845835122eac4164a3406a002b24c0fd394ffaad6f162",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "C1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/a211o/sky130_fd_sc_hs__a211o_1.cdl",
+        "sha256": "ab023fb0063971c73c4ccf1ab78286a7ad88d4003c84af1b09d1b19a7fd5709d",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "C1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__a211oi_1",
+      "instance_count": 11,
+      "gds_path": "cells/a211oi/sky130_fd_sc_hs__a211oi_1.gds",
+      "original_gds_blob_sha1": "95fd1ea79c752955165f7e19f9dfbbb41510ee33",
+      "selected_gds_blob_sha1": "95fd1ea79c752955165f7e19f9dfbbb41510ee33",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/a211oi/sky130_fd_sc_hs__a211oi_1.spice",
+        "sha256": "5dece606aca1b0c9135473484b32472e95c1c116b97aa621c50a734b04df9d07",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "C1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/a211oi/sky130_fd_sc_hs__a211oi_1.cdl",
+        "sha256": "d602f40dd7328eca2be967ca6c362891790eb5ca16b21a90c3c6c95eac68f1dc",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "C1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__a21bo_1",
+      "instance_count": 1,
+      "gds_path": "cells/a21bo/sky130_fd_sc_hs__a21bo_1.gds",
+      "original_gds_blob_sha1": "258d42f7c6686d8e7a24f26060ca4049cba6429c",
+      "selected_gds_blob_sha1": "258d42f7c6686d8e7a24f26060ca4049cba6429c",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/a21bo/sky130_fd_sc_hs__a21bo_1.spice",
+        "sha256": "6c4e1e466e531841c7ab8223415d4e1aeb70bdf4b0b4c86e76908e3814291890",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1_N",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/a21bo/sky130_fd_sc_hs__a21bo_1.cdl",
+        "sha256": "3758a97e8eebd6a97b61901b5b00b90637f27439c1aa4c382f5a5a1e7f6dc8d4",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1_N",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__a21o_1",
+      "instance_count": 9,
+      "gds_path": "cells/a21o/sky130_fd_sc_hs__a21o_1.gds",
+      "original_gds_blob_sha1": "3dc3a2516070e026e4405174a8217142fd0ff599",
+      "selected_gds_blob_sha1": "3dc3a2516070e026e4405174a8217142fd0ff599",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/a21o/sky130_fd_sc_hs__a21o_1.spice",
+        "sha256": "25b6f5a9576349543ba22360ab11962f9e8b4d0142e654cb1f9b276f18cc72c1",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/a21o/sky130_fd_sc_hs__a21o_1.cdl",
+        "sha256": "5e5ac2c34146e71db3594b9b672556d5250ffe86972731d7e187551aa6d823d9",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__a21oi_1",
+      "instance_count": 210,
+      "gds_path": "cells/a21oi/sky130_fd_sc_hs__a21oi_1.gds",
+      "original_gds_blob_sha1": "51793235f02db175102bc1efd0f31108d1cb4aa3",
+      "selected_gds_blob_sha1": "51793235f02db175102bc1efd0f31108d1cb4aa3",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/a21oi/sky130_fd_sc_hs__a21oi_1.spice",
+        "sha256": "ed99d077aea4229a0b556bb1afae10eca3614d7dfff16493c4bebd7a00495428",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/a21oi/sky130_fd_sc_hs__a21oi_1.cdl",
+        "sha256": "b6e0668fd5d23253e9e726b6d4148c067da6a155be0e7216d5c002a13a0a2a32",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__a21oi_4",
+      "instance_count": 1,
+      "gds_path": "cells/a21oi/sky130_fd_sc_hs__a21oi_4.gds",
+      "original_gds_blob_sha1": "2d72ac3d994423640fade934b39d2a069ba6a8cf",
+      "selected_gds_blob_sha1": "2d72ac3d994423640fade934b39d2a069ba6a8cf",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/a21oi/sky130_fd_sc_hs__a21oi_4.spice",
+        "sha256": "cb852529ec6b55673fc34eb7006cd1b6a67eb0f3264fd9753670a739069dd7c1",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/a21oi/sky130_fd_sc_hs__a21oi_4.cdl",
+        "sha256": "02d586a3c62c3ad10e567df332cfe0b6e72d0879a009a926cf8808ea2fd1b4cc",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__a221o_1",
+      "instance_count": 2,
+      "gds_path": "cells/a221o/sky130_fd_sc_hs__a221o_1.gds",
+      "original_gds_blob_sha1": "3db2e89cdaf528f9babdfbd7452b3ba8ad44dcb0",
+      "selected_gds_blob_sha1": "3db2e89cdaf528f9babdfbd7452b3ba8ad44dcb0",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/a221o/sky130_fd_sc_hs__a221o_1.spice",
+        "sha256": "89983ea1867c1733c9bc4ff22d1475fc254721778a9140d0cece8850d4deb059",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/a221o/sky130_fd_sc_hs__a221o_1.cdl",
+        "sha256": "9944f76b8de2b24912da87ab51ef245145a51e0160481fed151a8c725c8258a0",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__a221oi_1",
+      "instance_count": 11,
+      "gds_path": "cells/a221oi/sky130_fd_sc_hs__a221oi_1.gds",
+      "original_gds_blob_sha1": "f8584584341a2c782ddfcc6e3ac278c48e7e73b9",
+      "selected_gds_blob_sha1": "f8584584341a2c782ddfcc6e3ac278c48e7e73b9",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/a221oi/sky130_fd_sc_hs__a221oi_1.spice",
+        "sha256": "81cb22373e201a23d01c43c2bd9a4816c44e80b3d8c9e33ae533b0a8b90d1561",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/a221oi/sky130_fd_sc_hs__a221oi_1.cdl",
+        "sha256": "ff76e0e8e8c838f7fdeea9e59196bb733bffc785f7d10971419f5b2c8a63af53",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__a222o_1",
+      "instance_count": 8,
+      "gds_path": "cells/a222o/sky130_fd_sc_hs__a222o_1.gds",
+      "original_gds_blob_sha1": "f817c3f39f1ed65f8ea630483b1cd12190729341",
+      "selected_gds_blob_sha1": "f817c3f39f1ed65f8ea630483b1cd12190729341",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/a222o/sky130_fd_sc_hs__a222o_1.spice",
+        "sha256": "677796ab7329d194f096e00e4b2d2db8e511fef5388540cd9ffa783105394916",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1",
+          "C2",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/a222o/sky130_fd_sc_hs__a222o_1.cdl",
+        "sha256": "371064f78107aef0bc81440975315568a72305958b940e188ed3f5ff24359d15",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1",
+          "C2",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__a222oi_1",
+      "instance_count": 29,
+      "gds_path": "cells/a222oi/sky130_fd_sc_hs__a222oi_1.gds",
+      "original_gds_blob_sha1": "455bc4ec50aaa86ee1a36de1912534f5a45f2cf6",
+      "selected_gds_blob_sha1": "455bc4ec50aaa86ee1a36de1912534f5a45f2cf6",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/a222oi/sky130_fd_sc_hs__a222oi_1.spice",
+        "sha256": "0c42b55eb6784aad6a75ce236cc47f8b791eb090e8f7ec1af2ab49f7762f9fcf",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1",
+          "C2",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/a222oi/sky130_fd_sc_hs__a222oi_1.cdl",
+        "sha256": "238c632abc7411bf10e243ebe069c18748e6cd0b49aaaffddb0b91fa4803bb7b",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1",
+          "C2",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__a22o_1",
+      "instance_count": 144,
+      "gds_path": "cells/a22o/sky130_fd_sc_hs__a22o_1.gds",
+      "original_gds_blob_sha1": "da818dece50c6b17ddd6a35757991a078ee96496",
+      "selected_gds_blob_sha1": "da818dece50c6b17ddd6a35757991a078ee96496",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/a22o/sky130_fd_sc_hs__a22o_1.spice",
+        "sha256": "5b4cf012ebed27e893f60ab42acdf0e059ff7a76b418ecae7f637505dec2e93a",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/a22o/sky130_fd_sc_hs__a22o_1.cdl",
+        "sha256": "873849892e1ce29dc2b247faa6e71f6845f7244a73bb829486c2d79e45fdeb1b",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__a22oi_1",
+      "instance_count": 121,
+      "gds_path": "cells/a22oi/sky130_fd_sc_hs__a22oi_1.gds",
+      "original_gds_blob_sha1": "977f106a971d2c2a2ba2075f0cc716dd53ef51ee",
+      "selected_gds_blob_sha1": "977f106a971d2c2a2ba2075f0cc716dd53ef51ee",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/a22oi/sky130_fd_sc_hs__a22oi_1.spice",
+        "sha256": "52ecce1ee2dad5069d9c5f280d31da8a154669a0bae05a8c9325a4ab62738b23",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/a22oi/sky130_fd_sc_hs__a22oi_1.cdl",
+        "sha256": "d679aafa259d11219583f1b82fbae2b2aaa986e014445693cf33594f7ad0cea2",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__a311o_1",
+      "instance_count": 7,
+      "gds_path": "cells/a311o/sky130_fd_sc_hs__a311o_1.gds",
+      "original_gds_blob_sha1": "902c29c22bea1a2b00a0a9fd4a6d13159ad2d652",
+      "selected_gds_blob_sha1": "902c29c22bea1a2b00a0a9fd4a6d13159ad2d652",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/a311o/sky130_fd_sc_hs__a311o_1.spice",
+        "sha256": "02b084f79d92bd33f67337e5a7bf3fab5e28bc529195dd29e99dd8ea50623711",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "C1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/a311o/sky130_fd_sc_hs__a311o_1.cdl",
+        "sha256": "7afd0a22ca8f7159c19d12353ab4aefca2d003d51468568d9fe6a164cddfe7b8",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "C1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__a311oi_1",
+      "instance_count": 15,
+      "gds_path": "cells/a311oi/sky130_fd_sc_hs__a311oi_1.gds",
+      "original_gds_blob_sha1": "88aaf24c547dcd0a7fe5144c29dcf1d6c1803a7e",
+      "selected_gds_blob_sha1": "88aaf24c547dcd0a7fe5144c29dcf1d6c1803a7e",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/a311oi/sky130_fd_sc_hs__a311oi_1.spice",
+        "sha256": "000b4aa380ff4e62b1626d81a9da7041e6784502048de1c4486467ffbf4f3913",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "C1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/a311oi/sky130_fd_sc_hs__a311oi_1.cdl",
+        "sha256": "9e2d11a04daee66386287e96a7b4a234dad5c2facf5413270b66de190d031d35",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "C1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__a31o_1",
+      "instance_count": 15,
+      "gds_path": "cells/a31o/sky130_fd_sc_hs__a31o_1.gds",
+      "original_gds_blob_sha1": "19a4dc388c3919d3977ef4f9edcb06972835e9b5",
+      "selected_gds_blob_sha1": "19a4dc388c3919d3977ef4f9edcb06972835e9b5",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/a31o/sky130_fd_sc_hs__a31o_1.spice",
+        "sha256": "580873c772659c88b3d50bd05c757b9159433bf0ea7ead70df3eeee3fd5f488b",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/a31o/sky130_fd_sc_hs__a31o_1.cdl",
+        "sha256": "d4712c8d8c7d0b85409d3a7718eade2a7dce937bcb4f6dfb91d3754b1edca320",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__a31oi_1",
+      "instance_count": 15,
+      "gds_path": "cells/a31oi/sky130_fd_sc_hs__a31oi_1.gds",
+      "original_gds_blob_sha1": "1226fcda7101e71ad27d7e0ff2de24f4bd375e00",
+      "selected_gds_blob_sha1": "1226fcda7101e71ad27d7e0ff2de24f4bd375e00",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/a31oi/sky130_fd_sc_hs__a31oi_1.spice",
+        "sha256": "b170d90c09876b7541b04bbe73e666ec60b281266140b1bdbd616e3ca03ebcf9",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/a31oi/sky130_fd_sc_hs__a31oi_1.cdl",
+        "sha256": "9c15fdd4b3d3e6a00cc606c3488790d02f86d9e983d49b3657d29532548a97d6",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__a32o_1",
+      "instance_count": 16,
+      "gds_path": "cells/a32o/sky130_fd_sc_hs__a32o_1.gds",
+      "original_gds_blob_sha1": "e6cc12744da7e007b3de2de8630b0a08d1428249",
+      "selected_gds_blob_sha1": "e6cc12744da7e007b3de2de8630b0a08d1428249",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/a32o/sky130_fd_sc_hs__a32o_1.spice",
+        "sha256": "dcb7f4aab0dbf93d4011a83fb286f9ed2a97ee932df10d975a456eba7857273e",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "B2",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/a32o/sky130_fd_sc_hs__a32o_1.cdl",
+        "sha256": "dac18cab928c473af1648be263fcb7e4f897f2a2ff44edfce4d03b75f63fbc3e",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "B2",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__a32oi_1",
+      "instance_count": 2,
+      "gds_path": "cells/a32oi/sky130_fd_sc_hs__a32oi_1.gds",
+      "original_gds_blob_sha1": "77bffbe97a80ffb59f3a0f47b86a39b4e56ba34f",
+      "selected_gds_blob_sha1": "77bffbe97a80ffb59f3a0f47b86a39b4e56ba34f",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/a32oi/sky130_fd_sc_hs__a32oi_1.spice",
+        "sha256": "f154ad1e316c8e78cc3fa117da0767002e58a90931034dd6aeeb46394a6eae8a",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "B2",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/a32oi/sky130_fd_sc_hs__a32oi_1.cdl",
+        "sha256": "32170054bb864dbdd0e709f05a89e1a70adca9e5717d0a48cd7439a4f66b9452",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "B2",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__a41o_1",
+      "instance_count": 1,
+      "gds_path": "cells/a41o/sky130_fd_sc_hs__a41o_1.gds",
+      "original_gds_blob_sha1": "14027f02bbcdf4932455c9334ed4cf2d007e98e3",
+      "selected_gds_blob_sha1": "14027f02bbcdf4932455c9334ed4cf2d007e98e3",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/a41o/sky130_fd_sc_hs__a41o_1.spice",
+        "sha256": "974718391900b3c6d96dbaf9018b20749cd2d18ee0718d3c1891bf65f740c837",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/a41o/sky130_fd_sc_hs__a41o_1.cdl",
+        "sha256": "469c23a902c9226322f3ec5f07e8e58044539c0f642454d21e06226ad4fc2e93",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__a41oi_1",
+      "instance_count": 3,
+      "gds_path": "cells/a41oi/sky130_fd_sc_hs__a41oi_1.gds",
+      "original_gds_blob_sha1": "2992deb397c350d290b8a50a077993d361b143ab",
+      "selected_gds_blob_sha1": "2992deb397c350d290b8a50a077993d361b143ab",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/a41oi/sky130_fd_sc_hs__a41oi_1.spice",
+        "sha256": "e5512aa679312336548d544578172db6c442c7c90534251002065eb8db5387af",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/a41oi/sky130_fd_sc_hs__a41oi_1.cdl",
+        "sha256": "ff8fd0351554fe39df89c7ffcde72f6fd1cc68e4adfae14706746cec53de4bb9",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__and2_1",
+      "instance_count": 51,
+      "gds_path": "cells/and2/sky130_fd_sc_hs__and2_1.gds",
+      "original_gds_blob_sha1": "07dd95c16566305861f0f5f63633fc369c5b9688",
+      "selected_gds_blob_sha1": "07dd95c16566305861f0f5f63633fc369c5b9688",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/and2/sky130_fd_sc_hs__and2_1.spice",
+        "sha256": "c27a9dec04adc58ae662fe5a42780ed2e876771a121ebac4bf7665a2e4d46bb6",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/and2/sky130_fd_sc_hs__and2_1.cdl",
+        "sha256": "2f909fe60376363adf31d4cdaf2a66727953cc42a516e0928d7342e39b610322",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__and3_1",
+      "instance_count": 15,
+      "gds_path": "cells/and3/sky130_fd_sc_hs__and3_1.gds",
+      "original_gds_blob_sha1": "556ad3f52bc479b9ab7cbe4b6d1c9bacd33b384d",
+      "selected_gds_blob_sha1": "556ad3f52bc479b9ab7cbe4b6d1c9bacd33b384d",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/and3/sky130_fd_sc_hs__and3_1.spice",
+        "sha256": "282a8e43cbb9c377d941783d91bf975a0c58179f8a741694bfb89af63ffbffdf",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/and3/sky130_fd_sc_hs__and3_1.cdl",
+        "sha256": "71e193e6893a5ed702978321ab431d207579f7cb350195a6c2e885262dcbdf41",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__and3b_1",
+      "instance_count": 1,
+      "gds_path": "cells/and3b/sky130_fd_sc_hs__and3b_1.gds",
+      "original_gds_blob_sha1": "f8c90dd4b44855b6afe0745b982e759cc7c4d364",
+      "selected_gds_blob_sha1": "f8c90dd4b44855b6afe0745b982e759cc7c4d364",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/and3b/sky130_fd_sc_hs__and3b_1.spice",
+        "sha256": "e51fe38d3f063aaf1c3dcf856e27c83b01a7fe8ad0f2d7baeb3f4b4443f95ee7",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A_N",
+          "B",
+          "C",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/and3b/sky130_fd_sc_hs__and3b_1.cdl",
+        "sha256": "cd8c50a864c0e24654d2c32b63e7577cdbcddbaeb1e4c113c5725cc4e8477580",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A_N",
+          "B",
+          "C",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__and4_1",
+      "instance_count": 8,
+      "gds_path": "cells/and4/sky130_fd_sc_hs__and4_1.gds",
+      "original_gds_blob_sha1": "63bd4865977aa7da64bfb87715dbd7cab1d36cbf",
+      "selected_gds_blob_sha1": "63bd4865977aa7da64bfb87715dbd7cab1d36cbf",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/and4/sky130_fd_sc_hs__and4_1.spice",
+        "sha256": "8860960a1c20e68fc440aa56b0524895f0c579eb62aef49b4546f841b5e13a32",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/and4/sky130_fd_sc_hs__and4_1.cdl",
+        "sha256": "90cb18e4e03e794dffe6c7ff691edc74cb45abcd88a493c4ae744b9326a002c2",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__buf_1",
+      "instance_count": 192,
+      "gds_path": "cells/buf/sky130_fd_sc_hs__buf_1.gds",
+      "original_gds_blob_sha1": "75c96c76dabcf5cc8754891a7dbc56d093b030d3",
+      "selected_gds_blob_sha1": "75c96c76dabcf5cc8754891a7dbc56d093b030d3",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/buf/sky130_fd_sc_hs__buf_1.spice",
+        "sha256": "6495f3252a17e96da3f6027605205586ae56777e4a530a15b279905ff0594fee",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/buf/sky130_fd_sc_hs__buf_1.cdl",
+        "sha256": "416e9bc40059f69c51eaf3b0cf3cc6a99688aa47c98e6df88f39688235f595a7",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__buf_16",
+      "instance_count": 17,
+      "gds_path": "cells/buf/sky130_fd_sc_hs__buf_16.gds",
+      "original_gds_blob_sha1": "a0ec9789936aeb055291a2a914ee080c68c49de4",
+      "selected_gds_blob_sha1": "a0ec9789936aeb055291a2a914ee080c68c49de4",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/buf/sky130_fd_sc_hs__buf_16.spice",
+        "sha256": "2dd65d6d335d3c1475d41ac17b5ef8e2248035094b5261af7535942dd26a6be2",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/buf/sky130_fd_sc_hs__buf_16.cdl",
+        "sha256": "92f47bd8539df0befc2542696b9a6251014f25e867b67a47d9d503dfbe7978cd",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__buf_2",
+      "instance_count": 1,
+      "gds_path": "cells/buf/sky130_fd_sc_hs__buf_2.gds",
+      "original_gds_blob_sha1": "e6c45b6fb9b1e08cfcc788634f572ab9ed8118c7",
+      "selected_gds_blob_sha1": "e6c45b6fb9b1e08cfcc788634f572ab9ed8118c7",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/buf/sky130_fd_sc_hs__buf_2.spice",
+        "sha256": "57e98356c16beb8d612ff2c9a41bfee42b59a217c0a4192f0b033d95d075a620",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/buf/sky130_fd_sc_hs__buf_2.cdl",
+        "sha256": "4c98ef252f58dddb3982a5dde91514603e386cda15737ebc937d0cd0c48b2396",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__buf_4",
+      "instance_count": 8,
+      "gds_path": "cells/buf/sky130_fd_sc_hs__buf_4.gds",
+      "original_gds_blob_sha1": "67d57dafd21c8ed21606becdaaf8a4a7bf6caf52",
+      "selected_gds_blob_sha1": "67d57dafd21c8ed21606becdaaf8a4a7bf6caf52",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/buf/sky130_fd_sc_hs__buf_4.spice",
+        "sha256": "d86e8fefed93f30466ca2a66e9df7c928e87b8be3ee94f55fa80181dc620eb32",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/buf/sky130_fd_sc_hs__buf_4.cdl",
+        "sha256": "a2ed17cf8729c8f125a59a13d5e70942f431d102c5b8f1b38e91ed97c5b9e643",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__buf_8",
+      "instance_count": 39,
+      "gds_path": "cells/buf/sky130_fd_sc_hs__buf_8.gds",
+      "original_gds_blob_sha1": "9a3e3baf9c787ba4ffbf0992adf3a4ba10147826",
+      "selected_gds_blob_sha1": "9a3e3baf9c787ba4ffbf0992adf3a4ba10147826",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/buf/sky130_fd_sc_hs__buf_8.spice",
+        "sha256": "7ce9d201dc059215932f752b3ab29b9cdd2fd71726eeb073e48ed4eb5559d602",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/buf/sky130_fd_sc_hs__buf_8.cdl",
+        "sha256": "020ce4fc0ee0313599aa423c97c672212c02966878dff44e645f17838421f450",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "instance_count": 28,
+      "gds_path": "cells/clkbuf/sky130_fd_sc_hs__clkbuf_16.gds",
+      "original_gds_blob_sha1": "330a55285c4afa3ef1e09eb188e5d908b75c533d",
+      "selected_gds_blob_sha1": "330a55285c4afa3ef1e09eb188e5d908b75c533d",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/clkbuf/sky130_fd_sc_hs__clkbuf_16.spice",
+        "sha256": "f2b71bc0f27a76b910687ed2a4a4cd1acf8ccb3b96b92213a041eb8cdb4d3ac8",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/clkbuf/sky130_fd_sc_hs__clkbuf_16.cdl",
+        "sha256": "97acbf3351f5fed3f4f4803b4c741363c6f6d7ad31b1a437324838c9c04dfeff",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "instance_count": 244,
+      "gds_path": "cells/clkbuf/sky130_fd_sc_hs__clkbuf_2.gds",
+      "original_gds_blob_sha1": "7520a0e4a05066ce2bbcedfb690c16a644f5afbf",
+      "selected_gds_blob_sha1": "7520a0e4a05066ce2bbcedfb690c16a644f5afbf",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/clkbuf/sky130_fd_sc_hs__clkbuf_2.spice",
+        "sha256": "e6a7d63b868146b5db298881ee7eefd8b931818e8dfce02e98ad7666ac860f28",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/clkbuf/sky130_fd_sc_hs__clkbuf_2.cdl",
+        "sha256": "e4c3a1193ac2e9e7d237c239701316277fd6c41dba0f4a4d83fb626094f5db9e",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__clkbuf_4",
+      "instance_count": 57,
+      "gds_path": "cells/clkbuf/sky130_fd_sc_hs__clkbuf_4.gds",
+      "original_gds_blob_sha1": "ea7a605bd85a9a360d09fee9f5a69017a4e352df",
+      "selected_gds_blob_sha1": "ea7a605bd85a9a360d09fee9f5a69017a4e352df",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/clkbuf/sky130_fd_sc_hs__clkbuf_4.spice",
+        "sha256": "56f15835a5ac0a4e31f565183365778f907161f6ae72dd77c1fb7f38e38d375c",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/clkbuf/sky130_fd_sc_hs__clkbuf_4.cdl",
+        "sha256": "2225a55be82b95e74253d38cc6f4b73bb4f1007fbc5d66433f03d0e37aad1de8",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "instance_count": 20,
+      "gds_path": "cells/clkbuf/sky130_fd_sc_hs__clkbuf_8.gds",
+      "original_gds_blob_sha1": "b363325df4e1edfd415a1207f30d5c15b5b39e0d",
+      "selected_gds_blob_sha1": "b363325df4e1edfd415a1207f30d5c15b5b39e0d",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/clkbuf/sky130_fd_sc_hs__clkbuf_8.spice",
+        "sha256": "74e57e19400f34177de62d8b57a0b6239094bdf1b345bf7fba8b8d6cf4b37d30",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/clkbuf/sky130_fd_sc_hs__clkbuf_8.cdl",
+        "sha256": "bd4b8f006dfd46725c2604e93435ec812f424c7075f04395cee293434a3fd04c",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__clkinv_1",
+      "instance_count": 164,
+      "gds_path": "cells/clkinv/sky130_fd_sc_hs__clkinv_1.gds",
+      "original_gds_blob_sha1": "51d01a3a1fb04d359033917b342a87dceb71d24f",
+      "selected_gds_blob_sha1": "51d01a3a1fb04d359033917b342a87dceb71d24f",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/clkinv/sky130_fd_sc_hs__clkinv_1.spice",
+        "sha256": "f1098d91a98744970421c59f193329060840726975536d607535cd92c60899ab",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/clkinv/sky130_fd_sc_hs__clkinv_1.cdl",
+        "sha256": "2b0e95ad9a0ed9118830228c2436cbe665e777e7b35af77b5a80316b2d4e11ff",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__clkinv_2",
+      "instance_count": 13,
+      "gds_path": "cells/clkinv/sky130_fd_sc_hs__clkinv_2.gds",
+      "original_gds_blob_sha1": "949293a8bf31e083a5b964d90dbd34e1ed0ada30",
+      "selected_gds_blob_sha1": "949293a8bf31e083a5b964d90dbd34e1ed0ada30",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/clkinv/sky130_fd_sc_hs__clkinv_2.spice",
+        "sha256": "3c5f4a1b9522c1e93cbac1eb0bddd9c2c12d701ac3cbef6a6aa100063c8cea14",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/clkinv/sky130_fd_sc_hs__clkinv_2.cdl",
+        "sha256": "91feb5ad7d95ef5524d54cbdd41ae0c2bc7e844c423dc045e50f0553f3ecc5cb",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__clkinv_4",
+      "instance_count": 8,
+      "gds_path": "cells/clkinv/sky130_fd_sc_hs__clkinv_4.gds",
+      "original_gds_blob_sha1": "38854671e288d771adca0aeb43285cee187eba94",
+      "selected_gds_blob_sha1": "38854671e288d771adca0aeb43285cee187eba94",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/clkinv/sky130_fd_sc_hs__clkinv_4.spice",
+        "sha256": "f56df22526de40cad3e25de498e0b0a052e28166b4ede7b7f0e16f23f31ca68f",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/clkinv/sky130_fd_sc_hs__clkinv_4.cdl",
+        "sha256": "69cac12f6ad07e82ff39148977cb8bd08a0f44f3741ea36bb6e37327c60a59bf",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__conb_1",
+      "instance_count": 2,
+      "gds_path": "cells/conb/sky130_fd_sc_hs__conb_1.gds",
+      "original_gds_blob_sha1": "209f17055aa1554a5772fc29d5c512c1cb88f88a",
+      "selected_gds_blob_sha1": "209f17055aa1554a5772fc29d5c512c1cb88f88a",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/conb/sky130_fd_sc_hs__conb_1.spice",
+        "sha256": "cf1e857c8df482c1a6c4d70126d0aee49326d30967697464dc9eacaf9adae920",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "HI",
+          "LO"
+        ]
+      },
+      "cdl": {
+        "path": "cells/conb/sky130_fd_sc_hs__conb_1.cdl",
+        "sha256": "433fc73ea3c691bdc7fe9ab79a5eff7b18edffb4b98de370b20a917a3f758ec2",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "HI",
+          "LO"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "instance_count": 836,
+      "gds_path": "cells/dfrtp/sky130_fd_sc_hs__dfrtp_1.gds",
+      "original_gds_blob_sha1": "c63414348806398f904866ffb39755c7d0101d21",
+      "selected_gds_blob_sha1": "c63414348806398f904866ffb39755c7d0101d21",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/dfrtp/sky130_fd_sc_hs__dfrtp_1.spice",
+        "sha256": "470d604d11f02a165e9573d9f00c7f84bd51dfe6070a10e39d3f32da20341bf8",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "CLK",
+          "D",
+          "RESET_B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Q"
+        ]
+      },
+      "cdl": {
+        "path": "cells/dfrtp/sky130_fd_sc_hs__dfrtp_1.cdl",
+        "sha256": "e1eb228ce74009512e9054608c57da1b4eeec28c16f9b1fdd1df391a7b0ad77d",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "CLK",
+          "D",
+          "RESET_B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Q"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__dfrtp_2",
+      "instance_count": 5,
+      "gds_path": "cells/dfrtp/sky130_fd_sc_hs__dfrtp_2.gds",
+      "original_gds_blob_sha1": "c07e17f6aafe0a08b3cff5b52a9d2966528ae0ff",
+      "selected_gds_blob_sha1": "c07e17f6aafe0a08b3cff5b52a9d2966528ae0ff",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/dfrtp/sky130_fd_sc_hs__dfrtp_2.spice",
+        "sha256": "c6da0d65bc237871887a2f67d0ba467dc3abf846aef69cc493c76c1441da07aa",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "CLK",
+          "D",
+          "RESET_B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Q"
+        ]
+      },
+      "cdl": {
+        "path": "cells/dfrtp/sky130_fd_sc_hs__dfrtp_2.cdl",
+        "sha256": "1127d62724538972e8a5a9d4cb928377df64f170e5dd54e4135386a662c95f1f",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "CLK",
+          "D",
+          "RESET_B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Q"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__dfstp_1",
+      "instance_count": 5,
+      "gds_path": "cells/dfstp/sky130_fd_sc_hs__dfstp_1.gds",
+      "original_gds_blob_sha1": "eb2ef72da6ec4664d92a8ef98c97f85cbe65185e",
+      "selected_gds_blob_sha1": "eb2ef72da6ec4664d92a8ef98c97f85cbe65185e",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/dfstp/sky130_fd_sc_hs__dfstp_1.spice",
+        "sha256": "b05f5826cfb57ae5d2490ea1889da25b90e3ace018655fabd952c60d3333737c",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "CLK",
+          "D",
+          "SET_B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Q"
+        ]
+      },
+      "cdl": {
+        "path": "cells/dfstp/sky130_fd_sc_hs__dfstp_1.cdl",
+        "sha256": "3d4e78dfe11bac8ea0ecb1e65168633adc56f6aa802e4bde31306e64cac79e3f",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "CLK",
+          "D",
+          "SET_B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Q"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__diode_2",
+      "instance_count": 8,
+      "gds_path": "cells/diode/sky130_fd_sc_hs__diode_2.gds",
+      "original_gds_blob_sha1": "371db0606e6e67170b0a3b795bd032893795a964",
+      "selected_gds_blob_sha1": "371db0606e6e67170b0a3b795bd032893795a964",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/diode/sky130_fd_sc_hs__diode_2.spice",
+        "sha256": "47b3c25790bc56b6aac1f9b15531bc050b29f9bff75832b232fd73694830bb5c",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "DIODE",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR"
+        ]
+      },
+      "cdl": {
+        "path": "cells/diode/sky130_fd_sc_hs__diode_2.cdl",
+        "sha256": "05fc1b2dcae621ccb8821b3239eb825aa39bc42ebbac83c2e8e9a44e5cac7f55",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "DIODE",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__dlygate4sd3_1",
+      "instance_count": 26,
+      "gds_path": "cells/dlygate4sd3/sky130_fd_sc_hs__dlygate4sd3_1.gds",
+      "original_gds_blob_sha1": "ec596f525fe8b7a7fcc0204506394364ce67eebe",
+      "selected_gds_blob_sha1": "ec596f525fe8b7a7fcc0204506394364ce67eebe",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/dlygate4sd3/sky130_fd_sc_hs__dlygate4sd3_1.spice",
+        "sha256": "d3687db04b92d588c523e8ad3c98eb33e2f5bfd5f482c5006b14c3d9d15e5f0c",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/dlygate4sd3/sky130_fd_sc_hs__dlygate4sd3_1.cdl",
+        "sha256": "5b6b2d3969834f22a4899c8145dd7bf27941b53242cac0ada650bf0466baef88",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__fill_1",
+      "instance_count": 1941,
+      "gds_path": "cells/fill/sky130_fd_sc_hs__fill_1.gds",
+      "original_gds_blob_sha1": "18b179a9753d2a4de7bcdf2f21de8c28ee63810c",
+      "selected_gds_blob_sha1": "18b179a9753d2a4de7bcdf2f21de8c28ee63810c",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/fill/sky130_fd_sc_hs__fill_1.spice",
+        "sha256": "b07dbd3d55d15594c77aa35e4a3cfcedccc03e070e704a00c5f31800fc2deab8",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR"
+        ]
+      },
+      "cdl": {
+        "path": "cells/fill/sky130_fd_sc_hs__fill_1.cdl",
+        "sha256": "adf80f5427ffad972263f5d18df03cc533442eedc326babb56d8530257d853fb",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__fill_2",
+      "instance_count": 1590,
+      "gds_path": "cells/fill/sky130_fd_sc_hs__fill_2.gds",
+      "original_gds_blob_sha1": "4600caa839afa42294e65807480a60fa85d4217c",
+      "selected_gds_blob_sha1": "4600caa839afa42294e65807480a60fa85d4217c",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/fill/sky130_fd_sc_hs__fill_2.spice",
+        "sha256": "5e735de5bbe409bac97dd12c172c10069e0152f7d0bd406ecb6f2dbfb7b4c392",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR"
+        ]
+      },
+      "cdl": {
+        "path": "cells/fill/sky130_fd_sc_hs__fill_2.cdl",
+        "sha256": "1e7729334d765e69a137be081cd04e2f85e08d6a75ed09fc16377d402abfb485",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__fill_4",
+      "instance_count": 1349,
+      "gds_path": "cells/fill/sky130_fd_sc_hs__fill_4.gds",
+      "original_gds_blob_sha1": "0811377e27a768734953cb12d352d4fca34e15a5",
+      "selected_gds_blob_sha1": "0811377e27a768734953cb12d352d4fca34e15a5",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/fill/sky130_fd_sc_hs__fill_4.spice",
+        "sha256": "141ff3f5b87b89e1e94f1251652f5bc7a63d04e7f72fb0696c0c390b11fd6df7",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR"
+        ]
+      },
+      "cdl": {
+        "path": "cells/fill/sky130_fd_sc_hs__fill_4.cdl",
+        "sha256": "a01155e7bf0677783fc4ecc0ac55227de8e32f29f024eefe9730bf6ca706775e",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__fill_8",
+      "instance_count": 4012,
+      "gds_path": "cells/fill/sky130_fd_sc_hs__fill_8.gds",
+      "original_gds_blob_sha1": "86b91b0c10aee030b4a730d292199daa5b7260c1",
+      "selected_gds_blob_sha1": "86b91b0c10aee030b4a730d292199daa5b7260c1",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/fill/sky130_fd_sc_hs__fill_8.spice",
+        "sha256": "68eb3b8b7dbf59204128b4aa64d8b8c944326523f4741d217ade720f33fe41fe",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR"
+        ]
+      },
+      "cdl": {
+        "path": "cells/fill/sky130_fd_sc_hs__fill_8.cdl",
+        "sha256": "0c32a366e910c0e1917b8e0e649844bfb5d9140557cee7af2fad27a4822e48c3",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__inv_8",
+      "instance_count": 2,
+      "gds_path": "cells/inv/sky130_fd_sc_hs__inv_8.gds",
+      "original_gds_blob_sha1": "6e798105abfdc04e304b9ad90441e763e63e23e4",
+      "selected_gds_blob_sha1": "6e798105abfdc04e304b9ad90441e763e63e23e4",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/inv/sky130_fd_sc_hs__inv_8.spice",
+        "sha256": "590ef04a78840b317b339cbd0c9ea4cb20af06416b404d5390cb6b26650f2823",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/inv/sky130_fd_sc_hs__inv_8.cdl",
+        "sha256": "5f6f09bb6de9e0538fe72742f394bda8ebf8399fc0bb332fd8fd8cb2eb8c5b84",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__maj3_1",
+      "instance_count": 69,
+      "gds_path": "cells/maj3/sky130_fd_sc_hs__maj3_1.gds",
+      "original_gds_blob_sha1": "f77287d0730b77acdd1432daee1345864c3244a3",
+      "selected_gds_blob_sha1": "f77287d0730b77acdd1432daee1345864c3244a3",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/maj3/sky130_fd_sc_hs__maj3_1.spice",
+        "sha256": "b06eb835df739d10f7863a59220d50360b86b5869845bcb0529059e8566081dc",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/maj3/sky130_fd_sc_hs__maj3_1.cdl",
+        "sha256": "044296e50674db81f79efb3de7ccc76b2f52b8ab224768aae248e601ff27f7ac",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__mux2_1",
+      "instance_count": 489,
+      "gds_path": "cells/mux2/sky130_fd_sc_hs__mux2_1.gds",
+      "original_gds_blob_sha1": "cd8a52d808bb1738118131109fc582b7169662d5",
+      "selected_gds_blob_sha1": "cd8a52d808bb1738118131109fc582b7169662d5",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/mux2/sky130_fd_sc_hs__mux2_1.spice",
+        "sha256": "1496142dc799a550cbc4be138c78e331bb533f5bd2e2196990eb3d52c736c76c",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A0",
+          "A1",
+          "S",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/mux2/sky130_fd_sc_hs__mux2_1.cdl",
+        "sha256": "90d9b8cfa6c157549e135f7d702802272237986fc8806366643478f5befcec83",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A0",
+          "A1",
+          "S",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__mux2i_1",
+      "instance_count": 17,
+      "gds_path": "cells/mux2i/sky130_fd_sc_hs__mux2i_1.gds",
+      "original_gds_blob_sha1": "e3d3d1587c6b067f112ae94e57849ca2fa3fa260",
+      "selected_gds_blob_sha1": "e3d3d1587c6b067f112ae94e57849ca2fa3fa260",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/mux2i/sky130_fd_sc_hs__mux2i_1.spice",
+        "sha256": "721d7d9441e9858cd7e9542b3e9a74f2e5e735be5d274964947b770e273e89c4",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A0",
+          "A1",
+          "S",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/mux2i/sky130_fd_sc_hs__mux2i_1.cdl",
+        "sha256": "18326b1910cab5a9950742959e1cd814e1c4649637618f25df04881d6105e51f",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A0",
+          "A1",
+          "S",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__nand2_1",
+      "instance_count": 239,
+      "gds_path": "cells/nand2/sky130_fd_sc_hs__nand2_1.gds",
+      "original_gds_blob_sha1": "5458fb7f6556ec07056f0a640faa55c497f6cfbb",
+      "selected_gds_blob_sha1": "5458fb7f6556ec07056f0a640faa55c497f6cfbb",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/nand2/sky130_fd_sc_hs__nand2_1.spice",
+        "sha256": "92def5be17dd0c23a1e199631fe7e552be47932588c735306cec96a833795e6c",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/nand2/sky130_fd_sc_hs__nand2_1.cdl",
+        "sha256": "180aafd02c4718f92c2dcaae05ead8a52a97264624eb5e822556e2a439fa30ea",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__nand2_2",
+      "instance_count": 3,
+      "gds_path": "cells/nand2/sky130_fd_sc_hs__nand2_2.gds",
+      "original_gds_blob_sha1": "758ed2e53161e900cdd730961e244155fdb5e3f5",
+      "selected_gds_blob_sha1": "758ed2e53161e900cdd730961e244155fdb5e3f5",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/nand2/sky130_fd_sc_hs__nand2_2.spice",
+        "sha256": "bc76b41d73a47d4c8a0ce145e78f811f041f0f3e8091a6f67e9f1367d078206d",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/nand2/sky130_fd_sc_hs__nand2_2.cdl",
+        "sha256": "13d3a1b3ac65d248f8735f82a357cccca37ee525a34bd4128140d50f935f9192",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__nand2b_1",
+      "instance_count": 67,
+      "gds_path": "cells/nand2b/sky130_fd_sc_hs__nand2b_1.gds",
+      "original_gds_blob_sha1": "ddc500c34d2b93c861262b33b969b10594ee9919",
+      "selected_gds_blob_sha1": "ddc500c34d2b93c861262b33b969b10594ee9919",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/nand2b/sky130_fd_sc_hs__nand2b_1.spice",
+        "sha256": "8cb434e00701efb5ac0f3e0ebeda2fb4b77503496dbbc0b0e8b3c9d343520c81",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A_N",
+          "B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/nand2b/sky130_fd_sc_hs__nand2b_1.cdl",
+        "sha256": "46681d4cc64b4b909ca8a0e2870a53fc7b47026fcc959ae964459c11f5a3fa44",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A_N",
+          "B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__nand2b_2",
+      "instance_count": 1,
+      "gds_path": "cells/nand2b/sky130_fd_sc_hs__nand2b_2.gds",
+      "original_gds_blob_sha1": "109f71a1d21d8c545b5340ae00fa01187bd7a3e5",
+      "selected_gds_blob_sha1": "109f71a1d21d8c545b5340ae00fa01187bd7a3e5",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/nand2b/sky130_fd_sc_hs__nand2b_2.spice",
+        "sha256": "79227a70975495e6960a9accd037297014846b5f4ad857b1ab9d0514eb409541",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A_N",
+          "B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/nand2b/sky130_fd_sc_hs__nand2b_2.cdl",
+        "sha256": "ebb845b24e6e5da033e21c232d5dc309a0f648c63d7f34caf3bc06e5aa043936",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A_N",
+          "B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__nand3_1",
+      "instance_count": 47,
+      "gds_path": "cells/nand3/sky130_fd_sc_hs__nand3_1.gds",
+      "original_gds_blob_sha1": "9383105ec055025a4bfa0f64582c72128b30c581",
+      "selected_gds_blob_sha1": "9383105ec055025a4bfa0f64582c72128b30c581",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/nand3/sky130_fd_sc_hs__nand3_1.spice",
+        "sha256": "99fdd01ee8d2ecc62108fb3d8867d8055c0136770ea1d5c8d0b7777cea0784eb",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/nand3/sky130_fd_sc_hs__nand3_1.cdl",
+        "sha256": "6fa3bcbd5c7778bc70724d4458f1139b050a38b0c9c769628afd96f10294b26a",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__nand3b_1",
+      "instance_count": 7,
+      "gds_path": "cells/nand3b/sky130_fd_sc_hs__nand3b_1.gds",
+      "original_gds_blob_sha1": "e9600365483ed5dc6e2f86062995c45eb9adb10d",
+      "selected_gds_blob_sha1": "e9600365483ed5dc6e2f86062995c45eb9adb10d",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/nand3b/sky130_fd_sc_hs__nand3b_1.spice",
+        "sha256": "46f3c812fd028af52c65cd0983a1e80be06cab2f65daf83f168551208bdd387e",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A_N",
+          "B",
+          "C",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/nand3b/sky130_fd_sc_hs__nand3b_1.cdl",
+        "sha256": "26a05cc8311b074100ce0135f31932d5684ce21f2b1f5369a94ae0d1283f873d",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A_N",
+          "B",
+          "C",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__nand4_1",
+      "instance_count": 16,
+      "gds_path": "cells/nand4/sky130_fd_sc_hs__nand4_1.gds",
+      "original_gds_blob_sha1": "3362dca4f7aa95d4524c400d5d030abe42b8f563",
+      "selected_gds_blob_sha1": "3362dca4f7aa95d4524c400d5d030abe42b8f563",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/nand4/sky130_fd_sc_hs__nand4_1.spice",
+        "sha256": "aa63adf787a8452529ec1e994bb20457b2f78cd8d0f073c078a10498b05f5934",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/nand4/sky130_fd_sc_hs__nand4_1.cdl",
+        "sha256": "fad57951f8922d4a270de571c2abc9f39fe0de377064b34c810e9b50ea80d46c",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__nand4b_1",
+      "instance_count": 4,
+      "gds_path": "cells/nand4b/sky130_fd_sc_hs__nand4b_1.gds",
+      "original_gds_blob_sha1": "c67818d9649dec05d8d92e2bc4bedebc24e96f11",
+      "selected_gds_blob_sha1": "c67818d9649dec05d8d92e2bc4bedebc24e96f11",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/nand4b/sky130_fd_sc_hs__nand4b_1.spice",
+        "sha256": "bc8fcfe111774a410b07d0ba0490147edb035528ba6bfaa19b30f7142893eef4",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A_N",
+          "B",
+          "C",
+          "D",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/nand4b/sky130_fd_sc_hs__nand4b_1.cdl",
+        "sha256": "f174bc59f68832a4f96910fa04465f160660a251fcb95a094be26caad10c947e",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A_N",
+          "B",
+          "C",
+          "D",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__nand4bb_1",
+      "instance_count": 1,
+      "gds_path": "cells/nand4bb/sky130_fd_sc_hs__nand4bb_1.gds",
+      "original_gds_blob_sha1": "4ca15192eb8fbbf96b784c6ffc31e4bba519b97e",
+      "selected_gds_blob_sha1": "4ca15192eb8fbbf96b784c6ffc31e4bba519b97e",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/nand4bb/sky130_fd_sc_hs__nand4bb_1.spice",
+        "sha256": "8e6e79191a9be02926862772d6d92362799a89d377b5e503ea5f66a07262a406",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A_N",
+          "B_N",
+          "C",
+          "D",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/nand4bb/sky130_fd_sc_hs__nand4bb_1.cdl",
+        "sha256": "e47c2552ca4f71977ee5cde63f7b4b94236f655c3cf77aadee326190a3105889",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A_N",
+          "B_N",
+          "C",
+          "D",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__nor2_1",
+      "instance_count": 187,
+      "gds_path": "cells/nor2/sky130_fd_sc_hs__nor2_1.gds",
+      "original_gds_blob_sha1": "79ed304b7dffb52e16a00953ee5a58e39361837e",
+      "selected_gds_blob_sha1": "79ed304b7dffb52e16a00953ee5a58e39361837e",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/nor2/sky130_fd_sc_hs__nor2_1.spice",
+        "sha256": "9409e0fc77ead973dfb779c2f162d623f63a31e5eef821592b0cb7a41a6b7c03",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/nor2/sky130_fd_sc_hs__nor2_1.cdl",
+        "sha256": "6cb05048ce9a4fae2c68c06e7a55c3752773c237df0405aa6e1e815dda33b198",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__nor2_2",
+      "instance_count": 14,
+      "gds_path": "cells/nor2/sky130_fd_sc_hs__nor2_2.gds",
+      "original_gds_blob_sha1": "943edce3be6d7409fc00116ff89d329d0f253a7c",
+      "selected_gds_blob_sha1": "943edce3be6d7409fc00116ff89d329d0f253a7c",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/nor2/sky130_fd_sc_hs__nor2_2.spice",
+        "sha256": "f4cd09f1e90003074919527f743228bb2f8248fc251fd407a8dbd466fd866b04",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/nor2/sky130_fd_sc_hs__nor2_2.cdl",
+        "sha256": "5af2cc8a5e8b65a01772bdea77ba2645d8173cb83a6d04b60d786bd15a8d0f0f",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__nor2_4",
+      "instance_count": 4,
+      "gds_path": "cells/nor2/sky130_fd_sc_hs__nor2_4.gds",
+      "original_gds_blob_sha1": "664ee9f2a03666cc9a7fc8bed4713b7d0c51433c",
+      "selected_gds_blob_sha1": "664ee9f2a03666cc9a7fc8bed4713b7d0c51433c",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/nor2/sky130_fd_sc_hs__nor2_4.spice",
+        "sha256": "b7a9559a279ebe87fb62262cd4df24302e26ad3fa3b8e79e0b5163d57d55f874",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/nor2/sky130_fd_sc_hs__nor2_4.cdl",
+        "sha256": "a81c3bc2a8012011bd27541833afa2f08126dd0b85a116969221b1189142a17b",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__nor2b_1",
+      "instance_count": 53,
+      "gds_path": "cells/nor2b/sky130_fd_sc_hs__nor2b_1.gds",
+      "original_gds_blob_sha1": "4b94c15165c0a872d7fddd37687d1874378bd13e",
+      "selected_gds_blob_sha1": "4b94c15165c0a872d7fddd37687d1874378bd13e",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/nor2b/sky130_fd_sc_hs__nor2b_1.spice",
+        "sha256": "6ceabf7fdc45470ae635e8d5cfa2d8a9bda991c02cb9a84c5c7f5546fc33fc9a",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B_N",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/nor2b/sky130_fd_sc_hs__nor2b_1.cdl",
+        "sha256": "6849f8572dc8e8563896dc0561678b16019fd9dc0d84c07f35b82c31ca7c8778",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B_N",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__nor3_1",
+      "instance_count": 56,
+      "gds_path": "cells/nor3/sky130_fd_sc_hs__nor3_1.gds",
+      "original_gds_blob_sha1": "7069f6e86c3f841ab2994f971300c3248c1bea59",
+      "selected_gds_blob_sha1": "7069f6e86c3f841ab2994f971300c3248c1bea59",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/nor3/sky130_fd_sc_hs__nor3_1.spice",
+        "sha256": "9c53d86edc6b77cf6dcedcb55233139c33c741c1c81460c3761cd2871caf9445",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/nor3/sky130_fd_sc_hs__nor3_1.cdl",
+        "sha256": "517be0ae467b0f4cd742d10add3a6753a68801c2ee53e255efe12b7056bc4c08",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__nor3_2",
+      "instance_count": 1,
+      "gds_path": "cells/nor3/sky130_fd_sc_hs__nor3_2.gds",
+      "original_gds_blob_sha1": "f8946cce1c74d6f68bcfc990108b1c29d9f179ff",
+      "selected_gds_blob_sha1": "f8946cce1c74d6f68bcfc990108b1c29d9f179ff",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/nor3/sky130_fd_sc_hs__nor3_2.spice",
+        "sha256": "e6aa468fd470c6d0280616fbe81938856d0a03a8f72ebc49af315cfd7cd1b16a",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/nor3/sky130_fd_sc_hs__nor3_2.cdl",
+        "sha256": "c175b5480565649204a93e8f23d10d8a20b3078f2dc1787e93439229b2025f3d",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__nor3_4",
+      "instance_count": 11,
+      "gds_path": "cells/nor3/sky130_fd_sc_hs__nor3_4.gds",
+      "original_gds_blob_sha1": "3500e8e55a7c589329cf4ccf0298f21ee42ff7fb",
+      "selected_gds_blob_sha1": "3500e8e55a7c589329cf4ccf0298f21ee42ff7fb",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/nor3/sky130_fd_sc_hs__nor3_4.spice",
+        "sha256": "f6a982199db97e06a98a4d4b5371ac1eb2096cdc8f55df8da1eaaee9c9242393",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/nor3/sky130_fd_sc_hs__nor3_4.cdl",
+        "sha256": "1157a3c8ff5fc127fa9a8b3113d1a3421d951de257794c2da9d4bf8c1b2a3331",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__nor3b_1",
+      "instance_count": 5,
+      "gds_path": "cells/nor3b/sky130_fd_sc_hs__nor3b_1.gds",
+      "original_gds_blob_sha1": "6fc852860107a778d98c63b4c9e18d6b0404c886",
+      "selected_gds_blob_sha1": "6fc852860107a778d98c63b4c9e18d6b0404c886",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/nor3b/sky130_fd_sc_hs__nor3b_1.spice",
+        "sha256": "a9976f5561fe57e6a0f39df198289b7ba8265c34c630f6aba87d23c685689e5e",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C_N",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/nor3b/sky130_fd_sc_hs__nor3b_1.cdl",
+        "sha256": "a921f7d5daaf1c211e192028faca8f3562cc917843a36cc14e78a65910719ef1",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C_N",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__nor3b_4",
+      "instance_count": 1,
+      "gds_path": "cells/nor3b/sky130_fd_sc_hs__nor3b_4.gds",
+      "original_gds_blob_sha1": "d8dd4a519a1241cf17e67e7e0f6fdf02540768e1",
+      "selected_gds_blob_sha1": "d8dd4a519a1241cf17e67e7e0f6fdf02540768e1",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/nor3b/sky130_fd_sc_hs__nor3b_4.spice",
+        "sha256": "9f8366cb6d1cb4ea29f91687102f3c868b801b4889bc815823adf298e40c1ddb",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C_N",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/nor3b/sky130_fd_sc_hs__nor3b_4.cdl",
+        "sha256": "bcb6a858fd69fdcd1885bcd30774a5597196051a37eacb4fb3ad9995503fbc22",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C_N",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__nor4_1",
+      "instance_count": 1,
+      "gds_path": "cells/nor4/sky130_fd_sc_hs__nor4_1.gds",
+      "original_gds_blob_sha1": "dd2230dcef7741e9f206cb4dbd98a5f3d38c1f3b",
+      "selected_gds_blob_sha1": "dd2230dcef7741e9f206cb4dbd98a5f3d38c1f3b",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/nor4/sky130_fd_sc_hs__nor4_1.spice",
+        "sha256": "dc0112b6f4de807155d2c7be6d9fc7402d0b425f09c3822a4a790522ff513b53",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/nor4/sky130_fd_sc_hs__nor4_1.cdl",
+        "sha256": "e70c3273df591836b5dae177b274a4522e149b602c0967c52052305c2eba5f53",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__nor4b_1",
+      "instance_count": 2,
+      "gds_path": "cells/nor4b/sky130_fd_sc_hs__nor4b_1.gds",
+      "original_gds_blob_sha1": "414c0da1e2aa9a86c2aff3826ab386a86b972b53",
+      "selected_gds_blob_sha1": "414c0da1e2aa9a86c2aff3826ab386a86b972b53",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/nor4b/sky130_fd_sc_hs__nor4b_1.spice",
+        "sha256": "a422faeedaee0fab1b6d055be0de4093b7cadeec48ca80327264a796c8a2449f",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "D_N",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/nor4b/sky130_fd_sc_hs__nor4b_1.cdl",
+        "sha256": "7f3c221378b8e604e76ab80e25998daf98a60d0274473e69618d26caa484e07c",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "D_N",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__o2111a_1",
+      "instance_count": 1,
+      "gds_path": "cells/o2111a/sky130_fd_sc_hs__o2111a_1.gds",
+      "original_gds_blob_sha1": "99c0044f3d47eb4fc3be58a99312f143ced9ef3e",
+      "selected_gds_blob_sha1": "99c0044f3d47eb4fc3be58a99312f143ced9ef3e",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/o2111a/sky130_fd_sc_hs__o2111a_1.spice",
+        "sha256": "08bd4f531523823d71cd3c8d68fa7b5bea724492122f4b240edf14636708863c",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "C1",
+          "D1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/o2111a/sky130_fd_sc_hs__o2111a_1.cdl",
+        "sha256": "5532e88a0a3750a7faf7cd3fb13586326f353d53ce9b104c5a93ab42e760184a",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "C1",
+          "D1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__o2111ai_1",
+      "instance_count": 6,
+      "gds_path": "cells/o2111ai/sky130_fd_sc_hs__o2111ai_1.gds",
+      "original_gds_blob_sha1": "e4271a6a2013e97129f168561604d7f656e97cc8",
+      "selected_gds_blob_sha1": "e4271a6a2013e97129f168561604d7f656e97cc8",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/o2111ai/sky130_fd_sc_hs__o2111ai_1.spice",
+        "sha256": "d1677153066e7e1f98a03b93e83ec1f4effd0e2d95c083efb53e8dd671dca211",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "C1",
+          "D1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/o2111ai/sky130_fd_sc_hs__o2111ai_1.cdl",
+        "sha256": "0cabd38400a5548fd1c31db14eb3f260f6fc9e2d6aee23a7bd2f88509f7a7a2a",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "C1",
+          "D1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__o211a_2",
+      "instance_count": 2,
+      "gds_path": "cells/o211a/sky130_fd_sc_hs__o211a_2.gds",
+      "original_gds_blob_sha1": "8b0394cc7d27f39bb4e0e69e2924daef6938fbe3",
+      "selected_gds_blob_sha1": "8b0394cc7d27f39bb4e0e69e2924daef6938fbe3",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/o211a/sky130_fd_sc_hs__o211a_2.spice",
+        "sha256": "68b58a0b70b535de0027faef625b73f94d66a381b7c2cf36b278ab8e10975770",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "C1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/o211a/sky130_fd_sc_hs__o211a_2.cdl",
+        "sha256": "e9d0185c313b7c07d3ac8f3e9b51c18c53a1dc75516c2dc895caf686a027e021",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "C1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__o211ai_1",
+      "instance_count": 17,
+      "gds_path": "cells/o211ai/sky130_fd_sc_hs__o211ai_1.gds",
+      "original_gds_blob_sha1": "1c8fefb7e866c742747240dfde060c777ee0c63b",
+      "selected_gds_blob_sha1": "1c8fefb7e866c742747240dfde060c777ee0c63b",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/o211ai/sky130_fd_sc_hs__o211ai_1.spice",
+        "sha256": "ce67f96a94b0468ab124cc6065af7553a988f9d8ce209726c0cacda0b2fc82fd",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "C1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/o211ai/sky130_fd_sc_hs__o211ai_1.cdl",
+        "sha256": "e479957b0d735bee1aa8fe0def8c06a691c42f210732f97882b4babbbf6530ab",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "C1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__o21a_1",
+      "instance_count": 33,
+      "gds_path": "cells/o21a/sky130_fd_sc_hs__o21a_1.gds",
+      "original_gds_blob_sha1": "5cec73e5df8c9b5e2df998c42956b09aedf98a2f",
+      "selected_gds_blob_sha1": "5cec73e5df8c9b5e2df998c42956b09aedf98a2f",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/o21a/sky130_fd_sc_hs__o21a_1.spice",
+        "sha256": "ff6b0ffe3b76dacae6c58c3cf7e9003d6df73a31a09b16f8af857d0c67bc9759",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/o21a/sky130_fd_sc_hs__o21a_1.cdl",
+        "sha256": "9a652f831b0c6fda0f8d1648fbea944c5edf98b2ef67ffff05deac9522de3761",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__o21ai_1",
+      "instance_count": 116,
+      "gds_path": "cells/o21ai/sky130_fd_sc_hs__o21ai_1.gds",
+      "original_gds_blob_sha1": "58cdbf4b1c3e05c346cd0d5212bf7fea72d2581b",
+      "selected_gds_blob_sha1": "58cdbf4b1c3e05c346cd0d5212bf7fea72d2581b",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/o21ai/sky130_fd_sc_hs__o21ai_1.spice",
+        "sha256": "f2c7ecc7af544cafefcb3b57d8020c6a623a2c2028e311fc1bb9335b2de1d5d1",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/o21ai/sky130_fd_sc_hs__o21ai_1.cdl",
+        "sha256": "2a40fccea397e4a6360a484c50cc58ec4d124543dc5f953cec5511a67f64fc25",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__o21bai_1",
+      "instance_count": 5,
+      "gds_path": "cells/o21bai/sky130_fd_sc_hs__o21bai_1.gds",
+      "original_gds_blob_sha1": "9b5c10b75de3082e09a7617ec6257f247b792a4f",
+      "selected_gds_blob_sha1": "9b5c10b75de3082e09a7617ec6257f247b792a4f",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/o21bai/sky130_fd_sc_hs__o21bai_1.spice",
+        "sha256": "061348f4d333e6277bf58001c3ba12a0a18455ecda969741991fa6e7add7c091",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1_N",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/o21bai/sky130_fd_sc_hs__o21bai_1.cdl",
+        "sha256": "1b0822332cce18d6c302ca87b099898522f0427dc4130bee3a39537aac5f39bf",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1_N",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__o221ai_1",
+      "instance_count": 4,
+      "gds_path": "cells/o221ai/sky130_fd_sc_hs__o221ai_1.gds",
+      "original_gds_blob_sha1": "51fa7d8b18281dca6c0bbd4ec1014196a9261ddb",
+      "selected_gds_blob_sha1": "51fa7d8b18281dca6c0bbd4ec1014196a9261ddb",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/o221ai/sky130_fd_sc_hs__o221ai_1.spice",
+        "sha256": "7ef9f237a687060c37dd676243d6a57a07cb3f35f785601bd571ab8487096cb7",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/o221ai/sky130_fd_sc_hs__o221ai_1.cdl",
+        "sha256": "d3cd22a76be3980721066450f898bd4c81f14cd2e202acfb46000163cc2bc64c",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__o22a_1",
+      "instance_count": 1,
+      "gds_path": "cells/o22a/sky130_fd_sc_hs__o22a_1.gds",
+      "original_gds_blob_sha1": "d8ad9509bdea3cd02c0e28d4af39cb5e66b8f71d",
+      "selected_gds_blob_sha1": "d8ad9509bdea3cd02c0e28d4af39cb5e66b8f71d",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/o22a/sky130_fd_sc_hs__o22a_1.spice",
+        "sha256": "67f74a74eb5961984d7a9264ca83ef86fcd90a388327dbbc0625a1a2cf390368",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/o22a/sky130_fd_sc_hs__o22a_1.cdl",
+        "sha256": "0c74a6b2398ff40297687630de24def1fc73c1d78a4811134f038cd28ffa1ff7",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__o22ai_1",
+      "instance_count": 16,
+      "gds_path": "cells/o22ai/sky130_fd_sc_hs__o22ai_1.gds",
+      "original_gds_blob_sha1": "f4578b537395fed82e3fd9ba65e24a992a14e5f4",
+      "selected_gds_blob_sha1": "f4578b537395fed82e3fd9ba65e24a992a14e5f4",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/o22ai/sky130_fd_sc_hs__o22ai_1.spice",
+        "sha256": "6f62ce72d281613df26bea780b851fe68e0ea1a0abd410c40c60f6ff2ec4a4a4",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/o22ai/sky130_fd_sc_hs__o22ai_1.cdl",
+        "sha256": "a9e9e5464aba0f36da7c2f6b12442fba033496f6c4e6fd4bf62b6a755ef40280",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__o2bb2ai_1",
+      "instance_count": 77,
+      "gds_path": "cells/o2bb2ai/sky130_fd_sc_hs__o2bb2ai_1.gds",
+      "original_gds_blob_sha1": "432581f01c6dda4c9b8a3c3807463abc6a38d8bd",
+      "selected_gds_blob_sha1": "432581f01c6dda4c9b8a3c3807463abc6a38d8bd",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/o2bb2ai/sky130_fd_sc_hs__o2bb2ai_1.spice",
+        "sha256": "159c30f61284734b905f1959fe28a1d22363a74d2f152df053acfb6955dfe858",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1_N",
+          "A2_N",
+          "B1",
+          "B2",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/o2bb2ai/sky130_fd_sc_hs__o2bb2ai_1.cdl",
+        "sha256": "fae66e27a6b66107dd6f711ce2fe65ee489708775c820a2d683f252698307bfb",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1_N",
+          "A2_N",
+          "B1",
+          "B2",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__o311a_1",
+      "instance_count": 1,
+      "gds_path": "cells/o311a/sky130_fd_sc_hs__o311a_1.gds",
+      "original_gds_blob_sha1": "933f4248f18c91bbaaf0f6c4ecc1e7e8e5c16431",
+      "selected_gds_blob_sha1": "933f4248f18c91bbaaf0f6c4ecc1e7e8e5c16431",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/o311a/sky130_fd_sc_hs__o311a_1.spice",
+        "sha256": "302ab4cb208724aa794576aef68daee1cf11825f8fc41a6384664765dcc4556b",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "C1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/o311a/sky130_fd_sc_hs__o311a_1.cdl",
+        "sha256": "3544909d95118926866641523d73281c5ffe8689c81c991b7903e338847c0448",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "C1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__o311ai_1",
+      "instance_count": 24,
+      "gds_path": "cells/o311ai/sky130_fd_sc_hs__o311ai_1.gds",
+      "original_gds_blob_sha1": "4a1a363ac1e3011b789c01abddd5729c8ecbcd8e",
+      "selected_gds_blob_sha1": "4a1a363ac1e3011b789c01abddd5729c8ecbcd8e",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/o311ai/sky130_fd_sc_hs__o311ai_1.spice",
+        "sha256": "accedd4605351ed938c45dafaec8c789484d9cb52e53f8250fa0085b0e60e15e",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "C1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/o311ai/sky130_fd_sc_hs__o311ai_1.cdl",
+        "sha256": "3f85fd0a5253023b1a288cda7fbf1ba7fc689cd9a0dfbc9a30c08501bd0b3e56",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "C1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__o31a_1",
+      "instance_count": 8,
+      "gds_path": "cells/o31a/sky130_fd_sc_hs__o31a_1.gds",
+      "original_gds_blob_sha1": "ce2a258b93ef254d5bf805c1ccf129542873e39d",
+      "selected_gds_blob_sha1": "ce2a258b93ef254d5bf805c1ccf129542873e39d",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/o31a/sky130_fd_sc_hs__o31a_1.spice",
+        "sha256": "58dc325bcf9153d131472336a8bb891c912a2bbe0150a31a7bcc799b81e897b9",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/o31a/sky130_fd_sc_hs__o31a_1.cdl",
+        "sha256": "3f98eecd1c5604dd901a38920eafc68ea9449604b88bd80fb2bd6b9c42cd5a92",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__o31ai_1",
+      "instance_count": 23,
+      "gds_path": "cells/o31ai/sky130_fd_sc_hs__o31ai_1.gds",
+      "original_gds_blob_sha1": "75e994bf1da8f74ca4a4640fa052a6f8848463a3",
+      "selected_gds_blob_sha1": "75e994bf1da8f74ca4a4640fa052a6f8848463a3",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/o31ai/sky130_fd_sc_hs__o31ai_1.spice",
+        "sha256": "66eae6173e50083ae0a60d0c2779963179bf42b971afc444df1eb0e785cbb888",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/o31ai/sky130_fd_sc_hs__o31ai_1.cdl",
+        "sha256": "35f802348e50a4938276b4308cc71320d9e0635e040ba2e1e14bf2fd6912478e",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__o31ai_2",
+      "instance_count": 1,
+      "gds_path": "cells/o31ai/sky130_fd_sc_hs__o31ai_2.gds",
+      "original_gds_blob_sha1": "72665846658a8cb775d4ca760060e4acea30636c",
+      "selected_gds_blob_sha1": "72665846658a8cb775d4ca760060e4acea30636c",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/o31ai/sky130_fd_sc_hs__o31ai_2.spice",
+        "sha256": "4d826fdc9e156848c6b875d86f7da5c72b59d20a21b963533478d4d71381c05c",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/o31ai/sky130_fd_sc_hs__o31ai_2.cdl",
+        "sha256": "cf4cea43dfd4cb86eda55b4fea52db2293e7771afbc24f20e5b32bf8630a2a20",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__o31ai_4",
+      "instance_count": 1,
+      "gds_path": "cells/o31ai/sky130_fd_sc_hs__o31ai_4.gds",
+      "original_gds_blob_sha1": "8cf9fb91b3a589914725262fc9842759ff7ee455",
+      "selected_gds_blob_sha1": "8cf9fb91b3a589914725262fc9842759ff7ee455",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/o31ai/sky130_fd_sc_hs__o31ai_4.spice",
+        "sha256": "d397fdbda9fb517c59ffdeef2d35026813f76a9e4ae8373d986cfb78a3e87008",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/o31ai/sky130_fd_sc_hs__o31ai_4.cdl",
+        "sha256": "88b8aff2141f5c5543d018d2924014d73a2b7352115a101a207c167872710f55",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__o32a_1",
+      "instance_count": 1,
+      "gds_path": "cells/o32a/sky130_fd_sc_hs__o32a_1.gds",
+      "original_gds_blob_sha1": "c0aaffacea55fe0afef30784b795c3503e37f520",
+      "selected_gds_blob_sha1": "c0aaffacea55fe0afef30784b795c3503e37f520",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/o32a/sky130_fd_sc_hs__o32a_1.spice",
+        "sha256": "9929623fb3f3282405d4fcea7bf48e8ca62d32f2eef06a3911790fb3af6cc9d0",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "B2",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/o32a/sky130_fd_sc_hs__o32a_1.cdl",
+        "sha256": "b4051d50add741a96a00fdee1c8a5294f4761c0956f8f20ec5af5d264ceeaa71",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "B2",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__o32ai_1",
+      "instance_count": 1,
+      "gds_path": "cells/o32ai/sky130_fd_sc_hs__o32ai_1.gds",
+      "original_gds_blob_sha1": "e65bffcb1758c9552d3c7dd703e9dc09af0c0b7a",
+      "selected_gds_blob_sha1": "e65bffcb1758c9552d3c7dd703e9dc09af0c0b7a",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/o32ai/sky130_fd_sc_hs__o32ai_1.spice",
+        "sha256": "924375f028d9033453c2d2937c90d983e97e73ed996d48506a3c44f31dc58528",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "B2",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/o32ai/sky130_fd_sc_hs__o32ai_1.cdl",
+        "sha256": "35d7a14c554c6f008bbdeded16b6c3242e2581e5f2bfc075b660b0ba1b781e28",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "B2",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__o41ai_1",
+      "instance_count": 4,
+      "gds_path": "cells/o41ai/sky130_fd_sc_hs__o41ai_1.gds",
+      "original_gds_blob_sha1": "b1c13f98c940b990162e0bc019a610420b79eda2",
+      "selected_gds_blob_sha1": "b1c13f98c940b990162e0bc019a610420b79eda2",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/o41ai/sky130_fd_sc_hs__o41ai_1.spice",
+        "sha256": "7975f36c85ccba8af7051d0be750212aba9f515f0a8b07305b398e9c508ace23",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/o41ai/sky130_fd_sc_hs__o41ai_1.cdl",
+        "sha256": "31cfb855a46df9be79a20daccba063ca7ab80bb093341df0e242d5f63ada2f3f",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "B1",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__or2_1",
+      "instance_count": 32,
+      "gds_path": "cells/or2/sky130_fd_sc_hs__or2_1.gds",
+      "original_gds_blob_sha1": "02ba5f7b54e877792437987e2d4c4bca6f727fb2",
+      "selected_gds_blob_sha1": "02ba5f7b54e877792437987e2d4c4bca6f727fb2",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/or2/sky130_fd_sc_hs__or2_1.spice",
+        "sha256": "45eb6d0988321f74e164f228e9878e5a79e9152391dc43d203e8fa19948e03b3",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/or2/sky130_fd_sc_hs__or2_1.cdl",
+        "sha256": "adaf5552461ffad031a5344e71e043d252890c1d3298418047bb5505aa36a087",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__or3_1",
+      "instance_count": 10,
+      "gds_path": "cells/or3/sky130_fd_sc_hs__or3_1.gds",
+      "original_gds_blob_sha1": "48a872de68cca47dd1e81ab819b0917fc24ba24e",
+      "selected_gds_blob_sha1": "48a872de68cca47dd1e81ab819b0917fc24ba24e",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/or3/sky130_fd_sc_hs__or3_1.spice",
+        "sha256": "637f5fa6dbcf2b5c54f95497f5758c39158149f88fd8136c5ba762418d4b6e98",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/or3/sky130_fd_sc_hs__or3_1.cdl",
+        "sha256": "388c822d76298dca978ebad1a39d68a883afe029e796aed7e53782ecd3962fdb",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__or3b_1",
+      "instance_count": 2,
+      "gds_path": "cells/or3b/sky130_fd_sc_hs__or3b_1.gds",
+      "original_gds_blob_sha1": "2addea868daf2e1d3025e9cc840507098b2eed22",
+      "selected_gds_blob_sha1": "2addea868daf2e1d3025e9cc840507098b2eed22",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/or3b/sky130_fd_sc_hs__or3b_1.spice",
+        "sha256": "59cde5b4143ba06469e88c733644657d24afbea859218d81b184dc4239f955c8",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C_N",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/or3b/sky130_fd_sc_hs__or3b_1.cdl",
+        "sha256": "79d18cfd59ac4f6948a1ecf8fc285922ce7f40cb4d631678bf385f7a594ca5c4",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C_N",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__tapvpwrvgnd_1",
+      "instance_count": 1456,
+      "gds_path": "cells/tapvpwrvgnd/sky130_fd_sc_hs__tapvpwrvgnd_1.gds",
+      "original_gds_blob_sha1": "cbc6707dd317dee9b58a326b3040ef086d7df57c",
+      "selected_gds_blob_sha1": "cbc6707dd317dee9b58a326b3040ef086d7df57c",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/tapvpwrvgnd/sky130_fd_sc_hs__tapvpwrvgnd_1.spice",
+        "sha256": "95fe48af62ec29ba3a05764dfbb5b9deb25dbaea58c17d093f54aa49d174a538",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "VGND",
+          "VPWR"
+        ]
+      },
+      "cdl": {
+        "path": "cells/tapvpwrvgnd/sky130_fd_sc_hs__tapvpwrvgnd_1.cdl",
+        "sha256": "46c2fe6116025f767910b8034735d680ca8c0fc207c05ead9acac871f9e689ee",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "VGND",
+          "VPWR"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__xnor2_1",
+      "instance_count": 151,
+      "gds_path": "cells/xnor2/sky130_fd_sc_hs__xnor2_1.gds",
+      "original_gds_blob_sha1": "ea4d73f60d977dd6d26eb949cf87737a5a972d78",
+      "selected_gds_blob_sha1": "ea4d73f60d977dd6d26eb949cf87737a5a972d78",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/xnor2/sky130_fd_sc_hs__xnor2_1.spice",
+        "sha256": "17e02b455bb192ad972221a48385f2bda73082659561552b905465bbef26e543",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "cdl": {
+        "path": "cells/xnor2/sky130_fd_sc_hs__xnor2_1.cdl",
+        "sha256": "8272f91c74da2a74d2806f7c68d8500c0190dd9dae85c4097fe420d491a8e596",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "Y"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__xnor3_1",
+      "instance_count": 3,
+      "gds_path": "cells/xnor3/sky130_fd_sc_hs__xnor3_1.gds",
+      "original_gds_blob_sha1": "65993c3a79b3b6c389086ccf0c4165cdf93ab96e",
+      "selected_gds_blob_sha1": "65993c3a79b3b6c389086ccf0c4165cdf93ab96e",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/xnor3/sky130_fd_sc_hs__xnor3_1.spice",
+        "sha256": "d7b7f4ef101a9590d275b1bcb1ea4b75766998dc1e7b8390d40a29c84c6be960",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/xnor3/sky130_fd_sc_hs__xnor3_1.cdl",
+        "sha256": "45d55627850553523b7f90571942e7161478e91c0e487e96ab47bcdde9806ede",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__xor2_1",
+      "instance_count": 94,
+      "gds_path": "cells/xor2/sky130_fd_sc_hs__xor2_1.gds",
+      "original_gds_blob_sha1": "37acf9e74562c7eba63d77c19880362765cee793",
+      "selected_gds_blob_sha1": "37acf9e74562c7eba63d77c19880362765cee793",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/xor2/sky130_fd_sc_hs__xor2_1.spice",
+        "sha256": "c2dbc853bd604a285d8e41f83bcf82e9c0078be7c81c616ab269b48d7ee8d0a1",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/xor2/sky130_fd_sc_hs__xor2_1.cdl",
+        "sha256": "b78e98202dcd0f99e623dde47e965da9fe83f8b324a6c77ff7371ed1aac62ecc",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    },
+    {
+      "cell": "sky130_fd_sc_hs__xor3_1",
+      "instance_count": 1,
+      "gds_path": "cells/xor3/sky130_fd_sc_hs__xor3_1.gds",
+      "original_gds_blob_sha1": "5d771032d57489d2d1add19f42fa96699bffc280",
+      "selected_gds_blob_sha1": "5d771032d57489d2d1add19f42fa96699bffc280",
+      "gds_byte_identical": true,
+      "spice": {
+        "path": "cells/xor3/sky130_fd_sc_hs__xor3_1.spice",
+        "sha256": "5c43dff6e3817172a004d04bf34616c8f6ec7007cb885a7910dc19a650d70a6a",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "cdl": {
+        "path": "cells/xor3/sky130_fd_sc_hs__xor3_1.cdl",
+        "sha256": "89edd7c3ebb9944e679cb424d5b07f3b972f9202801878e911d90763a7edb19b",
+        "selected_commit_blob_match": true,
+        "pins": [
+          "A",
+          "B",
+          "C",
+          "VGND",
+          "VNB",
+          "VPB",
+          "VPWR",
+          "X"
+        ]
+      },
+      "pin_orders_match": true
+    }
+  ],
+  "orfs_polygon_geometry_matching_count": 99,
+  "geometry_report": "candidate_v1_orfs_vs_upstream_geometry.json",
+  "all_checks_pass": true
+}

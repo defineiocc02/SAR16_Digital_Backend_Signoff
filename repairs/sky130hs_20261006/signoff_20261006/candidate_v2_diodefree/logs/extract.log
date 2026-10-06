@@ -1,0 +1,21 @@
+OpenROAD 26Q2-1164-g08f67ee5ec 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 4 thread(s).
+EXTERNAL_RESET_WAIVER_PINS 745
+CDC_ENTRY_MAX_DELAY_CONSTRAINTS 13
+[WARNING STA-0122] cell 'sky130_fd_sc_hs__tapvpwrvgnd_1' not found.
+[WARNING STA-0122] cell 'sky130_fd_sc_hs__fill_*' not found.
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+[INFO RCX-0435] Reading extraction model file /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/environment/tools/OpenROAD-flow-scripts/flow/platforms/sky130hs/rcx_patterns.rules ...
+[INFO RCX-0436] RC segment generation sar_digi_paper_core (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 19355 rc segments
+[INFO RCX-0439] Coupling Cap extraction sar_digi_paper_core ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 53% of 35967 wires extracted
+[INFO RCX-0442] 100% of 35967 wires extracted
+[INFO RCX-0045] Extract 4198 nets, 23542 rsegs, 23542 caps, 41431 ccs
+[INFO RCX-0443] 4198 nets finished
+STAGE_COMPLETE extract

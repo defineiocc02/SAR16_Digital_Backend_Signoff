@@ -1,0 +1,14 @@
+##   0:00:00  Solver: z3
+##   0:00:00  Checking cover reachability in step 0..
+##   0:00:00  Checking cover reachability in step 1..
+##   0:00:00  Checking cover reachability in step 2..
+##   0:00:00  Checking cover reachability in step 3..
+##   0:00:00  Reached cover statement in step 3 at calib_formal: c_start
+##   0:00:00  Writing trace to VCD file: /workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/traces/calib_cover_0.vcd
+##   0:00:00  Checking cover reachability in step 3..
+##   0:00:00  Checking cover reachability in step 4..
+##   0:00:00  Checking cover reachability in step 5..
+##   0:00:00  Checking cover reachability in step 6..
+##   0:00:00  Reached cover statement in step 6 at calib_formal: c_search
+##   0:00:00  Writing trace to VCD file: /workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/traces/calib_cover_1.vcd
+##   0:00:00  Status: PASSED

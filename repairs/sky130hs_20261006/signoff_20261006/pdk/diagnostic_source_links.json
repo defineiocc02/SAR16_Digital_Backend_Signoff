@@ -1,0 +1,6 @@
+{
+  "warning_issue": "https://github.com/RTimothyEdwards/magic/issues/319",
+  "warning_primitive_confirmation": "https://github.com/RTimothyEdwards/magic/issues/319#issuecomment-2273780471",
+  "conb_layout_change": "https://github.com/fossi-foundation/skywater-pdk-libs-sky130_fd_sc_hs/commit/b9b2be651c4ca109240709b7e3a7a91613b2eb56",
+  "conb_reference_model_update": "https://github.com/fossi-foundation/skywater-pdk-libs-sky130_fd_sc_hs/commit/968e0c3b60c103c2df1da4981b11ff603d55a88a"
+}

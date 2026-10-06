@@ -1,0 +1,48 @@
+{
+  "database_signal_nets": 4198,
+  "spef_d_net_entries": 4187,
+  "missing_signal_net_count": 11,
+  "missing_by_pin_count": {
+    "0": 11
+  },
+  "missing_connected_nets": [],
+  "connected_nets_annotated": true
+}
+{
+  "status": "SUPPORTED_PHYSICAL_PROXY_PASS_FORMAL_PENDING",
+  "timing_ns": {
+    "nominal": {
+      "setup_wns": 1.062018,
+      "hold_wns": 0.153111
+    },
+    "scalarstress": {
+      "setup_wns": 0.947274,
+      "hold_wns": 0.05088
+    }
+  },
+  "checks": {
+    "timing": true,
+    "electrical": true,
+    "cdc": true,
+    "antenna": true,
+    "router_drc": true,
+    "routed_connectivity": true,
+    "power_grid": true,
+    "spef_connected_net_coverage": true
+  },
+  "physical_counts": {
+    "instances": 14657.0,
+    "nets": 4200.0,
+    "ports": 178.0,
+    "all_instance_area_um2": 135032.8320000009,
+    "routed_connectivity": 1.0,
+    "unconnected_pg_terminals": 0.0
+  },
+  "antenna_net_violations": 0
+}
+Freshness guards passed for final extracted geometry and both STA audits.
+Rendered three final-v2 GDS jumper views
+Generated three actual-GDS before/after routing zooms
+
+Physical repair replay complete from frozen run_v6: /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/candidate_v2_diodefree_replay
+Run the main signoff workflow for full GDS DRC / extracted strict LVS and formal verification.

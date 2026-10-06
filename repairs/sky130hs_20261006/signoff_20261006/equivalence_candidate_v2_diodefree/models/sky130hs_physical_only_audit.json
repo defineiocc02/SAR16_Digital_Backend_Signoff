@@ -1,0 +1,50 @@
+{
+  "sky130_fd_sc_hs__tapvpwrvgnd_1": {
+    "class": "CORE WELLTAP",
+    "power_only_pins": [
+      "VGND",
+      "VPWR"
+    ],
+    "functional_outputs": 0
+  },
+  "sky130_fd_sc_hs__fill_1": {
+    "class": "CORE SPACER",
+    "power_only_pins": [
+      "VGND",
+      "VNB",
+      "VPB",
+      "VPWR"
+    ],
+    "functional_outputs": 0
+  },
+  "sky130_fd_sc_hs__fill_2": {
+    "class": "CORE SPACER",
+    "power_only_pins": [
+      "VGND",
+      "VNB",
+      "VPB",
+      "VPWR"
+    ],
+    "functional_outputs": 0
+  },
+  "sky130_fd_sc_hs__fill_4": {
+    "class": "CORE SPACER",
+    "power_only_pins": [
+      "VGND",
+      "VNB",
+      "VPB",
+      "VPWR"
+    ],
+    "functional_outputs": 0
+  },
+  "sky130_fd_sc_hs__fill_8": {
+    "class": "CORE SPACER",
+    "power_only_pins": [
+      "VGND",
+      "VNB",
+      "VPB",
+      "VPWR"
+    ],
+    "functional_outputs": 0
+  }
+}

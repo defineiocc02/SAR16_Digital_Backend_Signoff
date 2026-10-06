@@ -1,0 +1,477 @@
+{
+  "scope": "Reset-reachable unbounded digital sequential equivalence, default parameters, ideal Boolean/Liberty semantics",
+  "tool": "Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)",
+  "proofs": [
+    {
+      "comparison": "rtl_to_sky130hs_mapped",
+      "result": "PASS",
+      "inductive_step": "PASS",
+      "reset_base": "PASS",
+      "gold_state_bits": 843,
+      "gate_state_bits": 846,
+      "output_bits": 146,
+      "inductive_obligations": 2689,
+      "reset_obligations": 849,
+      "condition": "SRM state in 0..5",
+      "power_ports": []
+    },
+    {
+      "comparison": "sky130hs_mapped_to_sky130hs_routed",
+      "result": "PASS",
+      "inductive_step": "PASS",
+      "reset_base": "PASS",
+      "gold_state_bits": 846,
+      "gate_state_bits": 846,
+      "output_bits": 146,
+      "inductive_obligations": 2684,
+      "reset_obligations": 848,
+      "condition": "none",
+      "power_ports": []
+    }
+  ],
+  "source_sha256": {
+    "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/environment/tools/OpenROAD-flow-scripts/flow/platforms/sky130hs/lef/sky130_fd_sc_hs_merged.lef": "bcf8e2f0c90417b4002d2b96b348e63c806d69f6d44b9a465e0c830215b67a5a",
+    "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/environment/tools/OpenROAD-flow-scripts/flow/platforms/sky130hs/lib/sky130_fd_sc_hs__tt_025C_1v80.lib": "0d10dd4e30a628ef692020af757593121eb4b93e69ee2a6f4f16d8630cfe3aeb",
+    "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/recovered/SAR16_Rework_Core_20261005/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv": "bff398bd6e1e99b9008b39a673c252caa389e6ea50d4f51d3d7e1d6de9e6ea1d",
+    "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/recovered/SAR16_Rework_Core_20261005/sar16_rework_20261005/repo/rtl_optimized/sar_digi_paper_core.sv": "cfb3548a9aa6e6bfa3d9395f02c5695d12e075415931185db8da461804139022",
+    "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/recovered/SAR16_Rework_Core_20261005/sar16_rework_20261005/repo/rtl_optimized/srm_residue_estimator.sv": "113265c69b6fa7550906c17290a66b7507f51221231751a99d72a8f580f110de",
+    "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/recovered/SAR16_Rework_Core_20261005/sar16_rework_20261005/repo/rtl_optimized/srm_residue_lut.sv": "d3335201c8de1692e31cab9f28b8a9862ffbace3710529599ac8f241ed98bbdf",
+    "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/run_v1/results/mapped.v": "6a158f84c153d282d7210e074af238d80a63d6596c0790dab0f9dffeedc33ee3",
+    "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/candidate_v2_diodefree/results/routed.v": "b6b2f6ab56f5d565d26b2ccacfcb1af9e751b0bf1100595bb16942449e35cce5"
+  },
+  "model_sha256": {
+    "models/sky130hs_from_liberty.json": "f0e20c5e72c59ee1aa4aaa718238e5dd7d34ceb71cd3c0cb2562d38871ddf193",
+    "models/sky130hs_from_liberty.v": "01dd08eec8f7b9af9c0b829d46b8b7e5b7f7e502b19dd13d467962fd52441aa5",
+    "models/sky130hs_physical_only.v": "8f2778845f14453b4abb0b8e173dfe56c39ffd62df14c26148f0b5fa54809ae9",
+    "models/sky130hs_physical_only_audit.json": "d1a4e582f30bd0e09b111a9f6772086aa796d01e0d69649e61d2fed1ed73f07f"
+  },
+  "output_coverage": {
+    "rtl_to_sky130hs_mapped": {
+      "calib_done": {
+        "bits": 1,
+        "status": "PASS"
+      },
+      "calib_done_pulse": {
+        "bits": 1,
+        "status": "PASS"
+      },
+      "calib_mode_en": {
+        "bits": 1,
+        "status": "PASS"
+      },
+      "dac_p_force": {
+        "bits": 20,
+        "status": "PASS"
+      },
+      "dac_n_force": {
+        "bits": 20,
+        "status": "PASS"
+      },
+      "calib_overrange": {
+        "bits": 1,
+        "status": "PASS"
+      },
+      "calib_overrange_bits": {
+        "bits": 20,
+        "status": "PASS"
+      },
+      "raw_code_o": {
+        "bits": 20,
+        "status": "PASS"
+      },
+      "raw_code_valid_o": {
+        "bits": 1,
+        "status": "PASS"
+      },
+      "w_wr_en": {
+        "bits": 1,
+        "status": "PASS"
+      },
+      "w_wr_addr": {
+        "bits": 5,
+        "status": "PASS"
+      },
+      "w_wr_data": {
+        "bits": 30,
+        "status": "PASS"
+      },
+      "srm_busy": {
+        "bits": 1,
+        "status": "PASS"
+      },
+      "srm_done": {
+        "bits": 1,
+        "status": "PASS"
+      },
+      "srm_residue_valid": {
+        "bits": 1,
+        "status": "PASS"
+      },
+      "srm_ones_count": {
+        "bits": 5,
+        "status": "PASS"
+      },
+      "srm_total_count": {
+        "bits": 5,
+        "status": "PASS"
+      },
+      "srm_count_shortfall": {
+        "bits": 1,
+        "status": "PASS"
+      },
+      "srm_stalled": {
+        "bits": 1,
+        "status": "PASS"
+      },
+      "srm_residue_o": {
+        "bits": 10,
+        "status": "PASS"
+      }
+    },
+    "sky130hs_mapped_to_sky130hs_routed": {
+      "calib_done": {
+        "bits": 1,
+        "status": "PASS"
+      },
+      "calib_done_pulse": {
+        "bits": 1,
+        "status": "PASS"
+      },
+      "calib_mode_en": {
+        "bits": 1,
+        "status": "PASS"
+      },
+      "dac_p_force": {
+        "bits": 20,
+        "status": "PASS"
+      },
+      "dac_n_force": {
+        "bits": 20,
+        "status": "PASS"
+      },
+      "calib_overrange": {
+        "bits": 1,
+        "status": "PASS"
+      },
+      "calib_overrange_bits": {
+        "bits": 20,
+        "status": "PASS"
+      },
+      "raw_code_o": {
+        "bits": 20,
+        "status": "PASS"
+      },
+      "raw_code_valid_o": {
+        "bits": 1,
+        "status": "PASS"
+      },
+      "w_wr_en": {
+        "bits": 1,
+        "status": "PASS"
+      },
+      "w_wr_addr": {
+        "bits": 5,
+        "status": "PASS"
+      },
+      "w_wr_data": {
+        "bits": 30,
+        "status": "PASS"
+      },
+      "srm_busy": {
+        "bits": 1,
+        "status": "PASS"
+      },
+      "srm_done": {
+        "bits": 1,
+        "status": "PASS"
+      },
+      "srm_residue_valid": {
+        "bits": 1,
+        "status": "PASS"
+      },
+      "srm_ones_count": {
+        "bits": 5,
+        "status": "PASS"
+      },
+      "srm_total_count": {
+        "bits": 5,
+        "status": "PASS"
+      },
+      "srm_count_shortfall": {
+        "bits": 1,
+        "status": "PASS"
+      },
+      "srm_stalled": {
+        "bits": 1,
+        "status": "PASS"
+      },
+      "srm_residue_o": {
+        "bits": 10,
+        "status": "PASS"
+      }
+    }
+  },
+  "functional_cell_audit": {
+    "sky130hs_mapped": {
+      "instantiated_types": {
+        "sky130_fd_sc_hs__clkinv_1": 61,
+        "sky130_fd_sc_hs__nor2_1": 205,
+        "sky130_fd_sc_hs__nand2_1": 242,
+        "sky130_fd_sc_hs__nand3_1": 47,
+        "sky130_fd_sc_hs__nor2b_1": 53,
+        "sky130_fd_sc_hs__nand2b_1": 68,
+        "sky130_fd_sc_hs__a21oi_1": 211,
+        "sky130_fd_sc_hs__nor3_1": 68,
+        "sky130_fd_sc_hs__or3_1": 10,
+        "sky130_fd_sc_hs__o21ai_1": 116,
+        "sky130_fd_sc_hs__a32o_1": 16,
+        "sky130_fd_sc_hs__xnor2_1": 151,
+        "sky130_fd_sc_hs__o31a_1": 8,
+        "sky130_fd_sc_hs__xor2_1": 94,
+        "sky130_fd_sc_hs__or2_1": 32,
+        "sky130_fd_sc_hs__o31ai_1": 25,
+        "sky130_fd_sc_hs__o311ai_1": 24,
+        "sky130_fd_sc_hs__nand3b_1": 7,
+        "sky130_fd_sc_hs__nand4_1": 16,
+        "sky130_fd_sc_hs__o41ai_1": 4,
+        "sky130_fd_sc_hs__a41oi_1": 3,
+        "sky130_fd_sc_hs__o211ai_1": 17,
+        "sky130_fd_sc_hs__o21a_1": 33,
+        "sky130_fd_sc_hs__o2bb2ai_1": 77,
+        "sky130_fd_sc_hs__mux2_1": 489,
+        "sky130_fd_sc_hs__and2_1": 51,
+        "sky130_fd_sc_hs__xnor3_1": 3,
+        "sky130_fd_sc_hs__maj3_1": 69,
+        "sky130_fd_sc_hs__a21o_1": 9,
+        "sky130_fd_sc_hs__a211oi_1": 11,
+        "sky130_fd_sc_hs__a31o_1": 15,
+        "sky130_fd_sc_hs__o221ai_1": 4,
+        "sky130_fd_sc_hs__a311oi_1": 15,
+        "sky130_fd_sc_hs__o22ai_1": 16,
+        "sky130_fd_sc_hs__and3_1": 15,
+        "sky130_fd_sc_hs__a31oi_1": 15,
+        "sky130_fd_sc_hs__a211o_1": 3,
+        "sky130_fd_sc_hs__a22oi_1": 121,
+        "sky130_fd_sc_hs__mux2i_1": 17,
+        "sky130_fd_sc_hs__nand4bb_1": 1,
+        "sky130_fd_sc_hs__nand4b_1": 4,
+        "sky130_fd_sc_hs__o22a_1": 1,
+        "sky130_fd_sc_hs__nor3b_1": 6,
+        "sky130_fd_sc_hs__nor4b_1": 2,
+        "sky130_fd_sc_hs__and3b_1": 1,
+        "sky130_fd_sc_hs__a22o_1": 144,
+        "sky130_fd_sc_hs__o21bai_1": 5,
+        "sky130_fd_sc_hs__or3b_1": 2,
+        "sky130_fd_sc_hs__a222oi_1": 29,
+        "sky130_fd_sc_hs__a41o_1": 1,
+        "sky130_fd_sc_hs__a221oi_1": 11,
+        "sky130_fd_sc_hs__a21bo_1": 1,
+        "sky130_fd_sc_hs__a222o_1": 8,
+        "sky130_fd_sc_hs__a32oi_1": 2,
+        "sky130_fd_sc_hs__a2111oi_1": 5,
+        "sky130_fd_sc_hs__o311a_1": 1,
+        "sky130_fd_sc_hs__o2111a_1": 1,
+        "sky130_fd_sc_hs__a221o_1": 2,
+        "sky130_fd_sc_hs__and4_1": 8,
+        "sky130_fd_sc_hs__a311o_1": 7,
+        "sky130_fd_sc_hs__o211a_2": 2,
+        "sky130_fd_sc_hs__xor3_1": 1,
+        "sky130_fd_sc_hs__o32a_1": 1,
+        "sky130_fd_sc_hs__o2111ai_1": 6,
+        "sky130_fd_sc_hs__o32ai_1": 1,
+        "sky130_fd_sc_hs__nor4_1": 1,
+        "sky130_fd_sc_hs__buf_1": 1,
+        "sky130_fd_sc_hs__dfrtp_1": 841,
+        "sky130_fd_sc_hs__dfstp_1": 5,
+        "sky130_fd_sc_hs__conb_1": 2
+      },
+      "physical_only_no_output_cells": {},
+      "normalized_primitive_counts": {
+        "$_AND_": 4613,
+        "$_OR_": 2968,
+        "$_NOT_": 2262,
+        "$_DFF_PN0_": 841,
+        "$_DFF_PN1_": 5,
+        "$scopeinfo": 3544
+      },
+      "unsupported_functional_cells": 0,
+      "x_z_connections": 0
+    },
+    "sky130hs_routed": {
+      "instantiated_types": {
+        "sky130_fd_sc_hs__fill_2": 1598,
+        "sky130_fd_sc_hs__fill_8": 4012,
+        "sky130_fd_sc_hs__fill_4": 1349,
+        "sky130_fd_sc_hs__fill_1": 1941,
+        "sky130_fd_sc_hs__tapvpwrvgnd_1": 1456,
+        "sky130_fd_sc_hs__clkinv_1": 164,
+        "sky130_fd_sc_hs__nor2_1": 187,
+        "sky130_fd_sc_hs__nand2_1": 239,
+        "sky130_fd_sc_hs__nand3_1": 47,
+        "sky130_fd_sc_hs__nor2b_1": 53,
+        "sky130_fd_sc_hs__nand2b_1": 67,
+        "sky130_fd_sc_hs__nand2_2": 3,
+        "sky130_fd_sc_hs__a21oi_1": 210,
+        "sky130_fd_sc_hs__nor3_2": 1,
+        "sky130_fd_sc_hs__or3_1": 10,
+        "sky130_fd_sc_hs__nor3_1": 56,
+        "sky130_fd_sc_hs__o21ai_1": 116,
+        "sky130_fd_sc_hs__a32o_1": 16,
+        "sky130_fd_sc_hs__xnor2_1": 151,
+        "sky130_fd_sc_hs__o31a_1": 8,
+        "sky130_fd_sc_hs__xor2_1": 94,
+        "sky130_fd_sc_hs__or2_1": 32,
+        "sky130_fd_sc_hs__o31ai_1": 23,
+        "sky130_fd_sc_hs__o311ai_1": 24,
+        "sky130_fd_sc_hs__nand3b_1": 7,
+        "sky130_fd_sc_hs__nand4_1": 16,
+        "sky130_fd_sc_hs__o41ai_1": 4,
+        "sky130_fd_sc_hs__a41oi_1": 3,
+        "sky130_fd_sc_hs__o211ai_1": 17,
+        "sky130_fd_sc_hs__o21a_1": 33,
+        "sky130_fd_sc_hs__nor2_2": 14,
+        "sky130_fd_sc_hs__o31ai_2": 1,
+        "sky130_fd_sc_hs__o2bb2ai_1": 77,
+        "sky130_fd_sc_hs__mux2_1": 489,
+        "sky130_fd_sc_hs__nor2_4": 4,
+        "sky130_fd_sc_hs__and2_1": 51,
+        "sky130_fd_sc_hs__xnor3_1": 3,
+        "sky130_fd_sc_hs__maj3_1": 69,
+        "sky130_fd_sc_hs__a21o_1": 9,
+        "sky130_fd_sc_hs__a211oi_1": 11,
+        "sky130_fd_sc_hs__a31o_1": 15,
+        "sky130_fd_sc_hs__o221ai_1": 4,
+        "sky130_fd_sc_hs__a311oi_1": 15,
+        "sky130_fd_sc_hs__o22ai_1": 16,
+        "sky130_fd_sc_hs__and3_1": 15,
+        "sky130_fd_sc_hs__a31oi_1": 15,
+        "sky130_fd_sc_hs__a211o_1": 3,
+        "sky130_fd_sc_hs__a22oi_1": 121,
+        "sky130_fd_sc_hs__mux2i_1": 17,
+        "sky130_fd_sc_hs__nand4bb_1": 1,
+        "sky130_fd_sc_hs__nand4b_1": 4,
+        "sky130_fd_sc_hs__o22a_1": 1,
+        "sky130_fd_sc_hs__nor3b_1": 5,
+        "sky130_fd_sc_hs__a21oi_4": 1,
+        "sky130_fd_sc_hs__nor4b_1": 2,
+        "sky130_fd_sc_hs__and3b_1": 1,
+        "sky130_fd_sc_hs__nor3_4": 11,
+        "sky130_fd_sc_hs__a22o_1": 144,
+        "sky130_fd_sc_hs__o21bai_1": 5,
+        "sky130_fd_sc_hs__or3b_1": 2,
+        "sky130_fd_sc_hs__o31ai_4": 1,
+        "sky130_fd_sc_hs__nor3b_4": 1,
+        "sky130_fd_sc_hs__nand2b_2": 1,
+        "sky130_fd_sc_hs__a222oi_1": 29,
+        "sky130_fd_sc_hs__a41o_1": 1,
+        "sky130_fd_sc_hs__a221oi_1": 11,
+        "sky130_fd_sc_hs__a21bo_1": 1,
+        "sky130_fd_sc_hs__a222o_1": 8,
+        "sky130_fd_sc_hs__a32oi_1": 2,
+        "sky130_fd_sc_hs__a2111oi_1": 5,
+        "sky130_fd_sc_hs__o311a_1": 1,
+        "sky130_fd_sc_hs__o2111a_1": 1,
+        "sky130_fd_sc_hs__a221o_1": 2,
+        "sky130_fd_sc_hs__and4_1": 8,
+        "sky130_fd_sc_hs__a311o_1": 7,
+        "sky130_fd_sc_hs__o211a_2": 2,
+        "sky130_fd_sc_hs__xor3_1": 1,
+        "sky130_fd_sc_hs__o32a_1": 1,
+        "sky130_fd_sc_hs__o2111ai_1": 6,
+        "sky130_fd_sc_hs__o32ai_1": 1,
+        "sky130_fd_sc_hs__nor4_1": 1,
+        "sky130_fd_sc_hs__buf_1": 192,
+        "sky130_fd_sc_hs__dfrtp_1": 836,
+        "sky130_fd_sc_hs__dfrtp_2": 5,
+        "sky130_fd_sc_hs__dfstp_1": 5,
+        "sky130_fd_sc_hs__conb_1": 2,
+        "sky130_fd_sc_hs__clkbuf_8": 20,
+        "sky130_fd_sc_hs__clkbuf_16": 28,
+        "sky130_fd_sc_hs__clkbuf_2": 244,
+        "sky130_fd_sc_hs__clkinv_4": 8,
+        "sky130_fd_sc_hs__inv_8": 2,
+        "sky130_fd_sc_hs__clkinv_2": 13,
+        "sky130_fd_sc_hs__clkbuf_4": 57,
+        "sky130_fd_sc_hs__buf_2": 1,
+        "sky130_fd_sc_hs__dlygate4sd3_1": 26,
+        "sky130_fd_sc_hs__buf_8": 39,
+        "sky130_fd_sc_hs__buf_16": 17,
+        "sky130_fd_sc_hs__buf_4": 8
+      },
+      "physical_only_no_output_cells": {
+        "sky130_fd_sc_hs__fill_2": 1598,
+        "sky130_fd_sc_hs__fill_8": 4012,
+        "sky130_fd_sc_hs__fill_4": 1349,
+        "sky130_fd_sc_hs__fill_1": 1941,
+        "sky130_fd_sc_hs__tapvpwrvgnd_1": 1456
+      },
+      "normalized_primitive_counts": {
+        "$_AND_": 4613,
+        "$_OR_": 2968,
+        "$_NOT_": 2262,
+        "$_DFF_PN0_": 841,
+        "$_DFF_PN1_": 5,
+        "$scopeinfo": 14657
+      },
+      "unsupported_functional_cells": 0,
+      "x_z_connections": 0
+    }
+  },
+  "negative_controls": {
+    "negative_clock_invert": {
+      "status": "PASS",
+      "expected_counterexample": true,
+      "exit_code": 0,
+      "wall_seconds": 4.891,
+      "script_sha256": "6736f5794ce2d777099e2fb1183fe2b2bcfb7dcbe3922d1c8be47c9283be5fee",
+      "log_sha256": "7fc523585981faf6f09d7775e7dfa195bae8c88a9d2b4965894cc0c4fdd9bcf4",
+      "log": "logs/negative_clock_invert.log"
+    },
+    "negative_data_invert": {
+      "status": "PASS",
+      "expected_counterexample": true,
+      "exit_code": 0,
+      "wall_seconds": 4.793,
+      "script_sha256": "ac5e95b3e0c467d12af55398ad10e8af12c80a7dd4ed584bbc7139b3ec85707e",
+      "log_sha256": "6244fc7749031a5ab64838cbf52961f18de877890fe7cb187672c34fa19e2cdb",
+      "log": "logs/negative_data_invert.log"
+    },
+    "negative_fsm_next_invert": {
+      "status": "PASS",
+      "expected_counterexample": true,
+      "exit_code": 0,
+      "wall_seconds": 4.882,
+      "script_sha256": "004de64d9ff3a10cb99e697888bfd36f1e093524f8b23cbe13398fb88164757d",
+      "log_sha256": "1195c5f59840cc1d0b133e678d6215f8f413e79aed04d3ede8bc162b98dffd6a",
+      "log": "logs/negative_fsm_next_invert.log"
+    },
+    "negative_output_invert": {
+      "status": "PASS",
+      "expected_counterexample": true,
+      "exit_code": 0,
+      "wall_seconds": 4.423,
+      "script_sha256": "096e69eac9d29d74f662691250cc65fe0170a8a57772f9cac451bc9c5bd559b9",
+      "log_sha256": "dd795464c39650b6c87c15506bdefeb40bf6ec5ac5c64b41aa05f3e4a7086faa",
+      "log": "logs/negative_output_invert.log"
+    },
+    "negative_reset_invert": {
+      "status": "PASS",
+      "expected_counterexample": true,
+      "exit_code": 0,
+      "wall_seconds": 4.296,
+      "script_sha256": "0f64f0708369bbd1530346784cba2d8798d348a0a511cf9dfce77da630614f6a",
+      "log_sha256": "0aaa8b1c65b70841c247bac7eca121aaba5d650f995180a14f21d2503912f500",
+      "log": "logs/negative_reset_invert.log"
+    }
+  },
+  "limits": [
+    "Only the exact hashed default-parameter source and actual supplied netlists; alternative parameters are unproved",
+    "Defined primary inputs and nominal-power, zero-delay Liberty functional semantics",
+    "Common reset low at the first two sampled global steps; equality/definedness holds at steps 2 through 4; later resets are arbitrary",
+    "Clock levels are independent and unconstrained, with no fixed ratio or fairness assumption",
+    "Yosys clk2fflogic uses its documented negative-hold-time asynchronous-reset convention when reset release coincides with a clock edge",
+    "Equivalence preserves the RTL behavior; it is not an independent proof that calibration numerics, analog performance or every intended functional requirement is correct",
+    "No source-level arbitrary-X propagation guarantee: standard synthesis normalization uses opt without keepdc",
+    "No analog metastability, synchronizer MTBF, SDF timing, recovery/removal, power-integrity/connectivity, extracted-GDS equivalence or LVS conclusion"
+  ]
+}

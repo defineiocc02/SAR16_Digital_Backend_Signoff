@@ -1,0 +1,8 @@
+read_json /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/equivalence_candidate_v2_diodefree/results/sky130hs_mapped_comb.json
+read_json /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/equivalence_candidate_v2_diodefree/results/sky130hs_routed_comb.json
+read_verilog -formal -sv /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/equivalence_candidate_v2_diodefree/results/sky130hs_mapped_to_sky130hs_routed.sv
+hierarchy -check -top sky130hs_mapped_to_sky130hs_routed
+flatten
+opt
+check -assert
+sat -enable_undef -set-def-inputs -prove proof_ok 1 -show-ports -dump_json /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/equivalence_candidate_v2_diodefree/results/sky130hs_mapped_to_sky130hs_routed_cex.json -dump_vcd /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/equivalence_candidate_v2_diodefree/results/sky130hs_mapped_to_sky130hs_routed_cex.vcd -verify

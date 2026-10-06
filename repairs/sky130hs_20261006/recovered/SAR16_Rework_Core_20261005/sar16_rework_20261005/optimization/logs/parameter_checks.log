@@ -1,0 +1,6 @@
+904 904 0 100 2724
+fallback_low {'parameters': {'MAX_CALIB_BIT': 0}, 'status': 'PASS', 'returncode': 0}
+904 904 0 100 2724
+fallback_high {'parameters': {'MAX_CALIB_BIT': 15}, 'status': 'PASS', 'returncode': 0}
+919 733 186 101 2397
+alternate_legal {'parameters': {'WEIGHT_WIDTH': 31, 'COMP_WAIT_CYC': 4, 'AVG_LOOPS': 1, 'REF_WEIGHT_LSB': 512, 'ROUND_HALF_LSB': 0, 'DETECT_OVERRANGE': 0}, 'status': 'PASS', 'returncode': 0}

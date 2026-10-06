@@ -1,0 +1,35 @@
+{
+  "baseline": {
+    "physical_cells": 4515,
+    "metadata_cells": 3,
+    "flops": 1026,
+    "cell_area_um2": 9840.936,
+    "flop_area_um2": 5458.32,
+    "comb_area_um2": 4382.616,
+    "shadow_dynamic_bits": 600,
+    "measured_dynamic_bits": 420
+  },
+  "optimized": {
+    "physical_cells": 4047,
+    "metadata_cells": 3,
+    "flops": 846,
+    "cell_area_um2": 8400.546,
+    "flop_area_um2": 4500.72,
+    "comb_area_um2": 3899.826,
+    "shadow_dynamic_bits": 420,
+    "measured_dynamic_bits": 420
+  },
+  "reduction": {
+    "physical_cells": 468,
+    "flops": 180,
+    "cell_area_um2": 1440.39,
+    "flop_area_um2": 957.6,
+    "comb_area_um2": 482.79
+  },
+  "reduction_percent": {
+    "physical_cells": 10.365448504983389,
+    "flops": 17.54385964912281,
+    "cell_area_um2": 14.636717482971127
+  },
+  "scope": "Same Nangate45 Liberty and unchanged original Yosys synthesis recipe; mapped standard-cell area, not routed/core/die area. ABC receives Liberty only, matching baseline; downstream SDC is unchanged and belongs to the physical implementation."
+}

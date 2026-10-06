@@ -1,0 +1,312 @@
+CDC_ENTRY scalar req_active req_s1 BOUND_NS 8.0
+Startpoint: _6148_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _6185_ (rising edge-triggered flip-flop clocked by dec_clk)
+Path Group: path delay
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.072124    0.000000    0.000000 ^ _6148_/CLK (sky130_fd_sc_hs__dfrtp_1)
+     7    0.027729    0.175409    0.329098    0.329098 ^ _6148_/Q (sky130_fd_sc_hs__dfrtp_1)
+                                                         u_srm_residue.req_active (net)
+                      0.175409    0.000613    0.329711 ^ _6185_/D (sky130_fd_sc_hs__dfrtp_1)
+                                              0.329711   data arrival time
+
+                                  8.000000    8.000000   max_delay
+                                 -0.162920    7.837080   library setup time
+                                              7.837080   data required time
+---------------------------------------------------------------------------------------------
+                                              7.837080   data required time
+                                             -0.329711   data arrival time
+---------------------------------------------------------------------------------------------
+                                              7.507369   slack (MET)
+
+
+CDC_ENTRY scalar dec_ack ack_s1 BOUND_NS 2.4000000000000004
+Startpoint: _6136_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6112_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: path delay
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.078975    0.000000    0.000000 ^ _6136_/CLK (sky130_fd_sc_hs__dfrtp_1)
+     6    0.020888    0.134791    0.300659    0.300659 ^ _6136_/Q (sky130_fd_sc_hs__dfrtp_1)
+                                                         u_srm_residue.dec_ack (net)
+                      0.134791    0.000669    0.301328 ^ _6112_/D (sky130_fd_sc_hs__dfrtp_1)
+                                              0.301328   data arrival time
+
+                                  2.400000    2.400000   max_delay
+                                 -0.154108    2.245892   library setup time
+                                              2.245892   data required time
+---------------------------------------------------------------------------------------------
+                                              2.245892   data required time
+                                             -0.301328   data arrival time
+---------------------------------------------------------------------------------------------
+                                              1.944564   slack (MET)
+
+
+CDC_ENTRY scalar dec_done done_s1 BOUND_NS 2.4000000000000004
+Startpoint: _6100_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6101_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: path delay
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.077545    0.000000    0.000000 ^ _6100_/CLK (sky130_fd_sc_hs__dfrtp_1)
+     2    0.007506    0.057069    0.238793    0.238793 ^ _6100_/Q (sky130_fd_sc_hs__dfrtp_1)
+                                                         u_srm_residue.dec_done (net)
+                      0.057069    0.000155    0.238948 ^ _6101_/D (sky130_fd_sc_hs__dfrtp_1)
+                                              0.238948   data arrival time
+
+                                  2.400000    2.400000   max_delay
+                                 -0.129820    2.270180   library setup time
+                                              2.270180   data required time
+---------------------------------------------------------------------------------------------
+                                              2.270180   data required time
+                                             -0.238948   data arrival time
+---------------------------------------------------------------------------------------------
+                                              2.031231   slack (MET)
+
+
+CDC_ENTRY gray u_srm_residue.ones_g[0] u_srm_residue.ones_g_s1[0] BOUND_NS 2.4000000000000004
+Startpoint: _6120_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6179_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: path delay
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.078941    0.000000    0.000000 ^ _6120_/CLK (sky130_fd_sc_hs__dfrtp_1)
+     2    0.006156    0.049481    0.232477    0.232477 ^ _6120_/Q (sky130_fd_sc_hs__dfrtp_1)
+                                                         u_srm_residue.ones_g[0] (net)
+                      0.049481    0.000165    0.232642 ^ _6179_/D (sky130_fd_sc_hs__dfrtp_1)
+                                              0.232642   data arrival time
+
+                                  2.400000    2.400000   max_delay
+                                 -0.128495    2.271505   library setup time
+                                              2.271505   data required time
+---------------------------------------------------------------------------------------------
+                                              2.271505   data required time
+                                             -0.232642   data arrival time
+---------------------------------------------------------------------------------------------
+                                              2.038863   slack (MET)
+
+
+CDC_ENTRY gray u_srm_residue.ones_g[1] u_srm_residue.ones_g_s1[1] BOUND_NS 2.4000000000000004
+Startpoint: _6121_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6180_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: path delay
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.078940    0.000000    0.000000 ^ _6121_/CLK (sky130_fd_sc_hs__dfrtp_1)
+     2    0.006182    0.049634    0.232590    0.232590 ^ _6121_/Q (sky130_fd_sc_hs__dfrtp_1)
+                                                         u_srm_residue.ones_g[1] (net)
+                      0.049634    0.000181    0.232771 ^ _6180_/D (sky130_fd_sc_hs__dfrtp_1)
+                                              0.232771   data arrival time
+
+                                  2.400000    2.400000   max_delay
+                                 -0.128577    2.271423   library setup time
+                                              2.271423   data required time
+---------------------------------------------------------------------------------------------
+                                              2.271423   data required time
+                                             -0.232771   data arrival time
+---------------------------------------------------------------------------------------------
+                                              2.038652   slack (MET)
+
+
+CDC_ENTRY gray u_srm_residue.ones_g[2] u_srm_residue.ones_g_s1[2] BOUND_NS 2.4000000000000004
+Startpoint: _6122_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6181_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: path delay
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.078937    0.000000    0.000000 ^ _6122_/CLK (sky130_fd_sc_hs__dfrtp_1)
+     2    0.006528    0.051568    0.234313    0.234313 ^ _6122_/Q (sky130_fd_sc_hs__dfrtp_1)
+                                                         u_srm_residue.ones_g[2] (net)
+                      0.051568    0.000156    0.234469 ^ _6181_/D (sky130_fd_sc_hs__dfrtp_1)
+                                              0.234469   data arrival time
+
+                                  2.400000    2.400000   max_delay
+                                 -0.128825    2.271175   library setup time
+                                              2.271175   data required time
+---------------------------------------------------------------------------------------------
+                                              2.271175   data required time
+                                             -0.234469   data arrival time
+---------------------------------------------------------------------------------------------
+                                              2.036706   slack (MET)
+
+
+CDC_ENTRY gray u_srm_residue.ones_g[3] u_srm_residue.ones_g_s1[3] BOUND_NS 2.4000000000000004
+Startpoint: _6123_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6182_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: path delay
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.078949    0.000000    0.000000 ^ _6123_/CLK (sky130_fd_sc_hs__dfrtp_1)
+     2    0.005387    0.045217    0.228664    0.228664 ^ _6123_/Q (sky130_fd_sc_hs__dfrtp_1)
+                                                         u_srm_residue.ones_g[3] (net)
+                      0.045217    0.000099    0.228763 ^ _6182_/D (sky130_fd_sc_hs__dfrtp_1)
+                                              0.228763   data arrival time
+
+                                  2.400000    2.400000   max_delay
+                                 -0.127424    2.272576   library setup time
+                                              2.272576   data required time
+---------------------------------------------------------------------------------------------
+                                              2.272576   data required time
+                                             -0.228763   data arrival time
+---------------------------------------------------------------------------------------------
+                                              2.043813   slack (MET)
+
+
+CDC_ENTRY gray u_srm_residue.ones_g[4] u_srm_residue.ones_g_s1[4] BOUND_NS 2.4000000000000004
+Startpoint: _6124_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6183_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: path delay
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.078972    0.000000    0.000000 ^ _6124_/CLK (sky130_fd_sc_hs__dfrtp_1)
+     5    0.019418    0.126157    0.294077    0.294077 ^ _6124_/Q (sky130_fd_sc_hs__dfrtp_1)
+                                                         u_srm_residue.ones_g[4] (net)
+                      0.126157    0.000527    0.294604 ^ _6183_/D (sky130_fd_sc_hs__dfrtp_1)
+                                              0.294604   data arrival time
+
+                                  2.400000    2.400000   max_delay
+                                 -0.152132    2.247869   library setup time
+                                              2.247869   data required time
+---------------------------------------------------------------------------------------------
+                                              2.247869   data required time
+                                             -0.294604   data arrival time
+---------------------------------------------------------------------------------------------
+                                              1.953265   slack (MET)
+
+
+CDC_ENTRY gray u_srm_residue.total_g[0] u_srm_residue.tot_g_s1[0] BOUND_NS 2.4000000000000004
+Startpoint: _6125_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6130_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: path delay
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.077550    0.000000    0.000000 ^ _6125_/CLK (sky130_fd_sc_hs__dfrtp_1)
+     2    0.008279    0.061469    0.242584    0.242584 ^ _6125_/Q (sky130_fd_sc_hs__dfrtp_1)
+                                                         u_srm_residue.total_g[0] (net)
+                      0.061469    0.000279    0.242862 ^ _6130_/D (sky130_fd_sc_hs__dfrtp_1)
+                                              0.242862   data arrival time
+
+                                  2.400000    2.400000   max_delay
+                                 -0.130475    2.269525   library setup time
+                                              2.269525   data required time
+---------------------------------------------------------------------------------------------
+                                              2.269525   data required time
+                                             -0.242862   data arrival time
+---------------------------------------------------------------------------------------------
+                                              2.026662   slack (MET)
+
+
+CDC_ENTRY gray u_srm_residue.total_g[1] u_srm_residue.tot_g_s1[1] BOUND_NS 2.4000000000000004
+Startpoint: _6126_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6131_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: path delay
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.077546    0.000000    0.000000 ^ _6126_/CLK (sky130_fd_sc_hs__dfrtp_1)
+     2    0.005033    0.043276    0.226472    0.226472 ^ _6126_/Q (sky130_fd_sc_hs__dfrtp_1)
+                                                         u_srm_residue.total_g[1] (net)
+                      0.043276    0.000106    0.226578 ^ _6131_/D (sky130_fd_sc_hs__dfrtp_1)
+                                              0.226578   data arrival time
+
+                                  2.400000    2.400000   max_delay
+                                 -0.128288    2.271713   library setup time
+                                              2.271713   data required time
+---------------------------------------------------------------------------------------------
+                                              2.271713   data required time
+                                             -0.226578   data arrival time
+---------------------------------------------------------------------------------------------
+                                              2.045134   slack (MET)
+
+
+CDC_ENTRY gray u_srm_residue.total_g[2] u_srm_residue.tot_g_s1[2] BOUND_NS 2.4000000000000004
+Startpoint: _6127_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6132_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: path delay
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.077545    0.000000    0.000000 ^ _6127_/CLK (sky130_fd_sc_hs__dfrtp_1)
+     2    0.006906    0.053689    0.235793    0.235793 ^ _6127_/Q (sky130_fd_sc_hs__dfrtp_1)
+                                                         u_srm_residue.total_g[2] (net)
+                      0.053689    0.000173    0.235966 ^ _6132_/D (sky130_fd_sc_hs__dfrtp_1)
+                                              0.235966   data arrival time
+
+                                  2.400000    2.400000   max_delay
+                                 -0.129540    2.270460   library setup time
+                                              2.270460   data required time
+---------------------------------------------------------------------------------------------
+                                              2.270460   data required time
+                                             -0.235966   data arrival time
+---------------------------------------------------------------------------------------------
+                                              2.034494   slack (MET)
+
+
+CDC_ENTRY gray u_srm_residue.total_g[3] u_srm_residue.tot_g_s1[3] BOUND_NS 2.4000000000000004
+Startpoint: _6128_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6133_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: path delay
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.077551    0.000000    0.000000 ^ _6128_/CLK (sky130_fd_sc_hs__dfrtp_1)
+     2    0.006376    0.050721    0.233119    0.233119 ^ _6128_/Q (sky130_fd_sc_hs__dfrtp_1)
+                                                         u_srm_residue.total_g[3] (net)
+                      0.050721    0.000237    0.233356 ^ _6133_/D (sky130_fd_sc_hs__dfrtp_1)
+                                              0.233356   data arrival time
+
+                                  2.400000    2.400000   max_delay
+                                 -0.128180    2.271820   library setup time
+                                              2.271820   data required time
+---------------------------------------------------------------------------------------------
+                                              2.271820   data required time
+                                             -0.233356   data arrival time
+---------------------------------------------------------------------------------------------
+                                              2.038464   slack (MET)
+
+
+CDC_ENTRY gray u_srm_residue.total_g[4] u_srm_residue.tot_g_s1[4] BOUND_NS 2.4000000000000004
+Startpoint: _6129_ (rising edge-triggered flip-flop clocked by dec_clk)
+Endpoint: _6134_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: path delay
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.077544    0.000000    0.000000 ^ _6129_/CLK (sky130_fd_sc_hs__dfrtp_1)
+     5    0.022137    0.142175    0.305594    0.305594 ^ _6129_/Q (sky130_fd_sc_hs__dfrtp_1)
+                                                         u_srm_residue.total_g[4] (net)
+                      0.142177    0.000897    0.306490 ^ _6134_/D (sky130_fd_sc_hs__dfrtp_1)
+                                              0.306490   data arrival time
+
+                                  2.400000    2.400000   max_delay
+                                 -0.157171    2.242829   library setup time
+                                              2.242829   data required time
+---------------------------------------------------------------------------------------------
+                                              2.242829   data required time
+                                             -0.306490   data arrival time
+---------------------------------------------------------------------------------------------
+                                              1.936338   slack (MET)
+
+

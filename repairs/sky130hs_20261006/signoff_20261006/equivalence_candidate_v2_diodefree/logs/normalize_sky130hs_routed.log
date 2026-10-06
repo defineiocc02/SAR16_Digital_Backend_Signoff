@@ -1,0 +1,972 @@
+
+-- Executing script file `/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/equivalence_candidate_v2_diodefree/scripts/normalize_sky130hs_routed.ys' --
+
+1. Executing Liberty frontend: /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/environment/tools/OpenROAD-flow-scripts/flow/platforms/sky130hs/lib/sky130_fd_sc_hs__tt_025C_1v80.lib
+Ignoring cell sky130_fd_sc_hs__dlclkp_1 with missing function on output GCLK.
+Ignoring cell sky130_fd_sc_hs__dlclkp_2 with missing function on output GCLK.
+Ignoring cell sky130_fd_sc_hs__dlclkp_4 with missing function on output GCLK.
+Ignoring cell sky130_fd_sc_hs__sdlclkp_1 with missing function on output GCLK.
+Ignoring cell sky130_fd_sc_hs__sdlclkp_2 with missing function on output GCLK.
+Ignoring cell sky130_fd_sc_hs__sdlclkp_4 with missing function on output GCLK.
+Imported 371 cell types from liberty file.
+
+2. Executing Verilog-2005 frontend: /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/equivalence_candidate_v2_diodefree/models/sky130hs_physical_only.v
+Parsing Verilog input from `/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/equivalence_candidate_v2_diodefree/models/sky130hs_physical_only.v' to AST representation.
+Generating RTLIL representation for module `\sky130_fd_sc_hs__tapvpwrvgnd_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hs__fill_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hs__fill_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hs__fill_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hs__fill_8'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/candidate_v2_diodefree/results/routed.v
+Parsing Verilog input from `/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/candidate_v2_diodefree/results/routed.v' to AST representation.
+Generating RTLIL representation for module `\sar_digi_paper_core'.
+Successfully finished Verilog frontend.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1. Analyzing design hierarchy..
+Top module:  \sar_digi_paper_core
+Used module:     \sky130_fd_sc_hs__buf_8
+Used module:     \sky130_fd_sc_hs__clkbuf_16
+Used module:     \sky130_fd_sc_hs__buf_16
+Used module:     \sky130_fd_sc_hs__clkbuf_8
+Used module:     \sky130_fd_sc_hs__buf_4
+Used module:     \sky130_fd_sc_hs__buf_1
+Used module:     \sky130_fd_sc_hs__clkbuf_4
+Used module:     \sky130_fd_sc_hs__dlygate4sd3_1
+Used module:     \sky130_fd_sc_hs__clkbuf_2
+Used module:     \sky130_fd_sc_hs__buf_2
+Used module:     \sky130_fd_sc_hs__clkinv_1
+Used module:     \sky130_fd_sc_hs__clkinv_4
+Used module:     \sky130_fd_sc_hs__clkinv_2
+Used module:     \sky130_fd_sc_hs__inv_8
+Used module:     \sky130_fd_sc_hs__dfrtp_1
+Used module:     \sky130_fd_sc_hs__conb_1
+Used module:     \sky130_fd_sc_hs__dfrtp_2
+Used module:     \sky130_fd_sc_hs__dfstp_1
+Used module:     \sky130_fd_sc_hs__nor2_1
+Used module:     \sky130_fd_sc_hs__a22o_1
+Used module:     \sky130_fd_sc_hs__o22ai_1
+Used module:     \sky130_fd_sc_hs__o2bb2ai_1
+Used module:     \sky130_fd_sc_hs__nand2_1
+Used module:     \sky130_fd_sc_hs__a21oi_1
+Used module:     \sky130_fd_sc_hs__nor3b_1
+Used module:     \sky130_fd_sc_hs__nand3b_1
+Used module:     \sky130_fd_sc_hs__and2_1
+Used module:     \sky130_fd_sc_hs__nor2b_1
+Used module:     \sky130_fd_sc_hs__o2111ai_1
+Used module:     \sky130_fd_sc_hs__nand4b_1
+Used module:     \sky130_fd_sc_hs__nor3_1
+Used module:     \sky130_fd_sc_hs__nand4_1
+Used module:     \sky130_fd_sc_hs__a41oi_1
+Used module:     \sky130_fd_sc_hs__nand2b_1
+Used module:     \sky130_fd_sc_hs__nand3_1
+Used module:     \sky130_fd_sc_hs__o21ai_1
+Used module:     \sky130_fd_sc_hs__o41ai_1
+Used module:     \sky130_fd_sc_hs__a32o_1
+Used module:     \sky130_fd_sc_hs__o31ai_1
+Used module:     \sky130_fd_sc_hs__xnor2_1
+Used module:     \sky130_fd_sc_hs__nor4_1
+Used module:     \sky130_fd_sc_hs__o32ai_1
+Used module:     \sky130_fd_sc_hs__a2111oi_1
+Used module:     \sky130_fd_sc_hs__a22oi_1
+Used module:     \sky130_fd_sc_hs__o211ai_1
+Used module:     \sky130_fd_sc_hs__a211oi_1
+Used module:     \sky130_fd_sc_hs__mux2_1
+Used module:     \sky130_fd_sc_hs__a31oi_1
+Used module:     \sky130_fd_sc_hs__a311o_1
+Used module:     \sky130_fd_sc_hs__o31a_1
+Used module:     \sky130_fd_sc_hs__or2_1
+Used module:     \sky130_fd_sc_hs__o21a_1
+Used module:     \sky130_fd_sc_hs__xor2_1
+Used module:     \sky130_fd_sc_hs__a31o_1
+Used module:     \sky130_fd_sc_hs__nor2_2
+Used module:     \sky130_fd_sc_hs__o32a_1
+Used module:     \sky130_fd_sc_hs__o21bai_1
+Used module:     \sky130_fd_sc_hs__a311oi_1
+Used module:     \sky130_fd_sc_hs__a21o_1
+Used module:     \sky130_fd_sc_hs__and3_1
+Used module:     \sky130_fd_sc_hs__o211a_2
+Used module:     \sky130_fd_sc_hs__nor4b_1
+Used module:     \sky130_fd_sc_hs__and4_1
+Used module:     \sky130_fd_sc_hs__a32oi_1
+Used module:     \sky130_fd_sc_hs__a211o_1
+Used module:     \sky130_fd_sc_hs__maj3_1
+Used module:     \sky130_fd_sc_hs__o311ai_1
+Used module:     \sky130_fd_sc_hs__or3_1
+Used module:     \sky130_fd_sc_hs__a221o_1
+Used module:     \sky130_fd_sc_hs__xor3_1
+Used module:     \sky130_fd_sc_hs__nand2_2
+Used module:     \sky130_fd_sc_hs__nor2_4
+Used module:     \sky130_fd_sc_hs__nor3_4
+Used module:     \sky130_fd_sc_hs__a222oi_1
+Used module:     \sky130_fd_sc_hs__a222o_1
+Used module:     \sky130_fd_sc_hs__a221oi_1
+Used module:     \sky130_fd_sc_hs__xnor3_1
+Used module:     \sky130_fd_sc_hs__o2111a_1
+Used module:     \sky130_fd_sc_hs__o311a_1
+Used module:     \sky130_fd_sc_hs__a21bo_1
+Used module:     \sky130_fd_sc_hs__a41o_1
+Used module:     \sky130_fd_sc_hs__nand2b_2
+Used module:     \sky130_fd_sc_hs__or3b_1
+Used module:     \sky130_fd_sc_hs__nor3b_4
+Used module:     \sky130_fd_sc_hs__o31ai_4
+Used module:     \sky130_fd_sc_hs__o221ai_1
+Used module:     \sky130_fd_sc_hs__and3b_1
+Used module:     \sky130_fd_sc_hs__a21oi_4
+Used module:     \sky130_fd_sc_hs__mux2i_1
+Used module:     \sky130_fd_sc_hs__o22a_1
+Used module:     \sky130_fd_sc_hs__nand4bb_1
+Used module:     \sky130_fd_sc_hs__o31ai_2
+Used module:     \sky130_fd_sc_hs__nor3_2
+Used module:     \sky130_fd_sc_hs__tapvpwrvgnd_1
+Used module:     \sky130_fd_sc_hs__fill_8
+Used module:     \sky130_fd_sc_hs__fill_1
+Used module:     \sky130_fd_sc_hs__fill_4
+Used module:     \sky130_fd_sc_hs__fill_2
+
+4.2. Analyzing design hierarchy..
+Top module:  \sar_digi_paper_core
+Used module:     \sky130_fd_sc_hs__buf_8
+Used module:     \sky130_fd_sc_hs__clkbuf_16
+Used module:     \sky130_fd_sc_hs__buf_16
+Used module:     \sky130_fd_sc_hs__clkbuf_8
+Used module:     \sky130_fd_sc_hs__buf_4
+Used module:     \sky130_fd_sc_hs__buf_1
+Used module:     \sky130_fd_sc_hs__clkbuf_4
+Used module:     \sky130_fd_sc_hs__dlygate4sd3_1
+Used module:     \sky130_fd_sc_hs__clkbuf_2
+Used module:     \sky130_fd_sc_hs__buf_2
+Used module:     \sky130_fd_sc_hs__clkinv_1
+Used module:     \sky130_fd_sc_hs__clkinv_4
+Used module:     \sky130_fd_sc_hs__clkinv_2
+Used module:     \sky130_fd_sc_hs__inv_8
+Used module:     \sky130_fd_sc_hs__dfrtp_1
+Used module:     \sky130_fd_sc_hs__conb_1
+Used module:     \sky130_fd_sc_hs__dfrtp_2
+Used module:     \sky130_fd_sc_hs__dfstp_1
+Used module:     \sky130_fd_sc_hs__nor2_1
+Used module:     \sky130_fd_sc_hs__a22o_1
+Used module:     \sky130_fd_sc_hs__o22ai_1
+Used module:     \sky130_fd_sc_hs__o2bb2ai_1
+Used module:     \sky130_fd_sc_hs__nand2_1
+Used module:     \sky130_fd_sc_hs__a21oi_1
+Used module:     \sky130_fd_sc_hs__nor3b_1
+Used module:     \sky130_fd_sc_hs__nand3b_1
+Used module:     \sky130_fd_sc_hs__and2_1
+Used module:     \sky130_fd_sc_hs__nor2b_1
+Used module:     \sky130_fd_sc_hs__o2111ai_1
+Used module:     \sky130_fd_sc_hs__nand4b_1
+Used module:     \sky130_fd_sc_hs__nor3_1
+Used module:     \sky130_fd_sc_hs__nand4_1
+Used module:     \sky130_fd_sc_hs__a41oi_1
+Used module:     \sky130_fd_sc_hs__nand2b_1
+Used module:     \sky130_fd_sc_hs__nand3_1
+Used module:     \sky130_fd_sc_hs__o21ai_1
+Used module:     \sky130_fd_sc_hs__o41ai_1
+Used module:     \sky130_fd_sc_hs__a32o_1
+Used module:     \sky130_fd_sc_hs__o31ai_1
+Used module:     \sky130_fd_sc_hs__xnor2_1
+Used module:     \sky130_fd_sc_hs__nor4_1
+Used module:     \sky130_fd_sc_hs__o32ai_1
+Used module:     \sky130_fd_sc_hs__a2111oi_1
+Used module:     \sky130_fd_sc_hs__a22oi_1
+Used module:     \sky130_fd_sc_hs__o211ai_1
+Used module:     \sky130_fd_sc_hs__a211oi_1
+Used module:     \sky130_fd_sc_hs__mux2_1
+Used module:     \sky130_fd_sc_hs__a31oi_1
+Used module:     \sky130_fd_sc_hs__a311o_1
+Used module:     \sky130_fd_sc_hs__o31a_1
+Used module:     \sky130_fd_sc_hs__or2_1
+Used module:     \sky130_fd_sc_hs__o21a_1
+Used module:     \sky130_fd_sc_hs__xor2_1
+Used module:     \sky130_fd_sc_hs__a31o_1
+Used module:     \sky130_fd_sc_hs__nor2_2
+Used module:     \sky130_fd_sc_hs__o32a_1
+Used module:     \sky130_fd_sc_hs__o21bai_1
+Used module:     \sky130_fd_sc_hs__a311oi_1
+Used module:     \sky130_fd_sc_hs__a21o_1
+Used module:     \sky130_fd_sc_hs__and3_1
+Used module:     \sky130_fd_sc_hs__o211a_2
+Used module:     \sky130_fd_sc_hs__nor4b_1
+Used module:     \sky130_fd_sc_hs__and4_1
+Used module:     \sky130_fd_sc_hs__a32oi_1
+Used module:     \sky130_fd_sc_hs__a211o_1
+Used module:     \sky130_fd_sc_hs__maj3_1
+Used module:     \sky130_fd_sc_hs__o311ai_1
+Used module:     \sky130_fd_sc_hs__or3_1
+Used module:     \sky130_fd_sc_hs__a221o_1
+Used module:     \sky130_fd_sc_hs__xor3_1
+Used module:     \sky130_fd_sc_hs__nand2_2
+Used module:     \sky130_fd_sc_hs__nor2_4
+Used module:     \sky130_fd_sc_hs__nor3_4
+Used module:     \sky130_fd_sc_hs__a222oi_1
+Used module:     \sky130_fd_sc_hs__a222o_1
+Used module:     \sky130_fd_sc_hs__a221oi_1
+Used module:     \sky130_fd_sc_hs__xnor3_1
+Used module:     \sky130_fd_sc_hs__o2111a_1
+Used module:     \sky130_fd_sc_hs__o311a_1
+Used module:     \sky130_fd_sc_hs__a21bo_1
+Used module:     \sky130_fd_sc_hs__a41o_1
+Used module:     \sky130_fd_sc_hs__nand2b_2
+Used module:     \sky130_fd_sc_hs__or3b_1
+Used module:     \sky130_fd_sc_hs__nor3b_4
+Used module:     \sky130_fd_sc_hs__o31ai_4
+Used module:     \sky130_fd_sc_hs__o221ai_1
+Used module:     \sky130_fd_sc_hs__and3b_1
+Used module:     \sky130_fd_sc_hs__a21oi_4
+Used module:     \sky130_fd_sc_hs__mux2i_1
+Used module:     \sky130_fd_sc_hs__o22a_1
+Used module:     \sky130_fd_sc_hs__nand4bb_1
+Used module:     \sky130_fd_sc_hs__o31ai_2
+Used module:     \sky130_fd_sc_hs__nor3_2
+Used module:     \sky130_fd_sc_hs__tapvpwrvgnd_1
+Used module:     \sky130_fd_sc_hs__fill_8
+Used module:     \sky130_fd_sc_hs__fill_1
+Used module:     \sky130_fd_sc_hs__fill_4
+Used module:     \sky130_fd_sc_hs__fill_2
+Removing unused module `\sky130_fd_sc_hs__diode_2'.
+Removing unused module `\sky130_fd_sc_hs__xor3_4'.
+Removing unused module `\sky130_fd_sc_hs__xor3_2'.
+Removing unused module `\sky130_fd_sc_hs__xor2_4'.
+Removing unused module `\sky130_fd_sc_hs__xor2_2'.
+Removing unused module `\sky130_fd_sc_hs__xnor3_4'.
+Removing unused module `\sky130_fd_sc_hs__xnor3_2'.
+Removing unused module `\sky130_fd_sc_hs__xnor2_4'.
+Removing unused module `\sky130_fd_sc_hs__xnor2_2'.
+Removing unused module `\sky130_fd_sc_hs__sedfxtp_4'.
+Removing unused module `\sky130_fd_sc_hs__sedfxtp_2'.
+Removing unused module `\sky130_fd_sc_hs__sedfxtp_1'.
+Removing unused module `\sky130_fd_sc_hs__sedfxbp_2'.
+Removing unused module `\sky130_fd_sc_hs__sedfxbp_1'.
+Removing unused module `\sky130_fd_sc_hs__sdfxtp_4'.
+Removing unused module `\sky130_fd_sc_hs__sdfxtp_2'.
+Removing unused module `\sky130_fd_sc_hs__sdfxtp_1'.
+Removing unused module `\sky130_fd_sc_hs__sdfxbp_2'.
+Removing unused module `\sky130_fd_sc_hs__sdfxbp_1'.
+Removing unused module `\sky130_fd_sc_hs__sdfstp_4'.
+Removing unused module `\sky130_fd_sc_hs__sdfstp_2'.
+Removing unused module `\sky130_fd_sc_hs__sdfstp_1'.
+Removing unused module `\sky130_fd_sc_hs__sdfsbp_2'.
+Removing unused module `\sky130_fd_sc_hs__sdfsbp_1'.
+Removing unused module `\sky130_fd_sc_hs__sdfrtp_4'.
+Removing unused module `\sky130_fd_sc_hs__sdfrtp_2'.
+Removing unused module `\sky130_fd_sc_hs__sdfrtp_1'.
+Removing unused module `\sky130_fd_sc_hs__sdfrtn_1'.
+Removing unused module `\sky130_fd_sc_hs__sdfrbp_2'.
+Removing unused module `\sky130_fd_sc_hs__sdfrbp_1'.
+Removing unused module `\sky130_fd_sc_hs__sdfbbp_1'.
+Removing unused module `\sky130_fd_sc_hs__sdfbbn_2'.
+Removing unused module `\sky130_fd_sc_hs__sdfbbn_1'.
+Removing unused module `\sky130_fd_sc_hs__or4bb_4'.
+Removing unused module `\sky130_fd_sc_hs__or4bb_2'.
+Removing unused module `\sky130_fd_sc_hs__or4bb_1'.
+Removing unused module `\sky130_fd_sc_hs__or4b_4'.
+Removing unused module `\sky130_fd_sc_hs__or4b_2'.
+Removing unused module `\sky130_fd_sc_hs__or4b_1'.
+Removing unused module `\sky130_fd_sc_hs__or4_4'.
+Removing unused module `\sky130_fd_sc_hs__or4_2'.
+Removing unused module `\sky130_fd_sc_hs__or4_1'.
+Removing unused module `\sky130_fd_sc_hs__or3b_4'.
+Removing unused module `\sky130_fd_sc_hs__or3b_2'.
+Removing unused module `\sky130_fd_sc_hs__or3_4'.
+Removing unused module `\sky130_fd_sc_hs__or3_2'.
+Removing unused module `\sky130_fd_sc_hs__or2b_4'.
+Removing unused module `\sky130_fd_sc_hs__or2b_2'.
+Removing unused module `\sky130_fd_sc_hs__or2b_1'.
+Removing unused module `\sky130_fd_sc_hs__or2_4'.
+Removing unused module `\sky130_fd_sc_hs__or2_2'.
+Removing unused module `\sky130_fd_sc_hs__o41ai_4'.
+Removing unused module `\sky130_fd_sc_hs__o41ai_2'.
+Removing unused module `\sky130_fd_sc_hs__o41a_4'.
+Removing unused module `\sky130_fd_sc_hs__o41a_2'.
+Removing unused module `\sky130_fd_sc_hs__o41a_1'.
+Removing unused module `\sky130_fd_sc_hs__o32ai_4'.
+Removing unused module `\sky130_fd_sc_hs__o32ai_2'.
+Removing unused module `\sky130_fd_sc_hs__o32a_4'.
+Removing unused module `\sky130_fd_sc_hs__o32a_2'.
+Removing unused module `\sky130_fd_sc_hs__o31a_4'.
+Removing unused module `\sky130_fd_sc_hs__o31a_2'.
+Removing unused module `\sky130_fd_sc_hs__o311ai_4'.
+Removing unused module `\sky130_fd_sc_hs__o311ai_2'.
+Removing unused module `\sky130_fd_sc_hs__o311a_4'.
+Removing unused module `\sky130_fd_sc_hs__o311a_2'.
+Removing unused module `\sky130_fd_sc_hs__o2bb2ai_4'.
+Removing unused module `\sky130_fd_sc_hs__o2bb2ai_2'.
+Removing unused module `\sky130_fd_sc_hs__o2bb2a_4'.
+Removing unused module `\sky130_fd_sc_hs__o2bb2a_2'.
+Removing unused module `\sky130_fd_sc_hs__o2bb2a_1'.
+Removing unused module `\sky130_fd_sc_hs__o22ai_4'.
+Removing unused module `\sky130_fd_sc_hs__o22ai_2'.
+Removing unused module `\sky130_fd_sc_hs__o22a_4'.
+Removing unused module `\sky130_fd_sc_hs__o22a_2'.
+Removing unused module `\sky130_fd_sc_hs__o221ai_4'.
+Removing unused module `\sky130_fd_sc_hs__o221ai_2'.
+Removing unused module `\sky130_fd_sc_hs__o221a_4'.
+Removing unused module `\sky130_fd_sc_hs__o221a_2'.
+Removing unused module `\sky130_fd_sc_hs__o221a_1'.
+Removing unused module `\sky130_fd_sc_hs__o21bai_4'.
+Removing unused module `\sky130_fd_sc_hs__o21bai_2'.
+Removing unused module `\sky130_fd_sc_hs__o21ba_4'.
+Removing unused module `\sky130_fd_sc_hs__o21ba_2'.
+Removing unused module `\sky130_fd_sc_hs__o21ba_1'.
+Removing unused module `\sky130_fd_sc_hs__o21ai_4'.
+Removing unused module `\sky130_fd_sc_hs__o21ai_2'.
+Removing unused module `\sky130_fd_sc_hs__o21a_4'.
+Removing unused module `\sky130_fd_sc_hs__o21a_2'.
+Removing unused module `\sky130_fd_sc_hs__o211ai_4'.
+Removing unused module `\sky130_fd_sc_hs__o211ai_2'.
+Removing unused module `\sky130_fd_sc_hs__o211a_4'.
+Removing unused module `\sky130_fd_sc_hs__o211a_1'.
+Removing unused module `\sky130_fd_sc_hs__o2111ai_4'.
+Removing unused module `\sky130_fd_sc_hs__o2111ai_2'.
+Removing unused module `\sky130_fd_sc_hs__o2111a_4'.
+Removing unused module `\sky130_fd_sc_hs__o2111a_2'.
+Removing unused module `\sky130_fd_sc_hs__nor4bb_4'.
+Removing unused module `\sky130_fd_sc_hs__nor4bb_2'.
+Removing unused module `\sky130_fd_sc_hs__nor4bb_1'.
+Removing unused module `\sky130_fd_sc_hs__nor4b_4'.
+Removing unused module `\sky130_fd_sc_hs__nor4b_2'.
+Removing unused module `\sky130_fd_sc_hs__nor4_4'.
+Removing unused module `\sky130_fd_sc_hs__nor4_2'.
+Removing unused module `\sky130_fd_sc_hs__nor3b_2'.
+Removing unused module `\sky130_fd_sc_hs__nor2b_4'.
+Removing unused module `\sky130_fd_sc_hs__nor2b_2'.
+Removing unused module `\sky130_fd_sc_hs__nor2_8'.
+Removing unused module `\sky130_fd_sc_hs__nand4bb_4'.
+Removing unused module `\sky130_fd_sc_hs__nand4bb_2'.
+Removing unused module `\sky130_fd_sc_hs__nand4b_4'.
+Removing unused module `\sky130_fd_sc_hs__nand4b_2'.
+Removing unused module `\sky130_fd_sc_hs__nand4_4'.
+Removing unused module `\sky130_fd_sc_hs__nand4_2'.
+Removing unused module `\sky130_fd_sc_hs__nand3b_4'.
+Removing unused module `\sky130_fd_sc_hs__nand3b_2'.
+Removing unused module `\sky130_fd_sc_hs__nand3_4'.
+Removing unused module `\sky130_fd_sc_hs__nand3_2'.
+Removing unused module `\sky130_fd_sc_hs__nand2b_4'.
+Removing unused module `\sky130_fd_sc_hs__nand2_8'.
+Removing unused module `\sky130_fd_sc_hs__nand2_4'.
+Removing unused module `\sky130_fd_sc_hs__mux4_4'.
+Removing unused module `\sky130_fd_sc_hs__mux4_2'.
+Removing unused module `\sky130_fd_sc_hs__mux4_1'.
+Removing unused module `\sky130_fd_sc_hs__mux2i_4'.
+Removing unused module `\sky130_fd_sc_hs__mux2i_2'.
+Removing unused module `\sky130_fd_sc_hs__mux2_4'.
+Removing unused module `\sky130_fd_sc_hs__mux2_2'.
+Removing unused module `\sky130_fd_sc_hs__maj3_4'.
+Removing unused module `\sky130_fd_sc_hs__maj3_2'.
+Removing unused module `\sky130_fd_sc_hs__inv_4'.
+Removing unused module `\sky130_fd_sc_hs__inv_2'.
+Removing unused module `\sky130_fd_sc_hs__inv_16'.
+Removing unused module `\sky130_fd_sc_hs__inv_1'.
+Removing unused module `\sky130_fd_sc_hs__ha_4'.
+Removing unused module `\sky130_fd_sc_hs__ha_2'.
+Removing unused module `\sky130_fd_sc_hs__ha_1'.
+Removing unused module `\sky130_fd_sc_hs__fahcon_1'.
+Removing unused module `\sky130_fd_sc_hs__fahcin_1'.
+Removing unused module `\sky130_fd_sc_hs__fah_4'.
+Removing unused module `\sky130_fd_sc_hs__fah_2'.
+Removing unused module `\sky130_fd_sc_hs__fah_1'.
+Removing unused module `\sky130_fd_sc_hs__fa_4'.
+Removing unused module `\sky130_fd_sc_hs__fa_2'.
+Removing unused module `\sky130_fd_sc_hs__fa_1'.
+Removing unused module `\sky130_fd_sc_hs__einvp_8'.
+Removing unused module `\sky130_fd_sc_hs__einvp_4'.
+Removing unused module `\sky130_fd_sc_hs__einvp_2'.
+Removing unused module `\sky130_fd_sc_hs__einvp_1'.
+Removing unused module `\sky130_fd_sc_hs__einvn_8'.
+Removing unused module `\sky130_fd_sc_hs__einvn_4'.
+Removing unused module `\sky130_fd_sc_hs__einvn_2'.
+Removing unused module `\sky130_fd_sc_hs__einvn_1'.
+Removing unused module `\sky130_fd_sc_hs__edfxtp_1'.
+Removing unused module `\sky130_fd_sc_hs__edfxbp_1'.
+Removing unused module `\sky130_fd_sc_hs__ebufn_8'.
+Removing unused module `\sky130_fd_sc_hs__ebufn_4'.
+Removing unused module `\sky130_fd_sc_hs__ebufn_2'.
+Removing unused module `\sky130_fd_sc_hs__ebufn_1'.
+Removing unused module `\sky130_fd_sc_hs__dlymetal6s6s_1'.
+Removing unused module `\sky130_fd_sc_hs__dlymetal6s4s_1'.
+Removing unused module `\sky130_fd_sc_hs__dlymetal6s2s_1'.
+Removing unused module `\sky130_fd_sc_hs__dlygate4sd2_1'.
+Removing unused module `\sky130_fd_sc_hs__dlygate4sd1_1'.
+Removing unused module `\sky130_fd_sc_hs__dlxtp_1'.
+Removing unused module `\sky130_fd_sc_hs__dlxtn_4'.
+Removing unused module `\sky130_fd_sc_hs__dlxtn_2'.
+Removing unused module `\sky130_fd_sc_hs__dlxtn_1'.
+Removing unused module `\sky130_fd_sc_hs__dlxbp_1'.
+Removing unused module `\sky130_fd_sc_hs__dlxbn_2'.
+Removing unused module `\sky130_fd_sc_hs__dlxbn_1'.
+Removing unused module `\sky130_fd_sc_hs__dlrtp_4'.
+Removing unused module `\sky130_fd_sc_hs__dlrtp_2'.
+Removing unused module `\sky130_fd_sc_hs__dlrtp_1'.
+Removing unused module `\sky130_fd_sc_hs__dlrtn_4'.
+Removing unused module `\sky130_fd_sc_hs__dlrtn_2'.
+Removing unused module `\sky130_fd_sc_hs__dlrtn_1'.
+Removing unused module `\sky130_fd_sc_hs__dlrbp_2'.
+Removing unused module `\sky130_fd_sc_hs__dlrbp_1'.
+Removing unused module `\sky130_fd_sc_hs__dlrbn_2'.
+Removing unused module `\sky130_fd_sc_hs__dlrbn_1'.
+Removing unused module `\sky130_fd_sc_hs__dfxtp_4'.
+Removing unused module `\sky130_fd_sc_hs__dfxtp_2'.
+Removing unused module `\sky130_fd_sc_hs__dfxtp_1'.
+Removing unused module `\sky130_fd_sc_hs__dfxbp_2'.
+Removing unused module `\sky130_fd_sc_hs__dfxbp_1'.
+Removing unused module `\sky130_fd_sc_hs__dfstp_4'.
+Removing unused module `\sky130_fd_sc_hs__dfstp_2'.
+Removing unused module `\sky130_fd_sc_hs__dfsbp_2'.
+Removing unused module `\sky130_fd_sc_hs__dfsbp_1'.
+Removing unused module `\sky130_fd_sc_hs__dfrtp_4'.
+Removing unused module `\sky130_fd_sc_hs__dfrtn_1'.
+Removing unused module `\sky130_fd_sc_hs__dfrbp_2'.
+Removing unused module `\sky130_fd_sc_hs__dfrbp_1'.
+Removing unused module `\sky130_fd_sc_hs__dfbbp_1'.
+Removing unused module `\sky130_fd_sc_hs__dfbbn_2'.
+Removing unused module `\sky130_fd_sc_hs__dfbbn_1'.
+Removing unused module `\sky130_fd_sc_hs__decap_8'.
+Removing unused module `\sky130_fd_sc_hs__decap_4'.
+Removing unused module `\sky130_fd_sc_hs__clkinv_8'.
+Removing unused module `\sky130_fd_sc_hs__clkinv_16'.
+Removing unused module `\sky130_fd_sc_hs__clkdlyinv5sd3_1'.
+Removing unused module `\sky130_fd_sc_hs__clkdlyinv5sd2_1'.
+Removing unused module `\sky130_fd_sc_hs__clkdlyinv5sd1_1'.
+Removing unused module `\sky130_fd_sc_hs__clkdlyinv3sd3_1'.
+Removing unused module `\sky130_fd_sc_hs__clkdlyinv3sd2_1'.
+Removing unused module `\sky130_fd_sc_hs__clkdlyinv3sd1_1'.
+Removing unused module `\sky130_fd_sc_hs__clkbuf_1'.
+Removing unused module `\sky130_fd_sc_hs__bufinv_8'.
+Removing unused module `\sky130_fd_sc_hs__bufinv_16'.
+Removing unused module `\sky130_fd_sc_hs__bufbuf_8'.
+Removing unused module `\sky130_fd_sc_hs__bufbuf_16'.
+Removing unused module `\sky130_fd_sc_hs__and4bb_4'.
+Removing unused module `\sky130_fd_sc_hs__and4bb_2'.
+Removing unused module `\sky130_fd_sc_hs__and4bb_1'.
+Removing unused module `\sky130_fd_sc_hs__and4b_4'.
+Removing unused module `\sky130_fd_sc_hs__and4b_2'.
+Removing unused module `\sky130_fd_sc_hs__and4b_1'.
+Removing unused module `\sky130_fd_sc_hs__and4_4'.
+Removing unused module `\sky130_fd_sc_hs__and4_2'.
+Removing unused module `\sky130_fd_sc_hs__and3b_4'.
+Removing unused module `\sky130_fd_sc_hs__and3b_2'.
+Removing unused module `\sky130_fd_sc_hs__and3_4'.
+Removing unused module `\sky130_fd_sc_hs__and3_2'.
+Removing unused module `\sky130_fd_sc_hs__and2b_4'.
+Removing unused module `\sky130_fd_sc_hs__and2b_2'.
+Removing unused module `\sky130_fd_sc_hs__and2b_1'.
+Removing unused module `\sky130_fd_sc_hs__and2_4'.
+Removing unused module `\sky130_fd_sc_hs__and2_2'.
+Removing unused module `\sky130_fd_sc_hs__a41oi_4'.
+Removing unused module `\sky130_fd_sc_hs__a41oi_2'.
+Removing unused module `\sky130_fd_sc_hs__a41o_4'.
+Removing unused module `\sky130_fd_sc_hs__a41o_2'.
+Removing unused module `\sky130_fd_sc_hs__a32oi_4'.
+Removing unused module `\sky130_fd_sc_hs__a32oi_2'.
+Removing unused module `\sky130_fd_sc_hs__a32o_4'.
+Removing unused module `\sky130_fd_sc_hs__a32o_2'.
+Removing unused module `\sky130_fd_sc_hs__a31oi_4'.
+Removing unused module `\sky130_fd_sc_hs__a31oi_2'.
+Removing unused module `\sky130_fd_sc_hs__a31o_4'.
+Removing unused module `\sky130_fd_sc_hs__a31o_2'.
+Removing unused module `\sky130_fd_sc_hs__a311oi_4'.
+Removing unused module `\sky130_fd_sc_hs__a311oi_2'.
+Removing unused module `\sky130_fd_sc_hs__a311o_4'.
+Removing unused module `\sky130_fd_sc_hs__a311o_2'.
+Removing unused module `\sky130_fd_sc_hs__a2bb2oi_4'.
+Removing unused module `\sky130_fd_sc_hs__a2bb2oi_2'.
+Removing unused module `\sky130_fd_sc_hs__a2bb2oi_1'.
+Removing unused module `\sky130_fd_sc_hs__a2bb2o_4'.
+Removing unused module `\sky130_fd_sc_hs__a2bb2o_2'.
+Removing unused module `\sky130_fd_sc_hs__a2bb2o_1'.
+Removing unused module `\sky130_fd_sc_hs__a22oi_4'.
+Removing unused module `\sky130_fd_sc_hs__a22oi_2'.
+Removing unused module `\sky130_fd_sc_hs__a22o_4'.
+Removing unused module `\sky130_fd_sc_hs__a22o_2'.
+Removing unused module `\sky130_fd_sc_hs__a222oi_2'.
+Removing unused module `\sky130_fd_sc_hs__a222o_2'.
+Removing unused module `\sky130_fd_sc_hs__a221oi_4'.
+Removing unused module `\sky130_fd_sc_hs__a221oi_2'.
+Removing unused module `\sky130_fd_sc_hs__a221o_4'.
+Removing unused module `\sky130_fd_sc_hs__a221o_2'.
+Removing unused module `\sky130_fd_sc_hs__a21oi_2'.
+Removing unused module `\sky130_fd_sc_hs__a21o_4'.
+Removing unused module `\sky130_fd_sc_hs__a21o_2'.
+Removing unused module `\sky130_fd_sc_hs__a21boi_4'.
+Removing unused module `\sky130_fd_sc_hs__a21boi_2'.
+Removing unused module `\sky130_fd_sc_hs__a21boi_1'.
+Removing unused module `\sky130_fd_sc_hs__a21bo_4'.
+Removing unused module `\sky130_fd_sc_hs__a21bo_2'.
+Removing unused module `\sky130_fd_sc_hs__a211oi_4'.
+Removing unused module `\sky130_fd_sc_hs__a211oi_2'.
+Removing unused module `\sky130_fd_sc_hs__a211o_4'.
+Removing unused module `\sky130_fd_sc_hs__a211o_2'.
+Removing unused module `\sky130_fd_sc_hs__a2111oi_4'.
+Removing unused module `\sky130_fd_sc_hs__a2111oi_2'.
+Removing unused module `\sky130_fd_sc_hs__a2111o_4'.
+Removing unused module `\sky130_fd_sc_hs__a2111o_2'.
+Removing unused module `\sky130_fd_sc_hs__a2111o_1'.
+Removed 278 unused modules.
+
+5. Executing PROC pass (convert processes to netlists).
+
+5.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+5.4. Executing PROC_INIT pass (extract init attributes).
+
+5.5. Executing PROC_ARST pass (detect async resets in processes).
+
+5.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+5.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sky130_fd_sc_hs__o21bai_1.
+Optimizing module sky130_fd_sc_hs__fill_2.
+Optimizing module sky130_fd_sc_hs__nand4bb_1.
+Optimizing module sky130_fd_sc_hs__buf_8.
+Optimizing module sky130_fd_sc_hs__buf_4.
+Optimizing module sky130_fd_sc_hs__buf_2.
+Optimizing module sky130_fd_sc_hs__buf_16.
+Optimizing module sky130_fd_sc_hs__buf_1.
+Optimizing module sky130_fd_sc_hs__or2_1.
+Optimizing module sky130_fd_sc_hs__o311ai_1.
+Optimizing module sky130_fd_sc_hs__nand4b_1.
+Optimizing module sky130_fd_sc_hs__fill_1.
+Optimizing module sky130_fd_sc_hs__xor2_1.
+Optimizing module sky130_fd_sc_hs__nand4_1.
+Optimizing module sky130_fd_sc_hs__o21ai_1.
+Optimizing module sky130_fd_sc_hs__dlygate4sd3_1.
+Optimizing module sky130_fd_sc_hs__and4_1.
+Optimizing module sky130_fd_sc_hs__o311a_1.
+Optimizing module sky130_fd_sc_hs__nand3b_1.
+Optimizing module sky130_fd_sc_hs__and3b_1.
+Optimizing module sky130_fd_sc_hs__o41ai_1.
+Optimizing module sky130_fd_sc_hs__o21a_1.
+Optimizing module sky130_fd_sc_hs__and3_1.
+Optimizing module sky130_fd_sc_hs__nand3_1.
+Optimizing module sky130_fd_sc_hs__tapvpwrvgnd_1.
+Optimizing module sky130_fd_sc_hs__nand2b_2.
+Optimizing module sky130_fd_sc_hs__nand2b_1.
+Optimizing module sky130_fd_sc_hs__o2bb2ai_1.
+Optimizing module sky130_fd_sc_hs__and2_1.
+Optimizing module sky130_fd_sc_hs__o211ai_1.
+Optimizing module sky130_fd_sc_hs__nand2_2.
+Optimizing module sky130_fd_sc_hs__a41oi_1.
+Optimizing module sky130_fd_sc_hs__nand2_1.
+Optimizing module sky130_fd_sc_hs__or3b_1.
+Optimizing module sky130_fd_sc_hs__a41o_1.
+Optimizing module sky130_fd_sc_hs__o211a_2.
+Optimizing module sar_digi_paper_core.
+Optimizing module sky130_fd_sc_hs__a32oi_1.
+Optimizing module sky130_fd_sc_hs__xnor3_1.
+Optimizing module sky130_fd_sc_hs__or3_1.
+Optimizing module sky130_fd_sc_hs__a32o_1.
+Optimizing module sky130_fd_sc_hs__mux2i_1.
+Optimizing module sky130_fd_sc_hs__o2111ai_1.
+Optimizing module sky130_fd_sc_hs__a31oi_1.
+Optimizing module sky130_fd_sc_hs__o32ai_1.
+Optimizing module sky130_fd_sc_hs__mux2_1.
+Optimizing module sky130_fd_sc_hs__a31o_1.
+Optimizing module sky130_fd_sc_hs__o22ai_1.
+Optimizing module sky130_fd_sc_hs__o2111a_1.
+Optimizing module sky130_fd_sc_hs__a311oi_1.
+Optimizing module sky130_fd_sc_hs__maj3_1.
+Optimizing module sky130_fd_sc_hs__inv_8.
+Optimizing module sky130_fd_sc_hs__a311o_1.
+Optimizing module sky130_fd_sc_hs__fill_8.
+Optimizing module sky130_fd_sc_hs__dfstp_1.
+Optimizing module sky130_fd_sc_hs__fill_4.
+Optimizing module sky130_fd_sc_hs__o22a_1.
+Optimizing module sky130_fd_sc_hs__o32a_1.
+Optimizing module sky130_fd_sc_hs__dfrtp_2.
+Optimizing module sky130_fd_sc_hs__dfrtp_1.
+Optimizing module sky130_fd_sc_hs__o31ai_4.
+Optimizing module sky130_fd_sc_hs__a22oi_1.
+Optimizing module sky130_fd_sc_hs__nor4b_1.
+Optimizing module sky130_fd_sc_hs__o221ai_1.
+Optimizing module sky130_fd_sc_hs__a22o_1.
+Optimizing module sky130_fd_sc_hs__o31ai_2.
+Optimizing module sky130_fd_sc_hs__a222oi_1.
+Optimizing module sky130_fd_sc_hs__nor4_1.
+Optimizing module sky130_fd_sc_hs__a222o_1.
+Optimizing module sky130_fd_sc_hs__nor3b_4.
+Optimizing module sky130_fd_sc_hs__o31ai_1.
+Optimizing module sky130_fd_sc_hs__a221oi_1.
+Optimizing module sky130_fd_sc_hs__nor3b_1.
+Optimizing module sky130_fd_sc_hs__conb_1.
+Optimizing module sky130_fd_sc_hs__a221o_1.
+Optimizing module sky130_fd_sc_hs__a21oi_4.
+Optimizing module sky130_fd_sc_hs__nor3_4.
+Optimizing module sky130_fd_sc_hs__a21oi_1.
+Optimizing module sky130_fd_sc_hs__clkinv_4.
+Optimizing module sky130_fd_sc_hs__clkinv_2.
+Optimizing module sky130_fd_sc_hs__a21o_1.
+Optimizing module sky130_fd_sc_hs__nor3_2.
+Optimizing module sky130_fd_sc_hs__clkinv_1.
+Optimizing module sky130_fd_sc_hs__nor3_1.
+Optimizing module sky130_fd_sc_hs__xnor2_1.
+Optimizing module sky130_fd_sc_hs__xor3_1.
+Optimizing module sky130_fd_sc_hs__a21bo_1.
+Optimizing module sky130_fd_sc_hs__nor2b_1.
+Optimizing module sky130_fd_sc_hs__o31a_1.
+Optimizing module sky130_fd_sc_hs__a211oi_1.
+Optimizing module sky130_fd_sc_hs__nor2_4.
+Optimizing module sky130_fd_sc_hs__clkbuf_8.
+Optimizing module sky130_fd_sc_hs__a211o_1.
+Optimizing module sky130_fd_sc_hs__clkbuf_4.
+Optimizing module sky130_fd_sc_hs__clkbuf_2.
+Optimizing module sky130_fd_sc_hs__a2111oi_1.
+Optimizing module sky130_fd_sc_hs__clkbuf_16.
+Optimizing module sky130_fd_sc_hs__nor2_2.
+Optimizing module sky130_fd_sc_hs__nor2_1.
+
+6. Executing JSON backend.
+
+7. Executing FLATTEN pass (flatten design).
+Deleting now unused module sky130_fd_sc_hs__a2111oi_1.
+Deleting now unused module sky130_fd_sc_hs__a211o_1.
+Deleting now unused module sky130_fd_sc_hs__a211oi_1.
+Deleting now unused module sky130_fd_sc_hs__a21bo_1.
+Deleting now unused module sky130_fd_sc_hs__a21o_1.
+Deleting now unused module sky130_fd_sc_hs__a21oi_1.
+Deleting now unused module sky130_fd_sc_hs__a21oi_4.
+Deleting now unused module sky130_fd_sc_hs__a221o_1.
+Deleting now unused module sky130_fd_sc_hs__a221oi_1.
+Deleting now unused module sky130_fd_sc_hs__a222o_1.
+Deleting now unused module sky130_fd_sc_hs__a222oi_1.
+Deleting now unused module sky130_fd_sc_hs__a22o_1.
+Deleting now unused module sky130_fd_sc_hs__a22oi_1.
+Deleting now unused module sky130_fd_sc_hs__a311o_1.
+Deleting now unused module sky130_fd_sc_hs__a311oi_1.
+Deleting now unused module sky130_fd_sc_hs__a31o_1.
+Deleting now unused module sky130_fd_sc_hs__a31oi_1.
+Deleting now unused module sky130_fd_sc_hs__a32o_1.
+Deleting now unused module sky130_fd_sc_hs__a32oi_1.
+Deleting now unused module sky130_fd_sc_hs__a41o_1.
+Deleting now unused module sky130_fd_sc_hs__a41oi_1.
+Deleting now unused module sky130_fd_sc_hs__and2_1.
+Deleting now unused module sky130_fd_sc_hs__and3_1.
+Deleting now unused module sky130_fd_sc_hs__and3b_1.
+Deleting now unused module sky130_fd_sc_hs__and4_1.
+Deleting now unused module sky130_fd_sc_hs__buf_1.
+Deleting now unused module sky130_fd_sc_hs__buf_16.
+Deleting now unused module sky130_fd_sc_hs__buf_2.
+Deleting now unused module sky130_fd_sc_hs__buf_4.
+Deleting now unused module sky130_fd_sc_hs__buf_8.
+Deleting now unused module sky130_fd_sc_hs__clkbuf_16.
+Deleting now unused module sky130_fd_sc_hs__clkbuf_2.
+Deleting now unused module sky130_fd_sc_hs__clkbuf_4.
+Deleting now unused module sky130_fd_sc_hs__clkbuf_8.
+Deleting now unused module sky130_fd_sc_hs__clkinv_1.
+Deleting now unused module sky130_fd_sc_hs__clkinv_2.
+Deleting now unused module sky130_fd_sc_hs__clkinv_4.
+Deleting now unused module sky130_fd_sc_hs__conb_1.
+Deleting now unused module sky130_fd_sc_hs__dfrtp_1.
+Deleting now unused module sky130_fd_sc_hs__dfrtp_2.
+Deleting now unused module sky130_fd_sc_hs__dfstp_1.
+Deleting now unused module sky130_fd_sc_hs__dlygate4sd3_1.
+Deleting now unused module sky130_fd_sc_hs__fill_1.
+Deleting now unused module sky130_fd_sc_hs__fill_2.
+Deleting now unused module sky130_fd_sc_hs__fill_4.
+Deleting now unused module sky130_fd_sc_hs__fill_8.
+Deleting now unused module sky130_fd_sc_hs__inv_8.
+Deleting now unused module sky130_fd_sc_hs__maj3_1.
+Deleting now unused module sky130_fd_sc_hs__mux2_1.
+Deleting now unused module sky130_fd_sc_hs__mux2i_1.
+Deleting now unused module sky130_fd_sc_hs__nand2_1.
+Deleting now unused module sky130_fd_sc_hs__nand2_2.
+Deleting now unused module sky130_fd_sc_hs__nand2b_1.
+Deleting now unused module sky130_fd_sc_hs__nand2b_2.
+Deleting now unused module sky130_fd_sc_hs__nand3_1.
+Deleting now unused module sky130_fd_sc_hs__nand3b_1.
+Deleting now unused module sky130_fd_sc_hs__nand4_1.
+Deleting now unused module sky130_fd_sc_hs__nand4b_1.
+Deleting now unused module sky130_fd_sc_hs__nand4bb_1.
+Deleting now unused module sky130_fd_sc_hs__nor2_1.
+Deleting now unused module sky130_fd_sc_hs__nor2_2.
+Deleting now unused module sky130_fd_sc_hs__nor2_4.
+Deleting now unused module sky130_fd_sc_hs__nor2b_1.
+Deleting now unused module sky130_fd_sc_hs__nor3_1.
+Deleting now unused module sky130_fd_sc_hs__nor3_2.
+Deleting now unused module sky130_fd_sc_hs__nor3_4.
+Deleting now unused module sky130_fd_sc_hs__nor3b_1.
+Deleting now unused module sky130_fd_sc_hs__nor3b_4.
+Deleting now unused module sky130_fd_sc_hs__nor4_1.
+Deleting now unused module sky130_fd_sc_hs__nor4b_1.
+Deleting now unused module sky130_fd_sc_hs__o2111a_1.
+Deleting now unused module sky130_fd_sc_hs__o2111ai_1.
+Deleting now unused module sky130_fd_sc_hs__o211a_2.
+Deleting now unused module sky130_fd_sc_hs__o211ai_1.
+Deleting now unused module sky130_fd_sc_hs__o21a_1.
+Deleting now unused module sky130_fd_sc_hs__o21ai_1.
+Deleting now unused module sky130_fd_sc_hs__o21bai_1.
+Deleting now unused module sky130_fd_sc_hs__o221ai_1.
+Deleting now unused module sky130_fd_sc_hs__o22a_1.
+Deleting now unused module sky130_fd_sc_hs__o22ai_1.
+Deleting now unused module sky130_fd_sc_hs__o2bb2ai_1.
+Deleting now unused module sky130_fd_sc_hs__o311a_1.
+Deleting now unused module sky130_fd_sc_hs__o311ai_1.
+Deleting now unused module sky130_fd_sc_hs__o31a_1.
+Deleting now unused module sky130_fd_sc_hs__o31ai_1.
+Deleting now unused module sky130_fd_sc_hs__o31ai_2.
+Deleting now unused module sky130_fd_sc_hs__o31ai_4.
+Deleting now unused module sky130_fd_sc_hs__o32a_1.
+Deleting now unused module sky130_fd_sc_hs__o32ai_1.
+Deleting now unused module sky130_fd_sc_hs__o41ai_1.
+Deleting now unused module sky130_fd_sc_hs__or2_1.
+Deleting now unused module sky130_fd_sc_hs__or3_1.
+Deleting now unused module sky130_fd_sc_hs__or3b_1.
+Deleting now unused module sky130_fd_sc_hs__tapvpwrvgnd_1.
+Deleting now unused module sky130_fd_sc_hs__xnor2_1.
+Deleting now unused module sky130_fd_sc_hs__xnor3_1.
+Deleting now unused module sky130_fd_sc_hs__xor2_1.
+Deleting now unused module sky130_fd_sc_hs__xor3_1.
+<suppressed ~14657 debug messages>
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_digi_paper_core.
+<suppressed ~178 debug messages>
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_digi_paper_core'.
+<suppressed ~18138 debug messages>
+Removed a total of 6046 cells.
+
+8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sar_digi_paper_core..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sar_digi_paper_core.
+Performed a total of 0 changes.
+
+8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_digi_paper_core'.
+Removed a total of 0 cells.
+
+8.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_digi_paper_core..
+Removed 234 unused cells and 50418 unused wires.
+<suppressed ~39101 debug messages>
+
+8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_digi_paper_core.
+
+8.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+8.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sar_digi_paper_core..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sar_digi_paper_core.
+Performed a total of 0 changes.
+
+8.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_digi_paper_core'.
+Removed a total of 0 cells.
+
+8.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_digi_paper_core..
+
+8.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_digi_paper_core.
+
+8.16. Finished OPT passes. (There is nothing left to do.)
+
+9. Executing MEMORY pass.
+
+9.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+9.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+9.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+9.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+9.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+9.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_digi_paper_core..
+
+9.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+9.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+9.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_digi_paper_core..
+
+9.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+9.11. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+10. Executing OPT pass (performing simple optimizations).
+
+10.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_digi_paper_core.
+
+10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_digi_paper_core'.
+Removed a total of 0 cells.
+
+10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sar_digi_paper_core..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sar_digi_paper_core.
+Performed a total of 0 changes.
+
+10.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_digi_paper_core'.
+Removed a total of 0 cells.
+
+10.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_digi_paper_core..
+
+10.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_digi_paper_core.
+
+10.9. Finished OPT passes. (There is nothing left to do.)
+
+11. Executing TECHMAP pass (map to technology primitives).
+
+11.1. Executing Verilog-2005 frontend: /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/environment/tools/debian/usr/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/environment/tools/debian/usr/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+11.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~75 debug messages>
+
+12. Executing OPT pass (performing simple optimizations).
+
+12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_digi_paper_core.
+
+12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_digi_paper_core'.
+Removed a total of 0 cells.
+
+12.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sar_digi_paper_core..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+12.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sar_digi_paper_core.
+Performed a total of 0 changes.
+
+12.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_digi_paper_core'.
+Removed a total of 0 cells.
+
+12.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+12.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_digi_paper_core..
+
+12.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_digi_paper_core.
+
+12.9. Finished OPT passes. (There is nothing left to do.)
+
+13. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_digi_paper_core..
+
+15. Executing CHECK pass (checking for obvious problems).
+Checking module sar_digi_paper_core...
+Found and reported 0 problems.
+
+16. Executing JSON backend.
+
+17. Executing Verilog backend.
+
+17.1. Executing BMUXMAP pass.
+
+17.2. Executing DEMUXMAP pass.
+Dumping module `\sar_digi_paper_core'.
+
+18. Printing statistics.
+
+=== sar_digi_paper_core ===
+
+   Number of wires:              24071
+   Number of wire bits:          24901
+   Number of public wires:       17516
+   Number of public wire bits:   18346
+   Number of ports:                 31
+   Number of port bits:            176
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              25346
+     $_AND_                       4613
+     $_DFF_PN0_                    841
+     $_DFF_PN1_                      5
+     $_NOT_                       2262
+     $_OR_                        2968
+     $scopeinfo                  14657
+

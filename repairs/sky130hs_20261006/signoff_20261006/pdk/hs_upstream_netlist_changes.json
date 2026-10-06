@@ -1,0 +1,22 @@
+[
+  {
+    "path": "cells/conb/sky130_fd_sc_hs__conb_1.cdl",
+    "used": true
+  },
+  {
+    "path": "cells/conb/sky130_fd_sc_hs__conb_1.spice",
+    "used": true
+  },
+  {
+    "path": "cells/decap/sky130_fd_sc_hs__decap_4.cdl",
+    "used": false
+  },
+  {
+    "path": "cells/decap/sky130_fd_sc_hs__decap_8.cdl",
+    "used": false
+  },
+  {
+    "path": "cells/diode/sky130_fd_sc_hs__diode_2.spice",
+    "used": true
+  }
+]

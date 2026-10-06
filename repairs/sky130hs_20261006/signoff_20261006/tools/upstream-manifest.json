@@ -1,0 +1,22 @@
+[
+  {
+    "tool": "magic",
+    "version": "8.3.684",
+    "upstream": "https://github.com/RTimothyEdwards/magic.git",
+    "commit": "4f53bb3091d1e4a9b2009a58f157a8a4331d4c84",
+    "commit_date": "2026-09-17T11:48:07-04:00",
+    "archive": "downloads/magic-4f53bb3091d1e4a9b2009a58f157a8a4331d4c84.tar.gz",
+    "archive_format": "git archive HEAD | gzip -n",
+    "sha256": "49c0b9e98f60981b60ab1313a9fb241b138107e4504517d1c91ac4453836b881"
+  },
+  {
+    "tool": "netgen",
+    "version": "1.5.324",
+    "upstream": "https://github.com/RTimothyEdwards/netgen.git",
+    "commit": "3cb047bd6b55ae09c8eefeb479b4fe746cfdb948",
+    "commit_date": "2026-09-25T17:48:32-04:00",
+    "archive": "downloads/netgen-3cb047bd6b55ae09c8eefeb479b4fe746cfdb948.tar.gz",
+    "archive_format": "git archive HEAD | gzip -n",
+    "sha256": "03f242356582b39269090e5f3910572e18955c29a849aed156d6c556282fb56b"
+  }
+]

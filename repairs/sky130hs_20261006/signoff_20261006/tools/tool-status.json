@@ -1,0 +1,35 @@
+{
+  "verified_at_utc": "2026-10-06T05:30:15.913755+00:00",
+  "host": "Debian 13 amd64; unprivileged local install",
+  "versions": {
+    "magic": "8.3.684",
+    "netgen_lvs": "1.5.324",
+    "klayout": "0.30.0 (Debian 0.30.0-1+b1)"
+  },
+  "launchers": {
+    "magic": "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/tools/bin/magic",
+    "netgen": "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/tools/bin/netgen",
+    "netgen-lvs": "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/tools/bin/netgen-lvs",
+    "klayout": "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/tools/bin/klayout"
+  },
+  "smoke_tests": {
+    "magic_gds_write": "passed",
+    "magic_extraction_ext2spice": "passed",
+    "magic_clean_geometry_drc_count": 0,
+    "magic_deliberate_illegal_geometry_drc_count": 2,
+    "netgen_equivalent_resistor_netlists": "Circuits match uniquely.",
+    "netgen_deliberately_missing_device": "Netlists do not match.",
+    "klayout_gds_roundtrip": "passed",
+    "klayout_region_width_check": "passed",
+    "klayout_native_drc_deck_violation_count": 1
+  },
+  "missing_shared_libraries": [],
+  "binary_sha256": {
+    "local/lib/magic/tcl/magicdnull": "002643405c9e47dfb23f5e8fb08b6ad7fe2c096d5b344a653c6bb807a79e7873",
+    "local/lib/magic/tcl/tclmagic.so": "51f8f2ae39941bf08b0b1ad6532c29638338e7537bb3ab4efbda27e2c18e4fae",
+    "local/lib/netgen/tcl/netgenexec": "937729cddf9545400f7ee46ff896e825bbf1c2484127da53eee0a2384dcd62bd",
+    "local/lib/netgen/tcl/tclnetgen.so": "7e184317dae9ddcb228dc0ef8c1916c892bfd1732df195fd763ccc5e65b46247",
+    "debian/usr/lib/klayout/klayout": "9cecf190bf23a8ce8b8a00a6072d5fca3738062517ff1be80caaeeadae23aca5"
+  },
+  "design_signoff_claim": false
+}

@@ -1,0 +1,9 @@
+* NGSPICE file created from tool_smoke.ext - technology: scmos
+
+.global Vdd Gnd 
+
+
+* Top level circuit tool_smoke
+
+.end
+

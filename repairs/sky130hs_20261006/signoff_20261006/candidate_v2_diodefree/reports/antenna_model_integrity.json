@@ -1,0 +1,34 @@
+{
+  "baseline": {
+    "physical_rule_export_sha256": "883001c30306f9598c4949623a571586a60d818344c1c9548771aecdccc7d5ec",
+    "technology_export_sha256": "4fcdd1b823a5c0c6591f9a2add69d3fcda1b60f6857ef7ad09851e1e68122bfa",
+    "all_master_pin_antenna_data_sha256": "4c207c26a1aee9c5e4e042a08365ec8fcab85d6aeb0bf30bfb044719b50e50eb",
+    "pins": 3230,
+    "clk_root_gate_area": [
+      [
+        0.462,
+        null
+      ]
+    ],
+    "diode_instance_count": 8,
+    "diode_terminal_count": 8
+  },
+  "candidate": {
+    "physical_rule_export_sha256": "883001c30306f9598c4949623a571586a60d818344c1c9548771aecdccc7d5ec",
+    "technology_export_sha256": "d9d4fd1feca806731ae645a1f7c322fc6b6df6825cfc727bbbbd5fcc0ee5b73c",
+    "all_master_pin_antenna_data_sha256": "4c207c26a1aee9c5e4e042a08365ec8fcab85d6aeb0bf30bfb044719b50e50eb",
+    "pins": 3230,
+    "clk_root_gate_area": [
+      [
+        0.462,
+        null
+      ]
+    ],
+    "diode_instance_count": 0,
+    "diode_terminal_count": 0
+  },
+  "status": "PASS",
+  "all_geometry_and_antenna_rules_identical": true,
+  "rc_metadata_note": "Routed DEF reimport has original LEF RC defaults; extraction and STA reload the same original setRC.tcl and use the same rcx_patterns.rules. RC metadata is excluded only from this antenna/geometry-rule identity hash; antenna rules are preserved exactly.",
+  "all_master_gate_diffusion_antenna_models_identical": true
+}

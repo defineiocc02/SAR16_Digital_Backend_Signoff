@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "candidate_sha256": {
+    "signoff_20261006/candidate_v2_diodefree/results/routed.odb": "e7fcd87e358a1848c7e1d2fdde08280773994c176907caecc541867e81e09792",
+    "signoff_20261006/candidate_v2_diodefree/results/routed.def": "22c5de831ee7dbdcf8eef1637735f7da03b2a7059b9ac9e8e7b45e4a7ae2edf1",
+    "signoff_20261006/candidate_v2_diodefree/results/routed.v": "b6b2f6ab56f5d565d26b2ccacfcb1af9e751b0bf1100595bb16942449e35cce5",
+    "signoff_20261006/candidate_v2_diodefree/results/source.pg.v": "c2c78daa1ed441bf7a611547ee02d43aa3b8a05b7fcab12598226623257834a8",
+    "signoff_20261006/candidate_v2_diodefree/results/candidate.gds": "bc8f2590c514a8f8bfb819057fcf0f848fc8107b0726860d7581b8bcdadd8c4b"
+  },
+  "exact_odb_reexport_matches_routed_v": true,
+  "exact_odb_reexport_matches_source_pg_v": true,
+  "driver_sha256": {
+    "equivalence/scripts/build_negative_controls.py": "30e54c6a4024ef59c61fec93fcfd659615a14db527cd4ceb3fac9111443295ef",
+    "equivalence/scripts/build_reset_bases.py": "8e4584654cdfa049164ea5420cc488a9256c8d79a55d25c4febd732be515f9bf",
+    "equivalence/scripts/build_state_miters.py": "63950aae7b3ba0361d90bc3bb66bfaaa706eff00d275bf468a8a0aa7620ff990",
+    "equivalence/scripts/collect_report.py": "d171bec05ecf1336cdf2034212c7f055557442055b12b23c7f4b8028f3cf82b9",
+    "equivalence/scripts/inspect_mapping.py": "1033857e7c5093d8b93288907f857bb9eff9813305de1eebbed214d2b350362b",
+    "equivalence/scripts/normalize.py": "fde067f90d5085b6599fde309d91f2fccb4ddcfba44082d159ae500e2c2bf1c5",
+    "equivalence/scripts/prepare_routed_case.py": "357762c34e4f972e87686aeab2bffbe7fa67a407faa256e9082a6b024bd4f313",
+    "equivalence/scripts/run_suite.py": "dc82b189b0f754655727a0113a6f133fdaba1a5e3806072f005de282b8f07368",
+    "equivalence/scripts/verify_evidence.py": "a41ee7032cd746b13b7d323d9f240325f631bbd50758f41096af85bd32d7686b",
+    "equivalence/run_final.sh": "f3691ffe2d29bb804f80674378648537ed0a6c29634271ff8bbff9fe8eece6a4",
+    "environment/env.sh": "40e75c4140062ff4593c1adbeb1a2a9bf9c209fc071a910c7e2ee0e1f9232b62",
+    "environment/bin/yosys-native": "7a2b0fb3368b2c585525b5016352be9ea0537811a11bfce5c4c264421ef58372",
+    "environment/tools/debian/usr/bin/yosys": "0e2b5c8f3ba616fa9ac5b05830e86181577ebf60d99401c10993885ff656e3ab"
+  },
+  "yosys_version": "Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)",
+  "scope": "Same original proof/reset/negative-control gates and strict candidate-local LEF filler model, fresh diode-free candidate routed.v."
+}

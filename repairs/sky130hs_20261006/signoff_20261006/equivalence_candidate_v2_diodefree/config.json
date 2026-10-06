@@ -1,0 +1,22 @@
+{
+  "rtl_dir": "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/recovered/SAR16_Rework_Core_20261005/sar16_rework_20261005/repo/rtl_optimized",
+  "netlists": {
+    "sky130hs_mapped": "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/run_v1/results/mapped.v",
+    "sky130hs_routed": "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/candidate_v2_diodefree/results/routed.v"
+  },
+  "libraries": {
+    "sky130hs": "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/environment/tools/OpenROAD-flow-scripts/flow/platforms/sky130hs/lib/sky130_fd_sc_hs__tt_025C_1v80.lib"
+  },
+  "physical_only": {
+    "sky130hs": {
+      "lef": "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/environment/tools/OpenROAD-flow-scripts/flow/platforms/sky130hs/lef/sky130_fd_sc_hs_merged.lef",
+      "cells": [
+        "sky130_fd_sc_hs__tapvpwrvgnd_1",
+        "sky130_fd_sc_hs__fill_1",
+        "sky130_fd_sc_hs__fill_2",
+        "sky130_fd_sc_hs__fill_4",
+        "sky130_fd_sc_hs__fill_8"
+      ]
+    }
+  }
+}

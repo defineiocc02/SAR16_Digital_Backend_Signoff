@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "scope": "Reset-reachable unbounded digital sequential equivalence, default parameters, ideal Boolean/Liberty semantics",
+  "candidate_routed_v_sha256": "b6b2f6ab56f5d565d26b2ccacfcb1af9e751b0bf1100595bb16942449e35cce5",
+  "candidate_routed_odb_sha256": "e7fcd87e358a1848c7e1d2fdde08280773994c176907caecc541867e81e09792",
+  "proof_jobs": 9,
+  "passed_jobs": 9,
+  "negative_controls_with_witnesses": 5,
+  "proofs": [
+    {
+      "comparison": "rtl_to_sky130hs_mapped",
+      "result": "PASS",
+      "inductive_step": "PASS",
+      "reset_base": "PASS",
+      "gold_state_bits": 843,
+      "gate_state_bits": 846,
+      "output_bits": 146,
+      "inductive_obligations": 2689,
+      "reset_obligations": 849,
+      "condition": "SRM state in 0..5",
+      "power_ports": []
+    },
+    {
+      "comparison": "sky130hs_mapped_to_sky130hs_routed",
+      "result": "PASS",
+      "inductive_step": "PASS",
+      "reset_base": "PASS",
+      "gold_state_bits": 846,
+      "gate_state_bits": 846,
+      "output_bits": 146,
+      "inductive_obligations": 2684,
+      "reset_obligations": 848,
+      "condition": "none",
+      "power_ports": []
+    }
+  ],
+  "output_ports_per_comparison": 20,
+  "output_bits_per_comparison": 146,
+  "strictly_audited_added_filler_instances": 8900,
+  "physical_antenna_diode_instances": 0,
+  "unsupported_functional_cells": 0,
+  "unresolved_blackboxes": 0,
+  "x_z_gate_connections": 0,
+  "identity_audit": "identity/identity_final.json",
+  "proof_integrity_audit": "integrity_audit.json",
+  "report": "report.md",
+  "reproduction": "reproduce.sh",
+  "normalization_extension_diff": "identity/normalization_extension.patch",
+  "limits": [
+    "Only the exact hashed default-parameter source and actual supplied netlists; alternative parameters are unproved",
+    "Defined primary inputs and nominal-power, zero-delay Liberty functional semantics",
+    "Common reset low at the first two sampled global steps; equality/definedness holds at steps 2 through 4; later resets are arbitrary",
+    "Clock levels are independent and unconstrained, with no fixed ratio or fairness assumption",
+    "Yosys clk2fflogic uses its documented negative-hold-time asynchronous-reset convention when reset release coincides with a clock edge",
+    "Equivalence preserves the RTL behavior; it is not an independent proof that calibration numerics, analog performance or every intended functional requirement is correct",
+    "No source-level arbitrary-X propagation guarantee: standard synthesis normalization uses opt without keepdc",
+    "No analog metastability, synchronizer MTBF, SDF timing, recovery/removal, power-integrity/connectivity, extracted-GDS equivalence or LVS conclusion"
+  ]
+}

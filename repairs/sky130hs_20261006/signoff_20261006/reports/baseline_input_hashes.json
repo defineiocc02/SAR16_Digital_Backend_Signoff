@@ -1,0 +1,30 @@
+{
+  "run_v6/results/routed.def": {
+    "sha256": "e1cc9ea7a97e80147d5d007a4486907c0b1887ec5d7a0185aec2a2a6a0fd3f66",
+    "bytes": 4284417
+  },
+  "run_v6/results/routed.odb": {
+    "sha256": "b8bf3d6f3480523a29ad86d3210a9a31570c3f948d173dd2373d116a70572ec9",
+    "bytes": 8416625
+  },
+  "run_v6/results/routed.v": {
+    "sha256": "3d35c431e229a6eeb18a8b797bafd07cdffb6b3cfed9dd164436ad0ac1a8c63a",
+    "bytes": 645303
+  },
+  "environment/tools/OpenROAD-flow-scripts/flow/platforms/sky130hs/gds/sky130_fd_sc_hs.gds": {
+    "sha256": "b212ab046fedb2ef32a0c6d804cac2d8fc44c6ae1524d578e09fb0f2da05dc4b",
+    "bytes": 4136798
+  },
+  "environment/tools/OpenROAD-flow-scripts/flow/platforms/sky130hs/lef/sky130_fd_sc_hs.tlef": {
+    "sha256": "64f35bec460085db0d4f2b62ceaad6f0f8eb3c9d216fb0dc5125357a805a1f1c",
+    "bytes": 17462
+  },
+  "environment/tools/OpenROAD-flow-scripts/flow/platforms/sky130hs/lef/sky130_fd_sc_hs_merged.lef": {
+    "sha256": "bcf8e2f0c90417b4002d2b96b348e63c806d69f6d44b9a465e0c830215b67a5a",
+    "bytes": 2036182
+  },
+  "environment/tools/OpenROAD-flow-scripts/flow/platforms/sky130hs/sky130hs.lyt": {
+    "sha256": "35f2cb470e1fa31454579d3b834ac32b57c493242f682eb10ccd763a0a759d32",
+    "bytes": 13324
+  }
+}

@@ -1,0 +1,3 @@
+source($input)
+report('Tool smoke test; deliberately narrow rectangle', $output)
+input(67, 20).width(0.14).output('minimum_width', 'Deliberate narrow rectangle is detected')

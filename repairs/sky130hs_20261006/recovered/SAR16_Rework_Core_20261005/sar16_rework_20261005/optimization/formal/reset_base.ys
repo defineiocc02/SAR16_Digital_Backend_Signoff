@@ -1,0 +1,9 @@
+read_json /workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/old_seq.json
+read_json /workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/new_seq.json
+read_verilog -sv /workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/reset_base.sv
+hierarchy -top reset_base
+proc
+flatten
+async2sync
+opt
+sat -seq 1 -set rst_n 0 -verify -prove proof_ok 1 -show-inputs -show-outputs

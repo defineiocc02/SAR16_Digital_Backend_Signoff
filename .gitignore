@@ -1,0 +1,15 @@
+/build/
+__pycache__/
+*.pyc
+/repairs/sky130hs_20261006/environment/tools/
+/repairs/sky130hs_20261006/environment/downloads/
+/repairs/sky130hs_20261006/environment/cache/
+/repairs/sky130hs_20261006/environment/bin/
+/repairs/sky130hs_20261006/signoff_20261006/tools/downloads/
+/repairs/sky130hs_20261006/signoff_20261006/tools/debian/
+/repairs/sky130hs_20261006/signoff_20261006/tools/local/
+/repairs/sky130hs_20261006/signoff_20261006/tools/*-src/
+/repairs/sky130hs_20261006/signoff_20261006/tools/bin/
+/repairs/sky130hs_20261006/signoff_20261006/pdk/src/
+/repairs/sky130hs_20261006/signoff_20261006/pdk/downloads/
+/repairs/sky130hs_20261006/signoff_20261006/pdk/sky130A/

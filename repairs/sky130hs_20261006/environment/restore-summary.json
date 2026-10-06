@@ -1,0 +1,84 @@
+{
+  "scope": "Pinned public EDA tool and SKY130HS platform restore only; SAR16 physical execution is outside this report.",
+  "root": "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/environment",
+  "openroad_version": "26Q2-1164-g08f67ee5ec",
+  "native_yosys_version": "Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)",
+  "orfs_commit": "ad11cc9f8cc8bde9946200cafc21bae265067188",
+  "platform": "sky130hs",
+  "pinned_debian_downloads": [
+    {
+      "file": "iverilog_12.0-2+b1_amd64.deb",
+      "sha256": "febe027d2d3f5a7e570844d55758339ab5490acc09f404f214a8719d89d07056",
+      "matches_original_pin": true
+    },
+    {
+      "file": "libffi8_3.4.8-2_amd64.deb",
+      "sha256": "0ebdc340de33333639c3c63874cd4b15ac2e83dfa1ef3053b7eefaf4919f4f68",
+      "matches_original_pin": true
+    },
+    {
+      "file": "libgomp1_14.2.0-19_amd64.deb",
+      "sha256": "72b7a1a33c48f3195efeb044111b34ae684b1e640bb6495c832443b798601cd5",
+      "matches_original_pin": true
+    },
+    {
+      "file": "libreadline8t64_8.2-6_amd64.deb",
+      "sha256": "eeadf2b5e755c9f183883feea2d9b5b28560284275d5f54d3e55d0923b1d0967",
+      "matches_original_pin": true
+    },
+    {
+      "file": "libtcl8.6_8.6.16+dfsg-1_amd64.deb",
+      "sha256": "7cfa070ca822e572a91bf1719f6ac7d9b464dc8da4142ea68cbd31aeac2fc52a",
+      "matches_original_pin": true
+    },
+    {
+      "file": "libyaml-cpp0.8_0.8.0+dfsg-7_amd64.deb",
+      "sha256": "120ef7f4d076f3307d374133154e34106817be874323e8bc2814130d3dccbb8a",
+      "matches_original_pin": true
+    },
+    {
+      "file": "openroad_26Q2-1164-g08f67ee5ec_amd64-ubuntu-24.04.deb",
+      "sha256": "f3f1eeaa18f327503f72cc45dcef5b1514ec2e89726ec53b4553bf4f951168a3",
+      "matches_original_pin": true
+    },
+    {
+      "file": "opensta_0~20191111gitc018cb2+dfsg-1.1_amd64.deb",
+      "sha256": "070f1da9b307cc9273453ea50e7dffbadf1b95ee8712f2430f518bc7008e4e10",
+      "matches_original_pin": true
+    },
+    {
+      "file": "tcl-tclreadline_2.3.8-1_amd64.deb",
+      "sha256": "977a25cebd0beadedadfc58527c7edbba3975e9a5ca25b5923b75cc9abb10ce3",
+      "matches_original_pin": true
+    },
+    {
+      "file": "verilator_5.032-1+b2_amd64.deb",
+      "sha256": "238ab4ca84cddd371f113cd549f16f2d65c43e7b4962a763bea1d259158dd3b2",
+      "matches_original_pin": true
+    },
+    {
+      "file": "yosys-abc_0.52-2_amd64.deb",
+      "sha256": "f54c92c5ce88959f6aedc71c7b01eaf2b39d6c8c3e5f02784b6ce24736dc50e4",
+      "matches_original_pin": true
+    },
+    {
+      "file": "yosys_0.52-2_amd64.deb",
+      "sha256": "c950e58a1f554546a91602e5124eb05019a92040e57b0aaa43cf33b032ee9c40",
+      "matches_original_pin": true
+    }
+  ],
+  "python_hashed_lock_sha256": "7a5b321dff739c22e7c7494695abba17390a115de7b78dc4afc6fc2421ea3789",
+  "python_runtime": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "python_libdir": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib",
+  "platform_hash_note": "Original manifest has no SKY130HS entries. SKY130HS restored from exact pinned clean Git commit; fresh inventory in sky130hs-restored-file-sha256.json.",
+  "verification": {
+    "openroad_lef_liberty": "PASS: 11 technology layers, 25 vias, 390 LEF masters, 377 Liberty cells",
+    "native_yosys_abc": "PASS: SKY130HS mapping smoke, 14 mapped cells",
+    "icarus": "PASS: SIMULATION_SMOKE_PASS",
+    "verilator": "PASS: counter lint",
+    "python_dependencies": "PASS: pip check and require-hashes installation",
+    "formal_positive": "PASS: induction and basecase; SBY exit 0",
+    "formal_negative_control": "Expected FAIL: exit 2 with trace.vcd",
+    "sar16_physical_job": "NOT RUN by this environment restoration task"
+  }
+}

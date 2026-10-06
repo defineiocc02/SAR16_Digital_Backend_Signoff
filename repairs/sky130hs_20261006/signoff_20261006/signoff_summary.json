@@ -1,0 +1,91 @@
+{
+  "status": "PASS_ALL_EXECUTED_OPEN_SOURCE_GATES",
+  "scope": "SKY130HS public 1.8V digital core; not proprietary foundry signoff or full ADC validation",
+  "selected_candidate": "candidate_v2_diodefree",
+  "baseline_run_v6_unchanged": true,
+  "checks": {
+    "magic_full_gds_drc": {
+      "status": "PASS",
+      "raw_rectangles": 0
+    },
+    "klayout_gds_beol_offgrid": {
+      "status": "PASS",
+      "report_items": 0
+    },
+    "full_extracted_lvs": {
+      "status": "PASS",
+      "unique_topology_match": true,
+      "property_error_cells": [],
+      "nets": [
+        4335,
+        4335
+      ],
+      "functional_cell_instances": [
+        4301,
+        4301
+      ],
+      "compared_hierarchical_records": 97,
+      "no_reference_or_rule_waivers": true
+    },
+    "prior_supported_physical_gates": {
+      "status": "PASS",
+      "details": {
+        "timing": true,
+        "electrical": true,
+        "cdc": true,
+        "antenna": true,
+        "router_drc": true,
+        "routed_connectivity": true,
+        "power_grid": true,
+        "spef_connected_net_coverage": true
+      }
+    },
+    "digital_equivalence": {
+      "status": "PASS",
+      "jobs": 9,
+      "includes_five_expected_counterexample_controls": true
+    }
+  },
+  "physical_edits": {
+    "official_filler_instances": 8900,
+    "original_diodes_removed": 8,
+    "remaining_diodes": 0,
+    "mcon_clock_access_moves": 3,
+    "antenna_routing_remedies": 3,
+    "functional_logic_original_placement_and_178ports_unchanged": true
+  },
+  "timing_ns": {
+    "nominal": {
+      "setup_wns": 1.062018,
+      "hold_wns": 0.153111
+    },
+    "scalarstress": {
+      "setup_wns": 0.947274,
+      "hold_wns": 0.05088
+    }
+  },
+  "area_um2": {
+    "die": 154433.2804,
+    "core": 135032.832,
+    "logic_including_buffers": 64567.368,
+    "tap": 2327.2704,
+    "diode": 0,
+    "filler": 68138.1936
+  },
+  "waivers": [],
+  "official_spice_sha256": "4e328eb4cb150ab7227848472b32b523520fe8223a7c81a15d688308854eaf8d",
+  "frozen_candidate_hashes": {
+    "routed.odb": "e7fcd87e358a1848c7e1d2fdde08280773994c176907caecc541867e81e09792",
+    "routed.def": "22c5de831ee7dbdcf8eef1637735f7da03b2a7059b9ac9e8e7b45e4a7ae2edf1",
+    "routed.v": "b6b2f6ab56f5d565d26b2ccacfcb1af9e751b0bf1100595bb16942449e35cce5",
+    "source.pg.v": "c2c78daa1ed441bf7a611547ee02d43aa3b8a05b7fcab12598226623257834a8",
+    "candidate.gds": "bc8f2590c514a8f8bfb819057fcf0f848fc8107b0726860d7581b8bcdadd8c4b"
+  },
+  "independently_checked_gds_sha256": "78dc8d8fbb18744369b61d7ade83511b09a335677566fda005c101f7b82a46a2",
+  "limitations": [
+    "Public Magic drc(full) local FEOL/BEOL geometry is not foundry signoff; density and antenna are separate",
+    "Official window-density checker requires>=700x700um; this392.98x392.98um block needs top-level integration density verification",
+    "Antenna0/0 is freshly recomputed using unchanged original technology and master-pin antenna data; not an independent proprietary-foundry antenna certification",
+    "No analog ADC/SNDR/ENOB or SMIC180 claim"
+  ]
+}

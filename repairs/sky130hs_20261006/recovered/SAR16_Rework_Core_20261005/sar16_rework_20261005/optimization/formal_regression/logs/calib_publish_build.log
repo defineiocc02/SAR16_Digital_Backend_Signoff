@@ -1,0 +1,1056 @@
+
+-- Executing script file `/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/calib_publish_adapter.ys' --
+
+1. Executing Verilog-2005 frontend: /workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv
+Parsing formal SystemVerilog input from `/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv' to AST representation.
+Generating RTLIL representation for module `\sar_calib_ctrl_serial'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv
+Parsing formal SystemVerilog input from `/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv' to AST representation.
+Generating RTLIL representation for module `\calib_publish_formal'.
+Successfully finished Verilog frontend.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \calib_publish_formal
+Used module:     \sar_calib_ctrl_serial
+
+3.2. Analyzing design hierarchy..
+Top module:  \calib_publish_formal
+Used module:     \sar_calib_ctrl_serial
+Removed 0 unused modules.
+Module calib_publish_formal directly or indirectly contains formal properties -> setting "keep" attribute.
+
+4. Executing PROC pass (convert processes to netlists).
+
+4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 17 empty switches in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:467$41'.
+Cleaned up 17 empty switches.
+
+4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:12$307 in module calib_publish_formal.
+Marked 1 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$268 in module sar_calib_ctrl_serial.
+Marked 1 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$263 in module sar_calib_ctrl_serial.
+Marked 1 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$258 in module sar_calib_ctrl_serial.
+Marked 1 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$253 in module sar_calib_ctrl_serial.
+Marked 1 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$248 in module sar_calib_ctrl_serial.
+Marked 1 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$243 in module sar_calib_ctrl_serial.
+Marked 1 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$238 in module sar_calib_ctrl_serial.
+Marked 1 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$233 in module sar_calib_ctrl_serial.
+Marked 1 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$228 in module sar_calib_ctrl_serial.
+Marked 1 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$223 in module sar_calib_ctrl_serial.
+Marked 1 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$218 in module sar_calib_ctrl_serial.
+Marked 1 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$213 in module sar_calib_ctrl_serial.
+Marked 1 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$208 in module sar_calib_ctrl_serial.
+Marked 1 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$203 in module sar_calib_ctrl_serial.
+Marked 2 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:781$202 in module sar_calib_ctrl_serial.
+Marked 13 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117 in module sar_calib_ctrl_serial.
+Marked 1 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:492$96 in module sar_calib_ctrl_serial.
+Marked 1 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:487$94 in module sar_calib_ctrl_serial.
+Marked 21 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:467$41 in module sar_calib_ctrl_serial.
+Marked 2 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:452$30 in module sar_calib_ctrl_serial.
+Marked 2 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:442$24 in module sar_calib_ctrl_serial.
+Removed a total of 0 dead cases.
+
+4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 5 redundant assignments.
+Promoted 55 assignments to connections.
+
+4.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\calib_publish_formal.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:11$390'.
+  Set init value: \past_valid = 1'0
+
+4.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_n in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$268'.
+Found async reset \rst_n in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$263'.
+Found async reset \rst_n in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$258'.
+Found async reset \rst_n in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$253'.
+Found async reset \rst_n in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$248'.
+Found async reset \rst_n in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$243'.
+Found async reset \rst_n in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$238'.
+Found async reset \rst_n in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$233'.
+Found async reset \rst_n in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$228'.
+Found async reset \rst_n in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$223'.
+Found async reset \rst_n in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$218'.
+Found async reset \rst_n in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$213'.
+Found async reset \rst_n in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$208'.
+Found async reset \rst_n in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$203'.
+Found async reset \rst_n in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+Found async reset \rst_n in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:487$94'.
+
+4.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~58 debug messages>
+
+4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\calib_publish_formal.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:11$390'.
+Creating decoders for process `\calib_publish_formal.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:16$312'.
+     1/19: \c_search_EN
+     2/19: \c_start_EN
+     3/19: \p_rearm_first_bit_EN
+     4/19: \p_done_sticky_EN
+     5/19: \p_final_write_pulse_EN
+     6/19: \p_write_address_identity_EN
+     7/19: \p_write_qualified_EN
+     8/19: \p_done_strobe_EN
+     9/19: \p_write_strobe_EN
+    10/19: \p_sar_pointer_below_target_EN
+    11/19: \p_pipeline_identity_EN
+    12/19: \p_last_write_completion_EN
+    13/19: \p_publication_address_EN
+    14/19: \p_calc_count_range_EN
+    15/19: \p_settle_count_range_EN
+    16/19: \p_sar_pointer_range_EN
+    17/19: \p_write_index_range_EN
+    18/19: \p_target_range_EN
+    19/19: \p_state_legal_EN
+Creating decoders for process `\calib_publish_formal.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:12$307'.
+     1/2: $assume$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:14$311_EN
+     2/2: $assume$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:14$309_EN
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$292'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$291'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$290'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$289'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$288'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$287'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$286'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$285'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$284'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$283'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$282'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$281'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$280'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$279'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:384$278'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:384$277'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:384$276'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:384$275'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:384$274'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:384$273'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$268'.
+     1/1: $0\g_const_reference.g_weight[19].g_measured.weight_r[29:0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$263'.
+     1/1: $0\g_const_reference.g_weight[18].g_measured.weight_r[29:0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$258'.
+     1/1: $0\g_const_reference.g_weight[17].g_measured.weight_r[29:0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$253'.
+     1/1: $0\g_const_reference.g_weight[16].g_measured.weight_r[29:0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$248'.
+     1/1: $0\g_const_reference.g_weight[15].g_measured.weight_r[29:0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$243'.
+     1/1: $0\g_const_reference.g_weight[14].g_measured.weight_r[29:0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$238'.
+     1/1: $0\g_const_reference.g_weight[13].g_measured.weight_r[29:0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$233'.
+     1/1: $0\g_const_reference.g_weight[12].g_measured.weight_r[29:0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$228'.
+     1/1: $0\g_const_reference.g_weight[11].g_measured.weight_r[29:0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$223'.
+     1/1: $0\g_const_reference.g_weight[10].g_measured.weight_r[29:0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$218'.
+     1/1: $0\g_const_reference.g_weight[9].g_measured.weight_r[29:0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$213'.
+     1/1: $0\g_const_reference.g_weight[8].g_measured.weight_r[29:0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$208'.
+     1/1: $0\g_const_reference.g_weight[7].g_measured.weight_r[29:0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$203'.
+     1/1: $0\g_const_reference.g_weight[6].g_measured.weight_r[29:0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:781$202'.
+     1/4: $2\dac_n_force[19:0]
+     2/4: $2\dac_p_force[19:0]
+     3/4: $1\dac_n_force[19:0]
+     4/4: $1\dac_p_force[19:0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:772$200'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:767$199'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+     1/50: $3$lookahead\overrange_bits$116[19:0]$198
+     2/50: $5$mem2reg_rd$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:644$13_DATA[29:0]$181
+     3/50: $4$mem2reg_rd$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:644$13_DATA[29:0]$180
+     4/50: $4$mem2reg_rd$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:644$13_ADDR[4:0]$179
+     5/50: $3$mem2reg_rd$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:644$13_DATA[29:0]$177
+     6/50: $3$mem2reg_rd$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:644$13_ADDR[4:0]$176
+     7/50: $5$lookahead\sar_code$115[19:0]$165
+     8/50: $5$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:629$11[4:0]$164
+     9/50: $4$lookahead\sar_code$115[19:0]$156
+    10/50: $4$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:629$11[4:0]$155
+    11/50: $3$lookahead\sar_code$115[19:0]$145
+    12/50: $3$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:621$10[4:0]$143
+    13/50: $3$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:629$11[4:0]$144
+    14/50: $2$lookahead\overrange_bits$116[19:0]$139
+    15/50: $2$lookahead\sar_code$115[19:0]$138
+    16/50: $2$mem2reg_rd$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:644$13_DATA[29:0]$137
+    17/50: $2$mem2reg_rd$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:644$13_ADDR[4:0]$136
+    18/50: $2$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:685$12[4:0]$135
+    19/50: $2$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:629$11[4:0]$134
+    20/50: $2$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:621$10[4:0]$133
+    21/50: $1$lookahead\overrange_bits$116[19:0]$132
+    22/50: $1$lookahead\sar_code$115[19:0]$131
+    23/50: $1$mem2reg_rd$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:644$13_DATA[29:0]$130
+    24/50: $1$mem2reg_rd$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:644$13_ADDR[4:0]$129
+    25/50: $1$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:685$12[4:0]$128
+    26/50: $1$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:629$11[4:0]$127
+    27/50: $1$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:621$10[4:0]$126
+    28/50: $0\comp_out_rr[0:0]
+    29/50: $0\comp_out_r[0:0]
+    30/50: $0\calib_done_pulse[0:0]
+    31/50: $0\w_wr_en[0:0]
+    32/50: $0\overrange_acc[0:0]
+    33/50: $0\wr_idx_r[4:0]
+    34/50: $0\orr_r[0:0]
+    35/50: $0\calc_result_r[31:0]
+    36/50: $0\avg_rounded_r[36:0]
+    37/50: $0\meas_val_n[29:0]
+    38/50: $0\meas_val_p[29:0]
+    39/50: $0\accumulator[36:0]
+    40/50: $0\temp_acc[35:0]
+    41/50: $0\calc_cnt[4:0]
+    42/50: $0\sar_ptr[4:0]
+    43/50: $0\wait_cnt[4:0]
+    44/50: $0\avg_cnt[4:0]
+    45/50: $0\target_bit[4:0]
+    46/50: $0\calib_overrange[0:0]
+    47/50: $0\w_wr_data[29:0]
+    48/50: $0\w_wr_addr[4:0]
+    49/50: $0\calib_mode_en[0:0]
+    50/50: $0\calib_done[0:0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:492$96'.
+     1/1: $1\next_state[3:0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:487$94'.
+     1/1: $0\state[3:0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:467$41'.
+     1/59: $38\search_mask[19:19]
+     2/59: $37\search_mask[18:18]
+     3/59: $36\search_mask[17:17]
+     4/59: $35\search_mask[16:16]
+     5/59: $34\search_mask[15:15]
+     6/59: $33\search_mask[14:14]
+     7/59: $32\search_mask[13:13]
+     8/59: $31\search_mask[12:12]
+     9/59: $30\search_mask[11:11]
+    10/59: $29\search_mask[10:10]
+    11/59: $28\search_mask[9:9]
+    12/59: $27\search_mask[8:8]
+    13/59: $26\search_mask[7:7]
+    14/59: $25\search_mask[6:6]
+    15/59: $24\search_mask[5:5]
+    16/59: $23\search_mask[4:4]
+    17/59: $22\search_mask[3:3]
+    18/59: $21\search_mask[2:2]
+    19/59: $20\search_mask[1:1]
+    20/59: $19\search_mask[0:0]
+    21/59: $1\search_mask[19:0] [19]
+    22/59: $1\search_mask[19:0] [18]
+    23/59: $1\search_mask[19:0] [17]
+    24/59: $17\search_mask[15:15]
+    25/59: $16\search_mask[14:14]
+    26/59: $15\search_mask[13:13]
+    27/59: $14\search_mask[12:12]
+    28/59: $13\search_mask[11:11]
+    29/59: $12\search_mask[10:10]
+    30/59: $11\search_mask[9:9]
+    31/59: $10\search_mask[8:8]
+    32/59: $9\search_mask[7:7]
+    33/59: $8\search_mask[6:6]
+    34/59: $7\search_mask[5:5]
+    35/59: $6\search_mask[4:4]
+    36/59: $5\search_mask[3:3]
+    37/59: $4\search_mask[2:2]
+    38/59: $3\search_mask[1:1]
+    39/59: $2\search_mask[0:0]
+    40/59: $1$fordecl_block$5.i[31:0]$45
+    41/59: $1\search_mask[19:0] [16]
+    42/59: $1\search_mask[19:0] [15]
+    43/59: $1\search_mask[19:0] [14]
+    44/59: $1\search_mask[19:0] [13]
+    45/59: $1\search_mask[19:0] [12]
+    46/59: $1\search_mask[19:0] [11]
+    47/59: $1\search_mask[19:0] [10]
+    48/59: $1\search_mask[19:0] [9]
+    49/59: $1\search_mask[19:0] [8]
+    50/59: $1\search_mask[19:0] [7]
+    51/59: $1\search_mask[19:0] [6]
+    52/59: $1\search_mask[19:0] [5]
+    53/59: $1\search_mask[19:0] [4]
+    54/59: $1\search_mask[19:0] [3]
+    55/59: $1\search_mask[19:0] [2]
+    56/59: $1\search_mask[19:0] [1]
+    57/59: $1\search_mask[19:0] [0]
+    58/59: $1$fordecl_block$7.i[31:0]$46
+    59/59: $18\search_mask[16:16]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:452$30'.
+     1/4: $2\protected_sar_code[18:17] [1]
+     2/4: $2\protected_sar_code[18:17] [0]
+     3/4: $1\protected_sar_code[18:17] [1]
+     4/4: $1\protected_sar_code[18:17] [0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:442$24'.
+     1/2: $2\compensated_meas[35:0]
+     2/2: $1\compensated_meas[35:0]
+
+4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\sar_calib_ctrl_serial.\shadow_weights[19]' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$292'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\shadow_weights[18]' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$291'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\shadow_weights[17]' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$290'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\shadow_weights[16]' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$289'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\shadow_weights[15]' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$288'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\shadow_weights[14]' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$287'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\shadow_weights[13]' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$286'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\shadow_weights[12]' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$285'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\shadow_weights[11]' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$284'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\shadow_weights[10]' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$283'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\shadow_weights[9]' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$282'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\shadow_weights[8]' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$281'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\shadow_weights[7]' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$280'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\shadow_weights[6]' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$279'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\shadow_weights[5]' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:384$278'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\shadow_weights[4]' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:384$277'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\shadow_weights[3]' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:384$276'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\shadow_weights[2]' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:384$275'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\shadow_weights[1]' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:384$274'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\shadow_weights[0]' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:384$273'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\dac_p_force' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:781$202'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\dac_n_force' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:781$202'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\calc_result_ext' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:772$200'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\avg_rounded' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:767$199'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\next_state' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:492$96'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\search_mask' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:467$41'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\target_drive_code' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:452$30'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\protected_sar_code' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:452$30'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\compensated_meas' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:442$24'.
+
+4.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\calib_publish_formal.$past$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:27$293$0' using process `\calib_publish_formal.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:16$312'.
+  created $dff cell `$procdff$1310' with positive edge clock.
+Creating register for signal `\calib_publish_formal.$past$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:28$294$0' using process `\calib_publish_formal.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:16$312'.
+  created $dff cell `$procdff$1311' with positive edge clock.
+Creating register for signal `\calib_publish_formal.$past$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:29$295$0' using process `\calib_publish_formal.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:16$312'.
+  created $dff cell `$procdff$1312' with positive edge clock.
+Creating register for signal `\calib_publish_formal.$past$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:30$296$0' using process `\calib_publish_formal.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:16$312'.
+  created $dff cell `$procdff$1313' with positive edge clock.
+Creating register for signal `\calib_publish_formal.$past$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:31$297$0' using process `\calib_publish_formal.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:16$312'.
+  created $dff cell `$procdff$1314' with positive edge clock.
+Creating register for signal `\calib_publish_formal.$past$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:32$298$0' using process `\calib_publish_formal.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:16$312'.
+  created $dff cell `$procdff$1315' with positive edge clock.
+Creating register for signal `\calib_publish_formal.$past$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:32$299$0' using process `\calib_publish_formal.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:16$312'.
+  created $dff cell `$procdff$1316' with positive edge clock.
+Creating register for signal `\calib_publish_formal.$past$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:33$300$0' using process `\calib_publish_formal.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:16$312'.
+  created $dff cell `$procdff$1317' with positive edge clock.
+Creating register for signal `\calib_publish_formal.$past$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:33$301$0' using process `\calib_publish_formal.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:16$312'.
+  created $dff cell `$procdff$1318' with positive edge clock.
+Creating register for signal `\calib_publish_formal.$past$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:34$302$0' using process `\calib_publish_formal.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:16$312'.
+  created $dff cell `$procdff$1319' with positive edge clock.
+Creating register for signal `\calib_publish_formal.$past$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:34$303$0' using process `\calib_publish_formal.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:16$312'.
+  created $dff cell `$procdff$1320' with positive edge clock.
+Creating register for signal `\calib_publish_formal.\past_valid' using process `\calib_publish_formal.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:12$307'.
+  created $dff cell `$procdff$1321' with positive edge clock.
+Creating register for signal `\sar_calib_ctrl_serial.\g_const_reference.g_weight[19].g_measured.weight_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$268'.
+  created $adff cell `$procdff$1326' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\g_const_reference.g_weight[18].g_measured.weight_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$263'.
+  created $adff cell `$procdff$1331' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\g_const_reference.g_weight[17].g_measured.weight_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$258'.
+  created $adff cell `$procdff$1336' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\g_const_reference.g_weight[16].g_measured.weight_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$253'.
+  created $adff cell `$procdff$1341' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\g_const_reference.g_weight[15].g_measured.weight_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$248'.
+  created $adff cell `$procdff$1346' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\g_const_reference.g_weight[14].g_measured.weight_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$243'.
+  created $adff cell `$procdff$1351' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\g_const_reference.g_weight[13].g_measured.weight_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$238'.
+  created $adff cell `$procdff$1356' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\g_const_reference.g_weight[12].g_measured.weight_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$233'.
+  created $adff cell `$procdff$1361' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\g_const_reference.g_weight[11].g_measured.weight_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$228'.
+  created $adff cell `$procdff$1366' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\g_const_reference.g_weight[10].g_measured.weight_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$223'.
+  created $adff cell `$procdff$1371' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\g_const_reference.g_weight[9].g_measured.weight_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$218'.
+  created $adff cell `$procdff$1376' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\g_const_reference.g_weight[8].g_measured.weight_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$213'.
+  created $adff cell `$procdff$1381' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\g_const_reference.g_weight[7].g_measured.weight_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$208'.
+  created $adff cell `$procdff$1386' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\g_const_reference.g_weight[6].g_measured.weight_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$203'.
+  created $adff cell `$procdff$1391' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\calib_done' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1396' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\calib_done_pulse' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1401' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\calib_mode_en' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1406' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\w_wr_en' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1411' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\w_wr_addr' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1416' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\w_wr_data' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1421' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\calib_overrange' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1426' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\overrange_bits' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1431' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\target_bit' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1436' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\avg_cnt' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1441' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\wait_cnt' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1446' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\sar_ptr' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1451' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\sar_code' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1456' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\calc_cnt' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1461' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\temp_acc' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1466' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\accumulator' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1471' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\meas_val_p' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1476' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\meas_val_n' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1481' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\avg_rounded_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1486' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\calc_result_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1491' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\orr_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1496' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\wr_idx_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1501' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\comp_out_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1506' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\comp_out_rr' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1511' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\overrange_acc' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1516' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:621$10' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1521' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:629$11' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1526' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:685$12' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1531' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.$mem2reg_rd$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:644$13_ADDR' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1536' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.$mem2reg_rd$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:644$13_DATA' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1541' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.$lookahead\sar_code$115' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1546' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.$lookahead\overrange_bits$116' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+  created $adff cell `$procdff$1551' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\state' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:487$94'.
+  created $adff cell `$procdff$1556' with positive edge clock and positive level reset.
+
+4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `calib_publish_formal.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:11$390'.
+Found and cleaned up 2 empty switches in `\calib_publish_formal.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:16$312'.
+Removing empty process `calib_publish_formal.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:16$312'.
+Found and cleaned up 1 empty switch in `\calib_publish_formal.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:12$307'.
+Removing empty process `calib_publish_formal.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal_regression/harness/calib_publish_formal.sv:12$307'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$292'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$291'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$290'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$289'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$288'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$287'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$286'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$285'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$284'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$283'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$282'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$281'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$280'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:387$279'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:384$278'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:384$277'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:384$276'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:384$275'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:384$274'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:384$273'.
+Found and cleaned up 1 empty switch in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$268'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$268'.
+Found and cleaned up 1 empty switch in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$263'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$263'.
+Found and cleaned up 1 empty switch in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$258'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$258'.
+Found and cleaned up 1 empty switch in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$253'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$253'.
+Found and cleaned up 1 empty switch in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$248'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$248'.
+Found and cleaned up 1 empty switch in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$243'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$243'.
+Found and cleaned up 1 empty switch in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$238'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$238'.
+Found and cleaned up 1 empty switch in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$233'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$233'.
+Found and cleaned up 1 empty switch in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$228'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$228'.
+Found and cleaned up 1 empty switch in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$223'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$223'.
+Found and cleaned up 1 empty switch in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$218'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$218'.
+Found and cleaned up 1 empty switch in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$213'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$213'.
+Found and cleaned up 1 empty switch in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$208'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$208'.
+Found and cleaned up 1 empty switch in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$203'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:388$203'.
+Found and cleaned up 2 empty switches in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:781$202'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:781$202'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:772$200'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:767$199'.
+Found and cleaned up 13 empty switches in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:531$117'.
+Found and cleaned up 1 empty switch in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:492$96'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:492$96'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:487$94'.
+Found and cleaned up 21 empty switches in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:467$41'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:467$41'.
+Found and cleaned up 2 empty switches in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:452$30'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:452$30'.
+Found and cleaned up 2 empty switches in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:442$24'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:442$24'.
+Cleaned up 58 empty switches.
+
+4.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module calib_publish_formal.
+<suppressed ~2 debug messages>
+Optimizing module sar_calib_ctrl_serial.
+<suppressed ~141 debug messages>
+
+5. Executing FLATTEN pass (flatten design).
+Deleting now unused module sar_calib_ctrl_serial.
+<suppressed ~1 debug messages>
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module calib_publish_formal.
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\calib_publish_formal'.
+Computing hashes of 942 cells of `\calib_publish_formal'.
+Finding duplicate cells in `\calib_publish_formal'.
+Computing hashes of 578 cells of `\calib_publish_formal'.
+Finding duplicate cells in `\calib_publish_formal'.
+Computing hashes of 512 cells of `\calib_publish_formal'.
+Finding duplicate cells in `\calib_publish_formal'.
+Computing hashes of 511 cells of `\calib_publish_formal'.
+Finding duplicate cells in `\calib_publish_formal'.
+Computing hashes of 510 cells of `\calib_publish_formal'.
+Finding duplicate cells in `\calib_publish_formal'.
+<suppressed ~1296 debug messages>
+Removed a total of 432 cells.
+
+6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \calib_publish_formal..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $flatten\dut.$procmux$478.
+    dead port 2/2 on $mux $flatten\dut.$procmux$478.
+    dead port 1/2 on $mux $flatten\dut.$procmux$481.
+    dead port 2/2 on $mux $flatten\dut.$procmux$481.
+    dead port 1/2 on $mux $flatten\dut.$procmux$484.
+    dead port 2/2 on $mux $flatten\dut.$procmux$484.
+    dead port 1/2 on $mux $flatten\dut.$procmux$487.
+    dead port 2/2 on $mux $flatten\dut.$procmux$487.
+    dead port 1/2 on $mux $flatten\dut.$procmux$490.
+    dead port 2/2 on $mux $flatten\dut.$procmux$490.
+    dead port 1/2 on $mux $flatten\dut.$procmux$493.
+    dead port 2/2 on $mux $flatten\dut.$procmux$493.
+    dead port 2/2 on $mux $flatten\dut.$procmux$499.
+    dead port 1/2 on $mux $flatten\dut.$procmux$545.
+    dead port 2/2 on $mux $flatten\dut.$procmux$545.
+    dead port 1/2 on $mux $flatten\dut.$procmux$547.
+    dead port 2/2 on $mux $flatten\dut.$procmux$547.
+    dead port 1/2 on $mux $flatten\dut.$procmux$549.
+    dead port 2/2 on $mux $flatten\dut.$procmux$549.
+    dead port 1/2 on $mux $flatten\dut.$procmux$559.
+    dead port 2/2 on $mux $flatten\dut.$procmux$559.
+    dead port 1/2 on $mux $flatten\dut.$procmux$561.
+    dead port 2/2 on $mux $flatten\dut.$procmux$561.
+    dead port 1/2 on $mux $flatten\dut.$procmux$563.
+    dead port 2/2 on $mux $flatten\dut.$procmux$563.
+    dead port 1/2 on $mux $flatten\dut.$procmux$572.
+    dead port 2/2 on $mux $flatten\dut.$procmux$572.
+    dead port 1/2 on $mux $flatten\dut.$procmux$574.
+    dead port 2/2 on $mux $flatten\dut.$procmux$574.
+    dead port 1/2 on $mux $flatten\dut.$procmux$583.
+    dead port 2/2 on $mux $flatten\dut.$procmux$583.
+    dead port 1/2 on $mux $flatten\dut.$procmux$585.
+    dead port 2/2 on $mux $flatten\dut.$procmux$585.
+    dead port 1/2 on $mux $flatten\dut.$procmux$598.
+    dead port 1/2 on $mux $flatten\dut.$procmux$601.
+    dead port 2/2 on $mux $flatten\dut.$procmux$603.
+    dead port 1/2 on $mux $flatten\dut.$procmux$613.
+    dead port 2/2 on $mux $flatten\dut.$procmux$613.
+    dead port 1/2 on $mux $flatten\dut.$procmux$616.
+    dead port 2/2 on $mux $flatten\dut.$procmux$616.
+    dead port 1/2 on $mux $flatten\dut.$procmux$619.
+    dead port 2/2 on $mux $flatten\dut.$procmux$619.
+    dead port 1/2 on $mux $flatten\dut.$procmux$621.
+    dead port 2/2 on $mux $flatten\dut.$procmux$621.
+    dead port 1/2 on $mux $flatten\dut.$procmux$634.
+    dead port 2/2 on $mux $flatten\dut.$procmux$636.
+    dead port 1/2 on $mux $flatten\dut.$procmux$646.
+    dead port 2/2 on $mux $flatten\dut.$procmux$646.
+    dead port 1/2 on $mux $flatten\dut.$procmux$649.
+    dead port 2/2 on $mux $flatten\dut.$procmux$649.
+    dead port 1/2 on $mux $flatten\dut.$procmux$651.
+    dead port 2/2 on $mux $flatten\dut.$procmux$651.
+    dead port 2/2 on $mux $flatten\dut.$procmux$663.
+    dead port 1/2 on $mux $flatten\dut.$procmux$673.
+    dead port 2/2 on $mux $flatten\dut.$procmux$673.
+    dead port 1/2 on $mux $flatten\dut.$procmux$675.
+    dead port 2/2 on $mux $flatten\dut.$procmux$675.
+    dead port 1/2 on $mux $flatten\dut.$procmux$685.
+    dead port 2/2 on $mux $flatten\dut.$procmux$685.
+    dead port 1/2 on $mux $flatten\dut.$procmux$687.
+    dead port 2/2 on $mux $flatten\dut.$procmux$687.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1050.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1056.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1062.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1068.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1074.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1080.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1086.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1092.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1098.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1104.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1110.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1116.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1122.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1128.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1134.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1140.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1146.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1152.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1158.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1164.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1176.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1179.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1182.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1185.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1188.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1191.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1194.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1197.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1200.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1203.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1206.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1209.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1212.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1215.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1218.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1221.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1224.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1224.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1278.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1278.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1281.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1284.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1284.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1287.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1287.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1290.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1290.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1293.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1293.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1296.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1296.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1299.
+    dead port 2/2 on $mux $flatten\dut.$procmux$1299.
+    dead port 1/2 on $mux $flatten\dut.$procmux$1305.
+    dead port 1/2 on $mux $flatten\dut.$procmux$711.
+    dead port 2/2 on $mux $flatten\dut.$procmux$711.
+    dead port 1/2 on $mux $flatten\dut.$procmux$719.
+    dead port 2/2 on $mux $flatten\dut.$procmux$719.
+    dead port 1/2 on $mux $flatten\dut.$procmux$723.
+    dead port 2/2 on $mux $flatten\dut.$procmux$723.
+    dead port 1/2 on $mux $flatten\dut.$procmux$732.
+    dead port 2/2 on $mux $flatten\dut.$procmux$732.
+    dead port 1/2 on $mux $flatten\dut.$procmux$741.
+    dead port 2/2 on $mux $flatten\dut.$procmux$741.
+Removed 125 multiplexer ports.
+<suppressed ~294 debug messages>
+
+6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \calib_publish_formal.
+    New ctrl vector for $pmux cell $flatten\dut.$procmux$914: { $auto$opt_reduce.cc:137:opt_pmux$1559 $flatten\dut.$procmux$774_CTRL $flatten\dut.$procmux$775_CTRL }
+    New ctrl vector for $pmux cell $flatten\dut.$procmux$938: { $auto$opt_reduce.cc:137:opt_pmux$1561 $flatten\dut.$procmux$774_CTRL $flatten\dut.$procmux$775_CTRL }
+    New ctrl vector for $pmux cell $flatten\dut.$procmux$791: { $auto$opt_reduce.cc:137:opt_pmux$1563 $flatten\dut.$procmux$698_CMP }
+    New ctrl vector for $pmux cell $flatten\dut.$procmux$959: { $auto$opt_reduce.cc:137:opt_pmux$1565 $flatten\dut.$procmux$700_CMP }
+    New ctrl vector for $pmux cell $flatten\dut.$procmux$833: { $auto$opt_reduce.cc:137:opt_pmux$1567 $flatten\dut.$procmux$785_CTRL }
+    New ctrl vector for $pmux cell $flatten\dut.$procmux$973: { $flatten\dut.$procmux$500_CMP $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:391$205_Y $auto$opt_reduce.cc:137:opt_pmux$1569 }
+    New ctrl vector for $pmux cell $flatten\dut.$procmux$1009: { $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:391$205_Y $auto$opt_reduce.cc:137:opt_pmux$1571 $flatten\dut.$procmux$703_CMP }
+    New ctrl vector for $pmux cell $flatten\dut.$procmux$803: { $auto$opt_reduce.cc:137:opt_pmux$1573 $flatten\dut.$procmux$699_CMP }
+    New ctrl vector for $pmux cell $flatten\dut.$procmux$1019: { $flatten\dut.$procmux$500_CMP $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:391$205_Y $auto$opt_reduce.cc:137:opt_pmux$1575 }
+    New ctrl vector for $pmux cell $flatten\dut.$procmux$851: { $auto$opt_reduce.cc:137:opt_pmux$1577 $flatten\dut.$procmux$700_CMP $flatten\dut.$procmux$703_CMP }
+    New ctrl vector for $pmux cell $flatten\dut.$procmux$863: { $auto$opt_reduce.cc:137:opt_pmux$1579 $flatten\dut.$procmux$785_CTRL $flatten\dut.$procmux$774_CTRL }
+    New ctrl vector for $pmux cell $flatten\dut.$procmux$890: { $auto$opt_reduce.cc:137:opt_pmux$1581 $flatten\dut.$procmux$785_CTRL $flatten\dut.$procmux$774_CTRL }
+    New ctrl vector for $pmux cell $flatten\dut.$procmux$779: { $auto$opt_reduce.cc:137:opt_pmux$1583 $flatten\dut.$procmux$699_CMP }
+    New ctrl vector for $pmux cell $flatten\dut.$procmux$695: { $auto$opt_reduce.cc:137:opt_pmux$1585 $flatten\dut.$procmux$774_CTRL }
+    New ctrl vector for $pmux cell $flatten\dut.$procmux$815: { $auto$opt_reduce.cc:137:opt_pmux$1587 $flatten\dut.$procmux$785_CTRL }
+    New ctrl vector for $pmux cell $flatten\dut.$procmux$767: { $auto$opt_reduce.cc:137:opt_pmux$1589 $flatten\dut.$procmux$699_CMP }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1558: { $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:435$17_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:438$22_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:391$205_Y $flatten\dut.$procmux$500_CMP $flatten\dut.$procmux$693_CMP $flatten\dut.$procmux$698_CMP $flatten\dut.$procmux$699_CMP $flatten\dut.$procmux$700_CMP $flatten\dut.$procmux$703_CMP }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1560: { $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:435$17_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:438$22_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:391$205_Y $flatten\dut.$procmux$500_CMP $flatten\dut.$procmux$693_CMP $flatten\dut.$procmux$698_CMP $flatten\dut.$procmux$699_CMP $flatten\dut.$procmux$700_CMP $flatten\dut.$procmux$703_CMP }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1562: { $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:434$15_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:435$17_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:436$19_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:437$20_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:438$22_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:391$205_Y $flatten\dut.$procmux$500_CMP $flatten\dut.$procmux$693_CMP $flatten\dut.$procmux$699_CMP $flatten\dut.$procmux$700_CMP $flatten\dut.$procmux$703_CMP $flatten\dut.$procmux$775_CMP [0] }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1564: { $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:434$15_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:435$17_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:436$19_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:437$20_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:438$22_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:391$205_Y $flatten\dut.$procmux$500_CMP $flatten\dut.$procmux$693_CMP $flatten\dut.$procmux$698_CMP $flatten\dut.$procmux$699_CMP $flatten\dut.$procmux$775_CMP [0] }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1566: { $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:434$15_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:436$19_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:437$20_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:391$205_Y $flatten\dut.$procmux$500_CMP $flatten\dut.$procmux$693_CMP $flatten\dut.$procmux$698_CMP $flatten\dut.$procmux$699_CMP $flatten\dut.$procmux$700_CMP $flatten\dut.$procmux$703_CMP $flatten\dut.$procmux$775_CMP [0] }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1568: { $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:434$15_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:435$17_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:436$19_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:437$20_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:438$22_Y $flatten\dut.$procmux$698_CMP $flatten\dut.$procmux$699_CMP $flatten\dut.$procmux$700_CMP $flatten\dut.$procmux$703_CMP $flatten\dut.$procmux$775_CMP [0] }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1570: { $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:434$15_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:435$17_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:436$19_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:437$20_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:438$22_Y $flatten\dut.$procmux$698_CMP $flatten\dut.$procmux$699_CMP $flatten\dut.$procmux$700_CMP $flatten\dut.$procmux$775_CMP [0] }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1572: { $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:434$15_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:435$17_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:436$19_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:437$20_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:438$22_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:391$205_Y $flatten\dut.$procmux$500_CMP $flatten\dut.$procmux$693_CMP $flatten\dut.$procmux$698_CMP $flatten\dut.$procmux$700_CMP $flatten\dut.$procmux$703_CMP $flatten\dut.$procmux$775_CMP [0] }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1574: { $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:434$15_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:435$17_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:436$19_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:437$20_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:438$22_Y $flatten\dut.$procmux$698_CMP $flatten\dut.$procmux$699_CMP $flatten\dut.$procmux$700_CMP $flatten\dut.$procmux$775_CMP [0] }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1576: { $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:434$15_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:435$17_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:436$19_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:437$20_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:438$22_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:391$205_Y $flatten\dut.$procmux$500_CMP $flatten\dut.$procmux$693_CMP $flatten\dut.$procmux$698_CMP $flatten\dut.$procmux$699_CMP $flatten\dut.$procmux$775_CMP [0] }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1578: { $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:436$19_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:391$205_Y $flatten\dut.$procmux$500_CMP $flatten\dut.$procmux$693_CMP $flatten\dut.$procmux$698_CMP $flatten\dut.$procmux$699_CMP $flatten\dut.$procmux$700_CMP $flatten\dut.$procmux$703_CMP $flatten\dut.$procmux$775_CMP [0] }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1580: { $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:436$19_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:391$205_Y $flatten\dut.$procmux$500_CMP $flatten\dut.$procmux$693_CMP $flatten\dut.$procmux$698_CMP $flatten\dut.$procmux$699_CMP $flatten\dut.$procmux$700_CMP $flatten\dut.$procmux$703_CMP $flatten\dut.$procmux$775_CMP [0] }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1582: { $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:434$15_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:435$17_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:436$19_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:437$20_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:438$22_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:391$205_Y $flatten\dut.$procmux$500_CMP $flatten\dut.$procmux$693_CMP $flatten\dut.$procmux$698_CMP $flatten\dut.$procmux$700_CMP $flatten\dut.$procmux$703_CMP $flatten\dut.$procmux$775_CMP [0] }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1584: { $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:435$17_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:438$22_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:391$205_Y $flatten\dut.$procmux$500_CMP $flatten\dut.$procmux$693_CMP $flatten\dut.$procmux$698_CMP $flatten\dut.$procmux$699_CMP $flatten\dut.$procmux$700_CMP $flatten\dut.$procmux$703_CMP }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1586: { $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:434$15_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:436$19_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:437$20_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:391$205_Y $flatten\dut.$procmux$500_CMP $flatten\dut.$procmux$693_CMP $flatten\dut.$procmux$698_CMP $flatten\dut.$procmux$699_CMP $flatten\dut.$procmux$700_CMP $flatten\dut.$procmux$703_CMP $flatten\dut.$procmux$775_CMP [0] }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1588: { $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:434$15_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:435$17_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:436$19_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:437$20_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:438$22_Y $flatten\dut.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv:391$205_Y $flatten\dut.$procmux$500_CMP $flatten\dut.$procmux$693_CMP $flatten\dut.$procmux$698_CMP $flatten\dut.$procmux$700_CMP $flatten\dut.$procmux$703_CMP $flatten\dut.$procmux$775_CMP [0] }
+  Optimizing cells in module \calib_publish_formal.
+Performed a total of 32 changes.
+
+6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\calib_publish_formal'.
+Computing hashes of 441 cells of `\calib_publish_formal'.
+Finding duplicate cells in `\calib_publish_formal'.
+Computing hashes of 416 cells of `\calib_publish_formal'.
+Finding duplicate cells in `\calib_publish_formal'.
+Computing hashes of 410 cells of `\calib_publish_formal'.
+Finding duplicate cells in `\calib_publish_formal'.
+<suppressed ~93 debug messages>
+Removed a total of 31 cells.
+
+6.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $flatten\dut.$procdff$1461 ($adff) from module calib_publish_formal (D = $flatten\dut.$procmux$890_Y, Q = \dut.calc_cnt).
+Adding EN signal on $flatten\dut.$procdff$1436 ($adff) from module calib_publish_formal (D = $flatten\dut.$procmux$973_Y, Q = \dut.target_bit).
+Adding EN signal on $flatten\dut.$procdff$1516 ($adff) from module calib_publish_formal (D = $flatten\dut.$procmux$763_Y, Q = \dut.overrange_acc).
+Adding EN signal on $flatten\dut.$procdff$1431 ($adff) from module calib_publish_formal (D = $flatten\dut.$procmux$690_Y, Q = \dut.overrange_bits).
+Adding EN signal on $flatten\dut.$procdff$1426 ($adff) from module calib_publish_formal (D = $flatten\dut.$procmux$990_Y, Q = \dut.calib_overrange).
+Adding EN signal on $flatten\dut.$procdff$1421 ($adff) from module calib_publish_formal (D = \dut.calc_result_r [29:0], Q = \dut.w_wr_data).
+Adding EN signal on $flatten\dut.$procdff$1416 ($adff) from module calib_publish_formal (D = \dut.wr_idx_r, Q = \dut.w_wr_addr).
+Adding EN signal on $flatten\dut.$procdff$1406 ($adff) from module calib_publish_formal (D = $flatten\dut.$procmux$1009_Y, Q = \dut.calib_mode_en).
+Adding EN signal on $flatten\dut.$procdff$1396 ($adff) from module calib_publish_formal (D = $flatten\dut.$procmux$1019_Y, Q = \dut.calib_done).
+Adding EN signal on $flatten\dut.$procdff$1391 ($adff) from module calib_publish_formal (D = \dut.calc_result_r [29:0], Q = \dut.g_const_reference.g_weight[6].g_measured.weight_r).
+Adding EN signal on $flatten\dut.$procdff$1501 ($adff) from module calib_publish_formal (D = $flatten\dut.$procmux$767_Y, Q = \dut.wr_idx_r).
+Adding EN signal on $flatten\dut.$procdff$1386 ($adff) from module calib_publish_formal (D = \dut.calc_result_r [29:0], Q = \dut.g_const_reference.g_weight[7].g_measured.weight_r).
+Adding EN signal on $flatten\dut.$procdff$1381 ($adff) from module calib_publish_formal (D = \dut.calc_result_r [29:0], Q = \dut.g_const_reference.g_weight[8].g_measured.weight_r).
+Adding EN signal on $flatten\dut.$procdff$1376 ($adff) from module calib_publish_formal (D = \dut.calc_result_r [29:0], Q = \dut.g_const_reference.g_weight[9].g_measured.weight_r).
+Adding EN signal on $flatten\dut.$procdff$1496 ($adff) from module calib_publish_formal (D = $flatten\dut.$procmux$779_Y, Q = \dut.orr_r).
+Adding EN signal on $flatten\dut.$procdff$1371 ($adff) from module calib_publish_formal (D = \dut.calc_result_r [29:0], Q = \dut.g_const_reference.g_weight[10].g_measured.weight_r).
+Adding EN signal on $flatten\dut.$procdff$1366 ($adff) from module calib_publish_formal (D = \dut.calc_result_r [29:0], Q = \dut.g_const_reference.g_weight[11].g_measured.weight_r).
+Adding EN signal on $flatten\dut.$procdff$1476 ($adff) from module calib_publish_formal (D = $flatten\dut.$procmux$833_Y, Q = \dut.meas_val_p).
+Adding EN signal on $flatten\dut.$procdff$1361 ($adff) from module calib_publish_formal (D = \dut.calc_result_r [29:0], Q = \dut.g_const_reference.g_weight[12].g_measured.weight_r).
+Adding EN signal on $flatten\dut.$procdff$1491 ($adff) from module calib_publish_formal (D = $flatten\dut.$procmux$791_Y, Q = \dut.calc_result_r).
+Adding EN signal on $flatten\dut.$procdff$1356 ($adff) from module calib_publish_formal (D = \dut.calc_result_r [29:0], Q = \dut.g_const_reference.g_weight[13].g_measured.weight_r).
+Adding EN signal on $flatten\dut.$procdff$1351 ($adff) from module calib_publish_formal (D = \dut.calc_result_r [29:0], Q = \dut.g_const_reference.g_weight[14].g_measured.weight_r).
+Adding EN signal on $flatten\dut.$procdff$1346 ($adff) from module calib_publish_formal (D = \dut.calc_result_r [29:0], Q = \dut.g_const_reference.g_weight[15].g_measured.weight_r).
+Adding EN signal on $flatten\dut.$procdff$1486 ($adff) from module calib_publish_formal (D = $flatten\dut.$procmux$803_Y, Q = \dut.avg_rounded_r).
+Adding EN signal on $flatten\dut.$procdff$1341 ($adff) from module calib_publish_formal (D = \dut.calc_result_r [29:0], Q = \dut.g_const_reference.g_weight[16].g_measured.weight_r).
+Adding EN signal on $flatten\dut.$procdff$1336 ($adff) from module calib_publish_formal (D = \dut.calc_result_r [29:0], Q = \dut.g_const_reference.g_weight[17].g_measured.weight_r).
+Adding EN signal on $flatten\dut.$procdff$1331 ($adff) from module calib_publish_formal (D = \dut.calc_result_r [29:0], Q = \dut.g_const_reference.g_weight[18].g_measured.weight_r).
+Adding EN signal on $flatten\dut.$procdff$1481 ($adff) from module calib_publish_formal (D = $flatten\dut.$procmux$815_Y, Q = \dut.meas_val_n).
+Adding EN signal on $flatten\dut.$procdff$1326 ($adff) from module calib_publish_formal (D = \dut.calc_result_r [29:0], Q = \dut.g_const_reference.g_weight[19].g_measured.weight_r).
+Adding EN signal on $flatten\dut.$procdff$1451 ($adff) from module calib_publish_formal (D = $flatten\dut.$procmux$914_Y, Q = \dut.sar_ptr).
+Adding EN signal on $flatten\dut.$procdff$1466 ($adff) from module calib_publish_formal (D = $flatten\dut.$procmux$863_Y, Q = \dut.temp_acc).
+Adding EN signal on $flatten\dut.$procdff$1441 ($adff) from module calib_publish_formal (D = $flatten\dut.$procmux$959_Y, Q = \dut.avg_cnt).
+Adding EN signal on $flatten\dut.$procdff$1456 ($adff) from module calib_publish_formal (D = $flatten\dut.$procmux$695_Y, Q = \dut.sar_code).
+Adding EN signal on $flatten\dut.$procdff$1471 ($adff) from module calib_publish_formal (D = $flatten\dut.$procmux$851_Y, Q = \dut.accumulator).
+Adding EN signal on $flatten\dut.$procdff$1446 ($adff) from module calib_publish_formal (D = $flatten\dut.$procmux$938_Y, Q = \dut.wait_cnt).
+Setting constant 0-bit at position 0 on $flatten\dut.$procdff$1526 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 1 on $flatten\dut.$procdff$1526 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 2 on $flatten\dut.$procdff$1526 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 3 on $flatten\dut.$procdff$1526 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 4 on $flatten\dut.$procdff$1526 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 0 on $flatten\dut.$procdff$1546 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 1 on $flatten\dut.$procdff$1546 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 2 on $flatten\dut.$procdff$1546 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 3 on $flatten\dut.$procdff$1546 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 4 on $flatten\dut.$procdff$1546 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 5 on $flatten\dut.$procdff$1546 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 6 on $flatten\dut.$procdff$1546 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 7 on $flatten\dut.$procdff$1546 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 8 on $flatten\dut.$procdff$1546 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 9 on $flatten\dut.$procdff$1546 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 10 on $flatten\dut.$procdff$1546 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 11 on $flatten\dut.$procdff$1546 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 12 on $flatten\dut.$procdff$1546 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 13 on $flatten\dut.$procdff$1546 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 14 on $flatten\dut.$procdff$1546 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 15 on $flatten\dut.$procdff$1546 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 16 on $flatten\dut.$procdff$1546 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 17 on $flatten\dut.$procdff$1546 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 18 on $flatten\dut.$procdff$1546 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 19 on $flatten\dut.$procdff$1546 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 0 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 1 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 2 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 3 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 4 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 5 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 6 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 7 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 8 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 9 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 10 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 11 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 12 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 13 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 14 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 15 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 16 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 17 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 18 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 19 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 20 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 21 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 22 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 23 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 24 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 25 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 26 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 27 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 28 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+Setting constant 0-bit at position 29 on $flatten\dut.$procdff$1541 ($adff) from module calib_publish_formal.
+
+6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \calib_publish_formal..
+Removed 260 unused cells and 1219 unused wires.
+<suppressed ~325 debug messages>
+
+6.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module calib_publish_formal.
+<suppressed ~10 debug messages>
+
+6.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \calib_publish_formal..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~57 debug messages>
+
+6.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \calib_publish_formal.
+Performed a total of 0 changes.
+
+6.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\calib_publish_formal'.
+Computing hashes of 205 cells of `\calib_publish_formal'.
+Finding duplicate cells in `\calib_publish_formal'.
+Computing hashes of 200 cells of `\calib_publish_formal'.
+Finding duplicate cells in `\calib_publish_formal'.
+Computing hashes of 199 cells of `\calib_publish_formal'.
+Finding duplicate cells in `\calib_publish_formal'.
+<suppressed ~18 debug messages>
+Removed a total of 6 cells.
+
+6.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \calib_publish_formal..
+Removed 2 unused cells and 8 unused wires.
+<suppressed ~3 debug messages>
+
+6.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module calib_publish_formal.
+
+6.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \calib_publish_formal..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~57 debug messages>
+
+6.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \calib_publish_formal.
+Performed a total of 0 changes.
+
+6.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\calib_publish_formal'.
+Computing hashes of 197 cells of `\calib_publish_formal'.
+Finding duplicate cells in `\calib_publish_formal'.
+Removed a total of 0 cells.
+
+6.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \calib_publish_formal..
+
+6.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module calib_publish_formal.
+
+6.23. Finished fast OPT passes. (There is nothing left to do.)
+
+7. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module calib_publish_formal.
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\calib_publish_formal'.
+Computing hashes of 197 cells of `\calib_publish_formal'.
+Finding duplicate cells in `\calib_publish_formal'.
+Removed a total of 0 cells.
+
+8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \calib_publish_formal..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~57 debug messages>
+
+8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \calib_publish_formal.
+Performed a total of 0 changes.
+
+8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\calib_publish_formal'.
+Computing hashes of 197 cells of `\calib_publish_formal'.
+Finding duplicate cells in `\calib_publish_formal'.
+Removed a total of 0 cells.
+
+8.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \calib_publish_formal..
+
+8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module calib_publish_formal.
+
+8.9. Finished fast OPT passes. (There is nothing left to do.)
+
+9. Executing ASYNC2SYNC pass.
+Replacing calib_publish_formal.$flatten\dut.$procdff$1556 ($adff): ARST=\dut.rst_n, D=\dut.next_state, Q=\dut.state
+Replacing calib_publish_formal.$auto$ff.cc:337:slice$1652 ($adffe): ARST=\dut.rst_n, D=$flatten\dut.$0\wr_idx_r[4:0], Q=\dut.wr_idx_r
+Replacing calib_publish_formal.$auto$ff.cc:337:slice$1644 ($adffe): ARST=\dut.rst_n, D=$flatten\dut.$0\calib_done[0:0], Q=\dut.calib_done
+Replacing calib_publish_formal.$auto$ff.cc:337:slice$1721 ($adffe): ARST=\dut.rst_n, D=$flatten\dut.$0\avg_cnt[4:0], Q=\dut.avg_cnt
+Replacing calib_publish_formal.$flatten\dut.$procdff$1401 ($adff): ARST=\dut.rst_n, D=$flatten\dut.$0\calib_done_pulse[0:0], Q=\dut.calib_done_pulse
+Replacing calib_publish_formal.$auto$ff.cc:337:slice$1637 ($adffe): ARST=\dut.rst_n, D=$flatten\dut.$0\calib_mode_en[0:0], Q=\dut.calib_mode_en
+Replacing calib_publish_formal.$flatten\dut.$procdff$1411 ($adff): ARST=\dut.rst_n, D=$flatten\dut.$0\w_wr_en[0:0], Q=\dut.w_wr_en
+Replacing calib_publish_formal.$auto$ff.cc:337:slice$1636 ($adffe): ARST=\dut.rst_n, D=\dut.wr_idx_r, Q=\dut.w_wr_addr
+Replacing calib_publish_formal.$auto$ff.cc:337:slice$1603 ($adffe): ARST=\dut.rst_n, D=$flatten\dut.$0\target_bit[4:0], Q=\dut.target_bit
+Replacing calib_publish_formal.$auto$ff.cc:337:slice$1590 ($adffe): ARST=\dut.rst_n, D=$flatten\dut.$0\calc_cnt[4:0], Q=\dut.calc_cnt
+Replacing calib_publish_formal.$auto$ff.cc:337:slice$1695 ($adffe): ARST=\dut.rst_n, D=$flatten\dut.$0\sar_ptr[4:0], Q=\dut.sar_ptr
+Replacing calib_publish_formal.$auto$ff.cc:337:slice$1736 ($adffe): ARST=\dut.rst_n, D=$flatten\dut.$0\wait_cnt[4:0], Q=\dut.wait_cnt
+
+10. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module calib_publish_formal.
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\calib_publish_formal'.
+Computing hashes of 333 cells of `\calib_publish_formal'.
+Finding duplicate cells in `\calib_publish_formal'.
+Computing hashes of 296 cells of `\calib_publish_formal'.
+Finding duplicate cells in `\calib_publish_formal'.
+<suppressed ~111 debug messages>
+Removed a total of 37 cells.
+
+11.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \calib_publish_formal..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/3 on $pmux $flatten\dut.$procmux$767.
+    dead port 2/3 on $pmux $flatten\dut.$procmux$959.
+Removed 2 multiplexer ports.
+<suppressed ~103 debug messages>
+
+11.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \calib_publish_formal.
+Performed a total of 0 changes.
+
+11.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\calib_publish_formal'.
+Computing hashes of 296 cells of `\calib_publish_formal'.
+Finding duplicate cells in `\calib_publish_formal'.
+Removed a total of 0 cells.
+
+11.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $auto$async2sync.cc:110:execute$1818 ($dff) from module calib_publish_formal (D = $procmux$395_Y, Q = $auto$async2sync.cc:107:execute$1816, rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$1736 ($dff) from module calib_publish_formal (D = $auto$rtlil.cc:3386:Mux$1998, Q = $auto$async2sync.cc:253:execute$1828, rval = 5'00000).
+Adding EN signal on $auto$ff.cc:337:slice$2040 ($sdff) from module calib_publish_formal (D = $flatten\dut.$0\wait_cnt[4:0], Q = $auto$async2sync.cc:253:execute$1828).
+Adding SRST signal on $auto$ff.cc:337:slice$1695 ($dff) from module calib_publish_formal (D = $auto$rtlil.cc:3386:Mux$2002, Q = $auto$async2sync.cc:253:execute$1766, rval = 5'00000).
+Adding EN signal on $auto$ff.cc:337:slice$2042 ($sdff) from module calib_publish_formal (D = $flatten\dut.$0\sar_ptr[4:0], Q = $auto$async2sync.cc:253:execute$1766).
+Adding SRST signal on $auto$ff.cc:337:slice$1590 ($dff) from module calib_publish_formal (D = $auto$rtlil.cc:3386:Mux$2006, Q = $auto$async2sync.cc:253:execute$1764, rval = 5'00000).
+Adding EN signal on $auto$ff.cc:337:slice$2044 ($sdff) from module calib_publish_formal (D = $flatten\dut.$0\calc_cnt[4:0], Q = $auto$async2sync.cc:253:execute$1764).
+Adding SRST signal on $auto$ff.cc:337:slice$1603 ($dff) from module calib_publish_formal (D = $auto$rtlil.cc:3386:Mux$2010, Q = $auto$async2sync.cc:253:execute$1762, rval = 5'00110).
+Adding EN signal on $auto$ff.cc:337:slice$2046 ($sdff) from module calib_publish_formal (D = $flatten\dut.$0\target_bit[4:0], Q = $auto$async2sync.cc:253:execute$1762).
+Adding SRST signal on $auto$ff.cc:337:slice$1636 ($dff) from module calib_publish_formal (D = $auto$rtlil.cc:3386:Mux$2014, Q = $auto$async2sync.cc:253:execute$1760, rval = 5'00000).
+Adding EN signal on $auto$ff.cc:337:slice$2048 ($sdff) from module calib_publish_formal (D = \dut.wr_idx_r, Q = $auto$async2sync.cc:253:execute$1760).
+Adding SRST signal on $flatten\dut.$procdff$1411 ($dff) from module calib_publish_formal (D = $flatten\dut.$0\w_wr_en[0:0], Q = $auto$async2sync.cc:253:execute$1758, rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$1637 ($dff) from module calib_publish_formal (D = $auto$rtlil.cc:3386:Mux$2020, Q = $auto$async2sync.cc:253:execute$1756, rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2051 ($sdff) from module calib_publish_formal (D = $flatten\dut.$0\calib_mode_en[0:0], Q = $auto$async2sync.cc:253:execute$1756).
+Adding SRST signal on $flatten\dut.$procdff$1401 ($dff) from module calib_publish_formal (D = $flatten\dut.$procmux$746_Y, Q = $auto$async2sync.cc:253:execute$1754, rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$1721 ($dff) from module calib_publish_formal (D = $auto$rtlil.cc:3386:Mux$2026, Q = $auto$async2sync.cc:253:execute$1752, rval = 5'00000).
+Adding EN signal on $auto$ff.cc:337:slice$2056 ($sdff) from module calib_publish_formal (D = $flatten\dut.$0\avg_cnt[4:0], Q = $auto$async2sync.cc:253:execute$1752).
+Adding SRST signal on $auto$ff.cc:337:slice$1644 ($dff) from module calib_publish_formal (D = $auto$rtlil.cc:3386:Mux$2030, Q = $auto$async2sync.cc:253:execute$1750, rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2058 ($sdff) from module calib_publish_formal (D = $flatten\dut.$0\calib_done[0:0], Q = $auto$async2sync.cc:253:execute$1750).
+Adding SRST signal on $auto$ff.cc:337:slice$1652 ($dff) from module calib_publish_formal (D = $auto$rtlil.cc:3386:Mux$2034, Q = $auto$async2sync.cc:253:execute$1748, rval = 5'00110).
+Adding EN signal on $auto$ff.cc:337:slice$2060 ($sdff) from module calib_publish_formal (D = $flatten\dut.$0\wr_idx_r[4:0], Q = $auto$async2sync.cc:253:execute$1748).
+Adding SRST signal on $flatten\dut.$procdff$1556 ($dff) from module calib_publish_formal (D = \dut.next_state, Q = $auto$async2sync.cc:253:execute$1746, rval = 4'0000).
+
+11.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \calib_publish_formal..
+Removed 63 unused cells and 107 unused wires.
+<suppressed ~71 debug messages>
+
+11.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module calib_publish_formal.
+
+11.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+11.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \calib_publish_formal..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~79 debug messages>
+
+11.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \calib_publish_formal.
+Performed a total of 0 changes.
+
+11.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\calib_publish_formal'.
+Computing hashes of 233 cells of `\calib_publish_formal'.
+Finding duplicate cells in `\calib_publish_formal'.
+Removed a total of 0 cells.
+
+11.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \calib_publish_formal..
+
+11.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module calib_publish_formal.
+
+11.16. Finished fast OPT passes. (There is nothing left to do.)
+
+12. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+13. Executing CHECK pass (checking for obvious problems).
+Checking module calib_publish_formal...
+Found and reported 0 problems.
+
+14. Executing SMT2 backend.
+
+14.1. Executing BMUXMAP pass.
+
+14.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module calib_publish_formal.

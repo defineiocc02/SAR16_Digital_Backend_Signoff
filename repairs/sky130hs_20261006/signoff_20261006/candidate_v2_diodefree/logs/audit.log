@@ -1,0 +1,12 @@
+OpenROAD 26Q2-1164-g08f67ee5ec 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 4 thread(s).
+EXTERNAL_RESET_WAIVER_PINS 745
+CDC_ENTRY_MAX_DELAY_CONSTRAINTS 13
+[WARNING STA-0122] cell 'sky130_fd_sc_hs__tapvpwrvgnd_1' not found.
+[WARNING STA-0122] cell 'sky130_fd_sc_hs__fill_*' not found.
+CDC_MAX_DELAY_AND_SPAN_AUDIT_COMPLETE nominal
+CDC_MAX_DELAY_AND_SPAN_AUDIT_COMPLETE scalarstress
+STAGE_COMPLETE audit

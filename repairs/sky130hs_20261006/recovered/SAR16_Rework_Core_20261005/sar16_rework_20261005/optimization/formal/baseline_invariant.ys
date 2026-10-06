@@ -1,0 +1,8 @@
+read_verilog -formal -sv -D SYNTHESIS /workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv
+prep -top sar_calib_ctrl_serial -flatten
+memory_map
+opt
+async2sync
+dffunmap
+opt
+sat -seq 3 -tempinduct -maxsteps 8 -set-at 1 rst_n 0 -prove-asserts -verify -show-inputs -show-outputs

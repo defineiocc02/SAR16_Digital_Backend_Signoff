@@ -1,0 +1,542 @@
+--- baseline/srm_residue_estimator.sv
++++ repaired/srm_residue_estimator.sv
+@@ -3,9 +3,25 @@
+ // =============================================================================
+ // File Name   : srm_residue_estimator.sv
+ // Module Name : srm_residue_estimator
+-// Version     : 4.0  (paper-aligned; supersedes 3.0)
++// Version     : 4.1  (acknowledged ownership / fail-closed timeout repair)
+ // Description : Statistical residue measurement (SRM) digital estimator.
+ //
++// REPAIRED PROTOCOL (2026-10-05)
++//   * start is accepted only when busy=0 and local reset release is complete.
++//   * done publishes one result; busy may remain 1 while retirement is drained.
++//   * timeout publishes counts=0, residue=0, shortfall=1 and stalled=1. The
++//     zero payload is a sentinel, not an estimate from partial observations.
++//   * A stopped dec_clk cannot block the watchdog publication, but it CAN keep
++//     busy high indefinitely. Restart dec_clk or assert common reset to recover.
++//   * Requests while busy are ignored. At a ready edge start wins over consume.
++//   * Input decisions must begin after decision-domain arm. There is no public
++//     arm-ready port; any fixed wait must be validated for the actual clocks.
++//   * clk/dec_clk reset assert asynchronously and release through local 2FF
++//     chains. Wait at least three local rising edges before normal use.
++//
++// Historical design commentary below is not a new paper-equivalence claim.
++// The shipped LUT default remains signed 10-bit Q8, with 22 decisions.
++//
+ // -----------------------------------------------------------------------------
+ // WHY v4 EXISTS -- the v3.0 throughput contract was unsatisfiable
+ // -----------------------------------------------------------------------------
+@@ -44,12 +60,10 @@
+ //                  `decision_valid`. No throughput ceiling.
+ //   * `clk`     -- housekeeping clock (100 MHz). Applies the LUT, owns the
+ //                  handshake with the reconstruction datapath.
+-//   * CDC       -- one-way, monotone, gray-coded readout of two frozen
+-//                  counters. Safe by construction: a binary up-counter's gray
+-//                  image changes in exactly one bit per increment, so no
+-//                  incoherent multi-bit capture is possible; the values are
+-//                  additionally sampled only after `dec_done` has frozen them,
+-//                  through a synchroniser chain of identical depth.
++//   * CDC       -- registered Gray readout of frozen counters, qualified by a
++//                  four-phase request/acknowledge/retire handshake. Timeout
++//                  publishes a flagged zero payload, then drains the old arm
++//                  before busy can drop. Physical CDC/RDC checks are required.
+ //
+ // -----------------------------------------------------------------------------
+ // WHY sigma IS A PORT-LEVEL PARAMETER
+@@ -132,13 +146,13 @@
+     input  logic                    start,            // one-clock pulse to begin acquisition
+     input  logic                    residue_consume,  // clears residue_valid once consumed
+ 
+-    output logic                    busy,
++    output logic                    busy,             // acquisition OR pending retire/drain
+     output logic                    done,             // one-clock completion strobe
+     output logic                    residue_valid,    // one-shot: fresh until consumed
+ 
+     output logic [4:0]              ones_count,       // "1" decisions observed (port width matches v3.0)
+     output logic [4:0]              total_count,      // decisions observed (== DECISION_COUNT unless shortfall)
+-    output logic                    count_shortfall,  // measurement used < DECISION_COUNT samples
++    output logic                    count_shortfall,  // no usable complete measurement
+     output logic                    stalled,          // sticky: watchdog fired this run
+ 
+     output logic signed [RESIDUE_WIDTH-1:0] residue_q
+@@ -220,9 +234,9 @@
+     // =========================================================================
+     // 3. CDC primitives
+     // =========================================================================
+-    // A binary up-counter's gray image differs from its predecessor in exactly
+-    // one bit, so a multi-bit 2-flop synchroniser of the gray word can never
+-    // capture a torn intermediate value.
++    // Register Gray words at the source. A monotonic increment changes one bit;
++    // rearm clears are multi-bit and are excluded from successful capture by
++    // the transaction handshake. This does not replace physical CDC analysis.
+     function automatic logic [CNT_W-1:0] bin2gray(input logic [CNT_W-1:0] b);
+         bin2gray = b ^ (b >> 1);
+     endfunction
+@@ -297,206 +311,154 @@
+     always_comb residue_q = sext_res(residue_q_small);
+ 
+     // =========================================================================
+-    // 4. `start` (clk) -> decision domain, toggle handshake
+-    //    A toggle is used instead of a pulse because dec_clk may be slower than
+-    //    clk, in which case a one-clk pulse could be missed entirely.
++    // 4. Reset release and four-phase transaction ownership
+     // =========================================================================
+-    logic go_tgl;                                // clk domain
+-    logic go_tgl_s1, go_tgl_s2, go_tgl_s3;       // dec domain sync chain
++    // Assertion is asynchronous; release takes two local rising edges. External
++    // requests must wait until release. A stopped domain remains safely reset.
++    (* ASYNC_REG = "TRUE" *) logic clk_rst_s1, clk_rst_s2;
++    (* ASYNC_REG = "TRUE" *) logic dec_rst_s1, dec_rst_s2;
++    wire clk_rst_n = clk_rst_s2;
++    wire dec_rst_n = dec_rst_s2;
+ 
+     always_ff @(posedge clk or negedge rst_n) begin
+-        if (!rst_n) go_tgl <= 1'b0;
+-        else if (start && !busy) go_tgl <= ~go_tgl;
++        if (!rst_n) begin
++            clk_rst_s1 <= 1'b0;
++            clk_rst_s2 <= 1'b0;
++        end else begin
++            clk_rst_s1 <= 1'b1;
++            clk_rst_s2 <= clk_rst_s1;
++        end
+     end
+-
+     always_ff @(posedge dec_clk or negedge rst_n) begin
+         if (!rst_n) begin
+-            go_tgl_s1 <= 1'b0;
+-            go_tgl_s2 <= 1'b0;
+-            go_tgl_s3 <= 1'b0;
++            dec_rst_s1 <= 1'b0;
++            dec_rst_s2 <= 1'b0;
+         end else begin
+-            go_tgl_s1 <= go_tgl;
+-            go_tgl_s2 <= go_tgl_s1;
+-            go_tgl_s3 <= go_tgl_s2;
++            dec_rst_s1 <= 1'b1;
++            dec_rst_s2 <= dec_rst_s1;
+         end
+     end
+ 
+-    wire arm_dec = (go_tgl_s2 ^ go_tgl_s3);      // any edge -> one dec_clk pulse
++    // req_active is held until the decision domain acknowledges the arm. Even
++    // if the watchdog fires before that acknowledgement, the request is not
++    // withdrawn early: otherwise a stopped dec_clk could hide a pending arm.
++    // After publication the request is lowered, and busy remains asserted until
++    // both acknowledgement and completion return low. There is never more than
++    // one outstanding request, so no old completion can own a new transaction.
++    logic req_active;
++    (* ASYNC_REG = "TRUE" *) logic req_s1, req_s2;
++    (* ASYNC_REG = "TRUE" *) logic ack_s1, ack_s2;
++    (* ASYNC_REG = "TRUE" *) logic done_s1, done_s2;
++
++    always_ff @(posedge dec_clk or negedge dec_rst_n) begin
++        if (!dec_rst_n) begin
++            req_s1 <= 1'b0;
++            req_s2 <= 1'b0;
++        end else begin
++            req_s1 <= req_active;
++            req_s2 <= req_s1;
++        end
++    end
+ 
+     // =========================================================================
+-    // 5. Decision-domain counters -- one increment per decision, always
++    // 5. Decision-domain acquisition and registered Gray source words
+     // =========================================================================
+-    logic [CNT_W-1:0] dec_ones;      // number of "1" decisions
+-    logic [CNT_W-1:0] dec_total;     // number of decisions observed
+-    logic             dec_run;       // high from arm until dec_total == DECISION_COUNT
+-    logic             dec_done_tgl;  // TOGGLES once per completed measurement
+-
+-    // The completion indicator is a TOGGLE, not a level, and that choice is
+-    // load-bearing. A level would be indistinguishable from the previous
+-    // measurement's completion for the few housekeeping cycles it takes the
+-    // synchroniser to drain: measured directly, the first version of this
+-    // module left dec_done high from the previous run, so a freshly armed
+-    // measurement saw `measure_done` already true, captured the counters while
+-    // they were still being cleared, and published a garbage count (the
+-    // symptom was a LUT index of 28 against a maximum of 22). A toggle has
+-    // exactly one edge per measurement, so the edge detector in the
+-    // housekeeping domain can only ever fire for the measurement it belongs to,
+-    // whatever the clock ratio and however short the measurement is.
+-    always_ff @(posedge dec_clk or negedge rst_n) begin
+-        if (!rst_n) begin
+-            dec_ones     <= '0;
+-            dec_total    <= '0;
+-            dec_run      <= 1'b0;
+-            dec_done_tgl <= 1'b0;
++    logic [CNT_W-1:0] dec_ones, dec_total;
++    logic [CNT_W-1:0] ones_g, total_g;
++    logic dec_run, dec_ack, dec_done;
++    wire arm_dec = req_s2 && !dec_ack;
++
++    always_ff @(posedge dec_clk or negedge dec_rst_n) begin
++        if (!dec_rst_n) begin
++            dec_ones  <= '0;
++            dec_total <= '0;
++            ones_g    <= '0;
++            total_g   <= '0;
++            dec_run   <= 1'b0;
++            dec_ack   <= 1'b0;
++            dec_done  <= 1'b0;
++        end else if (!req_s2) begin
++            // Retire/cancel. Keep payload frozen until the next acknowledged
++            // arm; no moving partial count is ever published on timeout.
++            dec_run  <= 1'b0;
++            dec_ack  <= 1'b0;
++            dec_done <= 1'b0;
+         end else if (arm_dec) begin
+             dec_ones  <= '0;
+             dec_total <= '0;
++            ones_g    <= '0;
++            total_g   <= '0;
+             dec_run   <= 1'b1;
++            dec_ack   <= 1'b1;
++            dec_done  <= 1'b0;
+         end else if (dec_run && decision_valid) begin
+-            // Every decision is counted. There is deliberately no per-clock
+-            // ceiling here: that is the entire point of the v4 architecture.
+-            if (decision_bit) dec_ones <= dec_ones + 1'b1;
+-
++            if (decision_bit) begin
++                dec_ones <= dec_ones + 1'b1;
++                ones_g   <= bin2gray(dec_ones + 1'b1);
++            end
++            dec_total <= dec_total + 1'b1;
++            total_g   <= bin2gray(dec_total + 1'b1);
+             if (dec_total == DEC_TARGET - 1'b1) begin
+-                dec_total    <= DEC_TARGET;
+-                dec_run      <= 1'b0;            // freeze both counters
+-                dec_done_tgl <= ~dec_done_tgl;   // exactly one edge per measurement
+-            end else begin
+-                dec_total <= dec_total + 1'b1;
++                dec_run  <= 1'b0;
++                dec_done <= 1'b1;
+             end
+         end
+     end
+ 
+-    // =========================================================================
+-    // 6. dec -> clk readout (gray sync, sampled only once frozen)
+-    //    `dec_done` and the two gray words travel through synchroniser chains of
+-    //    identical depth, so when dec_done_s2 is high the counters have provably
+-    //    been stable for at least (2 dec_clk + 2 clk) and cannot tear.
+-    // =========================================================================
+-    logic [CNT_W-1:0] ones_g, total_g;
+-    always_comb begin
+-        ones_g  = bin2gray(dec_ones);
+-        total_g = bin2gray(dec_total);
+-    end
+-
+-    logic [CNT_W-1:0] ones_g_s1, ones_g_s2;
+-    logic [CNT_W-1:0] tot_g_s1,  tot_g_s2;
+-    logic             tgl_s1, tgl_s2;
+-
+-    always_ff @(posedge clk or negedge rst_n) begin
+-        if (!rst_n) begin
+-            ones_g_s1 <= '0;   ones_g_s2 <= '0;
+-            tot_g_s1  <= '0;   tot_g_s2  <= '0;
+-            tgl_s1 <= 1'b0;    tgl_s2 <= 1'b0;
++    // Registered Gray words avoid the source combinational binary-to-Gray
++    // glitch hazard. Arm clearing can change multiple Gray bits, so this is a
++    // bundled frozen-data handshake, not an unconditional live-count CDC claim.
++    // The receiver uses counts only after this request's held completion. Real
++    // implementation still needs synchronizer placement and bounded data delay.
++    (* ASYNC_REG = "TRUE" *) logic [CNT_W-1:0] ones_g_s1, ones_g_s2;
++    (* ASYNC_REG = "TRUE" *) logic [CNT_W-1:0] tot_g_s1, tot_g_s2;
++    always_ff @(posedge clk or negedge clk_rst_n) begin
++        if (!clk_rst_n) begin
++            ones_g_s1 <= '0;
++            ones_g_s2 <= '0;
++            tot_g_s1  <= '0;
++            tot_g_s2  <= '0;
++            ack_s1    <= 1'b0;
++            ack_s2    <= 1'b0;
++            done_s1   <= 1'b0;
++            done_s2   <= 1'b0;
+         end else begin
+-            ones_g_s1 <= ones_g;       ones_g_s2 <= ones_g_s1;
+-            tot_g_s1  <= total_g;      tot_g_s2  <= tot_g_s1;
+-            tgl_s1 <= dec_done_tgl;    tgl_s2 <= tgl_s1;
++            ones_g_s1 <= ones_g;
++            ones_g_s2 <= ones_g_s1;
++            tot_g_s1  <= total_g;
++            tot_g_s2  <= tot_g_s1;
++            ack_s1    <= dec_ack;
++            ack_s2    <= ack_s1;
++            done_s1   <= dec_done;
++            done_s2   <= done_s1;
+         end
+     end
+ 
+     // =========================================================================
+-    // 7. Housekeeping FSM
++    // 6. Housekeeping FSM and shared acceptance predicate
+     // =========================================================================
+     typedef enum logic [2:0] {
+-        S_IDLE,
+-        S_ARM,        // handshake toggled; the decision domain is about to start
+-        S_WAIT,       // counting decisions
+-        S_SETTLE,     // dec_done seen; one cycle of margin before the LUT
+-        S_LUT,        // apply the LUT and publish residue_valid
+-        S_HOLD        // hold residue_valid until consumed
++        S_IDLE, S_WAIT, S_SETTLE, S_LUT, S_DRAIN, S_HOLD
+     } state_t;
+-
+-    state_t state, next_state;
+-
++    state_t state;
++    wire accept_request = start && !busy &&
++                          ((state == S_IDLE) || (state == S_HOLD));
+     logic [CNT_W-1:0] cap_ones, cap_total;
+-    logic             cap_shortfall;
+-
+-    // Width DERIVED from STALL_CYCLES instead of a flat 32. At the default
+-    // STALL_CYCLES = 64 this is 7 bits: 25 flip-flops fewer, ~1.2k um^2 in this
+-    // library, for a counter that can never legitimately exceed 64 (it is cleared
+-    // in S_ARM and only counts up inside S_WAIT). Found by asking what the
+-    // estimator's 131 registers actually ARE -- a question that only became
+-    // answerable once the LUT was extracted and its own area stopped hiding them.
++    logic cap_shortfall;
+     localparam int STALL_W = (STALL_CYCLES < 2) ? 1 : $clog2(STALL_CYCLES + 1);
+     logic [STALL_W-1:0] stall_cnt;
+-    logic             done_pending;   // sticky: this measurement completed
+-    logic             tgl_ref;        // synchronised toggle value captured at arm
+-
+     wire stall_trip = (STALL_CYCLES > 0) && (state == S_WAIT) &&
+                       (stall_cnt >= STALL_W'(STALL_CYCLES));
++    wire done_now = req_active && ack_s2 && done_s2;
+ 
+-    // "This measurement finished" is decided by comparing the synchronised
+-    // toggle against the value latched at ARM time, not by edge-detecting a
+-    // synchronised pulse. Both are valid, but the comparison additionally
+-    // survives a pulse that would have been narrower than a housekeeping clock,
+-    // and -- the reason it is here -- it can never be satisfied by state left
+-    // over from the previous measurement. If the re-arm handshake itself fails
+-    // (which is exactly what happened when `busy` was left stuck high and
+-    // suppressed the toggle), no toggle difference can appear, `done_pending`
+-    // stays low, the watchdog fires, and the shortfall flag reports it. The
+-    // earlier, pulse-based version captured the PREVIOUS measurement's counters
+-    // and published them as a fresh result.
+-    wire done_now = (tgl_s2 != tgl_ref);
+-
+-    always_comb begin
+-        next_state = state;
+-        case (state)
+-            S_IDLE:   next_state = start ? S_ARM : S_IDLE;
+-            S_ARM:    next_state = S_WAIT;
+-            S_WAIT:   next_state = ((done_pending || done_now) || stall_trip)
+-                                   ? S_SETTLE : S_WAIT;
+-            S_SETTLE: next_state = S_LUT;
+-            S_LUT:    next_state = S_HOLD;
+-            S_HOLD:   next_state = residue_consume ? S_IDLE
+-                                  : (start ? S_ARM : S_HOLD);
+-            default:  next_state = S_IDLE;
+-        endcase
+-    end
+-
+-    always_ff @(posedge clk or negedge rst_n) begin
+-        if (!rst_n) state <= S_IDLE;
+-        else        state <= next_state;
+-    end
+-
+-    // Capture happens exactly on the S_WAIT -> S_SETTLE edge, once this
+-    // measurement's completion has been observed. On the watchdog path whatever
+-    // the counters currently hold is read and the shortfall is recorded rather
+-    // than silently presenting a low count as a valid estimate -- and the same
+-    // comparison catches an incoherent capture independently of the watchdog, so
+-    // a CDC mistake cannot hide behind a plausible-looking residue.
+-    always_ff @(posedge clk or negedge rst_n) begin
+-        if (!rst_n) begin
+-            cap_ones      <= '0;
+-            cap_total     <= '0;
+-            cap_shortfall <= 1'b0;
+-            stall_cnt     <= '0;
+-            done_pending  <= 1'b0;
+-            tgl_ref       <= 1'b0;
+-        end else begin
+-            if (state == S_ARM) begin
+-                stall_cnt    <= '0;
+-                done_pending <= 1'b0;
+-                tgl_ref      <= tgl_s2;   // remember the previous run's toggle
+-            end else if (state == S_WAIT) begin
+-                stall_cnt <= stall_cnt + 1'b1;
+-                if (done_now) done_pending <= 1'b1;
+-            end
+-
+-            if ((state == S_WAIT) && (done_pending || done_now || stall_trip)) begin
+-                cap_ones      <= gray2bin(ones_g_s2);
+-                cap_total     <= gray2bin(tot_g_s2);
+-                cap_shortfall <= stall_trip | ~(done_pending | done_now)
+-                                            | (gray2bin(tot_g_s2) != DEC_TARGET);
+-            end
+-        end
+-    end
+-
+-    // =========================================================================
+-    // 8. Status / handshake outputs
+-    // =========================================================================
+-    always_ff @(posedge clk or negedge rst_n) begin
+-        if (!rst_n) begin
++    always_ff @(posedge clk or negedge clk_rst_n) begin
++        if (!clk_rst_n) begin
++            state           <= S_IDLE;
++            req_active      <= 1'b0;
++            cap_ones        <= '0;
++            cap_total       <= '0;
++            cap_shortfall   <= 1'b0;
++            stall_cnt       <= '0;
+             busy            <= 1'b0;
+             done            <= 1'b0;
+             residue_valid   <= 1'b0;
+@@ -507,71 +469,89 @@
+             stalled         <= 1'b0;
+         end else begin
+             done <= 1'b0;
++            if (residue_consume) residue_valid <= 1'b0;
+ 
+-            case (state)
+-                S_IDLE: begin
+-                    busy      <= 1'b0;
+-                    stalled   <= 1'b0;
+-                end
+-
+-                S_ARM: begin
+-                    busy            <= 1'b1;
+-                    stalled         <= 1'b0;
+-                    // Clear the published value so a downstream block that
+-                    // ignores residue_valid can never read stale data.
+-                    residue_q_small <= '0;
+-                    residue_valid   <= 1'b0;
+-                    count_shortfall <= 1'b0;
+-                    ones_count      <= '0;
+-                    total_count     <= '0;
+-                end
+-
+-                S_WAIT: begin
+-                    busy <= 1'b1;
+-                    if (stall_trip) stalled <= 1'b1;
+-                end
+-
+-                S_SETTLE: busy <= 1'b1;   // one cycle of margin
+-
+-                S_LUT: begin
+-                    // `busy` MUST drop as soon as the result is published. It
+-                    // gates the `start && !busy` condition that toggles the
+-                    // re-arm handshake, so a `busy` that is never cleared
+-                    // silently disables every measurement after the first one:
+-                    // the decision domain is never armed again, the watchdog
+-                    // eventually fires, and the stale previous counters are
+-                    // published as a fresh result.
+-                    busy            <= 1'b0;
+-                    ones_count      <= cap_ones;
+-                    total_count     <= cap_total;
+-                    count_shortfall <= cap_shortfall;
+-                    // Store only the significant bits: lut_out widened by the
+-                    // shift-back. The low LUT_SHIFT bits are structurally zero,
+-                    // which is precisely why the register does not need them.
+-                    residue_q_small <= $signed({lut_out, {LUT_SHIFT{1'b0}}});
+-                    residue_valid   <= 1'b1;
+-                    done            <= 1'b1;
+-                end
+-
+-                S_HOLD: begin
+-                    busy <= 1'b0;
+-                    if (residue_consume) residue_valid <= 1'b0;
+-                end
+-
+-                default: ;
+-            endcase
++            // Start wins over consume when both are present at a ready edge.
++            // busy is asserted on THIS acceptance edge, not a cycle later.
++            if (accept_request) begin
++                state           <= S_WAIT;
++                req_active      <= 1'b1;
++                busy            <= 1'b1;
++                stall_cnt       <= '0;
++                residue_valid   <= 1'b0;
++                residue_q_small <= '0;
++                ones_count      <= '0;
++                total_count     <= '0;
++                count_shortfall <= 1'b0;
++                stalled         <= 1'b0;
++            end else begin
++                case (state)
++                    S_IDLE: ;
++                    S_WAIT: begin
++                        // Completion wins a simultaneous watchdog edge. A
++                        // timeout never samples unfrozen or old count buses.
++                        if (done_now) begin
++                            cap_shortfall <= 1'b0;
++                            state         <= S_SETTLE;
++                        end else if (stall_trip) begin
++                            cap_ones      <= '0;
++                            cap_total     <= '0;
++                            cap_shortfall <= 1'b1;
++                            stalled       <= 1'b1;
++                            if (ack_s2) req_active <= 1'b0;
++                            state <= S_SETTLE;
++                        end else if (STALL_CYCLES > 0) begin
++                            stall_cnt <= stall_cnt + 1'b1;
++                        end
++                    end
++                    S_SETTLE: begin
++                        // One full destination-clock settling interval after
++                        // observing completion before capturing the payload.
++                        if (!cap_shortfall) begin
++                            cap_ones      <= gray2bin(ones_g_s2);
++                            cap_total     <= gray2bin(tot_g_s2);
++                            cap_shortfall <= (gray2bin(tot_g_s2) != DEC_TARGET);
++                        end
++                        if (ack_s2) req_active <= 1'b0;
++                        state <= S_LUT;
++                    end
++                    S_LUT: begin
++                        ones_count      <= cap_ones;
++                        total_count     <= cap_total;
++                        count_shortfall <= cap_shortfall;
++                        // A failed measurement has a neutral payload. The
++                        // consumer MUST inspect error flags and validity.
++                        if (cap_shortfall) residue_q_small <= '0;
++                        else residue_q_small <= $signed({lut_out, {LUT_SHIFT{1'b0}}});
++                        residue_valid <= 1'b1;
++                        done          <= 1'b1;
++                        state         <= S_DRAIN;
++                    end
++                    S_DRAIN: begin
++                        if (req_active && ack_s2) req_active <= 1'b0;
++                        if (!req_active && !ack_s2 && !done_s2) begin
++                            busy  <= 1'b0;
++                            state <= S_HOLD;
++                        end
++                    end
++                    S_HOLD: begin
++                        if (residue_consume) state <= S_IDLE;
++                    end
++                    default: begin
++                        // Safe recovery cannot reopen acceptance while a
++                        // request is outstanding; reset is the recovery path.
++                        busy <= 1'b1;
++                        state <= S_DRAIN;
++                    end
++                endcase
++            end
+         end
+     end
+ 
+ `ifndef SYNTHESIS
+-    // The LUT index is `cap_ones`, which must never exceed DECISION_COUNT. The
+-    // generated `default:` entry covers out-of-range indices, but reaching it
+-    // means the counters were read while still moving -- a CDC bug, not a benign
+-    // case. Fail loudly instead of silently returning 258.
+     always_ff @(posedge clk) begin
+-        if (rst_n && (state == S_LUT) && (cap_ones > DEC_TARGET))
+-            $error("srm_residue_estimator v4: LUT index %0d exceeds DECISION_COUNT=%0d -- incoherent CDC capture.",
+-                   cap_ones, DECISION_COUNT);
++        if (clk_rst_n && (state == S_LUT) && (cap_ones > DEC_TARGET))
++            $error("srm_residue_estimator: LUT index exceeds DECISION_COUNT");
+     end
+ `endif
+ 

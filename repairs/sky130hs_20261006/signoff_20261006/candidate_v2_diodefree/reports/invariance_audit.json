@@ -1,0 +1,173 @@
+{
+  "status": "PASS",
+  "all_remaining_original_instances_and_terminal_connectivity_identical": true,
+  "all_remaining_original_instance_locations_orientations_identical": true,
+  "removed_only_original_antenna_diodes": 8,
+  "ports_and_port_geometry_identical": true,
+  "all_net_names_types_identical": true,
+  "canonical_original_placed_netlist_sha256": "5289aef54dd34f9f90fed8e1c5acb0d62cce445e7f2667d6ba2b6b9e34afe5f9",
+  "canonical_candidate_placed_nonfiller_netlist_sha256": "5289aef54dd34f9f90fed8e1c5acb0d62cce445e7f2667d6ba2b6b9e34afe5f9",
+  "original_routed_v_sha256": "3d35c431e229a6eeb18a8b797bafd07cdffb6b3cfed9dd164436ad0ac1a8c63a",
+  "candidate_routed_v_sha256": "b6b2f6ab56f5d565d26b2ccacfcb1af9e751b0bf1100595bb16942449e35cce5",
+  "rtl_unchanged": true,
+  "reason_verilog_bytes_differ": "Candidate removes 8 antenna diodes, adds 8900 zero-signal fillers and reorders wire declarations; every remaining original instance and its named pin-to-net graph is identical",
+  "original_area_categories": {
+    "logic_including_physical_buffers": {
+      "count": 4301,
+      "area_um2": 64567.3680000024
+    },
+    "tap": {
+      "count": 1456,
+      "area_um2": 2327.2704000000226
+    },
+    "antenna_diode": {
+      "count": 8,
+      "area_um2": 25.5744
+    }
+  },
+  "candidate_area_categories": {
+    "filler": {
+      "count": 8900,
+      "area_um2": 68138.1936000012
+    },
+    "tap": {
+      "count": 1456,
+      "area_um2": 2327.2704000000226
+    },
+    "logic_including_physical_buffers": {
+      "count": 4301,
+      "area_um2": 64567.3680000024
+    }
+  },
+  "added_filler_masters": {
+    "sky130_fd_sc_hs__fill_2": 1598,
+    "sky130_fd_sc_hs__fill_8": 4012,
+    "sky130_fd_sc_hs__fill_4": 1349,
+    "sky130_fd_sc_hs__fill_1": 1941
+  },
+  "instance_counts": {
+    "original": 5765,
+    "candidate": 14657
+  },
+  "expected_physical_edits": [
+    {
+      "instance": "ANTENNA_1",
+      "net": "clk",
+      "via_centers_dbu": [
+        [
+          197520,
+          198135
+        ]
+      ],
+      "action": "Remove sole obsolete diode access via; retain harmless connected metal stub"
+    },
+    {
+      "instance": "ANTENNA_2",
+      "net": "dec_clk",
+      "via_centers_dbu": [
+        [
+          115920,
+          47545
+        ]
+      ],
+      "action": "Remove sole obsolete diode access via; retain harmless connected metal stub"
+    },
+    {
+      "instance": "ANTENNA_3",
+      "net": "clknet_4_8_0_clk",
+      "via_centers_dbu": [
+        [
+          90480,
+          225885
+        ],
+        [
+          90960,
+          225145
+        ]
+      ],
+      "action": "Replace removed multi-access diode LI conductor with real LI route preserving branch connectivity"
+    },
+    {
+      "instance": "ANTENNA_4",
+      "net": "clknet_4_9_0_clk",
+      "via_centers_dbu": [
+        [
+          199920,
+          263625
+        ],
+        [
+          200400,
+          264735
+        ]
+      ],
+      "action": "Replace removed multi-access diode LI conductor with real LI route preserving branch connectivity"
+    },
+    {
+      "instance": "ANTENNA_5",
+      "net": "_0827_",
+      "via_centers_dbu": [
+        [
+          336240,
+          228475
+        ],
+        [
+          336720,
+          228105
+        ]
+      ],
+      "action": "Replace multi-access diode conductor with real M2 bridge plus two M1M2 vias"
+    },
+    {
+      "instance": "ANTENNA_6",
+      "net": "_0958_",
+      "via_centers_dbu": [
+        [
+          67440,
+          332075
+        ]
+      ],
+      "action": "Remove sole obsolete diode access via; retain harmless connected metal stub"
+    },
+    {
+      "instance": "ANTENNA_7",
+      "net": "net98",
+      "via_centers_dbu": [
+        [
+          379440,
+          164835
+        ]
+      ],
+      "action": "Remove sole obsolete diode access via; retain harmless connected metal stub"
+    },
+    {
+      "instance": "ANTENNA_8",
+      "net": "net111",
+      "via_centers_dbu": [
+        [
+          379920,
+          241055
+        ]
+      ],
+      "action": "Remove sole obsolete diode access via; retain harmless connected metal stub"
+    },
+    {
+      "net": "clk",
+      "action": "Cut 1.44um of M3; insert 1.44um M4 bridge plus two M3M4_PR vias",
+      "centers_dbu": [
+        [
+          180000,
+          197950
+        ],
+        [
+          181440,
+          197950
+        ]
+      ],
+      "geometry_keepout": "0.9um M4 clearance screening plus router and full GDS DRC verification"
+    },
+    {
+      "net": "clknet_4_8_0_clk",
+      "action": "Lift 0.72um terminal M3 branch to M4; add one M3M4_PR via at90480,226070; reuse existing via at89760,226070; add0.48um M3 landing extension to meet min-area"
+    }
+  ]
+}

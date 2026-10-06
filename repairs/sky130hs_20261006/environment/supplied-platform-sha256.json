@@ -1,0 +1,22 @@
+{
+  "orfs_commit": "ad11cc9f8cc8bde9946200cafc21bae265067188",
+  "files": {
+    "LICENSE_BUILD_RUN_SCRIPTS": "fae0db7a4c00c3125f037e5818e8cd0c8aa5c67fff2e8c558312068e9f2d1592",
+    "flow/platforms/sky130hs/cells_adders_hs.v": "8bb9bb04d44fab7ab253caedb86026dd6d066c4484f829156cfbd7802e6a1645",
+    "flow/platforms/sky130hs/cells_clkgate_hs.v": "1617cfe017b671d4472ed41c26c37597844a720b540279362fb4cd4bdc907a9a",
+    "flow/platforms/sky130hs/cells_latch_hs.v": "dbdee62e940d1eb92adf993bd756bee0a3f026e27bc1dbe4a24d7b21025d2229",
+    "flow/platforms/sky130hs/config.mk": "56a7c4c185583a4f3c7ee0f32509dd9bb8d1abcb7f2730dc9433b3d3aae3b54a",
+    "flow/platforms/sky130hs/fastroute.tcl": "a84110f70e0ff1540f4cfed6730d56b3011c6c06a6c897a4bd600522bb175dd3",
+    "flow/platforms/sky130hs/fill.json": "42a7826959f8e3eea7c35004246a2123dc9e5d1134dca8e91c0840c3c4d365ff",
+    "flow/platforms/sky130hs/lef/sky130_fd_sc_hs.tlef": "64f35bec460085db0d4f2b62ceaad6f0f8eb3c9d216fb0dc5125357a805a1f1c",
+    "flow/platforms/sky130hs/lef/sky130_fd_sc_hs_merged.lef": "bcf8e2f0c90417b4002d2b96b348e63c806d69f6d44b9a465e0c830215b67a5a",
+    "flow/platforms/sky130hs/lib/sky130_fd_sc_hs__tt_025C_1v80.lib": "0d10dd4e30a628ef692020af757593121eb4b93e69ee2a6f4f16d8630cfe3aeb",
+    "flow/platforms/sky130hs/make_tracks.tcl": "ff84979f629816dfbf65b64b427348ed0c9a91f0a9ad165da0569832757adb4e",
+    "flow/platforms/sky130hs/pdn.tcl": "fbe69bf98ef11570d1f4ef55a1df663e399f8a3d0823f72ff4b603e38bbe5308",
+    "flow/platforms/sky130hs/rcx_patterns.rules": "d5bd9b1077ceac9929416abca272a6d52e51cd9a575453a31d129817bb286476",
+    "flow/platforms/sky130hs/setRC.tcl": "4bebdc2b5cbc894ca86f52dc17e16127de2fc75f056a2f7781e718c51c392d8e",
+    "flow/platforms/sky130hs/sky130hs.lyp": "757072b403bdda8c506da0e745fcfd76f161c9736fea0c2b69e95344011464bd",
+    "flow/platforms/sky130hs/sky130hs.lyt": "35f2cb470e1fa31454579d3b834ac32b57c493242f682eb10ccd763a0a759d32",
+    "flow/platforms/sky130hs/tapcell.tcl": "7f25277b66bcbc7d7cb9f0984d4df759f3f8d7cf59badbb07ce742a265507fcf"
+  }
+}

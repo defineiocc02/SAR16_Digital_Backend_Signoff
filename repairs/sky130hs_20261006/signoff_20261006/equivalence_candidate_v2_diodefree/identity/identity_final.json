@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "candidate_sha256": {
+    "signoff_20261006/candidate_v2_diodefree/results/routed.odb": "e7fcd87e358a1848c7e1d2fdde08280773994c176907caecc541867e81e09792",
+    "signoff_20261006/candidate_v2_diodefree/results/routed.def": "22c5de831ee7dbdcf8eef1637735f7da03b2a7059b9ac9e8e7b45e4a7ae2edf1",
+    "signoff_20261006/candidate_v2_diodefree/results/routed.v": "b6b2f6ab56f5d565d26b2ccacfcb1af9e751b0bf1100595bb16942449e35cce5",
+    "signoff_20261006/candidate_v2_diodefree/results/source.pg.v": "c2c78daa1ed441bf7a611547ee02d43aa3b8a05b7fcab12598226623257834a8",
+    "signoff_20261006/candidate_v2_diodefree/results/candidate.gds": "bc8f2590c514a8f8bfb819057fcf0f848fc8107b0726860d7581b8bcdadd8c4b"
+  },
+  "exact_odb_reexport_matches_routed_v": true,
+  "exact_odb_reexport_matches_source_pg_v": true,
+  "candidate_stable_across_final_reexport": true,
+  "original_drivers_and_tools_unchanged": true,
+  "candidate_driver_provenance_verified": true,
+  "physical_only_model_audit": {
+    "sky130_fd_sc_hs__tapvpwrvgnd_1": {
+      "instances": 1456,
+      "class": "CORE WELLTAP",
+      "power_only_pins": [
+        "VGND",
+        "VPWR"
+      ],
+      "functional_pins": 0,
+      "functional_outputs": 0,
+      "blackbox": false
+    },
+    "sky130_fd_sc_hs__fill_1": {
+      "instances": 1941,
+      "class": "CORE SPACER",
+      "power_only_pins": [
+        "VGND",
+        "VNB",
+        "VPB",
+        "VPWR"
+      ],
+      "functional_pins": 0,
+      "functional_outputs": 0,
+      "blackbox": false
+    },
+    "sky130_fd_sc_hs__fill_2": {
+      "instances": 1598,
+      "class": "CORE SPACER",
+      "power_only_pins": [
+        "VGND",
+        "VNB",
+        "VPB",
+        "VPWR"
+      ],
+      "functional_pins": 0,
+      "functional_outputs": 0,
+      "blackbox": false
+    },
+    "sky130_fd_sc_hs__fill_4": {
+      "instances": 1349,
+      "class": "CORE SPACER",
+      "power_only_pins": [
+        "VGND",
+        "VNB",
+        "VPB",
+        "VPWR"
+      ],
+      "functional_pins": 0,
+      "functional_outputs": 0,
+      "blackbox": false
+    },
+    "sky130_fd_sc_hs__fill_8": {
+      "instances": 4012,
+      "class": "CORE SPACER",
+      "power_only_pins": [
+        "VGND",
+        "VNB",
+        "VPB",
+        "VPWR"
+      ],
+      "functional_pins": 0,
+      "functional_outputs": 0,
+      "blackbox": false
+    }
+  },
+  "source_hashes_rechecked": 8,
+  "model_hashes_rechecked": 4
+}

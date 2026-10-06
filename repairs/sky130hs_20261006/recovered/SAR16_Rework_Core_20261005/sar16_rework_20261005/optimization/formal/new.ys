@@ -1,0 +1,12 @@
+read_verilog -sv -D SYNTHESIS /workspace/scratch/5988101d3fa5/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv
+hierarchy -top sar_calib_ctrl_serial
+proc
+flatten
+opt
+memory_map
+opt
+techmap
+opt
+dffunmap
+opt_clean
+write_json /workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/new.json

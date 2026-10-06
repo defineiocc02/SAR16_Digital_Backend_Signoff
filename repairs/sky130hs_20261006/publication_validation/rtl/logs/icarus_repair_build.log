@@ -1,0 +1,2 @@
+/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/recovered/SAR16_Rework_Core_20261005/sar16_rework_20261005/repo/rtl_optimized/srm_residue_estimator.sv:311: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/recovered/SAR16_Rework_Core_20261005/sar16_rework_20261005/repo/rtl_optimized/srm_residue_estimator.sv:554: warning: System task ($error) cannot be synthesized in an always_ff process.

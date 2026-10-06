@@ -1,0 +1,24 @@
+{
+  "proof_reset_negative_control_and_audit_scripts_identical": true,
+  "unchanged_scripts": [
+    "build_state_miters.py",
+    "build_reset_bases.py",
+    "build_negative_controls.py",
+    "run_suite.py",
+    "collect_report.py",
+    "verify_evidence.py"
+  ],
+  "driver_sha256": {
+    "build_negative_controls.py": "30e54c6a4024ef59c61fec93fcfd659615a14db527cd4ceb3fac9111443295ef",
+    "build_reset_bases.py": "8e4584654cdfa049164ea5420cc488a9256c8d79a55d25c4febd732be515f9bf",
+    "build_state_miters.py": "63950aae7b3ba0361d90bc3bb66bfaaa706eff00d275bf468a8a0aa7620ff990",
+    "collect_report.py": "d171bec05ecf1336cdf2034212c7f055557442055b12b23c7f4b8028f3cf82b9",
+    "inspect_mapping.py": "1033857e7c5093d8b93288907f857bb9eff9813305de1eebbed214d2b350362b",
+    "normalize.py": "1312ecc598e2d10b2d4caf3a8239c6d854abe63a3a0cea4701a853a646576b24",
+    "prepare_routed_case.py": "357762c34e4f972e87686aeab2bffbe7fa67a407faa256e9082a6b024bd4f313",
+    "run_suite.py": "dc82b189b0f754655727a0113a6f133fdaba1a5e3806072f005de282b8f07368",
+    "verify_evidence.py": "a41ee7032cd746b13b7d323d9f240325f631bbd50758f41096af85bd32d7686b"
+  },
+  "only_modified_driver": "normalize.py",
+  "normalization_extension": "Allow explicitly enumerated pinned-LEF CORE SPACER cells in the existing power/ground-only no-functional-output abstraction. No functional pin may be abstracted. No proof constraint or gate changed."
+}

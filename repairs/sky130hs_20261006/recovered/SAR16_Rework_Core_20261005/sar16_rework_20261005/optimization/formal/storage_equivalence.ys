@@ -1,0 +1,8 @@
+read_json /workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/old_comb.json
+read_json /workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/new_comb.json
+read_verilog -sv /workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/storage_equivalence.sv
+hierarchy -top storage_equivalence
+proc
+flatten
+opt
+sat -verify -prove proof_ok 1 -show-inputs -show-outputs -dump_vcd /workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/counterexample.vcd

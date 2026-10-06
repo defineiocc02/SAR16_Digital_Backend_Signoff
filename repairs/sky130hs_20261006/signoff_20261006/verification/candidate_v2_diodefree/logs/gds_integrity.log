@@ -1,0 +1,251 @@
+{
+  "source": "Final candidate_v2_diodefree routed.def + unchanged native HS GDS; full fillers, corrected3CLKaccesses,3metaljumpers,zeroantenna diodes",
+  "gds_sha256": "78dc8d8fbb18744369b61d7ade83511b09a335677566fda005c101f7b82a46a2",
+  "dbu_um": 0.0009999999999999998,
+  "top_cells": [
+    "sar_digi_paper_core"
+  ],
+  "top_bbox_um": "(0,0;392.98,392.98)",
+  "cell_count": 110,
+  "empty_cells": [],
+  "stdcell_instances": 14657,
+  "unique_stdcell_masters": 98,
+  "instance_counts_match_frozen_def": true,
+  "native_device_layers_present": true,
+  "layers": [
+    {
+      "layer": 68,
+      "datatype": 20,
+      "recursive_objects": 81775,
+      "polygon_area_sum_um2": 33607.351874999986
+    },
+    {
+      "layer": 69,
+      "datatype": 20,
+      "recursive_objects": 33379,
+      "polygon_area_sum_um2": 11439.819049999995
+    },
+    {
+      "layer": 68,
+      "datatype": 44,
+      "recursive_objects": 23801,
+      "polygon_area_sum_um2": 535.5224999999997
+    },
+    {
+      "layer": 67,
+      "datatype": 20,
+      "recursive_objects": 72790,
+      "polygon_area_sum_um2": 35996.46327499998
+    },
+    {
+      "layer": 67,
+      "datatype": 44,
+      "recursive_objects": 186986,
+      "polygon_area_sum_um2": 2984.6185999999984
+    },
+    {
+      "layer": 72,
+      "datatype": 20,
+      "recursive_objects": 413,
+      "polygon_area_sum_um2": 15605.759999999993
+    },
+    {
+      "layer": 71,
+      "datatype": 20,
+      "recursive_objects": 2325,
+      "polygon_area_sum_um2": 16929.826424999992
+    },
+    {
+      "layer": 71,
+      "datatype": 44,
+      "recursive_objects": 375,
+      "polygon_area_sum_um2": 239.9999999999999
+    },
+    {
+      "layer": 70,
+      "datatype": 20,
+      "recursive_objects": 6607,
+      "polygon_area_sum_um2": 4973.760699999998
+    },
+    {
+      "layer": 70,
+      "datatype": 44,
+      "recursive_objects": 6255,
+      "polygon_area_sum_um2": 250.19999999999987
+    },
+    {
+      "layer": 69,
+      "datatype": 44,
+      "recursive_objects": 6963,
+      "polygon_area_sum_um2": 278.51999999999987
+    },
+    {
+      "layer": 68,
+      "datatype": 16,
+      "recursive_objects": 30205,
+      "polygon_area_sum_um2": 19963.41219999999
+    },
+    {
+      "layer": 68,
+      "datatype": 5,
+      "recursive_objects": 30205,
+      "polygon_area_sum_um2": 0.0
+    },
+    {
+      "layer": 67,
+      "datatype": 16,
+      "recursive_objects": 28018,
+      "polygon_area_sum_um2": 809.7201999999996
+    },
+    {
+      "layer": 67,
+      "datatype": 5,
+      "recursive_objects": 28018,
+      "polygon_area_sum_um2": 0.0
+    },
+    {
+      "layer": 125,
+      "datatype": 44,
+      "recursive_objects": 4299,
+      "polygon_area_sum_um2": 19809.50584999999
+    },
+    {
+      "layer": 66,
+      "datatype": 20,
+      "recursive_objects": 23915,
+      "polygon_area_sum_um2": 15647.975924999993
+    },
+    {
+      "layer": 83,
+      "datatype": 44,
+      "recursive_objects": 14675,
+      "polygon_area_sum_um2": 0.0
+    },
+    {
+      "layer": 94,
+      "datatype": 20,
+      "recursive_objects": 16113,
+      "polygon_area_sum_um2": 65948.56227499997
+    },
+    {
+      "layer": 64,
+      "datatype": 59,
+      "recursive_objects": 13201,
+      "polygon_area_sum_um2": 0.0
+    },
+    {
+      "layer": 122,
+      "datatype": 16,
+      "recursive_objects": 13201,
+      "polygon_area_sum_um2": 9763.622399999995
+    },
+    {
+      "layer": 64,
+      "datatype": 5,
+      "recursive_objects": 13201,
+      "polygon_area_sum_um2": 0.0
+    },
+    {
+      "layer": 64,
+      "datatype": 16,
+      "recursive_objects": 13201,
+      "polygon_area_sum_um2": 9763.622399999995
+    },
+    {
+      "layer": 65,
+      "datatype": 20,
+      "recursive_objects": 16083,
+      "polygon_area_sum_um2": 24860.31517499999
+    },
+    {
+      "layer": 93,
+      "datatype": 44,
+      "recursive_objects": 16113,
+      "polygon_area_sum_um2": 67046.45454999997
+    },
+    {
+      "layer": 64,
+      "datatype": 20,
+      "recursive_objects": 14657,
+      "polygon_area_sum_um2": 67923.79224999997
+    },
+    {
+      "layer": 95,
+      "datatype": 20,
+      "recursive_objects": 4618,
+      "polygon_area_sum_um2": 12415.114199999995
+    },
+    {
+      "layer": 236,
+      "datatype": 0,
+      "recursive_objects": 14657,
+      "polygon_area_sum_um2": 135032.83199999994
+    },
+    {
+      "layer": 81,
+      "datatype": 4,
+      "recursive_objects": 14657,
+      "polygon_area_sum_um2": 135032.83199999994
+    },
+    {
+      "layer": 66,
+      "datatype": 44,
+      "recursive_objects": 139842,
+      "polygon_area_sum_um2": 4041.375999999998
+    },
+    {
+      "layer": 66,
+      "datatype": 15,
+      "recursive_objects": 4,
+      "polygon_area_sum_um2": 0.09179999999999995
+    },
+    {
+      "layer": 65,
+      "datatype": 44,
+      "recursive_objects": 2912,
+      "polygon_area_sum_um2": 412.1207999999998
+    },
+    {
+      "layer": 235,
+      "datatype": 4,
+      "recursive_objects": 1,
+      "polygon_area_sum_um2": 154433.28039999993
+    },
+    {
+      "layer": 72,
+      "datatype": 16,
+      "recursive_objects": 26,
+      "polygon_area_sum_um2": 15335.423999999994
+    },
+    {
+      "layer": 72,
+      "datatype": 5,
+      "recursive_objects": 2,
+      "polygon_area_sum_um2": 0.0
+    },
+    {
+      "layer": 70,
+      "datatype": 16,
+      "recursive_objects": 106,
+      "polygon_area_sum_um2": 25.439999999999987
+    },
+    {
+      "layer": 70,
+      "datatype": 5,
+      "recursive_objects": 106,
+      "polygon_area_sum_um2": 0.0
+    },
+    {
+      "layer": 69,
+      "datatype": 16,
+      "recursive_objects": 70,
+      "polygon_area_sum_um2": 4.7529999999999974
+    },
+    {
+      "layer": 69,
+      "datatype": 5,
+      "recursive_objects": 70,
+      "polygon_area_sum_um2": 0.0
+    }
+  ]
+}

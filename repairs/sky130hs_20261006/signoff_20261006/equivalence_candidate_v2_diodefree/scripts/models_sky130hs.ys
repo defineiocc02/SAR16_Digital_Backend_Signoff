@@ -1,0 +1,3 @@
+read_liberty -ignore_miss_func /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/environment/tools/OpenROAD-flow-scripts/flow/platforms/sky130hs/lib/sky130_fd_sc_hs__tt_025C_1v80.lib
+write_json /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/equivalence_candidate_v2_diodefree/models/sky130hs_from_liberty.json
+write_verilog -noattr /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/equivalence_candidate_v2_diodefree/models/sky130hs_from_liberty.v

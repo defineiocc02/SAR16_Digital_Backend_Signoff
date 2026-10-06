@@ -1,0 +1,7 @@
+{
+  "status": "INCOMPLETE_STOPPED",
+  "scope": "Supplemental attempt to enable FEOL in legacy ORFS KLayout deck (default FEOL disabled)",
+  "reason": "Remaining at FEOL licon.12 computation for over eight minutes; optional duplicated coverage was stopped after full Magic drc(full) baseline and repaired-candidate checks completed. No result or PASS claim from this attempt.",
+  "log": "logs/klayout_feol_beol.log",
+  "checkers_used": "Magic full FEOL/BEOL plus unmodified KLayout BEOL/offgrid"
+}

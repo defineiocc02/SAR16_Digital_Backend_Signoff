@@ -1,0 +1,5 @@
+read_liberty /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/environment/tools/OpenROAD-flow-scripts/flow/platforms/sky130hs/lib/sky130_fd_sc_hs__tt_025C_1v80.lib
+read_db /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/candidate_v2_diodefree/results/routed.odb
+write_verilog /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/equivalence_candidate_v2_diodefree/identity/routed_from_odb.v
+write_verilog -include_pwr_gnd /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/equivalence_candidate_v2_diodefree/identity/source_from_odb.pg.v
+exit

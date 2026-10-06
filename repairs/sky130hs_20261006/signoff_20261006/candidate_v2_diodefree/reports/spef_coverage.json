@@ -1,0 +1,10 @@
+{
+  "database_signal_nets": 4198,
+  "spef_d_net_entries": 4187,
+  "missing_signal_net_count": 11,
+  "missing_by_pin_count": {
+    "0": 11
+  },
+  "missing_connected_nets": [],
+  "connected_nets_annotated": true
+}

@@ -1,0 +1,137 @@
+[
+  {
+    "file": "iverilog_12.0-2+b1_amd64.deb",
+    "package": "iverilog",
+    "version": "12.0-2+b1",
+    "url": "https://deb.debian.org/debian/pool/main/i/iverilog/iverilog_12.0-2+b1_amd64.deb",
+    "sha256": "febe027d2d3f5a7e570844d55758339ab5490acc09f404f214a8719d89d07056",
+    "bytes": 2046080,
+    "active": true
+  },
+  {
+    "file": "libboost-context1.83.0_1.83.0-4.2_amd64.deb",
+    "package": "libboost-context1.83.0",
+    "version": "1.83.0-4.2",
+    "url": "https://deb.debian.org/debian/pool/main/b/boost1.83/libboost-context1.83.0_1.83.0-4.2_amd64.deb",
+    "sha256": "95951c6f8509608a53f26d4ac3015c326867a43b22b1004c387ff0dad6558510",
+    "bytes": 231496,
+    "active": false
+  },
+  {
+    "file": "libboost-filesystem1.83.0_1.83.0-4.2_amd64.deb",
+    "package": "libboost-filesystem1.83.0",
+    "version": "1.83.0-4.2",
+    "url": "https://deb.debian.org/debian/pool/main/b/boost1.83/libboost-filesystem1.83.0_1.83.0-4.2_amd64.deb",
+    "sha256": "6b587623a4fd1824613e7ee02ba35b84cd9534b520b7f3d08d15f9ed85f28cf3",
+    "bytes": 281648,
+    "active": false
+  },
+  {
+    "file": "libffi8_3.4.8-2_amd64.deb",
+    "package": "libffi8",
+    "version": "3.4.8-2",
+    "url": "https://deb.debian.org/debian/pool/main/libf/libffi/libffi8_3.4.8-2_amd64.deb",
+    "sha256": "0ebdc340de33333639c3c63874cd4b15ac2e83dfa1ef3053b7eefaf4919f4f68",
+    "bytes": 24144,
+    "active": true
+  },
+  {
+    "file": "libgomp1_14.2.0-19_amd64.deb",
+    "package": "libgomp1",
+    "version": "14.2.0-19",
+    "url": "https://deb.debian.org/debian/pool/main/g/gcc-14/libgomp1_14.2.0-19_amd64.deb",
+    "sha256": "72b7a1a33c48f3195efeb044111b34ae684b1e640bb6495c832443b798601cd5",
+    "bytes": 137148,
+    "active": true
+  },
+  {
+    "file": "libreadline8t64_8.2-6_amd64.deb",
+    "package": "libreadline8t64",
+    "version": "8.2-6",
+    "url": "https://deb.debian.org/debian/pool/main/r/readline/libreadline8t64_8.2-6_amd64.deb",
+    "sha256": "eeadf2b5e755c9f183883feea2d9b5b28560284275d5f54d3e55d0923b1d0967",
+    "bytes": 168832,
+    "active": true
+  },
+  {
+    "file": "libtcl8.6_8.6.16+dfsg-1_amd64.deb",
+    "package": "libtcl8.6",
+    "version": "8.6.16+dfsg-1",
+    "url": "https://deb.debian.org/debian/pool/main/t/tcl8.6/libtcl8.6_8.6.16+dfsg-1_amd64.deb",
+    "sha256": "7cfa070ca822e572a91bf1719f6ac7d9b464dc8da4142ea68cbd31aeac2fc52a",
+    "bytes": 1041872,
+    "active": true
+  },
+  {
+    "file": "libyaml-cpp0.8_0.8.0+dfsg-7_amd64.deb",
+    "package": "libyaml-cpp0.8",
+    "version": "0.8.0+dfsg-7",
+    "url": "https://deb.debian.org/debian/pool/main/y/yaml-cpp/libyaml-cpp0.8_0.8.0+dfsg-7_amd64.deb",
+    "sha256": "120ef7f4d076f3307d374133154e34106817be874323e8bc2814130d3dccbb8a",
+    "bytes": 132660,
+    "active": true
+  },
+  {
+    "file": "openroad_26Q2-1164-g08f67ee5ec_amd64-ubuntu-22.04.deb",
+    "package": "openroad",
+    "version": "26Q2-1164-g08f67ee5ec",
+    "url": "https://vaultlink.precisioninno.com/api/releases/26Q2-1164-g08f67ee5ec/openroad_26Q2-1164-g08f67ee5ec_amd64-ubuntu-22.04.deb/download",
+    "sha256": "1fe0e084dfc67a807f31a67a8f941e8d6dc4c3242cae0bdb0a67e1dae6f1c4a6",
+    "bytes": 64047394,
+    "active": false
+  },
+  {
+    "file": "openroad_26Q2-1164-g08f67ee5ec_amd64-ubuntu-24.04.deb",
+    "package": "openroad",
+    "version": "26Q2-1164-g08f67ee5ec",
+    "url": "https://vaultlink.precisioninno.com/api/releases/26Q2-1164-g08f67ee5ec/openroad_26Q2-1164-g08f67ee5ec_amd64-ubuntu-24.04.deb/download",
+    "sha256": "f3f1eeaa18f327503f72cc45dcef5b1514ec2e89726ec53b4553bf4f951168a3",
+    "bytes": 63800256,
+    "active": true
+  },
+  {
+    "file": "opensta_0~20191111gitc018cb2+dfsg-1.1_amd64.deb",
+    "package": "opensta",
+    "version": "0~20191111gitc018cb2+dfsg-1.1",
+    "url": "https://deb.debian.org/debian/pool/main/o/opensta/opensta_0~20191111gitc018cb2+dfsg-1.1_amd64.deb",
+    "sha256": "070f1da9b307cc9273453ea50e7dffbadf1b95ee8712f2430f518bc7008e4e10",
+    "bytes": 903560,
+    "active": true
+  },
+  {
+    "file": "tcl-tclreadline_2.3.8-1_amd64.deb",
+    "package": "tcl-tclreadline",
+    "version": "2.3.8-1",
+    "url": "https://deb.debian.org/debian/pool/main/t/tclreadline/tcl-tclreadline_2.3.8-1_amd64.deb",
+    "sha256": "977a25cebd0beadedadfc58527c7edbba3975e9a5ca25b5923b75cc9abb10ce3",
+    "bytes": 53596,
+    "active": true
+  },
+  {
+    "file": "verilator_5.032-1+b2_amd64.deb",
+    "package": "verilator",
+    "version": "5.032-1+b2",
+    "url": "https://deb.debian.org/debian/pool/main/v/verilator/verilator_5.032-1+b2_amd64.deb",
+    "sha256": "238ab4ca84cddd371f113cd549f16f2d65c43e7b4962a763bea1d259158dd3b2",
+    "bytes": 7565144,
+    "active": true
+  },
+  {
+    "file": "yosys-abc_0.52-2_amd64.deb",
+    "package": "yosys-abc",
+    "version": "0.52-2",
+    "url": "https://deb.debian.org/debian/pool/main/y/yosys/yosys-abc_0.52-2_amd64.deb",
+    "sha256": "f54c92c5ce88959f6aedc71c7b01eaf2b39d6c8c3e5f02784b6ce24736dc50e4",
+    "bytes": 4944476,
+    "active": true
+  },
+  {
+    "file": "yosys_0.52-2_amd64.deb",
+    "package": "yosys",
+    "version": "0.52-2",
+    "url": "https://deb.debian.org/debian/pool/main/y/yosys/yosys_0.52-2_amd64.deb",
+    "sha256": "c950e58a1f554546a91602e5124eb05019a92040e57b0aaa43cf33b032ee9c40",
+    "bytes": 6226136,
+    "active": true
+  }
+]

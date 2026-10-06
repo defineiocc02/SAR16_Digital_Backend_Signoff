@@ -1,0 +1,9 @@
+{
+  "run_v6/results/routed.def": true,
+  "run_v6/results/routed.odb": true,
+  "run_v6/results/routed.v": true,
+  "environment/tools/OpenROAD-flow-scripts/flow/platforms/sky130hs/gds/sky130_fd_sc_hs.gds": true,
+  "environment/tools/OpenROAD-flow-scripts/flow/platforms/sky130hs/lef/sky130_fd_sc_hs.tlef": true,
+  "environment/tools/OpenROAD-flow-scripts/flow/platforms/sky130hs/lef/sky130_fd_sc_hs_merged.lef": true,
+  "environment/tools/OpenROAD-flow-scripts/flow/platforms/sky130hs/sky130hs.lyt": true
+}

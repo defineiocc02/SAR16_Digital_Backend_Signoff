@@ -1,5 +1,8 @@
 # SAR16 片上数字核 · 数字后端接手与签核
 
+> **新增修复分支成果（2026-10-06）**：[修复 RTL、SKY130HS 原生布线文件与完整验证入口](repairs/sky130hs_20261006/README.md)。最终公开 SKY130HS 数字核的 Magic full DRC=0、KLayout BEOL=0、严格提取 LVS 拓扑与属性通过，9 项数字等价及负对照通过。本结果与下方历史 SMIC180 证据分开，未宣称 SMIC180 流片签核或完整 ADC 性能闭合。
+
+
 > **定位与证据状态（2026-10-02）**：这是 16 位 SAR 数字后端的交付审计与签核证据仓库，尚未完成流片签核。现有证据仍有 LVS INCORRECT、跨角 hold 违规与被截断的 DRC 计数；功能等价通过不能替代物理签核。进一步的静态审计与 PPA 对标见 [待合入改进](https://github.com/defineiocc02/SAR16_Digital_Backend_Signoff/pull/1)，其内容在合入前不属于默认分支基线。
 
 > **导航**：返回 [项目总览](https://github.com/defineiocc02)。

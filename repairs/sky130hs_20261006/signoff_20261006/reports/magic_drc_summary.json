@@ -1,0 +1,12 @@
+{
+  "scope": "Magic sky130A public drc(full), raw GDS geometry with native HS cells",
+  "raw_rectangle_count": 2838,
+  "by_rule": {
+    "Local interconnect spacing < 0.17um (li.3)": 23,
+    "N-well spacing < 1.27um (nwell.2a)": 1689,
+    "N-well width < 0.84um (nwell.1)": 115,
+    "All nwells must contain metal-connected N+ taps (nwell.4)": 480,
+    "P-diff distance to N-tap must be < 15.0um (LU.3)": 516,
+    "Core local interconnect spacing < 0.14um (li.c2)": 15
+  }
+}

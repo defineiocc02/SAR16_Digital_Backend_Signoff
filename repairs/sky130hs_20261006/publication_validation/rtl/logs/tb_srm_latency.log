@@ -1,0 +1,18 @@
+EARLY_STREAM phase=0.00 total=0 ones=0 shortfall=1 stalled=1 start_to_done_ns=670.000
+LATENCY_PASS case=1 phase_ns=0.25 samples=100 accepted_to_done_min_ns=120.000 accepted_to_done_max_ns=120.000 last_to_done_min_ns=41.250 last_to_done_max_ns=43.250 first_to_last_ns=63.000 accepted_to_ready_min_ns=140.000 accepted_to_ready_max_ns=140.000
+LATENCY_PASS case=2 phase_ns=0.50 samples=100 accepted_to_done_min_ns=120.000 accepted_to_done_max_ns=120.000 last_to_done_min_ns=41.000 last_to_done_max_ns=43.000 first_to_last_ns=63.000 accepted_to_ready_min_ns=140.000 accepted_to_ready_max_ns=140.000
+LATENCY_PASS case=3 phase_ns=0.75 samples=100 accepted_to_done_min_ns=120.000 accepted_to_done_max_ns=120.000 last_to_done_min_ns=40.750 last_to_done_max_ns=42.750 first_to_last_ns=63.000 accepted_to_ready_min_ns=140.000 accepted_to_ready_max_ns=140.000
+LATENCY_PASS case=4 phase_ns=1.00 samples=100 accepted_to_done_min_ns=120.000 accepted_to_done_max_ns=120.000 last_to_done_min_ns=40.500 last_to_done_max_ns=42.500 first_to_last_ns=63.000 accepted_to_ready_min_ns=140.000 accepted_to_ready_max_ns=140.000
+LATENCY_PASS case=5 phase_ns=1.25 samples=100 accepted_to_done_min_ns=120.000 accepted_to_done_max_ns=120.000 last_to_done_min_ns=41.250 last_to_done_max_ns=43.250 first_to_last_ns=63.000 accepted_to_ready_min_ns=140.000 accepted_to_ready_max_ns=140.000
+LATENCY_PASS case=6 phase_ns=1.50 samples=100 accepted_to_done_min_ns=120.000 accepted_to_done_max_ns=120.000 last_to_done_min_ns=41.000 last_to_done_max_ns=43.000 first_to_last_ns=63.000 accepted_to_ready_min_ns=140.000 accepted_to_ready_max_ns=140.000
+LATENCY_PASS case=7 phase_ns=1.75 samples=100 accepted_to_done_min_ns=120.000 accepted_to_done_max_ns=120.000 last_to_done_min_ns=40.750 last_to_done_max_ns=42.750 first_to_last_ns=63.000 accepted_to_ready_min_ns=140.000 accepted_to_ready_max_ns=140.000
+LATENCY_PASS case=8 phase_ns=2.00 samples=100 accepted_to_done_min_ns=120.000 accepted_to_done_max_ns=120.000 last_to_done_min_ns=40.500 last_to_done_max_ns=42.500 first_to_last_ns=63.000 accepted_to_ready_min_ns=140.000 accepted_to_ready_max_ns=140.000
+LATENCY_PASS case=9 phase_ns=2.25 samples=100 accepted_to_done_min_ns=120.000 accepted_to_done_max_ns=120.000 last_to_done_min_ns=41.250 last_to_done_max_ns=43.250 first_to_last_ns=63.000 accepted_to_ready_min_ns=140.000 accepted_to_ready_max_ns=140.000
+LATENCY_PASS case=10 phase_ns=2.50 samples=100 accepted_to_done_min_ns=120.000 accepted_to_done_max_ns=120.000 last_to_done_min_ns=41.000 last_to_done_max_ns=43.000 first_to_last_ns=63.000 accepted_to_ready_min_ns=140.000 accepted_to_ready_max_ns=140.000
+LATENCY_PASS case=11 phase_ns=2.75 samples=100 accepted_to_done_min_ns=120.000 accepted_to_done_max_ns=120.000 last_to_done_min_ns=40.750 last_to_done_max_ns=42.750 first_to_last_ns=63.000 accepted_to_ready_min_ns=140.000 accepted_to_ready_max_ns=140.000
+LATENCY_PASS case=0 phase_ns=0.00 samples=100 accepted_to_done_min_ns=120.000 accepted_to_done_max_ns=120.000 last_to_done_min_ns=40.500 last_to_done_max_ns=42.500 first_to_last_ns=63.000 accepted_to_ready_min_ns=140.000 accepted_to_ready_max_ns=140.000
+SRM_LATENCY_EXPERIMENT_PASS phases=12 normal_samples=1200
+- /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/recovered/SAR16_Rework_Core_20261005/sar16_rework_20261005/optimization/regression/tests/tb_srm_latency.sv:125: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.032 2025-01-01
+- Verilator: $finish at 20us; walltime 0.135 s; speed 147.924 us/s
+- Verilator: cpu 0.136 s on 1 threads; alloced 65 MB

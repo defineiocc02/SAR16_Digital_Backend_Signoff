@@ -1,0 +1,110 @@
+{
+  "official_sources": [
+    {
+      "name": "open-pdks",
+      "version": "1.0.611",
+      "commit": "801834fcbf9119e6fd4462f97da9e637f284539a",
+      "url": "https://github.com/fossi-foundation/open-pdks/archive/801834fcbf9119e6fd4462f97da9e637f284539a.tar.gz",
+      "archive_sha256": "d7167565fa869d674c9484e3a3e3105ea38c9d4fe35c7b86444df0e8b0ee0262"
+    },
+    {
+      "name": "original HS GDS",
+      "commit": "1d051f49bfe4e2fe9108d702a8bc2e9c081005a4",
+      "url": "https://github.com/google/skywater-pdk-libs-sky130_fd_sc_hs/archive/1d051f49bfe4e2fe9108d702a8bc2e9c081005a4.tar.gz",
+      "archive_sha256": "3308aed19363044e18cbc6ca9722dcf2d210be108a90b0054c8eb696d7f112e7"
+    },
+    {
+      "name": "selected geometry-matched HS native SPICE/CDL",
+      "commit": "968e0c3b60c103c2df1da4981b11ff603d55a88a",
+      "url": "https://github.com/fossi-foundation/skywater-pdk-libs-sky130_fd_sc_hs/tree/968e0c3b60c103c2df1da4981b11ff603d55a88a",
+      "verification": "780 source files match official Git blob SHA1 and retained SHA256 list in geometry_matched_reference_manifest.json"
+    },
+    {
+      "name": "newer HS snapshot for comparison only",
+      "commit": "c3d7991a9bcb4fc33cbd43262b44bb5560d6fdd0",
+      "url": "https://github.com/fossi-foundation/skywater-pdk-libs-sky130_fd_sc_hs/tree/c3d7991a9bcb4fc33cbd43262b44bb5560d6fdd0"
+    }
+  ],
+  "generated_files": [
+    {
+      "path": "sky130A/libs.ref/sky130_fd_sc_hs/cdl/sky130_fd_sc_hs.cdl",
+      "bytes": 988175,
+      "sha256": "28c6773354db14086ddac0c221aadd7092e049eee501c6c8bf2060c44f1018fb"
+    },
+    {
+      "path": "sky130A/libs.ref/sky130_fd_sc_hs/cdl/sky130_fd_sc_hs.geometry_matched.cdl",
+      "bytes": 988175,
+      "sha256": "28c6773354db14086ddac0c221aadd7092e049eee501c6c8bf2060c44f1018fb"
+    },
+    {
+      "path": "sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.geometry_matched.spice",
+      "bytes": 868397,
+      "sha256": "4e328eb4cb150ab7227848472b32b523520fe8223a7c81a15d688308854eaf8d"
+    },
+    {
+      "path": "sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice",
+      "bytes": 868385,
+      "sha256": "81daf04a6b5084d2cd914a3e8dde2b665aa1b33ce826be6a0b7e2b6b67b4cc66"
+    },
+    {
+      "path": "sky130A/libs.tech/magic/check_antenna.py",
+      "bytes": 5219,
+      "sha256": "1bbccfe41517ad64a6916f345da812e07d36000bbb9a072188382e94d40f440f"
+    },
+    {
+      "path": "sky130A/libs.tech/magic/check_density.py",
+      "bytes": 29948,
+      "sha256": "9ef4c226f45014d20419f38388a205a55ff40589cddd1f97ffb5c6a1e0ab0a1a"
+    },
+    {
+      "path": "sky130A/libs.tech/magic/generate_fill.py",
+      "bytes": 18714,
+      "sha256": "4be7806c1192225e28ff11d3cc52734dac1c2c0f5229379653de482ac809f0b4"
+    },
+    {
+      "path": "sky130A/libs.tech/magic/magicrc",
+      "bytes": 2396,
+      "sha256": "1280be9986863557dd41e953fdb8203ca73c27d92e08b444b505e318d30410db"
+    },
+    {
+      "path": "sky130A/libs.tech/magic/run_standard_drc.py",
+      "bytes": 8456,
+      "sha256": "33b045c668064d65fc91e48e39c2e62c6a549e2f4b1d294734e83f60041ba1ab"
+    },
+    {
+      "path": "sky130A/libs.tech/magic/sky130A-BindKeys",
+      "bytes": 5098,
+      "sha256": "1bdcb070f04fb313a108cbeb3a4c1b65080f4244cd6fbbc9ff7b6064f1da4167"
+    },
+    {
+      "path": "sky130A/libs.tech/magic/sky130A-GDS.tech",
+      "bytes": 36286,
+      "sha256": "92dbded1d1f0de108b34fef415c6d96723eb7e9eb12fc093db2e0d12caaa6e4f"
+    },
+    {
+      "path": "sky130A/libs.tech/magic/sky130A.magicrc",
+      "bytes": 2396,
+      "sha256": "1280be9986863557dd41e953fdb8203ca73c27d92e08b444b505e318d30410db"
+    },
+    {
+      "path": "sky130A/libs.tech/magic/sky130A.tcl",
+      "bytes": 255500,
+      "sha256": "0009c87d589d9192a26ace713994c3f09d66b0f7450fdbb9c5e8d77bc1250dff"
+    },
+    {
+      "path": "sky130A/libs.tech/magic/sky130A.tech",
+      "bytes": 168446,
+      "sha256": "0775afcc79c863ce9457bc5252b08e998885740a3cf10896221bc203f254a377"
+    },
+    {
+      "path": "sky130A/libs.tech/netgen/setup.tcl",
+      "bytes": 19891,
+      "sha256": "7a33f3f54fab57a9d9b0887ac7b7b64ce6c454110e8b7f01f3cfb90a1282dc94"
+    },
+    {
+      "path": "sky130A/libs.tech/netgen/sky130A_setup.tcl",
+      "bytes": 19891,
+      "sha256": "7a33f3f54fab57a9d9b0887ac7b7b64ce6c454110e8b7f01f3cfb90a1282dc94"
+    }
+  ]
+}

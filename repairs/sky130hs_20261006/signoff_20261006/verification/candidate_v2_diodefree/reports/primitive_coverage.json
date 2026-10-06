@@ -1,0 +1,11 @@
+{
+  "hierarchical_extracted_primitive_instances_before_netgen_device_combining": {
+    "sky130_fd_pr__pfet_01v8": 28244,
+    "sky130_fd_pr__nfet_01v8_lvt": 27929,
+    "sky130_fd_pr__res_generic_po": 4
+  },
+  "total_primitives": 56177,
+  "final_hs_instances": 14657,
+  "final_master_count": 98,
+  "diode_master_instances": 0
+}

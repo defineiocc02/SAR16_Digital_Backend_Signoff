@@ -1,0 +1,16 @@
+read_verilog -sv -D SYNTHESIS /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/recovered/SAR16_Rework_Core_20261005/sar16_rework_20261005/repo/rtl_optimized/sar_calib_ctrl_serial.sv /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/recovered/SAR16_Rework_Core_20261005/sar16_rework_20261005/repo/rtl_optimized/sar_digi_paper_core.sv /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/recovered/SAR16_Rework_Core_20261005/sar16_rework_20261005/repo/rtl_optimized/srm_residue_estimator.sv /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/recovered/SAR16_Rework_Core_20261005/sar16_rework_20261005/repo/rtl_optimized/srm_residue_lut.sv
+hierarchy -check -top sar_digi_paper_core
+proc
+write_json /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/equivalence_candidate_v2_diodefree/results/rtl_preflatten.json
+flatten
+opt
+memory
+opt
+techmap
+opt
+dffunmap
+opt_clean
+check -assert
+write_json /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/equivalence_candidate_v2_diodefree/results/rtl.json
+write_verilog -noattr /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/equivalence_candidate_v2_diodefree/results/rtl.v
+stat

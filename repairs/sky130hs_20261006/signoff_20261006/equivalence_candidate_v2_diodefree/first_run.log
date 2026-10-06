@@ -1,0 +1,102 @@
+rtl normalized
+sky130hs_mapped normalized
+sky130hs_routed normalized
+rtl_to_sky130hs_mapped 2689 obligations 146 output bits
+sky130hs_mapped_to_sky130hs_routed 2684 obligations 146 output bits
+rtl_to_sky130hs_mapped initial relation checks 849
+sky130hs_mapped_to_sky130hs_routed initial relation checks 848
+sky130hs_mapped_to_sky130hs_routed PASS 3.957
+rtl_to_sky130hs_mapped PASS 7.734
+negative_clock_invert PASS 4.56
+rtl_to_sky130hs_mapped_reset PASS 12.516
+negative_data_invert PASS 4.976
+sky130hs_mapped_to_sky130hs_routed_reset PASS 13.168
+negative_fsm_next_invert PASS 4.986
+negative_output_invert PASS 5.068
+negative_reset_invert PASS 4.917
+All requested proof jobs passed with stable source hashes.
+Wrote /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/equivalence_candidate_v2_diodefree/report.md and summary/coverage manifests
+{
+  "status": "PASS",
+  "expected_proof_jobs": 9,
+  "proof_jobs_passed": 9,
+  "negative_controls_with_json_and_vcd_witnesses": 5,
+  "coverage": {
+    "rtl_to_sky130hs_mapped": {
+      "state_mapping_complete": true,
+      "output_ports": 20,
+      "output_bits": 146,
+      "inductive_obligations": 2689
+    },
+    "sky130hs_mapped_to_sky130hs_routed": {
+      "state_mapping_complete": true,
+      "output_ports": 20,
+      "output_bits": 146,
+      "inductive_obligations": 2684
+    }
+  },
+  "source_hashes_rechecked": 8,
+  "model_hashes_rechecked": 4,
+  "summary_sha256": "4987c229ff7adda143e33360b91e0faf8ae4ad74cc70565aa1124cbfacf7fb20",
+  "source_manifest_sha256": "9d1f73356bfbfe4b530c9f393ccc33eba1e2871a66479bb32835a91af5242e5b",
+  "suite_results_sha256": "8e97a30b6a1fc17e85640e3b80bd9b5650d196eccd9d4f4bc8a7d5f53a4d9d66"
+}
+{
+  "status": "PASS",
+  "scope": "Reset-reachable unbounded digital sequential equivalence, default parameters, ideal Boolean/Liberty semantics",
+  "candidate_routed_v_sha256": "b6b2f6ab56f5d565d26b2ccacfcb1af9e751b0bf1100595bb16942449e35cce5",
+  "candidate_routed_odb_sha256": "e7fcd87e358a1848c7e1d2fdde08280773994c176907caecc541867e81e09792",
+  "proof_jobs": 9,
+  "passed_jobs": 9,
+  "negative_controls_with_witnesses": 5,
+  "proofs": [
+    {
+      "comparison": "rtl_to_sky130hs_mapped",
+      "result": "PASS",
+      "inductive_step": "PASS",
+      "reset_base": "PASS",
+      "gold_state_bits": 843,
+      "gate_state_bits": 846,
+      "output_bits": 146,
+      "inductive_obligations": 2689,
+      "reset_obligations": 849,
+      "condition": "SRM state in 0..5",
+      "power_ports": []
+    },
+    {
+      "comparison": "sky130hs_mapped_to_sky130hs_routed",
+      "result": "PASS",
+      "inductive_step": "PASS",
+      "reset_base": "PASS",
+      "gold_state_bits": 846,
+      "gate_state_bits": 846,
+      "output_bits": 146,
+      "inductive_obligations": 2684,
+      "reset_obligations": 848,
+      "condition": "none",
+      "power_ports": []
+    }
+  ],
+  "output_ports_per_comparison": 20,
+  "output_bits_per_comparison": 146,
+  "strictly_audited_added_filler_instances": 8900,
+  "physical_antenna_diode_instances": 0,
+  "unsupported_functional_cells": 0,
+  "unresolved_blackboxes": 0,
+  "x_z_gate_connections": 0,
+  "identity_audit": "identity/identity_final.json",
+  "proof_integrity_audit": "integrity_audit.json",
+  "report": "report.md",
+  "reproduction": "reproduce.sh",
+  "normalization_extension_diff": "identity/normalization_extension.patch",
+  "limits": [
+    "Only the exact hashed default-parameter source and actual supplied netlists; alternative parameters are unproved",
+    "Defined primary inputs and nominal-power, zero-delay Liberty functional semantics",
+    "Common reset low at the first two sampled global steps; equality/definedness holds at steps 2 through 4; later resets are arbitrary",
+    "Clock levels are independent and unconstrained, with no fixed ratio or fairness assumption",
+    "Yosys clk2fflogic uses its documented negative-hold-time asynchronous-reset convention when reset release coincides with a clock edge",
+    "Equivalence preserves the RTL behavior; it is not an independent proof that calibration numerics, analog performance or every intended functional requirement is correct",
+    "No source-level arbitrary-X propagation guarantee: standard synthesis normalization uses opt without keepdc",
+    "No analog metastability, synchronizer MTBF, SDF timing, recovery/removal, power-integrity/connectivity, extracted-GDS equivalence or LVS conclusion"
+  ]
+}

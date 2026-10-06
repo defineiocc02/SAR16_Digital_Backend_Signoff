@@ -1,0 +1,39 @@
+{
+  "restored": [
+    "Frozen optimized RTL",
+    "SKY130HS mapped netlist",
+    "SKY130HS prior routed Verilog and summary",
+    "Whole-design digital equivalence scripts/results",
+    "Strict constraint template and verification/report helpers"
+  ],
+  "not_restored": [
+    "SKY130HS routed ODB/DEF/SPEF/SDC",
+    "SKY130HS flow and raw reports",
+    "EDA binaries and full platform"
+  ],
+  "reconstructed": [
+    "Fresh physical placement/routing on frozen mapped netlist",
+    "SKY130HS constraints preserving clocks10/3ns, output max load50fF, digital output min-0.5ns, CDC bounds and reset exception scope",
+    "Native flow commands adapted from delivered Nangate45 implementation and pinned SKY130HS platform"
+  ],
+  "baseline_routed_sha256": "afaabd0b5a55b0981ac33148e2e52fcfa6c55fc01641e341931c782e62b95942",
+  "baseline_mapped_sha256": "6a158f84c153d282d7210e074af238d80a63d6596c0790dab0f9dffeedc33ee3",
+  "original_die_um": [
+    0,
+    0,
+    392.98,
+    392.98
+  ],
+  "original_core_um": [
+    12,
+    13.32,
+    380.64,
+    379.62
+  ],
+  "frozen_RTL_sha256": {
+    "srm_residue_lut.sv": "d3335201c8de1692e31cab9f28b8a9862ffbace3710529599ac8f241ed98bbdf",
+    "srm_residue_estimator.sv": "113265c69b6fa7550906c17290a66b7507f51221231751a99d72a8f580f110de",
+    "sar_calib_ctrl_serial.sv": "bff398bd6e1e99b9008b39a673c252caa389e6ea50d4f51d3d7e1d6de9e6ea1d",
+    "sar_digi_paper_core.sv": "cfb3548a9aa6e6bfa3d9395f02c5695d12e075415931185db8da461804139022"
+  }
+}

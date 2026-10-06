@@ -1,0 +1,61 @@
+{
+  "checked_utc": "2026-10-05T16:02:26.418299+00:00",
+  "scope": "Cloud environment installation and tool-function smoke only",
+  "host": {
+    "distribution": "Debian13",
+    "architecture": "x86_64",
+    "glibc": "2.41",
+    "python": "3.12.14 shared"
+  },
+  "tools": {
+    "openroad": {
+      "version": "26Q2-1164-g08f67ee5ec",
+      "source": "Precision Innovations VaultLink official-project-endorsed binary",
+      "binary_package_sha256": "f3f1eeaa18f327503f72cc45dcef5b1514ec2e89726ec53b4553bf4f951168a3"
+    },
+    "yosys_native": {
+      "version": "0.52",
+      "commit": "fee39a3284c90249e1d9684cf6944ffbbcbb8f90",
+      "debian_package": "0.52-2"
+    },
+    "yosys_formal": {
+      "version": "0.69",
+      "commit": "9f75ca1f9",
+      "distribution": "yowasp-yosys==0.69.0.0.post1233"
+    },
+    "symbiyosys": {
+      "reported_version": "unknown SBY version",
+      "pin": "exact containing YoWASP wheel SHA256 in python-requirements-hashed.lock"
+    },
+    "z3": "5.1.0",
+    "iverilog": "12.0-2+b1",
+    "verilator": "5.032-1+b2",
+    "standalone_opensta": "2.0.17"
+  },
+  "platform_commit": "ad11cc9f8cc8bde9946200cafc21bae265067188",
+  "public_platforms": [
+    "Nangate45",
+    "GF180MCU"
+  ],
+  "smokes": {
+    "aggregate": "PASS",
+    "iverilog": "PASS",
+    "verilator_lint": "PASS",
+    "native_yosys_mapping": "PASS",
+    "formal_positive_k_induction": "PASS",
+    "formal_intentional_negative_control": "expected FAIL plus VCD",
+    "place_route_cts_rcx_sta": "PASS",
+    "routed_def_odb_spef_exist": true,
+    "tiny_counter_route_drc_count": 0,
+    "tiny_counter_setup_slack_ns": 9.74
+  },
+  "limitations": [
+    "Smoke design is not SAR16",
+    "No proprietary SMIC18 kit",
+    "No analog accuracy or whole-ADC PPA claim",
+    "No foundry DRC/LVS/IR/EM signoff",
+    "GF180 1.8V characterization uses5V device cell family",
+    "Complete clean-host reinstall not tested; installed environment and aggregate smoke were run",
+    "Native Yosys0.52 does not meet latest ORFS Makefile minimum0.58; bespoke flow used"
+  ]
+}

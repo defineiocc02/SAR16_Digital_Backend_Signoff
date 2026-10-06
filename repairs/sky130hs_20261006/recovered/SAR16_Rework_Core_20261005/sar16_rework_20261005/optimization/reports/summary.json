@@ -1,0 +1,106 @@
+{
+  "status": "ACCEPTED_RTL_OPTIMIZATION",
+  "checks": {
+    "baseline_reference_invariant": "PASS",
+    "reset_base": "PASS",
+    "sequential_equivalence": "PASS",
+    "negative_control": "PASS_DETECTED_MUTATION",
+    "calib_bmc": "PASS",
+    "calib_induction": "PASS",
+    "calib_publish_bmc": "PASS",
+    "calib_publish_induction": "PASS",
+    "calib_cover": "PASS",
+    "verilator_smoke": "PASS_166_CHECKS_TWO_FULL_SWEEPS",
+    "verilator_adversarial": "PASS_39_CHECKS",
+    "verilator_latency": "PASS_1200_SAMPLES_12_PHASES",
+    "icarus_adversarial": "PASS_39_CHECKS",
+    "lint": "PASS_WITH_25_UNCHANGED_BASELINE_WARNINGS",
+    "optional_icarus_full_core": "BLOCKED_IDENTICAL_BASELINE_AND_CANDIDATE_ENUM_TERNARY_ELABORATION_LIMITATION"
+  },
+  "old_calibration_state_bits": 904,
+  "new_calibration_state_bits": 724,
+  "removed_constant_state_bits": 180,
+  "all_output_bits_checked": 100,
+  "relational_obligations": 2364,
+  "synthesis": {
+    "baseline": {
+      "physical_cells": 4515,
+      "metadata_cells": 3,
+      "flops": 1026,
+      "cell_area_um2": 9840.936,
+      "flop_area_um2": 5458.32,
+      "comb_area_um2": 4382.616,
+      "shadow_dynamic_bits": 600,
+      "measured_dynamic_bits": 420
+    },
+    "optimized": {
+      "physical_cells": 4047,
+      "metadata_cells": 3,
+      "flops": 846,
+      "cell_area_um2": 8400.546,
+      "flop_area_um2": 4500.72,
+      "comb_area_um2": 3899.826,
+      "shadow_dynamic_bits": 420,
+      "measured_dynamic_bits": 420
+    },
+    "reduction": {
+      "physical_cells": 468,
+      "flops": 180,
+      "cell_area_um2": 1440.39,
+      "flop_area_um2": 957.6,
+      "comb_area_um2": 482.79
+    },
+    "reduction_percent": {
+      "physical_cells": 10.365448504983389,
+      "flops": 17.54385964912281,
+      "cell_area_um2": 14.636717482971127
+    },
+    "scope": "Same Nangate45 Liberty and unchanged original Yosys synthesis recipe; mapped standard-cell area, not routed/core/die area. ABC receives Liberty only, matching baseline; downstream SDC is unchanged and belongs to the physical implementation."
+  },
+  "parameter_checks": {
+    "fallback_low": {
+      "parameters": {
+        "MAX_CALIB_BIT": 0
+      },
+      "status": "PASS",
+      "returncode": 0,
+      "invariant_status": "PASS",
+      "reset_base_status": "PASS"
+    },
+    "fallback_high": {
+      "parameters": {
+        "MAX_CALIB_BIT": 15
+      },
+      "status": "PASS",
+      "returncode": 0,
+      "invariant_status": "PASS",
+      "reset_base_status": "PASS"
+    },
+    "alternate_legal": {
+      "parameters": {
+        "WEIGHT_WIDTH": 31,
+        "COMP_WAIT_CYC": 4,
+        "AVG_LOOPS": 1,
+        "REF_WEIGHT_LSB": 512,
+        "ROUND_HALF_LSB": 0,
+        "DETECT_OVERRANGE": 0
+      },
+      "status": "PASS",
+      "returncode": 0,
+      "invariant_status": "PASS",
+      "reset_base_status": "PASS"
+    }
+  },
+  "rtl_sha256": {
+    "srm_residue_lut.sv": "d3335201c8de1692e31cab9f28b8a9862ffbace3710529599ac8f241ed98bbdf",
+    "sar_digi_paper_core.sv": "cfb3548a9aa6e6bfa3d9395f02c5695d12e075415931185db8da461804139022",
+    "sar_calib_ctrl_serial.sv": "bff398bd6e1e99b9008b39a673c252caa389e6ea50d4f51d3d7e1d6de9e6ea1d",
+    "srm_residue_estimator.sv": "113265c69b6fa7550906c17290a66b7507f51221231751a99d72a8f580f110de"
+  },
+  "limitations": [
+    "No analog accuracy or feedback-algorithm repair claimed",
+    "No X-injection, metastability, fault-tolerance, SDF/GLS or silicon signoff claimed",
+    "Original full-core Verilator protocol model explicitly excludes numerical calibration acceptance",
+    "Formal results use two-state synchronous semantics after a common reset sampled at least once"
+  ]
+}

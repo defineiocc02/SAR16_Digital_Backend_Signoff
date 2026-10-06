@@ -1,0 +1,10 @@
+[options]
+mode bmc
+depth 5
+[engines]
+smtbmc z3
+[script]
+read -formal negative.sv
+prep -top negative
+[files]
+negative.sv

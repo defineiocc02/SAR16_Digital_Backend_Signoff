@@ -1,0 +1,47 @@
+[
+  {
+    "instance": "_5953_",
+    "pin": "CLK",
+    "net": "clknet_leaf_48_clk",
+    "via": "L1M1_PR_MR",
+    "old_center_dbu": [
+      192000,
+      244755
+    ],
+    "new_center_dbu": [
+      192000,
+      244940
+    ],
+    "met1_dogleg_um": 0.185
+  },
+  {
+    "instance": "_5803_",
+    "pin": "CLK",
+    "net": "clknet_leaf_109_clk",
+    "via": "L1M1_PR_MR",
+    "old_center_dbu": [
+      303475,
+      244755
+    ],
+    "new_center_dbu": [
+      303475,
+      244940
+    ],
+    "met1_dogleg_um": 0.185
+  },
+  {
+    "instance": "_5610_",
+    "pin": "CLK",
+    "net": "clknet_leaf_67_clk",
+    "via": "L1M1_PR_MR",
+    "old_center_dbu": [
+      258355,
+      361305
+    ],
+    "new_center_dbu": [
+      258355,
+      361120
+    ],
+    "met1_dogleg_um": 0.185
+  }
+]

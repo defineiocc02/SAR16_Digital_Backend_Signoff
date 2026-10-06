@@ -1,0 +1,8 @@
+read_json /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/equivalence_candidate_v2_diodefree/results/rtl_comb.json
+read_json /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/equivalence_candidate_v2_diodefree/results/negative_clock_invert.json
+read_verilog -formal -sv /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/equivalence_candidate_v2_diodefree/results/rtl_to_sky130hs_mapped.sv
+hierarchy -check -top rtl_to_sky130hs_mapped
+flatten
+opt
+check -assert
+sat -enable_undef -set-def-inputs -prove proof_ok 1 -show-ports -dump_json /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/equivalence_candidate_v2_diodefree/results/negative_clock_invert_cex.json -dump_vcd /workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/equivalence_candidate_v2_diodefree/results/negative_clock_invert_cex.vcd -falsify

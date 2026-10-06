@@ -1,0 +1,459 @@
+{
+  "status": "SUPPORTED_PHYSICAL_PROXY_PASS",
+  "run": "candidate_v2_diodefree",
+  "scope": "SKY130HS public1.8Vdigital physical proxy; no foundry/fullADC signoff",
+  "clock_ns": {
+    "clk": 10.0,
+    "dec_clk": 3.0
+  },
+  "load_pf": 0.05,
+  "digital_output_min_ns": -0.5,
+  "timing_ns": {
+    "nominal": {
+      "setup_wns": 1.062018,
+      "hold_wns": 0.153111
+    },
+    "scalarstress": {
+      "setup_wns": 0.947274,
+      "hold_wns": 0.05088
+    }
+  },
+  "electrical_violation_counts": {
+    "nominal": {
+      "max_slew": 0,
+      "max_capacitance": 0,
+      "min_capacitance": 0,
+      "max_fanout": 0,
+      "min_pulse_width": 0,
+      "min_period": 0,
+      "recovery": 0,
+      "removal": 0
+    },
+    "scalarstress": {
+      "max_slew": 0,
+      "max_capacitance": 0,
+      "min_capacitance": 0,
+      "max_fanout": 0,
+      "min_pulse_width": 0,
+      "min_period": 0,
+      "recovery": 0,
+      "removal": 0
+    }
+  },
+  "cdc_and_reset": {
+    "nominal": {
+      "entries": [
+        {
+          "kind": "scalar",
+          "source": "req_active",
+          "destination": "req_s1",
+          "bound_ns": 8.0,
+          "data_arrival_ns": 0.299737,
+          "slack_ns": 7.537344
+        },
+        {
+          "kind": "scalar",
+          "source": "dec_ack",
+          "destination": "ack_s1",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.273935,
+          "slack_ns": 1.971957
+        },
+        {
+          "kind": "scalar",
+          "source": "dec_done",
+          "destination": "done_s1",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.217226,
+          "slack_ns": 2.052954
+        },
+        {
+          "kind": "gray",
+          "source": "u_srm_residue.ones_g[0]",
+          "destination": "u_srm_residue.ones_g_s1[0]",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.211493,
+          "slack_ns": 2.060012
+        },
+        {
+          "kind": "gray",
+          "source": "u_srm_residue.ones_g[1]",
+          "destination": "u_srm_residue.ones_g_s1[1]",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.21161,
+          "slack_ns": 2.059813
+        },
+        {
+          "kind": "gray",
+          "source": "u_srm_residue.ones_g[2]",
+          "destination": "u_srm_residue.ones_g_s1[2]",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.213153,
+          "slack_ns": 2.058022
+        },
+        {
+          "kind": "gray",
+          "source": "u_srm_residue.ones_g[3]",
+          "destination": "u_srm_residue.ones_g_s1[3]",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.207966,
+          "slack_ns": 2.064609
+        },
+        {
+          "kind": "gray",
+          "source": "u_srm_residue.ones_g[4]",
+          "destination": "u_srm_residue.ones_g_s1[4]",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.267822,
+          "slack_ns": 1.980047
+        },
+        {
+          "kind": "gray",
+          "source": "u_srm_residue.total_g[0]",
+          "destination": "u_srm_residue.tot_g_s1[0]",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.220784,
+          "slack_ns": 2.048741
+        },
+        {
+          "kind": "gray",
+          "source": "u_srm_residue.total_g[1]",
+          "destination": "u_srm_residue.tot_g_s1[1]",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.20598,
+          "slack_ns": 2.065732
+        },
+        {
+          "kind": "gray",
+          "source": "u_srm_residue.total_g[2]",
+          "destination": "u_srm_residue.tot_g_s1[2]",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.214515,
+          "slack_ns": 2.055945
+        },
+        {
+          "kind": "gray",
+          "source": "u_srm_residue.total_g[3]",
+          "destination": "u_srm_residue.tot_g_s1[3]",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.212142,
+          "slack_ns": 2.059678
+        },
+        {
+          "kind": "gray",
+          "source": "u_srm_residue.total_g[4]",
+          "destination": "u_srm_residue.tot_g_s1[4]",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.278628,
+          "slack_ns": 1.964201
+        }
+      ],
+      "13_bounds_pass": true,
+      "gray_buses": {
+        "ones_g": {
+          "bits": 5,
+          "min_physical_delay_ns": 0.207966,
+          "max_physical_delay_ns": 0.267822,
+          "span_ns": 0.05985599999999999,
+          "source_period_ns": 3.0,
+          "pass": true
+        },
+        "total_g": {
+          "bits": 5,
+          "min_physical_delay_ns": 0.20598,
+          "max_physical_delay_ns": 0.278628,
+          "span_ns": 0.07264799999999999,
+          "source_period_ns": 3.0,
+          "pass": true
+        }
+      },
+      "local_reset_slacks_ns": {
+        "recovery": [
+          2.276534,
+          2.276584,
+          2.27664,
+          2.276736,
+          2.277012,
+          2.277217,
+          2.27746,
+          2.279131,
+          2.279492,
+          2.280668
+        ],
+        "removal": [
+          0.361866,
+          0.362594,
+          0.363747,
+          0.36657,
+          0.391856,
+          0.392666,
+          0.393499,
+          0.394255,
+          0.394628,
+          0.39578
+        ]
+      },
+      "reset_pass": true
+    },
+    "scalarstress": {
+      "entries": [
+        {
+          "kind": "scalar",
+          "source": "req_active",
+          "destination": "req_s1",
+          "bound_ns": 8.0,
+          "data_arrival_ns": 0.329711,
+          "slack_ns": 7.507369
+        },
+        {
+          "kind": "scalar",
+          "source": "dec_ack",
+          "destination": "ack_s1",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.301328,
+          "slack_ns": 1.944564
+        },
+        {
+          "kind": "scalar",
+          "source": "dec_done",
+          "destination": "done_s1",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.238948,
+          "slack_ns": 2.031231
+        },
+        {
+          "kind": "gray",
+          "source": "u_srm_residue.ones_g[0]",
+          "destination": "u_srm_residue.ones_g_s1[0]",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.232642,
+          "slack_ns": 2.038863
+        },
+        {
+          "kind": "gray",
+          "source": "u_srm_residue.ones_g[1]",
+          "destination": "u_srm_residue.ones_g_s1[1]",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.232771,
+          "slack_ns": 2.038652
+        },
+        {
+          "kind": "gray",
+          "source": "u_srm_residue.ones_g[2]",
+          "destination": "u_srm_residue.ones_g_s1[2]",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.234469,
+          "slack_ns": 2.036706
+        },
+        {
+          "kind": "gray",
+          "source": "u_srm_residue.ones_g[3]",
+          "destination": "u_srm_residue.ones_g_s1[3]",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.228763,
+          "slack_ns": 2.043813
+        },
+        {
+          "kind": "gray",
+          "source": "u_srm_residue.ones_g[4]",
+          "destination": "u_srm_residue.ones_g_s1[4]",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.294604,
+          "slack_ns": 1.953265
+        },
+        {
+          "kind": "gray",
+          "source": "u_srm_residue.total_g[0]",
+          "destination": "u_srm_residue.tot_g_s1[0]",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.242862,
+          "slack_ns": 2.026662
+        },
+        {
+          "kind": "gray",
+          "source": "u_srm_residue.total_g[1]",
+          "destination": "u_srm_residue.tot_g_s1[1]",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.226578,
+          "slack_ns": 2.045134
+        },
+        {
+          "kind": "gray",
+          "source": "u_srm_residue.total_g[2]",
+          "destination": "u_srm_residue.tot_g_s1[2]",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.235966,
+          "slack_ns": 2.034494
+        },
+        {
+          "kind": "gray",
+          "source": "u_srm_residue.total_g[3]",
+          "destination": "u_srm_residue.tot_g_s1[3]",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.233356,
+          "slack_ns": 2.038464
+        },
+        {
+          "kind": "gray",
+          "source": "u_srm_residue.total_g[4]",
+          "destination": "u_srm_residue.tot_g_s1[4]",
+          "bound_ns": 2.4000000000000004,
+          "data_arrival_ns": 0.30649,
+          "slack_ns": 1.936338
+        }
+      ],
+      "13_bounds_pass": true,
+      "gray_buses": {
+        "ones_g": {
+          "bits": 5,
+          "min_physical_delay_ns": 0.18717,
+          "max_physical_delay_ns": 0.294604,
+          "span_ns": 0.10743399999999997,
+          "source_period_ns": 3.0,
+          "pass": true
+        },
+        "total_g": {
+          "bits": 5,
+          "min_physical_delay_ns": 0.185382,
+          "max_physical_delay_ns": 0.30649,
+          "span_ns": 0.121108,
+          "source_period_ns": 3.0,
+          "pass": true
+        }
+      },
+      "local_reset_slacks_ns": {
+        "recovery": [
+          2.198141,
+          2.198212,
+          2.198251,
+          2.198315,
+          2.198616,
+          2.198927,
+          2.19917,
+          2.227807,
+          2.228158,
+          2.229425
+        ],
+        "removal": [
+          0.259671,
+          0.260575,
+          0.261681,
+          0.264811,
+          0.334153,
+          0.334418,
+          0.334458,
+          0.334479,
+          0.357293,
+          0.35805
+        ]
+      },
+      "reset_pass": true
+    }
+  },
+  "hashes": {
+    "routed.odb": "e7fcd87e358a1848c7e1d2fdde08280773994c176907caecc541867e81e09792",
+    "routed.spef": "fad5b72f104fdc160faacce8d3be9f2a83a7758966fe2a04768eb1d53f7fa432",
+    "routed.v": "b6b2f6ab56f5d565d26b2ccacfcb1af9e751b0bf1100595bb16942449e35cce5",
+    "routed.sdc": "ab664d8b018aabbf7a4dcb121229535a5a7d25466d1ce7783eea970baec64261",
+    "extracted.odb": "475ab36c6de187fa292f1ce68c125cbffbc004eff0bf3a522950d339af3a420a",
+    "routed.sdf": "b793bb6a3d2e76680e0b27e8e696a6deb68d9fdd96242de0261dc4a235a0ff28",
+    "mapped.v": "6a158f84c153d282d7210e074af238d80a63d6596c0790dab0f9dffeedc33ee3",
+    "routed.def": "22c5de831ee7dbdcf8eef1637735f7da03b2a7059b9ac9e8e7b45e4a7ae2edf1"
+  },
+  "antenna_net_violations": 0,
+  "antenna_pin_violations": 0,
+  "router_drc_report_bytes": 0,
+  "power_grid": {
+    "VDD": true,
+    "VSS": true
+  },
+  "physical_counts": {
+    "instances": 14657.0,
+    "nets": 4200.0,
+    "ports": 178.0,
+    "all_instance_area_um2": 135032.8320000009,
+    "routed_connectivity": 1.0,
+    "unconnected_pg_terminals": 0.0
+  },
+  "die_bbox_um": [
+    0,
+    0,
+    392.98,
+    392.98
+  ],
+  "core_bbox_um": [
+    12,
+    13.32,
+    380.64,
+    379.62
+  ],
+  "die_area_um2": 154433.28040000002,
+  "core_area_um2": 135032.832,
+  "area_categories": {
+    "filler": {
+      "count": 8900,
+      "area_um2": 68138.1936000012
+    },
+    "tap": {
+      "count": 1456,
+      "area_um2": 2327.2704000000226
+    },
+    "retained_mapped": {
+      "count": 3542,
+      "area_um2": 57512.03040000084
+    },
+    "other_physical_repair": {
+      "count": 181,
+      "area_um2": 2762.035200000002
+    },
+    "clock_tree": {
+      "count": 234,
+      "area_um2": 1950.0480000000148
+    },
+    "clock_dummy_load": {
+      "count": 144,
+      "area_um2": 898.3008000000015
+    },
+    "hold_repair": {
+      "count": 26,
+      "area_um2": 332.46720000000005
+    },
+    "input_buffer": {
+      "count": 28,
+      "area_um2": 179.0208
+    },
+    "output_buffer": {
+      "count": 146,
+      "area_um2": 933.4655999999991
+    }
+  },
+  "spef_coverage": {
+    "database_signal_nets": 4198,
+    "spef_d_net_entries": 4187,
+    "missing_signal_net_count": 11,
+    "missing_by_pin_count": {
+      "0": 11
+    },
+    "missing_connected_nets": [],
+    "connected_nets_annotated": true
+  },
+  "router_model_limitations": [
+    "LEF58_ENCLOSURE without CUTCLASS skipped on mcon",
+    "LEF58_ENCLOSURE without CUTCLASS skipped on via",
+    "LEF58_ENCLOSURE without CUTCLASS skipped on via2",
+    "LEF58_ENCLOSURE without CUTCLASS skipped on via3",
+    "LEF58_ENCLOSURE without CUTCLASS skipped on via4"
+  ],
+  "expected_constraint_warning": "rst_n has no input delay under inherited external asynchronous-reset assumption;745direct async-clear sink exceptions only",
+  "checks": {
+    "timing": true,
+    "electrical": true,
+    "cdc": true,
+    "antenna": true,
+    "router_drc": true,
+    "routed_connectivity": true,
+    "power_grid": true,
+    "spef_connected_net_coverage": true
+  },
+  "all_supported_physical_checks_pass": true
+}

@@ -1,0 +1,21 @@
+name: SKY130HS frozen artifacts and repaired RTL
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  publication-and-rtl:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Frozen artifacts and raw evidence
+        run: python3 tools/check_sky130hs_publication.py
+      - name: Integrity checker negative controls
+        run: python3 -m unittest discover -s tests -p test_sky130hs_publication.py
+      - name: Install public RTL simulator
+        run: sudo apt-get update && sudo apt-get install -y verilator iverilog
+      - name: Repaired RTL regression
+        run: python3 tools/run_sky130hs_rtl_regression.py

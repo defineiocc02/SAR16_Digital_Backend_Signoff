@@ -1,0 +1,16 @@
+PUB time=225.001 ns n=1 ones=22 total=22 q=258 short=0 stall=0 busy=1
+PUB time=385.001 ns n=2 ones=0 total=22 q=-258 short=0 stall=0 busy=1
+PUB time=1095.001 ns n=3 ones=0 total=0 q=0 short=1 stall=1 busy=1
+PUB time=1245.001 ns n=4 ones=0 total=22 q=-258 short=0 stall=0 busy=1
+PUB time=1955.001 ns n=5 ones=0 total=0 q=0 short=1 stall=1 busy=1
+PUB time=4175.001 ns n=6 ones=22 total=22 q=258 short=0 stall=0 busy=1
+PUB time=4885.001 ns n=7 ones=0 total=0 q=0 short=1 stall=1 busy=1
+PUB time=6045.001 ns n=8 ones=0 total=22 q=-258 short=0 stall=0 busy=1
+PUB time=6755.001 ns n=9 ones=0 total=0 q=0 short=1 stall=1 busy=1
+PUB time=7515.001 ns n=10 ones=0 total=0 q=0 short=1 stall=1 busy=1
+PUB time=8295.001 ns n=11 ones=0 total=0 q=0 short=1 stall=1 busy=1
+PUB time=9065.001 ns n=12 ones=0 total=0 q=0 short=1 stall=1 busy=1
+PUB time=9295.001 ns n=13 ones=0 total=22 q=-258 short=0 stall=0 busy=1
+PUB time=9615.001 ns n=14 ones=0 total=22 q=-258 short=0 stall=0 busy=1
+SRM_REPAIR_PASS checks=39 publications=14 accepted_requests=15 arms=15
+/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/recovered/SAR16_Rework_Core_20261005/sar16_rework_20261005/optimization/regression/tests/tb_srm_repair.sv:124: $finish called at 9640000 (1ps)

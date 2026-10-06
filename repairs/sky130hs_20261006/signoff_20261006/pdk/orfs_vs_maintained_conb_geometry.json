@@ -1,0 +1,20 @@
+{
+  "orfs_gds": "sar16_antenna_repair_20261006/environment/tools/OpenROAD-flow-scripts/flow/platforms/sky130hs/gds/sky130_fd_sc_hs.gds",
+  "source_commit": "c3d7991a9bcb4fc33cbd43262b44bb5560d6fdd0",
+  "tested_cells": 1,
+  "equal_cells": 0,
+  "results": [
+    {
+      "cell": "sky130_fd_sc_hs__conb_1",
+      "geometry_equal": false,
+      "differences": [
+        {
+          "layer": 66,
+          "datatype": 15,
+          "area_um2": 0.4640999999999998,
+          "bbox": "(105,1495;1335,1950)"
+        }
+      ]
+    }
+  ]
+}

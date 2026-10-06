@@ -1,0 +1,21 @@
+{
+  "status": "FAIL",
+  "scope": "GDS-extracted transistor hierarchy compared with frozen ODB CDL and geometry-matched official HS SPICE using unchanged official SKY130A Netgen setup",
+  "top_cell_instances": [
+    4309,
+    4309
+  ],
+  "nets": [
+    4577,
+    4335
+  ],
+  "layout_extra_nets": 242,
+  "badnet_group_layout_nets": 243,
+  "badnet_group_reference_nets": 1,
+  "unmatched_layout_vpb_nets": 242,
+  "property_error_cells": [
+    "sky130_fd_sc_hs__diode_2"
+  ],
+  "diode_issue_reproduces_in_isolated_native_cell": true,
+  "reference_padding_no_match_entries": 242
+}

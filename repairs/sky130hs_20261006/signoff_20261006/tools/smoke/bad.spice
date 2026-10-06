@@ -1,0 +1,6 @@
+* Deliberately missing a resistor
+.subckt smoke a y vss
+R1 a n1 1000
+R2 n1 y 2000
+.ends smoke
+.end

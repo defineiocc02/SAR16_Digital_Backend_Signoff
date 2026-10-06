@@ -1,0 +1,1150 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)
+
+-- Executing script file `sar16_rework_20261005/optimization/formal/baseline_invariant.ys' --
+
+1. Executing Verilog-2005 frontend: /workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv
+Parsing formal SystemVerilog input from `/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv' to AST representation.
+Generating RTLIL representation for module `\sar_calib_ctrl_serial'.
+Warning: Replacing memory \shadow_weights with list of registers. See /workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:522
+Successfully finished Verilog frontend.
+
+2. Executing PREP pass.
+
+2.1. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1.1. Analyzing design hierarchy..
+Top module:  \sar_calib_ctrl_serial
+
+2.1.2. Analyzing design hierarchy..
+Top module:  \sar_calib_ctrl_serial
+Removed 0 unused modules.
+Module sar_calib_ctrl_serial directly or indirectly contains formal properties -> setting "keep" attribute.
+
+2.2. Executing PROC pass (convert processes to netlists).
+
+2.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 20 empty switches in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+Found and cleaned up 17 empty switches in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$42'.
+Cleaned up 37 empty switches.
+
+2.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$212 in module sar_calib_ctrl_serial.
+Marked 2 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$211 in module sar_calib_ctrl_serial.
+Marked 13 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118 in module sar_calib_ctrl_serial.
+Marked 1 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$97 in module sar_calib_ctrl_serial.
+Marked 1 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:445$95 in module sar_calib_ctrl_serial.
+Marked 21 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$42 in module sar_calib_ctrl_serial.
+Marked 2 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$31 in module sar_calib_ctrl_serial.
+Marked 2 switch rules as full_case in process $proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$25 in module sar_calib_ctrl_serial.
+Removed a total of 0 dead cases.
+
+2.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 5 redundant assignments.
+Promoted 26 assignments to connections.
+
+2.2.4. Executing PROC_INIT pass (extract init attributes).
+
+2.2.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_n in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+Found async reset \rst_n in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:445$95'.
+
+2.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~43 debug messages>
+
+2.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$212'.
+     1/10: $1$fordecl_block$7.k[31:0]$214
+     2/10: $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$237_EN
+     3/10: $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$235_EN
+     4/10: $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$233_EN
+     5/10: $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$231_EN
+     6/10: $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$229_EN
+     7/10: $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$227_EN
+     8/10: $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:781$223_EN
+     9/10: $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:780$219_EN
+    10/10: $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$211'.
+     1/4: $2\dac_n_force[19:0]
+     2/4: $2\dac_p_force[19:0]
+     3/4: $1\dac_n_force[19:0]
+     4/4: $1\dac_p_force[19:0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$209'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$208'.
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+     1/75: $3$lookahead\overrange_bits$117[19:0]$207
+     2/75: $5$mem2reg_rd$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:610$13_DATA[29:0]$190
+     3/75: $4$mem2reg_rd$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:610$13_DATA[29:0]$189
+     4/75: $4$mem2reg_rd$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:610$13_ADDR[4:0]$188
+     5/75: $3$mem2reg_rd$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:610$13_DATA[29:0]$186
+     6/75: $3$mem2reg_rd$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:610$13_ADDR[4:0]$185
+     7/75: $5$lookahead\sar_code$116[19:0]$174
+     8/75: $5$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:595$11[4:0]$173
+     9/75: $4$lookahead\sar_code$116[19:0]$165
+    10/75: $4$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:595$11[4:0]$164
+    11/75: $3$lookahead\sar_code$116[19:0]$154
+    12/75: $3$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:587$10[4:0]$152
+    13/75: $3$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:595$11[4:0]$153
+    14/75: $2$lookahead\overrange_bits$117[19:0]$148
+    15/75: $2$lookahead\sar_code$116[19:0]$147
+    16/75: $2$mem2reg_wr$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:650$14_DATA[29:0]$146
+    17/75: $2$mem2reg_wr$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:650$14_ADDR[4:0]$145
+    18/75: $2$mem2reg_rd$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:610$13_DATA[29:0]$144
+    19/75: $2$mem2reg_rd$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:610$13_ADDR[4:0]$143
+    20/75: $2$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:653$12[4:0]$142
+    21/75: $2$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:595$11[4:0]$141
+    22/75: $2$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:587$10[4:0]$140
+    23/75: $1$lookahead\overrange_bits$117[19:0]$139
+    24/75: $1$lookahead\sar_code$116[19:0]$138
+    25/75: $1$mem2reg_wr$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:650$14_DATA[29:0]$137
+    26/75: $1$mem2reg_wr$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:650$14_ADDR[4:0]$136
+    27/75: $1$mem2reg_rd$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:610$13_DATA[29:0]$135
+    28/75: $1$mem2reg_rd$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:610$13_ADDR[4:0]$134
+    29/75: $1$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:653$12[4:0]$133
+    30/75: $1$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:595$11[4:0]$132
+    31/75: $1$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:587$10[4:0]$131
+    32/75: $0\comp_out_rr[0:0]
+    33/75: $0\comp_out_r[0:0]
+    34/75: $0\calib_done_pulse[0:0]
+    35/75: $0\w_wr_en[0:0]
+    36/75: $1$fordecl_block$5.i[31:0]$130
+    37/75: $0\shadow_weights[19][29:0]
+    38/75: $0\shadow_weights[18][29:0]
+    39/75: $0\shadow_weights[17][29:0]
+    40/75: $0\shadow_weights[16][29:0]
+    41/75: $0\shadow_weights[15][29:0]
+    42/75: $0\shadow_weights[14][29:0]
+    43/75: $0\shadow_weights[13][29:0]
+    44/75: $0\shadow_weights[12][29:0]
+    45/75: $0\shadow_weights[11][29:0]
+    46/75: $0\shadow_weights[10][29:0]
+    47/75: $0\shadow_weights[9][29:0]
+    48/75: $0\shadow_weights[8][29:0]
+    49/75: $0\shadow_weights[7][29:0]
+    50/75: $0\shadow_weights[6][29:0]
+    51/75: $0\shadow_weights[5][29:0]
+    52/75: $0\shadow_weights[4][29:0]
+    53/75: $0\shadow_weights[3][29:0]
+    54/75: $0\shadow_weights[2][29:0]
+    55/75: $0\shadow_weights[1][29:0]
+    56/75: $0\shadow_weights[0][29:0]
+    57/75: $0\overrange_acc[0:0]
+    58/75: $0\wr_idx_r[4:0]
+    59/75: $0\orr_r[0:0]
+    60/75: $0\calc_result_r[31:0]
+    61/75: $0\avg_rounded_r[36:0]
+    62/75: $0\meas_val_n[29:0]
+    63/75: $0\meas_val_p[29:0]
+    64/75: $0\accumulator[36:0]
+    65/75: $0\temp_acc[35:0]
+    66/75: $0\calc_cnt[4:0]
+    67/75: $0\sar_ptr[4:0]
+    68/75: $0\wait_cnt[4:0]
+    69/75: $0\avg_cnt[4:0]
+    70/75: $0\target_bit[4:0]
+    71/75: $0\calib_overrange[0:0]
+    72/75: $0\w_wr_data[29:0]
+    73/75: $0\w_wr_addr[4:0]
+    74/75: $0\calib_mode_en[0:0]
+    75/75: $0\calib_done[0:0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$97'.
+     1/1: $1\next_state[3:0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:445$95'.
+     1/1: $0\state[3:0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$42'.
+     1/59: $38\search_mask[19:19]
+     2/59: $37\search_mask[18:18]
+     3/59: $36\search_mask[17:17]
+     4/59: $35\search_mask[16:16]
+     5/59: $34\search_mask[15:15]
+     6/59: $33\search_mask[14:14]
+     7/59: $32\search_mask[13:13]
+     8/59: $31\search_mask[12:12]
+     9/59: $30\search_mask[11:11]
+    10/59: $29\search_mask[10:10]
+    11/59: $28\search_mask[9:9]
+    12/59: $27\search_mask[8:8]
+    13/59: $26\search_mask[7:7]
+    14/59: $25\search_mask[6:6]
+    15/59: $24\search_mask[5:5]
+    16/59: $23\search_mask[4:4]
+    17/59: $22\search_mask[3:3]
+    18/59: $21\search_mask[2:2]
+    19/59: $20\search_mask[1:1]
+    20/59: $19\search_mask[0:0]
+    21/59: $1\search_mask[19:0] [19]
+    22/59: $1\search_mask[19:0] [18]
+    23/59: $1\search_mask[19:0] [17]
+    24/59: $17\search_mask[15:15]
+    25/59: $16\search_mask[14:14]
+    26/59: $15\search_mask[13:13]
+    27/59: $14\search_mask[12:12]
+    28/59: $13\search_mask[11:11]
+    29/59: $12\search_mask[10:10]
+    30/59: $11\search_mask[9:9]
+    31/59: $10\search_mask[8:8]
+    32/59: $9\search_mask[7:7]
+    33/59: $8\search_mask[6:6]
+    34/59: $7\search_mask[5:5]
+    35/59: $6\search_mask[4:4]
+    36/59: $5\search_mask[3:3]
+    37/59: $4\search_mask[2:2]
+    38/59: $3\search_mask[1:1]
+    39/59: $2\search_mask[0:0]
+    40/59: $1$fordecl_block$1.i[31:0]$46
+    41/59: $1\search_mask[19:0] [16]
+    42/59: $1\search_mask[19:0] [15]
+    43/59: $1\search_mask[19:0] [14]
+    44/59: $1\search_mask[19:0] [13]
+    45/59: $1\search_mask[19:0] [12]
+    46/59: $1\search_mask[19:0] [11]
+    47/59: $1\search_mask[19:0] [10]
+    48/59: $1\search_mask[19:0] [9]
+    49/59: $1\search_mask[19:0] [8]
+    50/59: $1\search_mask[19:0] [7]
+    51/59: $1\search_mask[19:0] [6]
+    52/59: $1\search_mask[19:0] [5]
+    53/59: $1\search_mask[19:0] [4]
+    54/59: $1\search_mask[19:0] [3]
+    55/59: $1\search_mask[19:0] [2]
+    56/59: $1\search_mask[19:0] [1]
+    57/59: $1\search_mask[19:0] [0]
+    58/59: $1$fordecl_block$3.i[31:0]$47
+    59/59: $18\search_mask[16:16]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$31'.
+     1/4: $2\protected_sar_code[18:17] [1]
+     2/4: $2\protected_sar_code[18:17] [0]
+     3/4: $1\protected_sar_code[18:17] [1]
+     4/4: $1\protected_sar_code[18:17] [0]
+Creating decoders for process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$25'.
+     1/2: $2\compensated_meas[35:0]
+     2/2: $1\compensated_meas[35:0]
+
+2.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\sar_calib_ctrl_serial.$fordecl_block$7.k' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$212'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\dac_p_force' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$211'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\dac_n_force' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$211'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\calc_result_ext' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$209'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\avg_rounded' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$208'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\next_state' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$97'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\search_mask' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$42'.
+No latch inferred for signal `\sar_calib_ctrl_serial.$fordecl_block$1.i' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$42'.
+No latch inferred for signal `\sar_calib_ctrl_serial.$fordecl_block$3.i' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$42'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\target_drive_code' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$31'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\protected_sar_code' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$31'.
+No latch inferred for signal `\sar_calib_ctrl_serial.$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:412$9' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$31'.
+No latch inferred for signal `\sar_calib_ctrl_serial.\compensated_meas' from process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$25'.
+
+2.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\sar_calib_ctrl_serial.\calib_done' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1424' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\calib_done_pulse' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1429' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\calib_mode_en' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1434' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\w_wr_en' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1439' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\w_wr_addr' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1444' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\w_wr_data' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1449' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\calib_overrange' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1454' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\overrange_bits' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1459' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\target_bit' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1464' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\avg_cnt' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1469' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\wait_cnt' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1474' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\sar_ptr' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1479' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\sar_code' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1484' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\calc_cnt' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1489' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\temp_acc' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1494' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\accumulator' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1499' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\meas_val_p' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1504' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\meas_val_n' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1509' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\avg_rounded_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1514' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\calc_result_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1519' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\orr_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1524' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\wr_idx_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1529' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\comp_out_r' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1534' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\comp_out_rr' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1539' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\overrange_acc' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1544' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.$fordecl_block$5.i' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1549' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:587$10' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1554' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:595$11' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1559' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.$bitselwrite$pos$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:653$12' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1564' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\shadow_weights[0]' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1569' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\shadow_weights[1]' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1574' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\shadow_weights[2]' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1579' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\shadow_weights[3]' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1584' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\shadow_weights[4]' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1589' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\shadow_weights[5]' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1594' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\shadow_weights[6]' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1599' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\shadow_weights[7]' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1604' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\shadow_weights[8]' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1609' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\shadow_weights[9]' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1614' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\shadow_weights[10]' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1619' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\shadow_weights[11]' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1624' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\shadow_weights[12]' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1629' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\shadow_weights[13]' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1634' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\shadow_weights[14]' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1639' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\shadow_weights[15]' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1644' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\shadow_weights[16]' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1649' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\shadow_weights[17]' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1654' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\shadow_weights[18]' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1659' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\shadow_weights[19]' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1664' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.$mem2reg_rd$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:610$13_ADDR' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1669' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.$mem2reg_rd$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:610$13_DATA' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1674' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.$mem2reg_wr$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:650$14_ADDR' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1679' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.$mem2reg_wr$\shadow_weights$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:650$14_DATA' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1684' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.$lookahead\sar_code$116' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1689' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.$lookahead\overrange_bits$117' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+  created $adff cell `$procdff$1694' with positive edge clock and positive level reset.
+Creating register for signal `\sar_calib_ctrl_serial.\state' using process `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:445$95'.
+  created $adff cell `$procdff$1699' with positive edge clock and positive level reset.
+
+2.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$212'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$212'.
+Found and cleaned up 2 empty switches in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$211'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$211'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$209'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$208'.
+Found and cleaned up 14 empty switches in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:489$118'.
+Found and cleaned up 1 empty switch in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$97'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$97'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:445$95'.
+Found and cleaned up 21 empty switches in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$42'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$42'.
+Found and cleaned up 2 empty switches in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$31'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$31'.
+Found and cleaned up 2 empty switches in `\sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$25'.
+Removing empty process `sar_calib_ctrl_serial.$proc$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$25'.
+Cleaned up 43 empty switches.
+
+2.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_calib_ctrl_serial.
+<suppressed ~160 debug messages>
+
+2.3. Executing FLATTEN pass (flatten design).
+
+2.4. Executing FUTURE pass.
+
+2.5. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_calib_ctrl_serial.
+
+2.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_calib_ctrl_serial..
+Removed 141 unused cells and 561 unused wires.
+<suppressed ~142 debug messages>
+
+2.7. Executing CHECK pass (checking for obvious problems).
+Checking module sar_calib_ctrl_serial...
+Found and reported 0 problems.
+
+2.8. Executing OPT pass (performing simple optimizations).
+
+2.8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_calib_ctrl_serial.
+
+2.8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_calib_ctrl_serial'.
+<suppressed ~957 debug messages>
+Removed a total of 319 cells.
+
+2.8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sar_calib_ctrl_serial..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $procmux$1184.
+    dead port 1/2 on $mux $procmux$1190.
+    dead port 1/2 on $mux $procmux$1196.
+    dead port 1/2 on $mux $procmux$1202.
+    dead port 1/2 on $mux $procmux$1208.
+    dead port 1/2 on $mux $procmux$1214.
+    dead port 1/2 on $mux $procmux$1220.
+    dead port 1/2 on $mux $procmux$1226.
+    dead port 1/2 on $mux $procmux$1232.
+    dead port 1/2 on $mux $procmux$1238.
+    dead port 1/2 on $mux $procmux$1244.
+    dead port 1/2 on $mux $procmux$1250.
+    dead port 1/2 on $mux $procmux$1256.
+    dead port 1/2 on $mux $procmux$1262.
+    dead port 1/2 on $mux $procmux$1268.
+    dead port 1/2 on $mux $procmux$1274.
+    dead port 2/2 on $mux $procmux$1286.
+    dead port 2/2 on $mux $procmux$1289.
+    dead port 2/2 on $mux $procmux$1292.
+    dead port 2/2 on $mux $procmux$1295.
+    dead port 2/2 on $mux $procmux$1298.
+    dead port 2/2 on $mux $procmux$1301.
+    dead port 2/2 on $mux $procmux$1304.
+    dead port 2/2 on $mux $procmux$1307.
+    dead port 2/2 on $mux $procmux$1310.
+    dead port 2/2 on $mux $procmux$1313.
+    dead port 2/2 on $mux $procmux$1316.
+    dead port 2/2 on $mux $procmux$1319.
+    dead port 2/2 on $mux $procmux$1322.
+    dead port 2/2 on $mux $procmux$1325.
+    dead port 2/2 on $mux $procmux$1328.
+    dead port 2/2 on $mux $procmux$1331.
+    dead port 2/2 on $mux $procmux$1391.
+    dead port 1/2 on $mux $procmux$1397.
+    dead port 1/2 on $mux $procmux$1403.
+    dead port 1/2 on $mux $procmux$1415.
+    dead port 1/2 on $mux $procmux$273.
+    dead port 1/2 on $mux $procmux$279.
+    dead port 2/2 on $mux $procmux$291.
+    dead port 1/2 on $mux $procmux$390.
+    dead port 1/2 on $mux $procmux$393.
+    dead port 2/2 on $mux $procmux$395.
+    dead port 1/2 on $mux $procmux$426.
+    dead port 2/2 on $mux $procmux$428.
+    dead port 2/2 on $mux $procmux$455.
+    dead port 1/2 on $mux $procmux$1160.
+    dead port 1/2 on $mux $procmux$1166.
+    dead port 1/2 on $mux $procmux$1172.
+    dead port 1/2 on $mux $procmux$1178.
+Removed 49 multiplexer ports.
+<suppressed ~79 debug messages>
+
+2.8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sar_calib_ctrl_serial.
+    New ctrl vector for $pmux cell $procmux$487: { $procmux$1125_CTRL $auto$opt_reduce.cc:137:opt_pmux$1701 }
+    New ctrl vector for $pmux cell $procmux$1000: { $procmux$1125_CTRL $procmux$1124_CTRL $auto$opt_reduce.cc:137:opt_pmux$1703 }
+    New ctrl vector for $pmux cell $procmux$877: { $procmux$1004_CMP $auto$opt_reduce.cc:137:opt_pmux$1705 }
+    New ctrl vector for $pmux cell $procmux$1129: { $auto$opt_reduce.cc:137:opt_pmux$1707 $procmux$1002_CMP $procmux$1001_CMP }
+    New ctrl vector for $pmux cell $procmux$889: { $procmux$1004_CMP $auto$opt_reduce.cc:137:opt_pmux$1709 }
+    New ctrl vector for $pmux cell $procmux$1024: { $procmux$1126_CTRL $procmux$1125_CTRL $auto$opt_reduce.cc:137:opt_pmux$1711 }
+    New ctrl vector for $pmux cell $procmux$901: { $procmux$1003_CMP $auto$opt_reduce.cc:137:opt_pmux$1713 }
+    New ctrl vector for $pmux cell $procmux$913: { $procmux$1004_CMP $auto$opt_reduce.cc:137:opt_pmux$1715 }
+    New ctrl vector for $pmux cell $procmux$1048: { $procmux$1126_CTRL $procmux$1125_CTRL $auto$opt_reduce.cc:137:opt_pmux$1717 }
+    New ctrl vector for $pmux cell $procmux$925: { $procmux$1124_CTRL $auto$opt_reduce.cc:137:opt_pmux$1719 }
+    New ctrl vector for $pmux cell $procmux$1069: { $procmux$1005_CMP $auto$opt_reduce.cc:137:opt_pmux$1721 }
+    New ctrl vector for $pmux cell $procmux$943: { $procmux$1124_CTRL $auto$opt_reduce.cc:137:opt_pmux$1723 }
+    New ctrl vector for $pmux cell $procmux$1083: { $auto$opt_reduce.cc:137:opt_pmux$1725 $procmux$1002_CMP $procmux$1001_CMP }
+    New ctrl vector for $pmux cell $procmux$961: { $procmux$1021_CMP $procmux$1005_CMP $auto$opt_reduce.cc:137:opt_pmux$1727 }
+    New ctrl vector for $pmux cell $procmux$973: { $procmux$1125_CTRL $procmux$1124_CTRL $auto$opt_reduce.cc:137:opt_pmux$1729 }
+    New ctrl vector for $pmux cell $procmux$1119: { $procmux$1021_CMP $auto$opt_reduce.cc:137:opt_pmux$1731 $procmux$1002_CMP }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1700: { $procmux$1022_CMP $procmux$1021_CMP $procmux$1005_CMP $procmux$1004_CMP $procmux$1003_CMP $procmux$1002_CMP $procmux$1001_CMP $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:396$23_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:393$18_Y }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1702: { $procmux$1022_CMP $procmux$1021_CMP $procmux$1005_CMP $procmux$1004_CMP $procmux$1003_CMP $procmux$1002_CMP $procmux$1001_CMP $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:394$20_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:391$15_Y }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1704: { $procmux$1022_CMP $procmux$1021_CMP $procmux$1005_CMP $procmux$1003_CMP $procmux$1002_CMP $procmux$1001_CMP $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:396$23_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:395$21_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:394$20_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:393$18_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:392$16_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:391$15_Y }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1706: { $procmux$1005_CMP $procmux$1004_CMP $procmux$1003_CMP $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:396$23_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:395$21_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:394$20_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:393$18_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:392$16_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:391$15_Y }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1708: { $procmux$1022_CMP $procmux$1021_CMP $procmux$1005_CMP $procmux$1003_CMP $procmux$1002_CMP $procmux$1001_CMP $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:396$23_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:395$21_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:394$20_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:393$18_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:392$16_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:391$15_Y }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1710: { $procmux$1022_CMP $procmux$1021_CMP $procmux$1005_CMP $procmux$1004_CMP $procmux$1003_CMP $procmux$1002_CMP $procmux$1001_CMP $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:396$23_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:393$18_Y }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1712: { $procmux$1022_CMP $procmux$1021_CMP $procmux$1005_CMP $procmux$1004_CMP $procmux$1002_CMP $procmux$1001_CMP $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:396$23_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:395$21_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:394$20_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:393$18_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:392$16_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:391$15_Y }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1714: { $procmux$1022_CMP $procmux$1021_CMP $procmux$1005_CMP $procmux$1003_CMP $procmux$1002_CMP $procmux$1001_CMP $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:396$23_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:395$21_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:394$20_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:393$18_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:392$16_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:391$15_Y }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1716: { $procmux$1022_CMP $procmux$1021_CMP $procmux$1005_CMP $procmux$1004_CMP $procmux$1003_CMP $procmux$1002_CMP $procmux$1001_CMP $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:396$23_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:393$18_Y }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1718: { $procmux$1022_CMP $procmux$1021_CMP $procmux$1005_CMP $procmux$1004_CMP $procmux$1003_CMP $procmux$1002_CMP $procmux$1001_CMP $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:395$21_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:394$20_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:392$16_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:391$15_Y }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1720: { $procmux$1022_CMP $procmux$1004_CMP $procmux$1003_CMP $procmux$1002_CMP $procmux$1001_CMP $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:396$23_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:395$21_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:394$20_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:393$18_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:392$16_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:391$15_Y }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1722: { $procmux$1022_CMP $procmux$1021_CMP $procmux$1005_CMP $procmux$1004_CMP $procmux$1003_CMP $procmux$1002_CMP $procmux$1001_CMP $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:395$21_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:394$20_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:392$16_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:391$15_Y }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1724: { $procmux$1021_CMP $procmux$1005_CMP $procmux$1004_CMP $procmux$1003_CMP $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:396$23_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:395$21_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:394$20_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:393$18_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:392$16_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:391$15_Y }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1726: { $procmux$1022_CMP $procmux$1004_CMP $procmux$1003_CMP $procmux$1002_CMP $procmux$1001_CMP $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:396$23_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:395$21_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:394$20_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:393$18_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:392$16_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:391$15_Y }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1728: { $procmux$1022_CMP $procmux$1021_CMP $procmux$1005_CMP $procmux$1004_CMP $procmux$1003_CMP $procmux$1002_CMP $procmux$1001_CMP $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:394$20_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:391$15_Y }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$1730: { $procmux$1005_CMP $procmux$1004_CMP $procmux$1003_CMP $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:396$23_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:395$21_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:394$20_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:393$18_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:392$16_Y $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:391$15_Y }
+  Optimizing cells in module \sar_calib_ctrl_serial.
+Performed a total of 32 changes.
+
+2.8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_calib_ctrl_serial'.
+<suppressed ~48 debug messages>
+Removed a total of 16 cells.
+
+2.8.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_calib_ctrl_serial..
+Removed 0 unused cells and 332 unused wires.
+<suppressed ~1 debug messages>
+
+2.8.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_calib_ctrl_serial.
+
+2.8.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.8.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sar_calib_ctrl_serial..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~71 debug messages>
+
+2.8.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sar_calib_ctrl_serial.
+Performed a total of 0 changes.
+
+2.8.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_calib_ctrl_serial'.
+Removed a total of 0 cells.
+
+2.8.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_calib_ctrl_serial..
+
+2.8.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_calib_ctrl_serial.
+
+2.8.14. Finished OPT passes. (There is nothing left to do.)
+
+2.9. Executing WREDUCE pass (reducing word size of cells).
+Removed top 2 bits (of 4) from port B of cell sar_calib_ctrl_serial.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:391$15 ($eq).
+Removed top 2 bits (of 4) from port B of cell sar_calib_ctrl_serial.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:392$16 ($eq).
+Removed top 1 bits (of 4) from port B of cell sar_calib_ctrl_serial.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:393$18 ($eq).
+Removed top 1 bits (of 4) from port B of cell sar_calib_ctrl_serial.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:394$20 ($eq).
+Removed top 1 bits (of 4) from port B of cell sar_calib_ctrl_serial.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:395$21 ($eq).
+Removed top 1 bits (of 4) from port B of cell sar_calib_ctrl_serial.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:396$23 ($eq).
+Converting cell sar_calib_ctrl_serial.$neg$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$37 ($neg) from signed to unsigned.
+Removed top 1 bits (of 6) from port A of cell sar_calib_ctrl_serial.$neg$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$37 ($neg).
+Removed top 31 bits (of 32) from port A of cell sar_calib_ctrl_serial.$lt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:432$48 ($lt).
+Removed top 31 bits (of 32) from port A of cell sar_calib_ctrl_serial.$lt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:432$50 ($lt).
+Removed top 30 bits (of 32) from port A of cell sar_calib_ctrl_serial.$lt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:432$52 ($lt).
+Removed top 30 bits (of 32) from port A of cell sar_calib_ctrl_serial.$lt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:432$54 ($lt).
+Removed top 29 bits (of 32) from port A of cell sar_calib_ctrl_serial.$lt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:432$56 ($lt).
+Removed top 29 bits (of 32) from port A of cell sar_calib_ctrl_serial.$lt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:432$58 ($lt).
+Removed top 29 bits (of 32) from port A of cell sar_calib_ctrl_serial.$lt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:432$60 ($lt).
+Removed top 29 bits (of 32) from port A of cell sar_calib_ctrl_serial.$lt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:432$62 ($lt).
+Removed top 28 bits (of 32) from port A of cell sar_calib_ctrl_serial.$lt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:432$64 ($lt).
+Removed top 28 bits (of 32) from port A of cell sar_calib_ctrl_serial.$lt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:432$66 ($lt).
+Removed top 28 bits (of 32) from port A of cell sar_calib_ctrl_serial.$lt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:432$68 ($lt).
+Removed top 28 bits (of 32) from port A of cell sar_calib_ctrl_serial.$lt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:432$70 ($lt).
+Removed top 28 bits (of 32) from port A of cell sar_calib_ctrl_serial.$lt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:432$72 ($lt).
+Removed top 28 bits (of 32) from port A of cell sar_calib_ctrl_serial.$lt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:432$74 ($lt).
+Removed top 28 bits (of 32) from port A of cell sar_calib_ctrl_serial.$lt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:432$76 ($lt).
+Removed top 28 bits (of 32) from port A of cell sar_calib_ctrl_serial.$lt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:432$78 ($lt).
+Removed top 27 bits (of 32) from port A of cell sar_calib_ctrl_serial.$lt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:432$80 ($lt).
+Removed top 27 bits (of 32) from port A of cell sar_calib_ctrl_serial.$lt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:432$82 ($lt).
+Removed top 27 bits (of 32) from port A of cell sar_calib_ctrl_serial.$lt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:432$84 ($lt).
+Removed top 27 bits (of 32) from port A of cell sar_calib_ctrl_serial.$lt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:432$86 ($lt).
+Removed top 3 bits (of 4) from mux cell sar_calib_ctrl_serial.$ternary$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:453$98 ($mux).
+Removed top 1 bits (of 4) from mux cell sar_calib_ctrl_serial.$ternary$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:457$102 ($mux).
+Removed top 3 bits (of 4) from mux cell sar_calib_ctrl_serial.$ternary$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:459$104 ($mux).
+Removed top 3 bits (of 4) from mux cell sar_calib_ctrl_serial.$ternary$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:463$108 ($mux).
+Converting cell sar_calib_ctrl_serial.$neg$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$155 ($neg) from signed to unsigned.
+Removed top 1 bits (of 6) from port A of cell sar_calib_ctrl_serial.$neg$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$155 ($neg).
+Removed top 31 bits (of 32) from port B of cell sar_calib_ctrl_serial.$gt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:589$163 ($gt).
+Removed top 31 bits (of 32) from port B of cell sar_calib_ctrl_serial.$gt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:597$182 ($gt).
+Converting cell sar_calib_ctrl_serial.$neg$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$198 ($neg) from signed to unsigned.
+Removed top 1 bits (of 6) from port A of cell sar_calib_ctrl_serial.$neg$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:0$198 ($neg).
+Removed top 2 bits (of 5) from port B of cell sar_calib_ctrl_serial.$ge$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$216 ($ge).
+Removed top 2 bits (of 5) from port B of cell sar_calib_ctrl_serial.$ge$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:780$220 ($ge).
+Removed top 29 bits (of 32) from port B of cell sar_calib_ctrl_serial.$gt$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:781$225 ($gt).
+Removed top 20 bits (of 30) from port B of cell sar_calib_ctrl_serial.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$228 ($eq).
+Removed top 19 bits (of 30) from port B of cell sar_calib_ctrl_serial.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$230 ($eq).
+Removed top 18 bits (of 30) from port B of cell sar_calib_ctrl_serial.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$232 ($eq).
+Removed top 17 bits (of 30) from port B of cell sar_calib_ctrl_serial.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$234 ($eq).
+Removed top 16 bits (of 30) from port B of cell sar_calib_ctrl_serial.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$236 ($eq).
+Removed top 15 bits (of 30) from port B of cell sar_calib_ctrl_serial.$eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$238 ($eq).
+Removed top 1 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$307_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$308_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$309_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$310_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$311_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$312_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$313_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$314_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$315_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$316_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$317_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$318_CMP0 ($eq).
+Removed top 3 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$319_CMP0 ($eq).
+Removed top 3 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$320_CMP0 ($eq).
+Removed top 4 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$321_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$591_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$602_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$614_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$627_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$641_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$656_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$672_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$689_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$707_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$726_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$746_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$767_CMP0 ($eq).
+Removed top 3 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$789_CMP0 ($eq).
+Removed top 3 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$812_CMP0 ($eq).
+Removed top 4 bits (of 5) from port B of cell sar_calib_ctrl_serial.$procmux$836_CMP0 ($eq).
+Removed top 3 bits (of 4) from port B of cell sar_calib_ctrl_serial.$procmux$1021_CMP0 ($eq).
+Removed top 6 bits (of 36) from mux cell sar_calib_ctrl_serial.$procmux$1418 ($mux).
+Removed top 6 bits (of 36) from port Y of cell sar_calib_ctrl_serial.$add$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:403$27 ($add).
+Removed top 6 bits (of 36) from port A of cell sar_calib_ctrl_serial.$add$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:403$27 ($add).
+Removed top 6 bits (of 36) from mux cell sar_calib_ctrl_serial.$procmux$1412 ($mux).
+Removed top 6 bits (of 36) from port Y of cell sar_calib_ctrl_serial.$add$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:405$30 ($add).
+Removed top 6 bits (of 36) from port A of cell sar_calib_ctrl_serial.$add$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:405$30 ($add).
+Removed top 6 bits (of 36) from port Y of cell sar_calib_ctrl_serial.$add$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:405$29 ($add).
+Removed top 6 bits (of 36) from port A of cell sar_calib_ctrl_serial.$add$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:405$29 ($add).
+Removed top 6 bits (of 36) from wire sar_calib_ctrl_serial.$2\compensated_meas[35:0].
+Removed top 6 bits (of 36) from wire sar_calib_ctrl_serial.$add$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:403$27_Y.
+Removed top 6 bits (of 36) from wire sar_calib_ctrl_serial.$add$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:405$29_Y.
+Removed top 3 bits (of 4) from wire sar_calib_ctrl_serial.$ternary$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:453$98_Y.
+Removed top 1 bits (of 4) from wire sar_calib_ctrl_serial.$ternary$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:457$102_Y.
+Removed top 3 bits (of 4) from wire sar_calib_ctrl_serial.$ternary$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:459$104_Y.
+Removed top 6 bits (of 36) from wire sar_calib_ctrl_serial.compensated_meas.
+
+2.10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_calib_ctrl_serial..
+Removed 0 unused cells and 7 unused wires.
+<suppressed ~1 debug messages>
+
+2.11. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.12. Executing OPT pass (performing simple optimizations).
+
+2.12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_calib_ctrl_serial.
+
+2.12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_calib_ctrl_serial'.
+Removed a total of 0 cells.
+
+2.12.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_calib_ctrl_serial..
+
+2.12.4. Finished fast OPT passes.
+
+2.13. Printing statistics.
+
+=== sar_calib_ctrl_serial ===
+
+   Number of wires:                343
+   Number of wire bits:           3985
+   Number of public wires:          65
+   Number of public wire bits:    1162
+   Number of ports:                 14
+   Number of port bits:            104
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                366
+     $add                            9
+     $adff                          46
+     $and                            3
+     $check                          9
+     $eq                            62
+     $ge                             3
+     $gt                             3
+     $le                             2
+     $logic_and                      5
+     $logic_not                      7
+     $logic_or                       6
+     $lt                            21
+     $mux                          138
+     $ne                             1
+     $neg                            3
+     $not                            2
+     $or                             5
+     $pmux                          21
+     $reduce_or                     11
+     $shift                          5
+     $shiftx                         1
+     $sub                            3
+
+2.14. Executing CHECK pass (checking for obvious problems).
+Checking module sar_calib_ctrl_serial...
+Found and reported 0 problems.
+
+3. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+4. Executing OPT pass (performing simple optimizations).
+
+4.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_calib_ctrl_serial.
+
+4.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_calib_ctrl_serial'.
+Removed a total of 0 cells.
+
+4.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sar_calib_ctrl_serial..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~71 debug messages>
+
+4.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sar_calib_ctrl_serial.
+Performed a total of 0 changes.
+
+4.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_calib_ctrl_serial'.
+Removed a total of 0 cells.
+
+4.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$1664 ($adff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = \shadow_weights[19]).
+Adding EN signal on $procdff$1659 ($adff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = \shadow_weights[18]).
+Adding EN signal on $procdff$1654 ($adff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = \shadow_weights[17]).
+Adding EN signal on $procdff$1649 ($adff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = \shadow_weights[16]).
+Adding EN signal on $procdff$1644 ($adff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = \shadow_weights[15]).
+Adding EN signal on $procdff$1639 ($adff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = \shadow_weights[14]).
+Adding EN signal on $procdff$1634 ($adff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = \shadow_weights[13]).
+Adding EN signal on $procdff$1629 ($adff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = \shadow_weights[12]).
+Adding EN signal on $procdff$1624 ($adff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = \shadow_weights[11]).
+Adding EN signal on $procdff$1619 ($adff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = \shadow_weights[10]).
+Adding EN signal on $procdff$1614 ($adff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = \shadow_weights[9]).
+Adding EN signal on $procdff$1609 ($adff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = \shadow_weights[8]).
+Adding EN signal on $procdff$1604 ($adff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = \shadow_weights[7]).
+Adding EN signal on $procdff$1599 ($adff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = \shadow_weights[6]).
+Adding EN signal on $procdff$1594 ($adff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = \shadow_weights[5]).
+Adding EN signal on $procdff$1589 ($adff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = \shadow_weights[4]).
+Adding EN signal on $procdff$1584 ($adff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = \shadow_weights[3]).
+Adding EN signal on $procdff$1579 ($adff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = \shadow_weights[2]).
+Adding EN signal on $procdff$1574 ($adff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = \shadow_weights[1]).
+Adding EN signal on $procdff$1569 ($adff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = \shadow_weights[0]).
+Adding EN signal on $procdff$1544 ($adff) from module sar_calib_ctrl_serial (D = $0\overrange_acc[0:0], Q = \overrange_acc).
+Adding EN signal on $procdff$1529 ($adff) from module sar_calib_ctrl_serial (D = $0\wr_idx_r[4:0], Q = \wr_idx_r).
+Adding EN signal on $procdff$1524 ($adff) from module sar_calib_ctrl_serial (D = $0\orr_r[0:0], Q = \orr_r).
+Adding EN signal on $procdff$1519 ($adff) from module sar_calib_ctrl_serial (D = $0\calc_result_r[31:0], Q = \calc_result_r).
+Adding EN signal on $procdff$1514 ($adff) from module sar_calib_ctrl_serial (D = $0\avg_rounded_r[36:0], Q = \avg_rounded_r).
+Adding EN signal on $procdff$1509 ($adff) from module sar_calib_ctrl_serial (D = $0\meas_val_n[29:0], Q = \meas_val_n).
+Adding EN signal on $procdff$1504 ($adff) from module sar_calib_ctrl_serial (D = $0\meas_val_p[29:0], Q = \meas_val_p).
+Adding EN signal on $procdff$1499 ($adff) from module sar_calib_ctrl_serial (D = $0\accumulator[36:0], Q = \accumulator).
+Adding EN signal on $procdff$1494 ($adff) from module sar_calib_ctrl_serial (D = $0\temp_acc[35:0], Q = \temp_acc).
+Adding EN signal on $procdff$1489 ($adff) from module sar_calib_ctrl_serial (D = $0\calc_cnt[4:0], Q = \calc_cnt).
+Adding EN signal on $procdff$1484 ($adff) from module sar_calib_ctrl_serial (D = $0$lookahead\sar_code$116[19:0]$127, Q = \sar_code).
+Adding EN signal on $procdff$1479 ($adff) from module sar_calib_ctrl_serial (D = $0\sar_ptr[4:0], Q = \sar_ptr).
+Adding EN signal on $procdff$1474 ($adff) from module sar_calib_ctrl_serial (D = $0\wait_cnt[4:0], Q = \wait_cnt).
+Adding EN signal on $procdff$1469 ($adff) from module sar_calib_ctrl_serial (D = $0\avg_cnt[4:0], Q = \avg_cnt).
+Adding EN signal on $procdff$1464 ($adff) from module sar_calib_ctrl_serial (D = $0\target_bit[4:0], Q = \target_bit).
+Adding EN signal on $procdff$1459 ($adff) from module sar_calib_ctrl_serial (D = $0$lookahead\overrange_bits$117[19:0]$128, Q = \overrange_bits).
+Adding EN signal on $procdff$1454 ($adff) from module sar_calib_ctrl_serial (D = $0\calib_overrange[0:0], Q = \calib_overrange).
+Adding EN signal on $procdff$1449 ($adff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = \w_wr_data).
+Adding EN signal on $procdff$1444 ($adff) from module sar_calib_ctrl_serial (D = \wr_idx_r, Q = \w_wr_addr).
+Adding EN signal on $procdff$1434 ($adff) from module sar_calib_ctrl_serial (D = $0\calib_mode_en[0:0], Q = \calib_mode_en).
+Adding EN signal on $procdff$1424 ($adff) from module sar_calib_ctrl_serial (D = $0\calib_done[0:0], Q = \calib_done).
+
+4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_calib_ctrl_serial..
+Removed 42 unused cells and 42 unused wires.
+<suppressed ~43 debug messages>
+
+4.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_calib_ctrl_serial.
+<suppressed ~25 debug messages>
+
+4.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sar_calib_ctrl_serial..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~49 debug messages>
+
+4.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sar_calib_ctrl_serial.
+Performed a total of 0 changes.
+
+4.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_calib_ctrl_serial'.
+<suppressed ~69 debug messages>
+Removed a total of 23 cells.
+
+4.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_calib_ctrl_serial..
+Removed 3 unused cells and 26 unused wires.
+<suppressed ~4 debug messages>
+
+4.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_calib_ctrl_serial.
+
+4.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sar_calib_ctrl_serial..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~49 debug messages>
+
+4.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sar_calib_ctrl_serial.
+Performed a total of 0 changes.
+
+4.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_calib_ctrl_serial'.
+Removed a total of 0 cells.
+
+4.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_calib_ctrl_serial..
+
+4.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_calib_ctrl_serial.
+
+4.23. Finished OPT passes. (There is nothing left to do.)
+
+5. Executing ASYNC2SYNC pass.
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1739 ($adffe): ARST=\rst_n, D=\calc_result_r [29:0], Q=\shadow_weights[19]
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1742 ($adffe): ARST=\rst_n, D=\calc_result_r [29:0], Q=\shadow_weights[18]
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1745 ($adffe): ARST=\rst_n, D=\calc_result_r [29:0], Q=\shadow_weights[17]
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1748 ($adffe): ARST=\rst_n, D=\calc_result_r [29:0], Q=\shadow_weights[16]
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1751 ($adffe): ARST=\rst_n, D=\calc_result_r [29:0], Q=\shadow_weights[15]
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1754 ($adffe): ARST=\rst_n, D=\calc_result_r [29:0], Q=\shadow_weights[14]
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1757 ($adffe): ARST=\rst_n, D=\calc_result_r [29:0], Q=\shadow_weights[13]
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1760 ($adffe): ARST=\rst_n, D=\calc_result_r [29:0], Q=\shadow_weights[12]
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1763 ($adffe): ARST=\rst_n, D=\calc_result_r [29:0], Q=\shadow_weights[11]
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1766 ($adffe): ARST=\rst_n, D=\calc_result_r [29:0], Q=\shadow_weights[10]
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1769 ($adffe): ARST=\rst_n, D=\calc_result_r [29:0], Q=\shadow_weights[9]
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1772 ($adffe): ARST=\rst_n, D=\calc_result_r [29:0], Q=\shadow_weights[8]
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1775 ($adffe): ARST=\rst_n, D=\calc_result_r [29:0], Q=\shadow_weights[7]
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1778 ($adffe): ARST=\rst_n, D=\calc_result_r [29:0], Q=\shadow_weights[6]
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1781 ($adffe): ARST=\rst_n, D=\calc_result_r [29:0], Q=\shadow_weights[5]
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1784 ($adffe): ARST=\rst_n, D=\calc_result_r [29:0], Q=\shadow_weights[4]
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1787 ($adffe): ARST=\rst_n, D=\calc_result_r [29:0], Q=\shadow_weights[3]
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1790 ($adffe): ARST=\rst_n, D=\calc_result_r [29:0], Q=\shadow_weights[2]
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1793 ($adffe): ARST=\rst_n, D=\calc_result_r [29:0], Q=\shadow_weights[1]
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1796 ($adffe): ARST=\rst_n, D=\calc_result_r [29:0], Q=\shadow_weights[0]
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1799 ($adffe): ARST=\rst_n, D=$0\overrange_acc[0:0], Q=\overrange_acc
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1806 ($adffe): ARST=\rst_n, D=$0\wr_idx_r[4:0], Q=\wr_idx_r
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1809 ($adffe): ARST=\rst_n, D=$0\orr_r[0:0], Q=\orr_r
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1812 ($adffe): ARST=\rst_n, D=$0\calc_result_r[31:0], Q=\calc_result_r
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1815 ($adffe): ARST=\rst_n, D=$0\avg_rounded_r[36:0], Q=\avg_rounded_r
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1818 ($adffe): ARST=\rst_n, D=$0\meas_val_n[29:0], Q=\meas_val_n
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1827 ($adffe): ARST=\rst_n, D=$0\meas_val_p[29:0], Q=\meas_val_p
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1836 ($adffe): ARST=\rst_n, D=$0\accumulator[36:0], Q=\accumulator
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1839 ($adffe): ARST=\rst_n, D=$0\temp_acc[35:0], Q=\temp_acc
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1854 ($adffe): ARST=\rst_n, D=$0\calc_cnt[4:0], Q=\calc_cnt
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1867 ($adffe): ARST=\rst_n, D=$0$lookahead\sar_code$116[19:0]$127, Q=\sar_code
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1876 ($adffe): ARST=\rst_n, D=$0\sar_ptr[4:0], Q=\sar_ptr
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1887 ($adffe): ARST=\rst_n, D=$0\wait_cnt[4:0], Q=\wait_cnt
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1894 ($adffe): ARST=\rst_n, D=$0\avg_cnt[4:0], Q=\avg_cnt
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1897 ($adffe): ARST=\rst_n, D=$0\target_bit[4:0], Q=\target_bit
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1906 ($adffe): ARST=\rst_n, D=$0$lookahead\overrange_bits$117[19:0]$128, Q=\overrange_bits
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1913 ($adffe): ARST=\rst_n, D=$0\calib_overrange[0:0], Q=\calib_overrange
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1922 ($adffe): ARST=\rst_n, D=\calc_result_r [29:0], Q=\w_wr_data
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1923 ($adffe): ARST=\rst_n, D=\wr_idx_r, Q=\w_wr_addr
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1924 ($adffe): ARST=\rst_n, D=$0\calib_mode_en[0:0], Q=\calib_mode_en
+Replacing sar_calib_ctrl_serial.$auto$ff.cc:266:slice$1931 ($adffe): ARST=\rst_n, D=$0\calib_done[0:0], Q=\calib_done
+Replacing sar_calib_ctrl_serial.$procdff$1429 ($adff): ARST=\rst_n, D=$0\calib_done_pulse[0:0], Q=\calib_done_pulse
+Replacing sar_calib_ctrl_serial.$procdff$1439 ($adff): ARST=\rst_n, D=$0\w_wr_en[0:0], Q=\w_wr_en
+Replacing sar_calib_ctrl_serial.$procdff$1534 ($adff): ARST=\rst_n, D=\comp_out, Q=\comp_out_r
+Replacing sar_calib_ctrl_serial.$procdff$1539 ($adff): ARST=\rst_n, D=\comp_out_r, Q=\comp_out_rr
+Replacing sar_calib_ctrl_serial.$procdff$1699 ($adff): ARST=\rst_n, D=\next_state, Q=\state
+
+6. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+7. Executing OPT pass (performing simple optimizations).
+
+7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_calib_ctrl_serial.
+
+7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_calib_ctrl_serial'.
+Removed a total of 0 cells.
+
+7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sar_calib_ctrl_serial..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $auto$async2sync.cc:237:execute$1985.
+    dead port 2/2 on $mux $auto$async2sync.cc:237:execute$1987.
+    dead port 2/2 on $mux $auto$async2sync.cc:237:execute$2025.
+    dead port 1/3 on $pmux $procmux$1069.
+    dead port 1/3 on $pmux $procmux$877.
+    dead port 1/3 on $pmux $procmux$889.
+    dead port 1/3 on $pmux $procmux$901.
+    dead port 1/3 on $pmux $procmux$913.
+    dead port 1/4 on $pmux $procmux$961.
+Removed 9 multiplexer ports.
+<suppressed ~105 debug messages>
+
+7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sar_calib_ctrl_serial.
+Performed a total of 0 changes.
+
+7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_calib_ctrl_serial'.
+Removed a total of 0 cells.
+
+7.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $auto$ff.cc:266:slice$1742 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2242, Q = $auto$async2sync.cc:228:execute$1940, rval = 30'000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2249 ($sdff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = $auto$async2sync.cc:228:execute$1940).
+Adding SRST signal on $auto$ff.cc:266:slice$1739 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2246, Q = $auto$async2sync.cc:228:execute$1938, rval = 30'000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2251 ($sdff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = $auto$async2sync.cc:228:execute$1938).
+Adding SRST signal on $procdff$1699 ($dff) from module sar_calib_ctrl_serial (D = \next_state, Q = $auto$async2sync.cc:228:execute$2028, rval = 4'0000).
+Adding SRST signal on $procdff$1539 ($dff) from module sar_calib_ctrl_serial (D = \comp_out_r, Q = $auto$async2sync.cc:228:execute$2026, rval = 1'0).
+Adding SRST signal on $procdff$1534 ($dff) from module sar_calib_ctrl_serial (D = \comp_out, Q = $auto$async2sync.cc:228:execute$2024, rval = 1'0).
+Adding SRST signal on $procdff$1439 ($dff) from module sar_calib_ctrl_serial (D = $0\w_wr_en[0:0], Q = $auto$async2sync.cc:228:execute$2022, rval = 1'0).
+Adding SRST signal on $procdff$1429 ($dff) from module sar_calib_ctrl_serial (D = $procmux$546_Y, Q = $auto$async2sync.cc:228:execute$2020, rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$1931 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2086, Q = $auto$async2sync.cc:228:execute$2018, rval = 1'0).
+Adding EN signal on $auto$ff.cc:266:slice$2260 ($sdff) from module sar_calib_ctrl_serial (D = $0\calib_done[0:0], Q = $auto$async2sync.cc:228:execute$2018).
+Adding SRST signal on $auto$ff.cc:266:slice$1924 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2090, Q = $auto$async2sync.cc:228:execute$2016, rval = 1'0).
+Adding EN signal on $auto$ff.cc:266:slice$2262 ($sdff) from module sar_calib_ctrl_serial (D = $0\calib_mode_en[0:0], Q = $auto$async2sync.cc:228:execute$2016).
+Adding SRST signal on $auto$ff.cc:266:slice$1923 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2094, Q = $auto$async2sync.cc:228:execute$2014, rval = 5'00000).
+Adding EN signal on $auto$ff.cc:266:slice$2264 ($sdff) from module sar_calib_ctrl_serial (D = \wr_idx_r, Q = $auto$async2sync.cc:228:execute$2014).
+Adding SRST signal on $auto$ff.cc:266:slice$1922 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2098, Q = $auto$async2sync.cc:228:execute$2012, rval = 30'000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2266 ($sdff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = $auto$async2sync.cc:228:execute$2012).
+Adding SRST signal on $auto$ff.cc:266:slice$1913 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2102, Q = $auto$async2sync.cc:228:execute$2010, rval = 1'0).
+Adding EN signal on $auto$ff.cc:266:slice$2268 ($sdff) from module sar_calib_ctrl_serial (D = $0\calib_overrange[0:0], Q = $auto$async2sync.cc:228:execute$2010).
+Adding SRST signal on $auto$ff.cc:266:slice$1906 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2106, Q = $auto$async2sync.cc:228:execute$2008, rval = 20'00000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2270 ($sdff) from module sar_calib_ctrl_serial (D = $0$lookahead\overrange_bits$117[19:0]$128, Q = $auto$async2sync.cc:228:execute$2008).
+Adding SRST signal on $auto$ff.cc:266:slice$1897 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2110, Q = $auto$async2sync.cc:228:execute$2006, rval = 5'00110).
+Adding EN signal on $auto$ff.cc:266:slice$2272 ($sdff) from module sar_calib_ctrl_serial (D = $0\target_bit[4:0], Q = $auto$async2sync.cc:228:execute$2006).
+Adding SRST signal on $auto$ff.cc:266:slice$1894 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2114, Q = $auto$async2sync.cc:228:execute$2004, rval = 5'00000).
+Adding EN signal on $auto$ff.cc:266:slice$2274 ($sdff) from module sar_calib_ctrl_serial (D = $0\avg_cnt[4:0], Q = $auto$async2sync.cc:228:execute$2004).
+Adding SRST signal on $auto$ff.cc:266:slice$1887 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2118, Q = $auto$async2sync.cc:228:execute$2002, rval = 5'00000).
+Adding EN signal on $auto$ff.cc:266:slice$2276 ($sdff) from module sar_calib_ctrl_serial (D = $0\wait_cnt[4:0], Q = $auto$async2sync.cc:228:execute$2002).
+Adding SRST signal on $auto$ff.cc:266:slice$1876 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2122, Q = $auto$async2sync.cc:228:execute$2000, rval = 5'00000).
+Adding EN signal on $auto$ff.cc:266:slice$2278 ($sdff) from module sar_calib_ctrl_serial (D = $0\sar_ptr[4:0], Q = $auto$async2sync.cc:228:execute$2000).
+Adding SRST signal on $auto$ff.cc:266:slice$1867 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2126, Q = $auto$async2sync.cc:228:execute$1998, rval = 20'00000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2280 ($sdff) from module sar_calib_ctrl_serial (D = $0$lookahead\sar_code$116[19:0]$127, Q = $auto$async2sync.cc:228:execute$1998).
+Adding SRST signal on $auto$ff.cc:266:slice$1854 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2130, Q = $auto$async2sync.cc:228:execute$1996, rval = 5'00000).
+Adding EN signal on $auto$ff.cc:266:slice$2282 ($sdff) from module sar_calib_ctrl_serial (D = $0\calc_cnt[4:0], Q = $auto$async2sync.cc:228:execute$1996).
+Adding SRST signal on $auto$ff.cc:266:slice$1839 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2134, Q = $auto$async2sync.cc:228:execute$1994, rval = 36'000000000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2284 ($sdff) from module sar_calib_ctrl_serial (D = $0\temp_acc[35:0], Q = $auto$async2sync.cc:228:execute$1994).
+Adding SRST signal on $auto$ff.cc:266:slice$1836 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2138, Q = $auto$async2sync.cc:228:execute$1992, rval = 37'0000000000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2286 ($sdff) from module sar_calib_ctrl_serial (D = $0\accumulator[36:0], Q = $auto$async2sync.cc:228:execute$1992).
+Adding SRST signal on $auto$ff.cc:266:slice$1827 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2142, Q = $auto$async2sync.cc:228:execute$1990, rval = 30'000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2288 ($sdff) from module sar_calib_ctrl_serial (D = $0\meas_val_p[29:0], Q = $auto$async2sync.cc:228:execute$1990).
+Adding SRST signal on $auto$ff.cc:266:slice$1818 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2146, Q = $auto$async2sync.cc:228:execute$1988, rval = 30'000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2290 ($sdff) from module sar_calib_ctrl_serial (D = $0\meas_val_n[29:0], Q = $auto$async2sync.cc:228:execute$1988).
+Adding SRST signal on $auto$ff.cc:266:slice$1815 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2150, Q = $auto$async2sync.cc:228:execute$1986, rval = 37'0000000000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2292 ($sdff) from module sar_calib_ctrl_serial (D = $0\avg_rounded_r[36:0], Q = $auto$async2sync.cc:228:execute$1986).
+Adding SRST signal on $auto$ff.cc:266:slice$1812 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2154, Q = $auto$async2sync.cc:228:execute$1984, rval = 0).
+Adding EN signal on $auto$ff.cc:266:slice$2294 ($sdff) from module sar_calib_ctrl_serial (D = $0\calc_result_r[31:0], Q = $auto$async2sync.cc:228:execute$1984).
+Adding SRST signal on $auto$ff.cc:266:slice$1809 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2158, Q = $auto$async2sync.cc:228:execute$1982, rval = 1'0).
+Adding EN signal on $auto$ff.cc:266:slice$2296 ($sdff) from module sar_calib_ctrl_serial (D = $0\orr_r[0:0], Q = $auto$async2sync.cc:228:execute$1982).
+Adding SRST signal on $auto$ff.cc:266:slice$1806 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2162, Q = $auto$async2sync.cc:228:execute$1980, rval = 5'00110).
+Adding EN signal on $auto$ff.cc:266:slice$2298 ($sdff) from module sar_calib_ctrl_serial (D = $0\wr_idx_r[4:0], Q = $auto$async2sync.cc:228:execute$1980).
+Adding SRST signal on $auto$ff.cc:266:slice$1799 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2166, Q = $auto$async2sync.cc:228:execute$1978, rval = 1'0).
+Adding EN signal on $auto$ff.cc:266:slice$2300 ($sdff) from module sar_calib_ctrl_serial (D = $0\overrange_acc[0:0], Q = $auto$async2sync.cc:228:execute$1978).
+Adding SRST signal on $auto$ff.cc:266:slice$1796 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2170, Q = $auto$async2sync.cc:228:execute$1976, rval = 30'000000000000000000000100000000).
+Adding EN signal on $auto$ff.cc:266:slice$2302 ($sdff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = $auto$async2sync.cc:228:execute$1976).
+Adding SRST signal on $auto$ff.cc:266:slice$1793 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2174, Q = $auto$async2sync.cc:228:execute$1974, rval = 30'000000000000000000001000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2304 ($sdff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = $auto$async2sync.cc:228:execute$1974).
+Adding SRST signal on $auto$ff.cc:266:slice$1790 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2178, Q = $auto$async2sync.cc:228:execute$1972, rval = 30'000000000000000000010000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2306 ($sdff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = $auto$async2sync.cc:228:execute$1972).
+Adding SRST signal on $auto$ff.cc:266:slice$1787 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2182, Q = $auto$async2sync.cc:228:execute$1970, rval = 30'000000000000000000100000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2308 ($sdff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = $auto$async2sync.cc:228:execute$1970).
+Adding SRST signal on $auto$ff.cc:266:slice$1784 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2186, Q = $auto$async2sync.cc:228:execute$1968, rval = 30'000000000000000001000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2310 ($sdff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = $auto$async2sync.cc:228:execute$1968).
+Adding SRST signal on $auto$ff.cc:266:slice$1781 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2190, Q = $auto$async2sync.cc:228:execute$1966, rval = 30'000000000000000010000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2312 ($sdff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = $auto$async2sync.cc:228:execute$1966).
+Adding SRST signal on $auto$ff.cc:266:slice$1778 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2194, Q = $auto$async2sync.cc:228:execute$1964, rval = 30'000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2314 ($sdff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = $auto$async2sync.cc:228:execute$1964).
+Adding SRST signal on $auto$ff.cc:266:slice$1775 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2198, Q = $auto$async2sync.cc:228:execute$1962, rval = 30'000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2316 ($sdff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = $auto$async2sync.cc:228:execute$1962).
+Adding SRST signal on $auto$ff.cc:266:slice$1772 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2202, Q = $auto$async2sync.cc:228:execute$1960, rval = 30'000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2318 ($sdff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = $auto$async2sync.cc:228:execute$1960).
+Adding SRST signal on $auto$ff.cc:266:slice$1769 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2206, Q = $auto$async2sync.cc:228:execute$1958, rval = 30'000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2320 ($sdff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = $auto$async2sync.cc:228:execute$1958).
+Adding SRST signal on $auto$ff.cc:266:slice$1766 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2210, Q = $auto$async2sync.cc:228:execute$1956, rval = 30'000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2322 ($sdff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = $auto$async2sync.cc:228:execute$1956).
+Adding SRST signal on $auto$ff.cc:266:slice$1763 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2214, Q = $auto$async2sync.cc:228:execute$1954, rval = 30'000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2324 ($sdff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = $auto$async2sync.cc:228:execute$1954).
+Adding SRST signal on $auto$ff.cc:266:slice$1760 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2218, Q = $auto$async2sync.cc:228:execute$1952, rval = 30'000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2326 ($sdff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = $auto$async2sync.cc:228:execute$1952).
+Adding SRST signal on $auto$ff.cc:266:slice$1757 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2222, Q = $auto$async2sync.cc:228:execute$1950, rval = 30'000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2328 ($sdff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = $auto$async2sync.cc:228:execute$1950).
+Adding SRST signal on $auto$ff.cc:266:slice$1754 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2226, Q = $auto$async2sync.cc:228:execute$1948, rval = 30'000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2330 ($sdff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = $auto$async2sync.cc:228:execute$1948).
+Adding SRST signal on $auto$ff.cc:266:slice$1751 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2230, Q = $auto$async2sync.cc:228:execute$1946, rval = 30'000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2332 ($sdff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = $auto$async2sync.cc:228:execute$1946).
+Adding SRST signal on $auto$ff.cc:266:slice$1748 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2234, Q = $auto$async2sync.cc:228:execute$1944, rval = 30'000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2334 ($sdff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = $auto$async2sync.cc:228:execute$1944).
+Adding SRST signal on $auto$ff.cc:266:slice$1745 ($dff) from module sar_calib_ctrl_serial (D = $auto$rtlil.cc:2914:Mux$2238, Q = $auto$async2sync.cc:228:execute$1942, rval = 30'000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$2336 ($sdff) from module sar_calib_ctrl_serial (D = \calc_result_r [29:0], Q = $auto$async2sync.cc:228:execute$1942).
+
+7.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_calib_ctrl_serial..
+Removed 106 unused cells and 109 unused wires.
+<suppressed ~107 debug messages>
+
+7.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_calib_ctrl_serial.
+
+7.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+7.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sar_calib_ctrl_serial..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~80 debug messages>
+
+7.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sar_calib_ctrl_serial.
+Performed a total of 0 changes.
+
+7.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_calib_ctrl_serial'.
+Removed a total of 0 cells.
+
+7.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_calib_ctrl_serial..
+
+7.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_calib_ctrl_serial.
+
+7.16. Finished OPT passes. (There is nothing left to do.)
+
+8. Executing SAT pass (solving SAT problems in the circuit).
+
+Setting up time step 1:
+Import set-constraint for this timestep: \rst_n = 1'0
+Final constraint equation: \rst_n = 1'0
+Imported 420 cells to SAT database.
+No constraints for initial state found.
+
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Imported 420 cells to SAT database.
+
+Setting up time step 3:
+Final constraint equation: { } = { }
+Imported 420 cells to SAT database.
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Imported 420 cells to SAT database.
+Import proof for assert: $logic_and$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$218_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $logic_and$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:780$222_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $logic_or$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:781$226_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$228_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$230_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$232_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$234_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$236_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$238_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+
+** Trying induction with length 1 **
+
+Setting up time step 4:
+Final constraint equation: { } = { }
+Imported 420 cells to SAT database.
+Import proof for assert: $logic_and$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$218_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $logic_and$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:780$222_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $logic_or$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:781$226_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$228_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$230_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$232_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$234_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$236_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$238_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import show expression: \clk
+Import show expression: \comp_out
+Import show expression: \rst_n
+Import show expression: \start_calib
+Import show expression: \calib_done
+Import show expression: \calib_done_pulse
+Import show expression: \calib_mode_en
+Import show expression: \calib_overrange
+Import show expression: \dac_n_force
+Import show expression: \dac_p_force
+Import show expression: \overrange_bits
+Import show expression: \w_wr_addr
+Import show expression: \w_wr_data
+Import show expression: \w_wr_en
+
+[base case 1] Solving problem with 107191 variables and 294177 clauses..
+Base case for induction length 1 proven.
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Imported 420 cells to SAT database.
+Import proof for assert: $logic_and$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$218_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $logic_and$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:780$222_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $logic_or$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:781$226_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$228_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$230_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$232_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$234_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$236_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import proof for assert: $eq$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:783$238_Y when $assert$/workspace/scratch/5988101d3fa5/sar16_rework_20261005/optimization/formal/baseline_invariant.sv:779$215_EN.
+Import show expression: \clk
+Import show expression: \comp_out
+Import show expression: \rst_n
+Import show expression: \start_calib
+Import show expression: \calib_done
+Import show expression: \calib_done_pulse
+Import show expression: \calib_mode_en
+Import show expression: \calib_overrange
+Import show expression: \dac_n_force
+Import show expression: \dac_p_force
+Import show expression: \overrange_bits
+Import show expression: \w_wr_addr
+Import show expression: \w_wr_data
+Import show expression: \w_wr_en
+
+[induction step 1] Solving problem with 49936 variables and 135657 clauses..
+Induction step proven: SUCCESS!
+
+                  /$$$$$$      /$$$$$$$$     /$$$$$$$    
+                 /$$__  $$    | $$_____/    | $$__  $$   
+                | $$  \ $$    | $$          | $$  \ $$   
+                | $$  | $$    | $$$$$       | $$  | $$   
+                | $$  | $$    | $$__/       | $$  | $$   
+                | $$/$$ $$    | $$          | $$  | $$   
+                |  $$$$$$/ /$$| $$$$$$$$ /$$| $$$$$$$//$$
+                 \____ $$$|__/|________/|__/|_______/|__/
+                       \__/                              
+
+Warnings: 1 unique messages, 1 total
+End of script. Logfile hash: 20d369427c, CPU: user 0.89s system 0.08s, MEM: 113.03 MB peak
+Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)
+Time spent: 65% 1x sat (0 sec), 9% 10x opt_clean (0 sec), ...

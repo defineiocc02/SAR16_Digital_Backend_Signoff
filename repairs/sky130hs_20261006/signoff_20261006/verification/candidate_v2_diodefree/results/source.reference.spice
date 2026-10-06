@@ -1,0 +1,3 @@
+* Geometry-matched official source
+.include "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/pdk/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.geometry_matched.spice"
+.include "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/verification/candidate_v2_diodefree/results/source.cdl"

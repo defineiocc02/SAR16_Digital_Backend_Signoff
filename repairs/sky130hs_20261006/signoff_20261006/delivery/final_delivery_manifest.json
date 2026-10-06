@@ -1,0 +1,47 @@
+[
+  {
+    "path": "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/delivery/SAR16_SKY130HS_DRC_LVS_Final_20261006.pdf",
+    "bytes": 1558727,
+    "sha256": "634bcde560c0091649bf314b5744546a7c5b974c73762c82915c697e8d007b59"
+  },
+  {
+    "path": "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/delivery/SAR16_SKY130HS_DRC_LVS_Final_20261006.docx",
+    "bytes": 6411033,
+    "sha256": "255f15f524e8083e3879e94a0c05e197f1f09d4967e4d13668228e3e8e4979db"
+  },
+  {
+    "path": "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/delivery/SAR16_SKY130HS_Final_20261006.gds",
+    "bytes": 5954526,
+    "sha256": "bc8f2590c514a8f8bfb819057fcf0f848fc8107b0726860d7581b8bcdadd8c4b"
+  },
+  {
+    "path": "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/delivery/SAR16_SKY130HS_Final_Routing_20261006.png",
+    "bytes": 6281120,
+    "sha256": "0106b0440e9a1e96c5cc15411955d5781d11a146fa0f84e57a9a409fdfdb97a5"
+  },
+  {
+    "path": "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/delivery/SAR16_Final_01_design.tar.xz",
+    "bytes": 6330372,
+    "sha256": "e4ef266d8c06ea66871157122563bdf0061a6f1ac29d19fb86642a2c299f243b"
+  },
+  {
+    "path": "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/delivery/SAR16_Final_02_evidence.tar.xz",
+    "bytes": 5394428,
+    "sha256": "4aac0fadfed081d5a022da3862f63807e2b5d90795e85f6c0bc7d5b3f07f1e41"
+  },
+  {
+    "path": "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/delivery/SAR16_Final_03_platform.tar.xz",
+    "bytes": 7421976,
+    "sha256": "09e9b3b0daae048b4c4595cb0e2c3f9debca1d6aa2d843398ecdd4ddd55180f6"
+  },
+  {
+    "path": "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/delivery/SAR16_Final_04_pdk.tar.xz",
+    "bytes": 3472296,
+    "sha256": "ec6680a42a8d3866776f8bfc63a42abda85b7068655bf6945fe7960adb6fd23e"
+  },
+  {
+    "path": "/workspace/scratch/5988101d3fa5/sar16_antenna_repair_20261006/signoff_20261006/delivery/SAR16_Final_05_tools_sources.tar.xz",
+    "bytes": 4602916,
+    "sha256": "05e307916030fec2712096e67ba3360c9c96fa5ef995acce44ec51b23c5b8f90"
+  }
+]

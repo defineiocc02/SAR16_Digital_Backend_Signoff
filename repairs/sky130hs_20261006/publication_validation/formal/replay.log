@@ -1,0 +1,43 @@
+rtl normalized
+sky130hs_mapped normalized
+sky130hs_routed normalized
+rtl_to_sky130hs_mapped 2689 obligations 146 output bits
+sky130hs_mapped_to_sky130hs_routed 2684 obligations 146 output bits
+rtl_to_sky130hs_mapped initial relation checks 849
+sky130hs_mapped_to_sky130hs_routed initial relation checks 848
+sky130hs_mapped_to_sky130hs_routed PASS 3.894
+rtl_to_sky130hs_mapped PASS 7.587
+negative_clock_invert PASS 4.459
+negative_data_invert PASS 4.958
+negative_fsm_next_invert PASS 4.73
+rtl_to_sky130hs_mapped_reset PASS 13.36
+sky130hs_mapped_to_sky130hs_routed_reset PASS 14.814
+negative_output_invert PASS 4.386
+negative_reset_invert PASS 4.236
+All requested proof jobs passed with stable source hashes.
+Wrote /tmp/sar16-public-formal-replay-20261006-v2/report.md and summary/coverage manifests
+{
+  "status": "PASS",
+  "expected_proof_jobs": 9,
+  "proof_jobs_passed": 9,
+  "negative_controls_with_json_and_vcd_witnesses": 5,
+  "coverage": {
+    "rtl_to_sky130hs_mapped": {
+      "state_mapping_complete": true,
+      "output_ports": 20,
+      "output_bits": 146,
+      "inductive_obligations": 2689
+    },
+    "sky130hs_mapped_to_sky130hs_routed": {
+      "state_mapping_complete": true,
+      "output_ports": 20,
+      "output_bits": 146,
+      "inductive_obligations": 2684
+    }
+  },
+  "source_hashes_rechecked": 8,
+  "model_hashes_rechecked": 4,
+  "summary_sha256": "847e51fc45e6d1460d60ee0070646b837d2bcb8f2ccd2987843653b929b5d91c",
+  "source_manifest_sha256": "2edc7b538e649d7ff3ec646c9e1c50f5e15ec42187f8bc227d0f4e784f9f3f6d",
+  "suite_results_sha256": "28f9096b29718eb51343b3855c14bc14dc6c0d152beb908422b2f730500d56d1"
+}

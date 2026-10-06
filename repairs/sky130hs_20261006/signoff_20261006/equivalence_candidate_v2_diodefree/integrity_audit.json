@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "expected_proof_jobs": 9,
+  "proof_jobs_passed": 9,
+  "negative_controls_with_json_and_vcd_witnesses": 5,
+  "coverage": {
+    "rtl_to_sky130hs_mapped": {
+      "state_mapping_complete": true,
+      "output_ports": 20,
+      "output_bits": 146,
+      "inductive_obligations": 2689
+    },
+    "sky130hs_mapped_to_sky130hs_routed": {
+      "state_mapping_complete": true,
+      "output_ports": 20,
+      "output_bits": 146,
+      "inductive_obligations": 2684
+    }
+  },
+  "source_hashes_rechecked": 8,
+  "model_hashes_rechecked": 4,
+  "summary_sha256": "d5b9e4e9f74c4daabed1369c84a757b326d2531c269e6a924787e8e8b763eb28",
+  "source_manifest_sha256": "9d1f73356bfbfe4b530c9f393ccc33eba1e2871a66479bb32835a91af5242e5b",
+  "suite_results_sha256": "392e7b9eb819cd67fe098a9b7eaa45935434d5e96411f12d0480cca66f7b5012"
+}

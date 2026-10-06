@@ -1,0 +1,2704 @@
+{"checks": [
+{
+  "type": "path_delay",
+  "path_group": "path delay",
+  "path_type": "max",
+  "startpoint": "_6148_/Q",
+  "endpoint": "_6185_/D",
+  "source_clock": "clk",
+  "source_clock_edge": "rise",
+  "source_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "clk",
+      "x": 0.000000400,
+      "y": 0.000197210,
+      "arrival": 0.000e+00,
+      "capacitance": 3.526e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/A",
+      "net": "clk",
+      "x": 0.000198850,
+      "y": 0.000198235,
+      "arrival": 6.057e-13,
+      "slew": 1.211e-12
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/X",
+      "net": "clknet_0_clk",
+      "x": 0.000201707,
+      "y": 0.000198356,
+      "arrival": 3.055e-10,
+      "capacitance": 3.073e-13,
+      "slew": 3.507e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/A",
+      "net": "clknet_0_clk",
+      "x": 0.000139680,
+      "y": 0.000074825,
+      "arrival": 3.106e-10,
+      "slew": 3.508e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/X",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000144460,
+      "y": 0.000075295,
+      "arrival": 4.992e-10,
+      "capacitance": 7.238e-14,
+      "slew": 6.056e-11
+    },
+    {
+      "instance": "clkbuf_leaf_204_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_204_clk/A",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000139050,
+      "y": 0.000045040,
+      "arrival": 5.010e-10,
+      "slew": 6.064e-11
+    },
+    {
+      "instance": "clkbuf_leaf_204_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_204_clk/X",
+      "net": "clknet_leaf_204_clk",
+      "x": 0.000138505,
+      "y": 0.000045333,
+      "arrival": 6.177e-10,
+      "capacitance": 1.513e-14,
+      "slew": 7.212e-11
+    },
+    {
+      "instance": "_6148_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6148_/CLK",
+      "net": "clknet_leaf_204_clk",
+      "x": 0.000142257,
+      "y": 0.000051620,
+      "arrival": 6.180e-10,
+      "slew": 7.212e-11
+    }
+  ],
+  "source_path": [
+    {
+      "instance": "_6148_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6148_/Q",
+      "net": "u_srm_residue.req_active",
+      "x": 0.000150393,
+      "y": 0.000051720,
+      "arrival": 9.172e-10,
+      "capacitance": 2.773e-14,
+      "slew": 1.754e-10
+    },
+    {
+      "instance": "_6185_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6185_/D",
+      "net": "u_srm_residue.req_active",
+      "x": 0.000112640,
+      "y": 0.000051695,
+      "arrival": 9.177e-10,
+      "slew": 1.754e-10
+    }
+  ],
+  "target_clock": "dec_clk",
+  "target_clock_edge": "rise",
+  "target_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "dec_clk",
+      "x": 0.000222000,
+      "y": 0.000000242,
+      "arrival": 0.000e+00,
+      "capacitance": 2.591e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/A",
+      "net": "dec_clk",
+      "x": 0.000110530,
+      "y": 0.000048185,
+      "arrival": 5.975e-13,
+      "slew": 1.195e-12
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/X",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000113387,
+      "y": 0.000048063,
+      "arrival": 8.743e-11,
+      "capacitance": 1.436e-14,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_1__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_1__f_dec_clk/A",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000110530,
+      "y": 0.000061505,
+      "arrival": 8.780e-11,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_1__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_1__f_dec_clk/X",
+      "net": "clknet_1_1__leaf_dec_clk",
+      "x": 0.000113387,
+      "y": 0.000061383,
+      "arrival": 2.223e-10,
+      "capacitance": 5.886e-14,
+      "slew": 7.889e-11
+    },
+    {
+      "instance": "_6185_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6185_/CLK",
+      "net": "clknet_1_1__leaf_dec_clk",
+      "x": 0.000114417,
+      "y": 0.000051620,
+      "arrival": 2.231e-10,
+      "slew": 7.895e-11
+    }
+  ],
+  "data_arrival_time": 2.997e-10,
+  "path_delay": 8.000e-09,
+  "crpr": 0.000e+00,
+  "margin": 1.629e-10,
+  "required_time": 7.837e-09,
+  "slack": 7.537e-09
+}
+]
+}
+{"checks": [
+{
+  "type": "path_delay",
+  "path_group": "path delay",
+  "path_type": "max",
+  "startpoint": "_6136_/Q",
+  "endpoint": "_6112_/D",
+  "source_clock": "dec_clk",
+  "source_clock_edge": "rise",
+  "source_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "dec_clk",
+      "x": 0.000222000,
+      "y": 0.000000242,
+      "arrival": 0.000e+00,
+      "capacitance": 2.591e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/A",
+      "net": "dec_clk",
+      "x": 0.000110530,
+      "y": 0.000048185,
+      "arrival": 5.975e-13,
+      "slew": 1.195e-12
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/X",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000113387,
+      "y": 0.000048063,
+      "arrival": 8.743e-11,
+      "capacitance": 1.436e-14,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_1__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_1__f_dec_clk/A",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000110530,
+      "y": 0.000061505,
+      "arrival": 8.780e-11,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_1__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_1__f_dec_clk/X",
+      "net": "clknet_1_1__leaf_dec_clk",
+      "x": 0.000113387,
+      "y": 0.000061383,
+      "arrival": 2.223e-10,
+      "capacitance": 5.886e-14,
+      "slew": 7.889e-11
+    },
+    {
+      "instance": "_6136_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6136_/CLK",
+      "net": "clknet_1_1__leaf_dec_clk",
+      "x": 0.000099057,
+      "y": 0.000051620,
+      "arrival": 2.238e-10,
+      "slew": 7.898e-11
+    }
+  ],
+  "source_path": [
+    {
+      "instance": "_6136_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6136_/Q",
+      "net": "u_srm_residue.dec_ack",
+      "x": 0.000107193,
+      "y": 0.000051720,
+      "arrival": 4.971e-10,
+      "capacitance": 2.089e-14,
+      "slew": 1.348e-10
+    },
+    {
+      "instance": "_6112_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6112_/D",
+      "net": "u_srm_residue.dec_ack",
+      "x": 0.000126560,
+      "y": 0.000048205,
+      "arrival": 4.977e-10,
+      "slew": 1.348e-10
+    }
+  ],
+  "target_clock": "clk",
+  "target_clock_edge": "rise",
+  "target_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "clk",
+      "x": 0.000000400,
+      "y": 0.000197210,
+      "arrival": 0.000e+00,
+      "capacitance": 3.526e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/A",
+      "net": "clk",
+      "x": 0.000198850,
+      "y": 0.000198235,
+      "arrival": 6.057e-13,
+      "slew": 1.211e-12
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/X",
+      "net": "clknet_0_clk",
+      "x": 0.000201707,
+      "y": 0.000198356,
+      "arrival": 3.055e-10,
+      "capacitance": 3.073e-13,
+      "slew": 3.507e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/A",
+      "net": "clknet_0_clk",
+      "x": 0.000139680,
+      "y": 0.000074825,
+      "arrival": 3.106e-10,
+      "slew": 3.508e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/X",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000144460,
+      "y": 0.000075295,
+      "arrival": 4.992e-10,
+      "capacitance": 7.238e-14,
+      "slew": 6.056e-11
+    },
+    {
+      "instance": "clkbuf_leaf_207_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_207_clk/A",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000136170,
+      "y": 0.000051700,
+      "arrival": 5.008e-10,
+      "slew": 6.062e-11
+    },
+    {
+      "instance": "clkbuf_leaf_207_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_207_clk/X",
+      "net": "clknet_leaf_207_clk",
+      "x": 0.000135625,
+      "y": 0.000051993,
+      "arrival": 6.207e-10,
+      "capacitance": 1.635e-14,
+      "slew": 7.702e-11
+    },
+    {
+      "instance": "_6112_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6112_/CLK",
+      "net": "clknet_leaf_207_clk",
+      "x": 0.000128337,
+      "y": 0.000048280,
+      "arrival": 6.212e-10,
+      "slew": 7.702e-11
+    }
+  ],
+  "data_arrival_time": 2.739e-10,
+  "path_delay": 2.400e-09,
+  "crpr": 0.000e+00,
+  "margin": 1.541e-10,
+  "required_time": 2.246e-09,
+  "slack": 1.972e-09
+}
+]
+}
+{"checks": [
+{
+  "type": "path_delay",
+  "path_group": "path delay",
+  "path_type": "max",
+  "startpoint": "_6100_/Q",
+  "endpoint": "_6101_/D",
+  "source_clock": "dec_clk",
+  "source_clock_edge": "rise",
+  "source_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "dec_clk",
+      "x": 0.000222000,
+      "y": 0.000000242,
+      "arrival": 0.000e+00,
+      "capacitance": 2.591e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/A",
+      "net": "dec_clk",
+      "x": 0.000110530,
+      "y": 0.000048185,
+      "arrival": 5.975e-13,
+      "slew": 1.195e-12
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/X",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000113387,
+      "y": 0.000048063,
+      "arrival": 8.743e-11,
+      "capacitance": 1.436e-14,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_0__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_0__f_dec_clk/A",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000111010,
+      "y": 0.000031735,
+      "arrival": 8.786e-11,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_0__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_0__f_dec_clk/X",
+      "net": "clknet_1_0__leaf_dec_clk",
+      "x": 0.000113867,
+      "y": 0.000031856,
+      "arrival": 2.216e-10,
+      "capacitance": 5.749e-14,
+      "slew": 7.754e-11
+    },
+    {
+      "instance": "_6100_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6100_/CLK",
+      "net": "clknet_1_0__leaf_dec_clk",
+      "x": 0.000125937,
+      "y": 0.000044960,
+      "arrival": 2.221e-10,
+      "slew": 7.754e-11
+    }
+  ],
+  "source_path": [
+    {
+      "instance": "_6100_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6100_/Q",
+      "net": "u_srm_residue.dec_done",
+      "x": 0.000134073,
+      "y": 0.000045060,
+      "arrival": 4.392e-10,
+      "capacitance": 7.506e-15,
+      "slew": 5.707e-11
+    },
+    {
+      "instance": "_6101_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6101_/D",
+      "net": "u_srm_residue.dec_done",
+      "x": 0.000132800,
+      "y": 0.000038375,
+      "arrival": 4.393e-10,
+      "slew": 5.707e-11
+    }
+  ],
+  "target_clock": "clk",
+  "target_clock_edge": "rise",
+  "target_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "clk",
+      "x": 0.000000400,
+      "y": 0.000197210,
+      "arrival": 0.000e+00,
+      "capacitance": 3.526e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/A",
+      "net": "clk",
+      "x": 0.000198850,
+      "y": 0.000198235,
+      "arrival": 6.057e-13,
+      "slew": 1.211e-12
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/X",
+      "net": "clknet_0_clk",
+      "x": 0.000201707,
+      "y": 0.000198356,
+      "arrival": 3.055e-10,
+      "capacitance": 3.073e-13,
+      "slew": 3.507e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/A",
+      "net": "clknet_0_clk",
+      "x": 0.000139680,
+      "y": 0.000074825,
+      "arrival": 3.106e-10,
+      "slew": 3.508e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/X",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000144460,
+      "y": 0.000075295,
+      "arrival": 4.992e-10,
+      "capacitance": 7.238e-14,
+      "slew": 6.056e-11
+    },
+    {
+      "instance": "clkbuf_leaf_204_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_204_clk/A",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000139050,
+      "y": 0.000045040,
+      "arrival": 5.010e-10,
+      "slew": 6.064e-11
+    },
+    {
+      "instance": "clkbuf_leaf_204_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_204_clk/X",
+      "net": "clknet_leaf_204_clk",
+      "x": 0.000138505,
+      "y": 0.000045333,
+      "arrival": 6.177e-10,
+      "capacitance": 1.513e-14,
+      "slew": 7.212e-11
+    },
+    {
+      "instance": "_6101_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6101_/CLK",
+      "net": "clknet_leaf_204_clk",
+      "x": 0.000134577,
+      "y": 0.000038300,
+      "arrival": 6.180e-10,
+      "slew": 7.212e-11
+    }
+  ],
+  "data_arrival_time": 2.172e-10,
+  "path_delay": 2.400e-09,
+  "crpr": 0.000e+00,
+  "margin": 1.298e-10,
+  "required_time": 2.270e-09,
+  "slack": 2.053e-09
+}
+]
+}
+{"checks": [
+{
+  "type": "path_delay",
+  "path_group": "path delay",
+  "path_type": "max",
+  "startpoint": "_6120_/Q",
+  "endpoint": "_6179_/D",
+  "source_clock": "dec_clk",
+  "source_clock_edge": "rise",
+  "source_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "dec_clk",
+      "x": 0.000222000,
+      "y": 0.000000242,
+      "arrival": 0.000e+00,
+      "capacitance": 2.591e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/A",
+      "net": "dec_clk",
+      "x": 0.000110530,
+      "y": 0.000048185,
+      "arrival": 5.975e-13,
+      "slew": 1.195e-12
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/X",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000113387,
+      "y": 0.000048063,
+      "arrival": 8.743e-11,
+      "capacitance": 1.436e-14,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_1__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_1__f_dec_clk/A",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000110530,
+      "y": 0.000061505,
+      "arrival": 8.780e-11,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_1__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_1__f_dec_clk/X",
+      "net": "clknet_1_1__leaf_dec_clk",
+      "x": 0.000113387,
+      "y": 0.000061383,
+      "arrival": 2.223e-10,
+      "capacitance": 5.886e-14,
+      "slew": 7.889e-11
+    },
+    {
+      "instance": "_6120_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6120_/CLK",
+      "net": "clknet_1_1__leaf_dec_clk",
+      "x": 0.000125937,
+      "y": 0.000078260,
+      "arrival": 2.230e-10,
+      "slew": 7.894e-11
+    }
+  ],
+  "source_path": [
+    {
+      "instance": "_6120_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6120_/Q",
+      "net": "u_srm_residue.ones_g[0]",
+      "x": 0.000134073,
+      "y": 0.000078360,
+      "arrival": 4.343e-10,
+      "capacitance": 6.156e-15,
+      "slew": 4.948e-11
+    },
+    {
+      "instance": "_6179_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6179_/D",
+      "net": "u_srm_residue.ones_g[0]",
+      "x": 0.000126560,
+      "y": 0.000081505,
+      "arrival": 4.344e-10,
+      "slew": 4.948e-11
+    }
+  ],
+  "target_clock": "clk",
+  "target_clock_edge": "rise",
+  "target_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "clk",
+      "x": 0.000000400,
+      "y": 0.000197210,
+      "arrival": 0.000e+00,
+      "capacitance": 3.526e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/A",
+      "net": "clk",
+      "x": 0.000198850,
+      "y": 0.000198235,
+      "arrival": 6.057e-13,
+      "slew": 1.211e-12
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/X",
+      "net": "clknet_0_clk",
+      "x": 0.000201707,
+      "y": 0.000198356,
+      "arrival": 3.055e-10,
+      "capacitance": 3.073e-13,
+      "slew": 3.507e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/A",
+      "net": "clknet_0_clk",
+      "x": 0.000139680,
+      "y": 0.000074825,
+      "arrival": 3.106e-10,
+      "slew": 3.508e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/X",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000144460,
+      "y": 0.000075295,
+      "arrival": 4.992e-10,
+      "capacitance": 7.238e-14,
+      "slew": 6.056e-11
+    },
+    {
+      "instance": "clkbuf_leaf_193_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_193_clk/A",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000136650,
+      "y": 0.000074840,
+      "arrival": 4.996e-10,
+      "slew": 6.056e-11
+    },
+    {
+      "instance": "clkbuf_leaf_193_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_193_clk/X",
+      "net": "clknet_leaf_193_clk",
+      "x": 0.000136105,
+      "y": 0.000074546,
+      "arrival": 6.177e-10,
+      "capacitance": 1.568e-14,
+      "slew": 7.432e-11
+    },
+    {
+      "instance": "_6179_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6179_/CLK",
+      "net": "clknet_leaf_193_clk",
+      "x": 0.000128337,
+      "y": 0.000081580,
+      "arrival": 6.181e-10,
+      "slew": 7.432e-11
+    }
+  ],
+  "data_arrival_time": 2.115e-10,
+  "path_delay": 2.400e-09,
+  "crpr": 0.000e+00,
+  "margin": 1.285e-10,
+  "required_time": 2.272e-09,
+  "slack": 2.060e-09
+}
+]
+}
+{"checks": [
+{
+  "type": "path_delay",
+  "path_group": "path delay",
+  "path_type": "max",
+  "startpoint": "_6121_/Q",
+  "endpoint": "_6180_/D",
+  "source_clock": "dec_clk",
+  "source_clock_edge": "rise",
+  "source_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "dec_clk",
+      "x": 0.000222000,
+      "y": 0.000000242,
+      "arrival": 0.000e+00,
+      "capacitance": 2.591e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/A",
+      "net": "dec_clk",
+      "x": 0.000110530,
+      "y": 0.000048185,
+      "arrival": 5.975e-13,
+      "slew": 1.195e-12
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/X",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000113387,
+      "y": 0.000048063,
+      "arrival": 8.743e-11,
+      "capacitance": 1.436e-14,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_1__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_1__f_dec_clk/A",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000110530,
+      "y": 0.000061505,
+      "arrival": 8.780e-11,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_1__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_1__f_dec_clk/X",
+      "net": "clknet_1_1__leaf_dec_clk",
+      "x": 0.000113387,
+      "y": 0.000061383,
+      "arrival": 2.223e-10,
+      "capacitance": 5.886e-14,
+      "slew": 7.889e-11
+    },
+    {
+      "instance": "_6121_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6121_/CLK",
+      "net": "clknet_1_1__leaf_dec_clk",
+      "x": 0.000125457,
+      "y": 0.000068260,
+      "arrival": 2.229e-10,
+      "slew": 7.894e-11
+    }
+  ],
+  "source_path": [
+    {
+      "instance": "_6121_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6121_/Q",
+      "net": "u_srm_residue.ones_g[1]",
+      "x": 0.000133593,
+      "y": 0.000068160,
+      "arrival": 4.343e-10,
+      "capacitance": 6.182e-15,
+      "slew": 4.963e-11
+    },
+    {
+      "instance": "_6180_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6180_/D",
+      "net": "u_srm_residue.ones_g[1]",
+      "x": 0.000129440,
+      "y": 0.000071675,
+      "arrival": 4.345e-10,
+      "slew": 4.963e-11
+    }
+  ],
+  "target_clock": "clk",
+  "target_clock_edge": "rise",
+  "target_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "clk",
+      "x": 0.000000400,
+      "y": 0.000197210,
+      "arrival": 0.000e+00,
+      "capacitance": 3.526e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/A",
+      "net": "clk",
+      "x": 0.000198850,
+      "y": 0.000198235,
+      "arrival": 6.057e-13,
+      "slew": 1.211e-12
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/X",
+      "net": "clknet_0_clk",
+      "x": 0.000201707,
+      "y": 0.000198356,
+      "arrival": 3.055e-10,
+      "capacitance": 3.073e-13,
+      "slew": 3.507e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/A",
+      "net": "clknet_0_clk",
+      "x": 0.000139680,
+      "y": 0.000074825,
+      "arrival": 3.106e-10,
+      "slew": 3.508e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/X",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000144460,
+      "y": 0.000075295,
+      "arrival": 4.992e-10,
+      "capacitance": 7.238e-14,
+      "slew": 6.056e-11
+    },
+    {
+      "instance": "clkbuf_leaf_208_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_208_clk/A",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000136650,
+      "y": 0.000061520,
+      "arrival": 5.005e-10,
+      "slew": 6.060e-11
+    },
+    {
+      "instance": "clkbuf_leaf_208_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_208_clk/X",
+      "net": "clknet_leaf_208_clk",
+      "x": 0.000136105,
+      "y": 0.000061226,
+      "arrival": 6.185e-10,
+      "capacitance": 1.559e-14,
+      "slew": 7.397e-11
+    },
+    {
+      "instance": "_6180_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6180_/CLK",
+      "net": "clknet_leaf_208_clk",
+      "x": 0.000131217,
+      "y": 0.000071600,
+      "arrival": 6.189e-10,
+      "slew": 7.397e-11
+    }
+  ],
+  "data_arrival_time": 2.116e-10,
+  "path_delay": 2.400e-09,
+  "crpr": 0.000e+00,
+  "margin": 1.286e-10,
+  "required_time": 2.271e-09,
+  "slack": 2.060e-09
+}
+]
+}
+{"checks": [
+{
+  "type": "path_delay",
+  "path_group": "path delay",
+  "path_type": "max",
+  "startpoint": "_6122_/Q",
+  "endpoint": "_6181_/D",
+  "source_clock": "dec_clk",
+  "source_clock_edge": "rise",
+  "source_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "dec_clk",
+      "x": 0.000222000,
+      "y": 0.000000242,
+      "arrival": 0.000e+00,
+      "capacitance": 2.591e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/A",
+      "net": "dec_clk",
+      "x": 0.000110530,
+      "y": 0.000048185,
+      "arrival": 5.975e-13,
+      "slew": 1.195e-12
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/X",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000113387,
+      "y": 0.000048063,
+      "arrival": 8.743e-11,
+      "capacitance": 1.436e-14,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_1__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_1__f_dec_clk/A",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000110530,
+      "y": 0.000061505,
+      "arrival": 8.780e-11,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_1__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_1__f_dec_clk/X",
+      "net": "clknet_1_1__leaf_dec_clk",
+      "x": 0.000113387,
+      "y": 0.000061383,
+      "arrival": 2.223e-10,
+      "capacitance": 5.886e-14,
+      "slew": 7.889e-11
+    },
+    {
+      "instance": "_6122_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6122_/CLK",
+      "net": "clknet_1_1__leaf_dec_clk",
+      "x": 0.000124977,
+      "y": 0.000061600,
+      "arrival": 2.227e-10,
+      "slew": 7.894e-11
+    }
+  ],
+  "source_path": [
+    {
+      "instance": "_6122_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6122_/Q",
+      "net": "u_srm_residue.ones_g[2]",
+      "x": 0.000133113,
+      "y": 0.000061500,
+      "arrival": 4.357e-10,
+      "capacitance": 6.528e-15,
+      "slew": 5.157e-11
+    },
+    {
+      "instance": "_6181_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6181_/D",
+      "net": "u_srm_residue.ones_g[2]",
+      "x": 0.000131840,
+      "y": 0.000065015,
+      "arrival": 4.359e-10,
+      "slew": 5.157e-11
+    }
+  ],
+  "target_clock": "clk",
+  "target_clock_edge": "rise",
+  "target_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "clk",
+      "x": 0.000000400,
+      "y": 0.000197210,
+      "arrival": 0.000e+00,
+      "capacitance": 3.526e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/A",
+      "net": "clk",
+      "x": 0.000198850,
+      "y": 0.000198235,
+      "arrival": 6.057e-13,
+      "slew": 1.211e-12
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/X",
+      "net": "clknet_0_clk",
+      "x": 0.000201707,
+      "y": 0.000198356,
+      "arrival": 3.055e-10,
+      "capacitance": 3.073e-13,
+      "slew": 3.507e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/A",
+      "net": "clknet_0_clk",
+      "x": 0.000139680,
+      "y": 0.000074825,
+      "arrival": 3.106e-10,
+      "slew": 3.508e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/X",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000144460,
+      "y": 0.000075295,
+      "arrival": 4.992e-10,
+      "capacitance": 7.238e-14,
+      "slew": 6.056e-11
+    },
+    {
+      "instance": "clkbuf_leaf_208_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_208_clk/A",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000136650,
+      "y": 0.000061520,
+      "arrival": 5.005e-10,
+      "slew": 6.060e-11
+    },
+    {
+      "instance": "clkbuf_leaf_208_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_208_clk/X",
+      "net": "clknet_leaf_208_clk",
+      "x": 0.000136105,
+      "y": 0.000061226,
+      "arrival": 6.185e-10,
+      "capacitance": 1.559e-14,
+      "slew": 7.397e-11
+    },
+    {
+      "instance": "_6181_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6181_/CLK",
+      "net": "clknet_leaf_208_clk",
+      "x": 0.000133617,
+      "y": 0.000064940,
+      "arrival": 6.188e-10,
+      "slew": 7.397e-11
+    }
+  ],
+  "data_arrival_time": 2.132e-10,
+  "path_delay": 2.400e-09,
+  "crpr": 0.000e+00,
+  "margin": 1.288e-10,
+  "required_time": 2.271e-09,
+  "slack": 2.058e-09
+}
+]
+}
+{"checks": [
+{
+  "type": "path_delay",
+  "path_group": "path delay",
+  "path_type": "max",
+  "startpoint": "_6123_/Q",
+  "endpoint": "_6182_/D",
+  "source_clock": "dec_clk",
+  "source_clock_edge": "rise",
+  "source_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "dec_clk",
+      "x": 0.000222000,
+      "y": 0.000000242,
+      "arrival": 0.000e+00,
+      "capacitance": 2.591e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/A",
+      "net": "dec_clk",
+      "x": 0.000110530,
+      "y": 0.000048185,
+      "arrival": 5.975e-13,
+      "slew": 1.195e-12
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/X",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000113387,
+      "y": 0.000048063,
+      "arrival": 8.743e-11,
+      "capacitance": 1.436e-14,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_1__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_1__f_dec_clk/A",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000110530,
+      "y": 0.000061505,
+      "arrival": 8.780e-11,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_1__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_1__f_dec_clk/X",
+      "net": "clknet_1_1__leaf_dec_clk",
+      "x": 0.000113387,
+      "y": 0.000061383,
+      "arrival": 2.223e-10,
+      "capacitance": 5.886e-14,
+      "slew": 7.889e-11
+    },
+    {
+      "instance": "_6123_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6123_/CLK",
+      "net": "clknet_1_1__leaf_dec_clk",
+      "x": 0.000114417,
+      "y": 0.000058280,
+      "arrival": 2.232e-10,
+      "slew": 7.895e-11
+    }
+  ],
+  "source_path": [
+    {
+      "instance": "_6123_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6123_/Q",
+      "net": "u_srm_residue.ones_g[3]",
+      "x": 0.000122553,
+      "y": 0.000058380,
+      "arrival": 4.311e-10,
+      "capacitance": 5.387e-15,
+      "slew": 4.522e-11
+    },
+    {
+      "instance": "_6182_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6182_/D",
+      "net": "u_srm_residue.ones_g[3]",
+      "x": 0.000127520,
+      "y": 0.000058355,
+      "arrival": 4.312e-10,
+      "slew": 4.522e-11
+    }
+  ],
+  "target_clock": "clk",
+  "target_clock_edge": "rise",
+  "target_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "clk",
+      "x": 0.000000400,
+      "y": 0.000197210,
+      "arrival": 0.000e+00,
+      "capacitance": 3.526e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/A",
+      "net": "clk",
+      "x": 0.000198850,
+      "y": 0.000198235,
+      "arrival": 6.057e-13,
+      "slew": 1.211e-12
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/X",
+      "net": "clknet_0_clk",
+      "x": 0.000201707,
+      "y": 0.000198356,
+      "arrival": 3.055e-10,
+      "capacitance": 3.073e-13,
+      "slew": 3.507e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/A",
+      "net": "clknet_0_clk",
+      "x": 0.000139680,
+      "y": 0.000074825,
+      "arrival": 3.106e-10,
+      "slew": 3.508e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/X",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000144460,
+      "y": 0.000075295,
+      "arrival": 4.992e-10,
+      "capacitance": 7.238e-14,
+      "slew": 6.056e-11
+    },
+    {
+      "instance": "clkbuf_leaf_207_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_207_clk/A",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000136170,
+      "y": 0.000051700,
+      "arrival": 5.008e-10,
+      "slew": 6.062e-11
+    },
+    {
+      "instance": "clkbuf_leaf_207_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_207_clk/X",
+      "net": "clknet_leaf_207_clk",
+      "x": 0.000135625,
+      "y": 0.000051993,
+      "arrival": 6.207e-10,
+      "capacitance": 1.635e-14,
+      "slew": 7.702e-11
+    },
+    {
+      "instance": "_6182_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6182_/CLK",
+      "net": "clknet_leaf_207_clk",
+      "x": 0.000129297,
+      "y": 0.000058280,
+      "arrival": 6.212e-10,
+      "slew": 7.702e-11
+    }
+  ],
+  "data_arrival_time": 2.080e-10,
+  "path_delay": 2.400e-09,
+  "crpr": 0.000e+00,
+  "margin": 1.274e-10,
+  "required_time": 2.273e-09,
+  "slack": 2.065e-09
+}
+]
+}
+{"checks": [
+{
+  "type": "path_delay",
+  "path_group": "path delay",
+  "path_type": "max",
+  "startpoint": "_6124_/Q",
+  "endpoint": "_6183_/D",
+  "source_clock": "dec_clk",
+  "source_clock_edge": "rise",
+  "source_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "dec_clk",
+      "x": 0.000222000,
+      "y": 0.000000242,
+      "arrival": 0.000e+00,
+      "capacitance": 2.591e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/A",
+      "net": "dec_clk",
+      "x": 0.000110530,
+      "y": 0.000048185,
+      "arrival": 5.975e-13,
+      "slew": 1.195e-12
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/X",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000113387,
+      "y": 0.000048063,
+      "arrival": 8.743e-11,
+      "capacitance": 1.436e-14,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_1__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_1__f_dec_clk/A",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000110530,
+      "y": 0.000061505,
+      "arrival": 8.780e-11,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_1__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_1__f_dec_clk/X",
+      "net": "clknet_1_1__leaf_dec_clk",
+      "x": 0.000113387,
+      "y": 0.000061383,
+      "arrival": 2.223e-10,
+      "capacitance": 5.886e-14,
+      "slew": 7.889e-11
+    },
+    {
+      "instance": "_6124_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6124_/CLK",
+      "net": "clknet_1_1__leaf_dec_clk",
+      "x": 0.000099537,
+      "y": 0.000058280,
+      "arrival": 2.237e-10,
+      "slew": 7.897e-11
+    }
+  ],
+  "source_path": [
+    {
+      "instance": "_6124_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6124_/Q",
+      "net": "u_srm_residue.ones_g[4]",
+      "x": 0.000107673,
+      "y": 0.000058380,
+      "arrival": 4.910e-10,
+      "capacitance": 1.942e-14,
+      "slew": 1.262e-10
+    },
+    {
+      "instance": "_6183_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6183_/D",
+      "net": "u_srm_residue.ones_g[4]",
+      "x": 0.000126560,
+      "y": 0.000054865,
+      "arrival": 4.915e-10,
+      "slew": 1.262e-10
+    }
+  ],
+  "target_clock": "clk",
+  "target_clock_edge": "rise",
+  "target_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "clk",
+      "x": 0.000000400,
+      "y": 0.000197210,
+      "arrival": 0.000e+00,
+      "capacitance": 3.526e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/A",
+      "net": "clk",
+      "x": 0.000198850,
+      "y": 0.000198235,
+      "arrival": 6.057e-13,
+      "slew": 1.211e-12
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/X",
+      "net": "clknet_0_clk",
+      "x": 0.000201707,
+      "y": 0.000198356,
+      "arrival": 3.055e-10,
+      "capacitance": 3.073e-13,
+      "slew": 3.507e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/A",
+      "net": "clknet_0_clk",
+      "x": 0.000139680,
+      "y": 0.000074825,
+      "arrival": 3.106e-10,
+      "slew": 3.508e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/X",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000144460,
+      "y": 0.000075295,
+      "arrival": 4.992e-10,
+      "capacitance": 7.238e-14,
+      "slew": 6.056e-11
+    },
+    {
+      "instance": "clkbuf_leaf_207_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_207_clk/A",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000136170,
+      "y": 0.000051700,
+      "arrival": 5.008e-10,
+      "slew": 6.062e-11
+    },
+    {
+      "instance": "clkbuf_leaf_207_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_207_clk/X",
+      "net": "clknet_leaf_207_clk",
+      "x": 0.000135625,
+      "y": 0.000051993,
+      "arrival": 6.207e-10,
+      "capacitance": 1.635e-14,
+      "slew": 7.702e-11
+    },
+    {
+      "instance": "_6183_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6183_/CLK",
+      "net": "clknet_leaf_207_clk",
+      "x": 0.000128337,
+      "y": 0.000054940,
+      "arrival": 6.212e-10,
+      "slew": 7.702e-11
+    }
+  ],
+  "data_arrival_time": 2.678e-10,
+  "path_delay": 2.400e-09,
+  "crpr": 0.000e+00,
+  "margin": 1.521e-10,
+  "required_time": 2.248e-09,
+  "slack": 1.980e-09
+}
+]
+}
+{"checks": [
+{
+  "type": "path_delay",
+  "path_group": "path delay",
+  "path_type": "max",
+  "startpoint": "_6125_/Q",
+  "endpoint": "_6130_/D",
+  "source_clock": "dec_clk",
+  "source_clock_edge": "rise",
+  "source_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "dec_clk",
+      "x": 0.000222000,
+      "y": 0.000000242,
+      "arrival": 0.000e+00,
+      "capacitance": 2.591e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/A",
+      "net": "dec_clk",
+      "x": 0.000110530,
+      "y": 0.000048185,
+      "arrival": 5.975e-13,
+      "slew": 1.195e-12
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/X",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000113387,
+      "y": 0.000048063,
+      "arrival": 8.743e-11,
+      "capacitance": 1.436e-14,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_0__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_0__f_dec_clk/A",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000111010,
+      "y": 0.000031735,
+      "arrival": 8.786e-11,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_0__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_0__f_dec_clk/X",
+      "net": "clknet_1_0__leaf_dec_clk",
+      "x": 0.000113867,
+      "y": 0.000031856,
+      "arrival": 2.216e-10,
+      "capacitance": 5.749e-14,
+      "slew": 7.754e-11
+    },
+    {
+      "instance": "_6125_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6125_/CLK",
+      "net": "clknet_1_0__leaf_dec_clk",
+      "x": 0.000125937,
+      "y": 0.000014980,
+      "arrival": 2.224e-10,
+      "slew": 7.755e-11
+    }
+  ],
+  "source_path": [
+    {
+      "instance": "_6125_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6125_/Q",
+      "net": "u_srm_residue.total_g[0]",
+      "x": 0.000134073,
+      "y": 0.000014880,
+      "arrival": 4.430e-10,
+      "capacitance": 8.279e-15,
+      "slew": 6.147e-11
+    },
+    {
+      "instance": "_6130_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6130_/D",
+      "net": "u_srm_residue.total_g[0]",
+      "x": 0.000133760,
+      "y": 0.000025055,
+      "arrival": 4.432e-10,
+      "slew": 6.147e-11
+    }
+  ],
+  "target_clock": "clk",
+  "target_clock_edge": "rise",
+  "target_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "clk",
+      "x": 0.000000400,
+      "y": 0.000197210,
+      "arrival": 0.000e+00,
+      "capacitance": 3.526e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/A",
+      "net": "clk",
+      "x": 0.000198850,
+      "y": 0.000198235,
+      "arrival": 6.057e-13,
+      "slew": 1.211e-12
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/X",
+      "net": "clknet_0_clk",
+      "x": 0.000201707,
+      "y": 0.000198356,
+      "arrival": 3.055e-10,
+      "capacitance": 3.073e-13,
+      "slew": 3.507e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/A",
+      "net": "clknet_0_clk",
+      "x": 0.000139680,
+      "y": 0.000074825,
+      "arrival": 3.106e-10,
+      "slew": 3.508e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/X",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000144460,
+      "y": 0.000075295,
+      "arrival": 4.992e-10,
+      "capacitance": 7.238e-14,
+      "slew": 6.056e-11
+    },
+    {
+      "instance": "clkbuf_leaf_206_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_206_clk/A",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000132810,
+      "y": 0.000025060,
+      "arrival": 5.011e-10,
+      "slew": 6.064e-11
+    },
+    {
+      "instance": "clkbuf_leaf_206_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_206_clk/X",
+      "net": "clknet_leaf_206_clk",
+      "x": 0.000132265,
+      "y": 0.000025353,
+      "arrival": 6.172e-10,
+      "capacitance": 1.493e-14,
+      "slew": 7.132e-11
+    },
+    {
+      "instance": "_6130_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6130_/CLK",
+      "net": "clknet_leaf_206_clk",
+      "x": 0.000135537,
+      "y": 0.000024980,
+      "arrival": 6.173e-10,
+      "slew": 7.132e-11
+    }
+  ],
+  "data_arrival_time": 2.208e-10,
+  "path_delay": 2.400e-09,
+  "crpr": 0.000e+00,
+  "margin": 1.305e-10,
+  "required_time": 2.270e-09,
+  "slack": 2.049e-09
+}
+]
+}
+{"checks": [
+{
+  "type": "path_delay",
+  "path_group": "path delay",
+  "path_type": "max",
+  "startpoint": "_6126_/Q",
+  "endpoint": "_6131_/D",
+  "source_clock": "dec_clk",
+  "source_clock_edge": "rise",
+  "source_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "dec_clk",
+      "x": 0.000222000,
+      "y": 0.000000242,
+      "arrival": 0.000e+00,
+      "capacitance": 2.591e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/A",
+      "net": "dec_clk",
+      "x": 0.000110530,
+      "y": 0.000048185,
+      "arrival": 5.975e-13,
+      "slew": 1.195e-12
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/X",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000113387,
+      "y": 0.000048063,
+      "arrival": 8.743e-11,
+      "capacitance": 1.436e-14,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_0__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_0__f_dec_clk/A",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000111010,
+      "y": 0.000031735,
+      "arrival": 8.786e-11,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_0__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_0__f_dec_clk/X",
+      "net": "clknet_1_0__leaf_dec_clk",
+      "x": 0.000113867,
+      "y": 0.000031856,
+      "arrival": 2.216e-10,
+      "capacitance": 5.749e-14,
+      "slew": 7.754e-11
+    },
+    {
+      "instance": "_6126_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6126_/CLK",
+      "net": "clknet_1_0__leaf_dec_clk",
+      "x": 0.000114417,
+      "y": 0.000018320,
+      "arrival": 2.222e-10,
+      "slew": 7.755e-11
+    }
+  ],
+  "source_path": [
+    {
+      "instance": "_6126_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6126_/Q",
+      "net": "u_srm_residue.total_g[1]",
+      "x": 0.000122553,
+      "y": 0.000018420,
+      "arrival": 4.281e-10,
+      "capacitance": 5.033e-15,
+      "slew": 4.328e-11
+    },
+    {
+      "instance": "_6131_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6131_/D",
+      "net": "u_srm_residue.total_g[1]",
+      "x": 0.000129440,
+      "y": 0.000018395,
+      "arrival": 4.282e-10,
+      "slew": 4.328e-11
+    }
+  ],
+  "target_clock": "clk",
+  "target_clock_edge": "rise",
+  "target_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "clk",
+      "x": 0.000000400,
+      "y": 0.000197210,
+      "arrival": 0.000e+00,
+      "capacitance": 3.526e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/A",
+      "net": "clk",
+      "x": 0.000198850,
+      "y": 0.000198235,
+      "arrival": 6.057e-13,
+      "slew": 1.211e-12
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/X",
+      "net": "clknet_0_clk",
+      "x": 0.000201707,
+      "y": 0.000198356,
+      "arrival": 3.055e-10,
+      "capacitance": 3.073e-13,
+      "slew": 3.507e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/A",
+      "net": "clknet_0_clk",
+      "x": 0.000139680,
+      "y": 0.000074825,
+      "arrival": 3.106e-10,
+      "slew": 3.508e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/X",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000144460,
+      "y": 0.000075295,
+      "arrival": 4.992e-10,
+      "capacitance": 7.238e-14,
+      "slew": 6.056e-11
+    },
+    {
+      "instance": "clkbuf_leaf_206_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_206_clk/A",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000132810,
+      "y": 0.000025060,
+      "arrival": 5.011e-10,
+      "slew": 6.064e-11
+    },
+    {
+      "instance": "clkbuf_leaf_206_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_206_clk/X",
+      "net": "clknet_leaf_206_clk",
+      "x": 0.000132265,
+      "y": 0.000025353,
+      "arrival": 6.172e-10,
+      "capacitance": 1.493e-14,
+      "slew": 7.132e-11
+    },
+    {
+      "instance": "_6131_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6131_/CLK",
+      "net": "clknet_leaf_206_clk",
+      "x": 0.000131217,
+      "y": 0.000018320,
+      "arrival": 6.175e-10,
+      "slew": 7.132e-11
+    }
+  ],
+  "data_arrival_time": 2.060e-10,
+  "path_delay": 2.400e-09,
+  "crpr": 0.000e+00,
+  "margin": 1.283e-10,
+  "required_time": 2.272e-09,
+  "slack": 2.066e-09
+}
+]
+}
+{"checks": [
+{
+  "type": "path_delay",
+  "path_group": "path delay",
+  "path_type": "max",
+  "startpoint": "_6127_/Q",
+  "endpoint": "_6132_/D",
+  "source_clock": "dec_clk",
+  "source_clock_edge": "rise",
+  "source_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "dec_clk",
+      "x": 0.000222000,
+      "y": 0.000000242,
+      "arrival": 0.000e+00,
+      "capacitance": 2.591e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/A",
+      "net": "dec_clk",
+      "x": 0.000110530,
+      "y": 0.000048185,
+      "arrival": 5.975e-13,
+      "slew": 1.195e-12
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/X",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000113387,
+      "y": 0.000048063,
+      "arrival": 8.743e-11,
+      "capacitance": 1.436e-14,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_0__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_0__f_dec_clk/A",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000111010,
+      "y": 0.000031735,
+      "arrival": 8.786e-11,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_0__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_0__f_dec_clk/X",
+      "net": "clknet_1_0__leaf_dec_clk",
+      "x": 0.000113867,
+      "y": 0.000031856,
+      "arrival": 2.216e-10,
+      "capacitance": 5.749e-14,
+      "slew": 7.754e-11
+    },
+    {
+      "instance": "_6127_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6127_/CLK",
+      "net": "clknet_1_0__leaf_dec_clk",
+      "x": 0.000114417,
+      "y": 0.000024980,
+      "arrival": 2.221e-10,
+      "slew": 7.754e-11
+    }
+  ],
+  "source_path": [
+    {
+      "instance": "_6127_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6127_/Q",
+      "net": "u_srm_residue.total_g[2]",
+      "x": 0.000122553,
+      "y": 0.000025080,
+      "arrival": 4.365e-10,
+      "capacitance": 6.906e-15,
+      "slew": 5.369e-11
+    },
+    {
+      "instance": "_6132_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6132_/D",
+      "net": "u_srm_residue.total_g[2]",
+      "x": 0.000126560,
+      "y": 0.000021565,
+      "arrival": 4.366e-10,
+      "slew": 5.369e-11
+    }
+  ],
+  "target_clock": "clk",
+  "target_clock_edge": "rise",
+  "target_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "clk",
+      "x": 0.000000400,
+      "y": 0.000197210,
+      "arrival": 0.000e+00,
+      "capacitance": 3.526e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/A",
+      "net": "clk",
+      "x": 0.000198850,
+      "y": 0.000198235,
+      "arrival": 6.057e-13,
+      "slew": 1.211e-12
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/X",
+      "net": "clknet_0_clk",
+      "x": 0.000201707,
+      "y": 0.000198356,
+      "arrival": 3.055e-10,
+      "capacitance": 3.073e-13,
+      "slew": 3.507e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/A",
+      "net": "clknet_0_clk",
+      "x": 0.000139680,
+      "y": 0.000074825,
+      "arrival": 3.106e-10,
+      "slew": 3.508e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/X",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000144460,
+      "y": 0.000075295,
+      "arrival": 4.992e-10,
+      "capacitance": 7.238e-14,
+      "slew": 6.056e-11
+    },
+    {
+      "instance": "clkbuf_leaf_206_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_206_clk/A",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000132810,
+      "y": 0.000025060,
+      "arrival": 5.011e-10,
+      "slew": 6.064e-11
+    },
+    {
+      "instance": "clkbuf_leaf_206_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_206_clk/X",
+      "net": "clknet_leaf_206_clk",
+      "x": 0.000132265,
+      "y": 0.000025353,
+      "arrival": 6.172e-10,
+      "capacitance": 1.493e-14,
+      "slew": 7.132e-11
+    },
+    {
+      "instance": "_6132_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6132_/CLK",
+      "net": "clknet_leaf_206_clk",
+      "x": 0.000128337,
+      "y": 0.000021640,
+      "arrival": 6.175e-10,
+      "slew": 7.132e-11
+    }
+  ],
+  "data_arrival_time": 2.145e-10,
+  "path_delay": 2.400e-09,
+  "crpr": 0.000e+00,
+  "margin": 1.295e-10,
+  "required_time": 2.270e-09,
+  "slack": 2.056e-09
+}
+]
+}
+{"checks": [
+{
+  "type": "path_delay",
+  "path_group": "path delay",
+  "path_type": "max",
+  "startpoint": "_6128_/Q",
+  "endpoint": "_6133_/D",
+  "source_clock": "dec_clk",
+  "source_clock_edge": "rise",
+  "source_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "dec_clk",
+      "x": 0.000222000,
+      "y": 0.000000242,
+      "arrival": 0.000e+00,
+      "capacitance": 2.591e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/A",
+      "net": "dec_clk",
+      "x": 0.000110530,
+      "y": 0.000048185,
+      "arrival": 5.975e-13,
+      "slew": 1.195e-12
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/X",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000113387,
+      "y": 0.000048063,
+      "arrival": 8.743e-11,
+      "capacitance": 1.436e-14,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_0__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_0__f_dec_clk/A",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000111010,
+      "y": 0.000031735,
+      "arrival": 8.786e-11,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_0__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_0__f_dec_clk/X",
+      "net": "clknet_1_0__leaf_dec_clk",
+      "x": 0.000113867,
+      "y": 0.000031856,
+      "arrival": 2.216e-10,
+      "capacitance": 5.749e-14,
+      "slew": 7.754e-11
+    },
+    {
+      "instance": "_6128_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6128_/CLK",
+      "net": "clknet_1_0__leaf_dec_clk",
+      "x": 0.000124977,
+      "y": 0.000028300,
+      "arrival": 2.224e-10,
+      "slew": 7.755e-11
+    }
+  ],
+  "source_path": [
+    {
+      "instance": "_6128_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6128_/Q",
+      "net": "u_srm_residue.total_g[3]",
+      "x": 0.000133113,
+      "y": 0.000028200,
+      "arrival": 4.344e-10,
+      "capacitance": 6.376e-15,
+      "slew": 5.072e-11
+    },
+    {
+      "instance": "_6133_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6133_/D",
+      "net": "u_srm_residue.total_g[3]",
+      "x": 0.000126560,
+      "y": 0.000034885,
+      "arrival": 4.346e-10,
+      "slew": 5.072e-11
+    }
+  ],
+  "target_clock": "clk",
+  "target_clock_edge": "rise",
+  "target_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "clk",
+      "x": 0.000000400,
+      "y": 0.000197210,
+      "arrival": 0.000e+00,
+      "capacitance": 3.526e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/A",
+      "net": "clk",
+      "x": 0.000198850,
+      "y": 0.000198235,
+      "arrival": 6.057e-13,
+      "slew": 1.211e-12
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/X",
+      "net": "clknet_0_clk",
+      "x": 0.000201707,
+      "y": 0.000198356,
+      "arrival": 3.055e-10,
+      "capacitance": 3.073e-13,
+      "slew": 3.507e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/A",
+      "net": "clknet_0_clk",
+      "x": 0.000139680,
+      "y": 0.000074825,
+      "arrival": 3.106e-10,
+      "slew": 3.508e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/X",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000144460,
+      "y": 0.000075295,
+      "arrival": 4.992e-10,
+      "capacitance": 7.238e-14,
+      "slew": 6.056e-11
+    },
+    {
+      "instance": "clkbuf_leaf_207_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_207_clk/A",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000136170,
+      "y": 0.000051700,
+      "arrival": 5.008e-10,
+      "slew": 6.062e-11
+    },
+    {
+      "instance": "clkbuf_leaf_207_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_207_clk/X",
+      "net": "clknet_leaf_207_clk",
+      "x": 0.000135625,
+      "y": 0.000051993,
+      "arrival": 6.207e-10,
+      "capacitance": 1.635e-14,
+      "slew": 7.702e-11
+    },
+    {
+      "instance": "_6133_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6133_/CLK",
+      "net": "clknet_leaf_207_clk",
+      "x": 0.000128337,
+      "y": 0.000034960,
+      "arrival": 6.213e-10,
+      "slew": 7.702e-11
+    }
+  ],
+  "data_arrival_time": 2.121e-10,
+  "path_delay": 2.400e-09,
+  "crpr": 0.000e+00,
+  "margin": 1.282e-10,
+  "required_time": 2.272e-09,
+  "slack": 2.060e-09
+}
+]
+}
+{"checks": [
+{
+  "type": "path_delay",
+  "path_group": "path delay",
+  "path_type": "max",
+  "startpoint": "_6129_/Q",
+  "endpoint": "_6134_/D",
+  "source_clock": "dec_clk",
+  "source_clock_edge": "rise",
+  "source_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "dec_clk",
+      "x": 0.000222000,
+      "y": 0.000000242,
+      "arrival": 0.000e+00,
+      "capacitance": 2.591e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/A",
+      "net": "dec_clk",
+      "x": 0.000110530,
+      "y": 0.000048185,
+      "arrival": 5.975e-13,
+      "slew": 1.195e-12
+    },
+    {
+      "instance": "clkbuf_0_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_dec_clk/X",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000113387,
+      "y": 0.000048063,
+      "arrival": 8.743e-11,
+      "capacitance": 1.436e-14,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_0__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_0__f_dec_clk/A",
+      "net": "clknet_0_dec_clk",
+      "x": 0.000111010,
+      "y": 0.000031735,
+      "arrival": 8.786e-11,
+      "slew": 3.379e-11
+    },
+    {
+      "instance": "clkbuf_1_0__f_dec_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_1_0__f_dec_clk/X",
+      "net": "clknet_1_0__leaf_dec_clk",
+      "x": 0.000113867,
+      "y": 0.000031856,
+      "arrival": 2.216e-10,
+      "capacitance": 5.749e-14,
+      "slew": 7.754e-11
+    },
+    {
+      "instance": "_6129_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6129_/CLK",
+      "net": "clknet_1_0__leaf_dec_clk",
+      "x": 0.000116337,
+      "y": 0.000041620,
+      "arrival": 2.220e-10,
+      "slew": 7.754e-11
+    }
+  ],
+  "source_path": [
+    {
+      "instance": "_6129_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6129_/Q",
+      "net": "u_srm_residue.total_g[4]",
+      "x": 0.000124473,
+      "y": 0.000041520,
+      "arrival": 4.998e-10,
+      "capacitance": 2.214e-14,
+      "slew": 1.422e-10
+    },
+    {
+      "instance": "_6134_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6134_/D",
+      "net": "u_srm_residue.total_g[4]",
+      "x": 0.000129440,
+      "y": 0.000031715,
+      "arrival": 5.006e-10,
+      "slew": 1.422e-10
+    }
+  ],
+  "target_clock": "clk",
+  "target_clock_edge": "rise",
+  "target_clock_path": [
+    {
+      "instance": "",
+      "cell": "sar_digi_paper_core",
+      "verilog_src": "",
+      "pin": "clk",
+      "x": 0.000000400,
+      "y": 0.000197210,
+      "arrival": 0.000e+00,
+      "capacitance": 3.526e-14,
+      "slew": 0.000e+00
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/A",
+      "net": "clk",
+      "x": 0.000198850,
+      "y": 0.000198235,
+      "arrival": 6.057e-13,
+      "slew": 1.211e-12
+    },
+    {
+      "instance": "clkbuf_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_8",
+      "verilog_src": "",
+      "pin": "clkbuf_0_clk/X",
+      "net": "clknet_0_clk",
+      "x": 0.000201707,
+      "y": 0.000198356,
+      "arrival": 3.055e-10,
+      "capacitance": 3.073e-13,
+      "slew": 3.507e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/A",
+      "net": "clknet_0_clk",
+      "x": 0.000139680,
+      "y": 0.000074825,
+      "arrival": 3.106e-10,
+      "slew": 3.508e-10
+    },
+    {
+      "instance": "clkbuf_4_0_0_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_16",
+      "verilog_src": "",
+      "pin": "clkbuf_4_0_0_clk/X",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000144460,
+      "y": 0.000075295,
+      "arrival": 4.992e-10,
+      "capacitance": 7.238e-14,
+      "slew": 6.056e-11
+    },
+    {
+      "instance": "clkbuf_leaf_206_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_206_clk/A",
+      "net": "clknet_4_0_0_clk",
+      "x": 0.000132810,
+      "y": 0.000025060,
+      "arrival": 5.011e-10,
+      "slew": 6.064e-11
+    },
+    {
+      "instance": "clkbuf_leaf_206_clk",
+      "cell": "sky130_fd_sc_hs__clkbuf_2",
+      "verilog_src": "",
+      "pin": "clkbuf_leaf_206_clk/X",
+      "net": "clknet_leaf_206_clk",
+      "x": 0.000132265,
+      "y": 0.000025353,
+      "arrival": 6.172e-10,
+      "capacitance": 1.493e-14,
+      "slew": 7.132e-11
+    },
+    {
+      "instance": "_6134_",
+      "cell": "sky130_fd_sc_hs__dfrtp_1",
+      "verilog_src": "",
+      "pin": "_6134_/CLK",
+      "net": "clknet_leaf_206_clk",
+      "x": 0.000131217,
+      "y": 0.000031640,
+      "arrival": 6.175e-10,
+      "slew": 7.132e-11
+    }
+  ],
+  "data_arrival_time": 2.786e-10,
+  "path_delay": 2.400e-09,
+  "crpr": 0.000e+00,
+  "margin": 1.572e-10,
+  "required_time": 2.243e-09,
+  "slack": 1.964e-09
+}
+]
+}
