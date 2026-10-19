@@ -1,5 +1,7 @@
 # SAR16_Digital_Backend_Signoff
 
+![状态](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E6%B5%81%E7%89%87%E5%89%8D%E5%A4%8D%E6%A0%B8-bf8700?style=flat-square) ![类型](https://img.shields.io/badge/%E7%B1%BB%E5%9E%8B-%E6%95%B0%E5%AD%97%E5%90%8E%E7%AB%AF-6e7781?style=flat-square) ![技术栈](https://img.shields.io/badge/%E6%8A%80%E6%9C%AF%E6%A0%88-Tcl_%C2%B7_Python-6e7781?style=flat-square) ![许可](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-%E6%9C%AA%E6%8C%87%E5%AE%9A-6e7781?style=flat-square)
+
 > 16 位 5 MS/s 分体采样 SAR ADC 数字核（SMIC 0.18 µm 1P6M）的后端交接复核与签核证据仓库。
 
 ## 这是什么
@@ -74,7 +76,7 @@ probes/      114 个一次性探针脚本（bash），需在 EDA 机器上执行
 organize_scratch.py  交接目录整理脚本，一次性动作，与仓库其余内容无调用关系
 ```
 
-## 设计
+## 设计与用法
 
 ### 模块划分
 
@@ -126,6 +128,10 @@ organize_scratch.py  交接目录整理脚本，一次性动作，与仓库其�
 - **校准链未做端到端判定**：只证明了 SRM 估计器全路径与复位 / 状态机。
 - **无 CI**：仓库没有 `.github/workflows`，上述数字没有任何自动回归保护。
 - **重复文件未清完**：`figures/` 下 4 张 `gds_*.png` 与 `evidence/figures/` 逐字节相同；`docs/` 与 `report/` 各存一份独立核查报告与接口契约（两侧均被脚本或报告引用，暂不合并）。
+
+## 相关仓库
+
+暂无直接关联的仓库。
 
 ## 许可
 
