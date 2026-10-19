@@ -1,0 +1,6 @@
+# 统一按文本处理，提交时自动做行尾归一（不引入 LFS）
+* text=auto
+
+# 二进制资产：避免行尾转换与文本 diff
+*.png binary
+*.pdf binary
